@@ -1,0 +1,1978 @@
+{
+ "schemaVersion": 1,
+ "gameId": "missing-links",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the three pack fixtures (one board each, sourceFixtureId kept, fixture hints preserved as fixtureHints). Practice rounds are original: each holds three boards; every compound is a closed form present in the ESDB membership list, and validate.ts searches the list for any other link that completes every branch. Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "ml-demo-1",
+   "title": "Original demo bridge 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "links-001",
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DAY",
+        "suffix": "",
+        "clue": "Natural light during daytime"
+       },
+       {
+        "id": "b",
+        "prefix": "MOON",
+        "suffix": "",
+        "clue": "Light received from the moon"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HOUSE",
+        "clue": "A tower with a light to guide ships"
+       }
+      ],
+      "candidates": [
+       "LIGHT",
+       "HOUSE",
+       "WATER",
+       "GREEN",
+       "STONE"
+      ],
+      "solutions": [
+       {
+        "link": "LIGHT",
+        "compounds": {
+         "a": "DAYLIGHT",
+         "b": "MOONLIGHT",
+         "c": "LIGHTHOUSE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "LIGHT completes all three in the displayed positions.",
+      "fixtureHints": [
+       "The shared word begins with L.",
+       "The tower is a LIGHTHOUSE."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-demo-2",
+   "title": "Original demo bridge 2",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "links-002",
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "NOTE",
+        "suffix": "",
+        "clue": "A book for writing notes"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "CASE",
+        "clue": "Furniture for holding books"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "MARK",
+        "clue": "A marker that keeps your place in a book"
+       }
+      ],
+      "candidates": [
+       "BOOK",
+       "CASE",
+       "MARK",
+       "NOTE",
+       "FOOT"
+      ],
+      "solutions": [
+       {
+        "link": "BOOK",
+        "compounds": {
+         "a": "NOTEBOOK",
+         "b": "BOOKCASE",
+         "c": "BOOKMARK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BOOK occurs after NOTE but before CASE and MARK.",
+      "fixtureHints": [
+       "The shared word begins with B.",
+       "The furniture is a BOOKCASE."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-demo-3",
+   "title": "Original demo bridge 3",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "links-003",
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BALL",
+        "clue": "A game involving kicking a ball"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "PRINT",
+        "clue": "An impression left by a foot"
+       },
+       {
+        "id": "c",
+        "prefix": "BARE",
+        "suffix": "",
+        "clue": "Without shoes or socks"
+       }
+      ],
+      "candidates": [
+       "FOOT",
+       "HAND",
+       "BALL",
+       "BARE",
+       "ROOT"
+      ],
+      "solutions": [
+       {
+        "link": "FOOT",
+        "compounds": {
+         "a": "FOOTBALL",
+         "b": "FOOTPRINT",
+         "c": "BAREFOOT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "FOOT completes the three established words.",
+      "fixtureHints": [
+       "The shared word begins with F.",
+       "The impression is a FOOTPRINT."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g1",
+   "title": "Gentle bridges 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "POT",
+        "clue": "A vessel with a spout and lid for brewing a hot drink"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SPOON",
+        "clue": "A small spoon for stirring a hot drink"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CUP",
+        "clue": "A cup for a hot drink, often with a saucer"
+       }
+      ],
+      "candidates": [
+       "TEA",
+       "EGG",
+       "JAM",
+       "HOT",
+       "SUN"
+      ],
+      "solutions": [
+       {
+        "link": "TEA",
+        "compounds": {
+         "a": "TEAPOT",
+         "b": "TEASPOON",
+         "c": "TEACUP"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "TEA goes before POT, SPOON and CUP: TEAPOT, TEASPOON and TEACUP."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "MAN",
+        "clue": "A winter figure with a carrot for a nose"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FLAKE",
+        "clue": "A single ice crystal falling from a winter sky"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BALL",
+        "clue": "A packed handful thrown in a winter fight"
+       }
+      ],
+      "candidates": [
+       "SNOW",
+       "FOOT",
+       "FIRE",
+       "HAND",
+       "BASE"
+      ],
+      "solutions": [
+       {
+        "link": "SNOW",
+        "compounds": {
+         "a": "SNOWMAN",
+         "b": "SNOWFLAKE",
+         "c": "SNOWBALL"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SNOW goes before MAN, FLAKE and BALL. FOOT and FIRE fit two of the three, but not FLAKE."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "TOOTH",
+        "suffix": "",
+        "clue": "Pain in or around a tooth"
+       },
+       {
+        "id": "b",
+        "prefix": "EAR",
+        "suffix": "",
+        "clue": "Pain inside the ear"
+       },
+       {
+        "id": "c",
+        "prefix": "HEAD",
+        "suffix": "",
+        "clue": "A continuous pain in the head"
+       }
+      ],
+      "candidates": [
+       "ACHE",
+       "RING",
+       "DRUM",
+       "BAND",
+       "LESS"
+      ],
+      "solutions": [
+       {
+        "link": "ACHE",
+        "compounds": {
+         "a": "TOOTHACHE",
+         "b": "EARACHE",
+         "c": "HEADACHE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "ACHE follows TOOTH, EAR and HEAD: TOOTHACHE, EARACHE and HEADACHE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g2",
+   "title": "Gentle bridges 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BOW",
+        "clue": "An arc of colours in the sky after a shower"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "COAT",
+        "clue": "A waterproof coat"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "DROP",
+        "clue": "A single drop of water falling from a cloud"
+       }
+      ],
+      "candidates": [
+       "RAIN",
+       "SNOW",
+       "OVER",
+       "TEAR",
+       "LONG"
+      ],
+      "solutions": [
+       {
+        "link": "RAIN",
+        "compounds": {
+         "a": "RAINBOW",
+         "b": "RAINCOAT",
+         "c": "RAINDROP"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "RAIN goes before BOW, COAT and DROP: RAINBOW, RAINCOAT and RAINDROP."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "DAY",
+        "clue": "The anniversary of the day you were born"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MARK",
+        "clue": "A mark on the skin present since infancy"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PLACE",
+        "clue": "The town or house where someone was born"
+       }
+      ],
+      "candidates": [
+       "BIRTH",
+       "TRADE",
+       "WATER",
+       "EARTH",
+       "EVERY"
+      ],
+      "solutions": [
+       {
+        "link": "BIRTH",
+        "compounds": {
+         "a": "BIRTHDAY",
+         "b": "BIRTHMARK",
+         "c": "BIRTHPLACE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BIRTH goes before DAY, MARK and PLACE: BIRTHDAY, BIRTHMARK and BIRTHPLACE."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SHOE",
+        "clue": "A U-shaped iron nailed to a hoof"
+       },
+       {
+        "id": "b",
+        "prefix": "RACE",
+        "suffix": "",
+        "clue": "An animal bred and trained to run in races"
+       },
+       {
+        "id": "c",
+        "prefix": "SEA",
+        "suffix": "",
+        "clue": "A small fish that swims upright with a curled tail"
+       }
+      ],
+      "candidates": [
+       "HORSE",
+       "SHELL",
+       "TRACK",
+       "FRONT",
+       "SNAKE"
+      ],
+      "solutions": [
+       {
+        "link": "HORSE",
+        "compounds": {
+         "a": "HORSESHOE",
+         "b": "RACEHORSE",
+         "c": "SEAHORSE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "HORSE goes before SHOE but after RACE and SEA: HORSESHOE, RACEHORSE and SEAHORSE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g3",
+   "title": "Gentle bridges 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "FLY",
+        "clue": "An insect with large, colourful wings"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "CUP",
+        "clue": "A wild plant with small, shiny yellow flowers"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "MILK",
+        "clue": "The slightly sour liquid left after churning cream"
+       }
+      ],
+      "candidates": [
+       "BUTTER",
+       "DRAGON",
+       "SILVER",
+       "GOLDEN",
+       "BUTTON"
+      ],
+      "solutions": [
+       {
+        "link": "BUTTER",
+        "compounds": {
+         "a": "BUTTERFLY",
+         "b": "BUTTERCUP",
+         "c": "BUTTERMILK"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BUTTER goes before FLY, CUP and MILK: BUTTERFLY, BUTTERCUP and BUTTERMILK."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Tasks pupils are set to do outside school"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SICK",
+        "clue": "Missing your own house and family while away"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "MADE",
+        "clue": "Made in a house rather than a shop or factory"
+       }
+      ],
+      "candidates": [
+       "HOME",
+       "HAND",
+       "FIRE",
+       "TEAM",
+       "LOVE"
+      ],
+      "solutions": [
+       {
+        "link": "HOME",
+        "compounds": {
+         "a": "HOMEWORK",
+         "b": "HOMESICK",
+         "c": "HOMEMADE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HOME goes before WORK, SICK and MADE. HAND fits two (HANDWORK, HANDMADE) and LOVE fits one (LOVESICK), but only HOME fits all three."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "A room for sleeping in"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "TIME",
+        "clue": "The usual hour for going to sleep"
+       },
+       {
+        "id": "c",
+        "prefix": "SEA",
+        "suffix": "",
+        "clue": "The ground at the bottom of the sea"
+       }
+      ],
+      "candidates": [
+       "BED",
+       "TEA",
+       "SUN",
+       "MUD",
+       "OLD"
+      ],
+      "solutions": [
+       {
+        "link": "BED",
+        "compounds": {
+         "a": "BEDROOM",
+         "b": "BEDTIME",
+         "c": "SEABED"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "BED goes before ROOM and TIME but after SEA: BEDROOM, BEDTIME and SEABED. TEA fits TEAROOM and TEATIME but not SEATEA."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g4",
+   "title": "Gentle bridges 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "A rocket that explodes in coloured sparks"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "PLACE",
+        "clue": "A hearth set into the wall of a room"
+       },
+       {
+        "id": "c",
+        "prefix": "CAMP",
+        "suffix": "",
+        "clue": "An outdoor blaze where people sit at night"
+       }
+      ],
+      "candidates": [
+       "FIRE",
+       "HOME",
+       "WOOD",
+       "SITE",
+       "TEAM"
+      ],
+      "solutions": [
+       {
+        "link": "FIRE",
+        "compounds": {
+         "a": "FIREWORK",
+         "b": "FIREPLACE",
+         "c": "CAMPFIRE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "FIRE goes before WORK and PLACE but after CAMP: FIREWORK, FIREPLACE and CAMPFIRE."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "FALL",
+        "clue": "A stream pouring over a cliff or rocks"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MELON",
+        "clue": "A large green fruit with juicy red flesh"
+       },
+       {
+        "id": "c",
+        "prefix": "UNDER",
+        "suffix": "",
+        "clue": "Beneath the surface of the sea or a lake"
+       }
+      ],
+      "candidates": [
+       "WATER",
+       "NIGHT",
+       "WORLD",
+       "GRASS",
+       "SHORT"
+      ],
+      "solutions": [
+       {
+        "link": "WATER",
+        "compounds": {
+         "a": "WATERFALL",
+         "b": "WATERMELON",
+         "c": "UNDERWATER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WATER goes before FALL and MELON but after UNDER: WATERFALL, WATERMELON and UNDERWATER."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CUP",
+        "suffix": "",
+        "clue": "A small sponge baked in a paper case"
+       },
+       {
+        "id": "b",
+        "prefix": "PAN",
+        "suffix": "",
+        "clue": "A thin, flat batter cooked in a frying pan"
+       },
+       {
+        "id": "c",
+        "prefix": "CHEESE",
+        "suffix": "",
+        "clue": "A dessert with a biscuit base and a creamy topping"
+       }
+      ],
+      "candidates": [
+       "CAKE",
+       "TART",
+       "ROLL",
+       "PIES",
+       "BUNS"
+      ],
+      "solutions": [
+       {
+        "link": "CAKE",
+        "compounds": {
+         "a": "CUPCAKE",
+         "b": "PANCAKE",
+         "c": "CHEESECAKE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "CAKE follows CUP, PAN and CHEESE: CUPCAKE, PANCAKE and CHEESECAKE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s1",
+   "title": "Standard bridges 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DOOR",
+        "suffix": "",
+        "clue": "The flat stone or area just outside an entrance"
+       },
+       {
+        "id": "b",
+        "prefix": "FOOT",
+        "suffix": "",
+        "clue": "The sound or mark of a single pace"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "LADDER",
+        "clue": "A folding ladder with flat treads and a support frame"
+       }
+      ],
+      "candidates": [
+       "STEP",
+       "BELL",
+       "PATH",
+       "FALL",
+       "WAYS"
+      ],
+      "solutions": [
+       {
+        "link": "STEP",
+        "compounds": {
+         "a": "DOORSTEP",
+         "b": "FOOTSTEP",
+         "c": "STEPLADDER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STEP follows DOOR and FOOT and comes before LADDER: DOORSTEP, FOOTSTEP and STEPLADDER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SNAP",
+        "suffix": "",
+        "clue": "An informal photograph"
+       },
+       {
+        "id": "b",
+        "prefix": "BLOOD",
+        "suffix": "",
+        "clue": "Of eyes, red and irritated"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GUN",
+        "clue": "A long gun that fires small pellets"
+       }
+      ],
+      "candidates": [
+       "SHOT",
+       "LINE",
+       "BATH",
+       "HAND",
+       "SHOP"
+      ],
+      "solutions": [
+       {
+        "link": "SHOT",
+        "compounds": {
+         "a": "SNAPSHOT",
+         "b": "BLOODSHOT",
+         "c": "SHOTGUN"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "SHOT follows SNAP and BLOOD and comes before GUN: SNAPSHOT, BLOODSHOT and SHOTGUN."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SAW",
+        "suffix": "",
+        "clue": "Fine particles made by cutting wood"
+       },
+       {
+        "id": "b",
+        "prefix": "STAR",
+        "suffix": "",
+        "clue": "A magical, sparkling quality"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BIN",
+        "clue": "A large container for household rubbish"
+       }
+      ],
+      "candidates": [
+       "DUST",
+       "FISH",
+       "MILL",
+       "DOCK",
+       "GAZE"
+      ],
+      "solutions": [
+       {
+        "link": "DUST",
+        "compounds": {
+         "a": "SAWDUST",
+         "b": "STARDUST",
+         "c": "DUSTBIN"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "DUST follows SAW and STAR and comes before BIN: SAWDUST, STARDUST and DUSTBIN."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s2",
+   "title": "Standard bridges 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WAY",
+        "clue": "An entrance or way in"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "KEEPER",
+        "clue": "A person who controls who may enter"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "POST",
+        "clue": "An upright post at the side of an entrance"
+       }
+      ],
+      "candidates": [
+       "DOOR",
+       "GOAL",
+       "ARCH",
+       "BELL",
+       "LAMP"
+      ],
+      "solutions": [
+       {
+        "link": "DOOR",
+        "compounds": {
+         "a": "DOORWAY",
+         "b": "DOORKEEPER",
+         "c": "DOORPOST"
+        }
+       },
+       {
+        "link": "GATE",
+        "compounds": {
+         "a": "GATEWAY",
+         "b": "GATEKEEPER",
+         "c": "GATEPOST"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "DOOR and GATE both work: DOORWAY or GATEWAY, DOORKEEPER or GATEKEEPER, DOORPOST or GATEPOST. GOAL fits two branches (GOALKEEPER, GOALPOST) but there is no GOALWAY."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "PAD",
+        "suffix": "",
+        "clue": "A detachable fastening with a U-shaped bar"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SMITH",
+        "clue": "A tradesperson who fits and repairs keys and door fastenings"
+       },
+       {
+        "id": "c",
+        "prefix": "DEAD",
+        "suffix": "",
+        "clue": "A situation in which neither side can make progress"
+       }
+      ],
+      "candidates": [
+       "LOCK",
+       "BOLT",
+       "DOCK",
+       "GOLD",
+       "KNOB"
+      ],
+      "solutions": [
+       {
+        "link": "LOCK",
+        "compounds": {
+         "a": "PADLOCK",
+         "b": "LOCKSMITH",
+         "c": "DEADLOCK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "LOCK follows PAD and DEAD and comes before SMITH: PADLOCK, LOCKSMITH and DEADLOCK."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SWIM",
+        "suffix": "",
+        "clue": "A one-piece garment for bathing"
+       },
+       {
+        "id": "b",
+        "prefix": "LAW",
+        "suffix": "",
+        "clue": "A claim brought before a court"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CASE",
+        "clue": "A case for carrying clothes when travelling"
+       }
+      ],
+      "candidates": [
+       "SUIT",
+       "WEAR",
+       "BOOK",
+       "COAT",
+       "TIES"
+      ],
+      "solutions": [
+       {
+        "link": "SUIT",
+        "compounds": {
+         "a": "SWIMSUIT",
+         "b": "LAWSUIT",
+         "c": "SUITCASE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SUIT follows SWIM and LAW and comes before CASE: SWIMSUIT, LAWSUIT and SUITCASE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s3",
+   "title": "Standard bridges 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EARTH",
+        "suffix": "",
+        "clue": "A burrowing creature that lives in soil"
+       },
+       {
+        "id": "b",
+        "prefix": "BOOK",
+        "suffix": "",
+        "clue": "A person who loves reading"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HOLE",
+        "clue": "A theoretical shortcut through space and time"
+       }
+      ],
+      "candidates": [
+       "WORM",
+       "MOLE",
+       "ROOT",
+       "SHOP",
+       "CASE"
+      ],
+      "solutions": [
+       {
+        "link": "WORM",
+        "compounds": {
+         "a": "EARTHWORM",
+         "b": "BOOKWORM",
+         "c": "WORMHOLE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WORM follows EARTH and BOOK and comes before HOLE: EARTHWORM, BOOKWORM and WORMHOLE."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SWEET",
+        "suffix": "",
+        "clue": "A romantic partner"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BEAT",
+        "clue": "One pulse of the organ that pumps blood"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BREAK",
+        "clue": "Overwhelming sorrow, especially after a loss in love"
+       }
+      ],
+      "candidates": [
+       "HEART",
+       "BREAD",
+       "PULSE",
+       "BRAIN",
+       "SPEED"
+      ],
+      "solutions": [
+       {
+        "link": "HEART",
+        "compounds": {
+         "a": "SWEETHEART",
+         "b": "HEARTBEAT",
+         "c": "HEARTBREAK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HEART follows SWEET and comes before BEAT and BREAK: SWEETHEART, HEARTBEAT and HEARTBREAK."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "NOTE",
+        "clue": "The central theme of a speech or conference"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOARD",
+        "clue": "A panel of buttons for typing on a computer"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PAD",
+        "clue": "A small panel of number buttons, as on a phone or alarm"
+       }
+      ],
+      "candidates": [
+       "KEY",
+       "PIN",
+       "CUP",
+       "BAR",
+       "LAP"
+      ],
+      "solutions": [
+       {
+        "link": "KEY",
+        "compounds": {
+         "a": "KEYNOTE",
+         "b": "KEYBOARD",
+         "c": "KEYPAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "KEY goes before NOTE, BOARD and PAD: KEYNOTE, KEYBOARD and KEYPAD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s4",
+   "title": "Standard bridges 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "TEAR",
+        "suffix": "",
+        "clue": "A single bead of water from the eye"
+       },
+       {
+        "id": "b",
+        "prefix": "EAVES",
+        "suffix": "",
+        "clue": "To listen secretly to a private conversation"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Someone who leaves school or a course early"
+       }
+      ],
+      "candidates": [
+       "DROP",
+       "LEAK",
+       "FALL",
+       "BURN",
+       "DRIP"
+      ],
+      "solutions": [
+       {
+        "link": "DROP",
+        "compounds": {
+         "a": "TEARDROP",
+         "b": "EAVESDROP",
+         "c": "DROPOUT"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "DROP follows TEAR and EAVES and comes before OUT: TEARDROP, EAVESDROP and DROPOUT."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "POP",
+        "suffix": "",
+        "clue": "Maize kernels that burst open when heated"
+       },
+       {
+        "id": "b",
+        "prefix": "SWEET",
+        "suffix": "",
+        "clue": "Yellow kernels of maize eaten as a vegetable"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "FIELD",
+        "clue": "A field where cereal crops such as wheat are grown"
+       }
+      ],
+      "candidates": [
+       "CORN",
+       "SEED",
+       "OATS",
+       "RICE",
+       "BEAN"
+      ],
+      "solutions": [
+       {
+        "link": "CORN",
+        "compounds": {
+         "a": "POPCORN",
+         "b": "SWEETCORN",
+         "c": "CORNFIELD"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "CORN follows POP and SWEET and comes before FIELD: POPCORN, SWEETCORN and CORNFIELD."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CAT",
+        "suffix": "",
+        "clue": "A narrow runway for a fashion show"
+       },
+       {
+        "id": "b",
+        "prefix": "SLEEP",
+        "suffix": "",
+        "clue": "To wander about while still asleep"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "OVER",
+        "clue": "An easy victory"
+       }
+      ],
+      "candidates": [
+       "WALK",
+       "STEP",
+       "TALK",
+       "LEAP",
+       "RUNS"
+      ],
+      "solutions": [
+       {
+        "link": "WALK",
+        "compounds": {
+         "a": "CATWALK",
+         "b": "SLEEPWALK",
+         "c": "WALKOVER"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WALK follows CAT and SLEEP and comes before OVER: CATWALK, SLEEPWALK and WALKOVER."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e1",
+   "title": "Expert bridges 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "GRAND",
+        "suffix": "",
+        "clue": "A parent's parent"
+       },
+       {
+        "id": "b",
+        "prefix": "STEP",
+        "suffix": "",
+        "clue": "A parent by marriage rather than by birth"
+       },
+       {
+        "id": "c",
+        "prefix": "GOD",
+        "suffix": "",
+        "clue": "A sponsor at a child's christening"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LAND",
+        "clue": "A person's native country"
+       }
+      ],
+      "candidates": [
+       "MOTHER",
+       "PARENT",
+       "SISTER",
+       "NEPHEW",
+       "COUSIN"
+      ],
+      "solutions": [
+       {
+        "link": "MOTHER",
+        "compounds": {
+         "a": "GRANDMOTHER",
+         "b": "STEPMOTHER",
+         "c": "GODMOTHER",
+         "d": "MOTHERLAND"
+        }
+       },
+       {
+        "link": "FATHER",
+        "compounds": {
+         "a": "GRANDFATHER",
+         "b": "STEPFATHER",
+         "c": "GODFATHER",
+         "d": "FATHERLAND"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "MOTHER and FATHER both work: GRANDMOTHER or GRANDFATHER, STEPMOTHER or STEPFATHER, GODMOTHER or GODFATHER, MOTHERLAND or FATHERLAND. PARENT fits three branches but there is no PARENTLAND."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "MOUTH",
+        "suffix": "",
+        "clue": "The part of an instrument you blow into or a phone you speak into"
+       },
+       {
+        "id": "b",
+        "prefix": "MASTER",
+        "suffix": "",
+        "clue": "An artist's finest work"
+       },
+       {
+        "id": "c",
+        "prefix": "CENTRE",
+        "suffix": "",
+        "clue": "The main decoration in the middle of a table"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Work paid by the item rather than by the hour"
+       }
+      ],
+      "candidates": [
+       "PIECE",
+       "CLASS",
+       "PLATE",
+       "BOARD",
+       "POINT"
+      ],
+      "solutions": [
+       {
+        "link": "PIECE",
+        "compounds": {
+         "a": "MOUTHPIECE",
+         "b": "MASTERPIECE",
+         "c": "CENTREPIECE",
+         "d": "PIECEWORK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PIECE follows MOUTH, MASTER and CENTRE and comes before WORK: MOUTHPIECE, MASTERPIECE, CENTREPIECE and PIECEWORK."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FLAG",
+        "suffix": "",
+        "clue": "The leading vessel of a fleet; a company's best product"
+       },
+       {
+        "id": "b",
+        "prefix": "WAR",
+        "suffix": "",
+        "clue": "An armed naval vessel"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WRECK",
+        "clue": "The remains of a sunken vessel"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "YARD",
+        "clue": "A place where vessels are built and repaired"
+       }
+      ],
+      "candidates": [
+       "SHIP",
+       "BOAT",
+       "LORD",
+       "MATE",
+       "HEAD"
+      ],
+      "solutions": [
+       {
+        "link": "SHIP",
+        "compounds": {
+         "a": "FLAGSHIP",
+         "b": "WARSHIP",
+         "c": "SHIPWRECK",
+         "d": "SHIPYARD"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SHIP follows FLAG and WAR and comes before WRECK and YARD: FLAGSHIP, WARSHIP, SHIPWRECK and SHIPYARD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e2",
+   "title": "Expert bridges 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SHEEP",
+        "suffix": "",
+        "clue": "A fleece-covered hide used as a rug"
+       },
+       {
+        "id": "b",
+        "prefix": "BEAR",
+        "suffix": "",
+        "clue": "A tall black fur cap worn by some British guards"
+       },
+       {
+        "id": "c",
+        "prefix": "SNAKE",
+        "suffix": "",
+        "clue": "The shed or tanned hide of a serpent"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "FLINT",
+        "clue": "A mean person who hates spending money"
+       }
+      ],
+      "candidates": [
+       "SKIN",
+       "HIDE",
+       "COAT",
+       "FOLD",
+       "FACE"
+      ],
+      "solutions": [
+       {
+        "link": "SKIN",
+        "compounds": {
+         "a": "SHEEPSKIN",
+         "b": "BEARSKIN",
+         "c": "SNAKESKIN",
+         "d": "SKINFLINT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SKIN follows SHEEP, BEAR and SNAKE and comes before FLINT: SHEEPSKIN, BEARSKIN, SNAKESKIN and SKINFLINT."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BROAD",
+        "suffix": "",
+        "clue": "To transmit on radio or television"
+       },
+       {
+        "id": "b",
+        "prefix": "FORE",
+        "suffix": "",
+        "clue": "A prediction, especially of the weather"
+       },
+       {
+        "id": "c",
+        "prefix": "OUT",
+        "suffix": "",
+        "clue": "A person rejected by society"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "AWAY",
+        "clue": "A person shipwrecked on a remote island"
+       }
+      ],
+      "candidates": [
+       "CAST",
+       "LOOK",
+       "SIDE",
+       "HEAD",
+       "LAND"
+      ],
+      "solutions": [
+       {
+        "link": "CAST",
+        "compounds": {
+         "a": "BROADCAST",
+         "b": "FORECAST",
+         "c": "OUTCAST",
+         "d": "CASTAWAY"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "CAST follows BROAD, FORE and OUT and comes before AWAY: BROADCAST, FORECAST, OUTCAST and CASTAWAY."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BAG",
+        "suffix": "",
+        "clue": "A Scottish wind instrument with drones"
+       },
+       {
+        "id": "b",
+        "prefix": "WIND",
+        "suffix": "",
+        "clue": "The tube carrying air to the lungs"
+       },
+       {
+        "id": "c",
+        "prefix": "DRAIN",
+        "suffix": "",
+        "clue": "A tube carrying rainwater down the side of a house"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LINE",
+        "clue": "A long tube carrying oil or gas; a sequence of planned projects"
+       }
+      ],
+      "candidates": [
+       "PIPE",
+       "HORN",
+       "TUBE",
+       "PUMP",
+       "FLUE"
+      ],
+      "solutions": [
+       {
+        "link": "PIPE",
+        "compounds": {
+         "a": "BAGPIPE",
+         "b": "WINDPIPE",
+         "c": "DRAINPIPE",
+         "d": "PIPELINE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "PIPE follows BAG, WIND and DRAIN and comes before LINE: BAGPIPE, WINDPIPE, DRAINPIPE and PIPELINE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e3",
+   "title": "Expert bridges 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "MILL",
+        "suffix": "",
+        "clue": "One of a pair of heavy round grinders in a flour mill; a lasting burden"
+       },
+       {
+        "id": "b",
+        "prefix": "LIME",
+        "suffix": "",
+        "clue": "A white rock used to make cement"
+       },
+       {
+        "id": "c",
+        "prefix": "SAND",
+        "suffix": "",
+        "clue": "Rock formed from compressed grains"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WALL",
+        "clue": "To delay by giving evasive answers"
+       }
+      ],
+      "candidates": [
+       "STONE",
+       "LIGHT",
+       "WHEEL",
+       "BRICK",
+       "GRAIN"
+      ],
+      "solutions": [
+       {
+        "link": "STONE",
+        "compounds": {
+         "a": "MILLSTONE",
+         "b": "LIMESTONE",
+         "c": "SANDSTONE",
+         "d": "STONEWALL"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STONE follows MILL, LIME and SAND and comes before WALL: MILLSTONE, LIMESTONE, SANDSTONE and STONEWALL."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DAY",
+        "suffix": "",
+        "clue": "Dawn"
+       },
+       {
+        "id": "b",
+        "prefix": "OUT",
+        "suffix": "",
+        "clue": "A sudden start of disease or war"
+       },
+       {
+        "id": "c",
+        "prefix": "JAIL",
+        "suffix": "",
+        "clue": "An escape from prison"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WATER",
+        "clue": "A barrier built out into the sea to shelter a harbour"
+       }
+      ],
+      "candidates": [
+       "BREAK",
+       "LIGHT",
+       "HOUSE",
+       "CROSS",
+       "FRONT"
+      ],
+      "solutions": [
+       {
+        "link": "BREAK",
+        "compounds": {
+         "a": "DAYBREAK",
+         "b": "OUTBREAK",
+         "c": "JAILBREAK",
+         "d": "BREAKWATER"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "BREAK follows DAY, OUT and JAIL and comes before WATER: DAYBREAK, OUTBREAK, JAILBREAK and BREAKWATER."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "ARM",
+        "suffix": "",
+        "clue": "A strip worn round the upper arm, for example by a captain"
+       },
+       {
+        "id": "b",
+        "prefix": "WAIST",
+        "suffix": "",
+        "clue": "The strip of fabric around the top of trousers or a skirt"
+       },
+       {
+        "id": "c",
+        "prefix": "HEAD",
+        "suffix": "",
+        "clue": "A strip worn round the forehead to hold hair back"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "STAND",
+        "clue": "A roofed outdoor platform where musicians play in a park"
+       }
+      ],
+      "candidates": [
+       "BAND",
+       "LINE",
+       "REST",
+       "BELT",
+       "LOCK"
+      ],
+      "solutions": [
+       {
+        "link": "BAND",
+        "compounds": {
+         "a": "ARMBAND",
+         "b": "WAISTBAND",
+         "c": "HEADBAND",
+         "d": "BANDSTAND"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "BAND follows ARM, WAIST and HEAD and comes before STAND: ARMBAND, WAISTBAND, HEADBAND and BANDSTAND."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e4",
+   "title": "Expert bridges 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "AIR",
+        "suffix": "",
+        "clue": "A machine that flies, such as a plane or helicopter"
+       },
+       {
+        "id": "b",
+        "prefix": "SPACE",
+        "suffix": "",
+        "clue": "A vehicle for travel beyond the Earth's atmosphere"
+       },
+       {
+        "id": "c",
+        "prefix": "WITCH",
+        "suffix": "",
+        "clue": "The practice of magic, especially spells"
+       },
+       {
+        "id": "d",
+        "prefix": "HOVER",
+        "suffix": "",
+        "clue": "A vehicle that travels over land or water on a cushion of air"
+       }
+      ],
+      "candidates": [
+       "CRAFT",
+       "PLANE",
+       "SPELL",
+       "POWER",
+       "WAVES"
+      ],
+      "solutions": [
+       {
+        "link": "CRAFT",
+        "compounds": {
+         "a": "AIRCRAFT",
+         "b": "SPACECRAFT",
+         "c": "WITCHCRAFT",
+         "d": "HOVERCRAFT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "CRAFT follows AIR, SPACE, WITCH and HOVER: AIRCRAFT, SPACECRAFT, WITCHCRAFT and HOVERCRAFT."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "MINE",
+        "suffix": "",
+        "clue": "An area planted with explosives; a situation full of hidden dangers"
+       },
+       {
+        "id": "b",
+        "prefix": "BATTLE",
+        "suffix": "",
+        "clue": "The place where armies fight"
+       },
+       {
+        "id": "c",
+        "prefix": "OIL",
+        "suffix": "",
+        "clue": "An area where petroleum is extracted"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Research done on site rather than in a laboratory"
+       }
+      ],
+      "candidates": [
+       "FIELD",
+       "SHAFT",
+       "PLAIN",
+       "CLOTH",
+       "TRACK"
+      ],
+      "solutions": [
+       {
+        "link": "FIELD",
+        "compounds": {
+         "a": "MINEFIELD",
+         "b": "BATTLEFIELD",
+         "c": "OILFIELD",
+         "d": "FIELDWORK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "FIELD follows MINE, BATTLE and OIL and comes before WORK: MINEFIELD, BATTLEFIELD, OILFIELD and FIELDWORK."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "STOP",
+        "suffix": "",
+        "clue": "A timer started and stopped by hand"
+       },
+       {
+        "id": "b",
+        "prefix": "WRIST",
+        "suffix": "",
+        "clue": "A timepiece worn on a strap"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "DOG",
+        "clue": "A guard dog; a body that monitors companies or governments"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WORD",
+        "clue": "A slogan or motto"
+       }
+      ],
+      "candidates": [
+       "WATCH",
+       "CLOCK",
+       "GUARD",
+       "TIMER",
+       "LIGHT"
+      ],
+      "solutions": [
+       {
+        "link": "WATCH",
+        "compounds": {
+         "a": "STOPWATCH",
+         "b": "WRISTWATCH",
+         "c": "WATCHDOG",
+         "d": "WATCHWORD"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WATCH follows STOP and WRIST and comes before DOG and WORD: STOPWATCH, WRISTWATCH, WATCHDOG and WATCHWORD."
+     }
+    ]
+   }
+  }
+ ]
+}
