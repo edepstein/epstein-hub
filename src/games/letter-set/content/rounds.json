@@ -1,0 +1,1818 @@
+{
+ "schemaVersion": 1,
+ "gameId": "letter-set",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId) and keep their finite fixture lexicons as regression data. Practice rounds are original to this build: targets were chosen by hand from ESDB membership AND the SCOWL size-35 familiar layer; every target has an original short definition used by the hint ladder. Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "ls-demo-1",
+   "title": "Original demo set 1",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "parents",
+   "payload": {
+    "letters": [
+     "E",
+     "A",
+     "R",
+     "T",
+     "S",
+     "N",
+     "P"
+    ],
+    "required": "P",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "PARENT",
+      "clue": "A mother or father"
+     },
+     {
+      "word": "PARENTS",
+      "clue": "A child's mother and father"
+     },
+     {
+      "word": "TRANSPARENT",
+      "clue": "Clear enough to see through"
+     },
+     {
+      "word": "PART",
+      "clue": "A piece of a whole"
+     },
+     {
+      "word": "PARTS",
+      "clue": "Pieces of a whole; spare pieces for a machine"
+     },
+     {
+      "word": "APART",
+      "clue": "Separated by a distance"
+     },
+     {
+      "word": "APPEAR",
+      "clue": "To come into view"
+     },
+     {
+      "word": "PAPER",
+      "clue": "Thin sheets for writing or printing on"
+     },
+     {
+      "word": "PAPERS",
+      "clue": "Documents; also, daily news publications"
+     },
+     {
+      "word": "PEPPER",
+      "clue": "A hot seasoning ground from dried berries"
+     },
+     {
+      "word": "PEPPERS",
+      "clue": "Hollow vegetables, often red, green or yellow"
+     },
+     {
+      "word": "TAPS",
+      "clue": "Valves that let water run into a sink"
+     },
+     {
+      "word": "TRAP",
+      "clue": "A device for catching animals"
+     },
+     {
+      "word": "TRAPS",
+      "clue": "Devices for catching animals"
+     },
+     {
+      "word": "TAPE",
+      "clue": "A narrow strip of sticky material"
+     },
+     {
+      "word": "TAPES",
+      "clue": "Narrow strips of sticky material; old cassettes"
+     }
+    ],
+    "allLetterTargets": [
+     "PARENTS",
+     "TRANSPARENT"
+    ],
+    "fixtureLexicon": [
+     "PARENT",
+     "PARENTS",
+     "TRANSPARENT",
+     "PART",
+     "PARTS",
+     "APART",
+     "APPEAR",
+     "PAPER",
+     "PAPERS",
+     "PEPPER",
+     "PEPPERS",
+     "TAPS",
+     "TRAP",
+     "TRAPS",
+     "TAPE",
+     "TAPES"
+    ],
+    "fixtureAllLetterAnswers": [
+     "PARENTS",
+     "TRANSPARENT"
+    ],
+    "fixtureMaximumScore": 92,
+    "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+   }
+  },
+  {
+   "id": "ls-demo-2",
+   "title": "Original demo set 2",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "article",
+   "payload": {
+    "letters": [
+     "A",
+     "C",
+     "E",
+     "I",
+     "L",
+     "R",
+     "T"
+    ],
+    "required": "R",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "ARTICLE",
+      "clue": "A piece of writing in a newspaper or magazine"
+     },
+     {
+      "word": "RATE",
+      "clue": "Speed or frequency; a charge per unit"
+     },
+     {
+      "word": "TEAR",
+      "clue": "To rip; or a drop of water from the eye"
+     },
+     {
+      "word": "CARE",
+      "clue": "Close attention; to look after"
+     },
+     {
+      "word": "RACE",
+      "clue": "A contest of speed"
+     },
+     {
+      "word": "RARE",
+      "clue": "Not often found; of meat, lightly cooked"
+     },
+     {
+      "word": "RARER",
+      "clue": "Less often found"
+     },
+     {
+      "word": "TRAILER",
+      "clue": "A vehicle pulled behind another; a film preview"
+     },
+     {
+      "word": "RETIRE",
+      "clue": "To stop working at the end of a career"
+     },
+     {
+      "word": "RETREAT",
+      "clue": "To move back from danger; a quiet place to rest"
+     },
+     {
+      "word": "TRIAL",
+      "clue": "A hearing in a court of law"
+     },
+     {
+      "word": "TRACE",
+      "clue": "A very small amount or sign left behind"
+     },
+     {
+      "word": "CLEAR",
+      "clue": "Easy to see through or understand"
+     }
+    ],
+    "allLetterTargets": [
+     "ARTICLE"
+    ],
+    "fixtureLexicon": [
+     "ARTICLE",
+     "RATE",
+     "TEAR",
+     "CARE",
+     "RACE",
+     "RARE",
+     "RARER",
+     "TRAILER",
+     "RETIRE",
+     "RETREAT",
+     "TRIAL",
+     "TRACE",
+     "CLEAR"
+    ],
+    "fixtureAllLetterAnswers": [
+     "ARTICLE"
+    ],
+    "fixtureMaximumScore": 59,
+    "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+   }
+  },
+  {
+   "id": "ls-demo-3",
+   "title": "Original demo set 3",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "teachers",
+   "payload": {
+    "letters": [
+     "E",
+     "A",
+     "R",
+     "T",
+     "H",
+     "C",
+     "S"
+    ],
+    "required": "H",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "TEACHER",
+      "clue": "A person who instructs pupils"
+     },
+     {
+      "word": "TEACHERS",
+      "clue": "People who instruct pupils"
+     },
+     {
+      "word": "TEACH",
+      "clue": "To instruct someone in a subject or skill"
+     },
+     {
+      "word": "CHEAT",
+      "clue": "To act dishonestly to gain an advantage"
+     },
+     {
+      "word": "CHEATS",
+      "clue": "People who act dishonestly to win"
+     },
+     {
+      "word": "REACH",
+      "clue": "To stretch out a hand; to arrive at"
+     },
+     {
+      "word": "REACHES",
+      "clue": "Stretches out a hand; arrives at"
+     },
+     {
+      "word": "EARTH",
+      "clue": "The planet we live on; soil"
+     },
+     {
+      "word": "HEARTH",
+      "clue": "The floor of a fireplace"
+     },
+     {
+      "word": "HEARTS",
+      "clue": "Organs that pump blood; a suit of playing cards"
+     },
+     {
+      "word": "CHART",
+      "clue": "A diagram showing information; a map for sailors"
+     },
+     {
+      "word": "CHARTS",
+      "clue": "Diagrams showing information; weekly lists of best-selling records"
+     },
+     {
+      "word": "CHASE",
+      "clue": "To run after in order to catch"
+     },
+     {
+      "word": "CHASES",
+      "clue": "Runs after in order to catch"
+     },
+     {
+      "word": "SHARE",
+      "clue": "To divide and give out a portion"
+     },
+     {
+      "word": "SHARES",
+      "clue": "Portions; units of ownership in a company"
+     }
+    ],
+    "allLetterTargets": [
+     "TEACHERS"
+    ],
+    "fixtureLexicon": [
+     "TEACHER",
+     "TEACHERS",
+     "TEACH",
+     "CHEAT",
+     "CHEATS",
+     "REACH",
+     "REACHES",
+     "EARTH",
+     "HEARTH",
+     "HEARTS",
+     "CHART",
+     "CHARTS",
+     "CHASE",
+     "CHASES",
+     "SHARE",
+     "SHARES"
+    ],
+    "fixtureAllLetterAnswers": [
+     "TEACHERS"
+    ],
+    "fixtureMaximumScore": 100,
+    "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+   }
+  },
+  {
+   "id": "ls-g1",
+   "title": "Gentle garden 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "C",
+     "E",
+     "H",
+     "I",
+     "K",
+     "N",
+     "T"
+    ],
+    "required": "N",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "CENT",
+      "clue": "A hundredth part of a euro or dollar"
+     },
+     {
+      "word": "CHIN",
+      "clue": "The part of the face below the mouth"
+     },
+     {
+      "word": "HINT",
+      "clue": "A small clue or suggestion"
+     },
+     {
+      "word": "INCH",
+      "clue": "A unit of length of about 2.5 centimetres"
+     },
+     {
+      "word": "KNEE",
+      "clue": "The joint in the middle of the leg"
+     },
+     {
+      "word": "KNIT",
+      "clue": "To make clothing from wool with needles"
+     },
+     {
+      "word": "NECK",
+      "clue": "The part of the body joining the head to the shoulders"
+     },
+     {
+      "word": "NICE",
+      "clue": "Pleasant or kind"
+     },
+     {
+      "word": "NINE",
+      "clue": "The number after eight"
+     },
+     {
+      "word": "TENT",
+      "clue": "A fabric shelter held up by poles, used for camping"
+     },
+     {
+      "word": "THEN",
+      "clue": "At that time; next"
+     },
+     {
+      "word": "THIN",
+      "clue": "Not thick or fat"
+     },
+     {
+      "word": "TINT",
+      "clue": "A shade or slight colouring"
+     },
+     {
+      "word": "NICHE",
+      "clue": "A recess in a wall; a role that suits someone well"
+     },
+     {
+      "word": "NIECE",
+      "clue": "A daughter of your brother or sister"
+     },
+     {
+      "word": "NINTH",
+      "clue": "Number nine in a sequence"
+     },
+     {
+      "word": "TENTH",
+      "clue": "Number ten in a sequence"
+     },
+     {
+      "word": "THINK",
+      "clue": "To use your mind to reason or consider"
+     },
+     {
+      "word": "ENTICE",
+      "clue": "To attract or tempt someone"
+     },
+     {
+      "word": "INTENT",
+      "clue": "Purpose; or determined to do something"
+     },
+     {
+      "word": "KITTEN",
+      "clue": "A young cat"
+     },
+     {
+      "word": "CHICKEN",
+      "clue": "A farmyard bird kept for eggs and meat"
+     },
+     {
+      "word": "KITCHEN",
+      "clue": "The room where food is cooked"
+     },
+     {
+      "word": "THICKEN",
+      "clue": "To make a sauce or soup less runny"
+     },
+     {
+      "word": "NINETEEN",
+      "clue": "Ten plus nine"
+     },
+     {
+      "word": "KITCHENETTE",
+      "clue": "A very small cooking area"
+     }
+    ],
+    "allLetterTargets": [
+     "KITCHEN",
+     "THICKEN",
+     "KITCHENETTE"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-g2",
+   "title": "Gentle garden 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "L",
+     "N"
+    ],
+    "required": "C",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "ACNE",
+      "clue": "A skin condition causing spots"
+     },
+     {
+      "word": "CALL",
+      "clue": "To telephone; to shout out"
+     },
+     {
+      "word": "CANE",
+      "clue": "A walking stick; the hollow stem of plants such as bamboo"
+     },
+     {
+      "word": "CELL",
+      "clue": "A small room in a prison; the smallest unit of a living thing"
+     },
+     {
+      "word": "CLAD",
+      "clue": "Clothed or covered"
+     },
+     {
+      "word": "CLAN",
+      "clue": "A group of families with a common ancestor"
+     },
+     {
+      "word": "LACE",
+      "clue": "A delicate fabric with open patterns; a shoestring"
+     },
+     {
+      "word": "CABLE",
+      "clue": "A thick wire or rope; an insulated wire carrying electricity"
+     },
+     {
+      "word": "CANAL",
+      "clue": "A man-made waterway for boats"
+     },
+     {
+      "word": "CLEAN",
+      "clue": "Free from dirt"
+     },
+     {
+      "word": "DANCE",
+      "clue": "To move rhythmically to music"
+     },
+     {
+      "word": "LACED",
+      "clue": "Tied with strings; with something secretly added"
+     },
+     {
+      "word": "LANCE",
+      "clue": "A long spear used by knights on horseback"
+     },
+     {
+      "word": "CALLED",
+      "clue": "Named; telephoned"
+     },
+     {
+      "word": "CANCEL",
+      "clue": "To call off something planned"
+     },
+     {
+      "word": "CANDLE",
+      "clue": "A wax stick with a wick that gives light when lit"
+     },
+     {
+      "word": "CANNED",
+      "clue": "Preserved in a sealed tin"
+     },
+     {
+      "word": "DANCED",
+      "clue": "Moved rhythmically to music"
+     },
+     {
+      "word": "DECADE",
+      "clue": "A period of ten years"
+     },
+     {
+      "word": "BALANCE",
+      "clue": "A steady, even position; the amount left in an account"
+     },
+     {
+      "word": "CLEANED",
+      "clue": "Made free of dirt"
+     },
+     {
+      "word": "BALANCED",
+      "clue": "Evenly weighted; fair and even-handed"
+     },
+     {
+      "word": "CANCELLED",
+      "clue": "Called off"
+     }
+    ],
+    "allLetterTargets": [
+     "BALANCED"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-g3",
+   "title": "Gentle garden 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "C",
+     "F",
+     "O",
+     "R",
+     "T",
+     "Y"
+    ],
+    "required": "R",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "AFAR",
+      "clue": "At or from a great distance"
+     },
+     {
+      "word": "CART",
+      "clue": "A small wheeled vehicle pulled by a horse or pushed by hand"
+     },
+     {
+      "word": "FORT",
+      "clue": "A strong building defended by soldiers"
+     },
+     {
+      "word": "FRAY",
+      "clue": "To wear away into loose threads; a fight"
+     },
+     {
+      "word": "RAFT",
+      "clue": "A flat floating platform of logs or planks"
+     },
+     {
+      "word": "ROAR",
+      "clue": "The deep loud cry of a lion"
+     },
+     {
+      "word": "ROOF",
+      "clue": "The covering on top of a building"
+     },
+     {
+      "word": "ROOT",
+      "clue": "The part of a plant that grows underground"
+     },
+     {
+      "word": "TART",
+      "clue": "A pastry case with a sweet filling; sour tasting"
+     },
+     {
+      "word": "TRAY",
+      "clue": "A flat board for carrying cups and plates"
+     },
+     {
+      "word": "TROT",
+      "clue": "A horse's pace between walking and cantering"
+     },
+     {
+      "word": "ACTOR",
+      "clue": "A person who performs in plays or films"
+     },
+     {
+      "word": "ARRAY",
+      "clue": "An impressive display or range"
+     },
+     {
+      "word": "CARRY",
+      "clue": "To hold and take from place to place"
+     },
+     {
+      "word": "CRAFT",
+      "clue": "A skill in making things by hand; a boat"
+     },
+     {
+      "word": "FORAY",
+      "clue": "A short trip into unfamiliar territory; a raid"
+     },
+     {
+      "word": "FORTY",
+      "clue": "Four times ten"
+     },
+     {
+      "word": "TRACT",
+      "clue": "A large area of land; a short pamphlet"
+     },
+     {
+      "word": "CARROT",
+      "clue": "An orange root vegetable"
+     },
+     {
+      "word": "CRAFTY",
+      "clue": "Clever at deceiving people; cunning"
+     },
+     {
+      "word": "FACTOR",
+      "clue": "One of the things that contributes to a result"
+     },
+     {
+      "word": "ORATOR",
+      "clue": "A skilled public speaker"
+     },
+     {
+      "word": "ROTARY",
+      "clue": "Turning around an axis, like a wheel"
+     },
+     {
+      "word": "ATTRACT",
+      "clue": "To draw towards; to make interested"
+     },
+     {
+      "word": "FACTORY",
+      "clue": "A building where goods are manufactured"
+     },
+     {
+      "word": "TRACTOR",
+      "clue": "A powerful farm vehicle for pulling machinery"
+     },
+     {
+      "word": "CATARACT",
+      "clue": "A clouding of the lens of the eye; a large waterfall"
+     }
+    ],
+    "allLetterTargets": [
+     "FACTORY"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-g4",
+   "title": "Gentle garden 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "F",
+     "I",
+     "N",
+     "O",
+     "T",
+     "U"
+    ],
+    "required": "N",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "AUNT",
+      "clue": "A sister of your mother or father"
+     },
+     {
+      "word": "FONT",
+      "clue": "A style of printed letters; a basin used for baptism"
+     },
+     {
+      "word": "INTO",
+      "clue": "To the inside of"
+     },
+     {
+      "word": "NOON",
+      "clue": "Twelve o'clock in the middle of the day"
+     },
+     {
+      "word": "NOUN",
+      "clue": "A word naming a person, place or thing"
+     },
+     {
+      "word": "ONTO",
+      "clue": "Moving to a position on top of"
+     },
+     {
+      "word": "TINT",
+      "clue": "A shade or slight colouring"
+     },
+     {
+      "word": "TUNA",
+      "clue": "A large sea fish, often sold in tins"
+     },
+     {
+      "word": "UNIT",
+      "clue": "A single thing; a standard measure"
+     },
+     {
+      "word": "FAINT",
+      "clue": "Hard to see or hear; to pass out briefly"
+     },
+     {
+      "word": "FAUNA",
+      "clue": "The animals of a particular region"
+     },
+     {
+      "word": "ONION",
+      "clue": "A strong-smelling bulb vegetable that can make your eyes water"
+     },
+     {
+      "word": "TAUNT",
+      "clue": "A remark meant to mock or provoke"
+     },
+     {
+      "word": "UNFIT",
+      "clue": "Not in good physical shape; unsuitable"
+     },
+     {
+      "word": "UNION",
+      "clue": "A joining together; an organisation of workers"
+     },
+     {
+      "word": "ATTAIN",
+      "clue": "To achieve or reach"
+     },
+     {
+      "word": "INFANT",
+      "clue": "A very young child or baby"
+     },
+     {
+      "word": "NATION",
+      "clue": "A country and its people"
+     },
+     {
+      "word": "NOTION",
+      "clue": "An idea or belief"
+     },
+     {
+      "word": "TUITION",
+      "clue": "Teaching, especially of one pupil or a small group"
+     },
+     {
+      "word": "FOUNTAIN",
+      "clue": "A jet of water sent into the air, often in a park"
+     },
+     {
+      "word": "NOTATION",
+      "clue": "A system of written symbols, as used in music"
+     },
+     {
+      "word": "INTUITION",
+      "clue": "Knowing something by instinct rather than reasoning"
+     },
+     {
+      "word": "ANNOTATION",
+      "clue": "A note added to a text to explain it"
+     },
+     {
+      "word": "INITIATION",
+      "clue": "Formal admission into a group"
+     },
+     {
+      "word": "INFATUATION",
+      "clue": "An intense but short-lived passion for someone"
+     }
+    ],
+    "allLetterTargets": [
+     "FOUNTAIN",
+     "INFATUATION"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-s1",
+   "title": "Standard garden 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "C",
+     "E",
+     "N",
+     "O",
+     "R",
+     "U",
+     "V"
+    ],
+    "required": "O",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "CONE",
+      "clue": "A shape with a round base and a point; the fruit of a pine tree"
+     },
+     {
+      "word": "CORE",
+      "clue": "The central part; the middle of an apple"
+     },
+     {
+      "word": "CORN",
+      "clue": "A cereal crop; maize"
+     },
+     {
+      "word": "COVE",
+      "clue": "A small sheltered bay"
+     },
+     {
+      "word": "NEON",
+      "clue": "A gas used in glowing signs"
+     },
+     {
+      "word": "NONE",
+      "clue": "Not any"
+     },
+     {
+      "word": "NOON",
+      "clue": "Twelve o'clock in the middle of the day"
+     },
+     {
+      "word": "NOUN",
+      "clue": "A word naming a person, place or thing"
+     },
+     {
+      "word": "ONCE",
+      "clue": "One time only"
+     },
+     {
+      "word": "OVEN",
+      "clue": "An enclosed compartment for baking or roasting"
+     },
+     {
+      "word": "OVER",
+      "clue": "Above; finished"
+     },
+     {
+      "word": "COVER",
+      "clue": "To place something on top to protect or hide; a lid"
+     },
+     {
+      "word": "ERROR",
+      "clue": "A mistake"
+     },
+     {
+      "word": "OCCUR",
+      "clue": "To happen"
+     },
+     {
+      "word": "OUNCE",
+      "clue": "A unit of weight of about 28 grams"
+     },
+     {
+      "word": "COCOON",
+      "clue": "A silky case spun by a caterpillar"
+     },
+     {
+      "word": "CONCUR",
+      "clue": "To agree"
+     },
+     {
+      "word": "CORNER",
+      "clue": "The place where two sides or roads meet"
+     },
+     {
+      "word": "ENCORE",
+      "clue": "An extra performance demanded by an audience"
+     },
+     {
+      "word": "CONCERN",
+      "clue": "Worry; a matter of interest"
+     },
+     {
+      "word": "CONVENE",
+      "clue": "To call together for a meeting"
+     },
+     {
+      "word": "CORONER",
+      "clue": "An official who investigates sudden deaths"
+     },
+     {
+      "word": "OVERRUN",
+      "clue": "To go on longer than planned; to spread over"
+     },
+     {
+      "word": "RECOVER",
+      "clue": "To get better after illness; to get back"
+     },
+     {
+      "word": "UNCOVER",
+      "clue": "To remove a covering from; to discover"
+     },
+     {
+      "word": "RENOUNCE",
+      "clue": "To give up formally"
+     },
+     {
+      "word": "OCCURRENCE",
+      "clue": "An event or incident"
+     }
+    ],
+    "allLetterTargets": [
+     "UNCOVER"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-s2",
+   "title": "Standard garden 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "C",
+     "H",
+     "I",
+     "R",
+     "T",
+     "U"
+    ],
+    "required": "A",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "ARCH",
+      "clue": "A curved structure spanning an opening"
+     },
+     {
+      "word": "ARIA",
+      "clue": "A solo song in an opera"
+     },
+     {
+      "word": "AURA",
+      "clue": "A distinctive atmosphere surrounding a person or place"
+     },
+     {
+      "word": "CART",
+      "clue": "A small wheeled vehicle pulled by a horse or pushed by hand"
+     },
+     {
+      "word": "CHAT",
+      "clue": "An informal conversation"
+     },
+     {
+      "word": "HAIR",
+      "clue": "The strands growing on your head"
+     },
+     {
+      "word": "TACT",
+      "clue": "Skill in handling people without causing offence"
+     },
+     {
+      "word": "TART",
+      "clue": "A pastry case with a sweet filling; sour tasting"
+     },
+     {
+      "word": "TAUT",
+      "clue": "Pulled tight"
+     },
+     {
+      "word": "THAT",
+      "clue": "The one over there"
+     },
+     {
+      "word": "ATTIC",
+      "clue": "A room just below the roof"
+     },
+     {
+      "word": "CATCH",
+      "clue": "To seize something moving through the air"
+     },
+     {
+      "word": "CHAIR",
+      "clue": "A seat with a back for one person"
+     },
+     {
+      "word": "CHART",
+      "clue": "A diagram showing information; a map for sailors"
+     },
+     {
+      "word": "HATCH",
+      "clue": "To break out of an egg; a small door"
+     },
+     {
+      "word": "TACIT",
+      "clue": "Understood without being said"
+     },
+     {
+      "word": "TIARA",
+      "clue": "A jewelled headband worn on formal occasions"
+     },
+     {
+      "word": "TRACT",
+      "clue": "A large area of land; a short pamphlet"
+     },
+     {
+      "word": "TRAIT",
+      "clue": "A distinguishing quality or characteristic"
+     },
+     {
+      "word": "ATTACH",
+      "clue": "To fasten or join"
+     },
+     {
+      "word": "TACTIC",
+      "clue": "A planned action to achieve something"
+     },
+     {
+      "word": "THATCH",
+      "clue": "A roof covering of straw or reeds"
+     },
+     {
+      "word": "ARCHAIC",
+      "clue": "Very old or old-fashioned"
+     },
+     {
+      "word": "ATTRACT",
+      "clue": "To draw towards; to make interested"
+     },
+     {
+      "word": "HAIRCUT",
+      "clue": "A trim at the barber's or hairdresser's"
+     },
+     {
+      "word": "CATARACT",
+      "clue": "A clouding of the lens of the eye; a large waterfall"
+     }
+    ],
+    "allLetterTargets": [
+     "HAIRCUT"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-s3",
+   "title": "Standard garden 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "B",
+     "E",
+     "G",
+     "L",
+     "M",
+     "R",
+     "U"
+    ],
+    "required": "B",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "BEER",
+      "clue": "An alcoholic drink brewed from malt and hops"
+     },
+     {
+      "word": "BELL",
+      "clue": "A hollow metal object that rings when struck"
+     },
+     {
+      "word": "BLUE",
+      "clue": "The colour of a clear sky"
+     },
+     {
+      "word": "BLUR",
+      "clue": "Something that cannot be seen clearly"
+     },
+     {
+      "word": "BULB",
+      "clue": "A glass globe that gives electric light; the root of a daffodil"
+     },
+     {
+      "word": "BULL",
+      "clue": "An adult male of the cattle family"
+     },
+     {
+      "word": "GRUB",
+      "clue": "A larva; an informal word for food"
+     },
+     {
+      "word": "BLURB",
+      "clue": "A short description on the back of a book"
+     },
+     {
+      "word": "BUGLE",
+      "clue": "A brass instrument like a small trumpet without valves"
+     },
+     {
+      "word": "BULGE",
+      "clue": "A rounded swelling"
+     },
+     {
+      "word": "EMBER",
+      "clue": "A small glowing piece of coal or wood in a dying fire"
+     },
+     {
+      "word": "REBEL",
+      "clue": "A person who rises against authority"
+     },
+     {
+      "word": "BUBBLE",
+      "clue": "A thin sphere of liquid filled with air"
+     },
+     {
+      "word": "BURGLE",
+      "clue": "To break into a building and steal"
+     },
+     {
+      "word": "EMBLEM",
+      "clue": "A symbol or badge representing something"
+     },
+     {
+      "word": "LUMBER",
+      "clue": "To move heavily and awkwardly; timber sawn into planks"
+     },
+     {
+      "word": "MEMBER",
+      "clue": "A person who belongs to a group"
+     },
+     {
+      "word": "MUMBLE",
+      "clue": "To speak unclearly"
+     },
+     {
+      "word": "RUBBER",
+      "clue": "An elastic material; an eraser"
+     },
+     {
+      "word": "RUBBLE",
+      "clue": "Broken pieces of stone and brick"
+     },
+     {
+      "word": "RUMBLE",
+      "clue": "A deep continuous rolling sound"
+     },
+     {
+      "word": "BLUBBER",
+      "clue": "The fat of whales and seals"
+     },
+     {
+      "word": "GRUMBLE",
+      "clue": "To complain in a bad-tempered way"
+     },
+     {
+      "word": "BLUEBELL",
+      "clue": "A woodland plant with blue, bell-shaped flowers"
+     },
+     {
+      "word": "REMEMBER",
+      "clue": "To bring back to mind"
+     },
+     {
+      "word": "BUMBLEBEE",
+      "clue": "A large hairy bee"
+     }
+    ],
+    "allLetterTargets": [
+     "GRUMBLE"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-s4",
+   "title": "Standard garden 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "D",
+     "E",
+     "G",
+     "H",
+     "L",
+     "U"
+    ],
+    "required": "U",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "DUAL",
+      "clue": "Having two parts"
+     },
+     {
+      "word": "DUEL",
+      "clue": "A formal fight between two people"
+     },
+     {
+      "word": "DULL",
+      "clue": "Boring; not bright"
+     },
+     {
+      "word": "GLUE",
+      "clue": "A sticky substance for joining things"
+     },
+     {
+      "word": "GULL",
+      "clue": "A common seabird"
+     },
+     {
+      "word": "HAUL",
+      "clue": "To pull with effort; a quantity caught or taken"
+     },
+     {
+      "word": "HUGE",
+      "clue": "Very large"
+     },
+     {
+      "word": "HULL",
+      "clue": "The main body of a ship"
+     },
+     {
+      "word": "LULL",
+      "clue": "A temporary quiet period"
+     },
+     {
+      "word": "ELUDE",
+      "clue": "To escape from or avoid"
+     },
+     {
+      "word": "GAUGE",
+      "clue": "An instrument for measuring; to estimate"
+     },
+     {
+      "word": "GLUED",
+      "clue": "Stuck with adhesive"
+     },
+     {
+      "word": "LAUGH",
+      "clue": "To make sounds of amusement"
+     },
+     {
+      "word": "ALLUDE",
+      "clue": "To refer to indirectly"
+     },
+     {
+      "word": "DELUDE",
+      "clue": "To mislead or deceive"
+     },
+     {
+      "word": "DELUGE",
+      "clue": "A heavy flood or downpour"
+     },
+     {
+      "word": "DULLED",
+      "clue": "Made less sharp or bright"
+     },
+     {
+      "word": "HAULED",
+      "clue": "Pulled with effort"
+     },
+     {
+      "word": "HUDDLE",
+      "clue": "To crowd together closely"
+     },
+     {
+      "word": "HUGGED",
+      "clue": "Held tightly in the arms"
+     },
+     {
+      "word": "LEAGUE",
+      "clue": "A group of teams that play each other"
+     },
+     {
+      "word": "ALLUDED",
+      "clue": "Referred to indirectly"
+     },
+     {
+      "word": "HUDDLED",
+      "clue": "Crowded together closely"
+     },
+     {
+      "word": "LAUGHED",
+      "clue": "Made sounds of amusement"
+     },
+     {
+      "word": "LUGGAGE",
+      "clue": "Suitcases and bags for travelling"
+     },
+     {
+      "word": "DELUGED",
+      "clue": "Flooded; overwhelmed"
+     }
+    ],
+    "allLetterTargets": [
+     "LAUGHED"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-e1",
+   "title": "Expert garden 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "C",
+     "I",
+     "L",
+     "M",
+     "T",
+     "Y"
+    ],
+    "required": "T",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "CITY",
+      "clue": "A large town"
+     },
+     {
+      "word": "LILT",
+      "clue": "A pleasant rise and fall in the voice"
+     },
+     {
+      "word": "MALT",
+      "clue": "Grain soaked and dried for brewing"
+     },
+     {
+      "word": "MITT",
+      "clue": "A thick padded glove"
+     },
+     {
+      "word": "TACT",
+      "clue": "Skill in handling people without causing offence"
+     },
+     {
+      "word": "TAIL",
+      "clue": "The part at the end of an animal's back"
+     },
+     {
+      "word": "TALC",
+      "clue": "A soft powder used on the skin"
+     },
+     {
+      "word": "TALL",
+      "clue": "Of great height"
+     },
+     {
+      "word": "TILL",
+      "clue": "A cash register; to plough land"
+     },
+     {
+      "word": "TILT",
+      "clue": "To slope or lean"
+     },
+     {
+      "word": "ATTIC",
+      "clue": "A room just below the roof"
+     },
+     {
+      "word": "LIMIT",
+      "clue": "A point beyond which something cannot go"
+     },
+     {
+      "word": "TACIT",
+      "clue": "Understood without being said"
+     },
+     {
+      "word": "TALLY",
+      "clue": "A running count"
+     },
+     {
+      "word": "ITALIC",
+      "clue": "Sloping type used for emphasis"
+     },
+     {
+      "word": "TACTIC",
+      "clue": "A planned action to achieve something"
+     },
+     {
+      "word": "CATCALL",
+      "clue": "A shrill whistle or shout of disapproval"
+     },
+     {
+      "word": "ILLICIT",
+      "clue": "Forbidden by law or custom"
+     },
+     {
+      "word": "MILITIA",
+      "clue": "A military force of civilians"
+     },
+     {
+      "word": "TACITLY",
+      "clue": "In an unspoken way"
+     },
+     {
+      "word": "CALAMITY",
+      "clue": "A disaster"
+     },
+     {
+      "word": "TACTICAL",
+      "clue": "Planned to achieve a particular aim"
+     },
+     {
+      "word": "CLIMACTIC",
+      "clue": "Forming the most exciting point of a story"
+     }
+    ],
+    "allLetterTargets": [
+     "CALAMITY"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-e2",
+   "title": "Expert garden 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "E",
+     "G",
+     "H",
+     "O",
+     "R",
+     "U"
+    ],
+    "required": "G",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "GEAR",
+      "clue": "Equipment; a toothed wheel in a machine"
+     },
+     {
+      "word": "GORE",
+      "clue": "Blood from a wound; to pierce with a horn"
+     },
+     {
+      "word": "GURU",
+      "clue": "A spiritual teacher; an expert adviser"
+     },
+     {
+      "word": "HUGE",
+      "clue": "Very large"
+     },
+     {
+      "word": "OGRE",
+      "clue": "A cruel giant in fairy tales"
+     },
+     {
+      "word": "RAGE",
+      "clue": "Violent anger"
+     },
+     {
+      "word": "URGE",
+      "clue": "A strong desire; to encourage strongly"
+     },
+     {
+      "word": "AGREE",
+      "clue": "To have the same opinion"
+     },
+     {
+      "word": "ARGUE",
+      "clue": "To disagree in words"
+     },
+     {
+      "word": "EAGER",
+      "clue": "Keen and enthusiastic"
+     },
+     {
+      "word": "GAUGE",
+      "clue": "An instrument for measuring; to estimate"
+     },
+     {
+      "word": "GORGE",
+      "clue": "A narrow valley between cliffs; to eat greedily"
+     },
+     {
+      "word": "GOUGE",
+      "clue": "To scoop out with a sharp tool"
+     },
+     {
+      "word": "ROGUE",
+      "clue": "A dishonest but often likeable person"
+     },
+     {
+      "word": "ROUGE",
+      "clue": "Red powder for colouring the cheeks"
+     },
+     {
+      "word": "ROUGH",
+      "clue": "Not smooth"
+     },
+     {
+      "word": "GARAGE",
+      "clue": "A building for keeping a car"
+     },
+     {
+      "word": "ROUGHER",
+      "clue": "Less smooth"
+     },
+     {
+      "word": "ROUGHAGE",
+      "clue": "Fibre in food that aids digestion"
+     }
+    ],
+    "allLetterTargets": [
+     "ROUGHAGE"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-e3",
+   "title": "Expert garden 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "C",
+     "D",
+     "I",
+     "M",
+     "N",
+     "O"
+    ],
+    "required": "N",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "COIN",
+      "clue": "A small flat piece of metal money"
+     },
+     {
+      "word": "ICON",
+      "clue": "A small picture on a screen; a revered figure"
+     },
+     {
+      "word": "MAIN",
+      "clue": "Most important"
+     },
+     {
+      "word": "MIND",
+      "clue": "The part of a person that thinks; to object"
+     },
+     {
+      "word": "MOAN",
+      "clue": "A low sound of pain; to complain"
+     },
+     {
+      "word": "MOON",
+      "clue": "The natural satellite of the Earth"
+     },
+     {
+      "word": "NOON",
+      "clue": "Twelve o'clock in the middle of the day"
+     },
+     {
+      "word": "CANON",
+      "clue": "A general rule; a body of accepted works"
+     },
+     {
+      "word": "NOMAD",
+      "clue": "A person with no fixed home who moves from place to place"
+     },
+     {
+      "word": "ONION",
+      "clue": "A strong-smelling bulb vegetable that can make your eyes water"
+     },
+     {
+      "word": "CANDID",
+      "clue": "Frank and honest"
+     },
+     {
+      "word": "CANNON",
+      "clue": "A large heavy gun on wheels"
+     },
+     {
+      "word": "COCOON",
+      "clue": "A silky case spun by a caterpillar"
+     },
+     {
+      "word": "COMMON",
+      "clue": "Occurring often; shared"
+     },
+     {
+      "word": "DOMAIN",
+      "clue": "An area of territory or knowledge"
+     },
+     {
+      "word": "DOMINO",
+      "clue": "A small tile marked with spots, used in a game"
+     },
+     {
+      "word": "MINION",
+      "clue": "A servile follower"
+     },
+     {
+      "word": "AMMONIA",
+      "clue": "A strong-smelling gas used in cleaning products"
+     },
+     {
+      "word": "COMMAND",
+      "clue": "An order; to be in charge of"
+     },
+     {
+      "word": "DIAMOND",
+      "clue": "A precious stone of pure carbon"
+     },
+     {
+      "word": "NOMADIC",
+      "clue": "Wandering, with no settled home"
+     },
+     {
+      "word": "CINNAMON",
+      "clue": "A spice made from the bark of a tree"
+     },
+     {
+      "word": "COMMANDO",
+      "clue": "A soldier trained for raids"
+     },
+     {
+      "word": "DOMINION",
+      "clue": "Sovereignty or control"
+     }
+    ],
+    "allLetterTargets": [
+     "NOMADIC"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  },
+  {
+   "id": "ls-e4",
+   "title": "Expert garden 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "letters": [
+     "A",
+     "I",
+     "L",
+     "M",
+     "O",
+     "P",
+     "T"
+    ],
+    "required": "P",
+    "minimumLength": 4,
+    "targets": [
+     {
+      "word": "LAMP",
+      "clue": "A device that gives light"
+     },
+     {
+      "word": "LIMP",
+      "clue": "To walk unevenly; not stiff"
+     },
+     {
+      "word": "LOOP",
+      "clue": "A shape made by a curve crossing itself"
+     },
+     {
+      "word": "OPAL",
+      "clue": "A milky gemstone with shifting colours"
+     },
+     {
+      "word": "PAIL",
+      "clue": "A bucket"
+     },
+     {
+      "word": "PALM",
+      "clue": "The inner surface of the hand; a tropical tree"
+     },
+     {
+      "word": "PILL",
+      "clue": "A small tablet of medicine"
+     },
+     {
+      "word": "PLOT",
+      "clue": "The storyline of a book or film; a secret plan"
+     },
+     {
+      "word": "POLL",
+      "clue": "A vote or survey"
+     },
+     {
+      "word": "POLO",
+      "clue": "A game played on horseback with mallets"
+     },
+     {
+      "word": "POMP",
+      "clue": "Splendid ceremonial display"
+     },
+     {
+      "word": "POOL",
+      "clue": "A small area of still water; a swimming bath"
+     },
+     {
+      "word": "APPAL",
+      "clue": "To shock deeply"
+     },
+     {
+      "word": "PATIO",
+      "clue": "A paved area next to a house"
+     },
+     {
+      "word": "PILOT",
+      "clue": "A person who flies an aircraft"
+     },
+     {
+      "word": "POLIO",
+      "clue": "A viral disease that can cause paralysis"
+     },
+     {
+      "word": "POTATO",
+      "clue": "A starchy tuber eaten as a vegetable"
+     },
+     {
+      "word": "OPTIMAL",
+      "clue": "Best or most favourable"
+     },
+     {
+      "word": "LOLLIPOP",
+      "clue": "A sweet on a stick"
+     },
+     {
+      "word": "PALATIAL",
+      "clue": "Like a palace; splendid"
+     }
+    ],
+    "allLetterTargets": [
+     "OPTIMAL"
+    ],
+    "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
+   }
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+[data-game="letter-set"] .ls-garden { width: 260px; height: 240px; margin: 6px auto 8px; }
+[data-game="letter-set"] .ls-garden .tile { width: 68px; height: 68px; font-size: 1.55rem; font-weight: 700; padding: 0; }
+[data-game="letter-set"] .ls-garden .tile:not(.centre):hover { background: #f4f9ea; }
+[data-game="letter-set"] .ls-garden .centre { color: #3e2d23; border: 2px solid #c99e35; box-shadow: 0 3px 0 #b88c2a55; }
+[data-game="letter-set"] .ls-garden .centre::after {
+  content: "required"; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%);
+  font-size: .56rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: #5a4214;
+}
+[data-game="letter-set"] .ls-entry { display: flex; gap: 8px; flex-wrap: wrap; align-items: stretch; margin-top: 12px; }
+[data-game="letter-set"] .ls-entry input {
+  flex: 1 1 200px; min-width: 0; min-height: 52px; font-size: 1.35rem; letter-spacing: .14em; text-transform: uppercase; text-align: center;
+  border-radius: 14px; border: 2px solid color-mix(in srgb, var(--accent) 40%, white); background: #fff; padding: 8px 12px;
+}
+[data-game="letter-set"] .ls-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; justify-content: center; }
+[data-game="letter-set"] .ls-complete { text-align: center; background: #fffefa; border: 1px solid var(--accent); border-radius: 14px; padding: 10px 14px; margin: 10px 0 0; font-weight: 600; }
+[data-game="letter-set"] .ls-all { margin-top: 18px; background: #fffefa; border: 2px solid #c99e35; border-radius: 16px; padding: 12px 16px; }
+[data-game="letter-set"] .ls-all h2 { font-size: 1rem; margin: 0 0 6px; }
+[data-game="letter-set"] .ls-all p { margin: 0; font-size: .9rem; color: var(--muted); }
+[data-game="letter-set"] .ls-all ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+[data-game="letter-set"] .ls-all li { font-weight: 700; letter-spacing: .04em; background: #fbf1d3; border-radius: 9px; padding: 6px 10px; }
+[data-game="letter-set"] .ls-all small { font-weight: 400; color: var(--muted); }
+[data-game="letter-set"] .ls-found-wrap { margin-top: 16px; }
+[data-game="letter-set"] .ls-found-wrap summary { cursor: pointer; font-weight: 700; min-height: 44px; display: flex; align-items: center; }
+[data-game="letter-set"] .ls-found { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+[data-game="letter-set"] .ls-found li { background: #fffefa; border: 1px solid var(--accent); border-radius: 9px; padding: 6px 10px; font-size: .88rem; font-weight: 600; letter-spacing: .04em; }
+[data-game="letter-set"] .ls-found li.bonus { border-style: dashed; }
+[data-game="letter-set"] .ls-found li.all { border: 2px solid #c99e35; }
+[data-game="letter-set"] .ls-found li.assisted { background: var(--wash); font-style: italic; }
+[data-game="letter-set"] .ls-found small { font-weight: 400; color: var(--muted); margin-left: 4px; }
+[data-game="letter-set"] .ls-progress { height: 10px; border-radius: 10px; background: color-mix(in srgb, var(--accent) 15%, white); overflow: hidden; margin: 6px 0 4px; }
+[data-game="letter-set"] .ls-progress span { display: block; height: 100%; background: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { [data-game="letter-set"] .ls-progress span { transition: width .2s; } }
