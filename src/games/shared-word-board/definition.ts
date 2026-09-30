@@ -107,11 +107,12 @@ export const definition: GameDefinition = {
     example:
       "Under rules 1.0, Ann plays CAT across the centre for 3. Ben adds S after it to make CATS for 4. Ann then lays A, R and T down from the C to make CART for 4. Under rules 1.1, HOUSE with the H on a triple letter square scores 4×3 + 1 + 1 + 1 + 1 = 16.",
   },
-  availability: "coming-soon",
+  availability: "playable-preview",
   productionEnabled: false,
   releaseGates: [
     { gate: "Engine rules and tests", status: "passed", note: "Pure engine, fixture replayed exactly under 1.0, premium/blank/exchange/pass/went-out/resign, conflict and idempotency tests, seeded full-match simulations" },
     { gate: "Hidden-rack projection and turn protocol (pure functions)", status: "passed", note: "No-leak tests for racks, bag and exchanges; stale, duplicate and forged-seat handling" },
+    { gate: "Local pass-and-play browser walkthrough (setup, keyboard, taps, exchange, pass, end, refresh, 390px)", status: "passed", note: "tests/e2e/shared-word-board.spec.ts" },
     { gate: "Balance review of rules 1.1 candidate (tile distribution, premiums, match length)", status: "open", note: "Simple-bot simulations block the 9x9 board with 11 to 23 tiles still in the bag" },
     { gate: "Online backend (authentication, invitations, server-side shuffle, redacted reads)", status: "open", note: "Not built; online play is not offered" },
     { gate: "Approved two-letter-and-longer tile-game word list", status: "open" },
