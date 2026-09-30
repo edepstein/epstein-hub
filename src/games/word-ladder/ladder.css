@@ -1,0 +1,26 @@
+[data-game="word-ladder"] .wl-ladder { max-width: 380px; }
+[data-game="word-ladder"] .wl-route { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+[data-game="word-ladder"] .wl-step { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+[data-game="word-ladder"] .wl-ladder .tile { min-width: 44px; min-height: 44px; font-size: 1.35rem; font-family: Georgia, serif; font-weight: 700; position: relative; }
+[data-game="word-ladder"] .wl-ladder .tile.changed { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 4px; background: #fff3d9; }
+[data-game="word-ladder"] .wl-ladder .tile.hinted { outline: 3px dashed #a44430; outline-offset: 2px; }
+[data-game="word-ladder"] .wl-ladder .tile.hinted::after { content: "↕"; position: absolute; top: -18px; font-size: .8rem; color: #a44430; }
+[data-game="word-ladder"] .wl-step.current .rung { box-shadow: 0 5px 0 #8c4a33, 0 0 0 3px #a44430; }
+[data-game="word-ladder"] .wl-step.assisted .rung { background: #e9c0a6; }
+[data-game="word-ladder"] .wl-back-here { min-height: 44px; padding: 6px 12px; font-size: .8rem; }
+[data-game="word-ladder"] .wl-reached { text-align: center; font-weight: 700; color: #82452f; margin: 12px 0 0; }
+[data-game="word-ladder"] .wl-entry { max-width: 480px; margin: 18px auto 0; }
+[data-game="word-ladder"] .wl-entry input { flex: 1 1 140px; font-size: 1.25rem; letter-spacing: .16em; text-align: center; }
+[data-game="word-ladder"] .wl-entry input::placeholder { letter-spacing: .02em; font-size: .95rem; }
+[data-game="word-ladder"] .wl-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin-top: 10px; }
+[data-game="word-ladder"] .wl-hint-note { font-size: .88rem; color: #82452f; font-weight: 600; }
+[data-game="word-ladder"] .wl-bank { max-width: 480px; margin: 16px auto 0; background: #fffefa; border: 1px solid #e3c2ae; border-radius: 14px; padding: 10px 14px; }
+[data-game="word-ladder"] .wl-bank summary { cursor: pointer; font-weight: 650; min-height: 32px; display: flex; align-items: center; }
+[data-game="word-ladder"] .wl-bank p { font-size: .85rem; color: var(--muted); margin: 6px 0; }
+[data-game="word-ladder"] .wl-bank ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+[data-game="word-ladder"] .wl-bank-word { min-height: 44px; min-width: 44px; padding: 6px 12px; border-radius: 10px; border: 1px solid #c58867; background: #fff9ed; color: #713727; font-weight: 700; letter-spacing: .08em; }
+[data-game="word-ladder"] .wl-bank-word.used { text-decoration: line-through; opacity: .6; }
+@media (max-width: 420px) {
+  [data-game="word-ladder"] .wl-ladder .tile { min-width: 40px; font-size: 1.2rem; }
+  [data-game="word-ladder"] .ladder .rung { gap: 4px; padding: 5px; }
+}

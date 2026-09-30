@@ -126,3 +126,14 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] cw-e3: "Factory absorbing energy is a world (6)" PLANET (container, E = energy) · "Demon ale shaken up for a soft drink (8)" LEMONADE (anagram) · "Soft offer (6)" TENDER (double definition)
 - [ ] cw-e4: "Nose around insect in larder (6)" PANTRY (container PR(ANT)Y) · "Capital served in bistro menu (4)" ROME (hidden) · "Celebrate pulling lever back (5)" REVEL (reversal; only "back" is the listed indicator)
 - [ ] Help-card examples (MATE, PEAR, STUN, PIGLET, BOAT, ROW, SUN, MATCH, WEAK) are original and checked not to collide with any answer.
+
+## Word Ladder
+- [ ] 15 original practice ladders (5 per difficulty) plus 3 demo fixtures (COLD/WARM and CAT/DOG gentle, HEAD/TAIL standard). Endpoints were hand-picked by the author from everyday words; optima are BFS-proven over ESDB membership and each stored example route uses only size-35 familiar words of the same length. An editor should read every example route for oddities (e.g. SLAKE in expert 3, TRACT and TRAIT in expert 5, FRET in expert 1) and confirm endpoints are not a published puzzle's.
+- [ ] Difficulty bands (validator-enforced): gentle = 3-4 letters, 3-4 moves, optional word bank; standard = 4-5 letters, 4-6 moves; expert = 6-8 moves where the optimum exceeds the letter difference (a forced detour). Needs calibration with players.
+- [ ] Demo fixture optima re-checked against ESDB: COLD/WARM 4, HEAD/TAIL 5, CAT/DOG 3 (same as the fixtures). The fixture dictionaries are kept as regression data and shown as the demo word bank; play uses the full list.
+- [ ] Hints are computed by BFS from the current word, avoiding words already on the route; ties prefer the stored example route, then routes using only familiar words, then alphabetical. The familiar layer for 3-5 letter words ships in `src/games/word-ladder/content/familiar.json` (about 44KB, ladder chunk only) purely for this tie-break.
+- [ ] Hint 3 "Insert the next word" is confirmed by the hint dialog's separate Reveal button (the dialog states the effect first) rather than a second confirmation dialog.
+- [ ] Decision: the brief's explicit `not_started` state (start only after Play) is not implemented; the shared shell starts the round on load, as for every other game. Revealing the route ends the round with no score; an inserted hint step still counts as a move for scoring.
+- [ ] Decision: steps taken back never count against the score (moves = edges in the final route, per the brief); tried and taken-back counts are shown separately.
+- [ ] "Report an answer issue" after a rejected word is not implemented (no editorial queue exists yet).
+- [ ] Endpoints and the example route ship in the client bundle; acceptable for unranked practice only.

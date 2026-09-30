@@ -1,0 +1,510 @@
+{
+ "schemaVersion": 1,
+ "gameId": "word-ladder",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId); their finite round dictionaries and optima are kept as regression data and shown as the optional word bank. Practice rounds are original: endpoints chosen by the author, optimum proved by BFS over ESDB membership, and a route of the same length using only familiar (SCOWL size-35) words is stored as the example. Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "wl-demo-1",
+   "title": "Original demo ladder 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "ladder-001",
+   "payload": {
+    "start": "COLD",
+    "target": "WARM",
+    "optimalMoves": 4,
+    "examplePath": [
+     "COLD",
+     "CORD",
+     "CARD",
+     "WARD",
+     "WARM"
+    ],
+    "bank": [
+     "BOLD",
+     "CARD",
+     "COLD",
+     "CORD",
+     "COST",
+     "GOLD",
+     "MOST",
+     "SOLD",
+     "WARD",
+     "WARM",
+     "WORD",
+     "WORM"
+    ],
+    "explanation": "Each edge changes one letter. The endpoints differ in four positions, so no route can use fewer than four changes. Against this game's full word list the shortest route is also 4 moves.",
+    "fixtureDictionary": [
+     "COLD",
+     "CORD",
+     "CARD",
+     "WARD",
+     "WARM",
+     "WORD",
+     "WORM",
+     "SOLD",
+     "GOLD",
+     "BOLD",
+     "COST",
+     "MOST"
+    ],
+    "fixtureOptimalMoves": 4
+   }
+  },
+  {
+   "id": "wl-demo-2",
+   "title": "Original demo ladder 2",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "ladder-002",
+   "payload": {
+    "start": "HEAD",
+    "target": "TAIL",
+    "optimalMoves": 5,
+    "examplePath": [
+     "HEAD",
+     "HEAL",
+     "TEAL",
+     "TELL",
+     "TALL",
+     "TAIL"
+    ],
+    "bank": [
+     "HEAD",
+     "HEAL",
+     "HEAT",
+     "HEEL",
+     "TAIL",
+     "TALL",
+     "TEAL",
+     "TELL"
+    ],
+    "explanation": "The published small dictionary has a five-edge shortest route; production distances must be recalculated against the production dictionary. Against this game's full word list the shortest route is also 5 moves.",
+    "fixtureDictionary": [
+     "HEAD",
+     "HEAL",
+     "TEAL",
+     "TELL",
+     "TALL",
+     "TAIL",
+     "HEAT",
+     "HEEL"
+    ],
+    "fixtureOptimalMoves": 5
+   }
+  },
+  {
+   "id": "wl-demo-3",
+   "title": "Original demo ladder 3",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "ladder-003",
+   "payload": {
+    "start": "CAT",
+    "target": "DOG",
+    "optimalMoves": 3,
+    "examplePath": [
+     "CAT",
+     "COT",
+     "COG",
+     "DOG"
+    ],
+    "bank": [
+     "CAT",
+     "COG",
+     "COT",
+     "DOG",
+     "DOT",
+     "HAT",
+     "HOT",
+     "LOG",
+     "LOT"
+    ],
+    "explanation": "The endpoints differ at all three positions. The supplied three-edge route therefore meets the lower bound. Against this game's full word list the shortest route is also 3 moves.",
+    "fixtureDictionary": [
+     "CAT",
+     "COT",
+     "COG",
+     "DOG",
+     "DOT",
+     "LOG",
+     "LOT",
+     "HOT",
+     "HAT"
+    ],
+    "fixtureOptimalMoves": 3
+   }
+  },
+  {
+   "id": "wl-g1",
+   "title": "Gentle ladder 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "PIG",
+    "target": "SUN",
+    "optimalMoves": 3,
+    "examplePath": [
+     "PIG",
+     "PIN",
+     "PUN",
+     "SUN"
+    ],
+    "bank": [
+     "BIG",
+     "DIG",
+     "FIG",
+     "PIG",
+     "PIN",
+     "PUN",
+     "SIN",
+     "SUN"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g2",
+   "title": "Gentle ladder 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CUP",
+    "target": "HAT",
+    "optimalMoves": 3,
+    "examplePath": [
+     "CUP",
+     "CAP",
+     "CAT",
+     "HAT"
+    ],
+    "bank": [
+     "CAP",
+     "CAT",
+     "COP",
+     "CUP",
+     "CUT",
+     "HAT",
+     "HUT",
+     "PUP",
+     "SUP"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g3",
+   "title": "Gentle ladder 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "HOT",
+    "target": "MAP",
+    "optimalMoves": 3,
+    "examplePath": [
+     "HOT",
+     "HAT",
+     "MAT",
+     "MAP"
+    ],
+    "bank": [
+     "COT",
+     "DOT",
+     "GOT",
+     "HAT",
+     "HOP",
+     "HOT",
+     "MAP",
+     "MAT",
+     "MOP"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g4",
+   "title": "Gentle ladder 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CAKE",
+    "target": "RICH",
+    "optimalMoves": 4,
+    "examplePath": [
+     "CAKE",
+     "RAKE",
+     "RACE",
+     "RICE",
+     "RICH"
+    ],
+    "bank": [
+     "BAKE",
+     "CAKE",
+     "FAKE",
+     "LAKE",
+     "RACE",
+     "RAKE",
+     "RICE",
+     "RICH"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
+   }
+  },
+  {
+   "id": "wl-g5",
+   "title": "Gentle ladder 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FIND",
+    "target": "LOVE",
+    "optimalMoves": 4,
+    "examplePath": [
+     "FIND",
+     "FINE",
+     "FIVE",
+     "LIVE",
+     "LOVE"
+    ],
+    "bank": [
+     "BIND",
+     "FIND",
+     "FINE",
+     "FIVE",
+     "HIND",
+     "KIND",
+     "LINE",
+     "LIVE",
+     "LONE",
+     "LOVE"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
+   }
+  },
+  {
+   "id": "wl-s1",
+   "title": "Standard ladder 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SHEEP",
+    "target": "STEAM",
+    "optimalMoves": 4,
+    "examplePath": [
+     "SHEEP",
+     "STEEP",
+     "STEEL",
+     "STEAL",
+     "STEAM"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 4 moves in all."
+   }
+  },
+  {
+   "id": "wl-s2",
+   "title": "Standard ladder 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SPACE",
+    "target": "STONE",
+    "optimalMoves": 4,
+    "examplePath": [
+     "SPACE",
+     "SPARE",
+     "STARE",
+     "STORE",
+     "STONE"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 4 moves in all."
+   }
+  },
+  {
+   "id": "wl-s3",
+   "title": "Standard ladder 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "GRAPE",
+    "target": "TRUCK",
+    "optimalMoves": 4,
+    "examplePath": [
+     "GRAPE",
+     "GRACE",
+     "TRACE",
+     "TRACK",
+     "TRUCK"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
+   }
+  },
+  {
+   "id": "wl-s4",
+   "title": "Standard ladder 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BELL",
+    "target": "LAMP",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BELL",
+     "BALL",
+     "BALE",
+     "BAKE",
+     "LAKE",
+     "LAME",
+     "LAMP"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-s5",
+   "title": "Standard ladder 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BOOK",
+    "target": "FISH",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BOOK",
+     "BOOT",
+     "LOOT",
+     "LOST",
+     "LIST",
+     "FIST",
+     "FISH"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e1",
+   "title": "Expert ladder 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FIRE",
+    "target": "TREE",
+    "optimalMoves": 8,
+    "examplePath": [
+     "FIRE",
+     "FILE",
+     "FILL",
+     "FELL",
+     "FEEL",
+     "FEET",
+     "FRET",
+     "FREE",
+     "TREE"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 8 moves in all."
+   }
+  },
+  {
+   "id": "wl-e2",
+   "title": "Expert ladder 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "GATE",
+    "target": "SHOE",
+    "optimalMoves": 8,
+    "examplePath": [
+     "GATE",
+     "FATE",
+     "FARE",
+     "FORE",
+     "FORT",
+     "FOOT",
+     "SOOT",
+     "SHOT",
+     "SHOE"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 8 moves in all."
+   }
+  },
+  {
+   "id": "wl-e3",
+   "title": "Expert ladder 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BLADE",
+    "target": "SHADE",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BLADE",
+     "BLAME",
+     "FLAME",
+     "FLAKE",
+     "SLAKE",
+     "SHAKE",
+     "SHADE"
+    ],
+    "explanation": "The two words differ in only 2 positions, but no 2-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e4",
+   "title": "Expert ladder 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BLOCK",
+    "target": "DREAM",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BLOCK",
+     "CLOCK",
+     "CLOAK",
+     "CROAK",
+     "CREAK",
+     "CREAM",
+     "DREAM"
+    ],
+    "explanation": "The two words differ in only 5 positions, but no 5-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e5",
+   "title": "Expert ladder 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BRICK",
+    "target": "GRAIN",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BRICK",
+     "TRICK",
+     "TRACK",
+     "TRACT",
+     "TRAIT",
+     "TRAIN",
+     "GRAIN"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  }
+ ]
+}
