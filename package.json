@@ -14,7 +14,8 @@
     "test:game": "vitest run --dir",
     "test:e2e": "playwright test",
     "validate:content": "tsx scripts/content/validate-all.ts",
-    "build:dictionary": "bash scripts/content/build-dictionary.sh"
+    "build:dictionary": "bash scripts/content/build-dictionary.sh",
+    "status": "tsx scripts/content/status.ts"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.7",
