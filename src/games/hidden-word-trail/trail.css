@@ -1,0 +1,38 @@
+[data-game="hidden-word-trail"] .puzzle-stage { background: radial-gradient(#6e92621f 1px, transparent 1px); background-size: 16px 16px; border-radius: 20px; padding: 8px; }
+[data-game="hidden-word-trail"] .hwt-theme { margin: 0 0 6px; }
+[data-game="hidden-word-trail"] .hwt-trail-text { min-height: 2.6em; margin: 0 0 10px; font-size: 1rem; overflow-wrap: anywhere; }
+[data-game="hidden-word-trail"] .hwt-trail-text strong { font-family: Georgia, serif; font-size: 1.35rem; letter-spacing: .12em; color: var(--accent); }
+[data-game="hidden-word-trail"] .hwt-trail-cells { font-size: .8rem; color: var(--muted); }
+[data-game="hidden-word-trail"] .hwt-muted { color: var(--muted); font-size: .9rem; }
+[data-game="hidden-word-trail"] .hwt-scroll { overflow-x: auto; padding: 2px; }
+[data-game="hidden-word-trail"] .hwt-board { position: relative; width: 100%; margin: 0 auto 14px; }
+[data-game="hidden-word-trail"] .hwt-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+[data-game="hidden-word-trail"] .hwt-lines polyline { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+[data-game="hidden-word-trail"] .hwt-lines .found { stroke: #326b5466; stroke-width: 14px; }
+[data-game="hidden-word-trail"] .hwt-lines .found.assisted { stroke-dasharray: 4 8; }
+[data-game="hidden-word-trail"] .hwt-lines .current { stroke: #d9a441; stroke-width: 8px; }
+[data-game="hidden-word-trail"] .hwt-grid { position: relative; z-index: 1; display: grid; gap: 8px; height: 100%; touch-action: none; user-select: none; -webkit-user-select: none; }
+[data-game="hidden-word-trail"] .hwt-cell {
+  position: relative; display: grid; place-items: center; min-width: 44px; min-height: 44px; width: 100%; height: 100%;
+  border-radius: 50%; border: 1px solid #acc0a1; background: #fffefa; box-shadow: 0 3px 0 #292e3b16; color: var(--ink);
+  font-family: Georgia, serif; font-size: clamp(1.1rem, 4.5vw, 1.8rem); font-weight: 700; padding: 0; cursor: pointer;
+}
+[data-game="hidden-word-trail"] .hwt-cell:focus-visible { outline: 3px solid #1d3d30; outline-offset: 2px; }
+[data-game="hidden-word-trail"] .hwt-cell.selected { border-radius: 18px; background: #326b54; border-color: #326b54; color: #fff; }
+[data-game="hidden-word-trail"] .hwt-cell.found { border-radius: 12px; background: #cfe2c6; border: 2px solid #326b54; color: #1d3d30; }
+[data-game="hidden-word-trail"] .hwt-cell.found.assisted { border-style: dashed; background: #eef3e6; }
+[data-game="hidden-word-trail"] .hwt-cell.hinted:not(.selected) { border: 3px dotted #b07a18; }
+[data-game="hidden-word-trail"] .hwt-step, [data-game="hidden-word-trail"] .hwt-mark, [data-game="hidden-word-trail"] .hwt-hint {
+  position: absolute; font: 700 .62rem/1 system-ui, sans-serif; letter-spacing: 0;
+}
+[data-game="hidden-word-trail"] .hwt-step { top: 4px; right: 6px; }
+[data-game="hidden-word-trail"] .hwt-mark { bottom: 4px; right: 6px; font-size: .75rem; }
+[data-game="hidden-word-trail"] .hwt-hint { bottom: 3px; left: 50%; transform: translateX(-50%); color: #8a5a0c; text-transform: uppercase; font-size: .55rem; }
+[data-game="hidden-word-trail"] .hwt-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+[data-game="hidden-word-trail"] .hwt-token-note { text-align: center; font-size: .9rem; color: var(--accent); }
+[data-game="hidden-word-trail"] .hwt-found { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+[data-game="hidden-word-trail"] .hwt-found li { background: #fffefa; border: 1px solid var(--accent); border-radius: 9px; padding: 6px 10px; font-weight: 600; letter-spacing: .05em; }
+[data-game="hidden-word-trail"] .hwt-found li.assisted { border-style: dashed; font-style: italic; }
+[data-game="hidden-word-trail"] .hwt-found small { font-weight: 400; color: var(--muted); letter-spacing: 0; }
+[data-game="hidden-word-trail"] .hwt-bonus-list { font-size: .82rem; color: var(--muted); overflow-wrap: anywhere; }
+@media (max-width: 420px) { [data-game="hidden-word-trail"] .hwt-grid { gap: 5px; } }

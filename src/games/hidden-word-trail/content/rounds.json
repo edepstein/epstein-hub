@@ -1,0 +1,2660 @@
+{
+ "schemaVersion": 1,
+ "gameId": "hidden-word-trail",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice rounds are original: boards placed by an offline randomised generator and proved by exact-cover search (the theme words tile the whole grid; listed near-theme words are not traceable anywhere). Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "hwt-demo-1",
+   "title": "Original demo trail 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "weather-garden",
+   "payload": {
+    "grid": [
+     "TREE",
+     "LEAF",
+     "RAIN",
+     "WIND"
+    ],
+    "theme": "Things seen in a garden",
+    "answers": [
+     {
+      "word": "TREE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "LEAF",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "RAIN",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "WIND",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ]
+     }
+    ],
+    "bonusPolicy": "none",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+   }
+  },
+  {
+   "id": "hwt-demo-2",
+   "title": "Original demo trail 2",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "serpentine-garden",
+   "payload": {
+    "grid": [
+     "GRAS",
+     "ERTS",
+     "EFLO",
+     "SREW"
+    ],
+    "theme": "Growing in the garden",
+    "answers": [
+     {
+      "word": "GRASS",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "TREE",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ]
+     },
+     {
+      "word": "FLOWERS",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ]
+      ]
+     }
+    ],
+    "bonusPolicy": "none",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+   }
+  },
+  {
+   "id": "hwt-demo-3",
+   "title": "Original demo trail 3",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "cooking",
+   "payload": {
+    "grid": [
+     "BAKE",
+     "STIR",
+     "PEEL",
+     "DICE"
+    ],
+    "theme": "Actions in a kitchen",
+    "answers": [
+     {
+      "word": "BAKE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "STIR",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "PEEL",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ]
+     },
+     {
+      "word": "DICE",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ]
+     }
+    ],
+    "bonusPolicy": "none",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+   }
+  },
+  {
+   "id": "hwt-g1",
+   "title": "Gentle trail 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "EACHA",
+     "APLPN",
+     "MNPEO",
+     "ELGOM"
+    ],
+    "theme": "In the fruit bowl",
+    "answers": [
+     {
+      "word": "APPLE",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Crisp fruit that keeps the doctor away, so they say"
+     },
+     {
+      "word": "LEMON",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Sour yellow citrus fruit"
+     },
+     {
+      "word": "MANGO",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Juicy tropical fruit with a large flat stone"
+     },
+     {
+      "word": "PEACH",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Soft fruit with fuzzy skin"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g2",
+   "title": "Gentle trail 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "PRAEE",
+     "ICVBD",
+     "EASTI",
+     "WRAND"
+    ],
+    "theme": "At the seaside",
+    "answers": [
+     {
+      "word": "SAND",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "What a beach is mostly made of"
+     },
+     {
+      "word": "PIER",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Wooden walkway stretching out over the sea"
+     },
+     {
+      "word": "CRAB",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Sideways-walking shellfish"
+     },
+     {
+      "word": "WAVE",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "It breaks on the shore"
+     },
+     {
+      "word": "TIDE",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "It comes in and goes out twice a day"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g3",
+   "title": "Gentle trail 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "HACKE",
+     "IWLER",
+     "TENBG",
+     "BROWN"
+    ],
+    "theme": "Colours",
+    "answers": [
+     {
+      "word": "BLACK",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Colour of coal"
+     },
+     {
+      "word": "GREEN",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Colour of grass"
+     },
+     {
+      "word": "WHITE",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Colour of fresh snow"
+     },
+     {
+      "word": "BROWN",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Colour of chocolate"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g4",
+   "title": "Gentle trail 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "SINLT",
+     "NWIDS",
+     "OARMI",
+     "HWAIN"
+    ],
+    "theme": "The weather",
+    "answers": [
+     {
+      "word": "RAIN",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Drops falling from the clouds"
+     },
+     {
+      "word": "SNOW",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Soft white flakes in winter"
+     },
+     {
+      "word": "WIND",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Moving air that turns a windmill"
+     },
+     {
+      "word": "HAIL",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Little balls of ice falling from the sky"
+     },
+     {
+      "word": "MIST",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Thin low cloud that makes the air hazy"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g5",
+   "title": "Gentle trail 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ETBAC",
+     "AJAEO",
+     "AOSGN",
+     "TMTGS"
+    ],
+    "theme": "At the breakfast table",
+    "answers": [
+     {
+      "word": "TOAST",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "Bread browned under the grill"
+     },
+     {
+      "word": "EGGS",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Boiled, fried or scrambled"
+     },
+     {
+      "word": "JAM",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Sweet fruit spread"
+     },
+     {
+      "word": "TEA",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Hot drink, often with milk"
+     },
+     {
+      "word": "BACON",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "clue": "Cured rashers, often fried"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s1",
+   "title": "Standard trail 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ONPIRU",
+     "NCADSM",
+     "ITELLO",
+     "LEUEFB",
+     "OIVLOO"
+    ],
+    "theme": "Making music",
+    "answers": [
+     {
+      "word": "VIOLIN",
+      "path": [
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Small stringed instrument held under the chin"
+     },
+     {
+      "word": "CELLO",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Large stringed instrument played sitting down"
+     },
+     {
+      "word": "FLUTE",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Silver woodwind held sideways"
+     },
+     {
+      "word": "OBOE",
+      "path": [
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Double-reed woodwind"
+     },
+     {
+      "word": "DRUMS",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Played with sticks at the back of the band"
+     },
+     {
+      "word": "PIANO",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Instrument with black and white keys"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s2",
+   "title": "Standard trail 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "OONEKL",
+     "PFERLA",
+     "KSOLKD",
+     "FNSWTE",
+     "EIKIHT"
+    ],
+    "theme": "Kitchen kit",
+    "answers": [
+     {
+      "word": "KETTLE",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "It boils water for tea"
+     },
+     {
+      "word": "SPOON",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "For stirring or eating soup"
+     },
+     {
+      "word": "FORK",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Pronged tool for eating"
+     },
+     {
+      "word": "KNIFE",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "For cutting"
+     },
+     {
+      "word": "LADLE",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Deep spoon for serving soup"
+     },
+     {
+      "word": "WHISK",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Wire tool for beating eggs"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s3",
+   "title": "Standard trail 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "BINAEE",
+     "OPTGLN",
+     "RIGOPA",
+     "NERARW",
+     "ONEWRS"
+    ],
+    "theme": "Feathered friends",
+    "answers": [
+     {
+      "word": "ROBIN",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Red-breasted garden bird"
+     },
+     {
+      "word": "WREN",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Tiny brown bird with an upright tail"
+     },
+     {
+      "word": "SWAN",
+      "path": [
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "Graceful white bird on the river"
+     },
+     {
+      "word": "EAGLE",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Large bird of prey"
+     },
+     {
+      "word": "PARROT",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Colourful bird that can copy speech"
+     },
+     {
+      "word": "PIGEON",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Common bird of town squares"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s4",
+   "title": "Standard trail 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "HCPLEL",
+     "EMAILO",
+     "ROAWHW",
+     "RHRKAE",
+     "YCBIZL"
+    ],
+    "theme": "In the wood",
+    "answers": [
+     {
+      "word": "OAK",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Tree that grows from an acorn"
+     },
+     {
+      "word": "BIRCH",
+      "path": [
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Tree with peeling silvery bark"
+     },
+     {
+      "word": "WILLOW",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Weeping tree by the water"
+     },
+     {
+      "word": "MAPLE",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Tree whose sap makes a sweet syrup"
+     },
+     {
+      "word": "CHERRY",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Tree famous for its spring blossom"
+     },
+     {
+      "word": "HAZEL",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "clue": "Tree that gives us cobnuts"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s5",
+   "title": "Standard trail 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "POICES",
+     "DDPHRO",
+     "SAPPRO",
+     "IYAPYT",
+     "YSNILU"
+    ],
+    "theme": "From the florist",
+    "answers": [
+     {
+      "word": "DAISY",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "White-petalled flower of the lawn"
+     },
+     {
+      "word": "TULIP",
+      "path": [
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Cup-shaped spring flower grown from a bulb"
+     },
+     {
+      "word": "ROSE",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Thorny flower of romance"
+     },
+     {
+      "word": "POPPY",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Red flower of remembrance"
+     },
+     {
+      "word": "PANSY",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Flower with a face-like pattern"
+     },
+     {
+      "word": "ORCHID",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "clue": "Exotic flower often grown indoors"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e1",
+   "title": "Expert trail 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "QEKIJAK",
+     "JUENNSC",
+     "OKSGCAD",
+     "EAETADR",
+     "RHRSPSE"
+    ],
+    "theme": "Deal me in",
+    "answers": [
+     {
+      "word": "CARDS",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "What you are dealt",
+      "themeDefining": true
+     },
+     {
+      "word": "KING",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "clue": "Court card above the queen"
+     },
+     {
+      "word": "QUEEN",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Court card between king and jack"
+     },
+     {
+      "word": "JACK",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "clue": "Lowest court card, also called the knave"
+     },
+     {
+      "word": "JOKER",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Extra card with a jester on it"
+     },
+     {
+      "word": "HEARTS",
+      "path": [
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Red suit named after a symbol of love"
+     },
+     {
+      "word": "SPADES",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "clue": "Black suit shaped like a pointed leaf"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once.",
+    "themeNote": "CARDS names the theme: the other answers are all found in a pack of playing cards."
+   }
+  },
+  {
+   "id": "hwt-e2",
+   "title": "Expert trail 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "SSEWGS",
+     "OAINPN",
+     "MNTNIR",
+     "MUEMUU",
+     "SERRAT"
+    ],
+    "theme": "Round the year",
+    "answers": [
+     {
+      "word": "SEASON",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "One quarter of the year",
+      "themeDefining": true
+     },
+     {
+      "word": "SPRING",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "When lambs are born and blossom appears"
+     },
+     {
+      "word": "SUMMER",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "The warmest part of the year"
+     },
+     {
+      "word": "AUTUMN",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "clue": "When leaves turn and fall"
+     },
+     {
+      "word": "WINTER",
+      "path": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "clue": "The coldest part of the year"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once.",
+    "themeNote": "SEASON names the theme: the other four answers are the seasons of the year."
+   }
+  },
+  {
+   "id": "hwt-e3",
+   "title": "Expert trail 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "DNPMLIB",
+     "TAALHMA",
+     "HSUNTUN",
+     "IECKRNF",
+     "RWLKEGI"
+    ],
+    "theme": "Give us a hand",
+    "answers": [
+     {
+      "word": "HAND",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "What you wave with",
+      "themeDefining": true
+     },
+     {
+      "word": "FINGER",
+      "path": [
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "One of five on each hand, or four plus a thumb"
+     },
+     {
+      "word": "THUMB",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "clue": "The short, thick digit"
+     },
+     {
+      "word": "PALM",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "The inside of the hand"
+     },
+     {
+      "word": "WRIST",
+      "path": [
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Joint where a watch is worn"
+     },
+     {
+      "word": "KNUCKLE",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Bony joint you might crack"
+     },
+     {
+      "word": "NAIL",
+      "path": [
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Hard covering at a fingertip"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once.",
+    "themeNote": "HAND names the theme: every other answer is a part of the hand."
+   }
+  },
+  {
+   "id": "hwt-e4",
+   "title": "Expert trail 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "KNGIUEN",
+     "IPOBSQE",
+     "KOKHIWN",
+     "OHNSPEA",
+     "RTGIECP"
+    ],
+    "theme": "Sixty-four squares",
+    "answers": [
+     {
+      "word": "PIECES",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "What chess players move",
+      "themeDefining": true
+     },
+     {
+      "word": "KING",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "The piece that must be protected at all costs"
+     },
+     {
+      "word": "QUEEN",
+      "path": [
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "clue": "The most powerful piece"
+     },
+     {
+      "word": "ROOK",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Piece that moves in straight lines, also called a castle"
+     },
+     {
+      "word": "BISHOP",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "clue": "Piece that moves diagonally"
+     },
+     {
+      "word": "KNIGHT",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Piece that jumps in an L shape"
+     },
+     {
+      "word": "PAWN",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        6
+       ]
+      ],
+      "clue": "The humblest piece, of which each side has eight"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once.",
+    "themeNote": "PIECES names the theme: the other answers are the chess pieces that move on the sixty-four squares."
+   }
+  }
+ ]
+}
