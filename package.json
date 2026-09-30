@@ -13,7 +13,7 @@
     "test:game": "vitest run --dir",
     "test:e2e": "playwright test",
     "validate:content": "tsx scripts/content/validate-all.ts",
-    "build:dictionary": "tsx scripts/content/build-dictionary.ts"
+    "build:dictionary": "bash scripts/content/build-dictionary.sh"
   },
   "dependencies": {
     "lucide-react": "1.49.0",

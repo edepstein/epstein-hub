@@ -1,0 +1,13 @@
+{
+  "source": "English Speller Database (ESDB, formerly SCOWL)",
+  "repository": "https://github.com/en-wl/wordlist",
+  "commit": "1e5b7d3a72f47a71da5d28686c1dd4b397178485",
+  "command": "./scowl word-list 35 B,Z 5 --wo-poses=abbr --categories=",
+  "postFilter": "Same as gb-esdb-v1: lowercase ASCII [a-z]{2,24}, upper-cased, deduplicated, sorted.",
+  "purpose": "Familiarity proxy for AUTHORING answer pools (SCOWL size 35 = common words). Not a gameplay membership list and not editorial approval.",
+  "wordCount": 39675,
+  "sha256": "0b3ba34de1dda3d83b33c49e75fb4db678eb0ac65888368cbc9e56444a1e37ff",
+  "builtAt": "2026-09-30",
+  "verification": "The same build reproduced the pack's size-60 list with the pinned sha256 daf3a790...a291ce.",
+  "noticeFile": "public/dictionaries/ESDB-Copyright.txt"
+}

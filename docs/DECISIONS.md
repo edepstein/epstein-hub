@@ -45,3 +45,10 @@ Match games (Hexabble, Shared Word Board) use `/play/<id>/match`.
 Every game keeps `productionEnabled: false`: human editorial review, calibrated banks, 30 scheduled
 editions, approved membership and observed pilots are not achievable by the build agent.
 `availability: "playable-preview"` marks games whose complete engine-driven loop is implemented and tested.
+
+## D8 Familiarity layer for authoring
+ESDB was rebuilt at the pinned commit (reproducing the pack's sha256 exactly) and a SCOWL size-35
+export (39,675 words) saved to `data/dictionaries/gb-esdb-v1-size35.txt` with a manifest. It is a
+familiarity proxy for authors and validators when choosing target/answer words (e.g. "every target
+must be in size-35"). It is not gameplay membership and not editorial approval. Node helper:
+`loadFamiliarSync()` in `src/lib/dictionary/node.ts`.
