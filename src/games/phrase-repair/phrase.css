@@ -1,0 +1,30 @@
+[data-game="phrase-repair"] .playbox { background-image: repeating-linear-gradient(transparent 0 31px, #9d693b0a 31px 32px); }
+[data-game="phrase-repair"] .pr-clue { padding: 16px 18px; border-radius: 12px; background: #fffefa; border: 1px solid #e3d2bf; margin-bottom: 16px; line-height: 1.6; }
+[data-game="phrase-repair"] .pr-clue strong { display: block; font-size: 1.12rem; font-weight: 600; }
+[data-game="phrase-repair"] .pr-clue small { color: var(--muted); }
+[data-game="phrase-repair"] .pr-strip { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+[data-game="phrase-repair"] .pr-token {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 104px;
+  padding: 12px 8px 8px; border-radius: 4px; border: 1px solid #cbb298; background: #fffefa; box-shadow: 0 4px 0 #d7bda5;
+}
+[data-game="phrase-repair"] .pr-token.marked { border: 2px solid var(--accent); }
+[data-game="phrase-repair"] .pr-pos { position: absolute; top: 3px; left: 6px; font-size: .68rem; color: var(--muted); font-weight: 700; }
+[data-game="phrase-repair"] .pr-word { font-size: 1.15rem; font-weight: 750; letter-spacing: .08em; color: #4a2f1f; padding: 2px 6px; }
+[data-game="phrase-repair"] .pr-mark { font-size: .72rem; font-style: italic; color: var(--accent); }
+[data-game="phrase-repair"] .pr-moves { display: flex; gap: 6px; }
+[data-game="phrase-repair"] .pr-move { min-width: 44px; min-height: 44px; border-radius: 50%; border: 1px solid #cbb298; background: #fff; font-size: 1.15rem; color: #4a2f1f; }
+[data-game="phrase-repair"] .pr-move:disabled { opacity: .3; cursor: not-allowed; }
+[data-game="phrase-repair"] .pr-move:not(:disabled):hover { border-color: var(--accent); }
+[data-game="phrase-repair"] .pr-reading { margin: 16px 0 0; font-family: Georgia, serif; font-size: 1.15rem; color: #5b4636; }
+[data-game="phrase-repair"] .pr-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; align-items: center; }
+[data-game="phrase-repair"] .pr-note { font-size: .82rem; color: var(--muted); margin: 10px 0 0; }
+@media (max-width: 700px) {
+  /* Vertical list on phones: adjacency is list order, not screen proximity. */
+  [data-game="phrase-repair"] .pr-strip { flex-direction: column; flex-wrap: nowrap; }
+  [data-game="phrase-repair"] .pr-token { flex-direction: row; justify-content: space-between; min-width: 0; padding: 8px 8px 8px 28px; }
+  [data-game="phrase-repair"] .pr-pos { top: 50%; transform: translateY(-50%); left: 9px; }
+  [data-game="phrase-repair"] .pr-word { flex: 1; text-align: left; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-game="phrase-repair"] .pr-token { transition: box-shadow .15s, border-color .15s; }
+}

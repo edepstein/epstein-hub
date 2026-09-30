@@ -1,0 +1,939 @@
+{
+  "schemaVersion": 1,
+  "gameId": "phrase-repair",
+  "rulesVersion": "1.0",
+  "note": "Demo rounds import the pack fixtures (sourceFixtureId) with their original tile order and ids. Practice rounds are original to this build; every stored minimum is recomputed by inversion counting with order-preserving matching of repeated words and confirmed by exhaustive search. Clues are original and not yet human-reviewed.",
+  "rounds": [
+    {
+      "id": "pr-demo-1",
+      "title": "Original demo phrase 1",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "phrase-001",
+      "payload": {
+        "clue": "Regret something that cannot now be changed",
+        "enumeration": [
+          3,
+          4,
+          5,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SPILT"
+          },
+          {
+            "id": "t2",
+            "text": "OVER"
+          },
+          {
+            "id": "t3",
+            "text": "MILK"
+          },
+          {
+            "id": "t4",
+            "text": "CRY"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "CRY",
+            "OVER",
+            "SPILT",
+            "MILK"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "The target-position sequence is 2,1,3,0 and has four inversions."
+      }
+    },
+    {
+      "id": "pr-demo-2",
+      "title": "Original demo phrase 2",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "phrase-002",
+      "payload": {
+        "clue": "Consider the consequences before taking action",
+        "enumeration": [
+          4,
+          6,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "LEAP"
+          },
+          {
+            "id": "t2",
+            "text": "YOU"
+          },
+          {
+            "id": "t3",
+            "text": "BEFORE"
+          },
+          {
+            "id": "t4",
+            "text": "LOOK"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "LOOK",
+            "BEFORE",
+            "YOU",
+            "LEAP"
+          ]
+        ],
+        "minimumAdjacentSwaps": 6,
+        "explanation": "The initial order reverses all four target positions, giving six inversions."
+      }
+    },
+    {
+      "id": "pr-demo-3",
+      "title": "Original demo phrase 3",
+      "difficulty": "standard",
+      "status": "demo",
+      "sourceFixtureId": "phrase-003",
+      "payload": {
+        "clue": "A proverb saying prompt repair prevents extra work",
+        "enumeration": [
+          1,
+          6,
+          2,
+          4,
+          5,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "STITCH"
+          },
+          {
+            "id": "t2",
+            "text": "SAVES"
+          },
+          {
+            "id": "t3",
+            "text": "A"
+          },
+          {
+            "id": "t4",
+            "text": "NINE"
+          },
+          {
+            "id": "t5",
+            "text": "TIME"
+          },
+          {
+            "id": "t6",
+            "text": "IN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "STITCH",
+            "IN",
+            "TIME",
+            "SAVES",
+            "NINE"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "The target-position sequence 1,4,0,5,3,2 has seven inversions."
+      }
+    },
+    {
+      "id": "pr-g1",
+      "title": "Gentle phrase 1",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Unharmed and secure, especially after a risky journey",
+        "enumeration": [
+          4,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SOUND"
+          },
+          {
+            "id": "t2",
+            "text": "SAFE"
+          },
+          {
+            "id": "t3",
+            "text": "AND"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "SAFE",
+            "AND",
+            "SOUND"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "SAFE AND SOUND: the pairing of two words beginning with S is what makes it memorable."
+      }
+    },
+    {
+      "id": "pr-g2",
+      "title": "Gentle phrase 2",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Arriving eventually is preferable to not arriving at all",
+        "enumeration": [
+          6,
+          4,
+          4,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "NEVER"
+          },
+          {
+            "id": "t2",
+            "text": "LATE"
+          },
+          {
+            "id": "t3",
+            "text": "BETTER"
+          },
+          {
+            "id": "t4",
+            "text": "THAN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "BETTER",
+            "LATE",
+            "THAN",
+            "NEVER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "BETTER LATE THAN NEVER compares two outcomes: late is better than never."
+      }
+    },
+    {
+      "id": "pr-g3",
+      "title": "Gentle phrase 3",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Calm, with no noise or disturbance",
+        "enumeration": [
+          5,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "AND"
+          },
+          {
+            "id": "t2",
+            "text": "QUIET"
+          },
+          {
+            "id": "t3",
+            "text": "PEACE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "PEACE",
+            "AND",
+            "QUIET"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "PEACE AND QUIET pairs two words for calm."
+      }
+    },
+    {
+      "id": "pr-g4",
+      "title": "Gentle phrase 4",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Doing something again and again leads to mastery",
+        "enumeration": [
+          8,
+          5,
+          7
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "PERFECT"
+          },
+          {
+            "id": "t2",
+            "text": "PRACTICE"
+          },
+          {
+            "id": "t3",
+            "text": "MAKES"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "PRACTICE",
+            "MAKES",
+            "PERFECT"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "PRACTICE MAKES PERFECT uses the noun practice, spelt with a C in British English."
+      }
+    },
+    {
+      "id": "pr-g5",
+      "title": "Gentle phrase 5",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Very rarely indeed",
+        "enumeration": [
+          4,
+          2,
+          1,
+          4,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "BLUE"
+          },
+          {
+            "id": "t2",
+            "text": "ONCE"
+          },
+          {
+            "id": "t3",
+            "text": "MOON"
+          },
+          {
+            "id": "t4",
+            "text": "A"
+          },
+          {
+            "id": "t5",
+            "text": "IN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ONCE",
+            "IN",
+            "A",
+            "BLUE",
+            "MOON"
+          ]
+        ],
+        "minimumAdjacentSwaps": 6,
+        "explanation": "ONCE IN A BLUE MOON: a blue moon is a rare event, so this means hardly ever."
+      }
+    },
+    {
+      "id": "pr-s1",
+      "title": "Standard phrase 1",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "When too many people take charge, the job is done badly",
+        "enumeration": [
+          3,
+          4,
+          5,
+          5,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "COOKS"
+          },
+          {
+            "id": "t2",
+            "text": "THE"
+          },
+          {
+            "id": "t3",
+            "text": "TOO"
+          },
+          {
+            "id": "t4",
+            "text": "BROTH"
+          },
+          {
+            "id": "t5",
+            "text": "SPOIL"
+          },
+          {
+            "id": "t6",
+            "text": "MANY"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "TOO",
+            "MANY",
+            "COOKS",
+            "SPOIL",
+            "THE",
+            "BROTH"
+          ]
+        ],
+        "minimumAdjacentSwaps": 8,
+        "explanation": "TOO MANY COOKS SPOIL THE BROTH: the verb SPOIL sits between the cooks and what they ruin."
+      }
+    },
+    {
+      "id": "pr-s2",
+      "title": "Standard phrase 2",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "A task becomes easy when everyone shares it",
+        "enumeration": [
+          4,
+          5,
+          4,
+          5,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "LIGHT"
+          },
+          {
+            "id": "t2",
+            "text": "MAKE"
+          },
+          {
+            "id": "t3",
+            "text": "WORK"
+          },
+          {
+            "id": "t4",
+            "text": "MANY"
+          },
+          {
+            "id": "t5",
+            "text": "HANDS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "MANY",
+            "HANDS",
+            "MAKE",
+            "LIGHT",
+            "WORK"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "MANY HANDS MAKE LIGHT WORK: LIGHT describes WORK, so they stay together at the end."
+      }
+    },
+    {
+      "id": "pr-s3",
+      "title": "Standard phrase 3",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Those who start promptly get the advantage",
+        "enumeration": [
+          3,
+          5,
+          4,
+          7,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "WORM"
+          },
+          {
+            "id": "t2",
+            "text": "THE"
+          },
+          {
+            "id": "t3",
+            "text": "CATCHES"
+          },
+          {
+            "id": "t4",
+            "text": "EARLY"
+          },
+          {
+            "id": "t5",
+            "text": "THE"
+          },
+          {
+            "id": "t6",
+            "text": "BIRD"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "EARLY",
+            "BIRD",
+            "CATCHES",
+            "THE",
+            "WORM"
+          ]
+        ],
+        "minimumAdjacentSwaps": 8,
+        "explanation": "THE EARLY BIRD CATCHES THE WORM has two THE tiles; either can go first, so they never cost extra swaps."
+      }
+    },
+    {
+      "id": "pr-s4",
+      "title": "Standard phrase 4",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "What is gained without effort is lost without regret",
+        "enumeration": [
+          4,
+          4,
+          4,
+          2
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "COME"
+          },
+          {
+            "id": "t2",
+            "text": "GO"
+          },
+          {
+            "id": "t3",
+            "text": "EASY"
+          },
+          {
+            "id": "t4",
+            "text": "EASY"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "EASY",
+            "COME",
+            "EASY",
+            "GO"
+          ]
+        ],
+        "minimumAdjacentSwaps": 3,
+        "explanation": "EASY COME EASY GO repeats EASY. Matching the repeated tiles in order gives a minimum of three swaps, not four."
+      }
+    },
+    {
+      "id": "pr-s5",
+      "title": "Standard phrase 5",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Some good comes out of every misfortune",
+        "enumeration": [
+          5,
+          5,
+          3,
+          1,
+          6,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "A"
+          },
+          {
+            "id": "t2",
+            "text": "SILVER"
+          },
+          {
+            "id": "t3",
+            "text": "CLOUD"
+          },
+          {
+            "id": "t4",
+            "text": "LINING"
+          },
+          {
+            "id": "t5",
+            "text": "EVERY"
+          },
+          {
+            "id": "t6",
+            "text": "HAS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "EVERY",
+            "CLOUD",
+            "HAS",
+            "A",
+            "SILVER",
+            "LINING"
+          ]
+        ],
+        "minimumAdjacentSwaps": 9,
+        "explanation": "EVERY CLOUD HAS A SILVER LINING: the silver lining belongs to the cloud."
+      }
+    },
+    {
+      "id": "pr-e1",
+      "title": "Expert phrase 1",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "A motto of shared loyalty, each for the group and the group for each",
+        "enumeration": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "FOR"
+          },
+          {
+            "id": "t2",
+            "text": "ONE"
+          },
+          {
+            "id": "t3",
+            "text": "AND"
+          },
+          {
+            "id": "t4",
+            "text": "ALL"
+          },
+          {
+            "id": "t5",
+            "text": "ONE"
+          },
+          {
+            "id": "t6",
+            "text": "ALL"
+          },
+          {
+            "id": "t7",
+            "text": "FOR"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ONE",
+            "FOR",
+            "ALL",
+            "AND",
+            "ALL",
+            "FOR",
+            "ONE"
+          ],
+          [
+            "ALL",
+            "FOR",
+            "ONE",
+            "AND",
+            "ONE",
+            "FOR",
+            "ALL"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "Both orders of the motto are accepted: ONE FOR ALL AND ALL FOR ONE, or ALL FOR ONE AND ONE FOR ALL. The minimum is measured to whichever is nearer."
+      }
+    },
+    {
+      "id": "pr-e2",
+      "title": "Expert phrase 2",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Once you are committed, you may as well go all the way",
+        "enumeration": [
+          2,
+          3,
+          1,
+          5,
+          2,
+          3,
+          1,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "A"
+          },
+          {
+            "id": "t2",
+            "text": "POUND"
+          },
+          {
+            "id": "t3",
+            "text": "FOR"
+          },
+          {
+            "id": "t4",
+            "text": "IN"
+          },
+          {
+            "id": "t5",
+            "text": "PENNY"
+          },
+          {
+            "id": "t6",
+            "text": "A"
+          },
+          {
+            "id": "t7",
+            "text": "IN"
+          },
+          {
+            "id": "t8",
+            "text": "FOR"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "IN",
+            "FOR",
+            "A",
+            "PENNY",
+            "IN",
+            "FOR",
+            "A",
+            "POUND"
+          ]
+        ],
+        "minimumAdjacentSwaps": 11,
+        "explanation": "IN FOR A PENNY IN FOR A POUND: the small coin comes first, the larger one last."
+      }
+    },
+    {
+      "id": "pr-e3",
+      "title": "Expert phrase 3",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "We soon forget what we no longer see",
+        "enumeration": [
+          3,
+          2,
+          5,
+          3,
+          2,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "MIND"
+          },
+          {
+            "id": "t2",
+            "text": "OF"
+          },
+          {
+            "id": "t3",
+            "text": "OUT"
+          },
+          {
+            "id": "t4",
+            "text": "SIGHT"
+          },
+          {
+            "id": "t5",
+            "text": "OF"
+          },
+          {
+            "id": "t6",
+            "text": "OUT"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "OUT",
+            "OF",
+            "SIGHT",
+            "OUT",
+            "OF",
+            "MIND"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "OUT OF SIGHT OUT OF MIND: seeing comes before remembering."
+      }
+    },
+    {
+      "id": "pr-e4",
+      "title": "Expert phrase 4",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Your actions will eventually come back to you",
+        "enumeration": [
+          4,
+          4,
+          6,
+          5,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "AROUND"
+          },
+          {
+            "id": "t2",
+            "text": "COMES"
+          },
+          {
+            "id": "t3",
+            "text": "WHAT"
+          },
+          {
+            "id": "t4",
+            "text": "AROUND"
+          },
+          {
+            "id": "t5",
+            "text": "GOES"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHAT",
+            "GOES",
+            "AROUND",
+            "COMES",
+            "AROUND"
+          ]
+        ],
+        "minimumAdjacentSwaps": 5,
+        "explanation": "WHAT GOES AROUND COMES AROUND: going out comes before coming back."
+      }
+    },
+    {
+      "id": "pr-e5",
+      "title": "Expert phrase 5",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "When abroad, follow the local customs",
+        "enumeration": [
+          4,
+          2,
+          4,
+          2,
+          2,
+          3,
+          6,
+          2
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "DO"
+          },
+          {
+            "id": "t2",
+            "text": "ROMANS"
+          },
+          {
+            "id": "t3",
+            "text": "IN"
+          },
+          {
+            "id": "t4",
+            "text": "AS"
+          },
+          {
+            "id": "t5",
+            "text": "WHEN"
+          },
+          {
+            "id": "t6",
+            "text": "DO"
+          },
+          {
+            "id": "t7",
+            "text": "THE"
+          },
+          {
+            "id": "t8",
+            "text": "ROME"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHEN",
+            "IN",
+            "ROME",
+            "DO",
+            "AS",
+            "THE",
+            "ROMANS",
+            "DO"
+          ]
+        ],
+        "minimumAdjacentSwaps": 14,
+        "properNouns": [
+          "ROME",
+          "ROMANS"
+        ],
+        "explanation": "WHEN IN ROME DO AS THE ROMANS DO: the two DO tiles are interchangeable."
+      }
+    }
+  ]
+}

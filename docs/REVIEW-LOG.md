@@ -192,3 +192,14 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] Usage-example hints were authored per card (including the two pack demos); the pack's round-level hint strings are kept only as `fixtureHints` metadata.
 - [ ] "Report an answer issue" stores a minimal report (round, card, contentHash, guess, time) in this browser's localStorage (`wc:v1:reports:clue-pairs`). There is no editorial queue backend yet, so reports never leave the device.
 - [ ] Only 4 authored rounds per difficulty (plus 2 Gentle demos); docs/08 asks for 10 per difficulty.
+
+## Phrase Repair
+- [ ] The brief's deferred-release warning stands: every phrase needs independent review of alternative grammatical orders. Known variants deliberately NOT accepted: WHAT COMES AROUND GOES AROUND (pr-e4, differs from the enumeration), IN FOR A POUND IN FOR A PENNY (pr-e2), OUT OF MIND OUT OF SIGHT (pr-e3). pr-e1 accepts both ONE FOR ALL AND ALL FOR ONE and ALL FOR ONE AND ONE FOR ALL.
+- [ ] Policy decision: an accepted alternative must fit the displayed enumeration exactly, so orders with different word lengths per position cannot be alternatives. Confirm.
+- [ ] Practice phrases (pr-g1..g5, pr-s1..s5, pr-e1..e5) and clues are written by the build agent; check each is a familiar British form (e.g. PRACTICE as the noun with C; A STITCH IN TIME kept as in the pack). pr-e5 contains the proper nouns ROME and ROMANS (exempt from the spelling check).
+- [ ] Starting orders were chosen by hand; minimums (gentle 2 to 6, standard 3 to 9, expert 4 to 14) are exact (inversion count with order-preserving duplicate matching, confirmed by exhaustive search). Motor effort versus difficulty needs pilot observation.
+- [ ] Decision: completion needs an explicit "Check phrase" (as in the brief's Submit); a wrong check is rejected atomically and not counted.
+- [ ] Decision: Restart (shell) is the brief's Reset: it archives the attempt and starts a fresh count; the side panel shows the best earlier completed score read from this device's attempt history.
+- [ ] Decision: "Efficient next move" can be asked for repeatedly; each use counts as a hint but costs no points (moves still count). Reveal scores 0.
+- [ ] The standard band includes the four-word EASY COME EASY GO (brief suggests five to seven words at Standard) because it is a good duplicate-token case.
+- [ ] Only 5 practice rounds per difficulty plus 3 demos; docs/08 asks for 10.
