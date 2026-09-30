@@ -67,7 +67,7 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .filter-bar label { display: grid; gap: 4px; font-size: .8rem; color: var(--muted); }
 .filter-bar select, .filter-bar input { border: 1px solid var(--line); background: var(--card); padding: 10px 12px; border-radius: 12px; min-height: 44px; }
 
-.prose { max-width: 760px; line-height: 1.65; }
+.prose { max-width: 760px; line-height: 1.65; overflow-wrap: anywhere; }
 .prose h2 { font-family: Georgia, serif; font-weight: 500; font-size: 1.6rem; margin: 28px 0 8px; }
 .prose h3 { font-family: Georgia, serif; font-weight: 500; font-size: 1.2rem; margin: 20px 0 6px; }
 .prose table { border-collapse: collapse; width: 100%; font-size: .9rem; }
