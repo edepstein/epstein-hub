@@ -79,3 +79,25 @@ Grouped by area; each game appends its own section.
 - [ ] **Local shuffle**: new matches take a seed from `crypto.getRandomValues` in the browser (Fisher–Yates via a serialisable mulberry32). This is fine for local play, but the pack requires a server-side cryptographic shuffle with a hidden bag for online play; the local bag is in localStorage and a determined player could read it. Local pass-and-play makes no claim of security.
 - [ ] **Blank face policy**: a blank's letter is chosen at placement (A–Z, one letter) and fixed once committed; preview and history show it marked "(blank)".
 - [ ] **Pack fixture as a round**: the fixture is replayed exactly by tests/validator but is not listed as a playable round (match games have no round list). Consider a "watch the worked example" replay view.
+
+## Word Families
+- [ ] **Gentle size decision**: the brief says Gentle normally has 12 terms in 3 groups; the task brief said 16/4x4. The game brief is the rules authority, so the authored Gentle rounds wf-g1..wf-g5 are 3x4 (12 tiles). The starter demo stays at 16. Editors may prefer 4x4 Gentle boards.
+- [ ] **One away** is shown, defined exactly as in the brief: three of the four selected tiles belong to one *unsolved* group. Confirm the product wants this nudge (it is optional in the brief).
+- [ ] **Budget**: 4 mistakes (fixtures say continueAfterBudget=true). At the budget, Check is blocked until the player chooses Continue (recorded as an assisted continuation and counted as one hint in the result), a hint or Reveal answers. The engine also supports continueAfterBudget=false (round fails) for future content; no current round uses it.
+- [ ] **Hint ladder** (per group, state-aware): name a category, then two terms from that group (the first two authored terms), then reveal the group. The ladder moves to the next unsolved group in authored order once the hinted group is solved. Editors may want to choose which pair is named per group.
+- [ ] **Phone layout**: boards with a word of 8+ letters use 2 columns under 520px wide instead of shrinking type (checked in e2e for wf-e2, wf-e4, wf-g1, wf-demo-2). Validator caps single words at 10 letters.
+- [ ] **Blind solve + rival partitions needed for every round** (two editors). Red herrings are stored per round in `src/games/word-families/content/rounds.json` (`redHerrings`) and summarised here:
+  - wf-demo-1 (fixture, Gentle tutorial): CRANE (machine), SAGE (colour/wise person). No rival full group.
+  - wf-demo-2 (fixture, Standard): DASH (run), BOOT (car boot), ZIP teeth fairness (per brief). Check BED/BATH/CLASS/SHOW + ROOM consistency.
+  - wf-g1: none intended. wf-g2: ASH (fire residue). wf-g3: GREEN (golf), CRICKET (insect). wf-g4: STUDY (verb). wf-g5: BOXER (sportsperson).
+  - wf-s1: PIN (PINBALL) resolved because the sewing kit has only four candidates; POKER (fireplace tool); BRIDGE (rivers); SEVERN rises in Wales, label is "Rivers in England" (confirm or relabel "British rivers").
+  - wf-s2: FLOWER (beside flowers, forms SUNFLOWER); DIAL (clock, units of time); MINUTE (tiny).
+  - wf-s3: SOLE (fish), POUND (weight), TONGUE (body part).
+  - wf-s4: FLY (insect) resolved because no insect forms FIRE+; IRON (fire iron, two words); LEAD (dog lead).
+  - wf-s5: FISH (beside fish, forms FISHCAKE), PAN (kitchen), TEAL (duck), KEEP (verb).
+  - wf-e1: YEW (sounds like U) and JAY (sounds like J) are forced into trees/birds by candidate counts; ROOK (chess) forced to birds; KNIGHT/NIGHT; TEA as a "tree" (tea plant is a shrub; tea tree is a different plant): confirm this is not a fair fifth tree.
+  - wf-e2: BEARD and GOATEE (facial hair) forced into hidden animals; GRAPEFRUIT hides APE but citrus needs it; LIME (citrus) forced into greens; LEMON (a yellow shade); WHISKERS (cats). Hidden-animal claims are checked mechanically in engine.test.ts against a list of common animals.
+  - wf-e3: SWORD/STAR/JELLY each fit weapons/space/desserts but no other tile forms ___FISH; MACE (spice). SPEAR (SPEARFISH) and MOON (MOONFISH) were deliberately kept off the board because they allowed rival partitions.
+  - wf-e4: CANINE (tooth), FREIGHT (train), STONE (weight) forced into hidden numbers (exactly four tiles hide a number, checked mechanically); TON (slang for 100); DRAM (whisky measure; confirm familiar enough). HUNDREDWEIGHT was rejected because it hides EIGHT and allowed a rival partition.
+- [ ] Only 5 authored rounds for Gentle and Standard and 4 for Expert (plus 1 demo each for Gentle and Standard); docs/08 asks for 10 per difficulty.
+- [ ] Reporting an ambiguity from the completion screen (brief) is not implemented; there is no editorial queue backend yet.

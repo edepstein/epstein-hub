@@ -1,0 +1,38 @@
+[data-game="word-families"] .wf-board { max-width: 480px; margin: 12px auto 6px; }
+[data-game="word-families"] .wf-tile {
+  position: relative; background: #fffefa; color: var(--ink); min-height: 74px; padding: 10px 4px;
+  font-weight: 750; line-height: 1.15; text-align: center; white-space: normal; overflow-wrap: break-word; hyphens: manual;
+  font-size: .9rem; letter-spacing: .03em;
+}
+[data-game="word-families"] .wf-tile .wf-label { display: block; max-width: 100%; }
+[data-game="word-families"] .wf-tile[data-size="mid"] { font-size: .84rem; letter-spacing: .01em; }
+[data-game="word-families"] .wf-tile[data-size="long"] { font-size: .78rem; letter-spacing: 0; }
+[data-game="word-families"] .wf-tile:hover:not(:disabled) { border-color: var(--accent); }
+[data-game="word-families"] .wf-tile.selected { background: var(--accent); color: #fff; border-color: #61364a; box-shadow: 0 3px 0 #61364a; }
+[data-game="word-families"] .wf-tile .wf-check { position: absolute; top: 4px; right: 6px; font-size: .75rem; line-height: 1; }
+[data-game="word-families"] .wf-tile:disabled { opacity: .6; cursor: default; }
+[data-game="word-families"] .wf-count { text-align: center; color: var(--muted); font-size: .9rem; margin: 4px 0 0; font-variant-numeric: tabular-nums; }
+[data-game="word-families"] .wf-actions { justify-content: center; margin-top: 14px; }
+[data-game="word-families"] .wf-budget { margin-top: 14px; }
+[data-game="word-families"] .wf-solved { list-style: none; padding: 0; margin: 0 auto 14px; max-width: 480px; display: grid; gap: 8px; }
+[data-game="word-families"] .wf-solved-row { background: var(--wash); border: 1px solid color-mix(in srgb, var(--accent) 35%, white); border-radius: 14px; padding: 10px 14px; }
+[data-game="word-families"] .wf-solved-row[data-via="revealed"] { border-style: dashed; background: #fffefa; }
+[data-game="word-families"] .wf-solved-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+[data-game="word-families"] .wf-solved-head strong { font-family: Georgia, serif; font-size: 1.05rem; font-weight: 600; color: var(--accent); }
+[data-game="word-families"] .wf-via { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--muted); }
+[data-game="word-families"] .wf-solved-terms { font-weight: 700; letter-spacing: .04em; margin-top: 4px; font-size: .92rem; }
+[data-game="word-families"] .wf-solved-row p { margin: 4px 0 0; font-size: .85rem; color: var(--muted); line-height: 1.45; }
+[data-game="word-families"] .wf-dots { letter-spacing: .1em; color: var(--accent); }
+[data-game="word-families"] .wf-tried { margin: 6px 0 0; padding-left: 1.1em; font-size: .82rem; line-height: 1.5; }
+[data-game="word-families"] .wf-note { font-size: .85rem; margin: 10px 0 0; font-style: italic; }
+@media (max-width: 700px) {
+  [data-game="word-families"] .wf-board { gap: 6px; }
+  [data-game="word-families"] .wf-tile { min-height: 64px; padding: 8px 2px; font-size: .8rem; letter-spacing: 0; }
+  [data-game="word-families"] .wf-tile[data-size="mid"] { font-size: .74rem; }
+  [data-game="word-families"] .wf-tile[data-size="long"] { font-size: .7rem; }
+}
+/* Boards with a word of eight or more letters switch to two roomy columns on phones instead of shrinking type. */
+@media (max-width: 520px) {
+  [data-game="word-families"] .wf-board[data-long="true"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-game="word-families"] .wf-board[data-long="true"] .wf-tile { min-height: 52px; font-size: .88rem; letter-spacing: .03em; }
+}

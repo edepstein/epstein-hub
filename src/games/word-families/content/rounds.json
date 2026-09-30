@@ -1,0 +1,1138 @@
+{
+ "schemaVersion": 1,
+ "gameId": "word-families",
+ "rounds": [
+  {
+   "id": "wf-demo-1",
+   "title": "Starter families",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "starter-families",
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "displayOrder": [
+    "ROBIN",
+    "EAGLE",
+    "FLUTE",
+    "CELLO",
+    "RUBY",
+    "PEARL",
+    "BASIL",
+    "SAGE",
+    "CRANE",
+    "SWAN",
+    "OBOE",
+    "HARP",
+    "OPAL",
+    "JADE",
+    "THYME",
+    "MINT"
+   ],
+   "groups": [
+    {
+     "label": "Birds",
+     "terms": [
+      "ROBIN",
+      "CRANE",
+      "EAGLE",
+      "SWAN"
+     ],
+     "explanation": "ROBIN, CRANE, EAGLE and SWAN are all birds. CRANE is also a lifting machine, but no machine group exists."
+    },
+    {
+     "label": "Musical instruments",
+     "terms": [
+      "FLUTE",
+      "OBOE",
+      "CELLO",
+      "HARP"
+     ],
+     "explanation": "FLUTE and OBOE are woodwind; CELLO and HARP are strings."
+    },
+    {
+     "label": "Gemstones",
+     "terms": [
+      "RUBY",
+      "OPAL",
+      "PEARL",
+      "JADE"
+     ],
+     "explanation": "RUBY, OPAL and JADE are gemstones; PEARL is an organic gem formed inside a mollusc."
+    },
+    {
+     "label": "Culinary herbs",
+     "terms": [
+      "BASIL",
+      "THYME",
+      "SAGE",
+      "MINT"
+     ],
+     "explanation": "BASIL, THYME, SAGE and MINT are all herbs used in cooking."
+    }
+   ],
+   "explanation": "Every term is used once in the intended partition. Categories and individual explanations are stored in groups.",
+   "redHerrings": [
+    {
+     "term": "CRANE",
+     "rival": "CRANE is also a lifting machine.",
+     "resolvedBy": "There is no machine group, so CRANE can only complete the birds."
+    },
+    {
+     "term": "SAGE",
+     "rival": "SAGE is also a shade of green and a wise person.",
+     "resolvedBy": "No colour or people group exists; SAGE completes the herbs."
+    }
+   ],
+   "fixtureHints": [
+    {
+     "stage": 1,
+     "kind": "category",
+     "text": "One category is Birds.",
+     "assisted": true
+    },
+    {
+     "stage": 2,
+     "kind": "revealGroup",
+     "groupId": "1",
+     "assisted": true
+    }
+   ]
+  },
+  {
+   "id": "wf-demo-2",
+   "title": "Everyday families",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "everyday-families",
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "displayOrder": [
+    "COMB",
+    "ZIP",
+    "BOOT",
+    "SLIPPER",
+    "BED",
+    "CLASS",
+    "COMMA",
+    "DASH",
+    "SAW",
+    "GEAR",
+    "SANDAL",
+    "TRAINER",
+    "BATH",
+    "SHOW",
+    "COLON",
+    "FULL STOP"
+   ],
+   "groups": [
+    {
+     "label": "Things with teeth",
+     "terms": [
+      "COMB",
+      "SAW",
+      "ZIP",
+      "GEAR"
+     ],
+     "explanation": "A COMB, a SAW, a ZIP and a GEAR wheel all have teeth."
+    },
+    {
+     "label": "Types of footwear",
+     "terms": [
+      "BOOT",
+      "SANDAL",
+      "SLIPPER",
+      "TRAINER"
+     ],
+     "explanation": "BOOT, SANDAL, SLIPPER and TRAINER are all things worn on the feet."
+    },
+    {
+     "label": "Words before ROOM",
+     "terms": [
+      "BED",
+      "BATH",
+      "CLASS",
+      "SHOW"
+     ],
+     "explanation": "BEDROOM, BATHROOM, CLASSROOM and SHOWROOM."
+    },
+    {
+     "label": "Punctuation marks",
+     "terms": [
+      "COMMA",
+      "COLON",
+      "DASH",
+      "FULL STOP"
+     ],
+     "explanation": "COMMA, COLON, DASH and FULL STOP are punctuation marks. FULL STOP is one tile."
+    }
+   ],
+   "explanation": "Every term is used once in the intended partition. Categories and individual explanations are stored in groups.",
+   "redHerrings": [
+    {
+     "term": "DASH",
+     "rival": "DASH also means to run quickly.",
+     "resolvedBy": "No movement group exists; DASH is the fourth punctuation mark."
+    },
+    {
+     "term": "BOOT",
+     "rival": "BOOT is also the luggage space of a car.",
+     "resolvedBy": "No car-parts group exists; BOOT completes the footwear."
+    },
+    {
+     "term": "ZIP",
+     "rival": "Editors must confirm a zip's teeth are a fair 'teeth' reading.",
+     "resolvedBy": "The interlocking elements of a zip are commonly called teeth."
+    }
+   ],
+   "fixtureHints": [
+    {
+     "stage": 1,
+     "kind": "category",
+     "text": "One category is Things with teeth.",
+     "assisted": true
+    },
+    {
+     "stage": 2,
+     "kind": "revealGroup",
+     "groupId": "1",
+     "assisted": true
+    }
+   ]
+  },
+  {
+   "id": "wf-g1",
+   "title": "Gentle families 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Kitchen utensils",
+     "terms": [
+      "WHISK",
+      "LADLE",
+      "SPATULA",
+      "COLANDER"
+     ],
+     "explanation": "A WHISK, a LADLE, a SPATULA and a COLANDER are all kitchen utensils."
+    },
+    {
+     "label": "Farm animals",
+     "terms": [
+      "COW",
+      "SHEEP",
+      "PIG",
+      "GOAT"
+     ],
+     "explanation": "COW, SHEEP, PIG and GOAT are animals commonly kept on farms."
+    },
+    {
+     "label": "Fruits",
+     "terms": [
+      "APPLE",
+      "PEAR",
+      "PLUM",
+      "CHERRY"
+     ],
+     "explanation": "APPLE, PEAR, PLUM and CHERRY are all fruits."
+    }
+   ],
+   "explanation": "Three direct categories. Every term belongs to exactly one of them.",
+   "redHerrings": []
+  },
+  {
+   "id": "wf-g2",
+   "title": "Gentle families 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Weather",
+     "terms": [
+      "RAIN",
+      "SNOW",
+      "HAIL",
+      "FOG"
+     ],
+     "explanation": "RAIN, SNOW, HAIL and FOG are all kinds of weather."
+    },
+    {
+     "label": "Planets",
+     "terms": [
+      "MARS",
+      "VENUS",
+      "SATURN",
+      "JUPITER"
+     ],
+     "explanation": "MARS, VENUS, SATURN and JUPITER are planets of our solar system."
+    },
+    {
+     "label": "Trees",
+     "terms": [
+      "OAK",
+      "ASH",
+      "BIRCH",
+      "WILLOW"
+     ],
+     "explanation": "OAK, ASH, BIRCH and WILLOW are all trees."
+    }
+   ],
+   "explanation": "Three direct categories. Every term belongs to exactly one of them.",
+   "redHerrings": [
+    {
+     "term": "ASH",
+     "rival": "ASH is also what remains after a fire.",
+     "resolvedBy": "No fire or weather reading fits; ASH completes the trees."
+    }
+   ]
+  },
+  {
+   "id": "wf-g3",
+   "title": "Gentle families 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Clothing",
+     "terms": [
+      "SCARF",
+      "GLOVE",
+      "JUMPER",
+      "COAT"
+     ],
+     "explanation": "A SCARF, a GLOVE, a JUMPER and a COAT are all things you wear."
+    },
+    {
+     "label": "Sports",
+     "terms": [
+      "TENNIS",
+      "GOLF",
+      "RUGBY",
+      "CRICKET"
+     ],
+     "explanation": "TENNIS, GOLF, RUGBY and CRICKET are all sports."
+    },
+    {
+     "label": "Colours",
+     "terms": [
+      "RED",
+      "GREEN",
+      "PURPLE",
+      "YELLOW"
+     ],
+     "explanation": "RED, GREEN, PURPLE and YELLOW are all colours."
+    }
+   ],
+   "explanation": "Three direct categories. Every term belongs to exactly one of them.",
+   "redHerrings": [
+    {
+     "term": "GREEN",
+     "rival": "A green is part of a golf course.",
+     "resolvedBy": "GREEN is not a sport; it completes the colours."
+    },
+    {
+     "term": "CRICKET",
+     "rival": "A cricket is also an insect.",
+     "resolvedBy": "There is no insect group; CRICKET completes the sports."
+    }
+   ]
+  },
+  {
+   "id": "wf-g4",
+   "title": "Gentle families 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Joints of the body",
+     "terms": [
+      "ELBOW",
+      "KNEE",
+      "WRIST",
+      "ANKLE"
+     ],
+     "explanation": "The ELBOW, KNEE, WRIST and ANKLE are all joints."
+    },
+    {
+     "label": "Rooms in a house",
+     "terms": [
+      "KITCHEN",
+      "LOUNGE",
+      "STUDY",
+      "CELLAR"
+     ],
+     "explanation": "KITCHEN, LOUNGE, STUDY and CELLAR are all rooms in a house."
+    },
+    {
+     "label": "Sea creatures",
+     "terms": [
+      "CRAB",
+      "SHARK",
+      "WHALE",
+      "OCTOPUS"
+     ],
+     "explanation": "CRAB, SHARK, WHALE and OCTOPUS all live in the sea."
+    }
+   ],
+   "explanation": "Three direct categories. Every term belongs to exactly one of them.",
+   "redHerrings": [
+    {
+     "term": "STUDY",
+     "rival": "STUDY is also a verb meaning to learn.",
+     "resolvedBy": "No verbs group exists; STUDY completes the rooms."
+    }
+   ]
+  },
+  {
+   "id": "wf-g5",
+   "title": "Gentle families 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Dog breeds",
+     "terms": [
+      "POODLE",
+      "BEAGLE",
+      "BOXER",
+      "LABRADOR"
+     ],
+     "explanation": "POODLE, BEAGLE, BOXER and LABRADOR are all breeds of dog."
+    },
+    {
+     "label": "Shapes",
+     "terms": [
+      "CIRCLE",
+      "SQUARE",
+      "TRIANGLE",
+      "OVAL"
+     ],
+     "explanation": "CIRCLE, SQUARE, TRIANGLE and OVAL are all shapes."
+    },
+    {
+     "label": "Cheeses",
+     "terms": [
+      "CHEDDAR",
+      "BRIE",
+      "STILTON",
+      "FETA"
+     ],
+     "explanation": "CHEDDAR, BRIE, STILTON and FETA are all cheeses."
+    }
+   ],
+   "explanation": "Three direct categories. Every term belongs to exactly one of them.",
+   "redHerrings": [
+    {
+     "term": "BOXER",
+     "rival": "A boxer is also a sportsperson.",
+     "resolvedBy": "There is no sport group; BOXER completes the dog breeds."
+    }
+   ]
+  },
+  {
+   "id": "wf-s1",
+   "title": "Standard families 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before BALL",
+     "terms": [
+      "FOOT",
+      "SNOW",
+      "BASKET",
+      "MEAT"
+     ],
+     "explanation": "FOOTBALL, SNOWBALL, BASKETBALL and MEATBALL."
+    },
+    {
+     "label": "Card games",
+     "terms": [
+      "SNAP",
+      "POKER",
+      "BRIDGE",
+      "RUMMY"
+     ],
+     "explanation": "SNAP, POKER, BRIDGE and RUMMY are all card games."
+    },
+    {
+     "label": "Rivers in England",
+     "terms": [
+      "THAMES",
+      "SEVERN",
+      "TRENT",
+      "MERSEY"
+     ],
+     "explanation": "The THAMES, SEVERN, TRENT and MERSEY all flow through England."
+    },
+    {
+     "label": "In a sewing kit",
+     "terms": [
+      "NEEDLE",
+      "THREAD",
+      "THIMBLE",
+      "PIN"
+     ],
+     "explanation": "A NEEDLE, THREAD, a THIMBLE and a PIN are all found in a sewing kit."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "PIN",
+     "rival": "PIN forms PINBALL, so it could join the words before BALL.",
+     "resolvedBy": "The sewing kit has only four candidates (NEEDLE, THREAD, THIMBLE, PIN), so PIN must go there."
+    },
+    {
+     "term": "POKER",
+     "rival": "A poker is also a fireplace tool.",
+     "resolvedBy": "No fireplace group exists; POKER completes the card games."
+    },
+    {
+     "term": "BRIDGE",
+     "rival": "BRIDGE could suggest rivers.",
+     "resolvedBy": "A bridge is not a river; BRIDGE completes the card games."
+    },
+    {
+     "term": "SEVERN",
+     "rival": "The Severn rises in Wales.",
+     "resolvedBy": "The label says 'in England', which the Severn satisfies for most of its length; editors should confirm."
+    }
+   ]
+  },
+  {
+   "id": "wf-s2",
+   "title": "Standard families 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after SUN",
+     "terms": [
+      "FLOWER",
+      "BURN",
+      "DIAL",
+      "RISE"
+     ],
+     "explanation": "SUNFLOWER, SUNBURN, SUNDIAL and SUNRISE."
+    },
+    {
+     "label": "Flowers",
+     "terms": [
+      "DAISY",
+      "TULIP",
+      "POPPY",
+      "LILY"
+     ],
+     "explanation": "DAISY, TULIP, POPPY and LILY are all flowers."
+    },
+    {
+     "label": "Playing card ranks",
+     "terms": [
+      "KING",
+      "QUEEN",
+      "JACK",
+      "ACE"
+     ],
+     "explanation": "KING, QUEEN, JACK and ACE are ranks in a pack of cards."
+    },
+    {
+     "label": "Units of time",
+     "terms": [
+      "MINUTE",
+      "HOUR",
+      "WEEK",
+      "DECADE"
+     ],
+     "explanation": "A MINUTE, an HOUR, a WEEK and a DECADE are all units of time."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "FLOWER",
+     "rival": "FLOWER sits naturally beside the four flowers.",
+     "resolvedBy": "FLOWER is not a kind of flower; it forms SUNFLOWER."
+    },
+    {
+     "term": "DIAL",
+     "rival": "A dial suggests a clock and therefore units of time.",
+     "resolvedBy": "DIAL is not a unit of time; it forms SUNDIAL."
+    },
+    {
+     "term": "MINUTE",
+     "rival": "MINUTE also means tiny.",
+     "resolvedBy": "No size group exists; MINUTE completes the units of time."
+    }
+   ]
+  },
+  {
+   "id": "wf-s3",
+   "title": "Standard families 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before BOARD",
+     "terms": [
+      "CUP",
+      "KEY",
+      "SKATE",
+      "DART"
+     ],
+     "explanation": "CUPBOARD, KEYBOARD, SKATEBOARD and DARTBOARD."
+    },
+    {
+     "label": "Birds of prey",
+     "terms": [
+      "HAWK",
+      "FALCON",
+      "KESTREL",
+      "BUZZARD"
+     ],
+     "explanation": "HAWK, FALCON, KESTREL and BUZZARD are all birds of prey."
+    },
+    {
+     "label": "Currencies",
+     "terms": [
+      "EURO",
+      "POUND",
+      "DOLLAR",
+      "RUPEE"
+     ],
+     "explanation": "The EURO, POUND, DOLLAR and RUPEE are all currencies."
+    },
+    {
+     "label": "Parts of a shoe",
+     "terms": [
+      "SOLE",
+      "HEEL",
+      "LACE",
+      "TONGUE"
+     ],
+     "explanation": "The SOLE, HEEL, LACE and TONGUE are all parts of a shoe."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "SOLE",
+     "rival": "SOLE is also a flatfish.",
+     "resolvedBy": "No fish group exists; SOLE completes the parts of a shoe."
+    },
+    {
+     "term": "POUND",
+     "rival": "POUND is also a unit of weight and a verb.",
+     "resolvedBy": "No weights group exists; POUND completes the currencies."
+    },
+    {
+     "term": "TONGUE",
+     "rival": "TONGUE is also a body part.",
+     "resolvedBy": "No body group exists; TONGUE completes the parts of a shoe."
+    }
+   ]
+  },
+  {
+   "id": "wf-s4",
+   "title": "Standard families 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after FIRE",
+     "terms": [
+      "WORK",
+      "PLACE",
+      "WOOD",
+      "FLY"
+     ],
+     "explanation": "FIREWORK, FIREPLACE, FIREWOOD and FIREFLY."
+    },
+    {
+     "label": "Insects",
+     "terms": [
+      "BEE",
+      "WASP",
+      "MOTH",
+      "GNAT"
+     ],
+     "explanation": "BEE, WASP, MOTH and GNAT are all insects."
+    },
+    {
+     "label": "Metals",
+     "terms": [
+      "IRON",
+      "COPPER",
+      "TIN",
+      "LEAD"
+     ],
+     "explanation": "IRON, COPPER, TIN and LEAD are all metals."
+    },
+    {
+     "label": "Imperial units of length",
+     "terms": [
+      "INCH",
+      "FOOT",
+      "YARD",
+      "MILE"
+     ],
+     "explanation": "The INCH, FOOT, YARD and MILE are imperial units of length."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "FLY",
+     "rival": "A fly is an insect, so FLY looks like a fifth insect.",
+     "resolvedBy": "None of BEE, WASP, MOTH or GNAT forms a word after FIRE, so FLY (FIREFLY) must complete the FIRE group."
+    },
+    {
+     "term": "IRON",
+     "rival": "A fire iron is a fireplace tool (two words).",
+     "resolvedBy": "The FIRE group uses one-word compounds, and IRON is needed for the metals."
+    },
+    {
+     "term": "LEAD",
+     "rival": "LEAD is also a dog's leash.",
+     "resolvedBy": "No dog group exists; LEAD completes the metals."
+    }
+   ]
+  },
+  {
+   "id": "wf-s5",
+   "title": "Standard families 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before CAKE",
+     "terms": [
+      "CUP",
+      "PAN",
+      "FISH",
+      "CHEESE"
+     ],
+     "explanation": "CUPCAKE, PANCAKE, FISHCAKE and CHEESECAKE."
+    },
+    {
+     "label": "Fish",
+     "terms": [
+      "COD",
+      "HADDOCK",
+      "PLAICE",
+      "TROUT"
+     ],
+     "explanation": "COD, HADDOCK, PLAICE and TROUT are all fish."
+    },
+    {
+     "label": "Parts of a castle",
+     "terms": [
+      "MOAT",
+      "TOWER",
+      "KEEP",
+      "TURRET"
+     ],
+     "explanation": "The MOAT, TOWER, KEEP and TURRET are all parts of a castle."
+    },
+    {
+     "label": "Shades of blue",
+     "terms": [
+      "NAVY",
+      "TEAL",
+      "AZURE",
+      "COBALT"
+     ],
+     "explanation": "NAVY, TEAL, AZURE and COBALT are all shades of blue."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "FISH",
+     "rival": "FISH sits naturally beside COD, HADDOCK, PLAICE and TROUT.",
+     "resolvedBy": "FISH is not a kind of fish; it forms FISHCAKE."
+    },
+    {
+     "term": "PAN",
+     "rival": "PAN is a kitchen item.",
+     "resolvedBy": "No kitchen group exists; PAN forms PANCAKE."
+    },
+    {
+     "term": "TEAL",
+     "rival": "TEAL is also a duck.",
+     "resolvedBy": "No birds group exists; TEAL completes the shades of blue."
+    },
+    {
+     "term": "KEEP",
+     "rival": "KEEP is also a verb.",
+     "resolvedBy": "A keep is the central tower of a castle."
+    }
+   ]
+  },
+  {
+   "id": "wf-e1",
+   "title": "Expert families 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like letters of the alphabet",
+     "terms": [
+      "SEA",
+      "TEA",
+      "QUEUE",
+      "WHY"
+     ],
+     "explanation": "SEA sounds like C, TEA like T, QUEUE like Q and WHY like Y."
+    },
+    {
+     "label": "Trees",
+     "terms": [
+      "YEW",
+      "ASH",
+      "ELM",
+      "FIR"
+     ],
+     "explanation": "YEW, ASH, ELM and FIR are all trees. YEW also sounds like U, but the trees need it."
+    },
+    {
+     "label": "Birds",
+     "terms": [
+      "JAY",
+      "KITE",
+      "SWIFT",
+      "ROOK"
+     ],
+     "explanation": "JAY, KITE, SWIFT and ROOK are all birds. JAY also sounds like J, and ROOK is also a chess piece."
+    },
+    {
+     "label": "Chess pieces",
+     "terms": [
+      "KING",
+      "BISHOP",
+      "KNIGHT",
+      "PAWN"
+     ],
+     "explanation": "KING, BISHOP, KNIGHT and PAWN are all chess pieces. The ROOK is needed by the birds."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "YEW",
+     "rival": "YEW sounds like the letter U.",
+     "resolvedBy": "The trees have only four candidates (YEW, ASH, ELM, FIR), so YEW must be a tree."
+    },
+    {
+     "term": "JAY",
+     "rival": "JAY sounds like the letter J.",
+     "resolvedBy": "The birds have only four candidates (JAY, KITE, SWIFT, ROOK), so JAY must be a bird."
+    },
+    {
+     "term": "ROOK",
+     "rival": "ROOK is a chess piece.",
+     "resolvedBy": "The birds need ROOK, and KING, BISHOP, KNIGHT and PAWN fill the chess group."
+    },
+    {
+     "term": "KNIGHT",
+     "rival": "KNIGHT sounds like NIGHT.",
+     "resolvedBy": "NIGHT is not a letter, so KNIGHT is not a letter homophone."
+    },
+    {
+     "term": "TEA",
+     "rival": "TEA comes from a plant, and there is a 'tea tree'.",
+     "resolvedBy": "The tea plant is grown as a shrub and the tea tree is a different plant; editors should confirm TEA is not a fair fifth tree."
+    },
+    {
+     "term": "KITE",
+     "rival": "A kite is also a toy.",
+     "resolvedBy": "No toys group exists; the red kite is a familiar British bird."
+    }
+   ]
+  },
+  {
+   "id": "wf-e2",
+   "title": "Expert families 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Facial hair",
+     "terms": [
+      "MOUSTACHE",
+      "STUBBLE",
+      "SIDEBURNS",
+      "WHISKERS"
+     ],
+     "explanation": "MOUSTACHE, STUBBLE, SIDEBURNS and WHISKERS are all facial hair."
+    },
+    {
+     "label": "Hide an animal",
+     "terms": [
+      "BEARD",
+      "GOATEE",
+      "SCOWL",
+      "PLANT"
+     ],
+     "explanation": "BEAR is in BEARD, GOAT in GOATEE, COW (and OWL) in SCOWL and ANT in PLANT."
+    },
+    {
+     "label": "Shades of green",
+     "terms": [
+      "LIME",
+      "OLIVE",
+      "JADE",
+      "EMERALD"
+     ],
+     "explanation": "LIME, OLIVE, JADE and EMERALD are all shades of green."
+    },
+    {
+     "label": "Citrus fruits",
+     "terms": [
+      "LEMON",
+      "SATSUMA",
+      "GRAPEFRUIT",
+      "TANGERINE"
+     ],
+     "explanation": "LEMON, SATSUMA, GRAPEFRUIT and TANGERINE are citrus fruits. LIME is needed by the greens."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "BEARD",
+     "rival": "A beard is facial hair.",
+     "resolvedBy": "Only BEARD, GOATEE, SCOWL and PLANT hide an animal once GRAPEFRUIT is placed, so BEARD and GOATEE must go there."
+    },
+    {
+     "term": "GOATEE",
+     "rival": "A goatee is facial hair.",
+     "resolvedBy": "As for BEARD: the hidden-animal group needs it."
+    },
+    {
+     "term": "GRAPEFRUIT",
+     "rival": "GRAPEFRUIT hides APE.",
+     "resolvedBy": "The citrus group has only four candidates once LIME is a green, so GRAPEFRUIT must be citrus."
+    },
+    {
+     "term": "LIME",
+     "rival": "A lime is a citrus fruit.",
+     "resolvedBy": "The greens have only four candidates (LIME, OLIVE, JADE, EMERALD), so LIME must be a shade of green."
+    },
+    {
+     "term": "LEMON",
+     "rival": "Lemon is also a shade of yellow.",
+     "resolvedBy": "Not green, so LEMON completes the citrus fruits."
+    },
+    {
+     "term": "WHISKERS",
+     "rival": "Cats have whiskers.",
+     "resolvedBy": "No cat group exists; whiskers are also hair on a man's face."
+    }
+   ]
+  },
+  {
+   "id": "wf-e3",
+   "title": "Expert families 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Add FISH to make one word",
+     "terms": [
+      "SWORD",
+      "STAR",
+      "JELLY",
+      "SHELL"
+     ],
+     "explanation": "SWORDFISH, STARFISH, JELLYFISH and SHELLFISH."
+    },
+    {
+     "label": "Weapons",
+     "terms": [
+      "MACE",
+      "AXE",
+      "BOW",
+      "DAGGER"
+     ],
+     "explanation": "A MACE, an AXE, a BOW and a DAGGER are all weapons. SWORD is needed for SWORDFISH."
+    },
+    {
+     "label": "Astronomical objects",
+     "terms": [
+      "COMET",
+      "PLANET",
+      "METEOR",
+      "NEBULA"
+     ],
+     "explanation": "A COMET, a PLANET, a METEOR and a NEBULA are all found in space. STAR is needed for STARFISH."
+    },
+    {
+     "label": "Desserts",
+     "terms": [
+      "TRIFLE",
+      "CRUMBLE",
+      "PAVLOVA",
+      "SORBET"
+     ],
+     "explanation": "TRIFLE, CRUMBLE, PAVLOVA and SORBET are all desserts. JELLY is needed for JELLYFISH."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "SWORD",
+     "rival": "A sword is a weapon.",
+     "resolvedBy": "No other weapon forms a word with FISH, so SWORD must complete the FISH group."
+    },
+    {
+     "term": "STAR",
+     "rival": "A star is an astronomical object.",
+     "resolvedBy": "No other astronomical object forms a word with FISH."
+    },
+    {
+     "term": "JELLY",
+     "rival": "Jelly is a dessert.",
+     "resolvedBy": "No dessert forms a word with FISH; the FISH group needs JELLY."
+    },
+    {
+     "term": "MACE",
+     "rival": "Mace is also a spice.",
+     "resolvedBy": "No spice group exists; a mace is a club-like weapon."
+    },
+    {
+     "term": "SPEAR (not used)",
+     "rival": "Rejected while authoring: SPEARFISH would have allowed a rival partition.",
+     "resolvedBy": "SPEAR is not on this board."
+    },
+    {
+     "term": "MOON (not used)",
+     "rival": "Rejected while authoring: MOONFISH would have allowed a rival partition.",
+     "resolvedBy": "MOON is not on this board."
+    }
+   ]
+  },
+  {
+   "id": "wf-e4",
+   "title": "Expert families 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hide a number",
+     "terms": [
+      "CANINE",
+      "FREIGHT",
+      "OFTEN",
+      "STONE"
+     ],
+     "explanation": "NINE is in CANINE, EIGHT in FREIGHT, TEN in OFTEN and ONE in STONE."
+    },
+    {
+     "label": "Imperial units of weight",
+     "terms": [
+      "OUNCE",
+      "POUND",
+      "TON",
+      "DRAM"
+     ],
+     "explanation": "The OUNCE, POUND, TON and DRAM are imperial units of weight; a dram is a sixteenth of an ounce. STONE is needed by the hidden numbers."
+    },
+    {
+     "label": "Teeth",
+     "terms": [
+      "MOLAR",
+      "INCISOR",
+      "PREMOLAR",
+      "FANG"
+     ],
+     "explanation": "MOLAR, INCISOR, PREMOLAR and FANG are all teeth. CANINE is needed by the hidden numbers."
+    },
+    {
+     "label": "Words before TRAIN",
+     "terms": [
+      "EXPRESS",
+      "SLEEPER",
+      "STEAM",
+      "GOODS"
+     ],
+     "explanation": "EXPRESS TRAIN, SLEEPER TRAIN, STEAM TRAIN and GOODS TRAIN. FREIGHT is needed by the hidden numbers."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "CANINE",
+     "rival": "A canine is a tooth.",
+     "resolvedBy": "Only CANINE, FREIGHT, OFTEN and STONE hide a number, so each must go there."
+    },
+    {
+     "term": "FREIGHT",
+     "rival": "A freight train is a kind of train.",
+     "resolvedBy": "The hidden-number group needs FREIGHT; GOODS supplies the fourth train."
+    },
+    {
+     "term": "STONE",
+     "rival": "A stone is an imperial unit of weight.",
+     "resolvedBy": "The hidden-number group needs STONE; DRAM supplies the fourth weight."
+    },
+    {
+     "term": "TON",
+     "rival": "TON is UK slang for a hundred.",
+     "resolvedBy": "It does not hide a number word; it is a unit of weight."
+    },
+    {
+     "term": "DRAM",
+     "rival": "A dram is also a small measure of whisky.",
+     "resolvedBy": "It is an established imperial unit of weight; editors should confirm it is familiar enough for Expert."
+    },
+    {
+     "term": "HUNDREDWEIGHT (not used)",
+     "rival": "Rejected while authoring: it hides EIGHT and would allow a rival partition with STONE.",
+     "resolvedBy": "Not on this board."
+    }
+   ]
+  }
+ ]
+}
