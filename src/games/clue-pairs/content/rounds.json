@@ -1,0 +1,1064 @@
+{
+ "schemaVersion": 1,
+ "gameId": "clue-pairs",
+ "rounds": [
+  {
+   "id": "cp-demo-1",
+   "title": "Starter pairs 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "pairs-001",
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A long-legged wading bird",
+      "A machine used to lift heavy loads"
+     ],
+     "length": 5,
+     "accepted": [
+      "CRANE"
+     ],
+     "example": "The ____ swung the steel girder onto the roof.",
+     "explanation": "A crane is a long-legged wading bird, and also a machine with a long arm for lifting heavy loads."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The sound a dog makes",
+      "The outer covering of a tree trunk"
+     ],
+     "length": 4,
+     "accepted": [
+      "BARK"
+     ],
+     "example": "The dog began to ____ at the postman.",
+     "explanation": "A bark is the sharp sound a dog makes, and bark is the rough outer covering of a tree trunk."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "The underside of a foot",
+      "A type of flatfish"
+     ],
+     "length": 4,
+     "accepted": [
+      "SOLE"
+     ],
+     "example": "We had grilled Dover ____ with lemon.",
+     "explanation": "The sole is the underside of the foot, and a sole is a flatfish."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A sporting contest",
+      "A small stick used to start a flame"
+     ],
+     "length": 5,
+     "accepted": [
+      "MATCH"
+     ],
+     "example": "She struck a ____ to light the candle.",
+     "explanation": "A match is a sporting contest, and also a small stick that bursts into flame when struck."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A long structural piece of timber",
+      "A narrow shaft of light"
+     ],
+     "length": 4,
+     "accepted": [
+      "BEAM"
+     ],
+     "example": "A ____ of sunlight fell across the table.",
+     "explanation": "A beam is a long piece of timber used in building, and also a narrow shaft of light."
+    }
+   ],
+   "explanation": "Each answer has both independently clued senses.",
+   "fixtureHints": [
+    "Card a begins with C.",
+    "Card b has an animal sound and a tree meaning."
+   ]
+  },
+  {
+   "id": "cp-demo-2",
+   "title": "Starter pairs 2",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "pairs-002",
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The land at the edge of a river",
+      "A business that holds deposits of money"
+     ],
+     "length": 4,
+     "accepted": [
+      "BANK"
+     ],
+     "example": "They had a picnic on the grassy ____ of the river.",
+     "explanation": "A bank is the land alongside a river, and a business that keeps money for customers."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The season between winter and summer",
+      "A coiled elastic piece of metal"
+     ],
+     "length": 6,
+     "accepted": [
+      "SPRING"
+     ],
+     "example": "The daffodils flower in early ____.",
+     "explanation": "Spring is the season between winter and summer, and a spring is a coil of metal that returns to shape."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A marine mammal",
+      "To close something so it is watertight"
+     ],
+     "length": 4,
+     "accepted": [
+      "SEAL"
+     ],
+     "example": "Press the lid down firmly to ____ the jar.",
+     "explanation": "A seal is a marine mammal, and to seal something is to close it so nothing can get in or out."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A flying mammal",
+      "An implement used to hit a ball in cricket"
+     ],
+     "length": 3,
+     "accepted": [
+      "BAT"
+     ],
+     "example": "The ____ hung upside down in the barn.",
+     "explanation": "A bat is a flying mammal, and the wooden implement used to hit the ball in cricket."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A sweet preserve made from fruit",
+      "A blockage of road traffic"
+     ],
+     "length": 3,
+     "accepted": [
+      "JAM"
+     ],
+     "example": "We were stuck in a traffic ____ for an hour.",
+     "explanation": "Jam is a sweet fruit preserve, and a traffic jam is a blockage of vehicles."
+    }
+   ],
+   "explanation": "The answers are BANK, SPRING, SEAL, BAT and JAM.",
+   "fixtureHints": [
+    "Card b begins with S.",
+    "Card c can be a noun or a verb."
+   ]
+  },
+  {
+   "id": "cp-g1",
+   "title": "Gentle pairs 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A band worn on a finger",
+      "The sound a telephone makes"
+     ],
+     "length": 4,
+     "accepted": [
+      "RING"
+     ],
+     "example": "She wore a gold ____ on her finger.",
+     "explanation": "A ring is a band worn on the finger, and the sound a telephone makes when a call comes in."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The inside of the hand",
+      "A tropical tree with large fan-shaped leaves"
+     ],
+     "length": 4,
+     "accepted": [
+      "PALM"
+     ],
+     "example": "Hold the coin flat in the ____ of your hand.",
+     "explanation": "The palm is the inner surface of the hand, and a palm is a tropical tree."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A round citrus fruit",
+      "The colour between red and yellow"
+     ],
+     "length": 6,
+     "accepted": [
+      "ORANGE"
+     ],
+     "example": "She peeled an ____ for her packed lunch.",
+     "explanation": "An orange is a citrus fruit, and orange is also the colour between red and yellow."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "It opens a lock",
+      "One of the black or white levers on a piano"
+     ],
+     "length": 3,
+     "accepted": [
+      "KEY"
+     ],
+     "example": "He turned the ____ and the door swung open.",
+     "explanation": "A key opens a lock, and the keys of a piano are the levers pressed to play notes."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A water bird with a flat bill",
+      "To lower your head quickly to avoid being hit"
+     ],
+     "length": 4,
+     "accepted": [
+      "DUCK"
+     ],
+     "example": "A ____ and her ducklings swam across the pond.",
+     "explanation": "A duck is a water bird, and to duck is to bob down quickly out of the way."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g2",
+   "title": "Gentle pairs 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A small rodent with a long tail",
+      "A device moved by hand to point on a computer screen"
+     ],
+     "length": 5,
+     "accepted": [
+      "MOUSE"
+     ],
+     "example": "Click the left button on the ____ to open the file.",
+     "explanation": "A mouse is a small rodent, and the hand-held device that moves the pointer on a computer."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The hard covering at the tip of a finger",
+      "A thin metal spike hammered into wood"
+     ],
+     "length": 4,
+     "accepted": [
+      "NAIL"
+     ],
+     "example": "Hammer the ____ into the fence post.",
+     "explanation": "A nail covers the tip of each finger and toe, and a nail is a metal spike driven in with a hammer."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A racket sport played indoors against walls",
+      "A fruit drink diluted with water"
+     ],
+     "length": 6,
+     "accepted": [
+      "SQUASH"
+     ],
+     "example": "Would you like orange ____ or water?",
+     "explanation": "Squash is a racket game played in a walled court, and a concentrated fruit drink you dilute with water."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The main woody stem of a tree",
+      "An elephant's long nose"
+     ],
+     "length": 5,
+     "accepted": [
+      "TRUNK"
+     ],
+     "example": "The elephant lifted the log with its ____.",
+     "explanation": "A trunk is the main stem of a tree, and an elephant's long flexible nose."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A field where football or cricket is played",
+      "To put up a tent"
+     ],
+     "length": 5,
+     "accepted": [
+      "PITCH"
+     ],
+     "example": "We found a flat spot to ____ the tent.",
+     "explanation": "A pitch is a sports field, and to pitch a tent is to put it up."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g3",
+   "title": "Gentle pairs 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A device that blows cool air",
+      "An enthusiastic supporter of a team"
+     ],
+     "length": 3,
+     "accepted": [
+      "FAN"
+     ],
+     "example": "Switch on the ____; it is sweltering in here.",
+     "explanation": "A fan moves air to cool a room, and a fan is also a keen supporter."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A knot tied with two loops",
+      "A weapon that shoots arrows"
+     ],
+     "length": 3,
+     "accepted": [
+      "BOW"
+     ],
+     "example": "Tie the ribbon in a neat ____.",
+     "explanation": "A bow is a decorative knot with two loops, and a curved weapon for shooting arrows."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A stick used to hit a golf ball",
+      "A group of people who meet for a shared interest"
+     ],
+     "length": 4,
+     "accepted": [
+      "CLUB"
+     ],
+     "example": "She joined the local book ____.",
+     "explanation": "A golf club is used to hit the ball, and a club is also a group of people with a shared interest."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The hard outer case of an egg or snail",
+      "An explosive fired from a large gun"
+     ],
+     "length": 5,
+     "accepted": [
+      "SHELL"
+     ],
+     "example": "The snail pulled back into its ____.",
+     "explanation": "A shell is the hard outer case of an egg, snail or nut, and an explosive projectile fired from artillery."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A strip of cloth worn round the neck with a shirt",
+      "A result in which both sides have the same score"
+     ],
+     "length": 3,
+     "accepted": [
+      "TIE"
+     ],
+     "example": "He wore a striped ____ to the interview.",
+     "explanation": "A tie is worn knotted at the collar, and a tie is a result where the scores are level."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g4",
+   "title": "Gentle pairs 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The front of the body between the neck and the stomach",
+      "A large strong box for storing things"
+     ],
+     "length": 5,
+     "accepted": [
+      "CHEST"
+     ],
+     "example": "The old sea ____ was full of blankets.",
+     "explanation": "The chest is the front of the upper body, and a chest is a large sturdy box."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A unit of British money",
+      "A unit of weight equal to sixteen ounces"
+     ],
+     "length": 5,
+     "accepted": [
+      "POUND"
+     ],
+     "example": "The bag of flour weighs one ____.",
+     "explanation": "The pound is the UK's unit of currency, and a pound is also a weight of sixteen ounces."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A small sticker put on a letter to pay the postage",
+      "To bring your foot down hard"
+     ],
+     "length": 5,
+     "accepted": [
+      "STAMP"
+     ],
+     "example": "Put a first-class ____ on the envelope.",
+     "explanation": "A stamp pays for postage, and to stamp is to bring your foot down heavily."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A character of the alphabet",
+      "A written message sent by post"
+     ],
+     "length": 6,
+     "accepted": [
+      "LETTER"
+     ],
+     "example": "She wrote a ____ to thank her grandmother for the present.",
+     "explanation": "A letter is a character such as A or B, and a written message sent in an envelope."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A moving ridge of water on the sea",
+      "To move your hand to say hello or goodbye"
+     ],
+     "length": 4,
+     "accepted": [
+      "WAVE"
+     ],
+     "example": "A huge ____ crashed onto the beach.",
+     "explanation": "A wave is a moving ridge of water, and to wave is to move your hand in greeting."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-s1",
+   "title": "Standard pairs 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "An early version of a piece of writing",
+      "A written order for a bank to pay a sum of money"
+     ],
+     "length": 5,
+     "accepted": [
+      "DRAFT"
+     ],
+     "example": "This is only the first ____ of my speech.",
+     "explanation": "A draft is a preliminary version of a document, and a banker's draft is an order for a bank to pay money. In British English both are spelt DRAFT; the air-current sense is DRAUGHT."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The price asked for something",
+      "To rush forward to attack"
+     ],
+     "length": 6,
+     "accepted": [
+      "CHARGE"
+     ],
+     "example": "There is no ____ for children under five.",
+     "explanation": "A charge is the price asked, and to charge is to rush forward in attack."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A strip used for measuring and drawing straight lines",
+      "A king, queen or other person who governs"
+     ],
+     "length": 5,
+     "accepted": [
+      "RULER"
+     ],
+     "example": "Draw the margin with a ____.",
+     "explanation": "A ruler measures and rules straight lines, and a ruler is a person who governs a country."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A flow of water, air or electricity",
+      "Belonging to the present time"
+     ],
+     "length": 7,
+     "accepted": [
+      "CURRENT"
+     ],
+     "example": "The ____ swept the boat downstream.",
+     "explanation": "A current is a flow of water or electricity, and current means happening now."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "The place where someone is buried",
+      "Serious and worrying"
+     ],
+     "length": 5,
+     "accepted": [
+      "GRAVE"
+     ],
+     "example": "The doctor's face was ____ as she gave the news.",
+     "explanation": "A grave is a burial place, and grave means serious and solemn."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s2",
+   "title": "Standard pairs 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "Treating everyone equally",
+      "An outdoor event with rides and stalls"
+     ],
+     "length": 4,
+     "accepted": [
+      "FAIR"
+     ],
+     "example": "The children rode the carousel at the ____.",
+     "explanation": "Fair means just and even-handed, and a fair is a travelling show with rides and stalls."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The city where a country's government is based",
+      "Money used to start or run a business"
+     ],
+     "length": 7,
+     "accepted": [
+      "CAPITAL"
+     ],
+     "example": "Paris is the ____ of France.",
+     "explanation": "A capital is the seat of government, and capital is money invested in a business."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Not heavy",
+      "What makes it possible to see"
+     ],
+     "length": 5,
+     "accepted": [
+      "LIGHT"
+     ],
+     "example": "Turn on the ____; it is getting dark.",
+     "explanation": "Light means of little weight, and light is the brightness that lets us see."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "Able to wait calmly without complaining",
+      "A person receiving medical treatment"
+     ],
+     "length": 7,
+     "accepted": [
+      "PATIENT"
+     ],
+     "example": "The nurse checked on each ____ in the ward.",
+     "explanation": "Patient means calm and tolerant of delay, and a patient is someone being treated by a doctor."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Giving out a lot of light",
+      "Quick to learn and understand"
+     ],
+     "length": 6,
+     "accepted": [
+      "BRIGHT"
+     ],
+     "example": "She is a ____ pupil who picks things up quickly.",
+     "explanation": "Bright means shining strongly, and also clever."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s3",
+   "title": "Standard pairs 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "Soft and easy to chew",
+      "A formal offer to carry out work for a stated price"
+     ],
+     "length": 6,
+     "accepted": [
+      "TENDER"
+     ],
+     "example": "Slow cooking makes the beef beautifully ____.",
+     "explanation": "Tender meat is soft and easy to cut, and a tender is a formal bid for a contract."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Unwilling to spend or share money",
+      "The average of a set of numbers"
+     ],
+     "length": 4,
+     "accepted": [
+      "MEAN"
+     ],
+     "example": "Add the scores and divide by five to find the ____.",
+     "explanation": "Mean describes someone stingy, and the mean is the arithmetical average."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Something that you hear",
+      "In good condition, sensible and reliable"
+     ],
+     "length": 5,
+     "accepted": [
+      "SOUND"
+     ],
+     "example": "That is ____ advice; I would follow it.",
+     "explanation": "A sound is anything heard, and sound also means solid, healthy or well founded."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "Happy and satisfied with what you have",
+      "What is inside something"
+     ],
+     "length": 7,
+     "accepted": [
+      "CONTENT"
+     ],
+     "example": "The cat was ____ to doze by the fire.",
+     "explanation": "Content means satisfied, and the content of something is what it contains. The stress moves, but the spelling is the same."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Rising or falling sharply",
+      "To soak in liquid to draw out flavour"
+     ],
+     "length": 5,
+     "accepted": [
+      "STEEP"
+     ],
+     "example": "Leave the tea leaves to ____ for three minutes.",
+     "explanation": "Steep describes a sharp slope, and to steep is to soak something in liquid."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s4",
+   "title": "Standard pairs 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A long book telling an invented story",
+      "New and unusual"
+     ],
+     "length": 5,
+     "accepted": [
+      "NOVEL"
+     ],
+     "example": "What a ____ idea; nobody has tried that before.",
+     "explanation": "A novel is a long work of fiction, and novel means new and original."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A building where horses are kept",
+      "Firmly fixed and not likely to change"
+     ],
+     "length": 6,
+     "accepted": [
+      "STABLE"
+     ],
+     "example": "The patient's condition is now ____.",
+     "explanation": "A stable houses horses, and stable means steady and unlikely to change."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A line of seats in a theatre",
+      "A noisy quarrel"
+     ],
+     "length": 3,
+     "accepted": [
+      "ROW"
+     ],
+     "example": "We sat in the front ____ of the stalls.",
+     "explanation": "A row is a line of seats or things side by side, and a row (rhyming with cow) is a noisy argument."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "To say numbers in order",
+      "A European nobleman"
+     ],
+     "length": 5,
+     "accepted": [
+      "COUNT"
+     ],
+     "example": "The ____ lived in a castle above the village.",
+     "explanation": "To count is to say numbers in order, and a count is a European noble, equivalent to an earl."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To push firmly against something",
+      "Newspapers and journalists as a group"
+     ],
+     "length": 5,
+     "accepted": [
+      "PRESS"
+     ],
+     "example": "The minister refused to speak to the ____.",
+     "explanation": "To press is to push steadily, and the press means newspapers and reporters collectively."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-e1",
+   "title": "Expert pairs 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A cold current of air in a room",
+      "A flat round piece moved diagonally on a chequered board"
+     ],
+     "length": 7,
+     "accepted": [
+      "DRAUGHT"
+     ],
+     "example": "Shut the door; there is a terrible ____.",
+     "explanation": "A draught is a current of air indoors, and one of the pieces in the game of draughts. British spelling: DRAFT does not fit either meaning."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A blow with a closed hand",
+      "A mixed fruit drink served from a large bowl"
+     ],
+     "length": 5,
+     "accepted": [
+      "PUNCH"
+     ],
+     "example": "Ladle some ____ into everyone's glass.",
+     "explanation": "A punch is a blow with the fist, and punch is a mixed drink served from a bowl."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A large wicker basket with a lid",
+      "To hold back or obstruct"
+     ],
+     "length": 6,
+     "accepted": [
+      "HAMPER"
+     ],
+     "example": "Heavy rain will ____ the rescue effort.",
+     "explanation": "A hamper is a lidded wicker basket, often for food, and to hamper is to hinder."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A short period of time",
+      "Words believed to have magical power"
+     ],
+     "length": 5,
+     "accepted": [
+      "SPELL"
+     ],
+     "example": "We enjoyed a sunny ____ in early March.",
+     "explanation": "A spell is a short period, as in a dry spell, and a magic spell is a form of words with supposed power."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Equipment for fishing",
+      "To deal with a difficult task"
+     ],
+     "length": 6,
+     "accepted": [
+      "TACKLE"
+     ],
+     "example": "It is time to ____ the pile of paperwork.",
+     "explanation": "Fishing tackle is the angler's gear, and to tackle a problem is to deal with it."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e2",
+   "title": "Expert pairs 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "An enclosed area containing a group of buildings",
+      "To make a bad situation worse"
+     ],
+     "length": 8,
+     "accepted": [
+      "COMPOUND"
+     ],
+     "example": "Arguing with the referee will only ____ the problem.",
+     "explanation": "A compound is a fenced area with buildings, and to compound a problem is to make it worse."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A piece of cloth with a design, flown from a pole",
+      "To become tired or less lively"
+     ],
+     "length": 4,
+     "accepted": [
+      "FLAG"
+     ],
+     "example": "By the last mile the runners began to ____.",
+     "explanation": "A flag is flown as a symbol, and to flag is to tire or weaken."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A sculpture of a person's head and shoulders",
+      "Having run out of money; bankrupt"
+     ],
+     "length": 4,
+     "accepted": [
+      "BUST"
+     ],
+     "example": "The firm went ____ after losing its biggest customer.",
+     "explanation": "A bust is a sculpture of head and shoulders, and a business that goes bust is bankrupt."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "Pellets of ice falling from the sky",
+      "To call out to attract attention, as to a taxi"
+     ],
+     "length": 4,
+     "accepted": [
+      "HAIL"
+     ],
+     "example": "She stepped to the kerb to ____ a cab.",
+     "explanation": "Hail is falling ice, and to hail someone is to call out to them."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Firmly fixed so that it will not move",
+      "To go without food"
+     ],
+     "length": 4,
+     "accepted": [
+      "FAST"
+     ],
+     "example": "Many people ____ from dawn to sunset during Ramadan.",
+     "explanation": "Fast means securely fixed, as in stuck fast, and to fast is to eat nothing for a time. The clue avoids the obvious 'quick'."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e3",
+   "title": "Expert pairs 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The pointed end of something",
+      "A place where rubbish is taken and dumped"
+     ],
+     "length": 3,
+     "accepted": [
+      "TIP"
+     ],
+     "example": "We took the old sofa to the ____.",
+     "explanation": "The tip is the pointed end, and in British English a tip is a rubbish dump."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "An evergreen conifer",
+      "Neat and smart in appearance"
+     ],
+     "length": 6,
+     "accepted": [
+      "SPRUCE"
+     ],
+     "example": "He looked very ____ in his new suit.",
+     "explanation": "A spruce is a conifer, and spruce means neat and trim."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A building used for worship",
+      "The flat side of the head beside the eye"
+     ],
+     "length": 6,
+     "accepted": [
+      "TEMPLE"
+     ],
+     "example": "She rubbed her ____ as the headache began.",
+     "explanation": "A temple is a place of worship, and the temple is the side of the forehead."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A place where coins are made",
+      "In perfect, as-new condition"
+     ],
+     "length": 4,
+     "accepted": [
+      "MINT"
+     ],
+     "example": "The stamp album is in ____ condition.",
+     "explanation": "The mint produces coins, and mint condition means as good as new. The herb sense is a deliberate distraction."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Rubbish that is thrown away",
+      "To say that you will not do something"
+     ],
+     "length": 6,
+     "accepted": [
+      "REFUSE"
+     ],
+     "example": "Collect the ____ bags from the kerb on Tuesday.",
+     "explanation": "Refuse (stress on the first syllable) is waste, and to refuse (stress on the second) is to decline."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e4",
+   "title": "Expert pairs 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To leave someone stuck with no way of leaving",
+      "A single thin thread or hair"
+     ],
+     "length": 6,
+     "accepted": [
+      "STRAND"
+     ],
+     "example": "A ____ of hair fell across her face.",
+     "explanation": "To strand someone is to leave them stuck, and a strand is a single thread or hair."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A skilled activity making things by hand",
+      "A boat, aircraft or spacecraft"
+     ],
+     "length": 5,
+     "accepted": [
+      "CRAFT"
+     ],
+     "example": "The small ____ drifted towards the harbour.",
+     "explanation": "A craft is a skilled trade, and a craft is also a vessel for travel by water, air or space."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A person who mends shoes",
+      "A baked fruit pudding with a scone topping"
+     ],
+     "length": 7,
+     "accepted": [
+      "COBBLER"
+     ],
+     "example": "Take your boots to the ____ to be resoled.",
+     "explanation": "A cobbler repairs shoes, and a cobbler is a fruit pudding topped with scone dough."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A garden tool with a row of prongs",
+      "A fashionable man who lives an immoral life"
+     ],
+     "length": 4,
+     "accepted": [
+      "RAKE"
+     ],
+     "example": "Use a ____ to gather up the fallen leaves.",
+     "explanation": "A rake gathers leaves, and a rake is also a dissolute man of fashion, as in The Rake's Progress."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To hit hard and repeatedly",
+      "A mixture of flour, eggs and milk"
+     ],
+     "length": 6,
+     "accepted": [
+      "BATTER"
+     ],
+     "example": "Whisk the ____ until it is smooth, then fry the pancakes.",
+     "explanation": "To batter is to strike repeatedly, and batter is the mixture used for pancakes and fried fish."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  }
+ ]
+}

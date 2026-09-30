@@ -1,0 +1,31 @@
+[data-game="clue-pairs"] .cp-cards { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 0 16px; }
+[data-game="clue-pairs"] .cp-card-btn {
+  min-width: 64px; min-height: 52px; padding: 6px 10px; border-radius: 12px; border: 1px solid #c0abda; background: #fffefa; color: var(--ink);
+  display: grid; justify-items: center; gap: 2px;
+}
+[data-game="clue-pairs"] .cp-card-btn .cp-num { font-family: Georgia, serif; font-size: 1.15rem; font-weight: 600; }
+[data-game="clue-pairs"] .cp-card-btn .cp-state { font-size: .7rem; color: var(--muted); }
+[data-game="clue-pairs"] .cp-card-btn[aria-current="true"] { border: 2px solid var(--accent); box-shadow: 0 3px 0 color-mix(in srgb, var(--accent) 45%, white); }
+[data-game="clue-pairs"] .cp-card-btn[data-status="solved"] { background: var(--wash); }
+[data-game="clue-pairs"] .cp-card-btn[data-status="solved"] .cp-state { color: var(--accent); font-weight: 700; }
+[data-game="clue-pairs"] .cp-card-btn[data-status="revealed"] { border-style: dashed; }
+[data-game="clue-pairs"] .cp-heading { text-align: center; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 4px; }
+[data-game="clue-pairs"] #pair-clue strong { gap: 8px; align-content: center; }
+[data-game="clue-pairs"] .cp-meaning { display: block; font-family: system-ui, sans-serif; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+[data-game="clue-pairs"] .cp-entry { align-items: center; justify-content: center; margin-top: 12px; }
+[data-game="clue-pairs"] .cp-entry input { flex: 1 1 180px; min-height: 50px; font-size: 1.2rem; letter-spacing: .12em; }
+[data-game="clue-pairs"] .cp-enum { font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+[data-game="clue-pairs"] .cp-hints { margin-top: 12px; padding: 10px 14px; border-radius: 12px; background: var(--wash); line-height: 1.5; }
+[data-game="clue-pairs"] .cp-hints p { margin: 4px 0; }
+[data-game="clue-pairs"] .cp-pattern { font-weight: 700; letter-spacing: .15em; font-family: ui-monospace, monospace; }
+[data-game="clue-pairs"] .cp-wrong { color: var(--muted); font-size: .9rem; margin: 10px 0 4px; }
+[data-game="clue-pairs"] .cp-explain { margin-top: 14px; padding: 14px 16px; border-radius: 14px; border: 1px solid #c0abda; background: #fffefa; line-height: 1.55; }
+[data-game="clue-pairs"] .cp-answer { font-size: 1.1rem; margin: 0 0 6px; }
+[data-game="clue-pairs"] .cp-answer strong { letter-spacing: .1em; }
+@media (max-width: 700px) {
+  [data-game="clue-pairs"] #pair-clue { grid-template-columns: 1fr; padding: 4px 0; }
+  [data-game="clue-pairs"] #pair-clue strong { min-height: 0; padding: 16px 12px; border-radius: 14px; }
+  [data-game="clue-pairs"] .cp-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+  [data-game="clue-pairs"] .cp-card-btn { min-width: 0; padding: 6px 2px; }
+  [data-game="clue-pairs"] .cp-card-btn .cp-state { font-size: .64rem; line-height: 1.15; }
+}
