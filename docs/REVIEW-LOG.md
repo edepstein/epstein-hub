@@ -101,3 +101,28 @@ Grouped by area; each game appends its own section.
   - wf-e4: CANINE (tooth), FREIGHT (train), STONE (weight) forced into hidden numbers (exactly four tiles hide a number, checked mechanically); TON (slang for 100); DRAM (whisky measure; confirm familiar enough). HUNDREDWEIGHT was rejected because it hides EIGHT and allowed a rival partition.
 - [ ] Only 5 authored rounds for Gentle and Standard and 4 for Expert (plus 1 demo each for Gentle and Standard); docs/08 asks for 10 per difficulty.
 - [ ] Reporting an ambiguity from the completion screen (brief) is not implemented; there is no editorial queue backend yet.
+
+## Cryptic Workshop
+Decisions (best-effort, need editorial confirmation):
+- [ ] A round is three clues (games/cryptic-workshop.md is the rules authority). 2 demo rounds (pack fixtures cryptic-001/002) + 12 original practice rounds: 5 gentle (incl. demo), 5 standard (incl. demo), 4 expert. docs/08 asks for 10 per difficulty; shortfall remains, pages show "limited preview".
+- [ ] Wrong answers are rejected (not recorded as actions), so "attempts" are not persisted; hints never cost points; a revealed clue scores 0; reveal-all or all clues revealed gives a "revealed" outcome, otherwise "completed" (assisted if any hint/reveal).
+- [ ] Hint ladder per clue: definition, device, indicator, wordplay material, some letters (every third letter), then reveal (confirm dialog). Gentle names the device, so that stage is skipped. A correct device-practice guess also skips it.
+- [ ] Gentle uses initial letters as well as anagram/hidden/reversal (brief lists only the first three).
+- [ ] House lists: indicators per device and abbreviations (TA thanks, O ring, E energy, T time, P quiet) live in construction.ts; the validator rejects anything off-list.
+- [ ] "Report an answer issue" (brief) is not implemented: there is no editorial backend.
+- [ ] ROME (cw-e4) is a proper noun outside ESDB; allowed explicitly in validate.ts. Check house policy on capitals.
+
+Every original clue, mechanically verified by validate.ts (letters) but needing independent solve + semantic review (docs/05 asks for two semantic reviews):
+- [ ] cw-g1: "Cheap mixture makes a fruit (5)" PEACH (anagram) · "Metal found in hot interior (3)" TIN (hidden) · "Snare part sent back (4)" TRAP (reversal)
+- [ ] cw-g2: "Sword, broken, becomes lyrics (5)" WORDS (anagram) · "Bird found in theme music (3)" EMU (hidden) · "Prize drawer turned over (6)" REWARD (reversal; "turned over" is more natural for a down clue)
+- [ ] cw-g3: "Shore scrambled for a mount (5)" HORSE · "Stone hidden in huge mound (3)" GEM · "Rodents: star returned (4)" RATS
+- [ ] cw-g4: "Peaceful: initially cats and lions mingle (4)" CALM (initials) · "Object made by night shift (5)" THING (anagram) · "Beer that's regal when sent back (5)" LAGER (reversal)
+- [ ] cw-s1: "Vehicle and pet make a floor covering (6)" CARPET (charade; PET used literally) · "Chief dealer is out (6)" LEADER (anagram) · "Sin receives thanks for a mark (5)" STAIN (container, TA = thanks)
+- [ ] cw-s2: "Leap season (6)" SPRING (double definition) · "Heavenly being found in Cuban gelato (5)" ANGEL (hidden) · "Number with insect is a renter (6)" TENANT (charade; "Number" = TEN is a loose convention)
+- [ ] cw-s3: "Courage when earth moves (5)" HEART (anagram) · "Fiend lived in reverse (5)" DEVIL (reversal) · "Cat swallowing ring makes a layer of paint (4)" COAT (container, O = ring)
+- [ ] cw-s4: "Look at timepiece (5)" WATCH (double definition) · "Average boy becomes a clergyman (6)" PARSON (charade) · "Discharge time, going back (4)" EMIT (reversal)
+- [ ] cw-e1: "Bird to box and quarrel (7)" SPARROW (charade) · "Headless card game's crest (5)" RIDGE (deletion of BRIDGE) · "Buttonhole motor state (9)" CARNATION (charade; buttonhole = flower worn in a lapel)
+- [ ] cw-e2: "Ocean wrecked a small boat (5)" CANOE (anagram) · "Tie support? There's a snag (8)" DRAWBACK (charade) · "Dark time, we hear, for a chess piece (6)" KNIGHT (homophone of NIGHT; pronunciation identical in UK English)
+- [ ] cw-e3: "Factory absorbing energy is a world (6)" PLANET (container, E = energy) · "Demon ale shaken up for a soft drink (8)" LEMONADE (anagram) · "Soft offer (6)" TENDER (double definition)
+- [ ] cw-e4: "Nose around insect in larder (6)" PANTRY (container PR(ANT)Y) · "Capital served in bistro menu (4)" ROME (hidden) · "Celebrate pulling lever back (5)" REVEL (reversal; only "back" is the listed indicator)
+- [ ] Help-card examples (MATE, PEAR, STUN, PIGLET, BOAT, ROW, SUN, MATCH, WEAK) are original and checked not to collide with any answer.

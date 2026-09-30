@@ -1,0 +1,46 @@
+[data-game="cryptic-workshop"] .cw-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+[data-game="cryptic-workshop"] .cw-tab {
+  min-height: 48px; min-width: 96px; padding: 6px 14px; border-radius: 10px 10px 4px 4px; border: 1px solid #c9ab85;
+  background: #fffaf2; color: var(--ink); font-weight: 650; display: inline-flex; flex-direction: column; align-items: center; line-height: 1.2;
+}
+[data-game="cryptic-workshop"] .cw-tab small { font-weight: 400; font-size: .72rem; color: var(--muted); }
+[data-game="cryptic-workshop"] .cw-tab[aria-selected="true"] { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 3px 0 #5a341f55; }
+[data-game="cryptic-workshop"] .cw-tab[aria-selected="true"] small { color: #fbe9d6; }
+[data-game="cryptic-workshop"] .cw-tab[data-status="solved"]:not([aria-selected="true"]) { border-style: solid; border-width: 2px; }
+[data-game="cryptic-workshop"] .cw-tab[data-status="revealed"]:not([aria-selected="true"]) { border-style: dashed; }
+[data-game="cryptic-workshop"] .quote.cw-clue::before { content: none; display: none; }
+[data-game="cryptic-workshop"] .quote.cw-clue { text-align: center; }
+[data-game="cryptic-workshop"] .cw-kicker { display: block; font: 700 .7rem system-ui, sans-serif; letter-spacing: .15em; color: #8a5233; margin-bottom: 16px; }
+[data-game="cryptic-workshop"] .cw-text { margin: 0; overflow-wrap: anywhere; }
+[data-game="cryptic-workshop"] .cw-enum { white-space: nowrap; }
+[data-game="cryptic-workshop"] .cw-pattern { margin: 12px 0 0; font: 700 1.1rem ui-monospace, Menlo, monospace; letter-spacing: .1em; color: var(--accent); }
+[data-game="cryptic-workshop"] .cw-mark { background: transparent; color: inherit; padding: 0 2px; }
+[data-game="cryptic-workshop"] .cw-definition { text-decoration: underline 3px solid var(--accent); text-underline-offset: 6px; }
+[data-game="cryptic-workshop"] .cw-indicator { outline: 2px solid #b49a75; outline-offset: 1px; border-radius: 4px; background: #fff3e0; }
+[data-game="cryptic-workshop"] .cw-wordplay { text-decoration: underline 2px wavy #5a6f8c; text-underline-offset: 6px; }
+[data-game="cryptic-workshop"] .cw-legend { font-size: .82rem; color: var(--muted); text-align: center; margin: 10px 0 0; }
+[data-game="cryptic-workshop"] .cw-legend .cw-mark { font-weight: 650; color: var(--ink); }
+[data-game="cryptic-workshop"] .cw-entry input { font-size: 1.3rem; letter-spacing: .14em; min-height: 52px; }
+[data-game="cryptic-workshop"] .cw-count { margin: 6px 0 0; font-size: .8rem; color: var(--muted); }
+[data-game="cryptic-workshop"] .cw-device, [data-game="cryptic-workshop"] .cw-notes, [data-game="cryptic-workshop"] .cw-parse {
+  margin-top: 18px; padding: 14px 16px; border-radius: 10px; background: #fffaf2; border: 1px solid #e5d3ba;
+}
+[data-game="cryptic-workshop"] .cw-device h3, [data-game="cryptic-workshop"] .cw-notes h3, [data-game="cryptic-workshop"] .cw-parse h3 { font-size: 1rem; margin: 0 0 8px; }
+[data-game="cryptic-workshop"] .cw-device-list { display: flex; flex-wrap: wrap; gap: 6px; }
+[data-game="cryptic-workshop"] .cw-device-list [data-state="wrong"] { text-decoration: line-through; }
+[data-game="cryptic-workshop"] .cw-device-list [data-state="right"] { border: 2px solid var(--accent); font-weight: 700; opacity: 1; }
+[data-game="cryptic-workshop"] .cw-notes ol { margin: 0 0 10px; padding-left: 1.3rem; line-height: 1.55; }
+[data-game="cryptic-workshop"] .cw-hint-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+[data-game="cryptic-workshop"] .cw-muted { color: var(--muted); font-size: .9rem; margin: 0 0 8px; }
+[data-game="cryptic-workshop"] .cw-parse { border: 2px solid var(--accent); background: #fffefa; }
+[data-game="cryptic-workshop"] .cw-parse h3 { font-family: Georgia, serif; font-size: 1.25rem; }
+[data-game="cryptic-workshop"] .cw-parse dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0 0 14px; }
+[data-game="cryptic-workshop"] .cw-parse dt { font-weight: 700; font-size: .85rem; color: var(--accent); }
+[data-game="cryptic-workshop"] .cw-parse dd { margin: 0; overflow-wrap: anywhere; }
+[data-game="cryptic-workshop"] .cw-help summary { cursor: pointer; font-weight: 650; min-height: 44px; display: flex; align-items: center; }
+[data-game="cryptic-workshop"] .cw-help ul { padding-left: 1.1rem; margin: 6px 0 0; }
+@media (max-width: 700px) {
+  [data-game="cryptic-workshop"] .cw-parse dl { grid-template-columns: 1fr; }
+  [data-game="cryptic-workshop"] .quote.cw-clue { font-size: 1.3rem; padding: 24px 12px; }
+  [data-game="cryptic-workshop"] .cw-tab { min-width: 0; flex: 1 1 0; }
+}
