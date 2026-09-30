@@ -1,0 +1,26 @@
+{
+  "scope": "Prototype browser smoke checks, not production/accessibility certification",
+  "passed": true,
+  "checks": [
+    "Friendly default",
+    "Setup dialog role, Tab, Escape and focus recovery",
+    "Handover focus and keyboard rack semantics",
+    "Keyboard selection and draft placement do not submit",
+    "Exact draft/name/mode/turn resume",
+    "In-game dialog focus trap and opener recovery",
+    "Legal CAT scores10 and changes player",
+    "Readable phone board and reachable rack without page overflow",
+    "Phone Fit option changes board size",
+    "Manual final scoring and completed-game restore",
+    "Corrupt snapshot handled without crashing",
+    "Storage failure leaves ongoing game usable",
+    "No uncaught JavaScript errors"
+  ],
+  "errors": [],
+  "phone": {
+    "page": 390,
+    "width": 390,
+    "board": 796,
+    "viewport": 390
+  }
+}

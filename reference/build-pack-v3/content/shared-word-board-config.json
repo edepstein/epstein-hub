@@ -1,0 +1,126 @@
+{
+  "status": "draft-balance-review-required",
+  "rulesVersion": "1.1-candidate",
+  "productionEnabled": false,
+  "boardSize": 9,
+  "anchor": [
+    4,
+    4
+  ],
+  "rackSize": 7,
+  "minimumWordLength": 2,
+  "tileDistribution": {
+    "A": 8,
+    "B": 2,
+    "C": 2,
+    "D": 4,
+    "E": 10,
+    "F": 2,
+    "G": 2,
+    "H": 3,
+    "I": 6,
+    "J": 1,
+    "K": 1,
+    "L": 4,
+    "M": 2,
+    "N": 6,
+    "O": 6,
+    "P": 2,
+    "Q": 1,
+    "R": 5,
+    "S": 5,
+    "T": 7,
+    "U": 4,
+    "V": 2,
+    "W": 2,
+    "X": 1,
+    "Y": 2,
+    "Z": 1
+  },
+  "blankCount": 2,
+  "totalTiles": 93,
+  "tileScores": {
+    "A": 1,
+    "B": 3,
+    "C": 3,
+    "D": 2,
+    "E": 1,
+    "F": 4,
+    "G": 2,
+    "H": 4,
+    "I": 1,
+    "J": 7,
+    "K": 5,
+    "L": 1,
+    "M": 3,
+    "N": 1,
+    "O": 1,
+    "P": 3,
+    "Q": 9,
+    "R": 1,
+    "S": 1,
+    "T": 1,
+    "U": 1,
+    "V": 4,
+    "W": 4,
+    "X": 7,
+    "Y": 4,
+    "Z": 9
+  },
+  "blankScore": 0,
+  "sevenTileBonus": 0,
+  "premiumCells": [
+    {
+      "row": 2,
+      "column": 2,
+      "kind": "double-word"
+    },
+    {
+      "row": 2,
+      "column": 6,
+      "kind": "double-word"
+    },
+    {
+      "row": 6,
+      "column": 2,
+      "kind": "double-word"
+    },
+    {
+      "row": 6,
+      "column": 6,
+      "kind": "double-word"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "kind": "triple-letter"
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "kind": "triple-letter"
+    },
+    {
+      "row": 4,
+      "column": 8,
+      "kind": "triple-letter"
+    },
+    {
+      "row": 8,
+      "column": 4,
+      "kind": "triple-letter"
+    }
+  ],
+  "dictionaryVersion": "REPLACE_WITH_APPROVED_GB_MULTIPLAYER_VERSION",
+  "shuffle": "Fisher-Yates using server cryptographic random integers; never reveal bag order",
+  "premiumPolicy": "Premiums apply only to newly placed tiles on that turn, independently in each newly formed word. Apply letter premiums, sum word values, then apply product of new word premiums. Blanks always score zero, including on letter premiums. Existing tiles on used premium squares have base values only.",
+  "passOrExchangeEndThreshold": 6,
+  "exchangeAllowedWithBagMinimum": 7,
+  "reviewGates": [
+    "Approved two-letter+ gameplay dictionary",
+    "Playtest letter starvation and average match length",
+    "Premium+blank+crossword engine tests",
+    "Server-authoritative rack/bag/turn redaction tests"
+  ],
+  "provenance": "Original proposed configuration authored for this pack; not claimed competitively balanced."
+}

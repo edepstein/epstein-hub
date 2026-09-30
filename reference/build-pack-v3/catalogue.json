@@ -1,0 +1,217 @@
+{
+  "version": "3.0",
+  "status": "build-reference",
+  "games": [
+    {
+      "id": "letter-wheel",
+      "title": "Letter Wheel",
+      "phase": "launch",
+      "productionEnabled": false,
+      "brief": "games/letter-wheel.md",
+      "fixtures": "content/letter-wheel.json",
+      "ui": "ui/letter-wheel.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/letter-wheel.md"
+    },
+    {
+      "id": "word-deduction",
+      "title": "Word Deduction",
+      "phase": "launch",
+      "productionEnabled": false,
+      "brief": "games/word-deduction.md",
+      "fixtures": "content/word-deduction.json",
+      "ui": "ui/word-deduction.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/word-deduction.md"
+    },
+    {
+      "id": "word-families",
+      "title": "Word Families",
+      "phase": "launch",
+      "productionEnabled": false,
+      "brief": "games/word-families.md",
+      "fixtures": "content/word-families.json",
+      "ui": "ui/word-families.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/word-families.md"
+    },
+    {
+      "id": "word-ladder",
+      "title": "Word Ladder",
+      "phase": "launch",
+      "productionEnabled": false,
+      "brief": "games/word-ladder.md",
+      "fixtures": "content/word-ladder.json",
+      "ui": "ui/word-ladder.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/word-ladder.md"
+    },
+    {
+      "id": "letter-set",
+      "title": "Letter Set",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/letter-set.md",
+      "fixtures": "content/letter-set.json",
+      "ui": "ui/letter-set.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/letter-set.md"
+    },
+    {
+      "id": "hidden-word-trail",
+      "title": "Hidden Word Trail",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/hidden-word-trail.md",
+      "fixtures": "content/hidden-word-trail.json",
+      "ui": "ui/hidden-word-trail.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/hidden-word-trail.md"
+    },
+    {
+      "id": "letter-circuit",
+      "title": "Letter Circuit",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/letter-circuit.md",
+      "fixtures": "content/letter-circuit.json",
+      "ui": "ui/letter-circuit.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/letter-circuit.md"
+    },
+    {
+      "id": "daily-crossword",
+      "title": "Daily Crossword",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/daily-crossword.md",
+      "fixtures": "content/daily-crossword.json",
+      "ui": "ui/daily-crossword.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/daily-crossword.md"
+    },
+    {
+      "id": "shared-word-board",
+      "title": "Shared Word Board",
+      "phase": "multiplayer",
+      "productionEnabled": false,
+      "brief": "games/shared-word-board.md",
+      "fixtures": "content/shared-word-board.json",
+      "ui": "ui/shared-word-board.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/shared-word-board.md"
+    },
+    {
+      "id": "clue-pairs",
+      "title": "Clue Pairs",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/clue-pairs.md",
+      "fixtures": "content/clue-pairs.json",
+      "ui": "ui/clue-pairs.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/clue-pairs.md"
+    },
+    {
+      "id": "cryptic-workshop",
+      "title": "Cryptic Workshop",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/cryptic-workshop.md",
+      "fixtures": "content/cryptic-workshop.json",
+      "ui": "ui/cryptic-workshop.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/cryptic-workshop.md"
+    },
+    {
+      "id": "word-fragments",
+      "title": "Word Fragments",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/word-fragments.md",
+      "fixtures": "content/word-fragments.json",
+      "ui": "ui/word-fragments.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/word-fragments.md"
+    },
+    {
+      "id": "missing-links",
+      "title": "Missing Links",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/missing-links.md",
+      "fixtures": "content/missing-links.json",
+      "ui": "ui/missing-links.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/missing-links.md"
+    },
+    {
+      "id": "definition-detective",
+      "title": "Definition Detective",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/definition-detective.md",
+      "fixtures": "content/definition-detective.json",
+      "ui": "ui/definition-detective.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/definition-detective.md"
+    },
+    {
+      "id": "word-weave",
+      "title": "Word Weave",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/word-weave.md",
+      "fixtures": "content/word-weave.json",
+      "ui": "ui/word-weave.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/word-weave.md"
+    },
+    {
+      "id": "shrinking-staircase",
+      "title": "Shrinking Staircase",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/shrinking-staircase.md",
+      "fixtures": "content/shrinking-staircase.json",
+      "ui": "ui/shrinking-staircase.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/shrinking-staircase.md"
+    },
+    {
+      "id": "anagram-relay",
+      "title": "Anagram Relay",
+      "phase": "expansion",
+      "productionEnabled": false,
+      "brief": "games/anagram-relay.md",
+      "fixtures": "content/anagram-relay.json",
+      "ui": "ui/anagram-relay.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/anagram-relay.md"
+    },
+    {
+      "id": "phrase-repair",
+      "title": "Phrase Repair",
+      "phase": "deferred",
+      "productionEnabled": false,
+      "brief": "games/phrase-repair.md",
+      "fixtures": "content/phrase-repair.json",
+      "ui": "ui/phrase-repair.html",
+      "qualityStatus": "demo-ui-with-upgrade-brief",
+      "upgrade": "upgrades/phrase-repair.md"
+    },
+    {
+      "id": "hexabble",
+      "title": "Hexabble",
+      "phase": "family-bonus",
+      "productionEnabled": false,
+      "brief": "games/hexabble.md",
+      "fixtures": "content/hexabble.json",
+      "ui": "ui/hexabble.html",
+      "implementation": "ui/hexabble",
+      "source": "vendor/hexabble-original",
+      "upgrade": "upgrades/19-hexabble-integration.md",
+      "qualityStatus": "adapted-local-engine-reference"
+    }
+  ]
+}

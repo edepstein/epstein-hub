@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "gameId": "hidden-word-trail",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "weather-garden",
+      "difficulty": "gentle",
+      "theme": "Things seen in a garden",
+      "grid": [
+        [
+          "T",
+          "R",
+          "E",
+          "E"
+        ],
+        [
+          "L",
+          "E",
+          "A",
+          "F"
+        ],
+        [
+          "R",
+          "A",
+          "I",
+          "N"
+        ],
+        [
+          "W",
+          "I",
+          "N",
+          "D"
+        ]
+      ],
+      "themeDefiningWord": null,
+      "answers": [
+        {
+          "word": "TREE",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "LEAF",
+          "path": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "RAIN",
+          "path": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "WIND",
+          "path": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "acceptedNonThemeWords": [],
+      "hintsEarnedPerNonThemeWords": 3,
+      "editorialNote": "Simple complete engine fixture; straight paths are not sufficient challenge for a production daily.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "startCell",
+          "cell": [
+            0,
+            0
+          ],
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealPath",
+          "word": "TREE",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+    },
+    {
+      "id": "serpentine-garden",
+      "difficulty": "standard",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "theme": "Growing in the garden",
+      "grid": [
+        [
+          "G",
+          "R",
+          "A",
+          "S"
+        ],
+        [
+          "E",
+          "R",
+          "T",
+          "S"
+        ],
+        [
+          "E",
+          "F",
+          "L",
+          "O"
+        ],
+        [
+          "S",
+          "R",
+          "E",
+          "W"
+        ]
+      ],
+      "answers": [
+        {
+          "word": "GRASS",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "TREE",
+          "path": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "word": "FLOWERS",
+          "path": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "themeDefiningWord": null,
+      "acceptedNonThemeWords": [],
+      "hintsEarnedPerNonThemeWords": 3,
+      "editorialNote": "Three words cover all16cells along a serpentine route; words cross row boundaries. Original intermediate engine demo, not a calibrated production daily.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "startCell",
+          "cell": [
+            0,
+            0
+          ],
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealPath",
+          "word": "GRASS",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "cooking",
+      "difficulty": "gentle",
+      "theme": "Actions in a kitchen",
+      "grid": [
+        [
+          "B",
+          "A",
+          "K",
+          "E"
+        ],
+        [
+          "S",
+          "T",
+          "I",
+          "R"
+        ],
+        [
+          "P",
+          "E",
+          "E",
+          "L"
+        ],
+        [
+          "D",
+          "I",
+          "C",
+          "E"
+        ]
+      ],
+      "themeDefiningWord": null,
+      "answers": [
+        {
+          "word": "BAKE",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "STIR",
+          "path": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "PEEL",
+          "path": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "word": "DICE",
+          "path": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "acceptedNonThemeWords": [],
+      "hintsEarnedPerNonThemeWords": 3,
+      "editorialNote": "Simple complete engine fixture; straight paths are not sufficient challenge for a production daily.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "startCell",
+          "cell": [
+            0,
+            0
+          ],
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealPath",
+          "word": "BAKE",
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference paths spell themed words, move only between neighbouring cells and partition every cell once."
+    }
+  ]
+}

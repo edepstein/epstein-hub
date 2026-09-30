@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "gameId": "hexabble",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original synthetic test moves. Included uploaded lexicon has unverified exact source provenance; not a publication certificate.",
+  "rounds": [
+    {
+      "id": "opening-cat-down",
+      "status": "demo",
+      "rulesVersion": "hexabble-integration-1.0",
+      "dictionaryVersion": "uploaded-merged-252209-v1",
+      "board": {},
+      "placements": [
+        {
+          "q": 0,
+          "r": 0,
+          "tile": {
+            "id": "fixture-0",
+            "kind": "letter",
+            "letter": "C",
+            "value": 3
+          }
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "tile": {
+            "id": "fixture-1",
+            "kind": "letter",
+            "letter": "A",
+            "value": 1
+          }
+        },
+        {
+          "q": 0,
+          "r": 2,
+          "tile": {
+            "id": "fixture-2",
+            "kind": "letter",
+            "letter": "T",
+            "value": 1
+          }
+        }
+      ],
+      "acceptedWords": [
+        "cat"
+      ],
+      "expected": {
+        "valid": true,
+        "word": "CAT",
+        "score": 10
+      },
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "placement",
+          "text": "Cover the centre start and follow one of the three reading directions.",
+          "assisted": true
+        }
+      ],
+      "explanation": "CAT has letter values3+1+1; newly occupied centre doubles the word, giving10. These are move fixtures, not an authored full match."
+    },
+    {
+      "id": "opening-cat-down-right",
+      "status": "demo",
+      "rulesVersion": "hexabble-integration-1.0",
+      "dictionaryVersion": "uploaded-merged-252209-v1",
+      "board": {},
+      "placements": [
+        {
+          "q": 0,
+          "r": 0,
+          "tile": {
+            "id": "fixture-0",
+            "kind": "letter",
+            "letter": "C",
+            "value": 3
+          }
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "tile": {
+            "id": "fixture-1",
+            "kind": "letter",
+            "letter": "A",
+            "value": 1
+          }
+        },
+        {
+          "q": 2,
+          "r": 0,
+          "tile": {
+            "id": "fixture-2",
+            "kind": "letter",
+            "letter": "T",
+            "value": 1
+          }
+        }
+      ],
+      "acceptedWords": [
+        "cat"
+      ],
+      "expected": {
+        "valid": true,
+        "word": "CAT",
+        "score": 10
+      },
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "placement",
+          "text": "Cover the centre start and follow one of the three reading directions.",
+          "assisted": true
+        }
+      ],
+      "explanation": "CAT has letter values3+1+1; newly occupied centre doubles the word, giving10. These are move fixtures, not an authored full match."
+    },
+    {
+      "id": "opening-cat-up-right",
+      "status": "demo",
+      "rulesVersion": "hexabble-integration-1.0",
+      "dictionaryVersion": "uploaded-merged-252209-v1",
+      "board": {},
+      "placements": [
+        {
+          "q": 0,
+          "r": 0,
+          "tile": {
+            "id": "fixture-0",
+            "kind": "letter",
+            "letter": "C",
+            "value": 3
+          }
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "tile": {
+            "id": "fixture-1",
+            "kind": "letter",
+            "letter": "A",
+            "value": 1
+          }
+        },
+        {
+          "q": 2,
+          "r": -2,
+          "tile": {
+            "id": "fixture-2",
+            "kind": "letter",
+            "letter": "T",
+            "value": 1
+          }
+        }
+      ],
+      "acceptedWords": [
+        "cat"
+      ],
+      "expected": {
+        "valid": true,
+        "word": "CAT",
+        "score": 10
+      },
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "placement",
+          "text": "Cover the centre start and follow one of the three reading directions.",
+          "assisted": true
+        }
+      ],
+      "explanation": "CAT has letter values3+1+1; newly occupied centre doubles the word, giving10. These are move fixtures, not an authored full match."
+    }
+  ]
+}

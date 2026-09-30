@@ -1,0 +1,16 @@
+{
+  "source": "English Speller Database (ESDB, formerly SCOWL)",
+  "repository": "https://github.com/en-wl/wordlist",
+  "commit": "1e5b7d3a72f47a71da5d28686c1dd4b397178485",
+  "branch": "v2",
+  "checkedAt": "2026-09-30",
+  "command": "./scowl word-list 60 B,Z 5 --wo-poses=abbr --categories=",
+  "postFilter": "Original token matches lowercase ASCII [a-z]{2,24}; then uppercase, deduplicate, sort. Excludes capitalised source entries without claiming this removes every proper name. No accent folding.",
+  "rawWordCount": 111564,
+  "wordCount": 81901,
+  "sha256": "daf3a79020e327e63356e01529c1e8aca37d217dbf6a85edfc0ab27cf9a291ce",
+  "noticeFile": "ESDB-Copyright.txt",
+  "status": "candidate-only",
+  "editoriallyApproved": false,
+  "warnings": "Upstream database build completed with unmatched-source compound warnings. No claim of exhaustive English coverage. Candidate terms still need game-specific filtering, offensive term review and common-answer curation."
+}

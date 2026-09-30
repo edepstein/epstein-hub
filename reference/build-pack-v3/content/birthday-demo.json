@@ -1,0 +1,92 @@
+{
+  "fixtureVersion": 1,
+  "environment": "development-only",
+  "fictional": true,
+  "warning": "ALL PEOPLE, TITLES, DATES AND STORIES BELOW ARE FICTIONAL UI PLACEHOLDERS. NOT REAL FAMILY CONTENT. NEVER IMPORT TO PRODUCTION.",
+  "productionImportAllowed": false,
+  "family": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "displayName": "Fictional demonstration family",
+    "timezone": "Europe/London"
+  },
+  "recipient": {
+    "displayName": "Demo recipient (fictional)",
+    "birthdayDate": null,
+    "milestoneAge": null
+  },
+  "members": [
+    {
+      "fixtureKey": "demo-viewer",
+      "displayName": "Demo reader (fictional)",
+      "role": "viewer"
+    },
+    {
+      "fixtureKey": "demo-curator",
+      "displayName": "Demo curator (fictional)",
+      "role": "curator"
+    }
+  ],
+  "assets": [],
+  "posts": [
+    {
+      "fixtureKey": "demo-post-1",
+      "fictional": true,
+      "caption": "FICTIONAL PLACEHOLDER: A photograph and a genuine caption would appear here after permission is recorded.",
+      "assetIds": [],
+      "status": "draft",
+      "publishedAt": null
+    }
+  ],
+  "book": {
+    "title": "Fictional demonstration birthday book",
+    "dedication": "PLACEHOLDER: Replace with an approved dedication written by the family.",
+    "status": "draft",
+    "chapters": [
+      {
+        "title": "Demo chapter (fictional)",
+        "items": [
+          {
+            "type": "letter",
+            "heading": "Placeholder message",
+            "body": "This is demonstration text, not a birthday wish from a real person.",
+            "fictional": true
+          }
+        ]
+      }
+    ]
+  },
+  "audioPostcards": [],
+  "newspaper": {
+    "title": "Fictional demonstration edition",
+    "issueDate": null,
+    "status": "draft",
+    "items": []
+  },
+  "memoryEvents": [
+    {
+      "title": "Fictional placeholder event",
+      "datePrecision": "unknown",
+      "dateStart": null,
+      "story": "Replace with a genuine approved story; this record asserts no real event.",
+      "resurfaceAllowed": false,
+      "status": "draft",
+      "fictional": true
+    }
+  ],
+  "privateCrosswords": [],
+  "pictureMysteries": [],
+  "historyPrompts": [
+    {
+      "question": "Is there a memory you would like to share?",
+      "status": "draft",
+      "isGenericPrompt": true
+    }
+  ],
+  "historyResponses": [],
+  "calendarEvents": [],
+  "importGuards": [
+    "Reject production environment unless a separate audited fixture workflow explicitly permits nonpersonal sandbox data.",
+    "Never publish placeholder posts/books/events automatically.",
+    "Fixture names must remain labelled fictional in preview UI."
+  ]
+}

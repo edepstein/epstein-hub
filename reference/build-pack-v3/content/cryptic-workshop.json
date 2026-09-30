@@ -1,0 +1,144 @@
+{
+  "gameId": "cryptic-workshop",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "cryptic-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Quiet: listen, upset (6)",
+            "length": 6,
+            "mechanism": "anagram"
+          },
+          {
+            "id": "b",
+            "text": "Bird found in show rental (4)",
+            "length": 4,
+            "mechanism": "hidden"
+          },
+          {
+            "id": "c",
+            "text": "Under pressure, desserts returned (8)",
+            "length": 8,
+            "mechanism": "reversal"
+          }
+        ]
+      },
+      "solution": {
+        "answers": {
+          "a": [
+            "SILENT"
+          ],
+          "b": [
+            "WREN"
+          ],
+          "c": [
+            "STRESSED"
+          ]
+        },
+        "parses": {
+          "a": {
+            "definition": "Quiet",
+            "indicator": "upset",
+            "fodder": "LISTEN",
+            "operation": "anagram"
+          },
+          "b": {
+            "definition": "Bird",
+            "indicator": "found in",
+            "fodder": "SHOWRENTAL",
+            "operation": "hidden",
+            "start": 3
+          },
+          "c": {
+            "definition": "Under pressure",
+            "indicator": "returned",
+            "fodder": "DESSERTS",
+            "operation": "reversal"
+          }
+        }
+      },
+      "hints": [
+        "In a, Quiet is the definition.",
+        "In b, read consecutive letters across the space."
+      ],
+      "explanation": "SILENT uses every letter of LISTEN; WREN is inside SHOWRENTAL; STRESSED is DESSERTS reversed."
+    },
+    {
+      "id": "cryptic-002",
+      "difficulty": "standard",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Not fresh: broken tales (5)",
+            "length": 5,
+            "mechanism": "anagram"
+          },
+          {
+            "id": "b",
+            "text": "Pots returned to halt (4)",
+            "length": 4,
+            "mechanism": "reversal"
+          },
+          {
+            "id": "c",
+            "text": "A flower sounds like lines of people (4)",
+            "length": 4,
+            "mechanism": "homophone"
+          }
+        ]
+      },
+      "solution": {
+        "answers": {
+          "a": [
+            "STALE"
+          ],
+          "b": [
+            "STOP"
+          ],
+          "c": [
+            "ROSE"
+          ]
+        },
+        "parses": {
+          "a": {
+            "definition": "Not fresh",
+            "indicator": "broken",
+            "fodder": "TALES",
+            "operation": "anagram"
+          },
+          "b": {
+            "definition": "halt",
+            "indicator": "returned",
+            "fodder": "POTS",
+            "operation": "reversal"
+          },
+          "c": {
+            "definition": "A flower",
+            "indicator": "sounds like",
+            "fodder": "ROWS",
+            "operation": "homophone",
+            "pronunciationNote": "ROSE and ROWS share a usual UK pronunciation."
+          }
+        }
+      },
+      "hints": [
+        "In a, broken indicates an anagram.",
+        "In b, read POTS backwards."
+      ],
+      "explanation": "STALE is an anagram of TALES; STOP reverses POTS; ROSE sounds like ROWS."
+    }
+  ]
+}

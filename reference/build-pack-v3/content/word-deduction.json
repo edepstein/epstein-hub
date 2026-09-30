@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "gameId": "word-deduction",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "crane",
+      "answer": "CRANE",
+      "difficulty": "standard",
+      "length": 5,
+      "guessLimit": 6,
+      "acceptedGuesses": [
+        "CRANE",
+        "EERIE",
+        "HEART",
+        "PAINT",
+        "PLANT",
+        "RAISE",
+        "SHARE",
+        "SHEEP",
+        "SLATE",
+        "TRACE",
+        "TRAIN"
+      ],
+      "testGuesses": [
+        {
+          "guess": "EERIE",
+          "expectedFeedback": [
+            "absent",
+            "absent",
+            "present",
+            "absent",
+            "correct"
+          ]
+        },
+        {
+          "guess": "CRANE",
+          "expectedFeedback": [
+            "correct",
+            "correct",
+            "correct",
+            "correct",
+            "correct"
+          ]
+        }
+      ],
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "The answer begins with C.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "CRANE",
+          "assisted": true
+        }
+      ],
+      "explanation": "Feedback allocates exact-position letters first, then remaining matching occurrences left to right."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "plant",
+      "answer": "PLANT",
+      "difficulty": "standard",
+      "length": 5,
+      "guessLimit": 6,
+      "acceptedGuesses": [
+        "CRANE",
+        "EERIE",
+        "HEART",
+        "PAINT",
+        "PLANT",
+        "RAISE",
+        "SHARE",
+        "SHEEP",
+        "SLATE",
+        "TRACE",
+        "TRAIN"
+      ],
+      "testGuesses": [
+        {
+          "guess": "EERIE",
+          "expectedFeedback": [
+            "absent",
+            "absent",
+            "absent",
+            "absent",
+            "absent"
+          ]
+        },
+        {
+          "guess": "PLANT",
+          "expectedFeedback": [
+            "correct",
+            "correct",
+            "correct",
+            "correct",
+            "correct"
+          ]
+        }
+      ],
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "The answer begins with P.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "PLANT",
+          "assisted": true
+        }
+      ],
+      "explanation": "Feedback allocates exact-position letters first, then remaining matching occurrences left to right."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "share",
+      "answer": "SHARE",
+      "difficulty": "standard",
+      "length": 5,
+      "guessLimit": 6,
+      "acceptedGuesses": [
+        "CRANE",
+        "EERIE",
+        "HEART",
+        "PAINT",
+        "PLANT",
+        "RAISE",
+        "SHARE",
+        "SHEEP",
+        "SLATE",
+        "TRACE",
+        "TRAIN"
+      ],
+      "testGuesses": [
+        {
+          "guess": "EERIE",
+          "expectedFeedback": [
+            "absent",
+            "absent",
+            "present",
+            "absent",
+            "correct"
+          ]
+        },
+        {
+          "guess": "SHARE",
+          "expectedFeedback": [
+            "correct",
+            "correct",
+            "correct",
+            "correct",
+            "correct"
+          ]
+        }
+      ],
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "The answer begins with S.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "SHARE",
+          "assisted": true
+        }
+      ],
+      "explanation": "Feedback allocates exact-position letters first, then remaining matching occurrences left to right."
+    }
+  ]
+}

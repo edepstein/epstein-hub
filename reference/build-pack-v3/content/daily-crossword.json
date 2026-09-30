@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 1,
+  "gameId": "daily-crossword",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "ball-square",
+      "difficulty": "gentle",
+      "edition": "quick",
+      "solutionGrid": [
+        [
+          "B",
+          "A",
+          "L",
+          "L"
+        ],
+        [
+          "A",
+          "R",
+          "E",
+          "A"
+        ],
+        [
+          "L",
+          "E",
+          "A",
+          "D"
+        ],
+        [
+          "L",
+          "A",
+          "D",
+          "Y"
+        ]
+      ],
+      "blocks": [],
+      "entries": [
+        {
+          "id": "across-1",
+          "direction": "across",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "start": [
+            0,
+            0
+          ],
+          "answer": "BALL",
+          "enumeration": 4,
+          "clue": "A round object used in many games"
+        },
+        {
+          "id": "across-2",
+          "direction": "across",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "start": [
+            1,
+            0
+          ],
+          "answer": "AREA",
+          "enumeration": 4,
+          "clue": "The extent of a surface"
+        },
+        {
+          "id": "across-3",
+          "direction": "across",
+          "cells": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "start": [
+            2,
+            0
+          ],
+          "answer": "LEAD",
+          "enumeration": 4,
+          "clue": "To guide or be in front"
+        },
+        {
+          "id": "across-4",
+          "direction": "across",
+          "cells": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "start": [
+            3,
+            0
+          ],
+          "answer": "LADY",
+          "enumeration": 4,
+          "clue": "A woman, in a traditional form of address"
+        },
+        {
+          "id": "down-1",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "start": [
+            0,
+            0
+          ],
+          "answer": "BALL",
+          "enumeration": 4,
+          "clue": "A round object used in many games"
+        },
+        {
+          "id": "down-2",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "start": [
+            0,
+            1
+          ],
+          "answer": "AREA",
+          "enumeration": 4,
+          "clue": "The extent of a surface"
+        },
+        {
+          "id": "down-3",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "start": [
+            0,
+            2
+          ],
+          "answer": "LEAD",
+          "enumeration": 4,
+          "clue": "To guide or be in front"
+        },
+        {
+          "id": "down-4",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "start": [
+            0,
+            3
+          ],
+          "answer": "LADY",
+          "enumeration": 4,
+          "clue": "A woman, in a traditional form of address"
+        }
+      ],
+      "editorialNote": "Complete word-square fixture; repeated across/down answers are not production-quality crossword design.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "firstLetter",
+          "entryId": "across-1",
+          "letter": "B",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealEntry",
+          "entryId": "across-1",
+          "answer": "BALL",
+          "assisted": true
+        }
+      ],
+      "explanation": "The answer grid is a complete small word square; identical across/down answers are permitted only for this engine demonstration."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "sand-square",
+      "difficulty": "gentle",
+      "edition": "quick",
+      "solutionGrid": [
+        [
+          "S",
+          "A",
+          "N",
+          "D"
+        ],
+        [
+          "A",
+          "R",
+          "E",
+          "A"
+        ],
+        [
+          "N",
+          "E",
+          "A",
+          "T"
+        ],
+        [
+          "D",
+          "A",
+          "T",
+          "E"
+        ]
+      ],
+      "blocks": [],
+      "entries": [
+        {
+          "id": "across-1",
+          "direction": "across",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "start": [
+            0,
+            0
+          ],
+          "answer": "SAND",
+          "enumeration": 4,
+          "clue": "Grains commonly found on a beach"
+        },
+        {
+          "id": "across-2",
+          "direction": "across",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "start": [
+            1,
+            0
+          ],
+          "answer": "AREA",
+          "enumeration": 4,
+          "clue": "The extent of a surface"
+        },
+        {
+          "id": "across-3",
+          "direction": "across",
+          "cells": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "start": [
+            2,
+            0
+          ],
+          "answer": "NEAT",
+          "enumeration": 4,
+          "clue": "Tidy and orderly"
+        },
+        {
+          "id": "across-4",
+          "direction": "across",
+          "cells": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "start": [
+            3,
+            0
+          ],
+          "answer": "DATE",
+          "enumeration": 4,
+          "clue": "A calendar day, or a sweet fruit"
+        },
+        {
+          "id": "down-1",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "start": [
+            0,
+            0
+          ],
+          "answer": "SAND",
+          "enumeration": 4,
+          "clue": "Grains commonly found on a beach"
+        },
+        {
+          "id": "down-2",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "start": [
+            0,
+            1
+          ],
+          "answer": "AREA",
+          "enumeration": 4,
+          "clue": "The extent of a surface"
+        },
+        {
+          "id": "down-3",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "start": [
+            0,
+            2
+          ],
+          "answer": "NEAT",
+          "enumeration": 4,
+          "clue": "Tidy and orderly"
+        },
+        {
+          "id": "down-4",
+          "direction": "down",
+          "cells": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "start": [
+            0,
+            3
+          ],
+          "answer": "DATE",
+          "enumeration": 4,
+          "clue": "A calendar day, or a sweet fruit"
+        }
+      ],
+      "editorialNote": "Complete word-square fixture; repeated across/down answers are not production-quality crossword design.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "firstLetter",
+          "entryId": "across-1",
+          "letter": "S",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealEntry",
+          "entryId": "across-1",
+          "answer": "SAND",
+          "assisted": true
+        }
+      ],
+      "explanation": "The answer grid is a complete small word square; identical across/down answers are permitted only for this engine demonstration."
+    }
+  ]
+}

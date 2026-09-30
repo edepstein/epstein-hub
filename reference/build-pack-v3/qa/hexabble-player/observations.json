@@ -1,0 +1,91 @@
+{
+  "errors": [],
+  "setupRulesFocus": "rulesBtnSetup",
+  "setupDialogRole": null,
+  "setupRulesEscapeCloses": false,
+  "friendlyHint": "Words are checked live as you place tiles, with ✓/✗ shown. Invalid words simply cannot be placed, so nobody loses a turn.",
+  "startHandover": "Mum's turn",
+  "handoverFocus": "",
+  "enterReveals": true,
+  "cells": 217,
+  "rack": [
+    "A1",
+    "Y4",
+    "S1",
+    "N1",
+    "S1",
+    "R1",
+    "S1"
+  ],
+  "keyboardTiles": 0,
+  "friendlyPreview": "AY ↓ · 2× word\n✓ 10\nScore\n10",
+  "friendlySubmitDisabled": false,
+  "turnAfterFriendlyPreview": "⬢ Mum's turn · move 1",
+  "escRecalls": true,
+  "passModal": "Pass your turn?",
+  "gameRulesDialogFocus": "passBtn",
+  "passHandover": "Ed's turn",
+  "endConfirm": "End the game now?",
+  "endTitle": "🏆 Mum wins!",
+  "endTable": "Player\tPlay score\tUnplayed tiles\tFinal\n⬢ Mum\t0\t-10\t-10\n⬢ Ed\t0\t-11\t-11",
+  "gameDialogEscapeCloses": true,
+  "refreshReturnsSetup": true,
+  "refreshNames": [
+    "",
+    ""
+  ],
+  "mobile": {
+    "viewport": 390,
+    "pageWidth": 546,
+    "board": {
+      "x": 238,
+      "y": 64,
+      "width": 0,
+      "height": 772,
+      "top": 64,
+      "right": 238,
+      "bottom": 836,
+      "left": 238
+    },
+    "panel": {
+      "x": 246,
+      "y": 56,
+      "width": 300,
+      "height": 788,
+      "top": 56,
+      "right": 546,
+      "bottom": 844,
+      "left": 246
+    },
+    "bodyOverflow": "hidden"
+  },
+  "mobileModal": {
+    "x": 0,
+    "y": 50.640625,
+    "width": 390,
+    "height": 742.71875
+  },
+  "rackFirst": [
+    "R",
+    "S",
+    "E",
+    "A",
+    "A"
+  ],
+  "invalidWord": "SA",
+  "invalidFriendlyPreview": "SA ↓ · 2× word\n✗ 4\n✗ \"SA\" is not a valid word.\nScore\n4",
+  "invalidFriendlyDisabled": true,
+  "invalidFriendlyTurn": "⬢ Player 1's turn · move 1",
+  "validWord": "AA",
+  "acceptedFriendlyHandover": "Player 2's turn",
+  "acceptedFriendlyHistory": "+4\nPlayer 1\nAA 4",
+  "acceptedFriendlyScore": "Player 1\n7 tiles\n4\nPlayer 2\n▶ playing now · 7 tiles\n0",
+  "officialInvalidWord": "AP",
+  "officialPreview": "AP ↓ · 2× word\n8\nProjected score\n8\nWords are checked when you place them. An invalid word loses the turn.",
+  "officialInvalidHandover": "Player 2's turn",
+  "officialInvalidHistory": "0\nPlayer 1 lost the turn\nNot allowed: AP",
+  "fourPassEnds": "Game over",
+  "fourPassHistory": "Game over. Every player passed or failed twice in a row, so no more moves can be made.\n0\nPlayer 2 passed\n0\nPlayer 1 passed\n0\nPlayer 2 passed\n0\nPlayer 1 passed",
+  "officialChallengeDialog": "Challenge! Word not allowed",
+  "officialTurn": "⬢ Player 2's turn · move 2"
+}

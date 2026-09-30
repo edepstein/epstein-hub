@@ -1,0 +1,294 @@
+{
+  "gameId": "definition-detective",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "detective-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "cases": [
+          {
+            "id": "a",
+            "word": "ambivalent",
+            "sentence": "Nora felt ambivalent: she wanted the promotion but dreaded leaving her team.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Having conflicting feelings"
+              },
+              {
+                "id": "d2",
+                "text": "Feeling completely indifferent"
+              },
+              {
+                "id": "d3",
+                "text": "Being strongly opposed"
+              },
+              {
+                "id": "d4",
+                "text": "Having no information"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "wanted the promotion but dreaded leaving her team"
+              },
+              {
+                "id": "e2",
+                "text": "Nora felt"
+              },
+              {
+                "id": "e3",
+                "text": "the promotion"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "word": "mitigate",
+            "sentence": "The barrier would mitigate the flooding, reducing the damage rather than preventing every drop of water.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Make less severe"
+              },
+              {
+                "id": "d2",
+                "text": "Remove every trace"
+              },
+              {
+                "id": "d3",
+                "text": "Cause to happen"
+              },
+              {
+                "id": "d4",
+                "text": "Measure precisely"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "reducing the damage rather than preventing every drop of water"
+              },
+              {
+                "id": "e2",
+                "text": "The barrier"
+              },
+              {
+                "id": "e3",
+                "text": "the flooding"
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "word": "meticulous",
+            "sentence": "His meticulous checking caught even a misplaced comma in the final document.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Showing careful attention to detail"
+              },
+              {
+                "id": "d2",
+                "text": "Done at great speed"
+              },
+              {
+                "id": "d3",
+                "text": "Needlessly hostile"
+              },
+              {
+                "id": "d4",
+                "text": "Based on a guess"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "caught even a misplaced comma"
+              },
+              {
+                "id": "e2",
+                "text": "the final document"
+              },
+              {
+                "id": "e3",
+                "text": "His meticulous checking"
+              }
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "answers": {
+          "a": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          },
+          "b": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          },
+          "c": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          }
+        }
+      },
+      "hints": [
+        "Look for the contrast in Nora’s sentence.",
+        "Reducing harm is different from removing it completely."
+      ],
+      "explanation": "The context supports conflicting feelings, reduced severity and attention to tiny details."
+    },
+    {
+      "id": "detective-002",
+      "difficulty": "standard",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "cases": [
+          {
+            "id": "a",
+            "word": "equivocal",
+            "sentence": "The reply was equivocal: it neither accepted nor rejected the proposal.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Ambiguous or noncommittal"
+              },
+              {
+                "id": "d2",
+                "text": "Exactly equal in value"
+              },
+              {
+                "id": "d3",
+                "text": "Clearly enthusiastic"
+              },
+              {
+                "id": "d4",
+                "text": "Deliberately insulting"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "neither accepted nor rejected the proposal"
+              },
+              {
+                "id": "e2",
+                "text": "The reply"
+              },
+              {
+                "id": "e3",
+                "text": "the proposal"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "word": "pragmatic",
+            "sentence": "Her pragmatic solution used the equipment already available instead of waiting for an ideal system.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Concerned with what works in practice"
+              },
+              {
+                "id": "d2",
+                "text": "Entirely theoretical"
+              },
+              {
+                "id": "d3",
+                "text": "Always pessimistic"
+              },
+              {
+                "id": "d4",
+                "text": "Unnecessarily elaborate"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "used the equipment already available"
+              },
+              {
+                "id": "e2",
+                "text": "Her pragmatic solution"
+              },
+              {
+                "id": "e3",
+                "text": "an ideal system"
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "word": "parsimonious",
+            "sentence": "The parsimonious owner refused even a small, necessary expense despite having ample funds.",
+            "definitions": [
+              {
+                "id": "d1",
+                "text": "Excessively unwilling to spend money"
+              },
+              {
+                "id": "d2",
+                "text": "Generous with money"
+              },
+              {
+                "id": "d3",
+                "text": "Unable to afford necessities"
+              },
+              {
+                "id": "d4",
+                "text": "Unable to count money"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e1",
+                "text": "refused even a small, necessary expense despite having ample funds"
+              },
+              {
+                "id": "e2",
+                "text": "The parsimonious owner"
+              },
+              {
+                "id": "e3",
+                "text": "ample funds"
+              }
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "answers": {
+          "a": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          },
+          "b": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          },
+          "c": {
+            "definitionId": "d1",
+            "evidenceId": "e1"
+          }
+        }
+      },
+      "hints": [
+        "Equivocal is different from equivalent.",
+        "Look for practical constraints in the second sentence."
+      ],
+      "explanation": "The contexts distinguish ambiguity, practicality and excessive reluctance to spend. Shuffle rendered choices deterministically so correct options are not always first."
+    }
+  ]
+}

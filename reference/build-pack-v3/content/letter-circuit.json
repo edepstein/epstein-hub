@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "gameId": "letter-circuit",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "cold-circuit",
+      "difficulty": "standard",
+      "sides": [
+        [
+          "A",
+          "D",
+          "T"
+        ],
+        [
+          "E",
+          "F",
+          "R"
+        ],
+        [
+          "C",
+          "I",
+          "L"
+        ],
+        [
+          "N",
+          "O",
+          "S"
+        ]
+      ],
+      "minimumWordLength": 3,
+      "acceptedWords": [
+        "COLD",
+        "DRAFT",
+        "TRAIN",
+        "NEST"
+      ],
+      "referenceChain": [
+        "COLD",
+        "DRAFT",
+        "TRAIN",
+        "NEST"
+      ],
+      "optimumWordCountWithinFixtureLexicon": 4,
+      "editorialNote": "Only reference words are in the demo lexicon; recompute optimum against production dictionary.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "firstWord",
+          "text": "A reference solution starts with COLD.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealChain",
+          "words": [
+            "COLD",
+            "DRAFT",
+            "TRAIN",
+            "NEST"
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference words cross sides at every step, chain by final-to-first letter and cumulatively cover all twelve letters."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "bread-circuit",
+      "difficulty": "standard",
+      "sides": [
+        [
+          "A",
+          "G",
+          "T"
+        ],
+        [
+          "D",
+          "I",
+          "R"
+        ],
+        [
+          "E",
+          "H",
+          "S"
+        ],
+        [
+          "B",
+          "N",
+          "U"
+        ]
+      ],
+      "minimumWordLength": 3,
+      "acceptedWords": [
+        "BREAD",
+        "DUST",
+        "TRAIN",
+        "NIGHT"
+      ],
+      "referenceChain": [
+        "BREAD",
+        "DUST",
+        "TRAIN",
+        "NIGHT"
+      ],
+      "optimumWordCountWithinFixtureLexicon": 4,
+      "editorialNote": "Only reference words are in the demo lexicon; recompute optimum against production dictionary.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "firstWord",
+          "text": "A reference solution starts with BREAD.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealChain",
+          "words": [
+            "BREAD",
+            "DUST",
+            "TRAIN",
+            "NIGHT"
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference words cross sides at every step, chain by final-to-first letter and cumulatively cover all twelve letters."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "share-circuit",
+      "difficulty": "standard",
+      "sides": [
+        [
+          "D",
+          "E",
+          "H"
+        ],
+        [
+          "A",
+          "C",
+          "N"
+        ],
+        [
+          "I",
+          "O",
+          "R"
+        ],
+        [
+          "S",
+          "T",
+          "U"
+        ]
+      ],
+      "minimumWordLength": 3,
+      "acceptedWords": [
+        "SHARE",
+        "EARTH",
+        "HOUND",
+        "DICE"
+      ],
+      "referenceChain": [
+        "SHARE",
+        "EARTH",
+        "HOUND",
+        "DICE"
+      ],
+      "optimumWordCountWithinFixtureLexicon": 4,
+      "editorialNote": "Only reference words are in the demo lexicon; recompute optimum against production dictionary.",
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "firstWord",
+          "text": "A reference solution starts with SHARE.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealChain",
+          "words": [
+            "SHARE",
+            "EARTH",
+            "HOUND",
+            "DICE"
+          ],
+          "assisted": true
+        }
+      ],
+      "explanation": "Reference words cross sides at every step, chain by final-to-first letter and cumulatively cover all twelve letters."
+    }
+  ]
+}

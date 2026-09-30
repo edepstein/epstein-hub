@@ -1,0 +1,308 @@
+{
+  "scope": "Prototype checks, not an accessibility audit",
+  "checks": [
+    {
+      "file": "anagram-relay.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "birthday-book.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "birthday-hub.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "clue-pairs.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "crossword.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "cryptic-workshop.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "daily-crossword.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "definition-detective.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "family-feed.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "family-upload.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "hidden-word-trail.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "index.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-circuit.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-set.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-wheel.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "missing-links.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "phrase-repair.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "shared-word-board.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "shrinking-staircase.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "tile-table.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-deduction.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-families.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-fragments.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-ladder.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-weave.html",
+      "width": 320,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "anagram-relay.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "birthday-book.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "birthday-hub.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "clue-pairs.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "crossword.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "cryptic-workshop.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "daily-crossword.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "definition-detective.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "family-feed.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "family-upload.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "hidden-word-trail.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-circuit.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-set.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "letter-wheel.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "missing-links.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "phrase-repair.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "shared-word-board.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "shrinking-staircase.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "tile-table.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-deduction.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-families.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-fragments.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-ladder.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    },
+    {
+      "file": "word-weave.html",
+      "width": 390,
+      "enlargedText": true,
+      "overflow": false
+    }
+  ],
+  "visibleDeductionSymbols": true,
+  "separateLadderTarget": true,
+  "passed": true
+}

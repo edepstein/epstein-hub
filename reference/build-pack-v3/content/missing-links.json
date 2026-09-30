@@ -1,0 +1,164 @@
+{
+  "gameId": "missing-links",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "links-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "linkLength": 5,
+        "candidates": [
+          "LIGHT",
+          "HOUSE",
+          "WATER",
+          "GREEN",
+          "STONE"
+        ],
+        "branches": [
+          {
+            "id": "a",
+            "prefix": "DAY",
+            "suffix": "",
+            "clue": "Natural light during daytime"
+          },
+          {
+            "id": "b",
+            "prefix": "MOON",
+            "suffix": "",
+            "clue": "Light received from the moon"
+          },
+          {
+            "id": "c",
+            "prefix": "",
+            "suffix": "HOUSE",
+            "clue": "A tower with a light to guide ships"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedLinks": [
+          "LIGHT"
+        ],
+        "compounds": {
+          "a": "DAYLIGHT",
+          "b": "MOONLIGHT",
+          "c": "LIGHTHOUSE"
+        }
+      },
+      "hints": [
+        "The shared word begins with L.",
+        "The tower is a LIGHTHOUSE."
+      ],
+      "explanation": "LIGHT completes all three in the displayed positions."
+    },
+    {
+      "id": "links-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "linkLength": 4,
+        "candidates": [
+          "BOOK",
+          "CASE",
+          "MARK",
+          "NOTE",
+          "FOOT"
+        ],
+        "branches": [
+          {
+            "id": "a",
+            "prefix": "NOTE",
+            "suffix": "",
+            "clue": "A book for writing notes"
+          },
+          {
+            "id": "b",
+            "prefix": "",
+            "suffix": "CASE",
+            "clue": "Furniture for holding books"
+          },
+          {
+            "id": "c",
+            "prefix": "",
+            "suffix": "MARK",
+            "clue": "A marker that keeps your place in a book"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedLinks": [
+          "BOOK"
+        ],
+        "compounds": {
+          "a": "NOTEBOOK",
+          "b": "BOOKCASE",
+          "c": "BOOKMARK"
+        }
+      },
+      "hints": [
+        "The shared word begins with B.",
+        "The furniture is a BOOKCASE."
+      ],
+      "explanation": "BOOK occurs after NOTE but before CASE and MARK."
+    },
+    {
+      "id": "links-003",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "linkLength": 4,
+        "candidates": [
+          "FOOT",
+          "HAND",
+          "BALL",
+          "BARE",
+          "ROOT"
+        ],
+        "branches": [
+          {
+            "id": "a",
+            "prefix": "",
+            "suffix": "BALL",
+            "clue": "A game involving kicking a ball"
+          },
+          {
+            "id": "b",
+            "prefix": "",
+            "suffix": "PRINT",
+            "clue": "An impression left by a foot"
+          },
+          {
+            "id": "c",
+            "prefix": "BARE",
+            "suffix": "",
+            "clue": "Without shoes or socks"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedLinks": [
+          "FOOT"
+        ],
+        "compounds": {
+          "a": "FOOTBALL",
+          "b": "FOOTPRINT",
+          "c": "BAREFOOT"
+        }
+      },
+      "hints": [
+        "The shared word begins with F.",
+        "The impression is a FOOTPRINT."
+      ],
+      "explanation": "FOOT completes the three established words."
+    }
+  ]
+}

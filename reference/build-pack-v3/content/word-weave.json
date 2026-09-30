@@ -1,0 +1,110 @@
+{
+  "gameId": "word-weave",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "weave-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "rows": 4,
+        "cols": 6,
+        "lanes": [
+          {
+            "id": "a",
+            "direction": "across",
+            "row": 1,
+            "col": 0,
+            "length": 5,
+            "clue": "A long-legged wading bird"
+          },
+          {
+            "id": "b",
+            "direction": "down",
+            "row": 0,
+            "col": 2,
+            "length": 4,
+            "clue": "The outer covering of a tree trunk"
+          },
+          {
+            "id": "c",
+            "direction": "across",
+            "row": 3,
+            "col": 2,
+            "length": 4,
+            "clue": "A light frame flown on a string in the wind"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedGrids": [
+          {
+            "a": "CRANE",
+            "b": "BARK",
+            "c": "KITE"
+          }
+        ]
+      },
+      "hints": [
+        "The tree covering has four letters.",
+        "The flying frame begins with K."
+      ],
+      "explanation": "CRANE[2] and BARK[1] are A; BARK[3] and KITE[0] are K."
+    },
+    {
+      "id": "weave-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "rows": 4,
+        "cols": 5,
+        "lanes": [
+          {
+            "id": "a",
+            "direction": "across",
+            "row": 1,
+            "col": 0,
+            "length": 4,
+            "clue": "The underside of a foot"
+          },
+          {
+            "id": "b",
+            "direction": "down",
+            "row": 0,
+            "col": 1,
+            "length": 4,
+            "clue": "A small vessel that travels on water"
+          },
+          {
+            "id": "c",
+            "direction": "across",
+            "row": 3,
+            "col": 1,
+            "length": 4,
+            "clue": "What a clock measures"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedGrids": [
+          {
+            "a": "SOLE",
+            "b": "BOAT",
+            "c": "TIME"
+          }
+        ]
+      },
+      "hints": [
+        "The water vessel begins with B.",
+        "The clock answer begins with T."
+      ],
+      "explanation": "SOLE[1] and BOAT[1] are O; BOAT[3] and TIME[0] are T."
+    }
+  ]
+}

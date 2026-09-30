@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hexabble · Word Club</title>
+<link rel="stylesheet" href="hexabble/styles.css">
+<link rel="stylesheet" href="hexabble/club.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-60 -52 120 104%27%3E%3Cpolygon points=%2760,0 30,52 -30,52 -60,0 -30,-52 30,-52%27 fill=%27%23ffb300%27/%3E%3C/svg%3E">
+</head>
+<body>
+<nav class="clubbar" aria-label="Word Club navigation"><a class="club-home" href="index.html"><span>w</span> Word Club</a><a href="index.html">All games</a><a href="birthday-hub.html">Family</a><label class="board-size">Board <select id="boardScale"><option value="fit">Fit</option><option value="readable">Readable</option></select></label><span id="clubSave" role="status" aria-live="polite">Saves on this device</span></nav>
+
+<!-- ============ SETUP SCREEN ============ -->
+<section id="setup" class="screen active">
+  <div class="setup-card">
+    <div class="logo">
+      <svg viewBox="-60 -52 120 104" class="logo-hex" aria-hidden="true"><polygon points="60,0 30,52 -30,52 -60,0 -30,-52 30,-52"/></svg>
+      <h1>HEXABBLE</h1>
+    </div>
+    <p class="tagline">The hexagonal word game. Words read <b>down ↓</b>, <b>down-right ↘</b> and <b>up-right ↗</b>.</p>
+
+    <div class="field">
+      <label>Number of players</label>
+      <div class="seg" id="playerCount">
+        <button data-n="2" class="on">2</button><button data-n="3">3</button><button data-n="4">4</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Player names</label>
+      <div id="nameInputs"></div>
+    </div>
+    <div class="field">
+      <label>Word checking</label>
+      <div class="seg" id="modeSel">
+        <button data-mode="official" title="Invalid word = you lose your turn (the Challenge Rule)">Challenge (turn penalty)</button>
+        <button data-mode="friendly" class="on" title="Words are checked live; invalid words just need fixing">Friendly (live check)</button>
+      </div>
+      <p class="hint" id="modeHint">Friendly checks words while you build your move. Challenge mode makes an invalid word cost a turn. These modes change feedback, not dictionary difficulty.</p>
+    </div>
+    <div class="field">
+      <label class="check"><input type="checkbox" id="privacy" checked> Hide tiles between turns (pass-the-screen mode)</label>
+    </div>
+    <button id="resumeBtn" class="btn primary big" hidden>Resume saved game</button><button id="startBtn" class="btn primary big">Start game</button>
+    <button id="rulesBtnSetup" class="btn link">How to play &amp; scoring</button>
+  </div>
+</section>
+
+<!-- ============ GAME SCREEN ============ -->
+<section id="game" class="screen">
+  <header class="topbar">
+    <div class="brand"><svg viewBox="-60 -52 120 104" class="logo-hex small" aria-hidden="true"><polygon points="60,0 30,52 -30,52 -60,0 -30,-52 30,-52"/></svg>HEXABBLE</div>
+    <div id="turnBanner" class="turn-banner"></div>
+    <div class="top-actions">
+      <button id="rulesBtn" class="btn ghost">Rules</button>
+      <button id="endBtn" class="btn ghost">End game</button>
+      <button id="restartBtn" class="btn danger">Restart</button>
+    </div>
+  </header>
+
+  <aside class="left panel">
+    <h2>Scoreboard</h2>
+    <div id="scoreboard"></div>
+    <div class="bagline"><span class="bagicon">⬢</span> Tiles in bag: <b id="bagCount">0</b></div>
+    <h2>Moves</h2>
+    <ol id="history" class="history"></ol>
+  </aside>
+
+  <main class="boardwrap">
+    <svg id="board" viewBox="-398 -448 796 896" preserveAspectRatio="xMidYMid meet"></svg>
+  </main>
+
+  <aside class="right panel">
+    <div class="rack-head">
+      <h2 id="rackTitle">Your tiles</h2>
+      <span class="rack-score" id="rackScore"></span>
+    </div>
+    <div id="rack" class="rack"></div>
+    <div class="rack-tools">
+      <button id="shuffleBtn" class="btn ghost small" title="Shuffle your rack">⇆ Shuffle</button>
+      <button id="recallBtn" class="btn ghost small" title="Return placed tiles to your rack (Esc)">↶ Recall</button>
+    </div>
+    <button id="placeBtn" class="btn primary big" disabled title="Enter">Place tiles</button>
+    <div class="rack-tools">
+      <button id="exchangeBtn" class="btn ghost small">Exchange tiles</button>
+      <button id="passBtn" class="btn ghost small">Pass turn</button>
+    </div>
+    <div id="preview" class="preview"></div>
+    <div class="legend">
+      <h3>Board key</h3>
+      <div class="lg"><span class="sw DL">DL</span>Double letter</div>
+      <div class="lg"><span class="sw TL">TL</span>Triple letter</div>
+      <div class="lg"><span class="sw DW">DW</span>Double word</div>
+      <div class="lg"><span class="sw TW">TW</span>Triple word</div>
+      <div class="lg"><span class="sw DW">🔑</span>Key location (DW)</div>
+      <div class="lg"><span class="sw DW">⬡</span>Centre start (DW)</div>
+      <p class="hint">Word multipliers add up: DW + TW = 5×.</p>
+    </div>
+  </aside>
+</section>
+
+<!-- ============ OVERLAYS ============ -->
+<div id="handover" class="overlay">
+  <div class="card center">
+    <div class="hand-dot" id="handDot"></div>
+    <h2 id="handTitle">Player's turn</h2>
+    <p id="handSub"></p>
+    <button id="revealBtn" class="btn primary big">Show my tiles</button>
+  </div>
+</div>
+
+<div id="modal" class="overlay">
+  <div class="card" id="modalCard">
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+    <div id="modalActions" class="modal-actions"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="hexabble/words.js"></script>
+<script src="hexabble/engine.js"></script>
+<script src="hexabble/app.js"></script>
+<script src="hexabble/club.js"></script>
+</body>
+</html>

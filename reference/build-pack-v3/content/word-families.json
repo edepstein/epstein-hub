@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "gameId": "word-families",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "starter-families",
+      "difficulty": "gentle",
+      "mistakeBudget": 4,
+      "continueAfterBudget": true,
+      "displayOrder": [
+        "ROBIN",
+        "EAGLE",
+        "FLUTE",
+        "CELLO",
+        "RUBY",
+        "PEARL",
+        "BASIL",
+        "SAGE",
+        "CRANE",
+        "SWAN",
+        "OBOE",
+        "HARP",
+        "OPAL",
+        "JADE",
+        "THYME",
+        "MINT"
+      ],
+      "groups": [
+        {
+          "id": "1",
+          "label": "Birds",
+          "terms": [
+            "ROBIN",
+            "CRANE",
+            "EAGLE",
+            "SWAN"
+          ],
+          "explanation": "All four match the category: Birds."
+        },
+        {
+          "id": "2",
+          "label": "Musical instruments",
+          "terms": [
+            "FLUTE",
+            "OBOE",
+            "CELLO",
+            "HARP"
+          ],
+          "explanation": "All four match the category: Musical instruments."
+        },
+        {
+          "id": "3",
+          "label": "Gemstones",
+          "terms": [
+            "RUBY",
+            "OPAL",
+            "PEARL",
+            "JADE"
+          ],
+          "explanation": "All four match the category: Gemstones."
+        },
+        {
+          "id": "4",
+          "label": "Culinary herbs",
+          "terms": [
+            "BASIL",
+            "THYME",
+            "SAGE",
+            "MINT"
+          ],
+          "explanation": "All four match the category: Culinary herbs."
+        }
+      ],
+      "editorialReviewRequired": true,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "category",
+          "text": "One category is Birds.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealGroup",
+          "groupId": "1",
+          "assisted": true
+        }
+      ],
+      "explanation": "Every term is used once in the intended partition. Categories and individual explanations are stored in groups."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "everyday-families",
+      "difficulty": "standard",
+      "mistakeBudget": 4,
+      "continueAfterBudget": true,
+      "displayOrder": [
+        "COMB",
+        "ZIP",
+        "BOOT",
+        "SLIPPER",
+        "BED",
+        "CLASS",
+        "COMMA",
+        "DASH",
+        "SAW",
+        "GEAR",
+        "SANDAL",
+        "TRAINER",
+        "BATH",
+        "SHOW",
+        "COLON",
+        "FULL STOP"
+      ],
+      "groups": [
+        {
+          "id": "1",
+          "label": "Things with teeth",
+          "terms": [
+            "COMB",
+            "SAW",
+            "ZIP",
+            "GEAR"
+          ],
+          "explanation": "All four match the category: Things with teeth."
+        },
+        {
+          "id": "2",
+          "label": "Types of footwear",
+          "terms": [
+            "BOOT",
+            "SANDAL",
+            "SLIPPER",
+            "TRAINER"
+          ],
+          "explanation": "All four match the category: Types of footwear."
+        },
+        {
+          "id": "3",
+          "label": "Words before ROOM",
+          "terms": [
+            "BED",
+            "BATH",
+            "CLASS",
+            "SHOW"
+          ],
+          "explanation": "All four match the category: Words before ROOM."
+        },
+        {
+          "id": "4",
+          "label": "Punctuation marks",
+          "terms": [
+            "COMMA",
+            "COLON",
+            "DASH",
+            "FULL STOP"
+          ],
+          "explanation": "All four match the category: Punctuation marks."
+        }
+      ],
+      "editorialReviewRequired": true,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "category",
+          "text": "One category is Things with teeth.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "revealGroup",
+          "groupId": "1",
+          "assisted": true
+        }
+      ],
+      "explanation": "Every term is used once in the intended partition. Categories and individual explanations are stored in groups."
+    }
+  ]
+}

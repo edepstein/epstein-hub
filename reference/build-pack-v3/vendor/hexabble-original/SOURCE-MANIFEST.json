@@ -1,0 +1,32 @@
+{
+  "uploadedArchive": "hexabble.zip",
+  "preservedOriginalFiles": {
+    "styles.css": {
+      "sha256": "cce1afdcae2ce09f940f4d6f99976ec5be679446654c57b94934872e50aa82fc",
+      "bytes": 13964
+    },
+    "index.html": {
+      "sha256": "5c8ed85161e7a53d19954da9f0af3173abcdc59be97b76bc8b74a698c4ffe90d",
+      "bytes": 5267
+    },
+    "app.js": {
+      "sha256": "1df44f55542d3c5353e518beef37d9ba69dd5e346c962b47359f3fcd8b1fddf7",
+      "bytes": 31369
+    },
+    "engine.js": {
+      "sha256": "a660bfc6c1f14fac0fdaf88e7dcdb024284b499b135e368852e8a3d059ed928d",
+      "bytes": 21335
+    },
+    "README.md": {
+      "sha256": "64290fe59b791bc58758704128ed2dc3e2dec0413cde96ebc2944258a401d3ff",
+      "bytes": 1951
+    },
+    "words.js": {
+      "sha256": "b14c11f5ecd3351f422ff78f8fc88fe6e6d4c24a45a1f508e184803b9f2a930b",
+      "bytes": 2593304
+    }
+  },
+  "codeLicenceInArchive": false,
+  "originatingRulesPDFInArchive": false,
+  "scope": "Hashes certify file preservation, not publication permission"
+}

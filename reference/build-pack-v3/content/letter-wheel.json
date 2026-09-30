@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "gameId": "letter-wheel",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "education",
+      "difficulty": "standard",
+      "letters": [
+        "E",
+        "D",
+        "U",
+        "C",
+        "A",
+        "T",
+        "I",
+        "O",
+        "N"
+      ],
+      "requiredLetter": "A",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "education",
+        "action",
+        "auction",
+        "caution",
+        "dance",
+        "date",
+        "cane",
+        "caned"
+      ],
+      "nineLetterAnswers": [
+        "education"
+      ],
+      "commonTargetWords": [
+        "education",
+        "action",
+        "auction",
+        "caution",
+        "dance",
+        "date",
+        "cane",
+        "caned"
+      ],
+      "maximumScore": 56,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "A nine-letter answer starts with E.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "education",
+          "assisted": true
+        }
+      ],
+      "explanation": "Each word uses rack positions at most once and includes the required letter. Nine-letter answers receive a nine-point bonus."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "reactions",
+      "difficulty": "standard",
+      "letters": [
+        "C",
+        "R",
+        "E",
+        "A",
+        "T",
+        "I",
+        "O",
+        "N",
+        "S"
+      ],
+      "requiredLetter": "R",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "creations",
+        "reactions",
+        "creation",
+        "reaction",
+        "trace",
+        "crate",
+        "react",
+        "cater",
+        "care",
+        "race",
+        "rate",
+        "tare",
+        "tear",
+        "star",
+        "arts",
+        "rats",
+        "train",
+        "rain"
+      ],
+      "nineLetterAnswers": [
+        "creations",
+        "reactions"
+      ],
+      "commonTargetWords": [
+        "creations",
+        "reactions",
+        "creation",
+        "reaction",
+        "trace",
+        "crate",
+        "react",
+        "cater",
+        "care",
+        "race",
+        "rate",
+        "tare",
+        "tear",
+        "star",
+        "arts",
+        "rats",
+        "train",
+        "rain"
+      ],
+      "maximumScore": 113,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "A nine-letter answer starts with C.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "creations",
+          "assisted": true
+        }
+      ],
+      "explanation": "Each word uses rack positions at most once and includes the required letter. Nine-letter answers receive a nine-point bonus."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "dangerous",
+      "difficulty": "standard",
+      "letters": [
+        "D",
+        "A",
+        "N",
+        "G",
+        "E",
+        "R",
+        "O",
+        "U",
+        "S"
+      ],
+      "requiredLetter": "R",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "dangerous",
+        "danger",
+        "range",
+        "ranges",
+        "anger",
+        "grand",
+        "guard",
+        "guards",
+        "read",
+        "dear",
+        "dare",
+        "ears",
+        "sear",
+        "gear",
+        "gears"
+      ],
+      "nineLetterAnswers": [
+        "dangerous"
+      ],
+      "commonTargetWords": [
+        "dangerous",
+        "danger",
+        "range",
+        "ranges",
+        "anger",
+        "grand",
+        "guard",
+        "guards",
+        "read",
+        "dear",
+        "dare",
+        "ears",
+        "sear",
+        "gear",
+        "gears"
+      ],
+      "maximumScore": 85,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "A nine-letter answer starts with D.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "dangerous",
+          "assisted": true
+        }
+      ],
+      "explanation": "Each word uses rack positions at most once and includes the required letter. Nine-letter answers receive a nine-point bonus."
+    }
+  ]
+}

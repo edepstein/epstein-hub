@@ -1,0 +1,102 @@
+{
+  "gameId": "anagram-relay",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "relay-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "STARE",
+        "stages": [
+          {
+            "id": "a",
+            "clue": "Behind a ship, or towards its rear",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "Mothers and fathers",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "People working together in a joint undertaking",
+            "length": 8
+          }
+        ]
+      },
+      "solution": {
+        "acceptedChains": [
+          [
+            "STARE",
+            "ASTERN",
+            "PARENTS",
+            "PARTNERS"
+          ]
+        ],
+        "addedLetters": [
+          "N",
+          "P",
+          "R"
+        ]
+      },
+      "hints": [
+        "Add N to the starting letters.",
+        "The first answer begins AS."
+      ],
+      "explanation": "Add N and rearrange STARE into ASTERN; add P for PARENTS; add another R for PARTNERS."
+    },
+    {
+      "id": "relay-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "PLATE",
+        "stages": [
+          {
+            "id": "a",
+            "clue": "A large body orbiting a star",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "Large bodies orbiting a star",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "People who put plants or seeds into the ground",
+            "length": 8
+          }
+        ]
+      },
+      "solution": {
+        "acceptedChains": [
+          [
+            "PLATE",
+            "PLANET",
+            "PLANETS",
+            "PLANTERS"
+          ]
+        ],
+        "addedLetters": [
+          "N",
+          "S",
+          "R"
+        ]
+      },
+      "hints": [
+        "Add N to the starting letters.",
+        "The first answer begins PL."
+      ],
+      "explanation": "Add N and rearrange PLATE into PLANET; add S for PLANETS; add R and rearrange for PLANTERS. The middle plural is a deliberate gentle training step."
+    }
+  ]
+}

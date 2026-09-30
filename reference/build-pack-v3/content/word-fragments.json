@@ -1,0 +1,190 @@
+{
+  "gameId": "word-fragments",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "fragments-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "Paper money represented by a single note",
+            "length": 8
+          },
+          {
+            "id": "b",
+            "clue": "An arc of colours seen when sunlight passes through rain",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "A tall plant with a large yellow flower head",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BANK"
+          },
+          {
+            "id": "t2",
+            "text": "NOTE"
+          },
+          {
+            "id": "t3",
+            "text": "RAIN"
+          },
+          {
+            "id": "t4",
+            "text": "BOW"
+          },
+          {
+            "id": "t5",
+            "text": "SUN"
+          },
+          {
+            "id": "t6",
+            "text": "FLOW"
+          },
+          {
+            "id": "t7",
+            "text": "ER"
+          }
+        ]
+      },
+      "solution": {
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t2"
+            ],
+            "b": [
+              "t3",
+              "t4"
+            ],
+            "c": [
+              "t5",
+              "t6",
+              "t7"
+            ]
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BANKNOTE"
+          ],
+          "b": [
+            "RAINBOW"
+          ],
+          "c": [
+            "SUNFLOWER"
+          ]
+        }
+      },
+      "hints": [
+        "The yellow-flower answer begins with SUN.",
+        "Paper money uses BANK and NOTE."
+      ],
+      "explanation": "Every fragment is consumed exactly once."
+    },
+    {
+      "id": "fragments-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A marker placed between pages to keep your place",
+            "length": 8
+          },
+          {
+            "id": "b",
+            "clue": "An insect with broad, often colourful wings",
+            "length": 9
+          },
+          {
+            "id": "c",
+            "clue": "The hard outer covering of a marine mollusc",
+            "length": 8
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BOOK"
+          },
+          {
+            "id": "t2",
+            "text": "MARK"
+          },
+          {
+            "id": "t3",
+            "text": "BUT"
+          },
+          {
+            "id": "t4",
+            "text": "TER"
+          },
+          {
+            "id": "t5",
+            "text": "FLY"
+          },
+          {
+            "id": "t6",
+            "text": "SEA"
+          },
+          {
+            "id": "t7",
+            "text": "SHELL"
+          }
+        ]
+      },
+      "solution": {
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t2"
+            ],
+            "b": [
+              "t3",
+              "t4",
+              "t5"
+            ],
+            "c": [
+              "t6",
+              "t7"
+            ]
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BOOKMARK"
+          ],
+          "b": [
+            "BUTTERFLY"
+          ],
+          "c": [
+            "SEASHELL"
+          ]
+        }
+      },
+      "hints": [
+        "The insect needs three fragments.",
+        "The page marker begins with BOOK."
+      ],
+      "explanation": "The target spellings use all seven fragment tiles."
+    }
+  ]
+}

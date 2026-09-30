@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "../styles/reference-base.css" layer(base);
+@import "../styles/reference-themes.css" layer(base);
+@import "../styles/app.css" layer(components);
+
+@theme {
+  --color-paper: #faf8f2;
+  --color-card: #fffefa;
+  --color-ink: #292e3b;
+  --color-muted: #5c6271;
+  --color-line: #dededb;
+  --font-display: Georgia, "Times New Roman", serif;
+}

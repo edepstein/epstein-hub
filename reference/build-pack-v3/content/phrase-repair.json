@@ -1,0 +1,170 @@
+{
+  "gameId": "phrase-repair",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "phrase-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "clue": "Regret something that cannot now be changed",
+        "enumeration": [
+          3,
+          4,
+          5,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SPILT"
+          },
+          {
+            "id": "t2",
+            "text": "OVER"
+          },
+          {
+            "id": "t3",
+            "text": "MILK"
+          },
+          {
+            "id": "t4",
+            "text": "CRY"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedTargets": [
+          [
+            "CRY",
+            "OVER",
+            "SPILT",
+            "MILK"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4
+      },
+      "hints": [
+        "The phrase begins CRY.",
+        "OVER is the second word."
+      ],
+      "explanation": "The target-position sequence is 2,1,3,0 and has four inversions."
+    },
+    {
+      "id": "phrase-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "clue": "Consider the consequences before taking action",
+        "enumeration": [
+          4,
+          6,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "LEAP"
+          },
+          {
+            "id": "t2",
+            "text": "YOU"
+          },
+          {
+            "id": "t3",
+            "text": "BEFORE"
+          },
+          {
+            "id": "t4",
+            "text": "LOOK"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedTargets": [
+          [
+            "LOOK",
+            "BEFORE",
+            "YOU",
+            "LEAP"
+          ]
+        ],
+        "minimumAdjacentSwaps": 6
+      },
+      "hints": [
+        "The phrase begins LOOK.",
+        "BEFORE follows LOOK."
+      ],
+      "explanation": "The initial order reverses all four target positions, giving six inversions."
+    },
+    {
+      "id": "phrase-003",
+      "difficulty": "standard",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "clue": "A proverb saying prompt repair prevents extra work",
+        "enumeration": [
+          1,
+          6,
+          2,
+          4,
+          5,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "STITCH"
+          },
+          {
+            "id": "t2",
+            "text": "SAVES"
+          },
+          {
+            "id": "t3",
+            "text": "A"
+          },
+          {
+            "id": "t4",
+            "text": "NINE"
+          },
+          {
+            "id": "t5",
+            "text": "TIME"
+          },
+          {
+            "id": "t6",
+            "text": "IN"
+          }
+        ]
+      },
+      "solution": {
+        "acceptedTargets": [
+          [
+            "A",
+            "STITCH",
+            "IN",
+            "TIME",
+            "SAVES",
+            "NINE"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7
+      },
+      "hints": [
+        "The phrase begins A STITCH.",
+        "IN TIME comes before SAVES NINE."
+      ],
+      "explanation": "The target-position sequence 1,4,0,5,3,2 has seven inversions."
+    }
+  ]
+}

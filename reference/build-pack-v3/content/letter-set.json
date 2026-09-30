@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "gameId": "letter-set",
+  "status": "demo",
+  "locale": "en-GB",
+  "licenceNote": "Original demo fixtures with finite, non-exhaustive fixture lexicons. Not licensed production dictionaries.",
+  "rounds": [
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "parents",
+      "difficulty": "standard",
+      "letters": [
+        "E",
+        "A",
+        "R",
+        "T",
+        "S",
+        "N",
+        "P"
+      ],
+      "requiredLetter": "P",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "parent",
+        "parents",
+        "transparent",
+        "part",
+        "parts",
+        "apart",
+        "appear",
+        "paper",
+        "papers",
+        "pepper",
+        "peppers",
+        "taps",
+        "trap",
+        "traps",
+        "tape",
+        "tapes"
+      ],
+      "allLetterAnswers": [
+        "parents",
+        "transparent"
+      ],
+      "maximumScore": 92,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "An all-letter answer begins with P and has 7 letters.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "parents",
+          "assisted": true
+        }
+      ],
+      "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "article",
+      "difficulty": "standard",
+      "letters": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "L",
+        "R",
+        "T"
+      ],
+      "requiredLetter": "R",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "article",
+        "rate",
+        "tear",
+        "care",
+        "race",
+        "rare",
+        "rarer",
+        "trailer",
+        "retire",
+        "retreat",
+        "trial",
+        "trace",
+        "clear"
+      ],
+      "allLetterAnswers": [
+        "article"
+      ],
+      "maximumScore": 59,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "An all-letter answer begins with A and has 7 letters.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "article",
+          "assisted": true
+        }
+      ],
+      "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+    },
+    {
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "id": "teachers",
+      "difficulty": "standard",
+      "letters": [
+        "E",
+        "A",
+        "R",
+        "T",
+        "H",
+        "C",
+        "S"
+      ],
+      "requiredLetter": "H",
+      "minimumLength": 4,
+      "acceptedWords": [
+        "teacher",
+        "teachers",
+        "teach",
+        "cheat",
+        "cheats",
+        "reach",
+        "reaches",
+        "earth",
+        "hearth",
+        "hearts",
+        "chart",
+        "charts",
+        "chase",
+        "chases",
+        "share",
+        "shares"
+      ],
+      "allLetterAnswers": [
+        "teachers"
+      ],
+      "maximumScore": 100,
+      "hints": [
+        {
+          "stage": 1,
+          "kind": "initial",
+          "text": "An all-letter answer begins with T and has 8 letters.",
+          "assisted": true
+        },
+        {
+          "stage": 2,
+          "kind": "reveal",
+          "answer": "teachers",
+          "assisted": true
+        }
+      ],
+      "explanation": "All-letter words contain every supplied letter; repeating a supplied letter is allowed."
+    }
+  ]
+}

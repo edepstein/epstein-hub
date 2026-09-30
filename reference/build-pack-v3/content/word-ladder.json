@@ -1,0 +1,121 @@
+{
+  "gameId": "word-ladder",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "ladder-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "COLD",
+        "target": "WARM",
+        "roundDictionary": [
+          "COLD",
+          "CORD",
+          "CARD",
+          "WARD",
+          "WARM",
+          "WORD",
+          "WORM",
+          "SOLD",
+          "GOLD",
+          "BOLD",
+          "COST",
+          "MOST"
+        ]
+      },
+      "solution": {
+        "examplePath": [
+          "COLD",
+          "CORD",
+          "CARD",
+          "WARD",
+          "WARM"
+        ],
+        "optimalMoves": 4
+      },
+      "hints": [
+        "A shortest route can start with CORD.",
+        "From CORD, CARD is one route."
+      ],
+      "explanation": "Each edge changes one letter. The endpoints differ in four positions, so no route can use fewer than four changes."
+    },
+    {
+      "id": "ladder-002",
+      "difficulty": "standard",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "HEAD",
+        "target": "TAIL",
+        "roundDictionary": [
+          "HEAD",
+          "HEAL",
+          "TEAL",
+          "TELL",
+          "TALL",
+          "TAIL",
+          "HEAT",
+          "HEEL"
+        ]
+      },
+      "solution": {
+        "examplePath": [
+          "HEAD",
+          "HEAL",
+          "TEAL",
+          "TELL",
+          "TALL",
+          "TAIL"
+        ],
+        "optimalMoves": 5
+      },
+      "hints": [
+        "Try changing the final letter of HEAD.",
+        "HEAL connects to TEAL."
+      ],
+      "explanation": "The published small dictionary has a five-edge shortest route; production distances must be recalculated against the production dictionary."
+    },
+    {
+      "id": "ladder-003",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "CAT",
+        "target": "DOG",
+        "roundDictionary": [
+          "CAT",
+          "COT",
+          "COG",
+          "DOG",
+          "DOT",
+          "LOG",
+          "LOT",
+          "HOT",
+          "HAT"
+        ]
+      },
+      "solution": {
+        "examplePath": [
+          "CAT",
+          "COT",
+          "COG",
+          "DOG"
+        ],
+        "optimalMoves": 3
+      },
+      "hints": [
+        "CAT can become COT.",
+        "COT can become COG."
+      ],
+      "explanation": "The endpoints differ at all three positions. The supplied three-edge route therefore meets the lower bound."
+    }
+  ]
+}

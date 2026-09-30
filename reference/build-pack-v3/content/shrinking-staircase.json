@@ -1,0 +1,92 @@
+{
+  "gameId": "shrinking-staircase",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "stair-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "STONE",
+        "rungs": [
+          {
+            "id": "a",
+            "clue": "The quality or character of a sound",
+            "length": 4
+          },
+          {
+            "id": "b",
+            "clue": "The number immediately before two",
+            "length": 3
+          },
+          {
+            "id": "c",
+            "clue": "Switched into operation, rather than off",
+            "length": 2
+          }
+        ]
+      },
+      "solution": {
+        "acceptedChains": [
+          [
+            "STONE",
+            "TONE",
+            "ONE",
+            "ON"
+          ]
+        ]
+      },
+      "hints": [
+        "First remove S.",
+        "From TONE remove T."
+      ],
+      "explanation": "Remove S, then T, then E. The survivors form the clued words."
+    },
+    {
+      "id": "stair-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "start": "STEAM",
+        "rungs": [
+          {
+            "id": "a",
+            "clue": "Animal flesh eaten as food",
+            "length": 4
+          },
+          {
+            "id": "b",
+            "clue": "A small floor covering",
+            "length": 3
+          },
+          {
+            "id": "c",
+            "clue": "A preposition indicating a location, as in ___ home",
+            "length": 2
+          }
+        ]
+      },
+      "solution": {
+        "acceptedChains": [
+          [
+            "STEAM",
+            "MEAT",
+            "MAT",
+            "AT"
+          ]
+        ]
+      },
+      "hints": [
+        "First remove S and rearrange.",
+        "From MEAT remove E."
+      ],
+      "explanation": "STEAM loses S to make MEAT; MEAT loses E to make MAT; MAT loses M to make AT."
+    }
+  ]
+}

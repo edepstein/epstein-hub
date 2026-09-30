@@ -1,0 +1,1013 @@
+{
+  "version": "3.0",
+  "prepared": "2026-09-30",
+  "revision": "Hexabble integrated and hardened; complete functional-parity briefs for18othergames; v2visualthemesretained",
+  "fileCountExcludingManifest": 201,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1785,
+      "sha256": "34d39868d2caddfb4652df89eb88dc8714730f8f2ab520108322c9393f6bd4ee"
+    },
+    {
+      "path": "All-game-interfaces.png",
+      "bytes": 1206415,
+      "sha256": "8c48aa3a45b7f68cf8ad3485ca0ea5cf230a6f9bd25b28e60bf547bc38dce5d0"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 2757,
+      "sha256": "f72f57e3be86a9fe082583c38f7a163df17efc1adb895794af38d1e9de17a6fc"
+    },
+    {
+      "path": "Hexabble-and-Word-Club-preview.png",
+      "bytes": 560544,
+      "sha256": "20dd3d5c074987c36a77e6dfefa2e4c8626b5385620f5d296fc22f2e964ee9fc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5492,
+      "sha256": "e4b106e1f345379366a8f3fa66d1faf24318958a30c775af4caee6effb0a2bfd"
+    },
+    {
+      "path": "START-CLAUDE-CODE.md",
+      "bytes": 4634,
+      "sha256": "9eff1dc73a77202816629a43f6c91f575da79ede51de64af25d70c6d3cbfcf4d"
+    },
+    {
+      "path": "UI-preview.png",
+      "bytes": 630095,
+      "sha256": "583d65628cad50cd66298220db793eb385995fcb1e476e15820cb7a81b9b4dd4"
+    },
+    {
+      "path": "birthday/README.md",
+      "bytes": 8619,
+      "sha256": "fa164db77dfd29988dca2404a54f6723d3fc03460034b089da2d7afd6ea643dc"
+    },
+    {
+      "path": "birthday/audio-postcards.md",
+      "bytes": 2165,
+      "sha256": "2815121f237d4ec8fdb9c4c4048ecd1fc0b6cde9a4c4a2518c9a9a45e4d88c9a"
+    },
+    {
+      "path": "birthday/birthday-book.md",
+      "bytes": 2789,
+      "sha256": "c37ca7377be7c1186b6cde074712549eeee7a9d4d7c147ae86cee62e820d81b8"
+    },
+    {
+      "path": "birthday/content-collection-checklist.md",
+      "bytes": 3830,
+      "sha256": "2cb6db7bf3e71e27e3307f129845b6ee7fbe74672dfbfdf73fde90f6b4187e5f"
+    },
+    {
+      "path": "birthday/family-calendar.md",
+      "bytes": 2344,
+      "sha256": "a5c90886faedd21c2f74526631ae317ce6838dcdae26bb0a2eabe9df6b81071d"
+    },
+    {
+      "path": "birthday/family-crossword.md",
+      "bytes": 2843,
+      "sha256": "7de8ecbaff6fad52933c12c4ea6c1ad3cbd50fafb7aa513685a10efbf26602fd"
+    },
+    {
+      "path": "birthday/family-newspaper.md",
+      "bytes": 1996,
+      "sha256": "82c704da923e557e6c73bd2c83e1cd744787d4d1c9ec7fcb5f5486e157102d2c"
+    },
+    {
+      "path": "birthday/family-window.md",
+      "bytes": 4035,
+      "sha256": "eab341059d898a0bc0005157d3385ca8149325e5b0375cb086d7b7f08c867375"
+    },
+    {
+      "path": "birthday/memory-timeline.md",
+      "bytes": 2000,
+      "sha256": "d42aca12a86587e0d887d66eb1abf3a3d1e9232467dc460433c88674fa7cd0aa"
+    },
+    {
+      "path": "birthday/oral-history.md",
+      "bytes": 2299,
+      "sha256": "ca1c82a80432ad666c1f6b02e50064ab5d637cc1ec4cbfa9fd4f5b9a65edf804"
+    },
+    {
+      "path": "birthday/picture-mysteries.md",
+      "bytes": 2141,
+      "sha256": "583934498f381beaa65b96fe3aa558bd172e5a72be4b1739659946532a9a569e"
+    },
+    {
+      "path": "catalogue.json",
+      "bytes": 7077,
+      "sha256": "e4f259d9234c5c7941bccb6111920a20c32f43a5246cee2b11f9b2027de7c514"
+    },
+    {
+      "path": "content/README.md",
+      "bytes": 3316,
+      "sha256": "a08ebbefab68b899c97c3a17e8db7dc29c3e909b002bde1184527de71b2c119f"
+    },
+    {
+      "path": "content/anagram-relay.json",
+      "bytes": 2438,
+      "sha256": "0125b991798fe7ca773995256ee20731705116885b8aab36298dd44dfcd17e09"
+    },
+    {
+      "path": "content/birthday-demo.json",
+      "bytes": 2643,
+      "sha256": "50b971dd9cf85a4a4ce3bdb994547398dd559f2542d49a02db54a3537d0cf403"
+    },
+    {
+      "path": "content/clue-pairs.json",
+      "bytes": 3596,
+      "sha256": "0e50fcf19d24ec343ef8adfc382bb7adbbf0360ab6a4677212deea5fe8d2864e"
+    },
+    {
+      "path": "content/cryptic-workshop.json",
+      "bytes": 3643,
+      "sha256": "b41c3b4ff9b2546c3a016b44feee78d5dca7844a71d33ff5d0582e827381597f"
+    },
+    {
+      "path": "content/daily-crossword.json",
+      "bytes": 11146,
+      "sha256": "07d7a1f6c1fd51ff593f804e3a21b2b6af8d7112332f3f2354458be6a5c4fdc5"
+    },
+    {
+      "path": "content/definition-detective.json",
+      "bytes": 8260,
+      "sha256": "5ee314df28324d0bdeed509fa397ffcbd6e53680c2bcae02dcb7c2208c26bafd"
+    },
+    {
+      "path": "content/hexabble.json",
+      "bytes": 4285,
+      "sha256": "cb9ff21ccd59015f919849ec042b5964aadd2fb4884dd5e1df0f1090752e6274"
+    },
+    {
+      "path": "content/hidden-word-trail.json",
+      "bytes": 8802,
+      "sha256": "866c48f5e7ae50a2f767413d87a2599a7013c3e10e7fa6f34fc3e9328201a2be"
+    },
+    {
+      "path": "content/letter-circuit.json",
+      "bytes": 4436,
+      "sha256": "6b620a5c22b6537e7db78695336a71f9d4624cd4491db9c767264dab424fcbba"
+    },
+    {
+      "path": "content/letter-set.json",
+      "bytes": 3718,
+      "sha256": "5ea40c7a885490bade6d8e2c69d5c6549f976aed6fc3dd9394fc5e91b138363b"
+    },
+    {
+      "path": "content/letter-wheel.json",
+      "bytes": 4612,
+      "sha256": "94748ee7b2b50c65f4e366ba5e47ba6867f04677dba56b3562b0f28bc94a93f0"
+    },
+    {
+      "path": "content/missing-links.json",
+      "bytes": 3810,
+      "sha256": "96a3e7fd6ae4919bba0b44511667a442e55a4c8b029e98f05c8b557edad6a393"
+    },
+    {
+      "path": "content/phrase-repair.json",
+      "bytes": 3592,
+      "sha256": "2872717a242d3dc4b2b5a3e1d2fd94a57493ac500fcdc587f3d50f85ff092593"
+    },
+    {
+      "path": "content/shared-word-board-config.json",
+      "bytes": 2503,
+      "sha256": "cdf8623aadca95ceb1eff26ce7642335caf57d26344c6df0e622b06a48bba195"
+    },
+    {
+      "path": "content/shared-word-board.json",
+      "bytes": 4909,
+      "sha256": "e1043cb6f8d0ab826dce6e8d6f6262ee8b5e86f11bb46e0a2aae2648e7c0ce1f"
+    },
+    {
+      "path": "content/shrinking-staircase.json",
+      "bytes": 2136,
+      "sha256": "74a8add8d7142c2788e53b809e37802313803263aac629026a07e22656c67e88"
+    },
+    {
+      "path": "content/word-deduction.json",
+      "bytes": 4175,
+      "sha256": "bb071d828796e21e9b9b42e3920d17f248331c03c249c91b72cb26c6dbe7c1f3"
+    },
+    {
+      "path": "content/word-families.json",
+      "bytes": 4447,
+      "sha256": "621ee9977f9bd88bcb056120aeffb9a755e0a54e6f9e897be5a83f9f1a01fdd3"
+    },
+    {
+      "path": "content/word-fragments.json",
+      "bytes": 3990,
+      "sha256": "9715b135259b2eab774098db71981001fe03ad0b7be1b3c50888b049131bf1dc"
+    },
+    {
+      "path": "content/word-ladder.json",
+      "bytes": 2785,
+      "sha256": "c72dd652ed7e0155a5d01969745da1201283402af2f9c1ca98630da3f503f209"
+    },
+    {
+      "path": "content/word-weave.json",
+      "bytes": 2604,
+      "sha256": "a898461ef1485152d9221c87e4aca5c361733da6df99ffcf4dcf3db16c5c3959"
+    },
+    {
+      "path": "dictionaries/ESDB-Copyright.txt",
+      "bytes": 4903,
+      "sha256": "71bffd4b74ad47fff01c8b3c666e77da92737854e568850d8728024e0a53f304"
+    },
+    {
+      "path": "dictionaries/README.md",
+      "bytes": 3441,
+      "sha256": "08a18567004e9011769df51984ac52c255d86cea9b43b5d5e4934574d9354b39"
+    },
+    {
+      "path": "dictionaries/gb-candidate-words.txt",
+      "bytes": 785243,
+      "sha256": "daf3a79020e327e63356e01529c1e8aca37d217dbf6a85edfc0ab27cf9a291ce"
+    },
+    {
+      "path": "dictionaries/source-manifest.json",
+      "bytes": 968,
+      "sha256": "a7338c7c4a11243f5bf115dd60b08c9e48f969f054d7bb918e00e7653dade96d"
+    },
+    {
+      "path": "docs/01-product-and-site.md",
+      "bytes": 6202,
+      "sha256": "f24b12c697b3e2f52f76492114d145408f780ac3704a5b865e956e1683017d65"
+    },
+    {
+      "path": "docs/02-design-system.md",
+      "bytes": 6501,
+      "sha256": "db03182cf1369395f3b11cd4ff547b7e171152de8e824ca20502b2f67e39e7ef"
+    },
+    {
+      "path": "docs/03-architecture-data-api.md",
+      "bytes": 9165,
+      "sha256": "9ee82ef2cab539ee2ae53a415961769b37f0879f5b93ec5d415fd460c21b3200"
+    },
+    {
+      "path": "docs/04-dictionaries-and-content.md",
+      "bytes": 7866,
+      "sha256": "9405028100caee6f2c702d41ba6150a28bf7997c3c0417303e05ddb926c548a1"
+    },
+    {
+      "path": "docs/05-testing-and-release.md",
+      "bytes": 6618,
+      "sha256": "020f339280bff000716ff8b82f6e0cd4e4f95dc6c25f870069f727b38eb2fcd6"
+    },
+    {
+      "path": "docs/06-build-batches.md",
+      "bytes": 6947,
+      "sha256": "ba0b23ef8ee64437336e21f28e316d90125fdc0a5053bc10c78d21fb7fc2006a"
+    },
+    {
+      "path": "docs/07-decisions-and-open-inputs.md",
+      "bytes": 4443,
+      "sha256": "475a74bd3e66525054a57e6fa9a57c30c249cff71558989078b38980db49f072"
+    },
+    {
+      "path": "docs/08-hexabble-quality-standard.md",
+      "bytes": 7777,
+      "sha256": "63c0b74eab40e82c76d008946d583289bf48f234996856965e632f60c2de0a15"
+    },
+    {
+      "path": "docs/09-implementation-batches-v3.md",
+      "bytes": 7107,
+      "sha256": "7bf21dcd8c8dde7c4bbb86ca0130cd224ebbfa1fd53fe18bb49e8b4c24a72374"
+    },
+    {
+      "path": "games/anagram-relay.md",
+      "bytes": 8278,
+      "sha256": "e427c0c56fac453e399bf38474db9f7de6b47cccdb32b2fe2c182acd1ac5b2e3"
+    },
+    {
+      "path": "games/clue-pairs.md",
+      "bytes": 8314,
+      "sha256": "0cb5c5a3d055489a9b3a0be91a6a6cbe3cef0060a91685143617a816c6d6a354"
+    },
+    {
+      "path": "games/cryptic-workshop.md",
+      "bytes": 8155,
+      "sha256": "71ee442981a68b1bd401e10a259bdb4cc4eeaeb3341069a935d5769590485379"
+    },
+    {
+      "path": "games/daily-crossword.md",
+      "bytes": 11529,
+      "sha256": "0056e11439f65f09436b88de3043dedff1f7b9e7901e0105b4e8e0631d242084"
+    },
+    {
+      "path": "games/definition-detective.md",
+      "bytes": 8447,
+      "sha256": "7be1c4d3b530152a25fccf2ab49e2e518b161c2ec4d4ab2de7ff9e19d8dc79d2"
+    },
+    {
+      "path": "games/hexabble.md",
+      "bytes": 8131,
+      "sha256": "12df6d654347d0983adeec00ae1355e20c2ded4c94f1270e73306299498c3d09"
+    },
+    {
+      "path": "games/hidden-word-trail.md",
+      "bytes": 11468,
+      "sha256": "de96ca2e3952027d44072ff1bdbbb7c879652371ba333bd5d422f759cccacd94"
+    },
+    {
+      "path": "games/letter-circuit.md",
+      "bytes": 11184,
+      "sha256": "a4fed1678288f93a558e29e3c8fd6f8eb433bb9a9e5884d27200bd0aaf94a4ea"
+    },
+    {
+      "path": "games/letter-set.md",
+      "bytes": 11102,
+      "sha256": "d65542e63a96c2344418754edf18dd7af5533150c49a464ddf0bcd06535ec8da"
+    },
+    {
+      "path": "games/letter-wheel.md",
+      "bytes": 11259,
+      "sha256": "ac801a01fd41c62e64c363a234664ef76b3c2c218548f59f2ddc0bd82d3956df"
+    },
+    {
+      "path": "games/missing-links.md",
+      "bytes": 7965,
+      "sha256": "fa6b970637b5b31334835b6af074a62d9804d34567073f93936932c8c9c4c5c3"
+    },
+    {
+      "path": "games/phrase-repair.md",
+      "bytes": 8484,
+      "sha256": "c39f34e484a6a901d0305282c4110a5ddfc9725ab13d04558b75fb56ab3ba565"
+    },
+    {
+      "path": "games/shared-word-board.md",
+      "bytes": 13744,
+      "sha256": "97b70c012c06750af045b2ab0379ae6b53491e9b12dc952dad6ca46aa401b165"
+    },
+    {
+      "path": "games/shrinking-staircase.md",
+      "bytes": 8066,
+      "sha256": "ab893ccdc18a51747ee7c128a3cf9237354ffa7e56445c09dabef3f54f046018"
+    },
+    {
+      "path": "games/word-deduction.md",
+      "bytes": 10894,
+      "sha256": "bb3f00876c2d3c86dfa3ed064ede34ec0b51e25fead4ad95609d05f4ff434b1e"
+    },
+    {
+      "path": "games/word-families.md",
+      "bytes": 11459,
+      "sha256": "22ec03105f457baf82210ff862eebf066275ac09102865bfc78545c209f26ba3"
+    },
+    {
+      "path": "games/word-fragments.md",
+      "bytes": 8035,
+      "sha256": "acbb0a8a3900660272225d1c0634912d61025e99b0aa589bfc115f051723f169"
+    },
+    {
+      "path": "games/word-ladder.md",
+      "bytes": 8493,
+      "sha256": "7556665e8650acdc9dfdb9815f9a27a0b9e77a35ca0656db44ef97b72577cda5"
+    },
+    {
+      "path": "games/word-weave.md",
+      "bytes": 8140,
+      "sha256": "d70bbe4066ebb8eba6eee2f2a11f93713da3facc448e56e2e174d9e57e3cc5e2"
+    },
+    {
+      "path": "qa/VALIDATION.md",
+      "bytes": 4984,
+      "sha256": "8cc1df1d26a2a46ee14f6730eec2ce59156d6942f41611715459535e4527bd09"
+    },
+    {
+      "path": "qa/VISUAL-REVIEW-V2.md",
+      "bytes": 1881,
+      "sha256": "81ecedac1184df151b1f12366eff1273ab9a5459fe0a62773827a38c31cbc1cb"
+    },
+    {
+      "path": "qa/birthday-desktop.png",
+      "bytes": 171687,
+      "sha256": "c5cb53dce8b96ccad91f5cb44bd820da848fbf495f8f7c63f9069915f9271ff7"
+    },
+    {
+      "path": "qa/hexabble-adapted-review.md",
+      "bytes": 4335,
+      "sha256": "f6ce991b28540f0bf2eca6504585fabb9b8ffd39e88eef5f158c989450d1b295"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-fit-mobile.png",
+      "bytes": 180837,
+      "sha256": "611eca0eb10ea004030f49bca4715b29bd6c3c7404bc54491351c6600f03d2de"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-game-desktop.png",
+      "bytes": 289553,
+      "sha256": "40befcc7c97709f9cc2a4bc814cd289e75099bb90bf05c0b78787024dce38dca"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-game-mobile.png",
+      "bytes": 135430,
+      "sha256": "4b72bf8914d19838572b093a678df7e848db1350a8b4197631b042916ca2e02f"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-rack-mobile.png",
+      "bytes": 70133,
+      "sha256": "99f2db2688d4f4aec8356e6060875873d5c1025af364cae6ad3e15cf4acab149"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-rules-mobile.png",
+      "bytes": 98152,
+      "sha256": "6c513b2b229a7071971f129bed2c9ae65a1e32d0ecfee097d9cffb55c75a63f3"
+    },
+    {
+      "path": "qa/hexabble-player/adapted-setup-mobile.png",
+      "bytes": 76211,
+      "sha256": "52799d33399a50b031885fe821820a1aef9bac57fe2d405f349767168d499754"
+    },
+    {
+      "path": "qa/hexabble-player/endgame-desktop.png",
+      "bytes": 261573,
+      "sha256": "a3780e267b638ad8f48385f45784f65085306099f03da21a87ca3e1d7a1b6ebb"
+    },
+    {
+      "path": "qa/hexabble-player/game-desktop.png",
+      "bytes": 305206,
+      "sha256": "d20a36063f0d7cfb6bedd701013a7ed18f5bf058bd11001dac5e867eee161243"
+    },
+    {
+      "path": "qa/hexabble-player/game-mobile.png",
+      "bytes": 101433,
+      "sha256": "6c5131eb203f5ccb558f7f1e953bdcc3defb64780727adae4d6ebb9a4104abc4"
+    },
+    {
+      "path": "qa/hexabble-player/handover-desktop.png",
+      "bytes": 295623,
+      "sha256": "f835c9818dc64fd4a3a08bcd2cb207aaa80a2241cd65c641e9378c3d544643f3"
+    },
+    {
+      "path": "qa/hexabble-player/hexabble-club-desktop.png",
+      "bytes": 294700,
+      "sha256": "8156779e2b72396f22aa6381b2b4115b1112c1f98d49055380dc7cd84c4639ce"
+    },
+    {
+      "path": "qa/hexabble-player/hexabble-club-mobile.png",
+      "bytes": 139497,
+      "sha256": "756aabef5eb54f9c4ea0f388c7cbe3bd5f8036bea69917861679a7c96735b283"
+    },
+    {
+      "path": "qa/hexabble-player/observations.json",
+      "bytes": 2671,
+      "sha256": "816d471e9fd77e3958b2f4900a8e68a3b46e57b6535d434e800010a16ec27994"
+    },
+    {
+      "path": "qa/hexabble-player/rules-mobile.png",
+      "bytes": 165605,
+      "sha256": "a26775e42be6979f281975e2b71e677aaca204e6547e86547b87591a578dcd72"
+    },
+    {
+      "path": "qa/hexabble-player/setup-desktop.png",
+      "bytes": 434359,
+      "sha256": "defef0f8f17f8392dc843a13dd88ee9aec397c66e977e8cd6b89655dc240235a"
+    },
+    {
+      "path": "qa/hexabble-player/setup-mobile.png",
+      "bytes": 67707,
+      "sha256": "e51338e7e4a55d34a866a85ceee270055cfd9d39ca73179c2f680269bcdcc553"
+    },
+    {
+      "path": "qa/hexabble-player-review.md",
+      "bytes": 8263,
+      "sha256": "8d96138148cce07d18014253d581c6600e3115ea413c6db68488a8dd292b57ae"
+    },
+    {
+      "path": "qa/hexabble-ui-verification.json",
+      "bytes": 868,
+      "sha256": "8a1e9989e7533e2a7220f5c35b4c714b8ff4fc332d941db5660fda859a767d9a"
+    },
+    {
+      "path": "qa/home-desktop.png",
+      "bytes": 300624,
+      "sha256": "a060e22860509de84ae886ad6c43d31ff75c62ee6b5bb205d3f4858d7abdcb76"
+    },
+    {
+      "path": "qa/screens/anagram-relay.png",
+      "bytes": 159030,
+      "sha256": "eaf9bf0592b292bffb72b7492a9d47fdbf196c6f3ae102b2a0b76a836c4d3d8c"
+    },
+    {
+      "path": "qa/screens/birthday-book.png",
+      "bytes": 168851,
+      "sha256": "6a996cf2855dfaf9824879f19e510a117ae1aa04b8c6509c6022f3ff02ed61c5"
+    },
+    {
+      "path": "qa/screens/birthday-hub-mobile.png",
+      "bytes": 108653,
+      "sha256": "dfceb8216cc6b1e2d2727afb97eee17019a092c07fd9453216a2f6c60dc26a21"
+    },
+    {
+      "path": "qa/screens/birthday-hub.png",
+      "bytes": 171687,
+      "sha256": "c5cb53dce8b96ccad91f5cb44bd820da848fbf495f8f7c63f9069915f9271ff7"
+    },
+    {
+      "path": "qa/screens/clue-pairs.png",
+      "bytes": 156862,
+      "sha256": "9ba53531832202c07d6badfd187fb7a39f75cfac5a4fd50b9550a278e18fc43b"
+    },
+    {
+      "path": "qa/screens/crossword.png",
+      "bytes": 176320,
+      "sha256": "4a0fa49c31110b08997ad3a2443f4d405843507c549ade84f122fa236e734046"
+    },
+    {
+      "path": "qa/screens/cryptic-workshop.png",
+      "bytes": 169539,
+      "sha256": "ba3c96b80e29db5af88d2e3ed230bceb679a774796129b6a450178e0ffe432f2"
+    },
+    {
+      "path": "qa/screens/daily-crossword.png",
+      "bytes": 107471,
+      "sha256": "5656488a39b4dc07503ab814603ef18ecc19fb514b96f2233dcc6e4b0c05705c"
+    },
+    {
+      "path": "qa/screens/definition-detective.png",
+      "bytes": 206436,
+      "sha256": "37bf733dc1400ab5da83bb92892662c8c7e838ecfcb194daa58974846cbe3c0a"
+    },
+    {
+      "path": "qa/screens/family-feed.png",
+      "bytes": 172652,
+      "sha256": "c578ffab2a82f3852e2adee36264f49808532cbd3ef42098376459de2fae72b5"
+    },
+    {
+      "path": "qa/screens/hidden-word-trail.png",
+      "bytes": 182976,
+      "sha256": "5d821c290bf553014e8ea80269e98a763326194a16407022de22f969950f56fa"
+    },
+    {
+      "path": "qa/screens/index.png",
+      "bytes": 273319,
+      "sha256": "40af0d70519e3375b19b32755277315332ad2231145aac9bfbde40ec3d218697"
+    },
+    {
+      "path": "qa/screens/letter-circuit.png",
+      "bytes": 189093,
+      "sha256": "1fbb083fc78178d853fb2ad13662af7dac68e2cd07fcace6182b0b8ad963f471"
+    },
+    {
+      "path": "qa/screens/letter-set.png",
+      "bytes": 162273,
+      "sha256": "efeb974975e64fb519e8dffa5489e3440ad3a63ef26182321af677fb68ab7e47"
+    },
+    {
+      "path": "qa/screens/letter-wheel-mobile.png",
+      "bytes": 109052,
+      "sha256": "0ed9fe68f085a743dee0c1fe4839e821c9db1652eef084a5613f8e02224948b8"
+    },
+    {
+      "path": "qa/screens/letter-wheel.png",
+      "bytes": 167869,
+      "sha256": "0b4bb5f799982047f5ab18ff4a0b07a28a3ce8ed6206bbbf3fc89140b7e60861"
+    },
+    {
+      "path": "qa/screens/missing-links.png",
+      "bytes": 160382,
+      "sha256": "b9bb5a1fe044fde3a304c0f2f264e09fa334e2a3805f9bed855c6f2cdba9abcc"
+    },
+    {
+      "path": "qa/screens/phrase-repair.png",
+      "bytes": 162668,
+      "sha256": "0abe09e6192a5c76275533ceafa12427327d0d5c52bdb378da1f0ed39596ce20"
+    },
+    {
+      "path": "qa/screens/shared-word-board.png",
+      "bytes": 93063,
+      "sha256": "c9dca75abdefe72e52ef858fb3fd2cb60551e08b97aaf753e5e2980fe7c88766"
+    },
+    {
+      "path": "qa/screens/shrinking-staircase.png",
+      "bytes": 164989,
+      "sha256": "17dbc0b74acf6a98cd4396e1e15f2f2814c9663baff2833772003ee8d6c51b3b"
+    },
+    {
+      "path": "qa/screens/tile-table.png",
+      "bytes": 167787,
+      "sha256": "fc45e3033b3da23ae4eb6f32c94fb5d23181a1daaa373da8bcf7d7af4d0ded62"
+    },
+    {
+      "path": "qa/screens/word-deduction-mobile.png",
+      "bytes": 104609,
+      "sha256": "ef7fbdbad3c92ea32fe3c4a64c774ca3401e0cbd93ca4b827fefcbe9a27e6586"
+    },
+    {
+      "path": "qa/screens/word-deduction.png",
+      "bytes": 162273,
+      "sha256": "5150246e90815c17c17c2c900b99253a9f710bc351033630f8c27403026dc92e"
+    },
+    {
+      "path": "qa/screens/word-families-mobile.png",
+      "bytes": 108794,
+      "sha256": "c8bb24aaaa40107a7dac9955ed275a7c70f2d81aff3a79fc698942759407b33c"
+    },
+    {
+      "path": "qa/screens/word-families.png",
+      "bytes": 169615,
+      "sha256": "e29fd7fd8894f5c6ddba0de898ea2b6ba9e8bcd47710790f0b7d6874ccd7ef00"
+    },
+    {
+      "path": "qa/screens/word-fragments.png",
+      "bytes": 167211,
+      "sha256": "bd3d68cb199cd7683f460a1ad029f5c7bcbbfd9f0a96427add58ec728bb3ea08"
+    },
+    {
+      "path": "qa/screens/word-ladder.png",
+      "bytes": 169347,
+      "sha256": "cfd1b7894f4a5416efbbf00bc75c47adb58861e5430486b10cc58876e521b1b0"
+    },
+    {
+      "path": "qa/screens/word-weave.png",
+      "bytes": 168966,
+      "sha256": "bdb116373fcdcab31cf4aa9c6b40fb307a4cab0fac1be4fe0caf384077006a4c"
+    },
+    {
+      "path": "qa/ui-v2-extra-checks.json",
+      "bytes": 6212,
+      "sha256": "e44f908869a2bb943493926c7848ac6c16826a6db27d3473edf59af16cf78b81"
+    },
+    {
+      "path": "qa/ui-verification.json",
+      "bytes": 17977,
+      "sha256": "e9d152a40b051f837ac35c7a5320bd6211ba037706853fe54a5b258335a1a4c3"
+    },
+    {
+      "path": "scripts/build-gb-dictionary.py",
+      "bytes": 1783,
+      "sha256": "326418a3f4239cfdf5f16b3a23b623478f8cd2ec3419105cfc4baa8b8e8c4fd6"
+    },
+    {
+      "path": "scripts/hexabble-engine.test.cjs",
+      "bytes": 4793,
+      "sha256": "f7bb6660b5b2e1069fc713e2c48d34fdaacd683517d0563dcd4adbc68b9eff1e"
+    },
+    {
+      "path": "scripts/validate-alternative-fixtures.py",
+      "bytes": 8592,
+      "sha256": "4e479b2f1121c07c0abddc916ec31886c69717dfd565cf1d9f2eb14439a15dff"
+    },
+    {
+      "path": "scripts/validate-familiar-fixtures.py",
+      "bytes": 8373,
+      "sha256": "003ef726b1d2fc65a30c89ac1a9c11af35c6534c9d59ce7bc09f98a4ade13d7d"
+    },
+    {
+      "path": "scripts/validate-negative-cases.py",
+      "bytes": 1621,
+      "sha256": "714c5616ec3641c98f0b737ac8346fdbafdfe4c9160554a2a03399e63b983a6f"
+    },
+    {
+      "path": "scripts/validate-pack.py",
+      "bytes": 3266,
+      "sha256": "abab28c87f0f18ecf17e98179b49320043dfa2155485987c4f12b5e11c62a70a"
+    },
+    {
+      "path": "scripts/verify-hexabble-ui.cjs",
+      "bytes": 7312,
+      "sha256": "89cd1174929f96bfc8288809c87e74e53caa5d69748d1ca12fe669efbef3bcf9"
+    },
+    {
+      "path": "scripts/verify-ui.cjs",
+      "bytes": 7373,
+      "sha256": "aab793d09dc5cb1f27ff0e1b2e04e07a5ef705602c3aa0f9a859bac22b9110ba"
+    },
+    {
+      "path": "ui/DESIGN-HANDOFF.md",
+      "bytes": 10079,
+      "sha256": "4282fbb21dcfbb06d81157b99eefa52a173d339f3b56d4984f5979a8cbecd307"
+    },
+    {
+      "path": "ui/README.md",
+      "bytes": 8657,
+      "sha256": "1b5d252878c0398ada42f97da5b77b94f021db3107c27507fb76462649b028a1"
+    },
+    {
+      "path": "ui/anagram-relay.html",
+      "bytes": 492,
+      "sha256": "91a374c9c9f9005d7849eb83038c42c5f0b38d68145a98a853f779af551d88dd"
+    },
+    {
+      "path": "ui/app.js",
+      "bytes": 43399,
+      "sha256": "d1b1331520f1be1ff7ad14d27e43dee87e65bcceaa96b58629bc052db961dbc2"
+    },
+    {
+      "path": "ui/birthday-book.html",
+      "bytes": 492,
+      "sha256": "6ee4ecb77fdc07aa777b68e99c323fa7613172f9ce8a65fcfdff4c6f9370c78d"
+    },
+    {
+      "path": "ui/birthday-hub.html",
+      "bytes": 491,
+      "sha256": "1792e3b0c1689afe8f3884f78fee745a8e5c6117caa926b68b2c033512e88796"
+    },
+    {
+      "path": "ui/clue-pairs.html",
+      "bytes": 489,
+      "sha256": "54cd6ea27e222964120f1099bc57b0b70624f408f963c4d7e06ace787c17af17"
+    },
+    {
+      "path": "ui/crossword.html",
+      "bytes": 488,
+      "sha256": "6174600cd85607610d4731f7d7d14bd6341f8a97bc5d5c5a9511e148ca6ede20"
+    },
+    {
+      "path": "ui/cryptic-workshop.html",
+      "bytes": 495,
+      "sha256": "8af97d5616884bf705d8a9bd83499ea9ca407ddb6136d3ca292f67ce275640cd"
+    },
+    {
+      "path": "ui/daily-crossword.html",
+      "bytes": 488,
+      "sha256": "6174600cd85607610d4731f7d7d14bd6341f8a97bc5d5c5a9511e148ca6ede20"
+    },
+    {
+      "path": "ui/definition-detective.html",
+      "bytes": 499,
+      "sha256": "e446d234d9146e97190df827ab5a066ce39ebadddb7df4717e501d5df8244be9"
+    },
+    {
+      "path": "ui/family-feed.html",
+      "bytes": 490,
+      "sha256": "35cd00b5dcb024bf24789350a4565fa7048218af6d08d11e3904f22d3e117724"
+    },
+    {
+      "path": "ui/family-upload.html",
+      "bytes": 492,
+      "sha256": "a8bff8caea752b2fdb1e5c80785c6abdc8aa5eff570eaade9e6fa66e510354e1"
+    },
+    {
+      "path": "ui/hexabble/app.js",
+      "bytes": 31124,
+      "sha256": "249dce1417b7b3b393695f32d3e9e6745e4b8452dc9c0c75ea1b3a52e31268dc"
+    },
+    {
+      "path": "ui/hexabble/club.css",
+      "bytes": 4379,
+      "sha256": "832ffce265bdf79038cacf0277a41c5cc19330ff10f76a0cc85084e11aa0af50"
+    },
+    {
+      "path": "ui/hexabble/club.js",
+      "bytes": 8609,
+      "sha256": "d6581d917787cc8dc6ba47dbf629bcf44c2faae62c2c68faf305dff50ed2a198"
+    },
+    {
+      "path": "ui/hexabble/engine.js",
+      "bytes": 21641,
+      "sha256": "ae20ef8b8e16ab42901cf8513bf5e64eff1dadda17e2c2717b3b31ae5608d4ad"
+    },
+    {
+      "path": "ui/hexabble/styles.css",
+      "bytes": 13964,
+      "sha256": "cce1afdcae2ce09f940f4d6f99976ec5be679446654c57b94934872e50aa82fc"
+    },
+    {
+      "path": "ui/hexabble/words.js",
+      "bytes": 2593304,
+      "sha256": "b14c11f5ecd3351f422ff78f8fc88fe6e6d4c24a45a1f508e184803b9f2a930b"
+    },
+    {
+      "path": "ui/hexabble.html",
+      "bytes": 5801,
+      "sha256": "b2b4521f8c80b64005c509da0483d7b9b2d0d4b291b174c65d320aea567a633b"
+    },
+    {
+      "path": "ui/hidden-word-trail.html",
+      "bytes": 496,
+      "sha256": "d0c710e22c756584eaf290694bddbe8f866921cf3bac3b68a2015186d6091827"
+    },
+    {
+      "path": "ui/home-mobile.png",
+      "bytes": 213945,
+      "sha256": "57963fcf16d4dfe28cc8464a07f1800bd7ca57880b1b1b4189db406d491e3074"
+    },
+    {
+      "path": "ui/index.html",
+      "bytes": 484,
+      "sha256": "6035f6c6c03a08e56ce554cf8d3d69a00df2f29161bd5965ac4cf7fa5d3c7a3b"
+    },
+    {
+      "path": "ui/letter-circuit.html",
+      "bytes": 493,
+      "sha256": "7861bc655645a8d712b66e4f0f88778dce4b712ccecee26d09332f4277a6c257"
+    },
+    {
+      "path": "ui/letter-set.html",
+      "bytes": 489,
+      "sha256": "272137049bb9f2e76d0b8920a5ba777f83dd5ed086713c9ffbb9ffbd60a59c65"
+    },
+    {
+      "path": "ui/letter-wheel-desktop.png",
+      "bytes": 169758,
+      "sha256": "cb8ebf4eb0093d262149d8e5ba8b7333f00524e3de2a70b586683c767486bf4f"
+    },
+    {
+      "path": "ui/letter-wheel.html",
+      "bytes": 491,
+      "sha256": "4a4ec75315deebb4fa56b733e865bb54a89b3436862e3f4d6e252c8221a978f7"
+    },
+    {
+      "path": "ui/missing-links.html",
+      "bytes": 492,
+      "sha256": "d97d941c20e3f9fb58fe757dd7ad6a3a301aa8fbaf3837ceb635b8c5302c63c0"
+    },
+    {
+      "path": "ui/phrase-repair.html",
+      "bytes": 492,
+      "sha256": "e5b97653da6b92db6bef4cb17d5812acef75a6d7b59e286c3503acc815902322"
+    },
+    {
+      "path": "ui/shared-word-board.html",
+      "bytes": 489,
+      "sha256": "e48bd6f0c024ab7b95a2b72e37052f0952c1b671f22b764db9d28852fcd77f7e"
+    },
+    {
+      "path": "ui/shrinking-staircase.html",
+      "bytes": 498,
+      "sha256": "c84b63ca0bc0efa217d337528a74bdc6ba2296ac8a0d393158ed3f7fce04370b"
+    },
+    {
+      "path": "ui/styles.css",
+      "bytes": 10687,
+      "sha256": "b519c57db14c94e20e4d9d054552ed63da1138f68a66316c5841893c7c2c863f"
+    },
+    {
+      "path": "ui/themes.css",
+      "bytes": 23746,
+      "sha256": "dd25f5908af6b0f627adc1be503490875cd6e3711b7753f02ff736b66b793edc"
+    },
+    {
+      "path": "ui/tile-table.html",
+      "bytes": 489,
+      "sha256": "e48bd6f0c024ab7b95a2b72e37052f0952c1b671f22b764db9d28852fcd77f7e"
+    },
+    {
+      "path": "ui/word-deduction.html",
+      "bytes": 493,
+      "sha256": "762f8204ce004e5632fc7367ea2831e833c7dffc7332c17d6dc21969d8da6db1"
+    },
+    {
+      "path": "ui/word-families.html",
+      "bytes": 492,
+      "sha256": "daf80010cf15207346f88143e5f0a8145b22f7ce10d1644ce103797bca7a76ee"
+    },
+    {
+      "path": "ui/word-fragments.html",
+      "bytes": 493,
+      "sha256": "db9f633149c15cc1d67f8205d5d03acf26453f7df3cedc5836a9f56d8df8173d"
+    },
+    {
+      "path": "ui/word-ladder.html",
+      "bytes": 490,
+      "sha256": "c53a857267f3069c917e203de29a5ad96e2044d5fe329e6245b5c1f11bb2212f"
+    },
+    {
+      "path": "ui/word-weave.html",
+      "bytes": 489,
+      "sha256": "d254fbf21cd77cd4fc6dfd4251035433e78b9ca885cf1a6610447803e240139e"
+    },
+    {
+      "path": "upgrades/19-hexabble-integration.md",
+      "bytes": 5126,
+      "sha256": "e1bd2cd158c2742b8818c38440214a10ef98e8b3dd30293df0ee721c094c8106"
+    },
+    {
+      "path": "upgrades/20-site-and-birthday-parity.md",
+      "bytes": 8807,
+      "sha256": "249f7714ccca40d6873c71d68138b2d06c27aaa246c17933ac5e99e802637a58"
+    },
+    {
+      "path": "upgrades/BENCHMARK-ENGINE-REVIEW.md",
+      "bytes": 8872,
+      "sha256": "eec53a0ef019902abb20441ec928bb80b7900daf0b66481049b38a1dbb15272c"
+    },
+    {
+      "path": "upgrades/anagram-relay.md",
+      "bytes": 4197,
+      "sha256": "f4ebaad5fef64aad4290e2903faf34e7d6d4724f0651f07e9d2d3389aef7cb67"
+    },
+    {
+      "path": "upgrades/clue-pairs.md",
+      "bytes": 4041,
+      "sha256": "f928cbc257f2035cb1d4ee17c795d1b4d2a62a9deb1216b3155b39d2d45d0815"
+    },
+    {
+      "path": "upgrades/cryptic-workshop.md",
+      "bytes": 4131,
+      "sha256": "d843279a3c9c7092151b35749f7305ce10f930b8167e5255ac6844c5775c51f9"
+    },
+    {
+      "path": "upgrades/daily-crossword.md",
+      "bytes": 4243,
+      "sha256": "07c09a88f1c502ae21d5cb0b62c8535bc43f614fbe14c8099be4c50b04b5a9f5"
+    },
+    {
+      "path": "upgrades/definition-detective.md",
+      "bytes": 4244,
+      "sha256": "4c672c708b3a1dc6c2fad3f54bda4dbc1abe025c28413b6b1f81c01ebc39a57c"
+    },
+    {
+      "path": "upgrades/hidden-word-trail.md",
+      "bytes": 4158,
+      "sha256": "4e9ce3258c598757d501c18ef4f90e5e4140e103c5f313c9d2f864d40844b529"
+    },
+    {
+      "path": "upgrades/letter-circuit.md",
+      "bytes": 4186,
+      "sha256": "e29280830d534c960afa7332e469739917816ee95b2335667f4754977be87e90"
+    },
+    {
+      "path": "upgrades/letter-set.md",
+      "bytes": 4359,
+      "sha256": "84b32b1f38af4c5500dc814637bb940173d0ab5ee50e9a75bbc0a77d3bfb1805"
+    },
+    {
+      "path": "upgrades/letter-wheel.md",
+      "bytes": 4054,
+      "sha256": "68debe7bb49535f2209adbeae95ef2c4a77b0fbea4a32b0017fc2e902a19aba7"
+    },
+    {
+      "path": "upgrades/missing-links.md",
+      "bytes": 4126,
+      "sha256": "3d4a8181d10ececfdb5229f6f601ea77ec7cc43d8dd1aaf1f508d5a5d80d1ec8"
+    },
+    {
+      "path": "upgrades/phrase-repair.md",
+      "bytes": 4186,
+      "sha256": "2728d6dcde6214e9c8ad72fc63e758f1557460bf6e97de942c86820141c829ca"
+    },
+    {
+      "path": "upgrades/shared-word-board.md",
+      "bytes": 4219,
+      "sha256": "662f174d218dd456f643cb5c9225f3661092eee55b748726d03f8601b333e13c"
+    },
+    {
+      "path": "upgrades/shrinking-staircase.md",
+      "bytes": 4167,
+      "sha256": "f79f6a17ff82f5f1b0a16ade624f9f1ff634756e05f059f1a2d303138f86a00b"
+    },
+    {
+      "path": "upgrades/word-deduction.md",
+      "bytes": 4241,
+      "sha256": "0acf3e9c09ce1910dcbb3eb9bb045437088729b0afe12a9d93a709172ffdcf10"
+    },
+    {
+      "path": "upgrades/word-families.md",
+      "bytes": 4294,
+      "sha256": "8a95c8ca618aabe5a1c5b732f9a6aa5a965bab343e5483f9a47e6c271c8311aa"
+    },
+    {
+      "path": "upgrades/word-fragments.md",
+      "bytes": 4138,
+      "sha256": "5c7dac55478fa5fa9e67ec120a20ea63f999c85ec7bf7cdcd700b627f0792b06"
+    },
+    {
+      "path": "upgrades/word-ladder.md",
+      "bytes": 4016,
+      "sha256": "69bf97bc741008c2e54dbe355812861222bb96f9154a5ca95957d87b0873a58b"
+    },
+    {
+      "path": "upgrades/word-weave.md",
+      "bytes": 4091,
+      "sha256": "f1a868830dd48b8da91a0d18771c3ab90ce378a938b7a5909e759c4dc652a07c"
+    },
+    {
+      "path": "vendor/hexabble-original/README.md",
+      "bytes": 1951,
+      "sha256": "64290fe59b791bc58758704128ed2dc3e2dec0413cde96ebc2944258a401d3ff"
+    },
+    {
+      "path": "vendor/hexabble-original/SOURCE-MANIFEST.json",
+      "bytes": 1007,
+      "sha256": "c399dab1a1622beada338c01019751bca460fd204a05e1bf0e249923b7960276"
+    },
+    {
+      "path": "vendor/hexabble-original/app.js",
+      "bytes": 31369,
+      "sha256": "1df44f55542d3c5353e518beef37d9ba69dd5e346c962b47359f3fcd8b1fddf7"
+    },
+    {
+      "path": "vendor/hexabble-original/engine.js",
+      "bytes": 21335,
+      "sha256": "a660bfc6c1f14fac0fdaf88e7dcdb024284b499b135e368852e8a3d059ed928d"
+    },
+    {
+      "path": "vendor/hexabble-original/index.html",
+      "bytes": 5267,
+      "sha256": "5c8ed85161e7a53d19954da9f0af3173abcdc59be97b76bc8b74a698c4ffe90d"
+    },
+    {
+      "path": "vendor/hexabble-original/styles.css",
+      "bytes": 13964,
+      "sha256": "cce1afdcae2ce09f940f4d6f99976ec5be679446654c57b94934872e50aa82fc"
+    },
+    {
+      "path": "vendor/hexabble-original/words.js",
+      "bytes": 2593304,
+      "sha256": "b14c11f5ecd3351f422ff78f8fc88fe6e6d4c24a45a1f508e184803b9f2a930b"
+    }
+  ]
+}

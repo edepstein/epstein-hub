@@ -1,0 +1,158 @@
+{
+  "gameId": "clue-pairs",
+  "contentVersion": "1.0",
+  "editorialStatus": "original-demo-not-publication-approved",
+  "locale": "en-GB",
+  "rounds": [
+    {
+      "id": "pairs-001",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "cards": [
+          {
+            "id": "a",
+            "clues": [
+              "A long-legged wading bird",
+              "A machine used to lift heavy loads"
+            ],
+            "length": 5
+          },
+          {
+            "id": "b",
+            "clues": [
+              "The sound a dog makes",
+              "The outer covering of a tree trunk"
+            ],
+            "length": 4
+          },
+          {
+            "id": "c",
+            "clues": [
+              "The underside of a foot",
+              "A type of flatfish"
+            ],
+            "length": 4
+          },
+          {
+            "id": "d",
+            "clues": [
+              "A sporting contest",
+              "A small stick used to start a flame"
+            ],
+            "length": 5
+          },
+          {
+            "id": "e",
+            "clues": [
+              "A long structural piece of timber",
+              "A narrow shaft of light"
+            ],
+            "length": 4
+          }
+        ]
+      },
+      "solution": {
+        "acceptedAnswers": {
+          "a": [
+            "CRANE"
+          ],
+          "b": [
+            "BARK"
+          ],
+          "c": [
+            "SOLE"
+          ],
+          "d": [
+            "MATCH"
+          ],
+          "e": [
+            "BEAM"
+          ]
+        }
+      },
+      "hints": [
+        "Card a begins with C.",
+        "Card b has an animal sound and a tree meaning."
+      ],
+      "explanation": "Each answer has both independently clued senses."
+    },
+    {
+      "id": "pairs-002",
+      "difficulty": "gentle",
+      "status": "demo",
+      "rulesVersion": "1.0",
+      "dictionaryVersion": "demo-uk-v1",
+      "board": {
+        "cards": [
+          {
+            "id": "a",
+            "clues": [
+              "The land at the edge of a river",
+              "A business that holds deposits of money"
+            ],
+            "length": 4
+          },
+          {
+            "id": "b",
+            "clues": [
+              "The season between winter and summer",
+              "A coiled elastic piece of metal"
+            ],
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clues": [
+              "A marine mammal",
+              "To close something so it is watertight"
+            ],
+            "length": 4
+          },
+          {
+            "id": "d",
+            "clues": [
+              "A flying mammal",
+              "An implement used to hit a ball in cricket"
+            ],
+            "length": 3
+          },
+          {
+            "id": "e",
+            "clues": [
+              "A sweet preserve made from fruit",
+              "A blockage of road traffic"
+            ],
+            "length": 3
+          }
+        ]
+      },
+      "solution": {
+        "acceptedAnswers": {
+          "a": [
+            "BANK"
+          ],
+          "b": [
+            "SPRING"
+          ],
+          "c": [
+            "SEAL"
+          ],
+          "d": [
+            "BAT"
+          ],
+          "e": [
+            "JAM"
+          ]
+        }
+      },
+      "hints": [
+        "Card b begins with S.",
+        "Card c can be a noun or a verb."
+      ],
+      "explanation": "The answers are BANK, SPRING, SEAL, BAT and JAM."
+    }
+  ]
+}
