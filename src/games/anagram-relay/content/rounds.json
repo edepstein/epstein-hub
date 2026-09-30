@@ -1,0 +1,768 @@
+{
+  "schemaVersion": 1,
+  "gameId": "anagram-relay",
+  "rulesVersion": "1.0",
+  "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice rounds are original to this build: every answer is in ESDB membership and the SCOWL size-35 familiar layer, and every edge is checked by exact multiset difference (add exactly one letter). Clues are original and not yet human-reviewed.",
+  "rounds": [
+    {
+      "id": "ar-demo-1",
+      "title": "Original demo relay 1",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "relay-001",
+      "payload": {
+        "start": "STARE",
+        "stages": [
+          {
+            "clue": "Behind a ship, or towards its rear",
+            "length": 6
+          },
+          {
+            "clue": "Mothers and fathers",
+            "length": 7
+          },
+          {
+            "clue": "People working together in a joint undertaking",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "STARE",
+            "ASTERN",
+            "PARENTS",
+            "PARTNERS"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "N",
+            "P",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "Add N and rearrange STARE into ASTERN; add P for PARENTS; add another R for PARTNERS."
+      }
+    },
+    {
+      "id": "ar-demo-2",
+      "title": "Original demo relay 2",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "relay-002",
+      "payload": {
+        "start": "PLATE",
+        "stages": [
+          {
+            "clue": "A large body orbiting a star",
+            "length": 6
+          },
+          {
+            "clue": "Large bodies orbiting a star",
+            "length": 7
+          },
+          {
+            "clue": "People who put plants or seeds into the ground",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "PLATE",
+            "PLANET",
+            "PLANETS",
+            "PLANTERS"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "N",
+            "S",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "Add N and rearrange PLATE into PLANET; add S for PLANETS; add R and rearrange for PLANTERS. The middle plural is a deliberate gentle training step."
+      }
+    },
+    {
+      "id": "ar-g1",
+      "title": "Gentle relay 1",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "EAR",
+        "stages": [
+          {
+            "clue": "An animal like a large rabbit, with long ears",
+            "length": 4
+          },
+          {
+            "clue": "The planet we live on",
+            "length": 5
+          },
+          {
+            "clue": "The playing-card suit marked with red symbols of love",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "EAR",
+            "HARE",
+            "EARTH",
+            "HEARTS"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "H",
+            "T",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "EAR plus H makes HARE, plus T makes EARTH, and plus S rearranges into HEARTS."
+      }
+    },
+    {
+      "id": "ar-g2",
+      "title": "Gentle relay 2",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TEN",
+        "stages": [
+          {
+            "clue": "A short written message",
+            "length": 4
+          },
+          {
+            "clue": "A small piece of rock",
+            "length": 5
+          },
+          {
+            "clue": "Truthful and sincere",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "TEN",
+            "NOTE",
+            "STONE",
+            "HONEST"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "O",
+            "S",
+            "H"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "TEN plus O makes NOTE, plus S makes STONE, and plus H rearranges into HONEST."
+      }
+    },
+    {
+      "id": "ar-g3",
+      "title": "Gentle relay 3",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CAT",
+        "stages": [
+          {
+            "clue": "A garment worn over your clothes outdoors",
+            "length": 4
+          },
+          {
+            "clue": "Where the land meets the sea",
+            "length": 5
+          },
+          {
+            "clue": "An animal or figure that brings a team luck",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "CAT",
+            "COAT",
+            "COAST",
+            "MASCOT"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "O",
+            "S",
+            "M"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "CAT plus O makes COAT, plus S makes COAST, and plus M rearranges into MASCOT."
+      }
+    },
+    {
+      "id": "ar-g4",
+      "title": "Gentle relay 4",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PAN",
+        "stages": [
+          {
+            "clue": "The feeling of being hurt",
+            "length": 4
+          },
+          {
+            "clue": "Coloured liquid brushed on to walls",
+            "length": 5
+          },
+          {
+            "clue": "Pots of colour for a wall or a canvas",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "PAN",
+            "PAIN",
+            "PAINT",
+            "PAINTS"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "I",
+            "T",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "PAN plus I makes PAIN, plus T makes PAINT, and plus S makes the plural PAINTS, a deliberate gentle step."
+      }
+    },
+    {
+      "id": "ar-g5",
+      "title": "Gentle relay 5",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HAT",
+        "stages": [
+          {
+            "clue": "A tub you fill with water to wash in",
+            "length": 4
+          },
+          {
+            "clue": "Swim in the sea for pleasure",
+            "length": 5
+          },
+          {
+            "clue": "Air taken into the lungs",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "HAT",
+            "BATH",
+            "BATHE",
+            "BREATH"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "B",
+            "E",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "HAT plus B makes BATH, plus E makes BATHE, and plus R rearranges into BREATH."
+      }
+    },
+    {
+      "id": "ar-s1",
+      "title": "Standard relay 1",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "RATE",
+        "stages": [
+          {
+            "clue": "The organ that pumps blood around the body",
+            "length": 5
+          },
+          {
+            "clue": "A thin strand of cotton used for sewing",
+            "length": 6
+          },
+          {
+            "clue": "The distance from one side to the other",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "RATE",
+            "HEART",
+            "THREAD",
+            "BREADTH"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "H",
+            "D",
+            "B"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "RATE plus H rearranges into HEART, plus D into THREAD, and plus B into BREADTH."
+      }
+    },
+    {
+      "id": "ar-s2",
+      "title": "Standard relay 2",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MILE",
+        "stages": [
+          {
+            "clue": "A message sent electronically",
+            "length": 5
+          },
+          {
+            "clue": "The desire to cause harm",
+            "length": 6
+          },
+          {
+            "clue": "An astonishing event that seems impossible",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "MILE",
+            "EMAIL",
+            "MALICE",
+            "MIRACLE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "A",
+            "C",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "MILE plus A rearranges into EMAIL, plus C into MALICE, and plus R into MIRACLE."
+      }
+    },
+    {
+      "id": "ar-s3",
+      "title": "Standard relay 3",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "LINE",
+        "stages": [
+          {
+            "clue": "A being from another world",
+            "length": 5
+          },
+          {
+            "clue": "Lowly and dull, as of a chore",
+            "length": 6
+          },
+          {
+            "clue": "A natural substance such as quartz, dug from the ground",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "LINE",
+            "ALIEN",
+            "MENIAL",
+            "MINERAL"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "A",
+            "M",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "LINE plus A rearranges into ALIEN, plus M into MENIAL, and plus R into MINERAL."
+      }
+    },
+    {
+      "id": "ar-s4",
+      "title": "Standard relay 4",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "OPEN",
+        "stages": [
+          {
+            "clue": "Lying flat, face down",
+            "length": 5
+          },
+          {
+            "clue": "Think about carefully",
+            "length": 6
+          },
+          {
+            "clue": "Reply or react",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "OPEN",
+            "PRONE",
+            "PONDER",
+            "RESPOND"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "D",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "OPEN plus R rearranges into PRONE, plus D into PONDER, and plus S into RESPOND."
+      }
+    },
+    {
+      "id": "ar-s5",
+      "title": "Standard relay 5",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ROSE",
+        "stages": [
+          {
+            "clue": "The number of points won in a game",
+            "length": 5
+          },
+          {
+            "clue": "A series of lessons, or the ground a golfer plays",
+            "length": 6
+          },
+          {
+            "clue": "Little known, or hard to make out",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "ROSE",
+            "SCORE",
+            "COURSE",
+            "OBSCURE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "C",
+            "U",
+            "B"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "ROSE plus C rearranges into SCORE, plus U into COURSE, and plus B into OBSCURE."
+      }
+    },
+    {
+      "id": "ar-s6",
+      "title": "Standard relay 6",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ONE",
+        "stages": [
+          {
+            "clue": "A single musical sound",
+            "length": 4
+          },
+          {
+            "clue": "The highest ordinary adult male singing voice",
+            "length": 5
+          },
+          {
+            "clue": "A small brass instrument, or an ice-cream cone",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "ONE",
+            "NOTE",
+            "TENOR",
+            "CORNET"
+          ],
+          [
+            "ONE",
+            "TONE",
+            "TENOR",
+            "CORNET"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "T",
+            "R",
+            "C"
+          ],
+          [
+            "T",
+            "R",
+            "C"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "ONE plus T makes NOTE or TONE (both accepted), plus R rearranges into TENOR, and plus C into CORNET."
+      }
+    },
+    {
+      "id": "ar-e1",
+      "title": "Expert relay 1",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "COAT",
+        "stages": [
+          {
+            "clue": "Someone who plays a part",
+            "length": 5
+          },
+          {
+            "clue": "A reward offered as an incentive, the opposite of a stick",
+            "length": 6
+          },
+          {
+            "clue": "A farm vehicle that pulls a plough",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "COAT",
+            "ACTOR",
+            "CARROT",
+            "TRACTOR"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "R",
+            "T"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "COAT plus R rearranges into ACTOR, plus a second R into CARROT, and plus a second T into TRACTOR."
+      }
+    },
+    {
+      "id": "ar-e2",
+      "title": "Expert relay 2",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "RANGE",
+        "stages": [
+          {
+            "clue": "Peril",
+            "length": 6
+          },
+          {
+            "clue": "Made very cross",
+            "length": 7
+          },
+          {
+            "clue": "Put at risk",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "RANGE",
+            "DANGER",
+            "ANGERED",
+            "ENDANGER"
+          ],
+          [
+            "RANGE",
+            "DANGER",
+            "ENRAGED",
+            "ENDANGER"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "D",
+            "E",
+            "N"
+          ],
+          [
+            "D",
+            "E",
+            "N"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "RANGE plus D rearranges into DANGER, plus a second E into ANGERED or ENRAGED (both accepted), and plus a second N into ENDANGER."
+      }
+    },
+    {
+      "id": "ar-e3",
+      "title": "Expert relay 3",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "LATER",
+        "stages": [
+          {
+            "clue": "The second of two just mentioned",
+            "length": 6
+          },
+          {
+            "clue": "A large flat serving dish",
+            "length": 7
+          },
+          {
+            "clue": "Splash with messy drops",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "LATER",
+            "LATTER",
+            "PLATTER",
+            "SPLATTER"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "T",
+            "P",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "LATER plus a second T makes LATTER, plus P makes PLATTER, and plus S makes SPLATTER."
+      }
+    },
+    {
+      "id": "ar-e4",
+      "title": "Expert relay 4",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ALLEY",
+        "stages": [
+          {
+            "clue": "A ship's kitchen",
+            "length": 6
+          },
+          {
+            "clue": "A room or building for showing works of art",
+            "length": 7
+          },
+          {
+            "clue": "A story with a hidden moral or political meaning",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "ALLEY",
+            "GALLEY",
+            "GALLERY",
+            "ALLEGORY"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "G",
+            "R",
+            "O"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "ALLEY plus G makes GALLEY, plus R makes GALLERY, and plus O rearranges into ALLEGORY."
+      }
+    },
+    {
+      "id": "ar-e5",
+      "title": "Expert relay 5",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TEETH",
+        "stages": [
+          {
+            "clue": "A rope that ties an animal to a post",
+            "length": 6
+          },
+          {
+            "clue": "A building where plays are staged",
+            "length": 7
+          },
+          {
+            "clue": "Warn of trouble to come",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "TEETH",
+            "TETHER",
+            "THEATRE",
+            "THREATEN"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "A",
+            "N"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "TEETH plus R rearranges into TETHER, plus A into THEATRE, and plus N into THREATEN."
+      }
+    }
+  ]
+}

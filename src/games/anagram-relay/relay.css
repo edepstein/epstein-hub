@@ -1,0 +1,45 @@
+[data-game="anagram-relay"] .ar-chain { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+[data-game="anagram-relay"] .ar-leg {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 10px 14px; border-radius: 12px;
+  background: #fffefa; border: 1px solid #bccbe2;
+}
+[data-game="anagram-relay"] .ar-leg.current { border: 2px solid var(--accent); padding: 16px; gap: 10px 12px; }
+[data-game="anagram-relay"] .ar-leg.locked { background: #f3f6fb; border-style: dashed; opacity: .82; }
+[data-game="anagram-relay"] .ar-leg-label { flex-basis: 100%; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--accent); }
+[data-game="anagram-relay"] .ar-word { font-size: 1.35rem; font-weight: 750; letter-spacing: .2em; color: #22324f; }
+[data-game="anagram-relay"] .ar-blanks { font-size: 1.1rem; letter-spacing: .2em; color: #7f8fab; }
+[data-game="anagram-relay"] .ar-badge { display: inline-grid; place-items: center; min-width: 38px; min-height: 28px; padding: 0 8px; border-radius: 14px; background: var(--accent); color: #fff; font-weight: 700; font-size: .85rem; }
+[data-game="anagram-relay"] .ar-tag { font-size: .75rem; font-style: italic; border: 1px dashed var(--accent); border-radius: 8px; padding: 2px 8px; }
+[data-game="anagram-relay"] .ar-clue-small { flex-basis: 100%; font-size: .85rem; color: #56617a; }
+[data-game="anagram-relay"] .ar-pill { display: inline-block; background: #fffefa; border: 1px solid #829abd; border-radius: 30px; padding: 6px 14px; font-size: .8rem; font-weight: 700; color: var(--accent); }
+[data-game="anagram-relay"] .ar-clue { flex-basis: 100%; margin: 0; border-left: 5px solid var(--accent); padding: 8px 12px; background: var(--wash); border-radius: 0 10px 10px 0; font-size: 1.1rem; line-height: 1.5; }
+[data-game="anagram-relay"] .ar-clue small { display: block; font-size: .85rem; color: var(--muted); }
+[data-game="anagram-relay"] .ar-enum { color: var(--muted); white-space: nowrap; }
+[data-game="anagram-relay"] .ar-source { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; border-bottom: 5px solid #879fc3; padding-bottom: 12px; }
+[data-game="anagram-relay"] .ar-tile {
+  min-width: 46px; min-height: 46px; border-radius: 8px 8px 3px 3px; border: 1px solid #bccbe2; background: #f7f9fd; color: #22324f;
+  font-size: 1.3rem; font-weight: 700; box-shadow: 0 3px 0 #bccbe2;
+}
+[data-game="anagram-relay"] .ar-tile.added { background: #fdf3cf; border-color: #c9a94a; box-shadow: 0 3px 0 #c9a94a; }
+[data-game="anagram-relay"] .ar-tile[aria-disabled="true"] { opacity: .38; text-decoration: line-through; box-shadow: none; cursor: not-allowed; }
+[data-game="anagram-relay"] .ar-slot { display: inline-flex; align-items: center; margin-left: 4px; padding-left: 8px; border-left: 2px dotted #879fc3; }
+[data-game="anagram-relay"] .ar-suggest { flex-basis: 100%; margin: 0; font-size: .92rem; }
+[data-game="anagram-relay"] .ar-picker { flex-basis: 100%; display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 6px; }
+[data-game="anagram-relay"] .ar-pick { min-width: 44px; min-height: 44px; border-radius: 8px; border: 1px solid #bccbe2; background: #fff; font-weight: 700; font-size: 1rem; color: #22324f; }
+[data-game="anagram-relay"] .ar-pick[aria-pressed="true"] { background: var(--accent); color: #fff; }
+[data-game="anagram-relay"] .ar-entry { display: flex; gap: 8px; flex-wrap: wrap; flex-basis: 100%; }
+[data-game="anagram-relay"] .ar-entry input {
+  flex: 1 1 180px; min-width: 0; min-height: 50px; font-size: 1.3rem; letter-spacing: .16em; text-transform: uppercase; text-align: center;
+  border-radius: 12px; border: 2px solid color-mix(in srgb, var(--accent) 40%, white); background: #fff; padding: 8px 12px;
+}
+[data-game="anagram-relay"] .ar-actions { display: flex; gap: 8px; flex-wrap: wrap; flex-basis: 100%; }
+[data-game="anagram-relay"] .ar-preview { flex-basis: 100%; margin: 0; font-size: .88rem; }
+[data-game="anagram-relay"] .ar-preview[data-legal="false"] { color: #8c3b2a; }
+@media (max-width: 700px) {
+  [data-game="anagram-relay"] .ar-word { font-size: 1.15rem; letter-spacing: .12em; }
+  [data-game="anagram-relay"] .ar-slot { margin-left: 0; padding-left: 0; border-left: 0; flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-game="anagram-relay"] .ar-leg.done { animation: ar-in .25s ease-out; }
+  @keyframes ar-in { from { transform: translateX(-6px); opacity: .6; } to { transform: none; opacity: 1; } }
+}

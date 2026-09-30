@@ -137,3 +137,14 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] Decision: steps taken back never count against the score (moves = edges in the final route, per the brief); tried and taken-back counts are shown separately.
 - [ ] "Report an answer issue" after a rejected word is not implemented (no editorial queue exists yet).
 - [ ] Endpoints and the example route ship in the client bundle; acceptable for unranked practice only.
+
+## Anagram Relay
+- [ ] Practice rounds ar-g1..g5, ar-s1..s6, ar-e1..e5: chains found by an exact add-one multiset search over ESDB membership and SCOWL size-35; clues written by the build agent. An editor must check each clue against the other words the same letters make (e.g. HEART vs EARTH/HATER, STONE vs NOTES/ONSET/TONES, SCORE vs CORES, ALIEN vs ANILE).
+- [ ] Accepted branches: ar-s6 NOTE/TONE ("A single musical sound") and ar-e2 ANGERED/ENRAGED ("Made very cross"). Confirm both fit and nothing else of the same letters does.
+- [ ] Clue judgement calls: CARROT clued as "a reward offered as an incentive, the opposite of a stick" (ar-e1); CORNET as "a small brass instrument, or an ice-cream cone" (ar-s6); OBSCURE as "little known, or hard to make out" (ar-s5); HEARTS as the card suit (ar-g1).
+- [ ] ar-g4 ends on the plural PAINTS as a deliberate gentle step (brief allows one in Gentle); the validator forbids plural-only stages outside Gentle and more than one per chain.
+- [ ] Decision: "backward work" (docs/05) is implemented as revising an earlier stage with confirmed dependent clearing; the brief says only the current stage accepts input, so later stages cannot be answered out of order.
+- [ ] Decision: tagline changed from "Solve the scramble. Carry a letter onwards." to "Add one letter. Discover the next word." because the upgrade brief says the old tagline misdescribes the add-one rule. The strap line changed to match.
+- [ ] Decision: hint ladder is letter to add, opening two letters, pattern with the new letter's position, fill stage (scores 0), reveal all. The brief's "demonstrate reordering" tier is the pattern hint; confirm it is helpful enough.
+- [ ] Decision: wrong answers are rejected atomically and not persisted, so guess counts are not stored (same as Shrinking Staircase).
+- [ ] "Report an answer issue" is not implemented (no editorial queue backend yet).
