@@ -400,4 +400,45 @@ describe.skipIf(!!skip)("family RLS and RPC matrix", () => {
       expect(await rows(A_VIEW, "select chapter_index from book_progress")).toEqual([{ chapter_index: 1 }]);
     });
   });
+
+  // ---------------------------------------------------------------- retries, soft deletes, downloads
+  describe("retries, soft deletes and download flags", () => {
+    it("authors soft-delete their own drafts through a PostgREST-style RETURNING update", async () => {
+      const id = (await rows(A_CON2, "insert into family_posts (family_id, author_id, caption) values ($1, $2, 'to delete') returning id", [familyA, A_CON2.id]))[0].id;
+      const r = await rows(A_CON2, "with u as (update family_posts set status = 'deleted' where id = $1 returning *) select count(*)::int as n from u", [id]);
+      expect(r[0].n).toBe(1);
+      expect(await rows(A_CUR, "select status from family_posts where id = $1", [id])).toEqual([{ status: "deleted" }]);
+      expect((await fails(A_CUR, "select moderate_family_post($1, 'approve', null)", [id])).message).toBe("invalid_transition");
+      expect((await fails(A_CUR, "update family_posts set caption = 'revive' where id = $1", [id])).message).toBe("post_deleted");
+      expect(await rows(A_VIEW, "select * from family_posts where id = $1", [id])).toHaveLength(0);
+    });
+
+    it("a repeated client request id cannot create a duplicate post or media item", async () => {
+      const rid = "00000000-0000-4000-8000-00000000abcd";
+      await rows(A_CON, "insert into family_posts (family_id, author_id, caption, client_request_id) values ($1, $2, 'once', $3)", [familyA, A_CON.id, rid]);
+      expect((await fails(A_CON, "insert into family_posts (family_id, author_id, caption, client_request_id) values ($1, $2, 'twice', $3)", [familyA, A_CON.id, rid])).code).toBe("23505");
+      await rows(A_CON, "insert into family_media (family_id, owner_id, kind, mime_type, byte_size, client_request_id) values ($1, $2, 'image', 'image/png', 10, $3)", [familyA, A_CON.id, rid]);
+      expect((await fails(A_CON, "insert into family_media (family_id, owner_id, kind, mime_type, byte_size, client_request_id) values ($1, $2, 'image', 'image/png', 10, $3)", [familyA, A_CON.id, rid])).code).toBe("23505");
+    });
+
+    it("download permission follows the latest active consent record and family visibility", async () => {
+      const m = (await rows(A_CON, "insert into family_media (family_id, owner_id, kind, mime_type, byte_size) values ($1, $2, 'image', 'image/webp', 10) returning id", [familyA, A_CON.id]))[0].id;
+      await rows(A_CON, "update family_media set processing_status = 'ready', width = 1, height = 1, alt_text = 'x' where id = $1", [m]);
+      await rows(A_CON, "insert into consent_records (family_id, media_id, recorded_by, permission_basis, people_pictured_confirmed, download_allowed) values ($1, $2, $3, 'My own photograph of the garden', true, true)", [familyA, m, A_CON.id]);
+      const p = (await rows(A_CON, "insert into family_posts (family_id, author_id, caption, status) values ($1, $2, 'garden', 'submitted') returning id", [familyA, A_CON.id]))[0].id;
+      await rows(A_CON, "insert into family_post_media (post_id, family_id, media_id) values ($1, $2, $3)", [p, familyA, m]);
+      expect(await rows(A_VIEW, "select * from media_download_flags($1)", [[m]])).toHaveLength(0); // not published yet
+      await rows(A_CUR, "select moderate_family_post($1, 'approve', null)", [p]);
+      expect(await rows(A_VIEW, "select allowed from media_download_flags($1)", [[m]])).toEqual([{ allowed: true }]);
+      expect(await rows(B_CUR, "select * from media_download_flags($1)", [[m]])).toHaveLength(0);
+      expect(await rows(A_VIEW, "select * from consent_records")).toHaveLength(0);
+    });
+
+    it("orphan cleanup is owner-only (service role / SQL editor)", async () => {
+      expect((await fails(A_CUR, "select cleanup_orphan_family_media()")).code).toBe("42501");
+      await db.client.query("update family_media set created_at = now() - interval '2 days' where processing_status = 'reserved'");
+      const r = await db.client.query("select cleanup_orphan_family_media() as n");
+      expect(r.rows[0].n).toBeGreaterThanOrEqual(1);
+    });
+  });
 });
