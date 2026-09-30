@@ -1,0 +1,38 @@
+[data-game="shrinking-staircase"] .ss-stairs { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+[data-game="shrinking-staircase"] .ss-step {
+  box-sizing: border-box; background: #fff6e9; color: #5e3522; border: 1px solid #d9b497; border-radius: 12px;
+  box-shadow: 0 4px 0 #c5a38a; padding: 10px 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; max-width: 100%;
+}
+[data-game="shrinking-staircase"] .ss-step.current { background: #fffefa; border: 2px solid var(--accent); box-shadow: 0 4px 0 #b98567; padding: 14px 16px; }
+[data-game="shrinking-staircase"] .ss-step.locked { opacity: .78; background: #fbf1e6; box-shadow: none; border-style: dashed; }
+[data-game="shrinking-staircase"] .ss-label { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--accent); flex-basis: 100%; }
+[data-game="shrinking-staircase"] .ss-word { font-size: 1.45rem; font-weight: 750; letter-spacing: .22em; }
+[data-game="shrinking-staircase"] .ss-blanks { font-size: 1.2rem; letter-spacing: .2em; color: #9b7760; }
+[data-game="shrinking-staircase"] .ss-badge { display: inline-grid; place-items: center; min-width: 38px; min-height: 28px; padding: 0 8px; border-radius: 14px; background: var(--accent); color: #fff; font-weight: 700; font-size: .85rem; }
+[data-game="shrinking-staircase"] .ss-tag { font-size: .75rem; font-style: italic; border: 1px dashed var(--accent); border-radius: 8px; padding: 2px 8px; }
+[data-game="shrinking-staircase"] .ss-clue-small { flex-basis: 100%; font-size: .85rem; color: #7a5a48; }
+[data-game="shrinking-staircase"] .ss-clue { margin: 0; flex-basis: 100%; font-size: 1.1rem; line-height: 1.5; color: var(--ink); }
+[data-game="shrinking-staircase"] .ss-enum { color: var(--muted); white-space: nowrap; }
+[data-game="shrinking-staircase"] .ss-from { margin: 0; flex-basis: 100%; font-size: .9rem; color: #6a4a38; }
+[data-game="shrinking-staircase"] .ss-tiles { display: flex; flex-wrap: wrap; gap: 8px; flex-basis: 100%; }
+[data-game="shrinking-staircase"] .ss-tile {
+  min-width: 46px; min-height: 46px; border-radius: 10px; border: 1px solid #d9b497; background: #fff6e9; color: #5e3522;
+  font-size: 1.3rem; font-weight: 700; box-shadow: 0 3px 0 #c5a38a;
+}
+[data-game="shrinking-staircase"] .ss-tile[aria-disabled="true"] { opacity: .38; text-decoration: line-through; box-shadow: none; cursor: not-allowed; }
+[data-game="shrinking-staircase"] .ss-entry { display: flex; gap: 8px; flex-wrap: wrap; flex-basis: 100%; }
+[data-game="shrinking-staircase"] .ss-entry input {
+  flex: 1 1 160px; min-width: 0; min-height: 50px; font-size: 1.3rem; letter-spacing: .18em; text-transform: uppercase; text-align: center;
+  border-radius: 12px; border: 2px solid color-mix(in srgb, var(--accent) 40%, white); background: #fff; padding: 8px 12px;
+}
+[data-game="shrinking-staircase"] .ss-actions { display: flex; gap: 8px; flex-wrap: wrap; flex-basis: 100%; }
+[data-game="shrinking-staircase"] .ss-preview { margin: 0; flex-basis: 100%; font-size: .88rem; }
+[data-game="shrinking-staircase"] .ss-preview[data-legal="false"] { color: #8c3b2a; }
+@media (max-width: 700px) {
+  [data-game="shrinking-staircase"] .ss-step { width: 100% !important; margin-left: 0 !important; }
+  [data-game="shrinking-staircase"] .ss-word { font-size: 1.2rem; letter-spacing: .14em; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-game="shrinking-staircase"] .ss-step.solved { animation: ss-settle .25s ease-out; }
+  @keyframes ss-settle { from { transform: translateY(-4px); opacity: .6; } to { transform: none; opacity: 1; } }
+}

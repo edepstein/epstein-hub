@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "gameId": "shrinking-staircase",
+  "rulesVersion": "1.0",
+  "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice rounds are original to this build: every rung answer is in ESDB membership and the SCOWL size-35 familiar layer, and every accepted chain is checked by exact multiset subtraction. Clues are original and not yet human-reviewed.",
+  "rounds": [
+    {
+      "id": "sc-demo-1",
+      "title": "Original demo staircase 1",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "stair-001",
+      "payload": {
+        "start": "STONE",
+        "rungs": [
+          { "clue": "The quality or character of a sound", "length": 4 },
+          { "clue": "The number immediately before two", "length": 3 },
+          { "clue": "Switched into operation, rather than off", "length": 2 }
+        ],
+        "acceptedChains": [["STONE", "TONE", "ONE", "ON"]],
+        "lettersAid": true,
+        "explanation": "Remove S, then T, then E. The survivors form the clued words."
+      }
+    },
+    {
+      "id": "sc-demo-2",
+      "title": "Original demo staircase 2",
+      "difficulty": "gentle",
+      "status": "demo",
+      "sourceFixtureId": "stair-002",
+      "payload": {
+        "start": "STEAM",
+        "rungs": [
+          { "clue": "Animal flesh eaten as food", "length": 4 },
+          { "clue": "A small floor covering", "length": 3 },
+          { "clue": "A preposition indicating a location, as in ___ home", "length": 2 }
+        ],
+        "acceptedChains": [["STEAM", "MEAT", "MAT", "AT"]],
+        "lettersAid": true,
+        "explanation": "STEAM loses S to make MEAT; MEAT loses E to make MAT; MAT loses M to make AT."
+      }
+    },
+    {
+      "id": "sc-g1",
+      "title": "Gentle staircase 1",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "SPORT",
+        "rungs": [
+          { "clue": "A small round mark or patch", "length": 4 },
+          { "clue": "A container for cooking in or growing plants", "length": 3 },
+          { "clue": "In the direction of, as in 'walk ___ the shops'", "length": 2 }
+        ],
+        "acceptedChains": [["SPORT", "SPOT", "POT", "TO"]],
+        "lettersAid": true,
+        "explanation": "SPORT drops R to leave SPOT, SPOT drops S to leave POT, and POT drops P to leave TO."
+      }
+    },
+    {
+      "id": "sc-g2",
+      "title": "Gentle staircase 2",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PLANE",
+        "rungs": [
+          { "clue": "An idea of what you will do, worked out in advance", "length": 4 },
+          { "clue": "A shallow pot with a long handle, used for frying", "length": 3 },
+          { "clue": "The form of 'a' used before a vowel sound", "length": 2 }
+        ],
+        "acceptedChains": [["PLANE", "PLAN", "PAN", "AN"]],
+        "lettersAid": true,
+        "explanation": "PLANE loses E for PLAN, PLAN loses L for PAN, and PAN loses P for AN."
+      }
+    },
+    {
+      "id": "sc-g3",
+      "title": "Gentle staircase 3",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BREAD",
+        "rungs": [
+          { "clue": "A small ball threaded on to a necklace", "length": 4 },
+          { "clue": "The piece of furniture you sleep in", "length": 3 },
+          { "clue": "Exist, as in 'to ___ or not to ___'", "length": 2 }
+        ],
+        "acceptedChains": [["BREAD", "BEAD", "BED", "BE"]],
+        "lettersAid": true,
+        "explanation": "BREAD loses R for BEAD, BEAD loses A for BED, and BED loses D for BE."
+      }
+    },
+    {
+      "id": "sc-g4",
+      "title": "Gentle staircase 4",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CHARM",
+        "rungs": [
+          { "clue": "Injury or damage", "length": 4 },
+          { "clue": "The limb between your shoulder and your hand", "length": 3 },
+          { "clue": "The form of 'be' used with I, as in 'I ___ ready'", "length": 2 }
+        ],
+        "acceptedChains": [["CHARM", "HARM", "ARM", "AM"]],
+        "lettersAid": true,
+        "explanation": "CHARM loses C for HARM, HARM loses H for ARM, and ARM loses R for AM."
+      }
+    },
+    {
+      "id": "sc-g5",
+      "title": "Gentle staircase 5",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HEART",
+        "rungs": [
+          { "clue": "Warmth, especially from a fire or the sun", "length": 4 },
+          { "clue": "Something you wear on your head", "length": 3 },
+          { "clue": "In or near a place, as in 'wait ___ the gate'", "length": 2 }
+        ],
+        "acceptedChains": [["HEART", "HEAT", "HAT", "AT"]],
+        "lettersAid": true,
+        "explanation": "HEART loses R for HEAT, HEAT loses E for HAT, and HAT loses H for AT."
+      }
+    },
+    {
+      "id": "sc-s1",
+      "title": "Standard staircase 1",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "WINTER",
+        "rungs": [
+          { "clue": "Strong string made of twisted strands", "length": 5 },
+          { "clue": "One of two children born together", "length": 4 },
+          { "clue": "Quick and clever humour", "length": 3 },
+          { "clue": "The thing just mentioned", "length": 2 }
+        ],
+        "acceptedChains": [["WINTER", "TWINE", "TWIN", "WIT", "IT"]],
+        "lettersAid": false,
+        "explanation": "WINTER loses R for TWINE, TWINE loses E for TWIN, TWIN loses N for WIT, and WIT loses W for IT."
+      }
+    },
+    {
+      "id": "sc-s2",
+      "title": "Standard staircase 2",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PIRATE",
+        "rungs": [
+          { "clue": "Extremely angry", "length": 5 },
+          { "clue": "The speed at which something happens", "length": 4 },
+          { "clue": "A drink brewed from dried leaves", "length": 3 },
+          { "clue": "Present in, as in 'meet ___ noon'", "length": 2 }
+        ],
+        "acceptedChains": [["PIRATE", "IRATE", "RATE", "TEA", "AT"]],
+        "lettersAid": false,
+        "explanation": "PIRATE loses P for IRATE, IRATE loses I for RATE, RATE loses R for TEA, and TEA loses E for AT."
+      }
+    },
+    {
+      "id": "sc-s3",
+      "title": "Standard staircase 3",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "FOREST",
+        "rungs": [
+          { "clue": "An icy white coating seen on cold mornings", "length": 5 },
+          { "clue": "A building strengthened against attack", "length": 4 },
+          { "clue": "In favour of; the opposite of 'against'", "length": 3 },
+          { "clue": "The word that offers a choice, as in 'tea ___ coffee'", "length": 2 }
+        ],
+        "acceptedChains": [["FOREST", "FROST", "FORT", "FOR", "OR"]],
+        "lettersAid": false,
+        "explanation": "FOREST loses E for FROST, FROST loses S for FORT, FORT loses T for FOR, and FOR loses F for OR."
+      }
+    },
+    {
+      "id": "sc-s4",
+      "title": "Standard staircase 4",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BASKET",
+        "rungs": [
+          { "clue": "A large or wild animal", "length": 5 },
+          { "clue": "Better than all the others", "length": 4 },
+          { "clue": "Stake money on a result", "length": 3 },
+          { "clue": "To exist", "length": 2 }
+        ],
+        "acceptedChains": [["BASKET", "BEAST", "BEST", "BET", "BE"]],
+        "lettersAid": false,
+        "explanation": "BASKET loses K for BEAST, BEAST loses A for BEST, BEST loses S for BET, and BET loses T for BE."
+      }
+    },
+    {
+      "id": "sc-s5",
+      "title": "Standard staircase 5",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MOTHER",
+        "rungs": [
+          { "clue": "Different from the one already mentioned", "length": 5 },
+          { "clue": "A person admired for courage", "length": 4 },
+          { "clue": "A long-handled garden tool for weeding", "length": 3 },
+          { "clue": "That man or boy", "length": 2 }
+        ],
+        "acceptedChains": [["MOTHER", "OTHER", "HERO", "HOE", "HE"]],
+        "lettersAid": false,
+        "explanation": "MOTHER loses M for OTHER, OTHER loses T for HERO, HERO loses R for HOE, and HOE loses O for HE."
+      }
+    },
+    {
+      "id": "sc-e1",
+      "title": "Expert staircase 1",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ENDANGER",
+        "rungs": [
+          { "clue": "Made furious", "length": 7 },
+          { "clue": "The possibility of harm", "length": 6 },
+          { "clue": "Magnificent and imposing", "length": 5 },
+          { "clue": "Sounded, as a bell did", "length": 4 },
+          { "clue": "Keep on at someone with complaints", "length": 3 },
+          { "clue": "The form of 'a' used before a vowel sound", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["ENDANGER", "ANGERED", "DANGER", "GRAND", "RANG", "NAG", "AN"],
+          ["ENDANGER", "ENRAGED", "DANGER", "GRAND", "RANG", "NAG", "AN"]
+        ],
+        "lettersAid": false,
+        "explanation": "ENDANGER has two Ns and two Es. Losing an N gives ANGERED or ENRAGED (both accepted). Then an E goes for DANGER, another E for GRAND, D for RANG, R for NAG and G for AN."
+      }
+    },
+    {
+      "id": "sc-e2",
+      "title": "Expert staircase 2",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HONESTY",
+        "rungs": [
+          { "clue": "Truthful and sincere", "length": 6 },
+          { "clue": "Musical sounds", "length": 5 },
+          { "clue": "The organ of smell", "length": 4 },
+          { "clue": "A male child", "length": 3 },
+          { "clue": "The opposite of yes", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["HONESTY", "HONEST", "NOTES", "NOSE", "SON", "NO"],
+          ["HONESTY", "HONEST", "TONES", "NOSE", "SON", "NO"]
+        ],
+        "lettersAid": false,
+        "explanation": "HONESTY loses Y for HONEST, then H for NOTES or TONES (both accepted), T for NOSE, E for SON and S for NO."
+      }
+    },
+    {
+      "id": "sc-e3",
+      "title": "Expert staircase 3",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PATTERN",
+        "rungs": [
+          { "clue": "A mother or a father", "length": 6 },
+          { "clue": "Become gradually narrower towards one end", "length": 5 },
+          { "clue": "A sticky strip for sealing parcels", "length": 4 },
+          { "clue": "Touch lightly and gently", "length": 3 },
+          { "clue": "Present in, as in 'see you ___ six'", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["PATTERN", "PARENT", "TAPER", "TAPE", "PAT", "AT"],
+          ["PATTERN", "PARENT", "TAPER", "TAPE", "TAP", "AT"]
+        ],
+        "lettersAid": false,
+        "explanation": "PATTERN has two Ts; losing one gives PARENT. Then N goes for TAPER, R for TAPE, E for PAT or TAP (both accepted) and P for AT."
+      }
+    },
+    {
+      "id": "sc-e4",
+      "title": "Expert staircase 4",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CARROTS",
+        "rungs": [
+          { "clue": "An orange root vegetable", "length": 6 },
+          { "clue": "A performer on stage or screen", "length": 5 },
+          { "clue": "A garment worn over other clothes outdoors", "length": 4 },
+          { "clue": "A baby's bed with high barred sides", "length": 3 },
+          { "clue": "Towards, as in 'from top ___ bottom'", "length": 2 }
+        ],
+        "acceptedChains": [["CARROTS", "CARROT", "ACTOR", "COAT", "COT", "TO"]],
+        "lettersAid": false,
+        "explanation": "CARROTS loses S for CARROT, then one of its two Rs for ACTOR, the other R for COAT, A for COT and C for TO."
+      }
+    },
+    {
+      "id": "sc-e5",
+      "title": "Expert staircase 5",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TEACHER",
+        "rungs": [
+          { "clue": "A device for warming a room", "length": 6 },
+          { "clue": "One more than two", "length": 5 },
+          { "clue": "In this place", "length": 4 },
+          { "clue": "Belonging to that woman or girl", "length": 3 },
+          { "clue": "That man or boy", "length": 2 }
+        ],
+        "acceptedChains": [["TEACHER", "HEATER", "THREE", "HERE", "HER", "HE"]],
+        "lettersAid": false,
+        "explanation": "TEACHER loses C for HEATER, A for THREE, T for HERE, one of the two Es for HER and R for HE."
+      }
+    }
+  ]
+}

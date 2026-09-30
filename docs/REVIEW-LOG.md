@@ -38,3 +38,13 @@ Grouped by area; each game appends its own section.
 - [ ] Answers ship in the client bundle (acceptable for unranked private practice per the brief, but not spoiler-resistant against a technical reader). A daily service must serve answers server-side.
 - [ ] On-screen keyboard keys are about 30-34px wide on a 390px phone (full height 52px). Typed input remains the primary route; confirm this is acceptable on the recipient's device.
 - [ ] Rejections are enforced in the engine only (membership, length, repeats, hard mode). ESDB may reject some familiar plurals/inflections players try; collect reports.
+
+## Shrinking Staircase
+- [ ] Practice rounds sc-g1..g5, sc-s1..s5, sc-e1..e5: chains were found by an exact multiset search over ESDB membership and SCOWL size-35, then clues were written by the build agent. An editor must check every clue picks out its rung among the other words the same letters make (e.g. SPOT vs STOP/POTS/TOPS, POT vs TOP/OPT, NOSE vs ONES, TAPE vs PEAT/PATE).
+- [ ] Accepted branches (sc-e1 ANGERED/ENRAGED "Made furious", sc-e2 NOTES/TONES "Musical sounds", sc-e3 PAT/TAP "Touch lightly and gently") need review that both answers genuinely fit and that no other same-letter word also fits (e.g. GRENADE is ruled out by the clue).
+- [ ] Two-letter endpoints reuse AT, AN, HE, TO across rounds; clue wording differs, but an editor may want more variety.
+- [ ] Decision: a rung filled by the "Fill this rung" hint scores 0; the letter-to-remove and first-letter nudges cost nothing but are recorded. Confirm this scoring.
+- [ ] Decision: wrong guesses are rejected atomically and are not stored in the action log, so attempt counts are not persisted across a refresh (accepted answers, hints and revisions are). Recording misses would need an accepted "miss" action; revisit if attempt counts are wanted in results.
+- [ ] Decision: Standard and Expert hide the letter tiles until "Show letter tiles" is pressed. This is a display preference, not a scored hint, because the same letters are already shown in the word above.
+- [ ] "Report an answer issue" after a rejected submission is not implemented (no editorial queue backend yet).
+- [ ] Only 5 practice rounds per difficulty (plus 2 gentle demos); docs/08 asks for 10 per advertised difficulty.
