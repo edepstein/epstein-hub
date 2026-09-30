@@ -108,6 +108,7 @@ test("keyboard only: arrows move, Space selects, Enter checks, Escape clears", a
 
   async function selectByKeys(targets: string[]) {
     // Walk the whole board with ArrowRight/Home, pressing Space on each target.
+    await expect(page.locator(".wf-tile:focus")).toHaveCount(1);
     await page.keyboard.press("Home");
     const count = await board.getByRole("button").count();
     for (let i = 0; i < count; i++) {
