@@ -1,0 +1,575 @@
+{
+ "schemaVersion": 1,
+ "gameId": "word-deduction",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId); their finite guess lists are kept as regression data only. Practice answers are original to this build: everyday five-letter words in ESDB membership and the SCOWL size-35 familiar layer, with editor-style definitions. Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "wd-demo-1",
+   "title": "Original demo word 1",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "crane",
+   "payload": {
+    "answer": "CRANE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A tall machine for lifting heavy loads; also a long-legged wading bird.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it.",
+    "fixtureGuesses": [
+     "CRANE",
+     "EERIE",
+     "HEART",
+     "PAINT",
+     "PLANT",
+     "RAISE",
+     "SHARE",
+     "SHEEP",
+     "SLATE",
+     "TRACE",
+     "TRAIN"
+    ],
+    "fixtureFeedback": [
+     {
+      "guess": "EERIE",
+      "expectedFeedback": [
+       "absent",
+       "absent",
+       "present",
+       "absent",
+       "correct"
+      ]
+     },
+     {
+      "guess": "CRANE",
+      "expectedFeedback": [
+       "correct",
+       "correct",
+       "correct",
+       "correct",
+       "correct"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "wd-demo-2",
+   "title": "Original demo word 2",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "plant",
+   "payload": {
+    "answer": "PLANT",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A living thing such as a tree, flower or grass that grows in soil; also a factory.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it.",
+    "fixtureGuesses": [
+     "CRANE",
+     "EERIE",
+     "HEART",
+     "PAINT",
+     "PLANT",
+     "RAISE",
+     "SHARE",
+     "SHEEP",
+     "SLATE",
+     "TRACE",
+     "TRAIN"
+    ],
+    "fixtureFeedback": [
+     {
+      "guess": "EERIE",
+      "expectedFeedback": [
+       "absent",
+       "absent",
+       "absent",
+       "absent",
+       "absent"
+      ]
+     },
+     {
+      "guess": "PLANT",
+      "expectedFeedback": [
+       "correct",
+       "correct",
+       "correct",
+       "correct",
+       "correct"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "wd-demo-3",
+   "title": "Original demo word 3",
+   "difficulty": "standard",
+   "status": "demo",
+   "sourceFixtureId": "share",
+   "payload": {
+    "answer": "SHARE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "To have or use something jointly with others; also a portion of something divided between people.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it.",
+    "fixtureGuesses": [
+     "CRANE",
+     "EERIE",
+     "HEART",
+     "PAINT",
+     "PLANT",
+     "RAISE",
+     "SHARE",
+     "SHEEP",
+     "SLATE",
+     "TRACE",
+     "TRAIN"
+    ],
+    "fixtureFeedback": [
+     {
+      "guess": "EERIE",
+      "expectedFeedback": [
+       "absent",
+       "absent",
+       "present",
+       "absent",
+       "correct"
+      ]
+     },
+     {
+      "guess": "SHARE",
+      "expectedFeedback": [
+       "correct",
+       "correct",
+       "correct",
+       "correct",
+       "correct"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "wd-g1",
+   "title": "Gentle word 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "HOUSE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A building where people live, usually one family or household.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g2",
+   "title": "Gentle word 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "LEMON",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A yellow, oval citrus fruit with sour juice.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g3",
+   "title": "Gentle word 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "CHAIR",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A seat for one person, usually with a back and four legs.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g4",
+   "title": "Gentle word 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "WATER",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "The clear liquid that falls as rain and fills rivers and seas, essential for life.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g5",
+   "title": "Gentle word 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "MUSIC",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "Sounds arranged in a pleasing or expressive way, sung or played on instruments.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g6",
+   "title": "Gentle word 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "BREAD",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A baked food made from flour, water and usually yeast.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g7",
+   "title": "Gentle word 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "TIGER",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A large wild cat with a striped orange and black coat, native to Asia.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g8",
+   "title": "Gentle word 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "CLOUD",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A visible mass of tiny water droplets or ice crystals floating in the sky.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g9",
+   "title": "Gentle word 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "SMILE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A facial expression with the corners of the mouth turned up, showing pleasure or friendliness.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-g10",
+   "title": "Gentle word 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "OCEAN",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A very large expanse of sea, such as the Atlantic.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s1",
+   "title": "Standard word 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "TOWEL",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A piece of absorbent cloth for drying yourself or the dishes.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s2",
+   "title": "Standard word 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "APPLE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A round fruit with crisp flesh and red, green or yellow skin.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s3",
+   "title": "Standard word 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "KNIFE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A tool with a sharp blade for cutting.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s4",
+   "title": "Standard word 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "FLOOR",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "The lower surface of a room, which people walk on.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s5",
+   "title": "Standard word 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "QUEEN",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A female monarch, or the wife of a king.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s6",
+   "title": "Standard word 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "BADGE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A small pin or emblem worn to show membership, rank or support.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s7",
+   "title": "Standard word 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "SWEET",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "Tasting of sugar; in Britain, also a small sugary treat.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s8",
+   "title": "Standard word 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "CRUMB",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "A tiny fragment of bread, cake or biscuit.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s9",
+   "title": "Standard word 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "VOICE",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "The sound made in a person's throat when speaking or singing.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-s10",
+   "title": "Standard word 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "GREEN",
+    "guessLimit": 6,
+    "hardMode": false,
+    "definition": "The colour of grass and leaves; also a shared grassy area in a village.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it."
+   }
+  },
+  {
+   "id": "wd-e1",
+   "title": "Expert word 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "LIGHT",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "The brightness that lets us see; also not heavy.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e2",
+   "title": "Expert word 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "WAFER",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "A very thin, light, crisp biscuit.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e3",
+   "title": "Expert word 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "CATCH",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "To seize something that is moving, such as a ball; also a hidden snag.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e4",
+   "title": "Expert word 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "HOLLY",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "An evergreen shrub with prickly leaves and red berries.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e5",
+   "title": "Expert word 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "TASTE",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "The sense that detects flavours in the mouth; also a small sample of food or drink.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e6",
+   "title": "Expert word 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "BOUND",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "Certain to happen, as in 'bound to rain'; also a leap, or tied up.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e7",
+   "title": "Expert word 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "PUPPY",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "A young dog.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e8",
+   "title": "Expert word 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "GRAZE",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "To feed on growing grass; also a light scrape of the skin.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e9",
+   "title": "Expert word 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "SHAVE",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "To remove hair from the skin with a razor.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  },
+  {
+   "id": "wd-e10",
+   "title": "Expert word 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "answer": "FEVER",
+    "guessLimit": 6,
+    "hardMode": true,
+    "definition": "A raised body temperature, usually a sign of illness.",
+    "explanation": "Feedback marks exact places first, then gives each remaining copy of a letter in the answer to the leftmost unmatched guess letter. A letter repeated in your guess is marked elsewhere only as many times as the answer still has it. Hard mode: every guess must keep revealed letters in place, include every letter shown to be in the answer (as many copies as shown), and not return a letter to a place already marked elsewhere."
+   }
+  }
+ ]
+}

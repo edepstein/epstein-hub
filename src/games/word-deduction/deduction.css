@@ -1,0 +1,40 @@
+[data-game="word-deduction"] .playbox { color: #f3f5ff; }
+[data-game="word-deduction"] .playbox .result-panel { color: var(--ink); }
+[data-game="word-deduction"] .playbox .empty { color: #f3f5ff; border-color: #607194; }
+[data-game="word-deduction"] .feedback[data-ok="true"] { color: #f3f5ff; }
+[data-game="word-deduction"] .feedback[data-ok="false"] { color: #ffd2c4; }
+[data-game="word-deduction"] .wd-board { list-style: none; padding: 0; margin: 8px auto 12px; display: grid; gap: 8px; max-width: 330px; }
+[data-game="word-deduction"] .wd-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+[data-game="word-deduction"] .wd-row .tile { width: 100%; min-width: 0; aspect-ratio: 1 / 1; min-height: 0; font-size: clamp(1.2rem, 6vw, 1.6rem); }
+[data-game="word-deduction"] .wd-row.current .tile { border-color: #c9d4f2; }
+[data-game="word-deduction"] .wd-row .tile.typed { border: 2px solid #e4c977; }
+[data-game="word-deduction"] .wd-row.extra .tile { border-style: dashed; }
+[data-game="word-deduction"] .wd-row[data-extension] .tile { outline: 1px dashed #e4c977; outline-offset: 1px; }
+[data-game="word-deduction"] .legend { color: #f3f5ff; margin-bottom: 8px; }
+[data-game="word-deduction"] .wd-mode { font-size: .85rem; text-align: center; margin: 0 0 10px; color: #f3f5ff; background: #1a2644; border: 1px solid #607194; border-radius: 12px; padding: 8px 12px; }
+[data-game="word-deduction"] .wd-offer { text-align: center; font-size: .92rem; margin: 6px 0; }
+[data-game="word-deduction"] .wd-offer small { color: #c9d4f2; }
+[data-game="word-deduction"] .wd-entry { max-width: 520px; margin: 14px auto 0; }
+[data-game="word-deduction"] .wd-entry input { flex: 1 1 120px; font-size: 1.25rem; letter-spacing: .16em; text-align: center; color: #1c2742; }
+[data-game="word-deduction"] .wd-entry input::placeholder { color: #5d6780; opacity: 1; letter-spacing: .06em; font-size: 1rem; }
+[data-game="word-deduction"] .wd-entry .btn { padding-left: 16px; padding-right: 16px; }
+[data-game="word-deduction"] .wd-out, [data-game="word-deduction"] .wd-answer { background: #1a2644; border: 1px solid #607194; border-radius: 16px; padding: 14px 16px; margin: 14px auto 0; max-width: 520px; text-align: center; }
+[data-game="word-deduction"] .wd-out-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+[data-game="word-deduction"] .wd-answer strong { display: block; font-family: Georgia, serif; font-size: 1.6rem; letter-spacing: .12em; }
+[data-game="word-deduction"] .wd-keyboard { margin: 16px auto 0; max-width: 560px; display: grid; gap: 6px; }
+[data-game="word-deduction"] .wd-keyrow { display: flex; gap: 5px; justify-content: center; }
+[data-game="word-deduction"] .wd-key {
+  position: relative; flex: 1 1 0; min-width: 0; max-width: 46px; min-height: 52px; padding: 0 0 6px; border-radius: 8px;
+  border: 1px solid #7f90b2; background: #dfe5f5; color: #1c2742; font-weight: 700; font-size: 1rem;
+}
+[data-game="word-deduction"] .wd-key.wide { max-width: 76px; flex: 1.6 1 0; font-size: .78rem; padding: 0 2px; }
+[data-game="word-deduction"] .wd-key.correct { background: #487c5d; color: #fff; }
+[data-game="word-deduction"] .wd-key.present { background: #a17a26; color: #fff; }
+[data-game="word-deduction"] .wd-key.absent { background: #3a465f; color: #c3cad8; text-decoration: line-through; }
+[data-game="word-deduction"] .wd-key .feedback-mark { right: 3px; bottom: 1px; }
+[data-game="word-deduction"] .playbox button:focus-visible, [data-game="word-deduction"] .playbox input:focus-visible { outline: 3px solid #e4c977; outline-offset: 2px; }
+@media (max-width: 420px) {
+  [data-game="word-deduction"] .wd-keyrow { gap: 4px; }
+  [data-game="word-deduction"] .wd-key { font-size: .92rem; }
+  [data-game="word-deduction"] .wd-key.wide { font-size: .7rem; }
+}
