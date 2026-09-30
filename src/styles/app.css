@@ -78,3 +78,10 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .nav-select { border: 1px solid var(--line); background: var(--card); padding: 10px; border-radius: 30px; min-height: 44px; }
 .mobile-games { display: none; }
 @media (max-width: 700px) { .mobile-games { display: block; } }
+
+@media (max-width: 700px) {
+  .header { flex-wrap: wrap; row-gap: 6px; }
+  .header .brand { flex: 1 1 auto; }
+  .header .nav { order: 3; width: 100%; margin-left: 0; justify-content: space-between; flex-wrap: wrap; }
+  .header .nav a { padding: 10px 8px; min-height: 44px; display: inline-flex; align-items: center; }
+}

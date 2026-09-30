@@ -22,6 +22,7 @@ export function LibraryView() {
     { heading: "Continue playing", items: entries.filter((e) => e.outcome === "playing") },
     { heading: "Completed", items: entries.filter((e) => e.outcome === "completed") },
     { heading: "Revealed or not solved", items: entries.filter((e) => e.outcome === "revealed" || e.outcome === "failed") },
+    { heading: "Finished early", items: entries.filter((e) => e.outcome === "abandoned") },
   ];
   if (entries.length === 0)
     return (

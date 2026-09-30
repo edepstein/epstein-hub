@@ -1,0 +1,25 @@
+[data-game="letter-wheel"] .lw-wheel { position: relative; width: min(300px, 82vw); aspect-ratio: 1; margin: 8px auto 20px; }
+[data-game="letter-wheel"] .lw-wheel::before { content: ""; position: absolute; inset: 16%; border: 1px dashed var(--accent); border-radius: 50%; opacity: .45; }
+[data-game="letter-wheel"] .lw-letter {
+  position: absolute; width: 58px; height: 58px; transform: translate(-50%, -50%); border-radius: 50%;
+  display: grid; place-items: center; font-size: 1.55rem; font-weight: 700; color: var(--ink);
+  background: #fffefa; border: 2px solid #fff; box-shadow: 0 3px 0 #292e3b16;
+}
+[data-game="letter-wheel"] .lw-letter.centre { background: #f3c862; border-color: #d9a441; color: #3e2d23; width: 66px; height: 66px; }
+[data-game="letter-wheel"] .lw-letter.centre::after { content: "centre"; position: absolute; bottom: -20px; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+[data-game="letter-wheel"] .lw-letter[aria-disabled="true"] { opacity: .38; text-decoration: line-through; cursor: not-allowed; }
+[data-game="letter-wheel"] .lw-letter:not([aria-disabled="true"]):hover { border-color: var(--accent); }
+[data-game="letter-wheel"] .lw-entry { display: flex; gap: 8px; flex-wrap: wrap; align-items: stretch; }
+[data-game="letter-wheel"] .lw-entry input {
+  flex: 1 1 200px; min-height: 52px; font-size: 1.4rem; letter-spacing: .18em; text-transform: uppercase; text-align: center;
+  border-radius: 14px; border: 2px solid color-mix(in srgb, var(--accent) 40%, white); background: #fff; padding: 8px 12px;
+}
+[data-game="letter-wheel"] .lw-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; justify-content: center; }
+[data-game="letter-wheel"] .lw-found { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+[data-game="letter-wheel"] .lw-found li { background: #fffefa; border: 1px solid var(--accent); border-radius: 9px; padding: 6px 10px; font-size: .88rem; font-weight: 600; letter-spacing: .04em; }
+[data-game="letter-wheel"] .lw-found li.bonus { border-style: dashed; }
+[data-game="letter-wheel"] .lw-found li.assisted { background: var(--wash); font-style: italic; }
+[data-game="letter-wheel"] .lw-found small { font-weight: 400; color: var(--muted); margin-left: 4px; }
+[data-game="letter-wheel"] .lw-progress { height: 10px; border-radius: 10px; background: color-mix(in srgb, var(--accent) 15%, white); overflow: hidden; margin: 6px 0 4px; }
+[data-game="letter-wheel"] .lw-progress span { display: block; height: 100%; background: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { [data-game="letter-wheel"] .lw-progress span { transition: width .2s; } }
