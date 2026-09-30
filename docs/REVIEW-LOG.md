@@ -148,3 +148,10 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] Decision: hint ladder is letter to add, opening two letters, pattern with the new letter's position, fill stage (scores 0), reveal all. The brief's "demonstrate reordering" tier is the pattern hint; confirm it is helpful enough.
 - [ ] Decision: wrong answers are rejected atomically and not persisted, so guess counts are not stored (same as Shrinking Staircase).
 - [ ] "Report an answer issue" is not implemented (no editorial queue backend yet).
+
+## Letter Circuit
+- [ ] Decision: par is proved by breadth-first search over (last letter, coverage mask) using an "everyday pool" = ESDB membership ∩ SCOWL size-35, 3-8 letters, minus simple superlatives and a small blocklist (src/games/letter-circuit/pool.ts). Players may use any membership word, so par can be beaten; the rules say so. The superlative filter is crude (it also drops e.g. FOREST, HONEST from the pool); this only affects par and hints, never acceptance.
+- [ ] Hint words and the shown par chain come from that pool; size-35 still contains odd entries (e.g. DIRGES, TWELFTHS, SKIDS). An editor should read each board's par chain (stored in content/rounds.json) and the pool blocklist.
+- [ ] Pack fixtures keep their 4-word reference chains and finite lexicons as regression data (validator re-proves optimum 4 inside the fixture lexicon); with the everyday pool each fixture has par 2, which is what players see.
+- [ ] Difficulty bands: gentle = par 2 with 700-1100 everyday words and tens of thousands of 3-word routes; standard = par 3, no 2-word everyday finish, 250-420 words; expert = par 4, 130-200 words, awkward letters (V, Z, W, Y). Heuristic, not calibrated. 5 practice boards per difficulty (docs/08 asks 10).
+- [ ] Any hint marks the chain being built as helped; the best chain records which words were played by the hint. "Start a new chain" asks for confirmation and always keeps the best completed chain.
