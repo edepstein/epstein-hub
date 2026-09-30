@@ -155,3 +155,18 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] Pack fixtures keep their 4-word reference chains and finite lexicons as regression data (validator re-proves optimum 4 inside the fixture lexicon); with the everyday pool each fixture has par 2, which is what players see.
 - [ ] Difficulty bands: gentle = par 2 with 700-1100 everyday words and tens of thousands of 3-word routes; standard = par 3, no 2-word everyday finish, 250-420 words; expert = par 4, 130-200 words, awkward letters (V, Z, W, Y). Heuristic, not calibrated. 5 practice boards per difficulty (docs/08 asks 10).
 - [ ] Any hint marks the chain being built as helped; the best chain records which words were played by the hint. "Start a new chain" asks for confirmation and always keeps the best completed chain.
+
+## Family space (Batch 8)
+- [ ] **Needs the owner's Supabase project** before any signed-in flow can be exercised: URL/publishable key, auth redirect URLs, email template, SMTP, migrations applied, first curator bootstrapped (steps in docs/FAMILY-SPACE.md). Until then pages show "Setup needed" and APIs return 503.
+- [ ] Signed-in browser journeys (sign-in by link/code, invite acceptance, upload with real storage, curator approval, favourite/reply persistence, book resume, withdrawal) are implemented but untested end to end: no credentials exist. The database rules they rely on are proven in `tests/family/rls.test.ts` against real Postgres 16 with a Supabase shim, not against a real Supabase stack (PostgREST/Storage/GoTrue behaviour is assumed from their documentation).
+- [ ] Open inputs: recipient's display name and birthday date (optional, entered by the curator), a named curator, approved photographs and genuine messages with recorded permission. Nothing is prefilled; no age or "Mum" wording appears anywhere.
+- [ ] Decision: contributor publishing is fixed to "curator review required". Direct publishing is not offered.
+- [ ] Decision: images are validated by bytes and metadata is stripped losslessly (no re-encoding, no native dependency). A curator should still look at every photo before approving. HEIC is refused; audio upload is switched off until Audio Postcards has real recordings and a transcript review step.
+- [ ] Decision: media is only served through the authenticated proxy (no signed URLs), so revocation is immediate; downloads exist only when the uploader ticked "may download".
+- [ ] Decision: invitation links are shown once to the curator, who sends them personally; the app sends no invitation emails. Invitations bind to the invited email address.
+- [ ] Decision: a user with several families sees their earliest active membership; there is no family switcher.
+- [ ] Rate limits are per server instance; confirm Supabase Auth rate limits and SMTP limits for the chosen host.
+- [ ] Hosting body-size limits (e.g. Vercel ~4.5 MB) may reject large uploads; the browser resizes photos above 4 MB. Verify on the chosen host.
+- [ ] Optional modules (Audio Postcards, Newspaper, Timeline, Crossword, Picture Mysteries, Oral History, Calendar) are not built; each needs genuine content first.
+- [ ] Backup/restore, orphan storage clean-up schedule and a threat review must be done on the real project. A real recipient walkthrough has not happened.
+- [ ] Copy review: all family-space wording (states, errors, form hints) needs a human read for tone.
