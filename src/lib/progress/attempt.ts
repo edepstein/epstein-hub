@@ -23,7 +23,7 @@ export const attemptSchema = z.object({
   contentHash: z.string().min(1),
   rulesVersion: z.string().min(1),
   dictionaryVersion: z.string().nullable(),
-  mode: z.enum(["gentle", "standard", "expert"]),
+  mode: z.enum(["gentle", "standard", "expert", "master"]),
   seed: z.number().int(),
   practice: z.boolean(),
   revision: z.number().int().nonnegative(),

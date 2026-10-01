@@ -64,6 +64,7 @@ export function ArchiveView({ rounds, games }: { rounds: Row[]; games: { id: str
             <option value="gentle">Gentle</option>
             <option value="standard">Standard</option>
             <option value="expert">Expert</option>
+            <option value="master">Master</option>
           </select>
         </label>
       </div>

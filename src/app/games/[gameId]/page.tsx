@@ -57,8 +57,15 @@ export default async function GamePage({ params }: { params: Promise<{ gameId: s
             clearly labelled, but not yet through human editorial review. Difficulty labels are the author&apos;s intention, not
             calibrated evidence.
           </p>
+          {rounds.some((r) => r.meta.difficulty === "master") ? (
+            <p className="notice" data-testid="master-note">
+              Master rounds are written for strong tile-game and cryptic-crossword players: obscure but valid vocabulary, denser
+              puzzles and fewer helping hands. They are the hardest rounds here.
+            </p>
+          ) : null}
           {DIFFICULTIES.map((d) => {
             const list = rounds.filter((r) => r.meta.difficulty === d);
+            if (d === "master" && list.length === 0) return null;
             return (
               <section key={d} aria-labelledby={`diff-${d}`}>
                 <h2 className="section-title" id={`diff-${d}`}>

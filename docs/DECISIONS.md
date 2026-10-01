@@ -143,3 +143,13 @@ A per-game "seen" registry (`wc:v1:seen:<game>`, never trimmed; the library inde
 "Play something new" prefers the least recently played game and avoids the game just played. When a
 game is exhausted the player is told and offered the round played longest ago. A rejected word is
 not a move, so it does not mark a round as played. Caveat: this is per device/browser.
+
+## D14 Master tier (2026-10-01)
+Owner: the recipient is very strong at Scrabble and cryptic crosswords, and asked for more rounds at
+higher difficulty. A fourth difficulty, **Master** (`"master"`), is added after Expert. It is aimed at strong
+tile-game and cryptic solvers: obscure but valid vocabulary (Scrabble-grade words, not limited to the
+everyday-word layer), longer and denser puzzles, wordplay that assumes crossword fluency, and fewer helping
+hands. Everything is still fair and verifiable (every answer in the word list, every construction
+mechanically checked where possible). Master sections only appear on a game page once that game has master
+rounds. Authoring layer for obscure-but-respectable vocabulary: `loadUncommonSync()` (SCOWL 60 minus size 35,
+minus crude words and slurs). Supersedes the Gentle/Standard/Expert-only labelling in docs/07.

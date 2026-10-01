@@ -8,12 +8,17 @@
  * the engine accepted once must be accepted again on replay (determinism).
  */
 
-export type Difficulty = "gentle" | "standard" | "expert";
-export const DIFFICULTIES: readonly Difficulty[] = ["gentle", "standard", "expert"] as const;
+/**
+ * "master" (added 2026-10-01, DECISIONS D14) is the tier for strong tile-game and cryptic-crossword
+ * players: obscure but valid vocabulary, longer and denser puzzles, no reliance on everyday-word limits.
+ */
+export type Difficulty = "gentle" | "standard" | "expert" | "master";
+export const DIFFICULTIES: readonly Difficulty[] = ["gentle", "standard", "expert", "master"] as const;
 export const DIFFICULTY_LABEL: Record<Difficulty, string> = {
   gentle: "Gentle",
   standard: "Standard",
   expert: "Expert",
+  master: "Master",
 };
 
 /** Lifecycle of authored content. Only `published` may appear as a daily edition. */

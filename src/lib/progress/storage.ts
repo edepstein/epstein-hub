@@ -124,7 +124,7 @@ export const indexEntrySchema = z.object({
   roundId: z.string(),
   attemptId: z.string(),
   title: z.string(),
-  difficulty: z.enum(["gentle", "standard", "expert"]),
+  difficulty: z.enum(["gentle", "standard", "expert", "master"]),
   outcome: z.enum(["playing", "completed", "failed", "revealed", "abandoned"]),
   assisted: z.boolean(),
   practice: z.boolean(),
