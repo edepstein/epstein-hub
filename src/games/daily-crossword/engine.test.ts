@@ -194,3 +194,37 @@ describe("cursor navigation", () => {
     expect(jumpEntry(s, { row: 0, col: 0, dir: "across" }, -1)).toBeNull();
   });
 });
+
+describe("Master grids", () => {
+  const master = rounds.filter((r) => r.meta.difficulty === "master");
+  it("there are six, three quick and three cryptic, all 9x9 to 13x13, symmetric and connected", () => {
+    expect(master).toHaveLength(6);
+    expect(master.filter((r) => r.payload.style === "cryptic")).toHaveLength(3);
+    for (const r of master) {
+      expect(r.payload.grid.length).toBeGreaterThanOrEqual(9);
+      expect(r.payload.grid.length).toBeLessThanOrEqual(13);
+      expect(isSymmetric(r.payload.grid)).toBe(true);
+      expect(isConnected(r.payload.grid)).toBe(true);
+      expect(r.payload.entries.length).toBeGreaterThanOrEqual(12);
+    }
+  });
+  it("every Master and new Expert grid is solved by entering its own answers", () => {
+    for (const r of rounds.filter((x) => x.meta.id.startsWith("dc-m") || ["dc-eq5", "dc-eq6", "dc-ec4"].includes(x.meta.id))) {
+      let s = engine.initialise(r.payload, sessionOptionsFor(r.meta, 1));
+      for (const e of r.payload.entries) {
+        const t = engine.apply(s, { type: "enter", entryId: e.id, text: e.answer });
+        expect(t.ok, `${r.meta.id} ${e.id}`).toBe(true);
+        s = t.state;
+      }
+      expect(engine.outcome(s), r.meta.id).toBe("completed");
+    }
+  });
+  it("the validator needs six Master grids and rejects a repeated answer from an earlier grid", () => {
+    expect(validateRounds(rounds)).toEqual([]);
+    expect(validateRounds(rounds.filter((r) => r.meta.difficulty !== "master")).join()).toMatch(/only 0 master grids/);
+    const sameAs = rounds.find((r) => r.meta.id === "dc-mq2")!;
+    const grid = structuredClone(sameAs);
+    grid.meta.id = "dc-mq8";
+    expect(validateRounds([...rounds, grid]).join()).toMatch(/already used in/);
+  });
+});

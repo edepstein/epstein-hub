@@ -1,4 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { clearProgress, expectNoHorizontalOverflow, feedback } from "./helpers";
 
 // dc-gq1 solution:  PRICE / S#V#N / ALOFT / L#R#E / MAYOR
@@ -161,4 +163,90 @@ test("@mobile large grid zooms inside its own frame without page overflow", asyn
   await cell(page, 0, 0).focus();
   await page.keyboard.type("eagle");
   await expect(cell(page, 0, 4)).toHaveValue("E");
+});
+
+// ---- Master tier (larger grids) ----
+interface RawEntry { answer: string; clue: string; enumeration: string; row: number; col: number; direction: string }
+const bank = JSON.parse(readFileSync(join(process.cwd(), "src/games/daily-crossword/content/rounds.json"), "utf8")) as {
+  rounds: { id: string; payload: { grid: string[]; entries: RawEntry[]; style: string } }[];
+};
+const roundOf = (id: string) => bank.rounds.find((r) => r.id === id)!.payload;
+const clueRow = (page: Page, e: RawEntry) => page.locator(".xw-clue").filter({ has: page.getByText(`${e.clue} (${e.enumeration})`, { exact: true }) });
+
+test("Master quick 11x11: a full valid solve by clue completes, with navigation across the larger grid", async ({ page }) => {
+  const p = roundOf("dc-mq2");
+  expect(p.grid.length).toBe(11);
+  await page.goto("/play/daily-crossword/dc-mq2");
+  await expect(page.getByTestId("xw-grid")).toBeVisible();
+  // Keyboard navigation reaches the far corner and Tab moves between clues.
+  await cell(page, 0, 0).focus();
+  for (let i = 0; i < 4; i++) await page.keyboard.press("ArrowRight");
+  await expect(cell(page, 0, 4)).toBeFocused();
+  await page.keyboard.press("End");
+  await page.keyboard.press("Tab");
+  await expect(page.getByTestId("xw-bar")).toBeVisible();
+  const answer = page.getByLabel(/Answer the selected clue/);
+  for (const e of p.entries) {
+    await clueRow(page, e).click();
+    await answer.fill(e.answer.toLowerCase());
+    await answer.press("Enter");
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("unassisted");
+});
+
+test("Master cryptic 11x11: cryptic clue loads, wrong answer is kept, right answer explains the wordplay", async ({ page }) => {
+  const p = roundOf("dc-mc2");
+  await page.goto("/play/daily-crossword/dc-mc2");
+  const e = p.entries.find((x) => x.answer === "SUBSTANDARD")!;
+  await clueRow(page, e).click();
+  const answer = page.getByLabel(/Answer the selected clue/);
+  await answer.fill("inferior");
+  await answer.press("Enter");
+  await expect(feedback(page)).toContainText("needs 11 letters");
+  await expect(answer).toHaveValue("INFERIOR");
+  await answer.fill("substandard");
+  await answer.press("Enter");
+  await expect(feedback(page)).toContainText("Entered SUBSTANDARD");
+  await page.getByRole("button", { name: "Reveal grid" }).click();
+  await page.getByRole("dialog", { name: "Reveal the whole grid?" }).getByRole("button", { name: "Reveal the grid" }).click();
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "revealed");
+  await result.getByText("How it works").click();
+  await expect(result).toContainText("SUB (\"reserve\") + STANDARD (\"banner\") = SUBSTANDARD.");
+});
+
+test("Master 13x13 grid is navigable and zooms inside its frame on desktop", async ({ page }) => {
+  const p = roundOf("dc-mq3");
+  expect(p.grid.length).toBe(13);
+  await page.goto("/play/daily-crossword/dc-mq3");
+  await expect(page.getByTestId("xw-grid")).toBeVisible();
+  await page.getByRole("button", { name: "Zoom in" }).click();
+  await page.getByRole("button", { name: "Zoom in" }).click();
+  await expect(page.getByTestId("xw-zoom")).toHaveText("150%");
+  await expectNoHorizontalOverflow(page);
+  await cell(page, 0, 0).focus();
+  await page.keyboard.type("situ");
+  await expect(cell(page, 0, 3)).toHaveValue("U");
+  await page.keyboard.press("ArrowDown");
+  await expect(page.getByTestId("xw-bar")).toContainText("Row");
+});
+
+test("@mobile Master 11x11 and 13x13 fit a phone, zoom and accept typing", async ({ page }) => {
+  for (const id of ["dc-mq2", "dc-mq3", "dc-mc3"]) {
+    await page.goto(`/play/daily-crossword/${id}`);
+    await expect(page.getByTestId("xw-grid")).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+    const before = (await page.getByTestId("xw-grid").boundingBox())!.width;
+    await page.getByRole("button", { name: "Zoom in" }).click();
+    await page.getByRole("button", { name: "Zoom in" }).click();
+    expect((await page.getByTestId("xw-grid").boundingBox())!.width).toBeGreaterThan(before * 1.4);
+    await expectNoHorizontalOverflow(page);
+    const g = roundOf(id).grid;
+    const c0 = g[0].split("").findIndex((ch) => ch !== "#");
+    await cell(page, 0, c0).focus();
+    await page.keyboard.type(g[0][c0].toLowerCase());
+    await expect(cell(page, 0, c0)).toHaveValue(g[0][c0]);
+  }
 });

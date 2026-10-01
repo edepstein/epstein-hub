@@ -20,6 +20,8 @@ export interface CrypticParse {
   definition: string;
   indicators: string[];
   construction: Construction;
+  /** &lit or semi-&lit marker for compound clues (see cryptic-workshop/tree.ts). */
+  lit?: "full" | "semi";
 }
 
 export interface EntrySpec {

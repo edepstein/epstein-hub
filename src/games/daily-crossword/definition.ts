@@ -73,13 +73,14 @@ export const definition: GameDefinition = {
         points: [
           "Quick clues are straightforward definitions. Cryptic clues each combine a definition with wordplay, as in the Cryptic Workshop.",
           "Gentle: familiar words and direct clues. Standard: richer vocabulary and fair misdirection. Expert: clues that need interpretation, or multi-step cryptic wordplay.",
+          "Master: larger grids (9x9 up to 13x13) with more answers. Quick Master grids use terser, tougher definitions and Scrabble-grade vocabulary (real but less common words, never anything outside a standard dictionary). Cryptic Master grids use full-length cryptic clues, including nested wordplay (a charade with a deletion inside, an anagram of a subtraction, a homophone of a charade), double definitions and the occasional flagged cryptic definition. Every cryptic clue is mechanically checked wherever its wordplay can be checked; synonym links are reviewed by a human editor.",
           "Each difficulty has both styles, and each puzzle is a different grid. A small grid is not automatically easy. These labels are the author's intention and have not yet been calibrated with players.",
           "Grids follow a house style: rotationally symmetric, answers of at least three letters, at least half the letters of each answer crossed by another answer. The two word-square demos are engine test boards from the original pack.",
         ],
       },
       {
         heading: "Zoom",
-        points: ["Use the zoom buttons to enlarge the grid. A larger grid scrolls inside its own frame, so the clues and tools stay in place."],
+        points: ["Use the zoom buttons to enlarge the grid. A larger grid (Master grids go up to 13x13) scrolls inside its own frame, so the clues and tools stay in place. The arrow keys and Tab keep working at every size."],
       },
     ],
     example: "In a quick crossword, \"Head of a town council (5)\" is MAYOR. Its first letter M is shared with the Down answer that crosses it.",

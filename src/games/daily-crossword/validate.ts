@@ -3,7 +3,11 @@ import type { RoundBundle } from "../types";
 import type { CrosswordPayload } from "./engine";
 import { deriveRuns, isConnected, isSymmetric, key, runCells } from "./grid";
 import { verifyClue, enumerationLengths } from "../cryptic-workshop/construction";
-import { loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
+
+/** Master answers outside the familiar and uncommon layers, allowed only when unavoidable and logged in docs/REVIEW-LOG.md. */
+export const ALLOWED_MASTER_OUTLIERS = new Set<string>([]);
+
 
 /**
  * Grid validator. For every round: rectangular A-Z/# grid; the authored entries cover exactly
@@ -18,6 +22,9 @@ import { loadMembershipSync } from "@/lib/dictionary/node";
 export function validateRounds(rounds: RoundBundle<CrosswordPayload>[]): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
+  const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
+  const seenAnswers = new Map<string, string>();
   const per: Record<string, Set<string>> = {};
   for (const { meta, payload: p } of rounds) {
     const at = (f: string) => `${meta.id}.${f}`;
@@ -49,6 +56,15 @@ export function validateRounds(rounds: RoundBundle<CrosswordPayload>[]): string[
       const lens = enumerationLengths(e.enumeration);
       if (lens.some((n) => !Number.isInteger(n) || n < 1) || lens.reduce((a, b) => a + b, 0) !== e.answer.length) problems.push(`${where}.enumeration: "${e.enumeration}" does not total ${e.answer.length}`);
       if (lens.length === 1 && !membership.has(e.answer)) problems.push(`${where}: ${e.answer} is not in the word list`);
+      if (meta.difficulty === "master") {
+        if (lens.length === 1 && !familiar.has(e.answer) && !uncommon.has(e.answer) && !ALLOWED_MASTER_OUTLIERS.has(e.answer)) problems.push(`${where}: ${e.answer} is outside the familiar and uncommon layers`);
+        if (Math.min(R, C) < 9) problems.push(`${meta.id}: Master grids are at least 9x9`);
+      }
+      if (meta.status !== "demo") {
+        const prior = seenAnswers.get(e.answer);
+        if (prior && prior !== meta.id && (meta.id.startsWith("dc-m") || meta.id.startsWith("dc-eq5") || meta.id.startsWith("dc-eq6") || meta.id.startsWith("dc-ec4"))) problems.push(`${where}: ${e.answer} is already used in ${prior}`);
+        if (!prior) seenAnswers.set(e.answer, meta.id);
+      }
       if (!e.clue?.trim()) problems.push(`${where}.clue: missing`);
       if (/\(\d/.test(e.clue)) problems.push(`${where}.clue: must not include the enumeration`);
       if (e.clue.toUpperCase().replace(/[^A-Z ]/g, " ").split(/\s+/).includes(e.answer)) problems.push(`${where}.clue: contains its own answer`);
@@ -73,11 +89,15 @@ export function validateRounds(rounds: RoundBundle<CrosswordPayload>[]): string[
       if (answers.some((a) => (meta.title ?? "").toUpperCase().includes(a) || meta.id.toUpperCase().includes(a))) problems.push(`${meta.id}: id/title spoils an answer`);
     }
   }
-  for (const d of ["gentle", "standard", "expert"]) {
+  const need: Record<string, number> = { gentle: 7, standard: 7, expert: 10, master: 6 };
+  for (const d of ["gentle", "standard", "expert", "master"]) {
     const n = rounds.filter((r) => r.meta.difficulty === d).length;
-    if (n < 7) problems.push(`only ${n} ${d} grids; at least 7 required`);
+    if (n < need[d]) problems.push(`only ${n} ${d} grids; at least ${need[d]} required`);
     if (!per[d]?.has("quick") || !per[d]?.has("cryptic")) problems.push(`${d} needs both a quick and a cryptic grid`);
   }
+  const master = rounds.filter((r) => r.meta.difficulty === "master");
+  if (master.filter((r) => r.payload.style === "cryptic").length < 3) problems.push("Master needs at least three cryptic grids");
+  if (master.filter((r) => r.payload.style === "quick").length < 3) problems.push("Master needs at least three quick grids");
   return problems;
 }
 

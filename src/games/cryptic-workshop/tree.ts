@@ -282,22 +282,22 @@ export function treeOps(n: Node): string[] {
   return out;
 }
 
-const countOps = (n: Node): number => {
+export const treeOpCount = (n: Node): number => {
   switch (n.op) {
     case "part":
       return 0;
     case "charade":
-      return 1 + n.parts.reduce((a, p) => a + countOps(p), 0);
+      return 1 + n.parts.reduce((a, p) => a + treeOpCount(p), 0);
     case "container":
-      return 1 + countOps(n.outer) + countOps(n.inner);
+      return 1 + treeOpCount(n.outer) + treeOpCount(n.inner);
     case "reversal":
     case "deletion":
     case "homophone":
-      return 1 + countOps(n.of);
+      return 1 + treeOpCount(n.of);
     case "anagram":
-      return 1 + n.of.reduce((a, p) => a + countOps(p), 0);
+      return 1 + n.of.reduce((a, p) => a + treeOpCount(p), 0);
     case "remove":
-      return 1 + countOps(n.from) + countOps(n.take);
+      return 1 + treeOpCount(n.from) + treeOpCount(n.take);
     case "select":
     case "hidden":
       return 1;
@@ -539,7 +539,6 @@ export function verifyCompound(clue: TreeClueInput, root: Node, where: string): 
 
   const res = ev(root, "root");
   if (res.letters !== answer) problems.push(`${where}: the construction tree makes ${res.letters || "nothing"}, not ${answer}`);
-  if (countOps(root) < 2 && !clue.lit) problems.push(`${where}: a compound clue combines at least two operations`);
   if (!hasHidden(root) && normaliseLetters(text).includes(answer)) problems.push(`${where}: the answer appears inside the clue text`);
 
   // Definition position and the &lit variants.

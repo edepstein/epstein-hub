@@ -475,6 +475,88 @@ Cryptic clues (letters verified by the Cryptic Workshop checker; synonyms and su
 - [ ] New quick clues are original; expert quick clues are only mildly harder than standard (no cryptic-style definitions); an editor may want to sharpen them. New cryptic expert grids lean on anagram and two-part charades; synonym links to confirm: gold=OR (ACTOR), fashionable=IN, meadow=FIELD, Honey maker=BEE and colony=HIVE (BEEHIVE, loosest), In that place=THERE, working=ON, for each=PER, little devil=IMP, at home=IN, a few=SOME, strained=TENSE, best=TOP, standard=PAR. Anagram fodders ABRIDGE, CAVIARE, TREASON, COUNTER, PERFECT, PRESENT, NEAREST, DRESSER, CRUISER, AGONIES, HATER, CRAVE, CHARM/MARCH are real words. THEREOF is a hidden answer in 'tithe reoffer'; ROTOR is hidden in 'carrot or'.
 - [ ] Odd-but-legal entries to eyeball: CADDIES (plural), CURRIES (plural), DOWRIES (plural), INFIELD (cricket/baseball sense), THEREON, THEREOF.
 
+Master tier wave (2026-10-01): six Master grids (dc-mq1..mq3 quick at 11x11, 11x11 and 13x13; dc-mc1..mc3 cryptic at 9x9, 11x11, 11x11) and three more Expert grids (dc-eq5, dc-eq6 quick 9x9; dc-ec4 cryptic 9x9). Fill is by an offline bitset constraint filler over lattice-style symmetric templates (house rules: 180-degree symmetry, connected, entries of at least three letters, every entry at least half crossed); Master quick fill draws on familiar plus uncommon words (SCOWL 35 plus 60, crude words removed, a hand ban list for dubious entries). No Master answer is outside those layers (the validator now enforces it; ALLOWED_MASTER_OUTLIERS is empty). Answers are unique across the new grids and against every earlier grid. Entry counts are 12 to 28 (the 9x9 cryptic has 12 long entries; a denser 9x9 would not fill with cluable words), so 'clue counts in line with the grid' is met only loosely for dc-mc1.
+- [ ] Cryptic Master clues are all machine-verified by the extended construction checker (nested trees, strict indicator lists, literal anagram fodder, no stray words). Many are simple charades or double definitions rather than deep compounds, to keep 68 clues sound; only a few use deletion inside a charade (TRAINEE), subtraction-free anagrams, hidden words, homophones (GYBE/JIBE, RYE/WRY, HERE/HEAR, TOED/TOAD, KNEE/NEE) or a container (CABOOSE). One cryptic definition is flagged honestly (CHORTLE, a Lewis Carroll coinage; check it reads as a fair clue). GRANNIE is clued as an anagram of ENGRAIN (a rare word as fodder); an editor may prefer a different clue or grid.
+- [ ] Quick Master clues are short and tough but not all deeply misleading; please sharpen where wished. Uncommon answers to confirm: CODON, BASSO, TUTTI, EDUCE, UKASE, ELIDE, LIONISE (British -ise), CHINO, SNIFTER, ANI, WEEN (archaic), POTHERB, SCHNOZES, YOBBO, AGLITTER, PROSY, BUTTE, SITU (only as "in situ"), TUTTI, MARIA (plural of mare; lunar seas), INSIPIDNESS, OBSOLESCENT. Check WEE and PSST are acceptable as grid entries.
+- [ ] Sizes: the crossword page scrolls large grids inside their own frame; at 390px an 11x11 cell is about 30px and a 13x13 cell about 25px, below the 44px touch target, so zoom is the intended route (zoom 150 percent and 200 percent are tested at mobile for 11x11 and 13x13). Flagged for human judgement on touch ergonomics.
+- [ ] dc-mq1 (Master quick 1, 11x11, 22 entries, quick): all clues authored by the build agent.
+- [ ] dc-mq2 (Master quick 2, 11x11, 22 entries, quick): all clues authored by the build agent.
+- [ ] dc-mq3 (Master quick 3, 13x13, 28 entries, quick): all clues authored by the build agent.
+- [ ] dc-mc1 (Master cryptic 1, 9x9, 12 entries, cryptic): all clues authored by the build agent.
+  - dc-mc1 LITTERBUG: "Careless disposer: pups, perhaps, with glitch" Check: "pups, perhaps" = LITTER; "glitch" = BUG.
+  - dc-mc1 COMIC: "Funny paper for the young" Check: DOUBLE DEFINITION "Funny" / "paper for the young".
+  - dc-mc1 ERA: "Period seen in lower area" Check: no synonym links.
+  - dc-mc1 OVERTAKEN: "Passed: finished and grabbed" Check: "finished" = OVER; "grabbed" = TAKEN.
+  - dc-mc1 TEA: "Drink found in cut early" Check: no synonym links.
+  - dc-mc1 BLADE: "Sword: born with load" Check: "load" = LADE.
+  - dc-mc1 ELEMENTAL: "Basic fire, perhaps, with Capone" Check: "fire, perhaps" = ELEMENT; "Capone" = AL.
+  - dc-mc1 TEMPERATE: "Moderate mood consumed" Check: "mood" = TEMPER; "consumed" = ATE.
+  - dc-mc1 EXCITABLE: "Easily thrilled: former quotable" Check: "former" = EX; "quotable" = CITABLE.
+  - dc-mc1 BREAKFAST: "Morning meal: rest, then quick" Check: "rest" = BREAK; "quick" = FAST.
+  - dc-mc1 GRANNIE: "Old woman, to some, engrain, wildly" Check: no synonym links.
+  - dc-mc1 CHORTLE: "Carroll's blend of chuckle and snort" Check: CRYPTIC DEFINITION, no wordplay.
+- [ ] dc-mc2 (Master cryptic 2, 11x11, 20 entries, cryptic): all clues authored by the build agent.
+  - dc-mc2 BONUSES: "Extras: perk with energy and second" Check: "perk" = BONUS.
+  - dc-mc2 SUBSTANDARD: "Inferior: reserve with banner" Check: "reserve" = SUB; "banner" = STANDARD.
+  - dc-mc2 NOON: "Midday: refusal, working" Check: "refusal" = NO; "working" = ON.
+  - dc-mc2 HONEY: "Darling: sharpen with unknown" Check: "sharpen" = HONE.
+  - dc-mc2 ASHES: "Burnt remains, or cricketing contest" Check: DOUBLE DEFINITION "Burnt remains" / "cricketing contest".
+  - dc-mc2 GYBE: "Change tack, we hear, mock" Check: "mock" = JIBE; HOMOPHONE GYBE (GYBE and JIBE share a usual UK pronunciation.).
+  - dc-mc2 PARENTHESIS: "Bracket: mother, say, that man and sister, informally" Check: "mother, say" = PARENT; "that man" = HE; "sister, informally" = SIS.
+  - dc-mc2 EMPOWER: "Authorise printer's measure with strength" Check: "printer's measure" = EM; "strength" = POWER.
+  - dc-mc2 BISON: "Buffalo: born, one, boy" Check: "boy" = SON.
+  - dc-mc2 COB: "Male swan, or loaf" Check: DOUBLE DEFINITION "Male swan" / "loaf".
+  - dc-mc2 BETA: "Greek character, test version" Check: DOUBLE DEFINITION "Greek character" / "test version".
+  - dc-mc2 NINTH: "Following eighth, a fraction" Check: DOUBLE DEFINITION "Following eighth" / "a fraction".
+  - dc-mc2 SADLY: "Regrettably, blue learner and unknown" Check: "blue" = SAD.
+  - dc-mc2 ANNOY: "Bother girl with ring and unknown" Check: "girl" = ANN.
+  - dc-mc2 OTHER: "Different part of brother" Check: no synonym links.
+  - dc-mc2 AMPLE: "Plenty: specimen, headless" Check: "specimen" = SAMPLE.
+  - dc-mc2 SINEW: "Tendon: swine, wildly" Check: no synonym links.
+  - dc-mc2 EASEL: "Artist's support: comfort with learner" Check: "comfort" = EASE.
+  - dc-mc2 WHIR: "Buzz: spin, endless" Check: "spin" = WHIRL.
+  - dc-mc2 SET: "Ready for part of a tennis match" Check: DOUBLE DEFINITION "Ready" / "part of a tennis match".
+- [ ] dc-mc3 (Master cryptic 3, 11x11, 20 entries, cryptic): all clues authored by the build agent.
+  - dc-mc3 APPENDICES: "Extra sections: attach with frozen desserts" Check: "attach" = APPEND; "frozen desserts" = ICES.
+  - dc-mc3 RYE: "Grain, we hear, ironic" Check: "ironic" = WRY; HOMOPHONE RYE (RYE and WRY share a usual UK pronunciation.).
+  - dc-mc3 TRAINEE: "Novice: coach endlessly with energy" Check: "coach" = TRAINER.
+  - dc-mc3 TREATY: "Pact: indulge with unknown" Check: "indulge" = TREAT.
+  - dc-mc3 COLT: "Young horse: pass with time" Check: "pass" = COL.
+  - dc-mc3 LATE: "Dead, or tardy" Check: DOUBLE DEFINITION "Dead" / "tardy".
+  - dc-mc3 REPAIR: "Fix: about couple" Check: "couple" = PAIR.
+  - dc-mc3 CABOOSE: "Guard's van: jeer in box" Check: "box" = CASE; "jeer" = BOO.
+  - dc-mc3 IMP: "Rascal in simple" Check: no synonym links.
+  - dc-mc3 LIEUTENANT: "Officer: place, number, worker" Check: "place" = LIEU; "number" = TEN; "worker" = ANT.
+  - dc-mc3 PREVENTABLE: "Avoidable: stop then capable" Check: "stop" = PREVENT; "capable" = ABLE.
+  - dc-mc3 ENTITY: "Being: printer's measure, bird and unknown" Check: "printer's measure" = EN; "bird" = TIT.
+  - dc-mc3 DRAG: "Bore, or pull" Check: DOUBLE DEFINITION "Bore" / "pull".
+  - dc-mc3 CONNOTATION: "Suggested meaning: swindle with system of symbols" Check: "swindle" = CON; "system of symbols" = NOTATION.
+  - dc-mc3 SWEAT: "Perspire: waste, mixed" Check: no synonym links.
+  - dc-mc3 GRIT: "Pluck, or sandy stuff" Check: DOUBLE DEFINITION "Pluck" / "sandy stuff".
+  - dc-mc3 DEMEAN: "Lower: of French, stingy" Check: "stingy" = MEAN.
+  - dc-mc3 LOCAL: "Pub: setting cut short" Check: "setting" = LOCALE.
+  - dc-mc3 ROPE: "Cord to tie up" Check: DOUBLE DEFINITION "Cord" / "tie up".
+  - dc-mc3 BOLT: "Dash, or door fastening" Check: DOUBLE DEFINITION "Dash" / "door fastening".
+- [ ] dc-eq5 (Expert quick 5, 9x9, 14 entries, quick): all clues authored by the build agent.
+- [ ] dc-eq6 (Expert quick 6, 9x9, 14 entries, quick): all clues authored by the build agent.
+- [ ] dc-ec4 (Expert cryptic 4, 9x9, 16 entries, cryptic): all clues authored by the build agent.
+  - dc-ec4 CLAP: "Show approval: about circuit" Check: "circuit" = LAP.
+  - dc-ec4 COUP: "Takeover: company aloft" Check: "aloft" = UP.
+  - dc-ec4 MOP: "Cleaner: master with work" Check: "work" = OP.
+  - dc-ec4 HYENA: "Scavenger: hard, money and one" Check: "money" = YEN.
+  - dc-ec4 NOMAD: "Wanderer: refusal, crazy" Check: "refusal" = NO; "crazy" = MAD.
+  - dc-ec4 PIANO: "Instrument: good, a, refusal" Check: "refusal" = NO.
+  - dc-ec4 ATE: "Consumed in water" Check: no synonym links.
+  - dc-ec4 TOED: "Kicked, we hear, amphibian" Check: "amphibian" = TOAD; HOMOPHONE TOED (TOED and TOAD share a usual UK pronunciation.).
+  - dc-ec4 KNEE: "Joint, we hear, once named" Check: "once named" = NEE; HOMOPHONE KNEE (KNEE and NEE share a usual UK pronunciation.).
+  - dc-ec4 COMB: "Cock's crest, or hair tidier" Check: DOUBLE DEFINITION "Cock's crest" / "hair tidier".
+  - dc-ec4 APPENDAGE: "Limb, say: attach with era" Check: "attach" = APPEND; "era" = AGE.
+  - dc-ec4 OVERDRAWN: "Short of cash: finished, pulled" Check: "finished" = OVER; "pulled" = DRAWN.
+  - dc-ec4 PEAK: "Summit: vegetable, thousand" Check: "vegetable" = PEA.
+  - dc-ec4 SHAMPOO: "Wash hair: hush, amplifier, ducks" Check: "hush" = SH; "amplifier" = AMP; "ducks" = OO.
+  - dc-ec4 SPAT: "Squabble: son, tap" Check: "tap" = PAT.
+  - dc-ec4 HERE: "In this place, we hear, listen" Check: "listen" = HEAR; HOMOPHONE HERE (HERE and HEAR share a usual UK pronunciation.).
+
 ## Word Weave
 - [ ] Practice grids wv-g1..g5, wv-s1..s5, wv-e1..e5: fills found offline by backtracking over familiar words (ESDB membership ∩ SCOWL size-35, excluding simple plurals, -ED/-ING forms and superlatives); every clue is original to this build. An editor must independently solve each grid and judge clue fairness. Expert clues are deliberately double-edged (e.g. "Trunk that is not on a tree" for TORSO).
 - [ ] Uniqueness rests on clues, not geometry: in the lattice grids the uncrossed letters admit other words. Only one accepted grid is stored per practice round; after review, add any fair alternative fills as extra accepted grids (the engine and validator already support them).

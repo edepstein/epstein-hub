@@ -2,6 +2,7 @@ import { rounds as allRounds } from "./rounds";
 import type { RoundBundle } from "../types";
 import type { WorkshopPayload } from "./engine";
 import { enumerationLengths, HELP_EXAMPLES, verifyClue } from "./construction";
+import { treeOpCount } from "./tree";
 import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 
 /** Answers deliberately outside the ESDB common-word list (proper nouns), each logged for review. */
@@ -33,6 +34,7 @@ export function validateRounds(rounds: RoundBundle<WorkshopPayload>[]): string[]
       if (ids.has(clue.id)) problems.push(`${where}.id: duplicate clue id ${clue.id}`);
       ids.add(clue.id);
       problems.push(...verifyClue(clue, where).problems);
+      if (clue.construction.type === "compound" && treeOpCount(clue.construction.root) < 2 && !clue.lit) problems.push(`${where}: a compound clue in a workshop combines at least two operations`);
       // Each word of the enumeration must be a real word (phrases are checked word by word).
       let at = 0;
       for (const n of enumerationLengths(clue.enumeration)) {

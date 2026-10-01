@@ -28,6 +28,7 @@ export const ABBREVIATIONS: Record<string, readonly string[]> = {
   castle: ["R"],
   catholic: ["RC"],
   caught: ["C"],
+  company: ["CO"],
   cent: ["C"],
   chapter: ["C", "CH"],
   church: ["CE", "CH"],
