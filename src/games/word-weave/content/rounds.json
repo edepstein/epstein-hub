@@ -1,0 +1,1151 @@
+{
+ "schemaVersion": 1,
+ "gameId": "word-weave",
+ "rulesVersion": "1.0",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice grids are original: fills found offline by backtracking over familiar words (ESDB membership \u2229 SCOWL size-35), clues written for this build. Not yet human-reviewed.",
+ "rounds": [
+  {
+   "id": "wv-demo-1",
+   "title": "Original demo weave 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "weave-001",
+   "payload": {
+    "rows": 4,
+    "cols": 6,
+    "lanes": [
+     {
+      "id": "a",
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 5,
+      "clue": "A long-legged wading bird"
+     },
+     {
+      "id": "b",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 4,
+      "clue": "The outer covering of a tree trunk"
+     },
+     {
+      "id": "c",
+      "direction": "across",
+      "row": 3,
+      "col": 2,
+      "length": 4,
+      "clue": "A light frame flown on a string in the wind"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a": "CRANE",
+      "b": "BARK",
+      "c": "KITE"
+     }
+    ],
+    "sampleHints": [
+     "The tree covering has four letters.",
+     "The flying frame begins with K."
+    ],
+    "explanation": "CRANE[2] and BARK[1] are A; BARK[3] and KITE[0] are K."
+   }
+  },
+  {
+   "id": "wv-demo-2",
+   "title": "Original demo weave 2",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "weave-002",
+   "payload": {
+    "rows": 4,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a",
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "length": 4,
+      "clue": "The underside of a foot"
+     },
+     {
+      "id": "b",
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "length": 4,
+      "clue": "A small vessel that travels on water"
+     },
+     {
+      "id": "c",
+      "direction": "across",
+      "row": 3,
+      "col": 1,
+      "length": 4,
+      "clue": "What a clock measures"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a": "SOLE",
+      "b": "BOAT",
+      "c": "TIME"
+     }
+    ],
+    "sampleHints": [
+     "The water vessel begins with B.",
+     "The clock answer begins with T."
+    ],
+    "explanation": "SOLE[1] and BOAT[1] are O; BOAT[3] and TIME[0] are T."
+   }
+  },
+  {
+   "id": "wv-g1",
+   "title": "Gentle weave 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 4,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Message sent from one computer to another"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 4,
+      "clue": "Long heroic poem or film"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 4,
+      "clue": "Friend in a conflict"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "clue": "It lights up a bedside table"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "EMAIL",
+      "d00": "EPIC",
+      "d02": "ALLY",
+      "d04": "LAMP"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers.",
+    "bank": [
+     "ALLY",
+     "EMAIL",
+     "EPIC",
+     "LAMP"
+    ]
+   }
+  },
+  {
+   "id": "wv-g2",
+   "title": "Gentle weave 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 4,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Open land covered with heather"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 4,
+      "clue": "Hurt or damage"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 4,
+      "clue": "Not at home"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 4,
+      "clue": "Long cry of a wolf"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "HEATH",
+      "d00": "HARM",
+      "d02": "AWAY",
+      "d04": "HOWL"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers.",
+    "bank": [
+     "AWAY",
+     "HARM",
+     "HEATH",
+     "HOWL"
+    ]
+   }
+  },
+  {
+   "id": "wv-g3",
+   "title": "Gentle weave 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Elegance of movement"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Official inspection of accounts"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "What a chick does when it breaks out of its egg"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "GRACE",
+      "d02": "AUDIT",
+      "a40": "HATCH"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers.",
+    "bank": [
+     "AUDIT",
+     "GRACE",
+     "HATCH"
+    ]
+   }
+  },
+  {
+   "id": "wv-g4",
+   "title": "Gentle weave 4",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Blade for shaving"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Stage in a process, such as one of the Moon's"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "Striped African animal"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "d00": "RAZOR",
+      "d04": "PHASE",
+      "a20": "ZEBRA"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers.",
+    "bank": [
+     "PHASE",
+     "RAZOR",
+     "ZEBRA"
+    ]
+   }
+  },
+  {
+   "id": "wv-g5",
+   "title": "Gentle weave 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Carried along by the wind"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Pushchair for a small child"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Coming after the eighth"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "The time of being young"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "BLOWN",
+      "d00": "BUGGY",
+      "d04": "NINTH",
+      "a40": "YOUTH"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers.",
+    "bank": [
+     "BLOWN",
+     "BUGGY",
+     "NINTH",
+     "YOUTH"
+    ]
+   }
+  },
+  {
+   "id": "wv-s1",
+   "title": "Standard weave 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Clean the floor with a brush"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "Heavenly messenger with wings"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "Something special, like a biscuit for a good dog"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Lean at an angle"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Golden bird of prey"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Person who flies a plane"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "SWEEP",
+      "a20": "ANGEL",
+      "a40": "TREAT",
+      "d00": "SLANT",
+      "d02": "EAGLE",
+      "d04": "PILOT"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-s2",
+   "title": "Standard weave 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Open public square, especially in a Spanish town"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "Nimble and quick on one's feet"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "Last letter of the Greek alphabet"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Instrument with eighty-eight keys"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Similar, like two peas in a pod"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Large venue for sport or concerts"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "PLAZA",
+      "a20": "AGILE",
+      "a40": "OMEGA",
+      "d00": "PIANO",
+      "d02": "ALIKE",
+      "d04": "ARENA"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-s3",
+   "title": "Standard weave 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Four-wheeled cart pulled by horses"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "The people who work for an organisation"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "Have another go at"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "More sensible, like an old owl"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Huge figure in a fairy tale"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Clever and handy"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "WAGON",
+      "a20": "STAFF",
+      "a40": "RETRY",
+      "d00": "WISER",
+      "d02": "GIANT",
+      "d04": "NIFTY"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-s4",
+   "title": "Standard weave 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Normal, as expected"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "Official order from a ruler"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "Thick, like fog you cannot see through"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Turn upside down"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Joining together, or a workers' organisation"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Metric measure of liquid"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "USUAL",
+      "a20": "EDICT",
+      "a40": "DENSE",
+      "d00": "UPEND",
+      "d02": "UNION",
+      "d04": "LITRE"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-s5",
+   "title": "Standard weave 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 5,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Part of a play or film"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 5,
+      "clue": "Do better than"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 5,
+      "clue": "Aircraft, or a carpenter's smoothing tool"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Bend forward and down"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Actor in a crowd scene with no lines"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Run off secretly to marry"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "SCENE",
+      "a20": "OUTDO",
+      "a40": "PLANE",
+      "d00": "STOOP",
+      "d02": "EXTRA",
+      "d04": "ELOPE"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-e1",
+   "title": "Expert weave 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Design repeated on wallpaper"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Shorten a book without losing its sense"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Where you stand on the threshold"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Tartan cloth"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Trunk that is not on a tree"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Give a college a lasting gift"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "In want, or wanting constant attention"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "PATTERN",
+      "a20": "ABRIDGE",
+      "a40": "DOORWAY",
+      "d00": "PLAID",
+      "d02": "TORSO",
+      "d04": "ENDOW",
+      "d06": "NEEDY"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-e2",
+   "title": "Expert weave 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Of service"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Go back over the same steps"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Room for a baby, or a place selling young plants"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Grey bird that stands still in the shallows"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Not now, but some time after"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Old romance, or the bright part of a fire"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Wary and suspicious"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "HELPFUL",
+      "a20": "RETRACE",
+      "a40": "NURSERY",
+      "d00": "HERON",
+      "d02": "LATER",
+      "d04": "FLAME",
+      "d06": "LEERY"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-e3",
+   "title": "Expert weave 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Far away, or cool and unfriendly"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Story told to teach a moral lesson"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Where plays are staged, or a hospital operating room"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Place where buses are kept overnight"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Sudden powerful rush, as of the sea"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Head of a monastery"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Not here"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "DISTANT",
+      "a20": "PARABLE",
+      "a40": "THEATRE",
+      "d00": "DEPOT",
+      "d02": "SURGE",
+      "d04": "ABBOT",
+      "d06": "THERE"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-e4",
+   "title": "Expert weave 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Copy, as a parrot might"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Higher and grander"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Dull the shine of silver, or a reputation"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Small arm of the sea"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Conclude from the evidence"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Claim of being elsewhere at the time"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Soil, or the third planet"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "IMITATE",
+      "a20": "LOFTIER",
+      "a40": "TARNISH",
+      "d00": "INLET",
+      "d02": "INFER",
+      "d04": "ALIBI",
+      "d06": "EARTH"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-e5",
+   "title": "Expert weave 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Woman who performs on the stage"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Barbed spear once used by whalers"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Painted backdrop, or the view from a window"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "What remains after a fire, or a cricket trophy"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Number of blind mice"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Bring a memory to mind"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Like a beach"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "ACTRESS",
+      "a20": "HARPOON",
+      "a40": "SCENERY",
+      "d00": "ASHES",
+      "d02": "THREE",
+      "d04": "EVOKE",
+      "d06": "SANDY"
+     }
+    ],
+    "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  }
+ ]
+}
