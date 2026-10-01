@@ -2655,6 +2655,3344 @@
     "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once.",
     "themeNote": "PIECES names the theme: the other answers are the chess pieces that move on the sixty-four squares."
    }
+  },
+  {
+   "id": "hwt-g6",
+   "title": "Gentle trail 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "CRELU",
+     "INLRH",
+     "LKEUC",
+     "OOBPN"
+    ],
+    "theme": "In the school bag",
+    "answers": [
+     {
+      "word": "BOOK",
+      "path": [
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Something to read, with pages"
+     },
+     {
+      "word": "RULER",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "clue": "Used to draw straight lines"
+     },
+     {
+      "word": "PENCIL",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Writing tool you can sharpen"
+     },
+     {
+      "word": "LUNCH",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Midday meal, often packed in a box"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g7",
+   "title": "Gentle trail 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "PORSE",
+     "HECOW",
+     "EHSUD",
+     "GIPKC"
+    ],
+    "theme": "On the farm",
+    "answers": [
+     {
+      "word": "HORSE",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Animal you can ride"
+     },
+     {
+      "word": "SHEEP",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Woolly grazer on the hillside"
+     },
+     {
+      "word": "DUCK",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Quacking bird that paddles on the pond"
+     },
+     {
+      "word": "COW",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Gives us milk"
+     },
+     {
+      "word": "PIG",
+      "path": [
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Pink animal that oinks"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g8",
+   "title": "Gentle trail 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "CAHSI",
+     "IBTPF",
+     "DRYNO",
+     "MOUSE"
+    ],
+    "theme": "Pets",
+    "answers": [
+     {
+      "word": "CAT",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Purring pet that chases mice"
+     },
+     {
+      "word": "FISH",
+      "path": [
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Pet that lives in a tank"
+     },
+     {
+      "word": "BIRD",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Pet that might sing in a cage"
+     },
+     {
+      "word": "MOUSE",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Small pet with whiskers and a long tail"
+     },
+     {
+      "word": "PONY",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Small horse"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g9",
+   "title": "Gentle trail 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "CICLR",
+     "RLAEA",
+     "OVERT",
+     "SQUAS"
+    ],
+    "theme": "Shapes",
+    "answers": [
+     {
+      "word": "CIRCLE",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Perfectly round shape"
+     },
+     {
+      "word": "SQUARE",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Four equal sides and four right angles"
+     },
+     {
+      "word": "OVAL",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Egg-shaped outline"
+     },
+     {
+      "word": "STAR",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Shape with points, like those in the night sky"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-g10",
+   "title": "Gentle trail 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "LPOIB",
+     "ABAIX",
+     "NTKAA",
+     "EETCR"
+    ],
+    "theme": "Getting about",
+    "answers": [
+     {
+      "word": "BOAT",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Floats on water"
+     },
+     {
+      "word": "BIKE",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Two wheels and pedals"
+     },
+     {
+      "word": "PLANE",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Flies between airports"
+     },
+     {
+      "word": "TAXI",
+      "path": [
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Cab you hail to take you somewhere"
+     },
+     {
+      "word": "CAR",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Four wheels and an engine"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s6",
+   "title": "Standard trail 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "BRAANP",
+     "ELYODA",
+     "TZIEMN",
+     "EILKKO",
+     "RGAAON"
+    ],
+    "theme": "At the zoo",
+    "answers": [
+     {
+      "word": "TIGER",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Big striped cat"
+     },
+     {
+      "word": "ZEBRA",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Stripy horse-like animal"
+     },
+     {
+      "word": "LION",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "King of the jungle, they say"
+     },
+     {
+      "word": "MONKEY",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Climbs trees and loves bananas"
+     },
+     {
+      "word": "PANDA",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Black and white bamboo eater"
+     },
+     {
+      "word": "KOALA",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Eucalyptus-munching Australian"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s7",
+   "title": "Standard trail 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "GURDOJ",
+     "BTEFUO",
+     "YSLKCL",
+     "INORCO",
+     "TENGIP"
+    ],
+    "theme": "Sports",
+    "answers": [
+     {
+      "word": "CRICKET",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "clue": "Bat and ball game with wickets and stumps"
+     },
+     {
+      "word": "TENNIS",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Played with rackets over a net"
+     },
+     {
+      "word": "RUGBY",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Game with an oval ball and a scrum"
+     },
+     {
+      "word": "GOLF",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Hit a small ball round eighteen holes"
+     },
+     {
+      "word": "JUDO",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Martial art with throws and coloured belts"
+     },
+     {
+      "word": "POLO",
+      "path": [
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "Played on horseback with mallets"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s8",
+   "title": "Standard trail 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ALETLT",
+     "HSNAUR",
+     "SWEOSO",
+     "RHISMA",
+     "KADUQL"
+    ],
+    "theme": "Sea and river life",
+    "answers": [
+     {
+      "word": "SHARK",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Fish with a fin that cuts the surface"
+     },
+     {
+      "word": "WHALE",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Giant sea mammal that sings"
+     },
+     {
+      "word": "SQUID",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Sea creature that squirts ink"
+     },
+     {
+      "word": "SALMON",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Pink fish that leaps upstream"
+     },
+     {
+      "word": "TROUT",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Freshwater fish loved by anglers"
+     },
+     {
+      "word": "SEAL",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Whiskery swimmer that barks on rocks"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s9",
+   "title": "Standard trail 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "GRAGEE",
+     "ABFTNG",
+     "KOEELN",
+     "ILHDOU",
+     "TCROOM"
+    ],
+    "theme": "Rooms in a house",
+    "answers": [
+     {
+      "word": "KITCHEN",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Where the cooking is done"
+     },
+     {
+      "word": "BEDROOM",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "clue": "Room for sleeping"
+     },
+     {
+      "word": "LOUNGE",
+      "path": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Sitting room with a sofa"
+     },
+     {
+      "word": "GARAGE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Where the car is kept"
+     },
+     {
+      "word": "LOFT",
+      "path": [
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Space under the roof"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s10",
+   "title": "Standard trail 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "FFOOCC",
+     "HEECAO",
+     "SAILKS",
+     "EMUQSO",
+     "CIUJAD"
+    ],
+    "theme": "Things to drink",
+    "answers": [
+     {
+      "word": "COFFEE",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Brewed from roasted beans"
+     },
+     {
+      "word": "SQUASH",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Fruit cordial you dilute with water"
+     },
+     {
+      "word": "COCOA",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Hot chocolate drink"
+     },
+     {
+      "word": "JUICE",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Squeezed from oranges"
+     },
+     {
+      "word": "MILK",
+      "path": [
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "clue": "White drink from a cow"
+     },
+     {
+      "word": "SODA",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Fizzy drink"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-s11",
+   "title": "Standard trail 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "CARRON",
+     "EANSTO",
+     "PESAIO",
+     "CEKREN",
+     "LELEYB"
+    ],
+    "theme": "In the veg patch",
+    "answers": [
+     {
+      "word": "CARROT",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Orange root vegetable"
+     },
+     {
+      "word": "ONION",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Layered bulb that makes you cry"
+     },
+     {
+      "word": "LEEK",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "Long cousin of the onion"
+     },
+     {
+      "word": "PEAS",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Round green seeds in a pod"
+     },
+     {
+      "word": "BEANS",
+      "path": [
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Runner or broad, they climb a cane"
+     },
+     {
+      "word": "CELERY",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Crunchy green stalks"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e5",
+   "title": "Expert trail 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "AMAISAD",
+     "EOGMGET",
+     "GMMAAAL",
+     "LAHTLDM",
+     "APABEBA"
+    ],
+    "theme": "Greek letters",
+    "answers": [
+     {
+      "word": "ALPHA",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "First letter of the Greek alphabet"
+     },
+     {
+      "word": "BETA",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "clue": "Second Greek letter, also an early test version"
+     },
+     {
+      "word": "GAMMA",
+      "path": [
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Third Greek letter, also a kind of ray"
+     },
+     {
+      "word": "DELTA",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Triangular Greek letter, also found at river mouths"
+     },
+     {
+      "word": "OMEGA",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Last letter of the Greek alphabet"
+     },
+     {
+      "word": "SIGMA",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Greek letter used for a sum"
+     },
+     {
+      "word": "LAMBDA",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ]
+      ],
+      "clue": "Greek letter that looks like an upside-down V"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e6",
+   "title": "Expert trail 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "FBAPEEW",
+     "RBRKEEH",
+     "EADADAL",
+     "LMDSLHN",
+     "ELELCIA"
+    ],
+    "theme": "Parts of a bicycle",
+    "answers": [
+     {
+      "word": "WHEEL",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        6
+       ]
+      ],
+      "clue": "Round part that turns on the road"
+     },
+     {
+      "word": "PEDAL",
+      "path": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Pushed by your foot"
+     },
+     {
+      "word": "CHAIN",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        6
+       ]
+      ],
+      "clue": "Links the pedals to the back wheel"
+     },
+     {
+      "word": "SADDLE",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Where the rider sits"
+     },
+     {
+      "word": "BRAKE",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Squeezed to slow down"
+     },
+     {
+      "word": "BELL",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Rung to warn pedestrians"
+     },
+     {
+      "word": "FRAME",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Tubular body of the bike"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e7",
+   "title": "Expert trail 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ISPKONA",
+     "CDLOAGT",
+     "AOLAETM",
+     "WLLBUII",
+     "ZTTEGNJ"
+    ],
+    "theme": "Take to the floor",
+    "answers": [
+     {
+      "word": "WALTZ",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Graceful dance in three-four time"
+     },
+     {
+      "word": "TANGO",
+      "path": [
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Passionate dance from Argentina"
+     },
+     {
+      "word": "BALLET",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Dance on points, with tutus"
+     },
+     {
+      "word": "POLKA",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Lively dance from Bohemia"
+     },
+     {
+      "word": "DISCO",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Dance style of the seventies, under a mirror ball"
+     },
+     {
+      "word": "MINUET",
+      "path": [
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Stately dance of the eighteenth century"
+     },
+     {
+      "word": "JIG",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Lively Irish dance"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e8",
+   "title": "Expert trail 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ARGADRE",
+     "LERDNAM",
+     "PBNOLET",
+     "EEMDMOA",
+     "RTAIAZP"
+    ],
+    "theme": "Precious stones and gems",
+    "answers": [
+     {
+      "word": "DIAMOND",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Hardest natural gemstone"
+     },
+     {
+      "word": "EMERALD",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Green gemstone"
+     },
+     {
+      "word": "GARNET",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Deep red gemstone, the January birthstone"
+     },
+     {
+      "word": "PEARL",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Grown inside an oyster"
+     },
+     {
+      "word": "TOPAZ",
+      "path": [
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "clue": "Golden or blue gemstone"
+     },
+     {
+      "word": "AMBER",
+      "path": [
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Fossilised tree resin"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e9",
+   "title": "Expert trail 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "COISNIR",
+     "RPILTOB",
+     "PEVROZN",
+     "ERESNER",
+     "LESTSAB"
+    ],
+    "theme": "Metals and alloys",
+    "answers": [
+     {
+      "word": "COPPER",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Reddish metal used in pipes and pennies"
+     },
+     {
+      "word": "SILVER",
+      "path": [
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Shiny metal for second-place medals"
+     },
+     {
+      "word": "BRONZE",
+      "path": [
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "clue": "Alloy for third-place medals"
+     },
+     {
+      "word": "STEEL",
+      "path": [
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Strong alloy of iron"
+     },
+     {
+      "word": "BRASS",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Yellow alloy used for instruments and door knobs"
+     },
+     {
+      "word": "IRON",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Metal that rusts"
+     },
+     {
+      "word": "TIN",
+      "path": [
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Metal used to coat cans"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e10",
+   "title": "Expert trail 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ILGRNTN",
+     "LCEIGUM",
+     "HIOPPEE",
+     "ARNERGA",
+     "SFFPECM"
+    ],
+    "theme": "Herbs and spices",
+    "answers": [
+     {
+      "word": "GINGER",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Hot root used in biscuits and beer"
+     },
+     {
+      "word": "PEPPER",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Ground at the table"
+     },
+     {
+      "word": "NUTMEG",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "clue": "Grated over custard"
+     },
+     {
+      "word": "CHILLI",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Fiery red pod"
+     },
+     {
+      "word": "SAFFRON",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "Costly golden spice from crocus flowers"
+     },
+     {
+      "word": "MACE",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Spice made from the covering of the nutmeg seed"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e11",
+   "title": "Expert trail 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "XBRLIEB",
+     "OEOELGA",
+     "SPCHUEL",
+     "AIOLLSE",
+     "NPEODKY"
+    ],
+    "theme": "Dog breeds",
+    "answers": [
+     {
+      "word": "POODLE",
+      "path": [
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Curly-coated breed, often clipped"
+     },
+     {
+      "word": "BEAGLE",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ]
+      ],
+      "clue": "Small hound with floppy ears"
+     },
+     {
+      "word": "BOXER",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Muscular breed with a flat face"
+     },
+     {
+      "word": "COLLIE",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Sheepdog from the Scottish hills"
+     },
+     {
+      "word": "HUSKY",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        6
+       ]
+      ],
+      "clue": "Sled-pulling breed"
+     },
+     {
+      "word": "SPANIEL",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Floppy-eared gundog"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
+  },
+  {
+   "id": "hwt-e12",
+   "title": "Expert trail 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "TBEENNT",
+     "EEMRTOE",
+     "HLORPBH",
+     "BRSTVAO",
+     "ANUICOD"
+    ],
+    "theme": "Headwear",
+    "answers": [
+     {
+      "word": "BERET",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Soft flat round cap, French style"
+     },
+     {
+      "word": "HELMET",
+      "path": [
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Worn by cyclists to protect the head"
+     },
+     {
+      "word": "BONNET",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "clue": "Baby's hat tied under the chin"
+     },
+     {
+      "word": "TURBAN",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Cloth wound round the head"
+     },
+     {
+      "word": "VISOR",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "clue": "Peak that shades the eyes"
+     },
+     {
+      "word": "HOOD",
+      "path": [
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        6
+       ]
+      ],
+      "clue": "Attached to the back of a coat"
+     },
+     {
+      "word": "CAP",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "clue": "Peaked hat worn by a baseball player"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
+   }
   }
  ]
 }

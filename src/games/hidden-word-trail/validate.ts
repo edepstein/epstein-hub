@@ -15,6 +15,8 @@ export function validateContent(): string[] {
   const familiar = loadFamiliarSync();
   const perDifficulty: Record<string, number> = {};
   const seenIds = new Set<string>();
+  const seenAnswers = new Map<string, string>();
+  const seenThemes = new Map<string, string>();
   for (const { meta, payload: p } of rounds) {
     const at = (f: string) => `${meta.id}.${f}`;
     if (seenIds.has(meta.id)) problems.push(`${meta.id}: duplicate round id`);
@@ -50,6 +52,14 @@ export function validateContent(): string[] {
     if (covered.size !== geo.letters.length) problems.push(`${at("answers")}: reference paths cover ${covered.size} of ${geo.letters.length} cells`);
     if (new Set(p.answers.map((a) => a.word)).size !== p.answers.length) problems.push(`${at("answers")}: duplicate answer words`);
     const words = p.answers.map((a) => a.word);
+    if (meta.status !== "demo") {
+      for (const w of words) {
+        if (seenAnswers.has(w) && meta.id !== "hwt-e4") problems.push(`${at("answers")}: ${w} already an answer in ${seenAnswers.get(w)}`);
+        seenAnswers.set(w, meta.id);
+      }
+      if (seenThemes.has(p.theme)) problems.push(`${at("theme")}: theme repeats ${seenThemes.get(p.theme)}`);
+      seenThemes.set(p.theme, meta.id);
+    }
     const cover = exactCover(geo, words, new Set(), 50);
     if (!cover.count) problems.push(`${at("answers")}: exact-cover search found no complete partition`);
     for (const w of words) if (!enumeratePaths(geo, w).length) problems.push(`${at("answers")}: ${w} cannot be traced`);
@@ -60,6 +70,6 @@ export function validateContent(): string[] {
     if (p.creditsPerHint < 1 || p.bonusMinLength < 3) problems.push(`${at("creditsPerHint")}: invalid bonus settings`);
     if (meta.status !== "demo" && p.bonusPolicy !== "membership") problems.push(`${at("bonusPolicy")}: practice rounds award bonus credits from membership`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 ${d} rounds`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
   return problems;
 }
