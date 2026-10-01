@@ -40,6 +40,13 @@ export interface TrailPayload {
   /** Distinct bonus words needed to earn one hint. */
   creditsPerHint: number;
   explanation: string;
+  /** Authoring/validation only: near-theme words proved untraceable on the grid. */
+  avoid?: string[];
+  /** Authoring/validation only: every familiar or uncommon word containing one of these is proved untraceable. */
+  avoidContaining?: string[];
+  avoidMin?: number;
+  /** Authoring/validation only: every other anagram of the answers' letters is proved untraceable. */
+  avoidAnagrams?: boolean;
 }
 
 export interface FoundAnswer {

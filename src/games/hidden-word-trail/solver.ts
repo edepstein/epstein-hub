@@ -101,13 +101,25 @@ export interface CoverResult {
 /**
  * Exact cover: can `words` be placed on non-overlapping paths that together cover every
  * cell not in `blocked` exactly once? Words may repeat in the list only if the round lists
- * them twice (not used by authored rounds).
+ * them twice (not used by authored rounds). With `distinctSets`, routes over the same squares count
+ * once, so `count` is the number of different ways to partition the squares among the words.
  */
-export function exactCover(g: Geometry, words: readonly string[], blocked: ReadonlySet<number> = new Set(), limit = 1): CoverResult {
+export function exactCover(g: Geometry, words: readonly string[], blocked: ReadonlySet<number> = new Set(), limit = 1, distinctSets = false): CoverResult {
   const free = g.letters.length - blocked.size;
   const need = words.reduce((s, w) => s + w.length, 0);
   if (need !== free) return { count: 0, first: null };
-  const options = words.map((w) => enumeratePaths(g, w, blocked));
+  const options = words.map((w) => {
+    const all = enumeratePaths(g, w, blocked);
+    if (!distinctSets) return all;
+    // Different routes over the same set of squares are one placement for tiling purposes.
+    const seen = new Set<string>();
+    return all.filter((p) => {
+      const key = [...p].sort((a, b) => a - b).join(",");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  });
   if (options.some((o) => !o.length)) return { count: 0, first: null };
   const taken = new Set(blocked);
   const placed = new Map<string, number[]>();

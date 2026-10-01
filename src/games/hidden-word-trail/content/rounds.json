@@ -5993,6 +5993,3962 @@
     "creditsPerHint": 3,
     "explanation": "Each theme word follows touching squares (diagonals allowed) and together they use every square exactly once."
    }
+  },
+  {
+   "id": "hwt-m1",
+   "title": "Master trail 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "TYURE",
+     "PATAR",
+     "FECGE",
+     "DCEID",
+     "SEENL"
+    ],
+    "theme": "Setting type",
+    "answers": [
+     {
+      "word": "TYPEFACE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "A complete design of lettering, such as Garamond"
+     },
+     {
+      "word": "LIGATURE",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Joined characters, such as fi or ae, cast or printed as one"
+     },
+     {
+      "word": "DESCENDER",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Part of a letter, like the tail of g or y, that hangs below the line"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "ASCENDER",
+     "KERNING",
+     "BASELINE",
+     "LEADING",
+     "FOOTNOTE",
+     "ITALICS",
+     "ITALIC",
+     "UNDERLINE",
+     "PARAGRAPH",
+     "MARGINS",
+     "SERIFS",
+     "OBLIQUE",
+     "GLYPH",
+     "BOLDFACE",
+     "TRACKING",
+     "HYPHEN",
+     "ELLIPSIS",
+     "CAPITALS",
+     "DIACRITIC",
+     "OCTAVO",
+     "COLOPHON",
+     "PICAS",
+     "POINTS",
+     "FONTS",
+     "FOLIOS",
+     "LOWERCASE",
+     "UPPERCASE",
+     "UNDERSCORE",
+     "SUBSCRIPT",
+     "ASTERISK",
+     "DAGGER",
+     "BRACKET",
+     "PARENTHESIS",
+     "SANSSERIF",
+     "CAPITAL",
+     "MONOSPACE",
+     "TYPESET",
+     "SERIF",
+     "FONT",
+     "TILDE",
+     "UMLAUT",
+     "CEDILLA",
+     "CIRCUMFLEX",
+     "APOSTROPHE"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m2",
+   "title": "Master trail 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ARENOR",
+     "TGNEIU",
+     "NEORMN",
+     "EEHOND",
+     "SUHCRE",
+     "CCTEVL"
+    ],
+    "theme": "The herald's art",
+    "answers": [
+     {
+      "word": "ARGENT",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Silver, in the language of blazon"
+     },
+     {
+      "word": "CHEVRON",
+      "path": [
+       [
+        5,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Inverted V on a shield"
+     },
+     {
+      "word": "ESCUTCHEON",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "The shield that carries a coat of arms"
+     },
+     {
+      "word": "ERMINE",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "White fur with black tails, one of the heraldic furs"
+     },
+     {
+      "word": "ROUNDEL",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        5
+       ]
+      ],
+      "clue": "A plain disc used as a charge"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "CANTON",
+     "SABLE",
+     "AZURE",
+     "GULES",
+     "BEZANT",
+     "DEXTER",
+     "SINISTER",
+     "ANNULET",
+     "MARTLET",
+     "BORDURE",
+     "SALTIRE",
+     "TINCTURE",
+     "LOZENGE",
+     "GRIFFIN",
+     "PALLETS",
+     "BLAZONRY",
+     "HERALDRY",
+     "CRESTED",
+     "MANTLING",
+     "BEARING",
+     "LION",
+     "ORDINARY",
+     "PURPURE",
+     "VERT",
+     "SALTIRES",
+     "CHARGE",
+     "LABEL",
+     "SHIELD",
+     "BLAZON",
+     "SUPPORTERS",
+     "MOTTO"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m3",
+   "title": "Master trail 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "HOOONE",
+     "MMHPLP",
+     "SRNOAI",
+     "IEODNO",
+     "ARAPRM",
+     "HCEDSE"
+    ],
+    "theme": "Games with words",
+    "answers": [
+     {
+      "word": "PALINDROME",
+      "path": [
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        5
+       ]
+      ],
+      "clue": "Reads the same forwards and backwards"
+     },
+     {
+      "word": "HOMOPHONE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "One of two words that sound alike but are spelt differently"
+     },
+     {
+      "word": "CHARADE",
+      "path": [
+       [
+        5,
+        1
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        2
+       ]
+      ],
+      "clue": "Syllable-by-syllable guessing puzzle, or a pretence"
+     },
+     {
+      "word": "SPOONERISM",
+      "path": [
+       [
+        5,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Slip of the tongue that swaps initial sounds, as in a well-boiled icicle"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "ANAGRAM",
+     "ACROSTIC",
+     "HOMONYM",
+     "PANGRAM",
+     "LIPOGRAM",
+     "ANTONYM",
+     "SYNONYM",
+     "ACRONYM",
+     "PALINDROMIC",
+     "MALAPROPISM",
+     "PORTMANTEAU",
+     "CONUNDRUM",
+     "EUPHEMISM",
+     "INITIALISM",
+     "TAUTOGRAM",
+     "LOGOGRIPH",
+     "METAGRAM",
+     "EPONYM",
+     "REBUS",
+     "ENIGMA",
+     "RIDDLE",
+     "CRYPTIC",
+     "ANAGRAMS",
+     "DOUBLET",
+     "ACROSTICS",
+     "HIDDEN"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m4",
+   "title": "Master trail 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "RTTETN",
+     "EEMARE",
+     "RTEEEP",
+     "AMHTTR",
+     "RTECOE",
+     "EEMAXH"
+    ],
+    "theme": "Scanning verse",
+    "answers": [
+     {
+      "word": "TROCHEE",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Foot of one stressed syllable followed by one unstressed"
+     },
+     {
+      "word": "TETRAMETER",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Verse line of four feet"
+     },
+     {
+      "word": "HEXAMETER",
+      "path": [
+       [
+        5,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "clue": "Epic line of six feet"
+     },
+     {
+      "word": "PENTAMETER",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Line of five feet, the second half of an elegiac couplet"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "TRIMETER",
+     "DACTYL",
+     "CAESURA",
+     "IAMBIC",
+     "ANAPAEST",
+     "ELEGIAC",
+     "DACTYLIC",
+     "TROCHAIC",
+     "SCANSION",
+     "STANZA",
+     "QUATRAIN",
+     "COUPLET",
+     "ANAPEST",
+     "PYRRHIC",
+     "SPONDEE",
+     "IAMBUS",
+     "DIMETER",
+     "HEPTAMETER",
+     "OCTAMETER",
+     "MONOMETER",
+     "DACTYLS",
+     "AMPHIBRACH",
+     "ENJAMBMENT",
+     "ASSONANCE",
+     "CONSONANCE",
+     "SPONDAIC",
+     "DACTYLICS"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m5",
+   "title": "Master trail 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ODZZIO",
+     "NEAIPD",
+     "LETCNA",
+     "IBCOSS",
+     "AAESCI",
+     "CTNRLG"
+    ],
+    "theme": "Italian on the music stand",
+    "answers": [
+     {
+      "word": "PIZZICATO",
+      "path": [
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "clue": "Plucked, an instruction to string players"
+     },
+     {
+      "word": "CRESCENDO",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Gradual increase in loudness"
+     },
+     {
+      "word": "CANTABILE",
+      "path": [
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "clue": "In a smooth, singing style"
+     },
+     {
+      "word": "GLISSANDO",
+      "path": [
+       [
+        5,
+        5
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "A slide from one note to another"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "STACCATO",
+     "LEGATO",
+     "TREMOLO",
+     "ARPEGGIO",
+     "ADAGIO",
+     "ALLEGRETTO",
+     "DIMINUENDO",
+     "FORTISSIMO",
+     "PIANISSIMO",
+     "SFORZANDO",
+     "ANDANTINO",
+     "MAESTOSO",
+     "SCHERZANDO",
+     "MORENDO",
+     "RALLENTANDO",
+     "OSTINATO",
+     "SOSTENUTO",
+     "TENUTO",
+     "MARCATO",
+     "SPIRITOSO",
+     "AGITATO",
+     "ANIMATO",
+     "CALANDO",
+     "CODETTA",
+     "FERMATA",
+     "ACCELERANDO",
+     "RITARDANDO",
+     "ALLEGRO",
+     "ANDANTE",
+     "LARGO",
+     "PRESTO",
+     "VIVACE",
+     "FORTE",
+     "PIANO",
+     "SOLO",
+     "DUETTO",
+     "CANTATA",
+     "SONATA"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m6",
+   "title": "Master trail 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "CSTOAD",
+     "AEBLER",
+     "RORIER",
+     "TAFRTK",
+     "SIPSAO",
+     "SPNNWB"
+    ],
+    "theme": "Fore and aft",
+    "answers": [
+     {
+      "word": "BOWSPRIT",
+      "path": [
+       [
+        5,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Spar that projects ahead of the front of a ship"
+     },
+     {
+      "word": "SPINNAKER",
+      "path": [
+       [
+        5,
+        0
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Balloon-like sail set for running before the wind"
+     },
+     {
+      "word": "FORECASTLE",
+      "path": [
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "clue": "Raised deck at the bow, once the crew's quarters"
+     },
+     {
+      "word": "STARBOARD",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "The right-hand side when facing the bow"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "MAINSAIL",
+     "FORESTAY",
+     "HALYARD",
+     "BACKSTAY",
+     "MIZZEN",
+     "GENOA",
+     "TILLER",
+     "LARBOARD",
+     "WINDWARD",
+     "LEEWARD",
+     "TACKING",
+     "GYBING",
+     "CLEAT",
+     "FAIRLEAD",
+     "BATTEN",
+     "MAINSHEET",
+     "TOPSAIL",
+     "STAYSAIL",
+     "SPRITSAIL",
+     "CAPSTAN",
+     "WINDLASS",
+     "BOLLARD",
+     "GUNWALE",
+     "TRANSOM",
+     "KEELSON",
+     "CENTREBOARD",
+     "DAGGERBOARD",
+     "OUTHAUL",
+     "DOWNHAUL",
+     "FORESAIL",
+     "MAINMAST",
+     "FOREMAST",
+     "MIZZENMAST",
+     "POOPDECK",
+     "QUARTERDECK",
+     "BULKHEAD",
+     "BILGE",
+     "RUDDER",
+     "BOWLINE",
+     "GALLEY",
+     "HAWSER",
+     "ANCHOR",
+     "WINCH",
+     "SHEETS",
+     "STERN"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m7",
+   "title": "Master trail 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "MOAINN",
+     "CGRRIE",
+     "LRERUL",
+     "AERRAM",
+     "CEVDET",
+     "IASSIC"
+    ],
+    "theme": "Left by the ice",
+    "answers": [
+     {
+      "word": "DRUMLIN",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Streamlined hillock of glacial debris"
+     },
+     {
+      "word": "ERRATIC",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        5,
+        5
+       ]
+      ],
+      "clue": "Boulder carried far from its source by ice"
+     },
+     {
+      "word": "GLACIER",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "Slow river of ice"
+     },
+     {
+      "word": "CREVASSE",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Deep crack in a glacier"
+     },
+     {
+      "word": "MORAINE",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "Ridge of rubble pushed along or left by a glacier"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "CIRQUE",
+     "ESKER",
+     "TARN",
+     "ARETE",
+     "FJORD",
+     "SERAC",
+     "NUNATAK",
+     "ICEFALL",
+     "MOULIN",
+     "BERGSCHRUND",
+     "ICECAP",
+     "OUTWASH",
+     "KETTLEHOLE",
+     "ICEBERG",
+     "TILL",
+     "CIRQUES",
+     "ARETES",
+     "TARNS",
+     "FJORDS",
+     "GLACIAL",
+     "PERMAFROST",
+     "TUNDRA",
+     "MEGALITH"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m8",
+   "title": "Master trail 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "DSODES",
+     "EDIRLC",
+     "GLDBRA",
+     "NDREML",
+     "AERDEF",
+     "MESHUF"
+    ],
+    "theme": "Cryptic anagram indicators",
+    "answers": [
+     {
+      "word": "DISORDERED",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Not in the proper sequence"
+     },
+     {
+      "word": "RESHUFFLED",
+      "path": [
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        5,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "clue": "Mixed again, like a pack of cards"
+     },
+     {
+      "word": "SCRAMBLED",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Mixed up, like eggs"
+     },
+     {
+      "word": "MANGLED",
+      "path": [
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Crushed and twisted out of shape"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoid": [
+     "TWISTED",
+     "CONFUSED",
+     "DEMOLISHED",
+     "TANGLED",
+     "UNTIDY",
+     "BROKEN",
+     "CRAZY",
+     "WOBBLY",
+     "DAMAGED",
+     "RAMSHACKLE",
+     "MUDDLED",
+     "JUMBLED",
+     "CHAOTIC",
+     "SHATTERED",
+     "MASHED",
+     "RESTLESS",
+     "ADRIFT",
+     "UNRULY",
+     "RAVAGED",
+     "HAYWIRE",
+     "DISTORTED",
+     "ENTANGLED",
+     "RECAST",
+     "REARRANGED",
+     "TRANSFORMED",
+     "MUTATED",
+     "CONVERTED",
+     "FIDDLED",
+     "MISHANDLED",
+     "BOTCHED",
+     "BUNGLED",
+     "ABSTRUSE",
+     "ROTTEN",
+     "ILLICIT",
+     "DRUNK",
+     "TIPSY",
+     "DODGY",
+     "SHUFFLED",
+     "ADJUSTED",
+     "AMENDED",
+     "ALTERED",
+     "ABUSED",
+     "CRUSHED",
+     "SMASHED",
+     "WRECKED",
+     "RUINED",
+     "LOOSE",
+     "PERVERTED",
+     "DISSOLVED",
+     "DISRUPTED",
+     "UPSET",
+     "ERRATIC",
+     "SCATTERED",
+     "TOSSED",
+     "SPOILT",
+     "SPOILED",
+     "ANGRY",
+     "WILD",
+     "MADLY",
+     "WORKING",
+     "RAMBLING",
+     "ROTATED",
+     "REVISED",
+     "REPAIRED",
+     "REFORMED",
+     "RESORTED",
+     "RELOCATED",
+     "REMODELLED",
+     "REORDERED",
+     "REGROUPED",
+     "MANIPULATED",
+     "MANAGED"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m9",
+   "title": "Master trail 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "IREAST",
+     "CFMSRE",
+     "LNIUYA",
+     "AONOHK",
+     "OKAHEM",
+     "ROMMSL"
+    ],
+    "theme": "Each hides a tree",
+    "answers": [
+     {
+      "word": "INFIRMARY",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "clue": "Hospital, or the sick quarters of a school or abbey"
+     },
+     {
+      "word": "HELMSMAN",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        5,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "clue": "The person at the wheel of a ship"
+     },
+     {
+      "word": "STEAKHOUSE",
+      "path": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Restaurant that specialises in grilled beef"
+     },
+     {
+      "word": "CLOAKROOM",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        5,
+        2
+       ]
+      ],
+      "clue": "Where coats and umbrellas are left"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoidContaining": [
+     "ELM",
+     "YEW",
+     "OAK",
+     "TEAK",
+     "FIR",
+     "ASH",
+     "PINE",
+     "LIME",
+     "PEAR",
+     "FIG",
+     "GUM",
+     "ALDER",
+     "PLUM",
+     "BOX",
+     "BAY",
+     "ELDER",
+     "ROWAN"
+    ],
+    "avoidMin": 6
+   }
+  },
+  {
+   "id": "hwt-m10",
+   "title": "Master trail 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "SEEWOO",
+     "AEHMNI",
+     "LBCSLE",
+     "HCUHER",
+     "IEIZHD",
+     "NINCAN"
+    ],
+    "theme": "Each hides a body part",
+    "answers": [
+     {
+      "word": "CHANDELIER",
+      "path": [
+       [
+        5,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        5,
+        4
+       ],
+       [
+        5,
+        5
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "clue": "Hanging light with many branches"
+     },
+     {
+      "word": "MOONSHINE",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        5,
+        2
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Illicitly distilled spirit, or nonsense"
+     },
+     {
+      "word": "WHEELBASE",
+      "path": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "clue": "Distance between the front and rear axles"
+     },
+     {
+      "word": "ZUCCHINI",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        5,
+        1
+       ]
+      ],
+      "clue": "Courgette, by its Italian name"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoidContaining": [
+     "SHIN",
+     "CHIN",
+     "HEEL",
+     "HAND",
+     "LIVER",
+     "LUNG",
+     "HEART",
+     "BACK",
+     "GUM",
+     "ARM",
+     "LEG",
+     "EAR",
+     "LIP",
+     "RIB",
+     "HIP",
+     "EYE",
+     "TOE",
+     "NAIL",
+     "KNEE",
+     "SKIN",
+     "BROW",
+     "FOOT",
+     "SPINE",
+     "THUMB",
+     "PALM",
+     "WRIST",
+     "ELBOW",
+     "ANKLE",
+     "THIGH",
+     "CALF",
+     "SOLE",
+     "SKULL",
+     "BONE",
+     "VEIN",
+     "GUT",
+     "NOSE",
+     "TOOTH",
+     "TONGUE"
+    ],
+    "avoidMin": 6
+   }
+  },
+  {
+   "id": "hwt-m11",
+   "title": "Master trail 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "TIISTE",
+     "INLLNN",
+     "NSTSIE",
+     "LSESET",
+     "ETLLIN"
+    ],
+    "theme": "Five anagrams of one word",
+    "answers": [
+     {
+      "word": "SILENT",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "clue": "Making no noise"
+     },
+     {
+      "word": "ENLIST",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Join the armed forces"
+     },
+     {
+      "word": "INLETS",
+      "path": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Narrow arms of the sea"
+     },
+     {
+      "word": "LISTEN",
+      "path": [
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "Pay attention to a sound"
+     },
+     {
+      "word": "TINSEL",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Glittering decoration for a Christmas tree"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoidAnagrams": true
+   }
+  },
+  {
+   "id": "hwt-e14",
+   "title": "Expert trail 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "BWARHND",
+     "BOPSUAE",
+     "IBVTRTE",
+     "NITAEAW",
+     "NGLETWT"
+    ],
+    "theme": "At the loom",
+    "answers": [
+     {
+      "word": "WARP",
+      "path": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Threads that run lengthwise on a loom"
+     },
+     {
+      "word": "WEAVING",
+      "path": [
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "clue": "Making cloth by interlacing threads",
+      "themeDefining": true
+     },
+     {
+      "word": "TARTAN",
+      "path": [
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Chequered Highland cloth"
+     },
+     {
+      "word": "BOBBIN",
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "clue": "Small reel that holds thread"
+     },
+     {
+      "word": "TWEED",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "clue": "Rough woollen cloth"
+     },
+     {
+      "word": "SHUTTLE",
+      "path": [
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "clue": "Carries the weft across the loom"
+     }
+    ],
+    "themeNote": "WEAVING names the theme: the other words are cloth and loom terms.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "WEFT",
+     "LOOM",
+     "DENIM",
+     "SPINDLE",
+     "TEXTILE",
+     "FABRIC",
+     "SATIN",
+     "VELVET",
+     "WOVEN",
+     "WEAVE",
+     "WEAVER",
+     "YARN",
+     "THREAD",
+     "CLOTH",
+     "KNITTING",
+     "LINEN",
+     "COTTON",
+     "WOOL",
+     "SPINNING",
+     "TWILL",
+     "SILK",
+     "HEDDLE",
+     "REED",
+     "SELVEDGE"
+    ]
+   }
+  },
+  {
+   "id": "hwt-e15",
+   "title": "Expert trail 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "DUSLAMT",
+     "MMEGRBR",
+     "TCYBDIU",
+     "AOTUBEM",
+     "CRNRSPR"
+    ],
+    "theme": "Four at a table",
+    "answers": [
+     {
+      "word": "BRIDGE",
+      "path": [
+       [
+        1,
+        5
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Card game of bids and tricks for four",
+      "themeDefining": true
+     },
+     {
+      "word": "RUBBER",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ]
+      ],
+      "clue": "Series of games, best of three"
+     },
+     {
+      "word": "CONTRACT",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "The final bid that must be made"
+     },
+     {
+      "word": "DUMMY",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Hand laid face up by declarer's partner"
+     },
+     {
+      "word": "TRUMPS",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "The suit that beats all others"
+     },
+     {
+      "word": "SLAM",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "clue": "Twelve or thirteen tricks won"
+     }
+    ],
+    "themeNote": "BRIDGE names the theme: the other words are terms of the card game.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "BIDDING",
+     "DEALER",
+     "TRICK",
+     "PARTNER",
+     "DECLARER",
+     "BIDS",
+     "HAND",
+     "SUIT",
+     "DOUBLE",
+     "REDOUBLE",
+     "NOTRUMPS",
+     "GAME",
+     "PASS",
+     "OPENER",
+     "DEFENDER",
+     "CARDS",
+     "TRICKS",
+     "DEALT",
+     "VULNERABLE"
+    ]
+   }
+  },
+  {
+   "id": "hwt-e16",
+   "title": "Expert trail 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "AREIEGA",
+     "TEHNAYT",
+     "HCOTTSN",
+     "ERRRUBO",
+     "STACALC"
+    ],
+    "theme": "A night out at the play",
+    "answers": [
+     {
+      "word": "BALCONY",
+      "path": [
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "clue": "Seats above the stalls"
+     },
+     {
+      "word": "ORCHESTRA",
+      "path": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Musicians playing in the pit"
+     },
+     {
+      "word": "CURTAIN",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Rises on the first act"
+     },
+     {
+      "word": "STAGE",
+      "path": [
+       [
+        2,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "clue": "Where the actors perform"
+     },
+     {
+      "word": "THEATRE",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Building for plays and musicals",
+      "themeDefining": true
+     }
+    ],
+    "themeNote": "THEATRE names the theme: the other words are parts of a playhouse.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "INTERVAL",
+     "SCRIPT",
+     "ACTRESS",
+     "ENCORE",
+     "PROMPT",
+     "WINGS",
+     "PROGRAMME",
+     "STALLS",
+     "CIRCLE",
+     "FOYER",
+     "AUDIENCE",
+     "ACTOR",
+     "PLAY",
+     "CAST",
+     "SCENE",
+     "DIRECTOR",
+     "LIGHTS",
+     "SPOTLIGHT",
+     "DRAMA",
+     "REHEARSAL",
+     "INTERMISSION",
+     "GALLERY",
+     "PERFORMANCE",
+     "COSTUME",
+     "PRODUCER",
+     "PIT",
+     "APPLAUSE",
+     "BOXES"
+    ]
+   }
+  },
+  {
+   "id": "hwt-e17",
+   "title": "Expert trail 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "PLNFORC",
+     "TOATAAM",
+     "IAEGWYR",
+     "TAULAAR",
+     "SRDGIIR"
+    ],
+    "theme": "All aboard",
+    "answers": [
+     {
+      "word": "RAILWAY",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "clue": "Line for trains",
+      "themeDefining": true
+     },
+     {
+      "word": "CARRIAGE",
+      "path": [
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "clue": "Passenger coach"
+     },
+     {
+      "word": "GUARD",
+      "path": [
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "clue": "Official who waves the flag and blows the whistle"
+     },
+     {
+      "word": "STATION",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Where trains stop for passengers"
+     },
+     {
+      "word": "PLATFORM",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ]
+      ],
+      "clue": "Where you wait for the train"
+     }
+    ],
+    "themeNote": "RAILWAY names the theme: the other words are parts of the system.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "SIGNAL",
+     "TICKET",
+     "ENGINE",
+     "TUNNEL",
+     "SLEEPER",
+     "TERMINUS",
+     "BUFFER",
+     "TIMETABLE",
+     "TRAIN",
+     "TRACK",
+     "LOCOMOTIVE",
+     "WAGON",
+     "SIGNALS",
+     "COACH",
+     "BRIDGE",
+     "VIADUCT",
+     "JUNCTION",
+     "DRIVER",
+     "CONDUCTOR",
+     "PORTER",
+     "TRACKS",
+     "POINTS",
+     "SIDING",
+     "TENDER",
+     "FOOTPLATE",
+     "FIREMAN",
+     "STOKER"
+    ]
+   }
+  },
+  {
+   "id": "hwt-e18",
+   "title": "Expert trail 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "ALRRETI",
+     "OITNAOS",
+     "HRARGRL",
+     "CTPCUOC",
+     "IPLUHHC"
+    ],
+    "theme": "Sunday morning",
+    "answers": [
+     {
+      "word": "ALTAR",
+      "path": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "clue": "Holy table"
+     },
+     {
+      "word": "PULPIT",
+      "path": [
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "clue": "Raised stand for the sermon"
+     },
+     {
+      "word": "ORGAN",
+      "path": [
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "clue": "Instrument with pipes and pedals"
+     },
+     {
+      "word": "CHURCH",
+      "path": [
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        3,
+        4
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Place of Christian worship",
+      "themeDefining": true
+     },
+     {
+      "word": "CLOISTER",
+      "path": [
+       [
+        3,
+        6
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "clue": "Covered walkway round a quadrangle"
+     },
+     {
+      "word": "CHOIR",
+      "path": [
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "clue": "Group of singers"
+     }
+    ],
+    "themeNote": "CHURCH names the theme: the other words are things found in or beside it.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "STEEPLE",
+     "VESTRY",
+     "BELFRY",
+     "NAVE",
+     "LECTERN",
+     "PEWS",
+     "CHAPEL",
+     "TRANSEPT",
+     "SPIRE",
+     "PRIEST",
+     "VICAR",
+     "BISHOP",
+     "HYMNAL",
+     "CRYPT",
+     "FONT",
+     "APSE",
+     "CHANCEL",
+     "STEEPLES",
+     "PARISH",
+     "BELLS",
+     "TOWER",
+     "ALMS",
+     "SERMON",
+     "HYMN"
+    ]
+   }
+  },
+  {
+   "id": "hwt-m12",
+   "title": "Master trail 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "RETSSU",
+     "RELTRL",
+     "TERUUS",
+     "LULUST",
+     "RESTLE"
+    ],
+    "theme": "Five rearrangements of one word",
+    "answers": [
+     {
+      "word": "SUTLER",
+      "path": [
+       [
+        3,
+        4
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "clue": "Camp follower who sold provisions to the army"
+     },
+     {
+      "word": "RUSTLE",
+      "path": [
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "clue": "Soft whispering sound, as of dry leaves"
+     },
+     {
+      "word": "RESULT",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Outcome"
+     },
+     {
+      "word": "LUSTRE",
+      "path": [
+       [
+        1,
+        5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "clue": "Soft sheen on a surface"
+     },
+     {
+      "word": "ULSTER",
+      "path": [
+       [
+        2,
+        3
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Long, loose overcoat"
+     }
+    ],
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "The theme words are the only way to cover every square exactly once on this larger grid. Each word is a recognisable but less common word, so the board rewards wide vocabulary; the computer check proves there is one tiling and that no other on-theme word from the checked lists can be traced.",
+    "avoidAnagrams": true
+   }
+  },
+  {
+   "id": "hwt-e13",
+   "title": "Expert trail 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "grid": [
+     "TETZECR",
+     "NTEAPCI",
+     "AORCUUG",
+     "EBRASJG",
+     "FLATREL"
+    ],
+    "theme": "Under canvas",
+    "answers": [
+     {
+      "word": "JUGGLER",
+      "path": [
+       [
+        3,
+        5
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "clue": "Keeps several balls in the air at once"
+     },
+     {
+      "word": "ACROBAT",
+      "path": [
+       [
+        3,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "clue": "Tumbler and balancer"
+     },
+     {
+      "word": "FLEA",
+      "path": [
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "clue": "Tiny performer in a famous kind of circus"
+     },
+     {
+      "word": "TRAPEZE",
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "clue": "Swinging bar for aerial artists"
+     },
+     {
+      "word": "TENT",
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "clue": "Canvas big top"
+     },
+     {
+      "word": "CIRCUS",
+      "path": [
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "clue": "Travelling show with clowns and acrobats",
+      "themeDefining": true
+     }
+    ],
+    "themeNote": "CIRCUS names the theme: the other words are things found under the big top.",
+    "bonusPolicy": "membership",
+    "bonusMinLength": 4,
+    "creditsPerHint": 3,
+    "explanation": "Reference paths spell the theme words and move only between neighbouring squares; the words tile the grid exactly once, and no other word from the checked theme list can be traced.",
+    "avoid": [
+     "CLOWN",
+     "RINGMASTER",
+     "STILTS",
+     "ELEPHANT",
+     "TIGHTROPE",
+     "BIGTOP",
+     "CANNON",
+     "RING",
+     "UNICYCLE",
+     "TAMER",
+     "ACTS",
+     "LION",
+     "ELEPHANT",
+     "HORSE",
+     "BEAR",
+     "SEAL"
+    ]
+   }
   }
  ]
 }

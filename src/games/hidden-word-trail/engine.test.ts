@@ -211,6 +211,17 @@ describe("content", () => {
     expect(validateContent()).toEqual([]);
   });
 
+  it("has twelve master rounds with a unique tiling on 5x5 to 6x6 grids", () => {
+    const master = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(master.length).toBeGreaterThanOrEqual(12);
+    for (const { meta, payload } of master) {
+      const geo = geometryFromGrid(payload.grid);
+      expect(exactCover(geo, payload.answers.map((a) => a.word), new Set(), 2, true).count, meta.id).toBe(1);
+      expect(geo.rows).toBeLessThanOrEqual(6);
+      expect(geo.cols).toBeLessThanOrEqual(6);
+    }
+  });
+
   it("every practice board has exactly the listed words tiling it (exact-cover proof)", () => {
     for (const { meta, payload } of rounds) {
       const geo = geometryFromGrid(payload.grid);

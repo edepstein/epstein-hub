@@ -56,6 +56,7 @@ export const definition: GameDefinition = {
           "Gentle: small grids, a plain theme and trails with few turns.",
           "Standard: larger grids and trails that change direction and cross row boundaries.",
           "Expert: an indirect theme with a theme-naming answer, longer trails with many turns, and letters shared between several words.",
+          "Master: 5 by 5 to 6 by 6 grids with only three to five long theme words (6 to 12 letters), drawn from specialist vocabulary, sets of anagrams or words that each hide something (a tree, a body part). The words are real but less common, so expect to recognise them rather than to use them every day. Each Master grid has exactly one way of covering every square, and the near-theme words a solver might try have been checked and cannot be traced. Bonus words still come from the full word list, which includes many obscure words.",
           "Each difficulty is a different set of grids. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },
@@ -63,7 +64,7 @@ export const definition: GameDefinition = {
         heading: "Result",
         points: [
           "There is no timer and no penalty for exploring. Your result shows how many theme words you found yourself, which were revealed, your bonus words and the hints you used.",
-          "Every newer grid has been checked by computer: the theme words fit together to cover every square.",
+          "Every newer grid has been checked by computer: the theme words fit together to cover every square. Expert and Master grids have exactly one tiling.",
         ],
       },
     ],

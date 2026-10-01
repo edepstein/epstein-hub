@@ -167,3 +167,25 @@ test("@mobile expert grid fits the phone without page overflow and plays by tapp
   await page.getByRole("button", { name: "Clear" }).click();
   await expect(page.getByTestId("trail-text")).not.toContainText("QU");
 });
+
+test("master round loads on a 5 by 5 grid and a full solve completes", async ({ page }) => {
+  const { readFileSync } = await import("node:fs");
+  const data = JSON.parse(readFileSync("src/games/hidden-word-trail/content/rounds.json", "utf8"));
+  const round = data.rounds.find((r: { id: string }) => r.id === "hwt-m1");
+  await page.goto("/play/hidden-word-trail/hwt-m1");
+  await expect(page.getByTestId("theme")).toContainText("Setting type");
+  await expect(page.getByTestId("cells-covered")).toHaveText("0 of 25");
+  // A one-square trail is refused with its reason and can be cleared.
+  await cell(page, 0, 0).click();
+  await page.getByRole("button", { name: "Submit trail" }).click();
+  await expect(feedback(page)).toContainText("at least 3 squares");
+  await page.getByRole("button", { name: "Clear" }).click();
+  for (const a of round.payload.answers) {
+    await tap(page, a.path as [number, number][]);
+    await page.getByRole("button", { name: "Submit trail" }).click();
+    await expect(feedback(page)).toContainText(`${a.word} found`);
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(page.getByTestId("cells-covered")).toHaveText("25 of 25");
+});
