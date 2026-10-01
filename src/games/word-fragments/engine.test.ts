@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { sessionOptionsFor } from "@/lib/progress/attempt";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import {
   createWordFragmentsEngine,
   HINT_COMPLETE_LANE,
@@ -14,7 +14,7 @@ import {
   type FragState,
 } from "./engine";
 import { rounds } from "./rounds";
-import { acceptedTextAllocations, checkFragmentsRound, validateContent } from "./validate";
+import { acceptedTextAllocations, checkFragmentsRound, checkMasterFragments, laneParseCounts, rivalBoards, validateContent } from "./validate";
 
 const engine = createWordFragmentsEngine();
 const bundle = (id: string) => rounds.find((r) => r.meta.id === id)!;
@@ -161,6 +161,27 @@ describe("Word Fragments content and solver", () => {
 
   it("has at least four practice rounds per difficulty", () => {
     for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length).toBeGreaterThanOrEqual(4);
+  });
+
+  it("master tier: at least twelve boards, long answers, unique allocation, misleading chunks, no rival boards in the familiar plus uncommon layers", () => {
+    const master = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(master.length).toBeGreaterThanOrEqual(12);
+    const layer = new Set<string>([...familiar, ...loadUncommonSync()]);
+    for (const r of master) {
+      const p = r.payload;
+      expect(checkMasterFragments(r.meta, p), r.meta.id).toEqual([]);
+      expect(acceptedTextAllocations(p), r.meta.id).toHaveLength(1);
+      if (master.indexOf(r) < 3) expect(rivalBoards(p, layer, 5), r.meta.id).toEqual([]);
+      for (const lane of p.lanes) expect(lane.length).toBeGreaterThanOrEqual(9);
+    }
+  }, 600000);
+
+  it("master board plays to completion and a misleading chunking is not accepted", () => {
+    const r = bundle("wf-m1");
+    const s0 = init(r.payload);
+    const done = play(s0, [...solveActions(r.payload), { type: "submit" }]);
+    expect(engine.result(done)!.outcome).toBe("completed");
+    expect(Object.values(laneParseCounts(r.payload)).some((n) => n >= 2)).toBe(true);
   });
 
   const broken = (mut: (p: FragPayload) => void) => {

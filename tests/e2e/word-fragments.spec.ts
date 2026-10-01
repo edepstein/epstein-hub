@@ -122,3 +122,24 @@ test("@mobile board fits a phone and tiles can be tapped into place", async ({ p
   await expect(page.getByTestId("lane-1-letters")).toContainText("BUT · 3 of 9");
   await expectNoHorizontalOverflow(page);
 });
+
+test("master board: long answers load, a wrong sharing-out is refused, and the unique allocation completes", async ({ page }) => {
+  await page.goto("/play/word-fragments/wf-m1");
+  await expect(page.getByTestId("tray").getByRole("button")).toHaveCount(16);
+  const lanes: string[][] = [
+    ["IN", "SA", "LUBR", "IOUS"],
+    ["SA", "LUBR", "IOUS"],
+    ["LU", "CU", "BR", "ATI", "ON"],
+    ["LU", "GU", "BRI", "OUS"],
+  ];
+  // Misleading: the same chunks spell INSALUBRIOUS from lane 2's pieces too, so swap two fragments first.
+  await placeFromTray(page, "SA", 1);
+  await placeFromTray(page, "IN", 1);
+  await expect(page.getByTestId("lane-1-letters")).toContainText("SAIN");
+  await page.getByRole("button", { name: "Undo last move" }).click();
+  await page.getByRole("button", { name: "Undo last move" }).click();
+  for (const [i, texts] of lanes.entries()) for (const t of texts) await placeFromTray(page, t, i + 1);
+  await expect(page.getByTestId("lane-1-letters")).toContainText("INSALUBRIOUS · 12 of 12 letters");
+  await page.getByRole("button", { name: "Submit board" }).click();
+  await expect(page.getByTestId("result-panel")).toHaveAttribute("data-outcome", "completed");
+});

@@ -55,6 +55,7 @@ export const definition: GameDefinition = {
           "Gentle: three compound words made of whole words, such as TEA + POT.",
           "Standard: fragments split inside words, with openings and endings that look as if they could swap.",
           "Expert: four lanes with repeated fragments (several identical tiles) and pieces that could start one word or end another.",
+          "Master: three or four long answers of nine to fourteen letters, with terse crossword-style clues, cut into two-to-four letter fragments. Chunks overlap on purpose, so a word can often be built from the tray in more than one way, and the same fragment may start one word and end another. A solver has proved that only one sharing-out of the whole tray spells every answer. Answers include less common words a strong player will know.",
           "Each difficulty is a different set of boards. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },
