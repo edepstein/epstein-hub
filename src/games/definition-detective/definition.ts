@@ -63,6 +63,7 @@ export const definition: GameDefinition = {
           "Gentle: familiar words with clear context and one tempting near-miss.",
           "Standard: distinctions of intensity, register and nearby meanings.",
           "Expert: words with several senses or common confusions, where one decisive phrase settles the meaning.",
+          "Master: rare and precise vocabulary of the kind a word-game expert has met, in sentences where the wrong definitions are near-synonyms or look-alike words (for example enormity, imminent versus immanent). One phrase settles the meaning; others only hint at it.",
           "Every difficulty keeps four definitions and three evidence phrases. Each has its own case files; the labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

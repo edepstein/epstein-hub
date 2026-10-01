@@ -1,3 +1,4 @@
+import { loadFamiliarSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { rounds } from "./rounds";
 
 /**
@@ -12,6 +13,8 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const words = new Map<string, string>();
+  const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
   for (const { meta, payload } of rounds) {
     perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
     if (payload.cases.length !== 3) problems.push(`${meta.id}.cases: expected 3 cases, found ${payload.cases.length}`);
@@ -24,6 +27,10 @@ export function validateContent(): string[] {
       if (words.has(w)) problems.push(`${at("word")}: ${w} already used in ${words.get(w)}`);
       words.set(w, meta.id);
       if (!c.sentence.toLowerCase().includes(w)) problems.push(`${at("sentence")}: does not contain the target word ${c.word}`);
+      if (meta.difficulty === "master" && (!uncommon.has(w.toUpperCase()) || familiar.has(w.toUpperCase()))) problems.push(`${at("word")}: master words must come from the uncommon layer (SCOWL 60 but not 35), ${c.word} does not`);
+      if (meta.difficulty === "master" && c.sentence.split(/\s+/).length < 18) problems.push(`${at("sentence")}: master sentences need enough context (18 words at least)`);
+      const spans = c.evidence.map((e) => [c.sentence.indexOf(e.text), c.sentence.indexOf(e.text) + e.text.length]);
+      if (meta.difficulty === "master" || meta.difficulty === "expert") for (let i = 0; i < spans.length; i++) for (let j = i + 1; j < spans.length; j++) if (spans[i][0] < spans[j][1] && spans[j][0] < spans[i][1]) problems.push(`${at("evidence")}: phrases ${i + 1} and ${j + 1} overlap in the sentence`);
       if (c.definitions.length !== 4) problems.push(`${at("definitions")}: expected exactly 4`);
       if (new Set(c.definitions.map((d) => d.id)).size !== c.definitions.length) problems.push(`${at("definitions")}: duplicate ids`);
       if (new Set(c.definitions.map((d) => d.text.toLowerCase())).size !== c.definitions.length) problems.push(`${at("definitions")}: duplicate texts`);
@@ -53,6 +60,7 @@ export function validateContent(): string[] {
       if (`${meta.title ?? ""} ${meta.id}`.toLowerCase().includes(w)) problems.push(`${meta.id}: title or id spoils ${w}`);
     });
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
+  const minimum: Record<string, number> = { gentle: 12, standard: 12, expert: 18, master: 12 };
+  for (const [d, n] of Object.entries(minimum)) if ((perDifficulty[d] ?? 0) < n) problems.push(`fewer than ${n} ${d} rounds`);
   return problems;
 }

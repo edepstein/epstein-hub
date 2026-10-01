@@ -114,3 +114,27 @@ test("@mobile case card fits a phone and long definitions wrap", async ({ page }
   await page.getByRole("button", { name: "Check definition and evidence" }).click();
   await expect(page.getByTestId("case-score-a")).toHaveText("80");
 });
+
+test("master file: near-synonym distractor is refused, decisive evidence earns full marks on all three cases", async ({ page }) => {
+  await page.goto("/play/definition-detective/dd-m1");
+  await expect(page.getByTestId("sentence")).toContainText("fulsome tribute");
+  await choose(page, "Generously abundant and warmly appreciated");
+  await page.getByRole("button", { name: "Check definition and evidence" }).click();
+  await expect(feedback(page)).toHaveAttribute("data-ok", "false");
+  await choose(page, "Flattering to excess, to the point of sounding insincere");
+  await choose(page, "so lavish was the praise and so thin the detail");
+  await page.getByRole("button", { name: "Check definition and evidence" }).click();
+  await expect(page.getByTestId("case-score-a")).toHaveText("100");
+  await page.getByTestId("case-tab-b").click();
+  await choose(page, "Artificially produced rather than spontaneous");
+  await choose(page, "whipped up the night before by a campaign group");
+  await page.getByRole("button", { name: "Check definition and evidence" }).click();
+  await expect(page.getByTestId("case-score-b")).toHaveText("100");
+  await page.getByTestId("case-tab-c").click();
+  await choose(page, "Jumping from one thing to another without plan or sustained effort");
+  await choose(page, "ten minutes on French verbs, an hour watching the rain");
+  await page.getByRole("button", { name: "Check definition and evidence" }).click();
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("100 of 100 points");
+});

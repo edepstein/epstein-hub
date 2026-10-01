@@ -230,6 +230,25 @@ describe("definition detective: order, restore and content", () => {
   it("validator passes; at least four practice files per difficulty", () => {
     expect(validateContent()).toEqual([]);
     for (const d of ["gentle", "standard", "expert"] as const) expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length).toBeGreaterThanOrEqual(4);
+    expect(rounds.filter((r) => r.meta.difficulty === "master").length).toBeGreaterThanOrEqual(12);
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(18);
+  });
+
+  it("master cases: four near-synonym definitions, the decisive phrase is a full clause, and each word is unique", () => {
+    const seen = new Set<string>();
+    for (const r of rounds.filter((x) => x.meta.difficulty === "master")) {
+      for (const c of r.payload.cases) {
+        expect(c.definitions).toHaveLength(4);
+        expect(c.evidence).toHaveLength(3);
+        const decisive = c.evidence.find((e) => e.id === c.answer.evidenceId)!;
+        // The decisive phrase is the longest and carries the proof: it is never the bare target word.
+        expect(decisive.text.toLowerCase()).not.toBe(c.word.toLowerCase());
+        expect(decisive.text.split(/\s+/).length).toBeGreaterThanOrEqual(5);
+        expect(seen.has(c.word), c.word).toBe(false);
+        seen.add(c.word);
+      }
+    }
+    expect(seen.size).toBeGreaterThanOrEqual(36);
   });
 
   it("every case in every file is solvable to 100", () => {

@@ -6145,6 +6145,3066 @@
      }
     ]
    }
+  },
+  {
+   "id": "dd-m1",
+   "title": "Master case file 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "fulsome",
+      "sentence": "The minister's fulsome tribute left the widow wondering whether he had ever met her husband, so lavish was the praise and so thin the detail.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Generously abundant and warmly appreciated"
+       },
+       {
+        "id": "d2",
+        "text": "Lengthy and tediously detailed"
+       },
+       {
+        "id": "d3",
+        "text": "Frank and unadorned"
+       },
+       {
+        "id": "d4",
+        "text": "Flattering to excess, to the point of sounding insincere"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The minister's fulsome tribute"
+       },
+       {
+        "id": "e2",
+        "text": "so lavish was the praise and so thin the detail"
+       },
+       {
+        "id": "e3",
+        "text": "left the widow wondering whether he had ever met her husband"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "Weigh how much praise there was against how much substance stood behind it.",
+      "whyNot": {
+       "d1": "Lavishness alone would fit, but the thin detail and the widow's doubt make the praise hollow, not warmly appreciated.",
+       "d2": "The sentence says the detail was thin, which is the opposite of detailed.",
+       "d3": "Lavish praise is the reverse of unadorned."
+      },
+      "eliminate": "d1",
+      "explanation": "Fulsome means flattering to excess, so much that it rings false. 'So lavish was the praise and so thin the detail' supplies both halves: too much, and not genuine. The widow's doubt only suggests insincerity; it would fit praise of any size.",
+      "learnMore": {
+       "definition": "Excessive in praise or flattery, to a degree that seems insincere.",
+       "example": "The candidate's fulsome thanks to every donor sounded rehearsed."
+      }
+     },
+     {
+      "id": "b",
+      "word": "factitious",
+      "sentence": "Her outrage at the council's plan was factitious, whipped up the night before by a campaign group that paid for the placards and the chanting, though most of the crowd had never heard of the scheme.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Concerned only with matters of fact"
+       },
+       {
+        "id": "d2",
+        "text": "Artificially produced rather than spontaneous"
+       },
+       {
+        "id": "d3",
+        "text": "Wholly imaginary, with no existence"
+       },
+       {
+        "id": "d4",
+        "text": "Genuine and deeply felt"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the council's plan"
+       },
+       {
+        "id": "e2",
+        "text": "most of the crowd had never heard of the scheme"
+       },
+       {
+        "id": "e3",
+        "text": "whipped up the night before by a campaign group that paid for the placards and the chanting"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "Ask where the outrage came from, and who arranged it.",
+      "whyNot": {
+       "d3": "The protest really took place; it was manufactured, not non-existent. That is the difference between factitious and fictitious.",
+       "d4": "An outrage organised and paid for by others is the opposite of heartfelt.",
+       "d1": "Nothing in the sentence concerns facts as such."
+      },
+      "eliminate": "d3",
+      "explanation": "Factitious means produced artificially, got up for effect. The campaign group's night-before organisation, paid placards and all, is the direct proof. The crowd's ignorance of the scheme is suggestive but would also fit a crowd that simply did not care.",
+      "learnMore": {
+       "definition": "Artificial, contrived, or got up for effect rather than arising naturally.",
+       "example": "The factitious urgency of the sale fooled nobody."
+      }
+     },
+     {
+      "id": "c",
+      "word": "desultory",
+      "sentence": "His revision was desultory: ten minutes on French verbs, an hour watching the rain, then a few pages of chemistry before he wandered off to find a snack.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Thorough and exhaustive"
+       },
+       {
+        "id": "d2",
+        "text": "Jumping from one thing to another without plan or sustained effort"
+       },
+       {
+        "id": "d3",
+        "text": "Deliberately slow and cautious"
+       },
+       {
+        "id": "d4",
+        "text": "Unenthusiastic yet carefully ordered"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "before he wandered off to find a snack"
+       },
+       {
+        "id": "e2",
+        "text": "ten minutes on French verbs, an hour watching the rain, then a few pages of chemistry"
+       },
+       {
+        "id": "e3",
+        "text": "His revision"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "Look at the order and the proportions of what he actually did.",
+      "whyNot": {
+       "d4": "He is unenthusiastic, but nothing here is ordered: the topics follow no plan.",
+       "d3": "The pace is irregular, not cautious.",
+       "d1": "A few minutes on each subject is the reverse of exhaustive."
+      },
+      "eliminate": "d3",
+      "explanation": "Desultory describes effort that skips about at random with no steady purpose. The list of unconnected, uneven bursts is decisive. Wandering off for a snack suggests weak commitment but says nothing about the lack of plan.",
+      "learnMore": {
+       "definition": "Lacking a plan or purpose; going from one thing to another at random.",
+       "example": "They kept up a desultory conversation about the weather."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m2",
+   "title": "Master case file 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "arrogate",
+      "sentence": "Within a month of taking office the chairman began to arrogate the right to approve every expense, although the rules gave that power to the full board.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Hand over to a deputy"
+       },
+       {
+        "id": "d2",
+        "text": "Praise as an example"
+       },
+       {
+        "id": "d3",
+        "text": "Claim or seize without justification"
+       },
+       {
+        "id": "d4",
+        "text": "Cancel formally by authority"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Within a month of taking office"
+       },
+       {
+        "id": "e2",
+        "text": "although the rules gave that power to the full board"
+       },
+       {
+        "id": "e3",
+        "text": "began to arrogate the right to approve every expense"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the rules say about whose power this was?",
+      "whyNot": {
+       "d4": "Cancelling a rule is abrogating, a similar-sounding word; the chairman is taking a power, not repealing anything.",
+       "d1": "He keeps the power himself rather than passing it to anyone.",
+       "d2": "Nothing in the sentence is praised."
+      },
+      "eliminate": "d4",
+      "explanation": "To arrogate is to take a right or power without having any entitlement to it. The rules giving the power to the board prove the chairman has no claim. The expense approvals only show what he is taking; they do not show that the taking is unjustified.",
+      "learnMore": {
+       "definition": "To claim or take something without any right to it.",
+       "example": "The new manager arrogated the best parking space to herself."
+      }
+     },
+     {
+      "id": "b",
+      "word": "nugatory",
+      "sentence": "Once the committee had cut his budget to almost nothing, the professor's role became nugatory: he could neither hire staff nor buy equipment, and no one asked his opinion.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Reluctantly shared"
+       },
+       {
+        "id": "d2",
+        "text": "Wickedly obstructive"
+       },
+       {
+        "id": "d3",
+        "text": "Highly secretive"
+       },
+       {
+        "id": "d4",
+        "text": "Of no real value or force"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "cut his budget to almost nothing"
+       },
+       {
+        "id": "e2",
+        "text": "he could neither hire staff nor buy equipment, and no one asked his opinion"
+       },
+       {
+        "id": "e3",
+        "text": "Once the committee"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "Ask what the professor was now able to achieve.",
+      "whyNot": {
+       "d2": "He obstructs nobody; he has simply lost all power to do anything.",
+       "d3": "Nothing is hidden from anyone.",
+       "d1": "Nothing is being shared."
+      },
+      "eliminate": "d2",
+      "explanation": "Nugatory means worthless or without effect. Being unable to hire, buy or even be consulted shows the role has lost all force. The budget cut is the cause, and suggests reduction without proving the role is meaningless.",
+      "learnMore": {
+       "definition": "Having no value, force or significance; trifling.",
+       "example": "After the merger her title was nugatory."
+      }
+     },
+     {
+      "id": "c",
+      "word": "saturnine",
+      "sentence": "The saturnine host barely smiled as the guests arrived, answering each greeting with a grunt, and stood by the fire for most of the evening with a face like wet slate.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Gloomy and sullen in manner"
+       },
+       {
+        "id": "d2",
+        "text": "Bright and sociable"
+       },
+       {
+        "id": "d3",
+        "text": "Pale from illness"
+       },
+       {
+        "id": "d4",
+        "text": "Elaborately polite"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "answering each greeting with a grunt, and stood by the fire for most of the evening with a face like wet slate"
+       },
+       {
+        "id": "e2",
+        "text": "The saturnine host"
+       },
+       {
+        "id": "e3",
+        "text": "barely smiled as the guests arrived"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "Compare how he behaves with how a host usually should.",
+      "whyNot": {
+       "d2": "A grunt and a slate-grey face are the opposite of sociable.",
+       "d3": "Nothing suggests he is unwell; the problem is mood, not health.",
+       "d4": "Grunting at greetings is far from polite."
+      },
+      "eliminate": "d3",
+      "explanation": "Saturnine describes a gloomy, brooding and unsmiling disposition. The grunts and the face like wet slate show it fully. Barely smiling is suggestive but could describe a shy or tired person.",
+      "learnMore": {
+       "definition": "Having a gloomy, slow-moving and moody temperament.",
+       "example": "He gave a saturnine shrug and went back to his book."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m3",
+   "title": "Master case file 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "tendentious",
+      "sentence": "The documentary was tendentious: every interviewee agreed with the director, the one dissenting expert was cut to a single sentence, and the closing music told viewers what to conclude.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Promoting a particular point of view, one-sidedly"
+       },
+       {
+        "id": "d2",
+        "text": "Tediously long"
+       },
+       {
+        "id": "d3",
+        "text": "Aimed at young viewers"
+       },
+       {
+        "id": "d4",
+        "text": "Lacking any firm opinion"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "every interviewee agreed with the director, the one dissenting expert was cut to a single sentence"
+       },
+       {
+        "id": "e2",
+        "text": "The documentary"
+       },
+       {
+        "id": "e3",
+        "text": "the closing music told viewers what to conclude"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "How were the different views on the subject handled?",
+      "whyNot": {
+       "d4": "A film that pushes its case so hard has plenty of opinion.",
+       "d2": "Length is never mentioned.",
+       "d3": "Nothing refers to the age of the audience."
+      },
+      "eliminate": "d4",
+      "explanation": "Tendentious means written or made to advance a cause, and so not balanced. Uniform agreement and a dissenter cut to one sentence is direct proof of one-sidedness. The closing music is suggestive of steering but does not on its own show one-sided content.",
+      "learnMore": {
+       "definition": "Expressing a strong point of view, especially a controversial one, in a biased way.",
+       "example": "The report was dismissed as a tendentious piece of lobbying."
+      }
+     },
+     {
+      "id": "b",
+      "word": "oleaginous",
+      "sentence": "The oleaginous salesman rubbed his hands, called every customer 'my dear friend' and praised each purchase as the finest he had seen in thirty years of trade.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Easily discouraged"
+       },
+       {
+        "id": "d2",
+        "text": "Honest and plain-spoken"
+       },
+       {
+        "id": "d3",
+        "text": "Ingratiating in a smooth, greasy way"
+       },
+       {
+        "id": "d4",
+        "text": "Made of or covered in oil"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The oleaginous salesman"
+       },
+       {
+        "id": "e2",
+        "text": "called every customer 'my dear friend' and praised each purchase as the finest he had seen in thirty years of trade"
+       },
+       {
+        "id": "e3",
+        "text": "rubbed his hands"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "Think about the manner of his speech rather than anything he is holding.",
+      "whyNot": {
+       "d4": "The word can mean oily in a literal way, but nothing in the sentence is made of or covered in oil.",
+       "d2": "His flattery is the reverse of plain speaking.",
+       "d1": "He is relentlessly pushy, not discouraged."
+      },
+      "eliminate": "d4",
+      "explanation": "Oleaginous, literally oily, is used of people who are unctuously flattering. Calling everyone a dear friend and praising every purchase to the skies is the direct evidence. Hand-rubbing is a common signal but would also fit someone who was cold.",
+      "learnMore": {
+       "definition": "Smooth and ingratiating to an unpleasant degree; also, oily.",
+       "example": "The oleaginous host kept pressing compliments on his guests."
+      }
+     },
+     {
+      "id": "c",
+      "word": "gnomic",
+      "sentence": "Her reply was gnomic: 'The river keeps no appointments,' she said, and declined to say anything more about whether she would come to the meeting.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Fully reasoned and explicit"
+       },
+       {
+        "id": "d2",
+        "text": "Short and wise-sounding but hard to interpret"
+       },
+       {
+        "id": "d3",
+        "text": "Spoken in a low voice"
+       },
+       {
+        "id": "d4",
+        "text": "Rudely abrupt"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "'The river keeps no appointments,' she said, and declined to say anything more"
+       },
+       {
+        "id": "e2",
+        "text": "whether she would come to the meeting"
+       },
+       {
+        "id": "e3",
+        "text": "Her reply"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "Ask whether you can tell what the reply actually means.",
+      "whyNot": {
+       "d4": "She is brief, but the saying is proverb-like, not simply rude.",
+       "d1": "An answer that leaves the question open is not explicit.",
+       "d3": "Her volume is never mentioned."
+      },
+      "eliminate": "d4",
+      "explanation": "Gnomic means pithy and aphoristic, often cryptic. A proverb-like line that leaves the meeting question unanswered is the decisive evidence. That she declined to say more suggests curtness but would equally fit plain refusal.",
+      "learnMore": {
+       "definition": "Expressed in short, memorable and often cryptic sayings.",
+       "example": "The oracle's gnomic pronouncements puzzled the king."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m4",
+   "title": "Master case file 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "recrudescence",
+      "sentence": "After a quiet winter the town saw a recrudescence of the fever in March, just when officials had begun to say the outbreak was over.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A formal inquiry"
+       },
+       {
+        "id": "d2",
+        "text": "A fresh outbreak after a period of abatement"
+       },
+       {
+        "id": "d3",
+        "text": "A gradual decline in numbers"
+       },
+       {
+        "id": "d4",
+        "text": "A sudden cure"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "After a quiet winter"
+       },
+       {
+        "id": "e2",
+        "text": "a recrudescence of the fever in March, just when officials had begun to say the outbreak was over"
+       },
+       {
+        "id": "e3",
+        "text": "the town saw"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "What had officials just been saying, and what happened next?",
+      "whyNot": {
+       "d3": "The fever returned rather than faded.",
+       "d1": "No inquiry is mentioned.",
+       "d4": "The opposite of a cure took place."
+      },
+      "eliminate": "d3",
+      "explanation": "Recrudescence is the breaking out again of something that had subsided. The fever coming back just as the outbreak was declared over is decisive. The quiet winter is suggestive of a lull but does not prove the return.",
+      "learnMore": {
+       "definition": "A new outbreak of something after a period of inactivity.",
+       "example": "The recrudescence of old rivalries soured the talks."
+      }
+     },
+     {
+      "id": "b",
+      "word": "feckless",
+      "sentence": "Fined twice for missing deadlines and once for losing the client's files, the feckless intern still turned up late on Friday with no apology and no explanation.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Unusually ambitious"
+       },
+       {
+        "id": "d2",
+        "text": "Careful to a fault"
+       },
+       {
+        "id": "d3",
+        "text": "Cheerfully generous"
+       },
+       {
+        "id": "d4",
+        "text": "Lacking in efficiency or sense of responsibility"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Fined twice for missing deadlines and once for losing the client's files"
+       },
+       {
+        "id": "e2",
+        "text": "the feckless intern"
+       },
+       {
+        "id": "e3",
+        "text": "turned up late on Friday with no apology and no explanation"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Look at the record of what he keeps failing to do.",
+      "whyNot": {
+       "d3": "Nothing suggests generosity.",
+       "d1": "He makes no effort to get ahead.",
+       "d2": "Losing files and missing deadlines is the opposite of careful."
+      },
+      "eliminate": "d2",
+      "explanation": "Feckless means ineffectual and irresponsible. The record of missed deadlines and lost files is the direct proof. Turning up late without apology is suggestive but could be a one-off lapse.",
+      "learnMore": {
+       "definition": "Lacking initiative or strength of character; irresponsible.",
+       "example": "Her feckless brother borrowed money again."
+      }
+     },
+     {
+      "id": "c",
+      "word": "prolix",
+      "sentence": "The speaker was so prolix that the chairman twice looked at his watch: a ten-minute point was stretched over an hour with digressions, repetitions and long quotations.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Fond of jokes"
+       },
+       {
+        "id": "d2",
+        "text": "Quick to anger"
+       },
+       {
+        "id": "d3",
+        "text": "Tediously long-winded"
+       },
+       {
+        "id": "d4",
+        "text": "Clear and economical"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the chairman twice looked at his watch"
+       },
+       {
+        "id": "e2",
+        "text": "a ten-minute point was stretched over an hour with digressions, repetitions and long quotations"
+       },
+       {
+        "id": "e3",
+        "text": "The speaker"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "Compare the length of the point with the time taken to make it.",
+      "whyNot": {
+       "d2": "His temper is never described.",
+       "d4": "Stretching a point over an hour is the opposite of economical.",
+       "d1": "No jokes are mentioned."
+      },
+      "eliminate": "d4",
+      "explanation": "Prolix means using too many words, wordy to the point of tedium. A ten-minute point stretched to an hour is the decisive evidence. The chairman's watch-checking suggests boredom but does not say why.",
+      "learnMore": {
+       "definition": "Using too many words; tediously lengthy.",
+       "example": "The contract was prolix and full of repeated clauses."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m5",
+   "title": "Master case file 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "captious",
+      "sentence": "The captious reviewer ignored the novel's design and spent three paragraphs on a misplaced comma, a doubtful date and a character's unlikely hat.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Generous with praise"
+       },
+       {
+        "id": "d2",
+        "text": "Hard to please because of high standards"
+       },
+       {
+        "id": "d3",
+        "text": "Easily confused"
+       },
+       {
+        "id": "d4",
+        "text": "Prone to finding petty faults"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "spent three paragraphs on a misplaced comma, a doubtful date and a character's unlikely hat"
+       },
+       {
+        "id": "e2",
+        "text": "ignored the novel's design"
+       },
+       {
+        "id": "e3",
+        "text": "The captious reviewer"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Notice what kind of defects he chooses to write about.",
+      "whyNot": {
+       "d2": "High standards would look at the book's design; he ignores it and fixes on trivia, so this is pettiness, not rigour.",
+       "d1": "He is stingy, not generous.",
+       "d3": "He is quite sure of his objections, not confused."
+      },
+      "eliminate": "d2",
+      "explanation": "Captious means eager to find fault over trifles. Three paragraphs on a comma, a date and a hat are the decisive evidence of petty fault-finding. Ignoring the novel's design is suggestive but could equally mark a reviewer with a different focus.",
+      "learnMore": {
+       "definition": "Tending to find fault or raise petty objections.",
+       "example": "Her captious questions delayed the meeting."
+      }
+     },
+     {
+      "id": "b",
+      "word": "effete",
+      "sentence": "Once the empire's proudest family, the house had become effete: its heirs could do little but quarrel over silver while the estates went unmanaged and the old name earned only polite smiles.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Elegantly refined"
+       },
+       {
+        "id": "d2",
+        "text": "Extremely wealthy"
+       },
+       {
+        "id": "d3",
+        "text": "Worn out and lacking vigour"
+       },
+       {
+        "id": "d4",
+        "text": "Soft-hearted"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Once the empire's proudest family"
+       },
+       {
+        "id": "e2",
+        "text": "the old name earned only polite smiles"
+       },
+       {
+        "id": "e3",
+        "text": "its heirs could do little but quarrel over silver while the estates went unmanaged"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "Compare what the family once was with what its heirs can now do.",
+      "whyNot": {
+       "d1": "Refinement is not the point; the family has lost its strength.",
+       "d4": "Their quarrelling shows no tenderness.",
+       "d2": "Their estates are unmanaged and their power is gone; wealth is not what is described."
+      },
+      "eliminate": "d2",
+      "explanation": "Effete here means exhausted, having lost the capacity to achieve. Heirs reduced to quarrelling while estates go unmanaged is the decisive proof. The fall from the proudest family is the starting point and suggests decline without showing incapacity.",
+      "learnMore": {
+       "definition": "Having lost vitality or strength; ineffectual.",
+       "example": "Critics called the regime an effete survivor of an earlier age."
+      }
+     },
+     {
+      "id": "c",
+      "word": "sententious",
+      "sentence": "The sententious uncle never gave an opinion without a moral: 'Waste not, want not,' he intoned over the leftovers, and 'Pride comes before a fall' when anyone won at cards.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Quick to take offence"
+       },
+       {
+        "id": "d2",
+        "text": "Silent and withdrawn"
+       },
+       {
+        "id": "d3",
+        "text": "Concise and witty"
+       },
+       {
+        "id": "d4",
+        "text": "Given to pompous moralising"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The sententious uncle"
+       },
+       {
+        "id": "e2",
+        "text": "never gave an opinion without a moral"
+       },
+       {
+        "id": "e3",
+        "text": "'Waste not, want not,' he intoned over the leftovers, and 'Pride comes before a fall' when anyone won at cards"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "Look at how he phrases remarks and what he attaches to them.",
+      "whyNot": {
+       "d3": "Stock proverbs delivered solemnly are the opposite of witty.",
+       "d2": "He talks constantly.",
+       "d1": "Nobody takes offence in the sentence."
+      },
+      "eliminate": "d3",
+      "explanation": "Sententious means fond of preaching in pompous, maxim-laden speech. Solemn proverbs on every occasion are the decisive evidence. Never giving an opinion without a moral is suggestive but states the habit without showing the pompous style.",
+      "learnMore": {
+       "definition": "Fond of moralising in a pompous way.",
+       "example": "The headmaster's sententious speech bored the pupils."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m6",
+   "title": "Master case file 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "mordant",
+      "sentence": "Her mordant wit left the dinner table silent: she described the host's famous soup as 'a bowl of reconsidered decisions', and nobody dared laugh until she did.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Bitingly sarcastic"
+       },
+       {
+        "id": "d2",
+        "text": "Dull and literal"
+       },
+       {
+        "id": "d3",
+        "text": "Gently affectionate"
+       },
+       {
+        "id": "d4",
+        "text": "Hesitant"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "nobody dared laugh until she did"
+       },
+       {
+        "id": "e2",
+        "text": "left the dinner table silent"
+       },
+       {
+        "id": "e3",
+        "text": "described the host's famous soup as 'a bowl of reconsidered decisions'"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "Consider the sting in the joke itself.",
+      "whyNot": {
+       "d3": "The joke has a cutting edge, not affection.",
+       "d2": "A cutting joke is not dull.",
+       "d4": "She makes the remark without hesitation."
+      },
+      "eliminate": "d3",
+      "explanation": "Mordant means sharply, caustically witty. The soup joke, an insult dressed as humour, is the decisive example. The silence at the table is suggestive of shock but would also follow a tactless remark with no wit at all.",
+      "learnMore": {
+       "definition": "Sharp and biting in expression.",
+       "example": "The columnist's mordant humour made her many enemies."
+      }
+     },
+     {
+      "id": "b",
+      "word": "jejune",
+      "sentence": "The play was received as jejune: its hero spoke in slogans, its villains twirled moustaches, and its closing speech announced that love conquers everything, as though no one had thought of it before.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Naive and simplistic"
+       },
+       {
+        "id": "d2",
+        "text": "Rigorously argued"
+       },
+       {
+        "id": "d3",
+        "text": "Deeply moving"
+       },
+       {
+        "id": "d4",
+        "text": "Unusually long"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "its hero spoke in slogans, its villains twirled moustaches"
+       },
+       {
+        "id": "e2",
+        "text": "The play was received"
+       },
+       {
+        "id": "e3",
+        "text": "announced that love conquers everything, as though no one had thought of it before"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "Look at how the characters and ideas are drawn.",
+      "whyNot": {
+       "d4": "Nothing suggests that it was lengthy.",
+       "d2": "Slogans and cartoon villains are the opposite of rigorous.",
+       "d3": "The reception is scorn, not emotion."
+      },
+      "eliminate": "d2",
+      "explanation": "Jejune means simplistic and lacking sophistication, often childish. Slogan-speaking heroes and moustache-twirling villains are direct evidence. The closing speech suggests naivety but would also fit sincere, well-handled sentiment.",
+      "learnMore": {
+       "definition": "Naive, simplistic and lacking in maturity; also dull.",
+       "example": "His jejune views on politics embarrassed his friends."
+      }
+     },
+     {
+      "id": "c",
+      "word": "lenitive",
+      "sentence": "The chemist offered a lenitive for the child's sore throat, a honeyed syrup that did not cure the infection but eased the pain and let her sleep.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A substance that kills germs"
+       },
+       {
+        "id": "d2",
+        "text": "A harsh stimulant"
+       },
+       {
+        "id": "d3",
+        "text": "A written warning"
+       },
+       {
+        "id": "d4",
+        "text": "Something that soothes pain or distress"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The chemist offered"
+       },
+       {
+        "id": "e2",
+        "text": "a honeyed syrup"
+       },
+       {
+        "id": "e3",
+        "text": "did not cure the infection but eased the pain and let her sleep"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "What did the syrup do, and what did it not do?",
+      "whyNot": {
+       "d1": "The sentence says it did not cure the infection.",
+       "d2": "Easing pain is the opposite of harsh stimulation.",
+       "d3": "Nothing is written."
+      },
+      "eliminate": "d1",
+      "explanation": "A lenitive is a soothing remedy that eases pain without curing. 'Eased the pain and let her sleep' with no cure is the decisive phrase. 'A honeyed syrup' is suggestive of a soothing medicine but would equally describe a flavoured cure.",
+      "learnMore": {
+       "definition": "A medicine or influence that soothes or relieves.",
+       "example": "The warm bath was a lenitive after a hard day."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m7",
+   "title": "Master case file 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "truckle",
+      "sentence": "Rather than defend his staff, the director would truckle to every demand from the board, nodding at each instruction and apologising for having inconvenienced them.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Argue forcefully against"
+       },
+       {
+        "id": "d2",
+        "text": "Pretend to be unaware"
+       },
+       {
+        "id": "d3",
+        "text": "Move heavy goods"
+       },
+       {
+        "id": "d4",
+        "text": "Submit meekly to someone in authority"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Rather than defend his staff"
+       },
+       {
+        "id": "e2",
+        "text": "every demand from the board"
+       },
+       {
+        "id": "e3",
+        "text": "nodding at each instruction and apologising for having inconvenienced them"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "Contrast how he treats the board with how he treats his staff.",
+      "whyNot": {
+       "d1": "He does not argue; he nods and apologises.",
+       "d3": "No goods are moved.",
+       "d2": "He acts, rather than pretending not to know."
+      },
+      "eliminate": "d1",
+      "explanation": "To truckle is to give way servilely. Nodding at every instruction and apologising is the decisive evidence of meekness. 'Rather than defend his staff' is suggestive of a failure of nerve but could also describe someone who was simply silent.",
+      "learnMore": {
+       "definition": "To submit or behave servilely to someone.",
+       "example": "She refused to truckle to the critics."
+      }
+     },
+     {
+      "id": "b",
+      "word": "immanent",
+      "sentence": "For the old gardener, divinity was immanent: he found it in the soil under his nails and the smell of rain on the beds, not in any cathedral or sermon.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "About to happen"
+       },
+       {
+        "id": "d2",
+        "text": "Standing above creation"
+       },
+       {
+        "id": "d3",
+        "text": "Hard to understand"
+       },
+       {
+        "id": "d4",
+        "text": "Present within the natural world itself"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "he found it in the soil under his nails and the smell of rain on the beds, not in any cathedral or sermon"
+       },
+       {
+        "id": "e2",
+        "text": "divinity was immanent"
+       },
+       {
+        "id": "e3",
+        "text": "For the old gardener"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Where does the gardener say the divine is located?",
+      "whyNot": {
+       "d1": "That is 'imminent'; nothing is about to occur.",
+       "d2": "Transcendent means above; he finds it in the earth, not above it.",
+       "d3": "He finds it plainly; nothing is obscure."
+      },
+      "eliminate": "d1",
+      "explanation": "Immanent means existing within, pervading the world. Finding divinity in soil and rain, not in a cathedral, is the decisive evidence. 'Divinity was immanent' states the word without showing where it lies.",
+      "learnMore": {
+       "definition": "Existing or operating within; inherent. (Not the same as imminent.)",
+       "example": "Spinoza saw God as immanent in nature."
+      }
+     },
+     {
+      "id": "c",
+      "word": "plangent",
+      "sentence": "From the valley came the plangent tolling of the abbey bell, a deep resonant note that seemed to hang in the cold air long after each stroke.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Loudly resonant, often with a mournful sound"
+       },
+       {
+        "id": "d2",
+        "text": "Quick and rhythmic"
+       },
+       {
+        "id": "d3",
+        "text": "Barely audible"
+       },
+       {
+        "id": "d4",
+        "text": "Sharply shrill"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "a deep resonant note that seemed to hang in the cold air long after each stroke"
+       },
+       {
+        "id": "e2",
+        "text": "From the valley came"
+       },
+       {
+        "id": "e3",
+        "text": "the plangent tolling of the abbey bell"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "What does the sound do in the air after the bell is struck?",
+      "whyNot": {
+       "d4": "A deep note is the opposite of shrill.",
+       "d2": "Slow tolling is not quick.",
+       "d3": "The note carries a long way, so it is not faint."
+      },
+      "eliminate": "d4",
+      "explanation": "Plangent describes a loud, deep, reverberating, often sad sound. A deep resonant note hanging in the air is decisive. 'Tolling of the abbey bell' suggests solemn sound but would fit a muffled bell as well.",
+      "learnMore": {
+       "definition": "Having a loud, resonant and often mournful sound.",
+       "example": "The cellist's plangent opening brought the hall to silence."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m8",
+   "title": "Master case file 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "obviate",
+      "sentence": "A single clear sign at the gate would obviate the need for a guard to explain the rules to every visitor, saving the cost of the post entirely.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Raise an objection to"
+       },
+       {
+        "id": "d2",
+        "text": "Remove the need for"
+       },
+       {
+        "id": "d3",
+        "text": "Make more obvious"
+       },
+       {
+        "id": "d4",
+        "text": "Postpone"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "saving the cost of the post entirely"
+       },
+       {
+        "id": "e2",
+        "text": "A single clear sign at the gate"
+       },
+       {
+        "id": "e3",
+        "text": "would obviate the need for a guard to explain the rules to every visitor"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "What happens to the guard's task once the sign is there?",
+      "whyNot": {
+       "d3": "The sign does not make anything more obvious to the guard; the word is about preventing a need.",
+       "d1": "Nobody is objecting.",
+       "d4": "The need is removed, not delayed."
+      },
+      "eliminate": "d3",
+      "explanation": "To obviate is to make something unnecessary by dealing with it beforehand. The sign removing the need to explain the rules is the direct evidence. The saving on the post is a consequence and only suggests the need has gone.",
+      "learnMore": {
+       "definition": "To remove a need or difficulty in advance.",
+       "example": "Better planning would obviate the problem."
+      }
+     },
+     {
+      "id": "b",
+      "word": "chary",
+      "sentence": "After the second scam, the old couple grew chary of strangers on the telephone, asking for a name, a number and a letter in writing before they would give any detail.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Friendly and talkative"
+       },
+       {
+        "id": "d2",
+        "text": "Cautious and wary"
+       },
+       {
+        "id": "d3",
+        "text": "Frightened of the telephone itself"
+       },
+       {
+        "id": "d4",
+        "text": "Mean with money"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "of strangers on the telephone"
+       },
+       {
+        "id": "e2",
+        "text": "After the second scam"
+       },
+       {
+        "id": "e3",
+        "text": "asking for a name, a number and a letter in writing before they would give any detail"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "Look at what they demand before sharing anything.",
+      "whyNot": {
+       "d1": "They are guarded, not friendly.",
+       "d4": "The sentence is about information, not money.",
+       "d3": "They use the phone; they are wary of callers."
+      },
+      "eliminate": "d3",
+      "explanation": "Chary means cautious and unwilling to take risks, particularly about giving or trusting. Insisting on proof before giving detail is the decisive evidence. The earlier scam suggests the reason but not the behaviour.",
+      "learnMore": {
+       "definition": "Cautious about giving or doing something.",
+       "example": "She was chary of making promises she could not keep."
+      }
+     },
+     {
+      "id": "c",
+      "word": "orotund",
+      "sentence": "The senator's orotund delivery filled the chamber: each vowel was rounded and prolonged, and each sentence swelled to a ringing finish, though the content could have been said in a line.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Confidential"
+       },
+       {
+        "id": "d2",
+        "text": "Hurried and breathless"
+       },
+       {
+        "id": "d3",
+        "text": "Thin and reedy"
+       },
+       {
+        "id": "d4",
+        "text": "Full and sonorous, often pompously so"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "each vowel was rounded and prolonged, and each sentence swelled to a ringing finish"
+       },
+       {
+        "id": "e2",
+        "text": "The senator's orotund delivery"
+       },
+       {
+        "id": "e3",
+        "text": "though the content could have been said in a line"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Listen to how he shapes the vowels and ends each sentence.",
+      "whyNot": {
+       "d3": "Rounded, ringing speech is the opposite of thin.",
+       "d2": "Prolonged vowels are not hurried.",
+       "d1": "A voice filling the chamber is not confidential."
+      },
+      "eliminate": "d3",
+      "explanation": "Orotund describes a rich, full voice, or pompous grandiloquent speech. Rounded vowels and swelling ringing endings are the decisive evidence. That the content could be said in a line suggests pomposity but not the sound of the voice.",
+      "learnMore": {
+       "definition": "Full, round and imposing in voice; pompous in style.",
+       "example": "The actor's orotund tones suited the part of the bishop."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m9",
+   "title": "Master case file 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "perspicuous",
+      "sentence": "The lawyer's summary was perspicuous: in two plain paragraphs the jury could see which facts mattered, how they connected, and what they were being asked to decide.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Impressively brief"
+       },
+       {
+        "id": "d2",
+        "text": "Shrewdly deceptive"
+       },
+       {
+        "id": "d3",
+        "text": "Clearly expressed and easy to understand"
+       },
+       {
+        "id": "d4",
+        "text": "Quick to notice small details"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "perspicuous"
+       },
+       {
+        "id": "e2",
+        "text": "The lawyer's summary"
+       },
+       {
+        "id": "e3",
+        "text": "in two plain paragraphs the jury could see which facts mattered, how they connected, and what they were being asked to decide"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "Is the quality described in the lawyer or in what he wrote?",
+      "whyNot": {
+       "d4": "Perspicacious describes a person quick to notice; here the thing described is the summary and its clarity.",
+       "d2": "Nothing suggests deception.",
+       "d1": "Two paragraphs are brief, but the point is that they are clear."
+      },
+      "eliminate": "d4",
+      "explanation": "Perspicuous means easily understood because clearly presented. The jury seeing facts, links and the question is the decisive evidence. 'The lawyer's summary' identifies what is described, but not the quality itself.",
+      "learnMore": {
+       "definition": "Clearly expressed and easily understood. (Not the same as perspicacious, meaning shrewd.)",
+       "example": "The guidance was perspicuous, and nobody needed to ask for help."
+      }
+     },
+     {
+      "id": "b",
+      "word": "pertinacious",
+      "sentence": "Rejected by fourteen publishers, the pertinacious author kept revising and resubmitting for six years until the fifteenth accepted the book.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Relevant to the matter"
+       },
+       {
+        "id": "d2",
+        "text": "Holding firmly to a purpose; persistent"
+       },
+       {
+        "id": "d3",
+        "text": "Bitterly resentful"
+       },
+       {
+        "id": "d4",
+        "text": "Easily satisfied"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "kept revising and resubmitting for six years until the fifteenth accepted the book"
+       },
+       {
+        "id": "e2",
+        "text": "the pertinacious author"
+       },
+       {
+        "id": "e3",
+        "text": "Rejected by fourteen publishers"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "What did the author do after each rejection?",
+      "whyNot": {
+       "d3": "Resentment is never described.",
+       "d4": "The author kept going despite setbacks; that is not easily satisfied.",
+       "d1": "'Pertinent' means relevant, a different word."
+      },
+      "eliminate": "d1",
+      "explanation": "Pertinacious means stubbornly persistent. Six years of revising and resubmitting until acceptance is the decisive evidence. The fourteen rejections show the obstacle but not that the author persisted.",
+      "learnMore": {
+       "definition": "Stubbornly persistent in a purpose or opinion.",
+       "example": "The pertinacious reporter waited outside the office for two days."
+      }
+     },
+     {
+      "id": "c",
+      "word": "sinecure",
+      "sentence": "His title of Keeper of the Royal Swans was a sinecure: it paid handsomely, required nothing of him beyond attendance at one dinner a year, and the swans were looked after by others.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A well-paid position that demands little work"
+       },
+       {
+        "id": "d2",
+        "text": "A difficult and dangerous post"
+       },
+       {
+        "id": "d3",
+        "text": "An honorary title with no pay"
+       },
+       {
+        "id": "d4",
+        "text": "A position held by election"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "His title of Keeper of the Royal Swans"
+       },
+       {
+        "id": "e2",
+        "text": "the swans were looked after by others"
+       },
+       {
+        "id": "e3",
+        "text": "it paid handsomely, required nothing of him beyond attendance at one dinner a year"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "Compare the pay with the amount of work.",
+      "whyNot": {
+       "d2": "It demands almost nothing, so it is not difficult or dangerous.",
+       "d4": "Nothing is said about voting.",
+       "d3": "It is not unpaid: it paid handsomely."
+      },
+      "eliminate": "d3",
+      "explanation": "A sinecure is a post with good pay and little or no work. 'Paid handsomely, required nothing beyond one dinner a year' states both halves. Others looking after the swans is suggestive but would also fit a post with modest pay.",
+      "learnMore": {
+       "definition": "A position that brings reward but requires little or no work.",
+       "example": "The committee seat was a sinecure."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m10",
+   "title": "Master case file 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "meretricious",
+      "sentence": "The hotel's meretricious splendour, all gilt plastic and fake marble, soon faded under the eyes of guests who noticed the stained carpets behind the grand entrance.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Sumptuous and well made"
+       },
+       {
+        "id": "d2",
+        "text": "Outdated and plain"
+       },
+       {
+        "id": "d3",
+        "text": "Showy but cheap and without real worth"
+       },
+       {
+        "id": "d4",
+        "text": "Immoral in character"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "all gilt plastic and fake marble"
+       },
+       {
+        "id": "e2",
+        "text": "soon faded under the eyes of guests who noticed the stained carpets"
+       },
+       {
+        "id": "e3",
+        "text": "The hotel's meretricious splendour"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "What is the splendour actually made of?",
+      "whyNot": {
+       "d1": "Real luxury is not made of plastic and fake marble.",
+       "d4": "The word has an old sense of immorality, but this sentence concerns a showy surface.",
+       "d2": "The place is grand in appearance, not plain."
+      },
+      "eliminate": "d4",
+      "explanation": "Meretricious means attractive in a flashy way but of no real value. Gilt plastic and fake marble is the decisive evidence. The guests noticing stained carpets is suggestive of poor quality but does not name the false glitter.",
+      "learnMore": {
+       "definition": "Superficially attractive but without real value.",
+       "example": "The film's meretricious glamour hid a thin plot."
+      }
+     },
+     {
+      "id": "b",
+      "word": "minatory",
+      "sentence": "The letter's tone was minatory: it listed the fines, named the date by which the debt must be settled and ended with the words 'we will not write again'.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Apologetic"
+       },
+       {
+        "id": "d2",
+        "text": "Confused"
+       },
+       {
+        "id": "d3",
+        "text": "Threatening"
+       },
+       {
+        "id": "d4",
+        "text": "Casual"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "minatory"
+       },
+       {
+        "id": "e2",
+        "text": "The letter's tone"
+       },
+       {
+        "id": "e3",
+        "text": "it listed the fines, named the date by which the debt must be settled and ended with the words 'we will not write again'"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "What does the letter promise will happen if nothing is done?",
+      "whyNot": {
+       "d1": "Nothing in the letter says sorry.",
+       "d4": "A dated demand with penalties is formal, not casual.",
+       "d2": "It is perfectly clear."
+      },
+      "eliminate": "d1",
+      "explanation": "Minatory means threatening or menacing. The listing of fines, a deadline and a final warning is the decisive evidence. The debt itself is suggestive of the setting but a debt letter can be polite.",
+      "learnMore": {
+       "definition": "Expressing or conveying a threat.",
+       "example": "The minatory glare of the guard kept them back."
+      }
+     },
+     {
+      "id": "c",
+      "word": "quotidian",
+      "sentence": "The diarist recorded only the quotidian: bread bought, the dog walked, a neighbour's cough, the same grey sky over the same allotment, day after unremarkable day.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Ordinary and occurring every day"
+       },
+       {
+        "id": "d2",
+        "text": "Quoted from other sources"
+       },
+       {
+        "id": "d3",
+        "text": "Rare and exciting"
+       },
+       {
+        "id": "d4",
+        "text": "Unpleasant"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The diarist"
+       },
+       {
+        "id": "e2",
+        "text": "recorded only the quotidian"
+       },
+       {
+        "id": "e3",
+        "text": "bread bought, the dog walked, a neighbour's cough, the same grey sky over the same allotment, day after unremarkable day"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "What kinds of event does the diarist note down?",
+      "whyNot": {
+       "d3": "Bread and the dog are the opposite of rare and exciting.",
+       "d2": "Nothing is quoted from anyone.",
+       "d4": "These details are dull, not unpleasant."
+      },
+      "eliminate": "d3",
+      "explanation": "Quotidian means everyday and commonplace. The list of routine items day after unremarkable day is the decisive evidence. 'Recorded only the quotidian' states the word without showing the content.",
+      "learnMore": {
+       "definition": "Of or occurring every day; ordinary.",
+       "example": "The novel finds beauty in quotidian detail."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m11",
+   "title": "Master case file 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "expiate",
+      "sentence": "He tried to expiate his part in the fraud by working unpaid for the victims for a decade and handing over his savings, though no court had ordered it.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Hide from view"
+       },
+       {
+        "id": "d2",
+        "text": "Explain at length"
+       },
+       {
+        "id": "d3",
+        "text": "Bring to an end"
+       },
+       {
+        "id": "d4",
+        "text": "Make amends for wrongdoing"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "his part in the fraud"
+       },
+       {
+        "id": "e2",
+        "text": "though no court had ordered it"
+       },
+       {
+        "id": "e3",
+        "text": "working unpaid for the victims for a decade and handing over his savings"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "What did he do for the people he wronged?",
+      "whyNot": {
+       "d3": "He is making amends, not ending the fraud.",
+       "d1": "Nothing is hidden: he gives to the victims.",
+       "d2": "The sentence is about deeds, not explanations."
+      },
+      "eliminate": "d3",
+      "explanation": "To expiate is to atone for a wrong by suffering or making amends. Ten years unpaid for the victims and his savings is the decisive evidence. His part in the fraud gives the wrong but not the atonement.",
+      "learnMore": {
+       "definition": "To make amends or atone for guilt or wrongdoing.",
+       "example": "The king built a chapel to expiate his sin."
+      }
+     },
+     {
+      "id": "b",
+      "word": "desuetude",
+      "sentence": "The old guild hall fell into desuetude: its doors were no longer opened, its ceremonies no longer held and its charter forgotten in a drawer.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A state of disuse"
+       },
+       {
+        "id": "d2",
+        "text": "Public ridicule"
+       },
+       {
+        "id": "d3",
+        "text": "Great beauty"
+       },
+       {
+        "id": "d4",
+        "text": "Sudden destruction"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "its doors were no longer opened, its ceremonies no longer held and its charter forgotten in a drawer"
+       },
+       {
+        "id": "e2",
+        "text": "The old guild hall"
+       },
+       {
+        "id": "e3",
+        "text": "fell into desuetude"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "What had stopped happening at the hall?",
+      "whyNot": {
+       "d2": "Nobody mocks it; people have simply stopped using it.",
+       "d4": "Nothing destroys it suddenly; it fades.",
+       "d3": "Beauty is not discussed."
+      },
+      "eliminate": "d4",
+      "explanation": "Desuetude is the state of no longer being used. Doors unopened, ceremonies stopped and the charter forgotten is the decisive evidence. 'Fell into desuetude' repeats the idea but gives no demonstration.",
+      "learnMore": {
+       "definition": "A state of disuse.",
+       "example": "The custom has fallen into desuetude."
+      }
+     },
+     {
+      "id": "c",
+      "word": "adumbrate",
+      "sentence": "In his first speech the new leader did no more than adumbrate his plans, sketching the broad direction of reform but leaving every detail to be filled in later.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Cast a shadow over"
+       },
+       {
+        "id": "d2",
+        "text": "Reject firmly"
+       },
+       {
+        "id": "d3",
+        "text": "Describe in full detail"
+       },
+       {
+        "id": "d4",
+        "text": "Outline faintly or in general terms"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "did no more than adumbrate his plans"
+       },
+       {
+        "id": "e2",
+        "text": "sketching the broad direction of reform but leaving every detail to be filled in later"
+       },
+       {
+        "id": "e3",
+        "text": "In his first speech"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "How much detail does he give?",
+      "whyNot": {
+       "d1": "The word comes from shadow, but nobody is eclipsed here.",
+       "d2": "He does not reject anything.",
+       "d3": "The sentence says that every detail was left out."
+      },
+      "eliminate": "d1",
+      "explanation": "Adumbrate means to outline roughly or foreshadow. A broad sketch with every detail left for later is the decisive evidence. 'Did no more than' signals limited scope but does not show what he did.",
+      "learnMore": {
+       "definition": "To outline in a general way; to foreshadow.",
+       "example": "The early chapters adumbrate the conflict to come."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-m12",
+   "title": "Master case file 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "casuistry",
+      "sentence": "His casuistry was impressive: asked why he had kept the money, he argued that the owner had been careless, that finders have some claims, and that returning it would only encourage carelessness.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Plain honesty"
+       },
+       {
+        "id": "d2",
+        "text": "A system of banking"
+       },
+       {
+        "id": "d3",
+        "text": "Aggressive bullying"
+       },
+       {
+        "id": "d4",
+        "text": "Clever but misleading reasoning over fine points"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "he argued that the owner had been careless, that finders have some claims, and that returning it would only encourage carelessness"
+       },
+       {
+        "id": "e2",
+        "text": "His casuistry was impressive"
+       },
+       {
+        "id": "e3",
+        "text": "asked why he had kept the money"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Is his argument straightforward or does it twist the rules?",
+      "whyNot": {
+       "d1": "A string of excuses to keep the money is not plain honesty.",
+       "d2": "No banking is involved.",
+       "d3": "He argues; he does not bully."
+      },
+      "eliminate": "d1",
+      "explanation": "Casuistry is subtle reasoning that excuses wrong conduct by fine distinctions. A chain of clever excuses for keeping the money is the decisive evidence. 'Asked why he had kept the money' is suggestive of a defence but does not show its flaws.",
+      "learnMore": {
+       "definition": "Clever but unsound reasoning, especially on moral questions.",
+       "example": "The casuistry of the contract allowed the firm to avoid payment."
+      }
+     },
+     {
+      "id": "b",
+      "word": "inchoate",
+      "sentence": "The plan was still inchoate: a few sketches, a rough budget and a vague hope that someone would lend a field, with nothing yet decided about when or how it might begin.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Illegal in intent"
+       },
+       {
+        "id": "d2",
+        "text": "Completely finished"
+       },
+       {
+        "id": "d3",
+        "text": "Only just begun and not yet formed"
+       },
+       {
+        "id": "d4",
+        "text": "Deeply thought out"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "when or how it might begin"
+       },
+       {
+        "id": "e2",
+        "text": "a few sketches, a rough budget and a vague hope that someone would lend a field, with nothing yet decided"
+       },
+       {
+        "id": "e3",
+        "text": "The plan was still inchoate"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What stage has the plan reached?",
+      "whyNot": {
+       "d2": "Nothing is finished.",
+       "d1": "No wrongdoing is hinted.",
+       "d4": "Sketches and hope are not deep planning."
+      },
+      "eliminate": "d2",
+      "explanation": "Inchoate means rudimentary, just begun and undeveloped. Sketches, a rough budget, a vague hope and nothing decided is the decisive evidence. 'When or how it might begin' hints at incompleteness but may describe a plan that is only waiting for a start date.",
+      "learnMore": {
+       "definition": "Just begun and so not fully formed.",
+       "example": "Their ideas about the new club were still inchoate."
+      }
+     },
+     {
+      "id": "c",
+      "word": "mulct",
+      "sentence": "The unscrupulous landlord would mulct his tenants every winter, adding charges for heating that was never supplied and then deducting the sums from their deposits.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Praise publicly"
+       },
+       {
+        "id": "d2",
+        "text": "Protect from loss"
+       },
+       {
+        "id": "d3",
+        "text": "Extract money from by fraud or penalty"
+       },
+       {
+        "id": "d4",
+        "text": "Move out of"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The unscrupulous landlord"
+       },
+       {
+        "id": "e2",
+        "text": "every winter"
+       },
+       {
+        "id": "e3",
+        "text": "adding charges for heating that was never supplied and then deducting the sums from their deposits"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "How does he get money from the tenants?",
+      "whyNot": {
+       "d1": "He extracts, not praises.",
+       "d4": "He keeps tenants while charging them.",
+       "d2": "He takes money, so he does not protect them."
+      },
+      "eliminate": "d4",
+      "explanation": "To mulct is to deprive someone of money by a fine or by fraud. Charging for heating never supplied and deducting from deposits is the decisive evidence. 'Unscrupulous landlord' is suggestive of bad dealing but does not show the method.",
+      "learnMore": {
+       "definition": "To take money from someone by fine or deception.",
+       "example": "The firm was mulcted of thousands in hidden fees."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e13",
+   "title": "Expert case file 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "enormity",
+      "sentence": "The judge spoke of the enormity of the crime, a deliberate act of cruelty that had shocked the whole town and that no argument about the defendant's childhood could excuse.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Great secrecy"
+       },
+       {
+        "id": "d2",
+        "text": "Great difficulty"
+       },
+       {
+        "id": "d3",
+        "text": "Great wickedness"
+       },
+       {
+        "id": "d4",
+        "text": "Great size"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "a deliberate act of cruelty that had shocked the whole town"
+       },
+       {
+        "id": "e2",
+        "text": "The judge spoke of"
+       },
+       {
+        "id": "e3",
+        "text": "no argument about the defendant's childhood could excuse"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "Is the judge talking about the scale of the crime or its moral character?",
+      "whyNot": {
+       "d4": "Size is the common modern sense, but a judge condemning a cruel act is speaking of wickedness.",
+       "d2": "Nothing suggests the crime was hard to do.",
+       "d1": "The crime was known to the whole town, so it was not secret."
+      },
+      "eliminate": "d4",
+      "explanation": "Enormity, in careful usage, means outrageous wickedness rather than mere size. A deliberate act of cruelty that shocked the town is the decisive phrase. The refusal to excuse it suggests moral condemnation but does not itself define the word.",
+      "learnMore": {
+       "definition": "Extreme wickedness; also, loosely, great size.",
+       "example": "Nobody grasped the enormity of the betrayal until later."
+      }
+     },
+     {
+      "id": "b",
+      "word": "apposite",
+      "sentence": "Her quotation from the old poem proved apposite: it summed up in four lines exactly the mood of the gathering, and several guests nodded as she spoke.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Strikingly appropriate"
+       },
+       {
+        "id": "d2",
+        "text": "Directly opposed"
+       },
+       {
+        "id": "d3",
+        "text": "Long and elaborate"
+       },
+       {
+        "id": "d4",
+        "text": "Unfamiliar"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "it summed up in four lines exactly the mood of the gathering"
+       },
+       {
+        "id": "e2",
+        "text": "several guests nodded as she spoke"
+       },
+       {
+        "id": "e3",
+        "text": "Her quotation from the old poem"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "How well does the quotation match the occasion?",
+      "whyNot": {
+       "d2": "It agrees with the mood; it is not opposed to it.",
+       "d3": "Four lines are short.",
+       "d4": "It is an old poem the guests recognise."
+      },
+      "eliminate": "d2",
+      "explanation": "Apposite means very suitable. Four lines capturing exactly the mood is decisive. The nodding guests suggest agreement but would also follow a speech they merely liked.",
+      "learnMore": {
+       "definition": "Highly appropriate to the occasion or subject.",
+       "example": "It was an apposite remark."
+      }
+     },
+     {
+      "id": "c",
+      "word": "vicarious",
+      "sentence": "Grandfather took a vicarious delight in the climbing trips, listening for hours to his grandchildren's tales of ropes and ridges since his own knees no longer allowed him to leave the valley.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Felt through imagining someone else's experience"
+       },
+       {
+        "id": "d2",
+        "text": "Brief and passing"
+       },
+       {
+        "id": "d3",
+        "text": "Shared equally by all"
+       },
+       {
+        "id": "d4",
+        "text": "Reluctant and critical"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Grandfather took a vicarious delight"
+       },
+       {
+        "id": "e2",
+        "text": "listening for hours to his grandchildren's tales of ropes and ridges since his own knees no longer allowed him to leave the valley"
+       },
+       {
+        "id": "e3",
+        "text": "in the climbing trips"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "Does Grandfather go climbing himself?",
+      "whyNot": {
+       "d4": "He is happy, not critical.",
+       "d2": "He listens for hours, so it is not brief.",
+       "d3": "Nothing is said about other people's feelings."
+      },
+      "eliminate": "d2",
+      "explanation": "Vicarious means experienced through another person. Listening to the grandchildren because his knees keep him in the valley is the decisive evidence. The delight in the trips is suggestive but would be the same if he went himself.",
+      "learnMore": {
+       "definition": "Experienced in the imagination through another person's actions.",
+       "example": "She got vicarious pleasure from her son's success."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e14",
+   "title": "Expert case file 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "tenuous",
+      "sentence": "The prosecution's case rested on a tenuous link: a single hair, found a week later, on a coat the defendant had lent to three other people.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Tightly stretched"
+       },
+       {
+        "id": "d2",
+        "text": "Slight and weak"
+       },
+       {
+        "id": "d3",
+        "text": "Widely accepted"
+       },
+       {
+        "id": "d4",
+        "text": "Carefully hidden"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "a tenuous link"
+       },
+       {
+        "id": "e2",
+        "text": "a single hair, found a week later, on a coat the defendant had lent to three other people"
+       },
+       {
+        "id": "e3",
+        "text": "The prosecution's case rested on"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "How strong is the connection between the hair and the defendant?",
+      "whyNot": {
+       "d1": "Stretched thin is the root image, but the sentence is about weakness of evidence.",
+       "d4": "Nothing is hidden: the hair was found.",
+       "d3": "A coat lent to others makes the connection doubtful."
+      },
+      "eliminate": "d3",
+      "explanation": "Tenuous means very slight, with little to support it. A single hair on a widely lent coat found a week later is decisive. 'Rested on' is suggestive of dependence but does not say how flimsy the support is.",
+      "learnMore": {
+       "definition": "Very weak or slight.",
+       "example": "He had only a tenuous grasp of the plot."
+      }
+     },
+     {
+      "id": "b",
+      "word": "sophistry",
+      "sentence": "The speech was pure sophistry: it proved, with confident steps, that since all cats are mammals and some mammals sleep, nobody ought to blame the club for losing the keys.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Great wisdom"
+       },
+       {
+        "id": "d2",
+        "text": "Public ridicule"
+       },
+       {
+        "id": "d3",
+        "text": "Clever but fallacious argument"
+       },
+       {
+        "id": "d4",
+        "text": "Careful research"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The speech was pure sophistry"
+       },
+       {
+        "id": "e2",
+        "text": "for losing the keys"
+       },
+       {
+        "id": "e3",
+        "text": "it proved, with confident steps, that since all cats are mammals and some mammals sleep, nobody ought to blame the club"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "Do the steps of the argument actually lead to the conclusion?",
+      "whyNot": {
+       "d1": "Wisdom would give a real link; this is a false one.",
+       "d2": "The speech itself is serious in tone, not mockery.",
+       "d4": "Nothing was researched."
+      },
+      "eliminate": "d1",
+      "explanation": "Sophistry is plausible-sounding but invalid reasoning. Cats, mammals and sleeping leading to club blame is the decisive evidence. Losing the keys is the topic and does not show the flaw.",
+      "learnMore": {
+       "definition": "The use of clever but false arguments.",
+       "example": "His defence was nothing but sophistry."
+      }
+     },
+     {
+      "id": "c",
+      "word": "tortuous",
+      "sentence": "The tortuous road climbed the mountain in thirty hairpin bends, doubling back so often that walkers on the old path often reached the summit an hour before the cars.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Full of twists and turns"
+       },
+       {
+        "id": "d2",
+        "text": "Very steep and straight"
+       },
+       {
+        "id": "d3",
+        "text": "Painfully cruel"
+       },
+       {
+        "id": "d4",
+        "text": "Newly built"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "climbed the mountain in thirty hairpin bends, doubling back so often"
+       },
+       {
+        "id": "e2",
+        "text": "The tortuous road"
+       },
+       {
+        "id": "e3",
+        "text": "walkers on the old path often reached the summit an hour before the cars"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "How direct is the route?",
+      "whyNot": {
+       "d3": "Torturous means cruel; tortuous refers to the winding route.",
+       "d2": "Hairpins are not straight.",
+       "d4": "Nothing is said about its age beyond the old path."
+      },
+      "eliminate": "d3",
+      "explanation": "Tortuous means winding and twisting. Thirty hairpin bends doubling back is decisive. Walkers beating the cars is suggestive of indirectness but could also be a matter of traffic.",
+      "learnMore": {
+       "definition": "Full of twists and turns; also, devious.",
+       "example": "They followed a tortuous path through the woods."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e15",
+   "title": "Expert case file 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "stolid",
+      "sentence": "The stolid farmer heard that his barn had burned down, nodded, asked whether the cows were safe and went on eating his breakfast without another word.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Dull-witted"
+       },
+       {
+        "id": "d2",
+        "text": "Calm and showing little emotion"
+       },
+       {
+        "id": "d3",
+        "text": "Tearful"
+       },
+       {
+        "id": "d4",
+        "text": "Sullen and bitter"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The stolid farmer"
+       },
+       {
+        "id": "e2",
+        "text": "nodded, asked whether the cows were safe and went on eating his breakfast without another word"
+       },
+       {
+        "id": "e3",
+        "text": "heard that his barn had burned down"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "How does he react to terrible news?",
+      "whyNot": {
+       "d4": "He is not bitter; he simply carries on.",
+       "d1": "He asks a sensible question, so he is not stupid.",
+       "d3": "He shows no tears."
+      },
+      "eliminate": "d1",
+      "explanation": "Stolid means showing little emotion. Nodding and carrying on with breakfast is decisive. The news of the fire is the test, and suggests a shocking event but not his reaction.",
+      "learnMore": {
+       "definition": "Calm, dependable and showing little emotion.",
+       "example": "The guard's stolid face gave nothing away."
+      }
+     },
+     {
+      "id": "b",
+      "word": "garrulous",
+      "sentence": "The garrulous passenger told us his life story between the airport and the hotel: his three marriages, his dog's operation and every detail of his cousin's boat.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Nervous"
+       },
+       {
+        "id": "d2",
+        "text": "Rude and aggressive"
+       },
+       {
+        "id": "d3",
+        "text": "Quiet and shy"
+       },
+       {
+        "id": "d4",
+        "text": "Excessively talkative"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "his three marriages, his dog's operation and every detail of his cousin's boat"
+       },
+       {
+        "id": "e2",
+        "text": "told us his life story between the airport and the hotel"
+       },
+       {
+        "id": "e3",
+        "text": "The garrulous passenger"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "Count how much he told us on a short journey.",
+      "whyNot": {
+       "d2": "Nothing is said about rudeness.",
+       "d1": "Nothing suggests he is anxious.",
+       "d3": "He talks without stopping."
+      },
+      "eliminate": "d3",
+      "explanation": "Garrulous means talking a great deal, especially about trivial things. A whole life story and every detail of a cousin's boat is decisive. The short journey sets the scale but does not describe his talk.",
+      "learnMore": {
+       "definition": "Excessively talkative, especially on trivial matters.",
+       "example": "My garrulous neighbour kept me at the gate for an hour."
+      }
+     },
+     {
+      "id": "c",
+      "word": "maudlin",
+      "sentence": "After the third drink he became maudlin, weeping over a school friend he had not seen for forty years and insisting that nobody had ever loved him as he deserved.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Boisterously cheerful"
+       },
+       {
+        "id": "d2",
+        "text": "Tearfully sentimental"
+       },
+       {
+        "id": "d3",
+        "text": "Drowsy"
+       },
+       {
+        "id": "d4",
+        "text": "Angrily quarrelsome"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "After the third drink"
+       },
+       {
+        "id": "e2",
+        "text": "weeping over a school friend he had not seen for forty years and insisting that nobody had ever loved him as he deserved"
+       },
+       {
+        "id": "e3",
+        "text": "he became maudlin"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "What emotions does he show, and how?",
+      "whyNot": {
+       "d1": "He weeps; he is not cheerful.",
+       "d4": "He is self-pitying, not angry.",
+       "d3": "Nothing says he is sleepy."
+      },
+      "eliminate": "d1",
+      "explanation": "Maudlin means sentimental in a self-pitying, tearful way. Weeping and insisting nobody loved him is decisive. The third drink is suggestive of the cause but alcohol could make a person cheerful or aggressive instead.",
+      "learnMore": {
+       "definition": "Self-pityingly or tearfully sentimental.",
+       "example": "The film's maudlin ending left the critics cold."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e16",
+   "title": "Expert case file 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "onerous",
+      "sentence": "The contract imposed onerous conditions on the tenants: weekly inspections, a fee for every visitor and a duty to repaint the whole house each year at their own cost.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Illegal"
+       },
+       {
+        "id": "d2",
+        "text": "Generous"
+       },
+       {
+        "id": "d3",
+        "text": "Burdensome"
+       },
+       {
+        "id": "d4",
+        "text": "Vague"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "on the tenants"
+       },
+       {
+        "id": "e2",
+        "text": "weekly inspections, a fee for every visitor and a duty to repaint the whole house each year at their own cost"
+       },
+       {
+        "id": "e3",
+        "text": "The contract imposed"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "Ask what the tenants have to do or pay.",
+      "whyNot": {
+       "d2": "Generous terms would lighten their load.",
+       "d4": "The conditions are specific.",
+       "d1": "Nothing says they are against the law."
+      },
+      "eliminate": "d2",
+      "explanation": "Onerous means heavy and burdensome. Weekly inspections, visitor fees and yearly repainting at their cost is decisive. 'The contract imposed' suggests compulsion but not how heavy it is.",
+      "learnMore": {
+       "definition": "Involving heavy effort or burden.",
+       "example": "The task proved more onerous than expected."
+      }
+     },
+     {
+      "id": "b",
+      "word": "polemic",
+      "sentence": "Her book is a polemic against the new road: page after page attacks the planners, ignores the traffic figures and urges readers to oppose the scheme at every meeting.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A balanced official report"
+       },
+       {
+        "id": "d2",
+        "text": "A poem about nature"
+       },
+       {
+        "id": "d3",
+        "text": "A forceful written attack on a cause"
+       },
+       {
+        "id": "d4",
+        "text": "A legal document"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "against the new road"
+       },
+       {
+        "id": "e2",
+        "text": "Her book is a polemic"
+       },
+       {
+        "id": "e3",
+        "text": "page after page attacks the planners, ignores the traffic figures and urges readers to oppose the scheme at every meeting"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "Is the book weighing both sides or fighting one?",
+      "whyNot": {
+       "d1": "A balanced report would consider the traffic figures.",
+       "d2": "No verse is mentioned.",
+       "d4": "It urges people to act; it does not set out the law."
+      },
+      "eliminate": "d1",
+      "explanation": "A polemic is a strong attack on or defence of a cause. Page after page attacking and urging opposition is decisive. 'Against the new road' shows the side but not the manner.",
+      "learnMore": {
+       "definition": "A strong written or spoken attack on a person or policy.",
+       "example": "The pamphlet was a polemic against reform."
+      }
+     },
+     {
+      "id": "c",
+      "word": "pedantic",
+      "sentence": "The pedantic editor spent an afternoon arguing over whether 'data' takes a singular or a plural verb, though the passage was a note thanking the cleaners.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Indifferent to detail"
+       },
+       {
+        "id": "d2",
+        "text": "Fond of joking"
+       },
+       {
+        "id": "d3",
+        "text": "Wise and learned"
+       },
+       {
+        "id": "d4",
+        "text": "Overly concerned with minor points of rule"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "spent an afternoon arguing over whether 'data' takes a singular or a plural verb"
+       },
+       {
+        "id": "e2",
+        "text": "though the passage was a note thanking the cleaners"
+       },
+       {
+        "id": "e3",
+        "text": "The pedantic editor"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "What is the importance of the question compared with the time spent?",
+      "whyNot": {
+       "d3": "Wise people know what matters; he does not.",
+       "d1": "He is the reverse of indifferent.",
+       "d2": "No joking appears."
+      },
+      "eliminate": "d1",
+      "explanation": "Pedantic means excessively fussy about minor rules. An afternoon on a verb in a note for the cleaners is decisive, but the mismatch of the setting shows the triviality only partly.",
+      "learnMore": {
+       "definition": "Excessively concerned with minor details or rules.",
+       "example": "It would be pedantic to correct her grammar here."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e17",
+   "title": "Expert case file 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "taciturn",
+      "sentence": "The taciturn guide answered every question with a nod or a single word, and in six hours on the hill he volunteered nothing about the history of the place.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Shy of heights"
+       },
+       {
+        "id": "d2",
+        "text": "Rude"
+       },
+       {
+        "id": "d3",
+        "text": "Habitually silent"
+       },
+       {
+        "id": "d4",
+        "text": "Ignorant"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "answered every question with a nod or a single word"
+       },
+       {
+        "id": "e2",
+        "text": "in six hours on the hill he volunteered nothing about the history of the place"
+       },
+       {
+        "id": "e3",
+        "text": "The taciturn guide"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "How much does he speak when asked?",
+      "whyNot": {
+       "d2": "Silence is not necessarily rude.",
+       "d1": "Nothing says he fears heights.",
+       "d4": "He may know plenty; he says little."
+      },
+      "eliminate": "d4",
+      "explanation": "Taciturn means saying little by habit. Answering only by nods and single words is decisive. Volunteering nothing for six hours is suggestive but a guide might simply have no history to tell.",
+      "learnMore": {
+       "definition": "Reserved and saying little.",
+       "example": "A taciturn man, he left the talking to his wife."
+      }
+     },
+     {
+      "id": "b",
+      "word": "erudite",
+      "sentence": "The erudite librarian could discuss medieval trade routes, the grammar of Old Norse and the chemistry of ink, and visitors left her desk having learned more than they had asked.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Dull"
+       },
+       {
+        "id": "d2",
+        "text": "Having great learning"
+       },
+       {
+        "id": "d3",
+        "text": "Strict"
+       },
+       {
+        "id": "d4",
+        "text": "Boastful"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "could discuss medieval trade routes, the grammar of Old Norse and the chemistry of ink"
+       },
+       {
+        "id": "e2",
+        "text": "visitors left her desk having learned more than they had asked"
+       },
+       {
+        "id": "e3",
+        "text": "The erudite librarian"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "What range of subjects can she handle?",
+      "whyNot": {
+       "d4": "She boasts of nothing.",
+       "d1": "Visitors learn a great deal; she is not dull.",
+       "d3": "Nothing is said about strictness."
+      },
+      "eliminate": "d4",
+      "explanation": "Erudite means having or showing great knowledge. The range of trade routes, Old Norse and chemistry is decisive. Visitors learning more than they asked suggests knowledge but also friendly chat.",
+      "learnMore": {
+       "definition": "Having or showing great learning.",
+       "example": "He gave an erudite lecture on the Roman roads."
+      }
+     },
+     {
+      "id": "c",
+      "word": "languid",
+      "sentence": "She crossed the lawn with languid steps, pausing to trail a hand through the roses and letting the afternoon drift by as if no clock existed.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Brisk"
+       },
+       {
+        "id": "d2",
+        "text": "Slow and relaxed, without effort"
+       },
+       {
+        "id": "d3",
+        "text": "Sad"
+       },
+       {
+        "id": "d4",
+        "text": "Weakened by illness"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "pausing to trail a hand through the roses and letting the afternoon drift by as if no clock existed"
+       },
+       {
+        "id": "e2",
+        "text": "She crossed the lawn"
+       },
+       {
+        "id": "e3",
+        "text": "with languid steps"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "Does she seem to be hurrying anywhere?",
+      "whyNot": {
+       "d3": "Nothing in her manner is sad.",
+       "d1": "Pausing is not brisk.",
+       "d4": "Nothing says she is ill."
+      },
+      "eliminate": "d3",
+      "explanation": "Languid means relaxed and unhurried. Pausing and drifting with no clock is decisive. Her steps across the lawn suggest slowness but the word is stated, not shown.",
+      "learnMore": {
+       "definition": "Slow, relaxed and without energy.",
+       "example": "We spent a languid afternoon by the lake."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e18",
+   "title": "Expert case file 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "scurrilous",
+      "sentence": "The scurrilous pamphlet accused the mayor of every vice, using coarse jokes and invented stories, and the printer was sued within a week.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Grossly abusive and defamatory"
+       },
+       {
+        "id": "d2",
+        "text": "Mildly critical"
+       },
+       {
+        "id": "d3",
+        "text": "Written in code"
+       },
+       {
+        "id": "d4",
+        "text": "Praising"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "accused the mayor of every vice, using coarse jokes and invented stories"
+       },
+       {
+        "id": "e2",
+        "text": "The scurrilous pamphlet"
+       },
+       {
+        "id": "e3",
+        "text": "the printer was sued within a week"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "How does the pamphlet treat its target?",
+      "whyNot": {
+       "d2": "Mild criticism would not lead to a lawsuit.",
+       "d3": "Nothing is coded.",
+       "d4": "It attacks him."
+      },
+      "eliminate": "d2",
+      "explanation": "Scurrilous means abusive and slanderous. Coarse jokes and invented accusations is decisive. The lawsuit suggests it was damaging but not what it said.",
+      "learnMore": {
+       "definition": "Making false and abusive claims to damage a reputation.",
+       "example": "A scurrilous rumour spread through the village."
+      }
+     },
+     {
+      "id": "b",
+      "word": "phlegmatic",
+      "sentence": "Even as the storm tore at the roof, the phlegmatic captain sat down to finish his tea and remarked that the weather was bound to improve.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Always coughing"
+       },
+       {
+        "id": "d2",
+        "text": "Easily frightened"
+       },
+       {
+        "id": "d3",
+        "text": "Calm and unexcitable"
+       },
+       {
+        "id": "d4",
+        "text": "Bad-tempered"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Even as the storm tore at the roof"
+       },
+       {
+        "id": "e2",
+        "text": "the phlegmatic captain"
+       },
+       {
+        "id": "e3",
+        "text": "sat down to finish his tea and remarked that the weather was bound to improve"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "How does he behave during the danger?",
+      "whyNot": {
+       "d1": "Phlegm is a physical word, but nothing here is a cough.",
+       "d2": "He is not afraid.",
+       "d4": "He is not irritable."
+      },
+      "eliminate": "d2",
+      "explanation": "Phlegmatic means having a calm, unemotional disposition. Finishing his tea during the storm is decisive. The storm on the roof sets up the test, but does not describe him.",
+      "learnMore": {
+       "definition": "Having an unemotional and calm disposition.",
+       "example": "Her phlegmatic reaction surprised everyone."
+      }
+     },
+     {
+      "id": "c",
+      "word": "ubiquitous",
+      "sentence": "By the end of the decade mobile phones were ubiquitous: on every bus, in every queue, at every table in the cafe and on the desk of every teacher.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Forbidden"
+       },
+       {
+        "id": "d2",
+        "text": "Found everywhere"
+       },
+       {
+        "id": "d3",
+        "text": "Rarely used"
+       },
+       {
+        "id": "d4",
+        "text": "Very expensive"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "mobile phones were ubiquitous"
+       },
+       {
+        "id": "e2",
+        "text": "By the end of the decade"
+       },
+       {
+        "id": "e3",
+        "text": "on every bus, in every queue, at every table in the cafe and on the desk of every teacher"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "Where do the phones turn up?",
+      "whyNot": {
+       "d4": "Nothing about price.",
+       "d3": "They are in constant view, so used often.",
+       "d1": "No ban is mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Ubiquitous means present everywhere. The list of buses, queues, tables and desks is decisive. 'By the end of the decade' gives a time and not a place.",
+      "learnMore": {
+       "definition": "Present, appearing or found everywhere.",
+       "example": "Coffee shops are ubiquitous in the city."
+      }
+     }
+    ]
+   }
   }
  ]
 }
