@@ -35,7 +35,7 @@ export const definition: GameDefinition = {
           "If exactly three of your four tiles belong to the same unsolved group, you are told you are one away. Nothing else about the wrong group is revealed.",
           "Checking a group you have already tried (in any order) costs nothing and tells you so.",
           "Selecting fewer or more than four tiles is never a mistake.",
-          "You have four mistakes. When they are used you can continue (your result is marked as an assisted continuation), take a hint or reveal the answers. The round never ends by force.",
+          "You have four mistakes (three on Master boards). When they are used you can continue (your result is marked as an assisted continuation), take a hint or reveal the answers. The round never ends by force.",
         ],
       },
       {
@@ -69,6 +69,7 @@ export const definition: GameDefinition = {
           "Gentle boards have three direct groups of twelve tiles (the original starter demo has four).",
           "Standard boards have four groups, mixing ordinary categories with a word-building one such as words before BALL, and a few tiles that seem to fit two groups.",
           "Expert boards are built around deliberate overlaps: several tiles fit two groups, and only one complete arrangement uses all sixteen.",
+          "Master boards are built for crossword-fluent players: hidden smaller words, anagrams, words that gain a letter, sound-alikes and compound words. Many tiles fit two or more groups (some groups have five or more candidates), yet exactly one complete arrangement uses all sixteen, checked by exhaustive search. Master boards allow three mistakes instead of four.",
           "Each difficulty is a different set of boards. Labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

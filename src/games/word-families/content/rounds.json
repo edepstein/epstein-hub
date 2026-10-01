@@ -2989,6 +2989,2155 @@
      "resolvedBy": "RADAR is a palindrome; SONAR, COMPASS, BEACON and CHART remain."
     }
    ]
+  },
+  {
+   "id": "wf-m1",
+   "title": "Master wall 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a body part",
+     "terms": [
+      "SHINGLE",
+      "BARMAN",
+      "CHINA",
+      "HIPSTER"
+     ],
+     "explanation": "SHINGLE hides SHIN, BARMAN hides ARM, CHINA hides CHIN and HIPSTER hides HIP.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "ARM",
+       "EAR",
+       "EYE",
+       "HIP",
+       "LEG",
+       "LIP",
+       "RIB",
+       "TOE",
+       "JAW",
+       "GUM",
+       "SHIN",
+       "CHIN",
+       "HAND",
+       "FOOT",
+       "HEAD",
+       "NOSE",
+       "KNEE",
+       "NAIL",
+       "BACK",
+       "NECK",
+       "HEEL",
+       "PALM",
+       "LUNG",
+       "SKIN",
+       "BONE",
+       "BROW",
+       "LASH",
+       "LOBE",
+       "CALF",
+       "SOLE",
+       "GUT",
+       "TOOTH",
+       "THUMB",
+       "ELBOW",
+       "SPINE",
+       "WAIST",
+       "ANKLE"
+      ]
+     }
+    },
+    {
+     "label": "Hides a metal",
+     "terms": [
+      "TINSEL",
+      "IRONING",
+      "GOLDFISH",
+      "LEADERSHIP"
+     ],
+     "explanation": "TINSEL hides TIN, IRONING hides IRON, GOLDFISH hides GOLD and LEADERSHIP hides LEAD.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "TIN",
+       "IRON",
+       "GOLD",
+       "LEAD",
+       "ZINC",
+       "COPPER",
+       "SILVER",
+       "NICKEL",
+       "BRASS",
+       "STEEL",
+       "BRONZE"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a tree",
+     "terms": [
+      "LUMP",
+      "MILE",
+      "LOSE",
+      "AMPLE"
+     ],
+     "explanation": "LUMP is PLUM, MILE is LIME, LOSE is SLOE and AMPLE is MAPLE.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "PLUM",
+       "LIME",
+       "SLOE",
+       "MAPLE",
+       "PALM"
+      ]
+     }
+    },
+    {
+     "label": "Sources of light",
+     "terms": [
+      "LAMP",
+      "FLARE",
+      "TORCH",
+      "BEACON"
+     ],
+     "explanation": "A lamp, flare, torch and beacon each give light. LAMP is also PALM scrambled, but the trees already have four.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "LAMP",
+       "FLARE",
+       "TORCH",
+       "BEACON"
+      ]
+     }
+    }
+   ],
+   "explanation": "Two hidden-word groups, an anagram group and a plain category. LEADERSHIP hides both a metal and a body part, and LAMP is an anagram of PALM.",
+   "redHerrings": [
+    {
+     "term": "LEADERSHIP",
+     "rival": "LEADERSHIP hides HIP, so it could pass for \"Hides a body part\".",
+     "resolvedBy": "\"Hides a body part\" has 5 candidates but only four can stand once the other three groups are filled; LEADERSHIP belongs to \"Hides a metal\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "LAMP",
+     "rival": "LAMP rearranges to PALM, so it could pass for \"Anagram of a tree\".",
+     "resolvedBy": "\"Anagram of a tree\" has 5 candidates but only four can stand once the other three groups are filled; LAMP belongs to \"Sources of light\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m2",
+   "title": "Master wall 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a number",
+     "terms": [
+      "STONE",
+      "NETWORK",
+      "BATTEN",
+      "SIXPENCE"
+     ],
+     "explanation": "STONE hides ONE, NETWORK hides TWO, BATTEN hides TEN and SIXPENCE hides SIX.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "ONE",
+       "TWO",
+       "TEN",
+       "SIX",
+       "FOUR",
+       "FIVE",
+       "NINE",
+       "EIGHT",
+       "THREE",
+       "SEVEN",
+       "NIL",
+       "ZERO"
+      ]
+     }
+    },
+    {
+     "label": "Hides an animal",
+     "terms": [
+      "SCATTER",
+      "HOGWASH",
+      "BEARING",
+      "SEALANT"
+     ],
+     "explanation": "SCATTER hides CAT, HOGWASH hides HOG, BEARING hides BEAR and SEALANT hides SEAL.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "ANT",
+       "APE",
+       "BAT",
+       "BEE",
+       "CAT",
+       "COW",
+       "DOG",
+       "EEL",
+       "ELK",
+       "EMU",
+       "EWE",
+       "FOX",
+       "GNU",
+       "HEN",
+       "HOG",
+       "OWL",
+       "PIG",
+       "RAM",
+       "RAT",
+       "YAK",
+       "BEAR",
+       "BOAR",
+       "CRAB",
+       "DEER",
+       "DOVE",
+       "DUCK",
+       "FROG",
+       "GOAT",
+       "HARE",
+       "LAMB",
+       "LION",
+       "MOLE",
+       "MOTH",
+       "MULE",
+       "NEWT",
+       "PONY",
+       "SEAL",
+       "SWAN",
+       "TOAD",
+       "WOLF",
+       "WREN",
+       "CROW",
+       "LARK",
+       "ROOK",
+       "TERN",
+       "KITE"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a colour",
+     "terms": [
+      "GENRE",
+      "VOILE",
+      "BREAM",
+      "TALE"
+     ],
+     "explanation": "GENRE is GREEN, VOILE is OLIVE, BREAM is AMBER and TALE is TEAL.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "GREEN",
+       "OLIVE",
+       "AMBER",
+       "TEAL",
+       "ROSE"
+      ]
+     }
+    },
+    {
+     "label": "Painful to the touch",
+     "terms": [
+      "SORE",
+      "RAW",
+      "ACHY",
+      "TENDER"
+     ],
+     "explanation": "SORE, RAW, ACHY and TENDER all describe a painful spot.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "SORE",
+       "RAW",
+       "ACHY",
+       "TENDER"
+      ]
+     }
+    }
+   ],
+   "explanation": "BATTEN hides both a number and an animal; TENDER hides TEN yet is painful; SORE is ROSE scrambled.",
+   "redHerrings": [
+    {
+     "term": "BATTEN",
+     "rival": "BATTEN hides BAT, so it could pass for \"Hides an animal\".",
+     "resolvedBy": "\"Hides an animal\" has 5 candidates but only four can stand once the other three groups are filled; BATTEN belongs to \"Hides a number\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "TENDER",
+     "rival": "TENDER hides TEN, so it could pass for \"Hides a number\".",
+     "resolvedBy": "\"Hides a number\" has 5 candidates but only four can stand once the other three groups are filled; TENDER belongs to \"Painful to the touch\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "SORE",
+     "rival": "SORE rearranges to ROSE, so it could pass for \"Anagram of a colour\".",
+     "resolvedBy": "\"Anagram of a colour\" has 5 candidates but only four can stand once the other three groups are filled; SORE belongs to \"Painful to the touch\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m3",
+   "title": "Master wall 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Add a letter to make a bird",
+     "terms": [
+      "HERO",
+      "KIT",
+      "WEN",
+      "TEA"
+     ],
+     "explanation": "HERO gains N for HERON, KIT gains E for KITE, WEN gains R for WREN and TEA gains L for TEAL.",
+     "rule": {
+      "kind": "plus-one",
+      "words": [
+       "CROW",
+       "HERON",
+       "KITE",
+       "WREN",
+       "RAVEN",
+       "DOVE",
+       "HAWK",
+       "TEAL"
+      ]
+     }
+    },
+    {
+     "label": "Female animals",
+     "terms": [
+      "DOE",
+      "EWE",
+      "COW",
+      "SOW"
+     ],
+     "explanation": "A doe, ewe, cow and sow are females of deer, sheep, cattle and pigs.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "DOE",
+       "EWE",
+       "COW",
+       "SOW",
+       "HEN",
+       "MARE",
+       "VIXEN"
+      ]
+     }
+    },
+    {
+     "label": "Hedgerow fruits",
+     "terms": [
+      "HAW",
+      "SLOE",
+      "HIP",
+      "DAMSON"
+     ],
+     "explanation": "Haws, sloes, hips and damsons all grow in British hedgerows.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "HAW",
+       "SLOE",
+       "HIP",
+       "DAMSON",
+       "BULLACE"
+      ]
+     }
+    },
+    {
+     "label": "Kinds of party or do",
+     "terms": [
+      "RAVE",
+      "BASH",
+      "BALL",
+      "FETE"
+     ],
+     "explanation": "A rave, bash, ball and fete are all sorts of social gathering.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RAVE",
+       "BASH",
+       "BALL",
+       "FETE",
+       "SOIREE"
+      ]
+     }
+    }
+   ],
+   "explanation": "Several tiles gain a letter to become a bird, but only four are meant to; the others belong to female animals, parties and hedgerow fruit.",
+   "redHerrings": [
+    {
+     "term": "DOE",
+     "rival": "DOE gains a letter to make DOVE, so it could pass for \"Add a letter to make a bird\".",
+     "resolvedBy": "\"Add a letter to make a bird\" has 8 candidates but only four can stand once the other three groups are filled; DOE belongs to \"Female animals\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "COW",
+     "rival": "COW gains a letter to make CROW, so it could pass for \"Add a letter to make a bird\".",
+     "resolvedBy": "\"Add a letter to make a bird\" has 8 candidates but only four can stand once the other three groups are filled; COW belongs to \"Female animals\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "HAW",
+     "rival": "HAW gains a letter to make HAWK, so it could pass for \"Add a letter to make a bird\".",
+     "resolvedBy": "\"Add a letter to make a bird\" has 8 candidates but only four can stand once the other three groups are filled; HAW belongs to \"Hedgerow fruits\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "RAVE",
+     "rival": "RAVE gains a letter to make RAVEN, so it could pass for \"Add a letter to make a bird\".",
+     "resolvedBy": "\"Add a letter to make a bird\" has 8 candidates but only four can stand once the other three groups are filled; RAVE belongs to \"Kinds of party or do\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m4",
+   "title": "Master wall 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like letters",
+     "terms": [
+      "QUEUE",
+      "WHY",
+      "ARE",
+      "JAY"
+     ],
+     "explanation": "QUEUE sounds like Q, WHY like Y, ARE like R and JAY like J.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "QUEUE",
+       "WHY",
+       "ARE",
+       "JAY",
+       "TEA",
+       "PEA",
+       "EYE",
+       "SEA",
+       "BEE",
+       "EWE"
+      ]
+     }
+    },
+    {
+     "label": "Add a letter to make a tree",
+     "terms": [
+      "PIN",
+      "LIE",
+      "PAL",
+      "PEA"
+     ],
+     "explanation": "PIN gains E for PINE, LIE gains M for LIME, PAL gains M for PALM and PEA gains R for PEAR.",
+     "rule": {
+      "kind": "plus-one",
+      "words": [
+       "PINE",
+       "LIME",
+       "PALM",
+       "PEAR"
+      ]
+     }
+    },
+    {
+     "label": "Hot drinks",
+     "terms": [
+      "TEA",
+      "COCOA",
+      "CHAI",
+      "MOCHA"
+     ],
+     "explanation": "Tea, cocoa, chai and mocha are all served hot.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "TEA",
+       "COCOA",
+       "CHAI",
+       "MOCHA"
+      ]
+     }
+    },
+    {
+     "label": "British birds",
+     "terms": [
+      "ROOK",
+      "WREN",
+      "KITE",
+      "SWIFT"
+     ],
+     "explanation": "A rook, wren, kite and swift are all British birds; JAY is already needed for the letters.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "ROOK",
+       "WREN",
+       "KITE",
+       "SWIFT",
+       "JAY"
+      ]
+     }
+    }
+   ],
+   "explanation": "Letter homophones overlap with a tree-making group and with hot drinks; JAY is both a letter sound and a bird.",
+   "redHerrings": [
+    {
+     "term": "JAY",
+     "rival": "JAY is arguably a member, so it could pass for \"British birds\".",
+     "resolvedBy": "\"British birds\" has 5 candidates but only four can stand once the other three groups are filled; JAY belongs to \"Sound like letters\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "PEA",
+     "rival": "PEA is arguably a member, so it could pass for \"Sound like letters\".",
+     "resolvedBy": "\"Sound like letters\" has 6 candidates but only four can stand once the other three groups are filled; PEA belongs to \"Add a letter to make a tree\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "TEA",
+     "rival": "TEA is arguably a member, so it could pass for \"Sound like letters\".",
+     "resolvedBy": "\"Sound like letters\" has 6 candidates but only four can stand once the other three groups are filled; TEA belongs to \"Hot drinks\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m5",
+   "title": "Master wall 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a British river",
+     "terms": [
+      "CAMEL",
+      "EXEMPT",
+      "DEEPEN",
+      "TAYLOR"
+     ],
+     "explanation": "CAMEL hides CAM, EXEMPT hides EXE, DEEPEN hides DEE and TAYLOR hides TAY.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "CAM",
+       "DEE",
+       "EXE",
+       "TAY",
+       "TEES",
+       "TYNE",
+       "TRENT",
+       "SEVERN",
+       "THAMES",
+       "AIRE",
+       "AVON",
+       "OUSE",
+       "WYE",
+       "USK",
+       "ISIS",
+       "MERSEY",
+       "TAMAR"
+      ]
+     }
+    },
+    {
+     "label": "Letters of the Greek alphabet",
+     "terms": [
+      "RHO",
+      "TAU",
+      "CHI",
+      "PHI"
+     ],
+     "explanation": "RHO, TAU, CHI and PHI are letters of the Greek alphabet.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RHO",
+       "TAU",
+       "CHI",
+       "PHI",
+       "PSI",
+       "ETA",
+       "BETA"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a Greek letter",
+     "terms": [
+      "BEAT",
+      "DEALT",
+      "HIP",
+      "ATE"
+     ],
+     "explanation": "BEAT is BETA, DEALT is DELTA, HIP is PHI and ATE is ETA.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "BETA",
+       "DELTA",
+       "ETA",
+       "PHI"
+      ]
+     }
+    },
+    {
+     "label": "Things that are brewed",
+     "terms": [
+      "TEA",
+      "ALE",
+      "STOUT",
+      "CAMOMILE"
+     ],
+     "explanation": "Tea, ale and stout are brewed, and camomile is brewed as an infusion.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "TEA",
+       "ALE",
+       "STOUT",
+       "CAMOMILE"
+      ]
+     }
+    }
+   ],
+   "explanation": "CAMOMILE is brewed and also hides the river CAM; TEA is an anagram of the Greek letter ETA but is also brewed.",
+   "redHerrings": [
+    {
+     "term": "CAMOMILE",
+     "rival": "CAMOMILE hides CAM, so it could pass for \"Hides a British river\".",
+     "resolvedBy": "\"Hides a British river\" has 5 candidates but only four can stand once the other three groups are filled; CAMOMILE belongs to \"Things that are brewed\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "TEA",
+     "rival": "TEA rearranges to ETA, so it could pass for \"Anagram of a Greek letter\".",
+     "resolvedBy": "\"Anagram of a Greek letter\" has 5 candidates but only four can stand once the other three groups are filled; TEA belongs to \"Things that are brewed\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m6",
+   "title": "Master wall 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides part of the face",
+     "terms": [
+      "CLIPBOARD",
+      "CHINTZ",
+      "EYELET",
+      "BROWSE"
+     ],
+     "explanation": "CLIPBOARD hides LIP, CHINTZ hides CHIN, EYELET hides EYE and BROWSE hides BROW.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "EAR",
+       "EYE",
+       "LIP",
+       "NOSE",
+       "CHIN",
+       "BROW",
+       "JAW",
+       "LASH",
+       "GUM"
+      ]
+     }
+    },
+    {
+     "label": "Hides a farm animal",
+     "terms": [
+      "COWSLIP",
+      "PIGHEADED",
+      "GOATEE",
+      "HENCE"
+     ],
+     "explanation": "COWSLIP hides COW, PIGHEADED hides PIG, GOATEE hides GOAT and HENCE hides HEN.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "COW",
+       "PIG",
+       "HEN",
+       "HOG",
+       "RAM",
+       "EWE",
+       "GOAT",
+       "LAMB",
+       "MULE",
+       "DUCK"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a fruit",
+     "terms": [
+      "AMONG",
+      "LUMP",
+      "PAGER",
+      "REAP"
+     ],
+     "explanation": "AMONG is MANGO, LUMP is PLUM, PAGER is GRAPE and REAP is PEAR.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "PEACH",
+       "MANGO",
+       "PLUM",
+       "PEAR",
+       "GRAPE"
+      ]
+     }
+    },
+    {
+     "label": "Inexpensive",
+     "terms": [
+      "CHEAP",
+      "BUDGET",
+      "ECONOMY",
+      "MODEST"
+     ],
+     "explanation": "Cheap, budget, economy and modest can all describe a low price.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "CHEAP",
+       "BUDGET",
+       "ECONOMY",
+       "MODEST"
+      ]
+     }
+    }
+   ],
+   "explanation": "COWSLIP hides both a farm animal and part of the face; CHEAP is an anagram of PEACH and also means inexpensive.",
+   "redHerrings": [
+    {
+     "term": "COWSLIP",
+     "rival": "COWSLIP hides LIP, so it could pass for \"Hides part of the face\".",
+     "resolvedBy": "\"Hides part of the face\" has 5 candidates but only four can stand once the other three groups are filled; COWSLIP belongs to \"Hides a farm animal\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "CHEAP",
+     "rival": "CHEAP rearranges to PEACH, so it could pass for \"Anagram of a fruit\".",
+     "resolvedBy": "\"Anagram of a fruit\" has 5 candidates but only four can stand once the other three groups are filled; CHEAP belongs to \"Inexpensive\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m7",
+   "title": "Master wall 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Add a letter to make a body part",
+     "terms": [
+      "EEL",
+      "SKI",
+      "LUG",
+      "AIL"
+     ],
+     "explanation": "EEL gains H for HEEL, SKI gains N for SKIN, LUG gains N for LUNG and AIL gains N for NAIL.",
+     "rule": {
+      "kind": "plus-one",
+      "words": [
+       "ARM",
+       "EAR",
+       "EYE",
+       "HIP",
+       "LEG",
+       "LIP",
+       "RIB",
+       "TOE",
+       "JAW",
+       "GUM",
+       "SHIN",
+       "CHIN",
+       "HAND",
+       "FOOT",
+       "HEAD",
+       "NOSE",
+       "KNEE",
+       "NAIL",
+       "BACK",
+       "NECK",
+       "HEEL",
+       "PALM",
+       "LUNG",
+       "SKIN",
+       "BONE",
+       "BROW",
+       "LASH",
+       "LOBE",
+       "CALF",
+       "SOLE",
+       "GUT",
+       "TOOTH",
+       "THUMB",
+       "ELBOW",
+       "SPINE",
+       "WAIST",
+       "ANKLE"
+      ]
+     }
+    },
+    {
+     "label": "Quarrels",
+     "terms": [
+      "ROW",
+      "SPAT",
+      "TIFF",
+      "FEUD"
+     ],
+     "explanation": "A row, spat, tiff and feud are all kinds of quarrel.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "ROW",
+       "SPAT",
+       "TIFF",
+       "FEUD",
+       "BRAWL"
+      ]
+     }
+    },
+    {
+     "label": "Parts of a ship",
+     "terms": [
+      "BOW",
+      "STERN",
+      "DECK",
+      "HULL"
+     ],
+     "explanation": "The bow, stern, deck and hull are all parts of a ship.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "BOW",
+       "STERN",
+       "DECK",
+       "HULL",
+       "KEEL"
+      ]
+     }
+    },
+    {
+     "label": "Cricket bowling styles",
+     "terms": [
+      "SPIN",
+      "SEAM",
+      "PACE",
+      "SWING"
+     ],
+     "explanation": "Spin, seam, pace and swing are all ways of bowling in cricket.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "SPIN",
+       "SEAM",
+       "PACE",
+       "SWING"
+      ]
+     }
+    }
+   ],
+   "explanation": "ROW and BOW both gain a letter to make BROW, and SPIN gains E to make SPINE, yet each also has a home in another group.",
+   "redHerrings": [
+    {
+     "term": "ROW",
+     "rival": "ROW gains a letter to make BROW, so it could pass for \"Add a letter to make a body part\".",
+     "resolvedBy": "\"Add a letter to make a body part\" has 7 candidates but only four can stand once the other three groups are filled; ROW belongs to \"Quarrels\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "BOW",
+     "rival": "BOW gains a letter to make BROW, so it could pass for \"Add a letter to make a body part\".",
+     "resolvedBy": "\"Add a letter to make a body part\" has 7 candidates but only four can stand once the other three groups are filled; BOW belongs to \"Parts of a ship\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "SPIN",
+     "rival": "SPIN gains a letter to make SPINE, so it could pass for \"Add a letter to make a body part\".",
+     "resolvedBy": "\"Add a letter to make a body part\" has 7 candidates but only four can stand once the other three groups are filled; SPIN belongs to \"Cricket bowling styles\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m8",
+   "title": "Master wall 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a bird",
+     "terms": [
+      "CROWN",
+      "SWANKY",
+      "TITANIC",
+      "DOVETAIL"
+     ],
+     "explanation": "CROWN hides CROW, SWANKY hides SWAN, TITANIC hides TIT and DOVETAIL hides DOVE.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "OWL",
+       "HEN",
+       "JAY",
+       "EMU",
+       "TIT",
+       "KITE",
+       "ROOK",
+       "WREN",
+       "LARK",
+       "TERN",
+       "DOVE",
+       "CROW",
+       "SWAN",
+       "GULL",
+       "HAWK",
+       "RHEA",
+       "ERNE"
+      ]
+     }
+    },
+    {
+     "label": "Hides part of the leg or foot",
+     "terms": [
+      "CROWFOOT",
+      "SHINTY",
+      "CALFSKIN",
+      "WHEELCHAIR"
+     ],
+     "explanation": "CROWFOOT hides FOOT, SHINTY hides SHIN, CALFSKIN hides CALF and WHEELCHAIR hides HEEL.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "FOOT",
+       "SHIN",
+       "KNEE",
+       "HEEL",
+       "TOE",
+       "CALF",
+       "ANKLE",
+       "THIGH",
+       "SOLE"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a bird",
+     "terms": [
+      "LOW",
+      "RENT",
+      "HARE",
+      "LATE"
+     ],
+     "explanation": "LOW is OWL, RENT is TERN, HARE is RHEA and LATE is TEAL.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "OWL",
+       "TERN",
+       "RHEA",
+       "TEAL"
+      ]
+     }
+    },
+    {
+     "label": "Take a posture",
+     "terms": [
+      "KNEEL",
+      "SIT",
+      "STOOP",
+      "CROUCH"
+     ],
+     "explanation": "To kneel, sit, stoop or crouch is to adopt a bodily posture.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "KNEEL",
+       "SIT",
+       "STOOP",
+       "CROUCH"
+      ]
+     }
+    }
+   ],
+   "explanation": "CROWFOOT hides both a bird and part of the leg, and KNEEL hides KNEE although it is a posture.",
+   "redHerrings": [
+    {
+     "term": "CROWFOOT",
+     "rival": "CROWFOOT hides CROW, so it could pass for \"Hides a bird\".",
+     "resolvedBy": "\"Hides a bird\" has 5 candidates but only four can stand once the other three groups are filled; CROWFOOT belongs to \"Hides part of the leg or foot\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "KNEEL",
+     "rival": "KNEEL hides KNEE, so it could pass for \"Hides part of the leg or foot\".",
+     "resolvedBy": "\"Hides part of the leg or foot\" has 5 candidates but only four can stand once the other three groups are filled; KNEEL belongs to \"Take a posture\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m9",
+   "title": "Master wall 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like a number",
+     "terms": [
+      "WON",
+      "TOO",
+      "FOR",
+      "ATE"
+     ],
+     "explanation": "WON sounds like one, TOO like two, FOR like four and ATE like eight.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "WON",
+       "TOO",
+       "FOR",
+       "ATE"
+      ]
+     }
+    },
+    {
+     "label": "Past tense of a common verb",
+     "terms": [
+      "RAN",
+      "SAW",
+      "DID",
+      "HAD"
+     ],
+     "explanation": "RAN, SAW, DID and HAD are past tenses of run, see, do and have.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RAN",
+       "SAW",
+       "DID",
+       "HAD",
+       "WON",
+       "ATE"
+      ]
+     }
+    },
+    {
+     "label": "Gardener's hand tools",
+     "terms": [
+      "HOE",
+      "RAKE",
+      "SPADE",
+      "TROWEL"
+     ],
+     "explanation": "A hoe, rake, spade and trowel are all used in the garden; SAW is a tool too but is needed as a past tense.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "SAW",
+       "HOE",
+       "RAKE",
+       "SPADE",
+       "TROWEL"
+      ]
+     }
+    },
+    {
+     "label": "Angling gear",
+     "terms": [
+      "ROD",
+      "REEL",
+      "LURE",
+      "FLOAT"
+     ],
+     "explanation": "A rod, reel, lure and float are used for fishing.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "ROD",
+       "REEL",
+       "LURE",
+       "FLOAT"
+      ]
+     }
+    }
+   ],
+   "explanation": "WON and ATE sound like numbers and are also past tenses; SAW is both a past tense and a tool.",
+   "redHerrings": [
+    {
+     "term": "WON",
+     "rival": "WON is arguably a member, so it could pass for \"Past tense of a common verb\".",
+     "resolvedBy": "\"Past tense of a common verb\" has 6 candidates but only four can stand once the other three groups are filled; WON belongs to \"Sound like a number\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "ATE",
+     "rival": "ATE is arguably a member, so it could pass for \"Past tense of a common verb\".",
+     "resolvedBy": "\"Past tense of a common verb\" has 6 candidates but only four can stand once the other three groups are filled; ATE belongs to \"Sound like a number\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "SAW",
+     "rival": "SAW is arguably a member, so it could pass for \"Gardener's hand tools\".",
+     "resolvedBy": "\"Gardener's hand tools\" has 5 candidates but only four can stand once the other three groups are filled; SAW belongs to \"Past tense of a common verb\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m10",
+   "title": "Master wall 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Anagram of a fish",
+     "terms": [
+      "KEPI",
+      "AUNT",
+      "STEAK",
+      "TUTOR"
+     ],
+     "explanation": "KEPI is PIKE, AUNT is TUNA, STEAK is SKATE and TUTOR is TROUT.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "PIKE",
+       "TUNA",
+       "SKATE",
+       "TROUT",
+       "COD",
+       "GAR",
+       "BREAM"
+      ]
+     }
+    },
+    {
+     "label": "Healthcare workers",
+     "terms": [
+      "DOC",
+      "MEDIC",
+      "NURSE",
+      "VET"
+     ],
+     "explanation": "A doc, medic, nurse and vet all treat the sick or injured.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "DOC",
+       "MEDIC",
+       "NURSE",
+       "VET"
+      ]
+     }
+    },
+    {
+     "label": "Left-over bits of cloth",
+     "terms": [
+      "RAG",
+      "SCRAP",
+      "REMNANT",
+      "OFFCUT"
+     ],
+     "explanation": "A rag, scrap, remnant and offcut are all leftover pieces of fabric.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RAG",
+       "SCRAP",
+       "REMNANT",
+       "OFFCUT"
+      ]
+     }
+    },
+    {
+     "label": "Shades of orange-brown",
+     "terms": [
+      "AMBER",
+      "RUST",
+      "GINGER",
+      "TAWNY"
+     ],
+     "explanation": "Amber, rust, ginger and tawny are all orange-brown shades.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "AMBER",
+       "RUST",
+       "GINGER",
+       "TAWNY"
+      ]
+     }
+    }
+   ],
+   "explanation": "DOC and RAG are anagrams of COD and GAR, and AMBER is BREAM scrambled, yet each belongs to a different plain category.",
+   "redHerrings": [
+    {
+     "term": "DOC",
+     "rival": "DOC rearranges to COD, so it could pass for \"Anagram of a fish\".",
+     "resolvedBy": "\"Anagram of a fish\" has 7 candidates but only four can stand once the other three groups are filled; DOC belongs to \"Healthcare workers\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "RAG",
+     "rival": "RAG rearranges to GAR, so it could pass for \"Anagram of a fish\".",
+     "resolvedBy": "\"Anagram of a fish\" has 7 candidates but only four can stand once the other three groups are filled; RAG belongs to \"Left-over bits of cloth\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "AMBER",
+     "rival": "AMBER rearranges to BREAM, so it could pass for \"Anagram of a fish\".",
+     "resolvedBy": "\"Anagram of a fish\" has 7 candidates but only four can stand once the other three groups are filled; AMBER belongs to \"Shades of orange-brown\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m11",
+   "title": "Master wall 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Cluedo suspects",
+     "terms": [
+      "SCARLETT",
+      "MUSTARD",
+      "PLUM",
+      "GREEN"
+     ],
+     "explanation": "Miss Scarlett, Colonel Mustard, Professor Plum and Reverend Green are all Cluedo suspects.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "SCARLETT",
+       "MUSTARD",
+       "PLUM",
+       "GREEN",
+       "WHITE",
+       "PEACOCK",
+       "ORCHID"
+      ]
+     }
+    },
+    {
+     "label": "Edible fruits",
+     "terms": [
+      "FIG",
+      "PEAR",
+      "LIME",
+      "PEACH"
+     ],
+     "explanation": "A fig, pear, lime and peach are all fruits.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "FIG",
+       "PEAR",
+       "LIME",
+       "PEACH",
+       "PLUM"
+      ]
+     }
+    },
+    {
+     "label": "Shades",
+     "terms": [
+      "RED",
+      "TAN",
+      "NAVY",
+      "PINK"
+     ],
+     "explanation": "Red, tan, navy and pink are all colours.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RED",
+       "TAN",
+       "NAVY",
+       "PINK",
+       "GREEN",
+       "LIME",
+       "PLUM",
+       "PEACH",
+       "MUSTARD"
+      ]
+     }
+    },
+    {
+     "label": "Types of bird",
+     "terms": [
+      "PEACOCK",
+      "ROBIN",
+      "SWIFT",
+      "TERN"
+     ],
+     "explanation": "A peacock, robin, swift and tern are all birds.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "PEACOCK",
+       "ROBIN",
+       "SWIFT",
+       "TERN"
+      ]
+     }
+    }
+   ],
+   "explanation": "A Cluedo wall: PLUM and GREEN are suspects but also a fruit and a colour, and PEACOCK is a suspect and a bird.",
+   "redHerrings": [
+    {
+     "term": "PLUM",
+     "rival": "PLUM is arguably a member, so it could pass for \"Edible fruits\".",
+     "resolvedBy": "\"Edible fruits\" has 5 candidates but only four can stand once the other three groups are filled; PLUM belongs to \"Cluedo suspects\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "MUSTARD",
+     "rival": "MUSTARD is arguably a member, so it could pass for \"Shades\".",
+     "resolvedBy": "\"Shades\" has 9 candidates but only four can stand once the other three groups are filled; MUSTARD belongs to \"Cluedo suspects\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "PLUM",
+     "rival": "PLUM is arguably a member, so it could pass for \"Shades\".",
+     "resolvedBy": "\"Shades\" has 9 candidates but only four can stand once the other three groups are filled; PLUM belongs to \"Cluedo suspects\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "GREEN",
+     "rival": "GREEN is arguably a member, so it could pass for \"Shades\".",
+     "resolvedBy": "\"Shades\" has 9 candidates but only four can stand once the other three groups are filled; GREEN belongs to \"Cluedo suspects\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "LIME",
+     "rival": "LIME is arguably a member, so it could pass for \"Shades\".",
+     "resolvedBy": "\"Shades\" has 9 candidates but only four can stand once the other three groups are filled; LIME belongs to \"Edible fruits\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "PEACH",
+     "rival": "PEACH is arguably a member, so it could pass for \"Shades\".",
+     "resolvedBy": "\"Shades\" has 9 candidates but only four can stand once the other three groups are filled; PEACH belongs to \"Edible fruits\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "PEACOCK",
+     "rival": "PEACOCK is arguably a member, so it could pass for \"Cluedo suspects\".",
+     "resolvedBy": "\"Cluedo suspects\" has 5 candidates but only four can stand once the other three groups are filled; PEACOCK belongs to \"Types of bird\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-m12",
+   "title": "Master wall 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 3,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words that go before BALL",
+     "terms": [
+      "FOOT",
+      "SNOW",
+      "EYE",
+      "BASE"
+     ],
+     "explanation": "Football, snowball, eyeball and baseball.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "FOOT",
+       "SNOW",
+       "EYE",
+       "BASE"
+      ]
+     }
+    },
+    {
+     "label": "Words that go before FISH",
+     "terms": [
+      "CAT",
+      "SWORD",
+      "JELLY",
+      "STAR"
+     ],
+     "explanation": "Catfish, swordfish, jellyfish and starfish.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "CAT",
+       "SWORD",
+       "JELLY",
+       "STAR"
+      ]
+     }
+    },
+    {
+     "label": "Words that go before BOARD",
+     "terms": [
+      "SKATE",
+      "CLIP",
+      "CHESS",
+      "DASH"
+     ],
+     "explanation": "Skateboard, clipboard, chessboard and dashboard; STAR, FOOT, SNOW and BASE also make boards but are needed elsewhere.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "SKATE",
+       "CLIP",
+       "CHESS",
+       "DASH",
+       "STAR",
+       "FOOT",
+       "SNOW",
+       "BASE"
+      ]
+     }
+    },
+    {
+     "label": "Words that go before LIGHT",
+     "terms": [
+      "SPOT",
+      "SEARCH",
+      "FLOOD",
+      "FOG"
+     ],
+     "explanation": "Spotlight, searchlight, floodlight and foglight.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "SPOT",
+       "SEARCH",
+       "FLOOD",
+       "FOG",
+       "STAR",
+       "FOOT"
+      ]
+     }
+    }
+   ],
+   "explanation": "Compound-word wall: STAR makes STARFISH, STARBOARD and STARLIGHT, FOOT makes FOOTBALL, FOOTBOARD and FOOTLIGHT, and SNOW and BASE make both BALL and BOARD words.",
+   "redHerrings": [
+    {
+     "term": "FOOT",
+     "rival": "FOOT is arguably a member, so it could pass for \"Words that go before BOARD\".",
+     "resolvedBy": "\"Words that go before BOARD\" has 8 candidates but only four can stand once the other three groups are filled; FOOT belongs to \"Words that go before BALL\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "SNOW",
+     "rival": "SNOW is arguably a member, so it could pass for \"Words that go before BOARD\".",
+     "resolvedBy": "\"Words that go before BOARD\" has 8 candidates but only four can stand once the other three groups are filled; SNOW belongs to \"Words that go before BALL\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "BASE",
+     "rival": "BASE is arguably a member, so it could pass for \"Words that go before BOARD\".",
+     "resolvedBy": "\"Words that go before BOARD\" has 8 candidates but only four can stand once the other three groups are filled; BASE belongs to \"Words that go before BALL\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "FOOT",
+     "rival": "FOOT is arguably a member, so it could pass for \"Words that go before LIGHT\".",
+     "resolvedBy": "\"Words that go before LIGHT\" has 6 candidates but only four can stand once the other three groups are filled; FOOT belongs to \"Words that go before BALL\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "STAR",
+     "rival": "STAR is arguably a member, so it could pass for \"Words that go before BOARD\".",
+     "resolvedBy": "\"Words that go before BOARD\" has 8 candidates but only four can stand once the other three groups are filled; STAR belongs to \"Words that go before FISH\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "STAR",
+     "rival": "STAR is arguably a member, so it could pass for \"Words that go before LIGHT\".",
+     "resolvedBy": "\"Words that go before LIGHT\" has 6 candidates but only four can stand once the other three groups are filled; STAR belongs to \"Words that go before FISH\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e16",
+   "title": "Expert wall 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a tool",
+     "terms": [
+      "SAWDUST",
+      "SHOEBOX",
+      "TAXES",
+      "FILET"
+     ],
+     "explanation": "SAWDUST hides SAW, SHOEBOX hides HOE, TAXES hides AXE and FILET hides FILE.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "AXE",
+       "SAW",
+       "HOE",
+       "RAKE",
+       "SPADE",
+       "FILE"
+      ]
+     }
+    },
+    {
+     "label": "Hides a drink",
+     "terms": [
+      "RUMOUR",
+      "ALERT",
+      "BEGIN",
+      "TEACUP"
+     ],
+     "explanation": "RUMOUR hides RUM, ALERT hides ALE, BEGIN hides GIN and TEACUP hides TEA.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "GIN",
+       "RUM",
+       "ALE",
+       "TEA",
+       "WINE"
+      ]
+     }
+    },
+    {
+     "label": "Chess pieces",
+     "terms": [
+      "KING",
+      "QUEEN",
+      "BISHOP",
+      "PAWN"
+     ],
+     "explanation": "King, queen, bishop and pawn are chess pieces; the rook flies away to the birds.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "KING",
+       "QUEEN",
+       "BISHOP",
+       "PAWN",
+       "ROOK"
+      ]
+     }
+    },
+    {
+     "label": "Feathered flyers",
+     "terms": [
+      "ROOK",
+      "WREN",
+      "LARK",
+      "SWIFT"
+     ],
+     "explanation": "A rook, wren, lark and swift are birds.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "ROOK",
+       "WREN",
+       "LARK",
+       "SWIFT"
+      ]
+     }
+    }
+   ],
+   "explanation": "ROOK is both a chess piece and a bird; the chess group has a fifth candidate.",
+   "redHerrings": [
+    {
+     "term": "KING",
+     "rival": "KING is also a playing card and a monarch.",
+     "resolvedBy": "Only the chess group is on the board, so no other group claims it."
+    },
+    {
+     "term": "QUEEN",
+     "rival": "QUEEN is also a bee and a playing card.",
+     "resolvedBy": "Chess is the only matching group on the board."
+    },
+    {
+     "term": "ROOK",
+     "rival": "ROOK is arguably a member, so it could pass for \"Chess pieces\".",
+     "resolvedBy": "\"Chess pieces\" has 5 candidates but only four can stand once the other three groups are filled; ROOK belongs to \"Feathered flyers\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e17",
+   "title": "Expert wall 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Worlds of the solar system",
+     "terms": [
+      "MARS",
+      "SATURN",
+      "EARTH",
+      "URANUS"
+     ],
+     "explanation": "Mars, Saturn, Earth and Uranus are planets.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "MARS",
+       "SATURN",
+       "EARTH",
+       "URANUS",
+       "MERCURY",
+       "VENUS"
+      ]
+     }
+    },
+    {
+     "label": "Chemical elements",
+     "terms": [
+      "MERCURY",
+      "IRON",
+      "NEON",
+      "ARGON"
+     ],
+     "explanation": "Mercury, iron, neon and argon are elements.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "MERCURY",
+       "IRON",
+       "NEON",
+       "ARGON"
+      ]
+     }
+    },
+    {
+     "label": "Roman goddesses",
+     "terms": [
+      "VENUS",
+      "JUNO",
+      "DIANA",
+      "VESTA"
+     ],
+     "explanation": "Venus, Juno, Diana and Vesta are Roman goddesses.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "VENUS",
+       "JUNO",
+       "DIANA",
+       "VESTA"
+      ]
+     }
+    },
+    {
+     "label": "Norse gods",
+     "terms": [
+      "ODIN",
+      "THOR",
+      "LOKI",
+      "TYR"
+     ],
+     "explanation": "Odin, Thor, Loki and Tyr are Norse gods.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "ODIN",
+       "THOR",
+       "LOKI",
+       "TYR"
+      ]
+     }
+    }
+   ],
+   "explanation": "MERCURY is a planet and an element; VENUS is a planet and a Roman goddess.",
+   "redHerrings": [
+    {
+     "term": "SATURN",
+     "rival": "SATURN was also a Roman god.",
+     "resolvedBy": "The Roman group is goddesses, so SATURN stays with the planets."
+    },
+    {
+     "term": "MERCURY",
+     "rival": "MERCURY is arguably a member, so it could pass for \"Worlds of the solar system\".",
+     "resolvedBy": "\"Worlds of the solar system\" has 6 candidates but only four can stand once the other three groups are filled; MERCURY belongs to \"Chemical elements\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "VENUS",
+     "rival": "VENUS is arguably a member, so it could pass for \"Worlds of the solar system\".",
+     "resolvedBy": "\"Worlds of the solar system\" has 6 candidates but only four can stand once the other three groups are filled; VENUS belongs to \"Roman goddesses\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e18",
+   "title": "Expert wall 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Reads backwards as an animal",
+     "terms": [
+      "FLOW",
+      "TAB",
+      "LEE",
+      "REED"
+     ],
+     "explanation": "FLOW is WOLF, TAB is BAT, LEE is EEL and REED is DEER.",
+     "rule": {
+      "kind": "reversal",
+      "words": [
+       "WOLF",
+       "BAT",
+       "EEL",
+       "DEER",
+       "DOG",
+       "RAT"
+      ]
+     }
+    },
+    {
+     "label": "Deities",
+     "terms": [
+      "GOD",
+      "ZEUS",
+      "ODIN",
+      "THOR"
+     ],
+     "explanation": "God, Zeus, Odin and Thor are deities.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "GOD",
+       "ZEUS",
+       "ODIN",
+       "THOR"
+      ]
+     }
+    },
+    {
+     "label": "Sticky substances",
+     "terms": [
+      "TAR",
+      "GLUE",
+      "PITCH",
+      "RESIN"
+     ],
+     "explanation": "Tar, glue, pitch and resin are sticky.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "TAR",
+       "GLUE",
+       "PITCH",
+       "RESIN"
+      ]
+     }
+    },
+    {
+     "label": "Wetland plants",
+     "terms": [
+      "RUSH",
+      "SEDGE",
+      "OSIER",
+      "IRIS"
+     ],
+     "explanation": "Rush, sedge, osier and iris grow in wet ground; REED is also one but is needed for the reversals.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "RUSH",
+       "SEDGE",
+       "OSIER",
+       "IRIS",
+       "REED"
+      ]
+     }
+    }
+   ],
+   "explanation": "GOD and TAR also reverse into animals, but they belong to deities and sticky stuff.",
+   "redHerrings": [
+    {
+     "term": "REED",
+     "rival": "REED is arguably a member, so it could pass for \"Wetland plants\".",
+     "resolvedBy": "\"Wetland plants\" has 5 candidates but only four can stand once the other three groups are filled; REED belongs to \"Reads backwards as an animal\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "GOD",
+     "rival": "GOD reads backwards as DOG, so it could pass for \"Reads backwards as an animal\".",
+     "resolvedBy": "\"Reads backwards as an animal\" has 6 candidates but only four can stand once the other three groups are filled; GOD belongs to \"Deities\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "TAR",
+     "rival": "TAR reads backwards as RAT, so it could pass for \"Reads backwards as an animal\".",
+     "resolvedBy": "\"Reads backwards as an animal\" has 6 candidates but only four can stand once the other three groups are filled; TAR belongs to \"Sticky substances\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e19",
+   "title": "Expert wall 19",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a Greek letter",
+     "terms": [
+      "CHIME",
+      "RHOMBUS",
+      "TAUNT",
+      "METAL"
+     ],
+     "explanation": "CHIME hides CHI, RHOMBUS hides RHO, TAUNT hides TAU and METAL hides ETA.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "RHO",
+       "TAU",
+       "CHI",
+       "ETA",
+       "PSI",
+       "PHI"
+      ]
+     }
+    },
+    {
+     "label": "Hides a colour",
+     "terms": [
+      "REDUCE",
+      "PINKIE",
+      "BLUEBELL",
+      "GREYHOUND"
+     ],
+     "explanation": "REDUCE hides RED, PINKIE hides PINK, BLUEBELL hides BLUE and GREYHOUND hides GREY.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "RED",
+       "TAN",
+       "PINK",
+       "BLUE",
+       "GREY",
+       "JADE"
+      ]
+     }
+    },
+    {
+     "label": "Ballroom and Latin dances",
+     "terms": [
+      "TANGO",
+      "WALTZ",
+      "FOXTROT",
+      "RUMBA"
+     ],
+     "explanation": "Tango, waltz, foxtrot and rumba are dances.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "TANGO",
+       "WALTZ",
+       "FOXTROT",
+       "RUMBA"
+      ]
+     }
+    },
+    {
+     "label": "NATO phonetic alphabet words",
+     "terms": [
+      "ECHO",
+      "DELTA",
+      "SIERRA",
+      "HOTEL"
+     ],
+     "explanation": "Echo, Delta, Sierra and Hotel stand for E, D, S and H.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "TANGO",
+       "ECHO",
+       "DELTA",
+       "SIERRA",
+       "HOTEL",
+       "FOXTROT"
+      ]
+     }
+    }
+   ],
+   "explanation": "TANGO is a dance, a NATO word and hides the colour TAN.",
+   "redHerrings": [
+    {
+     "term": "TANGO",
+     "rival": "TANGO hides TAN, so it could pass for \"Hides a colour\".",
+     "resolvedBy": "\"Hides a colour\" has 5 candidates but only four can stand once the other three groups are filled; TANGO belongs to \"Ballroom and Latin dances\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "TANGO",
+     "rival": "TANGO is arguably a member, so it could pass for \"NATO phonetic alphabet words\".",
+     "resolvedBy": "\"NATO phonetic alphabet words\" has 6 candidates but only four can stand once the other three groups are filled; TANGO belongs to \"Ballroom and Latin dances\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "FOXTROT",
+     "rival": "FOXTROT is arguably a member, so it could pass for \"NATO phonetic alphabet words\".",
+     "resolvedBy": "\"NATO phonetic alphabet words\" has 6 candidates but only four can stand once the other three groups are filled; FOXTROT belongs to \"Ballroom and Latin dances\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e20",
+   "title": "Expert wall 20",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hides a tree",
+     "terms": [
+      "SPINET",
+      "FIRKIN",
+      "OAKUM",
+      "BAYONET"
+     ],
+     "explanation": "SPINET hides PINE, FIRKIN hides FIR, OAKUM hides OAK and BAYONET hides BAY.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "ASH",
+       "ELM",
+       "OAK",
+       "FIR",
+       "YEW",
+       "BAY",
+       "PINE",
+       "LIME",
+       "PLUM",
+       "PEAR",
+       "MAPLE"
+      ]
+     }
+    },
+    {
+     "label": "Hides a fish",
+     "terms": [
+      "CODEX",
+      "ARRAY",
+      "CARPET",
+      "LINGER"
+     ],
+     "explanation": "CODEX hides COD, ARRAY hides RAY, CARPET hides CARP and LINGER hides LING.",
+     "rule": {
+      "kind": "hidden",
+      "words": [
+       "COD",
+       "EEL",
+       "RAY",
+       "GAR",
+       "LING",
+       "PIKE",
+       "CARP",
+       "BASS"
+      ]
+     }
+    },
+    {
+     "label": "Anagram of a metal",
+     "terms": [
+      "NIT",
+      "NORI",
+      "DEAL",
+      "SLIVER"
+     ],
+     "explanation": "NIT is TIN, NORI is IRON, DEAL is LEAD and SLIVER is SILVER.",
+     "rule": {
+      "kind": "anagram",
+      "words": [
+       "TIN",
+       "IRON",
+       "LEAD",
+       "SILVER"
+      ]
+     }
+    },
+    {
+     "label": "Valleys",
+     "terms": [
+      "DALE",
+      "GLEN",
+      "COMBE",
+      "VALE"
+     ],
+     "explanation": "A dale, glen, combe and vale are all valleys.",
+     "rule": {
+      "kind": "members",
+      "words": [
+       "DALE",
+       "GLEN",
+       "COMBE",
+       "VALE"
+      ]
+     }
+    }
+   ],
+   "explanation": "DALE is a valley and an anagram of LEAD; BAYONET, CARPET and the rest hide trees and fish.",
+   "redHerrings": [
+    {
+     "term": "CARPET",
+     "rival": "CARPET also hides PET.",
+     "resolvedBy": "Only the fish group asks for a hidden fish, so CARP decides it."
+    },
+    {
+     "term": "LINGER",
+     "rival": "LING is also a heather.",
+     "resolvedBy": "No plant group appears on the board; LING is read as the fish."
+    },
+    {
+     "term": "DALE",
+     "rival": "DALE rearranges to LEAD, so it could pass for \"Anagram of a metal\".",
+     "resolvedBy": "\"Anagram of a metal\" has 5 candidates but only four can stand once the other three groups are filled; DALE belongs to \"Valleys\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
+  },
+  {
+   "id": "wf-e21",
+   "title": "Expert wall 21",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like a fruit",
+     "terms": [
+      "PAIR",
+      "BURY",
+      "CURRENT",
+      "PLUMB"
+     ],
+     "explanation": "PAIR sounds like pear, BURY like berry, CURRENT like currant and PLUMB like plum.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "PAIR",
+       "BURY",
+       "CURRENT",
+       "PLUMB"
+      ]
+     }
+    },
+    {
+     "label": "Electrical terms",
+     "terms": [
+      "VOLT",
+      "WATT",
+      "OHM",
+      "FUSE"
+     ],
+     "explanation": "Volt, watt, ohm and fuse are electrical terms; CURRENT is one too but is needed for the fruit sounds.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "VOLT",
+       "WATT",
+       "OHM",
+       "FUSE",
+       "CURRENT"
+      ]
+     }
+    },
+    {
+     "label": "Twosomes",
+     "terms": [
+      "COUPLE",
+      "DUO",
+      "BRACE",
+      "TWAIN"
+     ],
+     "explanation": "A couple, duo, brace and twain are all two; PAIR is one too but is needed for the fruit sounds.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "COUPLE",
+       "DUO",
+       "BRACE",
+       "TWAIN",
+       "PAIR"
+      ]
+     }
+    },
+    {
+     "label": "Funeral words",
+     "terms": [
+      "INTER",
+      "ENTOMB",
+      "CREMATE",
+      "MOURN"
+     ],
+     "explanation": "Inter, entomb, cremate and mourn belong to funerals; BURY is one too but is needed for the fruit sounds.",
+     "rule": {
+      "kind": "authored",
+      "candidates": [
+       "INTER",
+       "ENTOMB",
+       "CREMATE",
+       "MOURN",
+       "BURY"
+      ]
+     }
+    }
+   ],
+   "explanation": "Four homophone and overlap puzzles: CURRENT sounds like a fruit and is electrical, PAIR sounds like pear and means two, BURY sounds like berry and is a funeral verb.",
+   "redHerrings": [
+    {
+     "term": "CURRENT",
+     "rival": "CURRENT is arguably a member, so it could pass for \"Electrical terms\".",
+     "resolvedBy": "\"Electrical terms\" has 5 candidates but only four can stand once the other three groups are filled; CURRENT belongs to \"Sound like a fruit\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "PAIR",
+     "rival": "PAIR is arguably a member, so it could pass for \"Twosomes\".",
+     "resolvedBy": "\"Twosomes\" has 5 candidates but only four can stand once the other three groups are filled; PAIR belongs to \"Sound like a fruit\" in the only valid partition (checked by exhaustive search)."
+    },
+    {
+     "term": "BURY",
+     "rival": "BURY is arguably a member, so it could pass for \"Funeral words\".",
+     "resolvedBy": "\"Funeral words\" has 5 candidates but only four can stand once the other three groups are filled; BURY belongs to \"Sound like a fruit\" in the only valid partition (checked by exhaustive search)."
+    }
+   ]
   }
  ]
 }

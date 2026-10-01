@@ -45,6 +45,22 @@ describe("Word Families content", () => {
     }
   });
 
+  it("Master walls: exactly one valid partition under their machine-checkable rules, with surplus candidates", async () => {
+    const { rawRounds } = await import("./rounds");
+    const { candidatesFor, countPartitions } = await import("./candidates");
+    const masters = rawRounds.filter((r) => r.difficulty === "master");
+    expect(masters.length).toBeGreaterThanOrEqual(12);
+    for (const r of masters) {
+      const labels = r.groups.flatMap((g) => g.terms);
+      const sets = r.groups.map((g) => candidatesFor(g.rule!, labels));
+      expect(countPartitions(sets, labels, 3), r.id).toBe(1);
+      expect(sets.reduce((a, s) => a + s.length - 4, 0), r.id).toBeGreaterThanOrEqual(2);
+      expect(r.mistakeBudget).toBe(3);
+    }
+    // The counter really detects ambiguity: two interchangeable tiles give two partitions.
+    expect(countPartitions([["A", "B", "C", "D", "E"], ["E", "F", "G", "H", "A"]], ["A", "B", "C", "D", "E", "F", "G", "H"], 5)).toBe(2);
+  });
+
   it("has at least fifteen rounds per difficulty (practice plus demo)", () => {
     for (const d of ["gentle", "standard", "expert"] as const) {
       expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(15);

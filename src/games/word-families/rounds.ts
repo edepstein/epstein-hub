@@ -1,6 +1,7 @@
 import type { RoundBundle } from "../types";
 import type { Difficulty, RoundStatus } from "@/lib/engine/types";
 import { contentHash } from "@/lib/hash";
+import type { GroupRule } from "./candidates";
 import { RULES_VERSION, type FamiliesPayload, type RedHerring } from "./engine";
 import data from "./content/rounds.json";
 
@@ -14,7 +15,7 @@ export interface RawFamiliesRound {
   continueAfterBudget: boolean;
   /** Pack fixtures keep their authored display order; practice rounds interleave groups. */
   displayOrder?: string[];
-  groups: { label: string; terms: string[]; explanation: string }[];
+  groups: { label: string; terms: string[]; explanation: string; rule?: GroupRule }[];
   explanation: string;
   redHerrings: RedHerring[];
   fixtureHints?: unknown[];

@@ -202,3 +202,27 @@ test("@mobile demo board with FULL STOP fits and plays", async ({ page }) => {
   await check(page);
   await expect(page.getByTestId("solved-groups")).toContainText("Punctuation marks");
 });
+
+test("Master wall: a red herring costs a mistake, then all four groups are solved", async ({ page }) => {
+  await page.goto("/play/word-families/wf-m4");
+  await expect(page.getByTestId("wf-board").getByRole("button")).toHaveCount(16);
+  await expect(page.getByTestId("mistakes")).toContainText("0 of 3");
+  // PEA sounds like a letter, but the tree group needs it: the letters are QUEUE, WHY, ARE, JAY.
+  await pick(page, ["QUEUE", "WHY", "ARE", "PEA"]);
+  await check(page);
+  await expect(page.getByTestId("mistakes")).toContainText("1 of 3");
+  await page.getByRole("button", { name: "Clear selection" }).click();
+  for (const group of [
+    ["QUEUE", "WHY", "ARE", "JAY"],
+    ["PIN", "LIE", "PAL", "PEA"],
+    ["TEA", "COCOA", "CHAI", "MOCHA"],
+    ["ROOK", "WREN", "KITE", "SWIFT"],
+  ]) {
+    await pick(page, group);
+    await check(page);
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("All 4 groups solved");
+  await expect(result).toContainText("1 mistake");
+});

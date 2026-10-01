@@ -1,5 +1,6 @@
 import { rawRounds, rounds } from "./rounds";
 import { GROUP_SIZE } from "./engine";
+import { candidatesFor, countPartitions } from "./candidates";
 
 const norm = (s: string) => s.normalize("NFC").trim().replace(/\s+/g, " ").toUpperCase();
 
@@ -66,9 +67,38 @@ export function validateContent(): string[] {
     // Regression: the tutorial grouping must never be presented as Expert.
     if (meta.sourceFixtureId === "starter-families" && meta.difficulty !== "gentle") problems.push(`${meta.id}: the tutorial fixture must stay Gentle`);
 
+    // Rule-backed groups: recompute every group's candidate tiles over the whole board, require the intended
+    // groups to be among them, document every cross-group candidate as a red herring, and prove by exhaustive
+    // search that exactly one partition of the sixteen tiles exists. Required for Master and the newer Expert walls.
+    const numeric = Number(meta.id.replace(/\D/g, ""));
+    const needsRules = meta.difficulty === "master" || (meta.difficulty === "expert" && meta.status !== "demo" && numeric >= 16);
+    const ruled = raw.groups.every((g) => g.rule);
+    if (needsRules && !ruled) problems.push(`${at("groups")}: every group needs a machine-checkable rule`);
+    if (ruled) {
+      const labelsAll = p.terms.map((t) => t.label);
+      const sets = raw.groups.map((g) => candidatesFor(g.rule!, labelsAll));
+      raw.groups.forEach((g, gi) => {
+        const missing = g.terms.filter((t) => !sets[gi].includes(t));
+        if (missing.length) problems.push(`${at(`groups[${gi}].rule`)}: rule does not accept ${missing.join(", ")}`);
+      });
+      const n = countPartitions(sets, labelsAll, 3);
+      if (n !== 1) problems.push(`${at("groups")}: ${n === 0 ? "no" : "more than one"} valid partition under the declared rules (exhaustive search)`);
+      const documented = new Set(p.redHerrings.map((h) => h.term));
+      raw.groups.forEach((g, gi) => {
+        sets.forEach((s, oi) => {
+          if (oi === gi) return;
+          for (const t of g.terms) if (s.includes(t) && !documented.has(t)) problems.push(`${at("redHerrings")}: ${t} also fits "${raw.groups[oi].label}" but is not documented`);
+        });
+      });
+      if (meta.difficulty === "master") {
+        const surplus = sets.reduce((a, s) => a + s.length - GROUP_SIZE, 0);
+        if (surplus < 2) problems.push(`${at("groups")}: Master walls need at least two surplus candidate tiles across the groups (found ${surplus})`);
+        if (p.redHerrings.length < 2) problems.push(`${at("redHerrings")}: Master walls need at least two documented red herrings`);
+      }
+    }
     const spoil = [...p.groups.map((g) => norm(g.label)), ...labels];
     if (spoil.some((s) => norm(meta.title ?? "").includes(s) || meta.id.toUpperCase().includes(s))) problems.push(`${meta.id}: id/title may spoil an answer`);
-    if (!/Gentle|Standard|Expert|Starter|Everyday/.test(meta.title ?? "")) problems.push(`${meta.id}: title should be a neutral round name`);
+    if (!/Gentle|Standard|Expert|Master|Starter|Everyday/.test(meta.title ?? "")) problems.push(`${meta.id}: title should be a neutral round name`);
   });
   const seenLabels = new Map<string, string>();
   for (const { meta, payload: p } of rounds) {
@@ -79,6 +109,6 @@ export function validateContent(): string[] {
       else seenLabels.set(k, meta.id);
     }
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 15) problems.push(`fewer than 15 ${d} rounds`);
+  for (const [d, n] of [["gentle", 15], ["standard", 15], ["expert", 21], ["master", 12]] as const) if ((perDifficulty[d] ?? 0) < n) problems.push(`fewer than ${n} ${d} rounds`);
   return problems;
 }
