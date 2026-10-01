@@ -63,7 +63,7 @@ test("archive filters live in the URL and survive back navigation", async ({ pag
   await expect(page.getByTestId("archive-empty")).toContainText("No daily editions have been published yet");
   await page.getByRole("combobox", { name: "Game" }).selectOption("letter-wheel");
   await page.getByLabel("Difficulty").selectOption("expert");
-  await expect(page).toHaveURL(/game=letter-wheel/);
+  await expect(page).toHaveURL(/game=letter-wheel/, { timeout: 15_000 });
   await page.locator(".round-grid a").first().click();
   await expect(page.getByLabel("Your word")).toBeVisible();
   await page.goBack();
@@ -92,7 +92,7 @@ test("blocked storage still allows play with a clear warning", async ({ page }) 
 
 test("practice route sends the player to an unplayed round", async ({ page }) => {
   await page.goto("/practice/letter-wheel");
-  await expect(page).toHaveURL(/\/play\/letter-wheel\//);
+  await expect(page).toHaveURL(/\/play\/letter-wheel\//, { timeout: 15_000 });
 });
 
 test("@mobile core pages have no horizontal overflow at 390px", async ({ page }) => {

@@ -7,7 +7,8 @@
  */
 import { EXCLUDED_WORDS } from "./exclusions";
 
-export const MEMBERSHIP_VERSION = "gb-esdb-v1-candidate";
+/** v1.1: exclusion list extended (ARSE, TURD, CRAP and variants). Saved attempts pinned to v1 restart cleanly. */
+export const MEMBERSHIP_VERSION = "gb-esdb-v1.1-candidate";
 export const DICTIONARY_URL = "/dictionaries/gb-esdb-v1.txt";
 export const DICTIONARY_SHA256 = "daf3a79020e327e63356e01529c1e8aca37d217dbf6a85edfc0ab27cf9a291ce";
 

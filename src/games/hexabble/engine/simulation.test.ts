@@ -1,3 +1,4 @@
+import { MEMBERSHIP_VERSION } from "@/lib/dictionary";
 /**
  * Seeded full-match simulations and property tests: tile conservation, unique IDs,
  * deterministic replay, score/history consistency and snapshot validity through play,
@@ -32,7 +33,7 @@ function checkInvariants(s: MatchState) {
     updatedAt: "x",
     privacy: true,
     handover: false,
-    dictionaryVersion: "gb-esdb-v1-candidate",
+    dictionaryVersion: MEMBERSHIP_VERSION,
   });
   const check = validateSnapshot(JSON.parse(JSON.stringify(snap)));
   if (!check.ok) throw new Error(check.reason);

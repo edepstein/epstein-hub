@@ -15,7 +15,8 @@
     "test:e2e": "playwright test",
     "validate:content": "tsx scripts/content/validate-all.ts",
     "build:dictionary": "bash scripts/content/build-dictionary.sh",
-    "status": "tsx scripts/content/status.ts"
+    "status": "tsx scripts/content/status.ts",
+    "regen:derived": "tsx scripts/content/regen-derived.ts"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.7",

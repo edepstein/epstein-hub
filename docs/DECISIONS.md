@@ -99,3 +99,16 @@ media, but no Supabase project or credentials exist in this build.
   `/api/family`, `/api/auth`) refreshes Supabase cookies so rotated refresh tokens are persisted.
   Mutations require a same-origin `Origin` (or `Sec-Fetch-Site: same-origin`) header; redirects
   after sign-in are limited to `/family` paths.
+
+## D9 Membership v1.1 and derived content (2026-10-01)
+Exclusions extended (ARSE, TURD, CRAP and variants, flagged by the Hidden Word Trail agent because
+they earned bonus credit). MEMBERSHIP_VERSION bumped to `gb-esdb-v1.1-candidate`, so saved attempts
+pinned to v1 restart cleanly under the version-mismatch path rather than being reinterpreted.
+Content values derived from membership (Letter Circuit parPool, Word Ladder familiar.json) are
+regenerated with `pnpm regen:derived`; validators re-prove par/optima afterwards.
+
+## D10 Dialog focus restoration
+The shared Dialog restored opener focus in a setTimeout, which could steal focus from a fast
+keyboard user who had already moved on (found via an intermittent Shrinking Staircase e2e failure:
+Enter on the stolen focus reopened the dialog). Focus is now restored synchronously and only when
+focus is lost (body or inside the closing dialog).

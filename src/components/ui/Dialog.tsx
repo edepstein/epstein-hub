@@ -42,7 +42,11 @@ export function Dialog({
     if (!d) return;
     const onNativeClose = () => {
       const o = opener.current;
-      if (o && typeof o.focus === "function") setTimeout(() => o.focus(), 0);
+      // Restore focus to the opener synchronously, and only if focus has not already moved
+      // somewhere deliberate (a deferred restore could steal focus from a fast keyboard user).
+      const active = document.activeElement;
+      const focusLost = !active || active === document.body || d.contains(active);
+      if (o && o.isConnected && typeof o.focus === "function" && focusLost) o.focus();
       onClose();
     };
     d.addEventListener("close", onNativeClose);

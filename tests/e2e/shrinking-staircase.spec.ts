@@ -111,6 +111,8 @@ test("keyboard only: rules, answering, hint dialog and revise confirmation", asy
   await page.getByLabel("Answer for rung 2").focus();
   await page.keyboard.type("pot");
   await page.keyboard.press("Enter");
+  // Wait for focus to advance before typing, otherwise keystrokes can land in rung 2 under load.
+  await expect(page.getByLabel("Answer for rung 3")).toBeFocused();
   await page.keyboard.type("to");
   await page.keyboard.press("Enter");
   await expect(page.getByTestId("result-panel")).toHaveAttribute("data-outcome", "completed");

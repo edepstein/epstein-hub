@@ -1,3 +1,4 @@
+import { MEMBERSHIP_VERSION } from "@/lib/dictionary";
 import { describe, expect, it } from "vitest";
 import {
   EMPTY_DRAFT,
@@ -22,7 +23,7 @@ const make = (state: MatchState, draft: MatchDraft = EMPTY_DRAFT, handover = fal
     updatedAt: "2026-09-30T10:05:00.000Z",
     privacy: true,
     handover,
-    dictionaryVersion: "gb-esdb-v1-candidate",
+    dictionaryVersion: MEMBERSHIP_VERSION,
   });
 const roundTrip = (s: MatchSnapshot) => JSON.parse(JSON.stringify(s));
 
