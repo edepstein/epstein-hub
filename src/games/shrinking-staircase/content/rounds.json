@@ -131,6 +131,132 @@
       }
     },
     {
+      "id": "sc-g6",
+      "title": "Gentle staircase 6",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "FOAMY",
+        "rungs": [
+          { "clue": "The mass of tiny bubbles that forms on top of a drink", "length": 4 },
+          { "clue": "A clumsy, rather stupid person", "length": 3 },
+          { "clue": "Belonging to, as in 'a cup ___ tea'", "length": 2 }
+        ],
+        "acceptedChains": [["FOAMY", "FOAM", "OAF", "OF"]],
+        "lettersAid": true,
+        "explanation": "FOAMY drops Y to leave FOAM, FOAM drops M and the rest rearrange to make OAF, and OAF drops A to leave OF."
+      }
+    },
+    {
+      "id": "sc-g7",
+      "title": "Gentle staircase 7",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PUPIL",
+        "rungs": [
+          { "clue": "The soft, juicy flesh of a fruit", "length": 4 },
+          { "clue": "A young dog", "length": 3 },
+          { "clue": "In a higher place; the opposite of down", "length": 2 }
+        ],
+        "acceptedChains": [["PUPIL", "PULP", "PUP", "UP"]],
+        "lettersAid": true,
+        "explanation": "PUPIL drops I and the rest rearrange to make PULP, PULP drops L to leave PUP, and PUP drops P to leave UP."
+      }
+    },
+    {
+      "id": "sc-g8",
+      "title": "Gentle staircase 8",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "SKUNK",
+        "rungs": [
+          { "clue": "Gone under the water, as in 'the ship has ___'", "length": 4 },
+          { "clue": "The star that our planet goes round", "length": 3 },
+          { "clue": "The word for me and other people, as in 'come with ___'", "length": 2 }
+        ],
+        "acceptedChains": [["SKUNK", "SUNK", "SUN", "US"]],
+        "lettersAid": true,
+        "explanation": "SKUNK drops K to leave SUNK, SUNK drops K to leave SUN, and SUN drops N and the rest rearrange to make US."
+      }
+    },
+    {
+      "id": "sc-g9",
+      "title": "Gentle staircase 9",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "FIGHT",
+        "rungs": [
+          { "clue": "A present given on a birthday", "length": 4 },
+          { "clue": "A sweet, soft fruit with many tiny seeds", "length": 3 },
+          { "clue": "The word that starts a condition, as in '___ it rains, we will stay in'", "length": 2 }
+        ],
+        "acceptedChains": [["FIGHT", "GIFT", "FIG", "IF"]],
+        "lettersAid": true,
+        "explanation": "FIGHT drops H and the rest rearrange to make GIFT, GIFT drops T and the rest rearrange to make FIG, and FIG drops G and the rest rearrange to make IF."
+      }
+    },
+    {
+      "id": "sc-g10",
+      "title": "Gentle staircase 10",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "WEAVE",
+        "rungs": [
+          { "clue": "Move a hand to and fro in greeting", "length": 4 },
+          { "clue": "A feeling of wonder mixed with respect or fear", "length": 3 },
+          { "clue": "You and I together, as in '___ are friends'", "length": 2 }
+        ],
+        "acceptedChains": [["WEAVE", "WAVE", "AWE", "WE"]],
+        "lettersAid": true,
+        "explanation": "WEAVE drops E to leave WAVE, WAVE drops V and the rest rearrange to make AWE, and AWE drops A to leave WE."
+      }
+    },
+    {
+      "id": "sc-g11",
+      "title": "Gentle staircase 11",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TABBY",
+        "rungs": [
+          { "clue": "A very young child", "length": 4 },
+          { "clue": "A curve in the coast where the sea is sheltered", "length": 3 },
+          { "clue": "Next to, as in 'a house ___ the sea'", "length": 2 }
+        ],
+        "acceptedChains": [["TABBY", "BABY", "BAY", "BY"]],
+        "lettersAid": true,
+        "explanation": "TABBY drops T and the rest rearrange to make BABY, BABY drops B and the rest rearrange to make BAY, and BAY drops A to leave BY."
+      }
+    },
+    {
+      "id": "sc-g12",
+      "title": "Gentle staircase 12",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "AGONY",
+        "rungs": [
+          { "clue": "Exercise using stretches and controlled breathing", "length": 4 },
+          { "clue": "In the past, as in 'long ___'", "length": 3 },
+          { "clue": "Leave or travel; the opposite of stay", "length": 2 }
+        ],
+        "acceptedChains": [["AGONY", "YOGA", "AGO", "GO"]],
+        "lettersAid": true,
+        "explanation": "AGONY drops N and the rest rearrange to make YOGA, YOGA drops Y and the rest rearrange to make AGO, and AGO drops A to leave GO."
+      }
+    },
+    {
       "id": "sc-s1",
       "title": "Standard staircase 1",
       "difficulty": "standard",
@@ -226,6 +352,177 @@
       }
     },
     {
+      "id": "sc-s6",
+      "title": "Standard staircase 6",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "SKIMPY",
+        "rungs": [
+          { "clue": "Spend or use too little of something", "length": 5 },
+          { "clue": "Take the cream off the top of milk", "length": 4 },
+          { "clue": "A long, narrow runner worn on a boot for gliding over snow", "length": 3 },
+          { "clue": "The form of 'be' used with he, she or it", "length": 2 }
+        ],
+        "acceptedChains": [["SKIMPY", "SKIMP", "SKIM", "SKI", "IS"]],
+        "lettersAid": false,
+        "explanation": "SKIMPY drops Y to leave SKIMP, SKIMP drops P to leave SKIM, SKIM drops M to leave SKI, and SKI drops K and the rest rearrange to make IS."
+      }
+    },
+    {
+      "id": "sc-s7",
+      "title": "Standard staircase 7",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "GLOOMY",
+        "rungs": [
+          { "clue": "Darkness, or a feeling of sadness", "length": 5 },
+          { "clue": "A symbol that identifies a company", "length": 4 },
+          { "clue": "Soft, sticky, messy stuff", "length": 3 },
+          { "clue": "Be on the move; the opposite of stay", "length": 2 }
+        ],
+        "acceptedChains": [["GLOOMY", "GLOOM", "LOGO", "GOO", "GO"]],
+        "lettersAid": false,
+        "explanation": "GLOOMY drops Y to leave GLOOM, GLOOM drops M and the rest rearrange to make LOGO, LOGO drops L and the rest rearrange to make GOO, and GOO drops O to leave GO."
+      }
+    },
+    {
+      "id": "sc-s8",
+      "title": "Standard staircase 8",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HARDLY",
+        "rungs": [
+          { "clue": "Tough and able to survive harsh weather", "length": 5 },
+          { "clue": "A measure of length equal to three feet", "length": 4 },
+          { "clue": "Twenty-four hours", "length": 3 },
+          { "clue": "Short for advertisement", "length": 2 }
+        ],
+        "acceptedChains": [["HARDLY", "HARDY", "YARD", "DAY", "AD"]],
+        "lettersAid": false,
+        "explanation": "HARDLY drops L to leave HARDY, HARDY drops H and the rest rearrange to make YARD, YARD drops R and the rest rearrange to make DAY, and DAY drops Y and the rest rearrange to make AD."
+      }
+    },
+    {
+      "id": "sc-s9",
+      "title": "Standard staircase 9",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MOULDY",
+        "rungs": [
+          { "clue": "The grey-green fungus that grows on stale bread", "length": 5 },
+          { "clue": "Making a lot of noise", "length": 4 },
+          { "clue": "A pair of performers", "length": 3 },
+          { "clue": "Carry out or perform, as in 'to ___ the washing-up'", "length": 2 }
+        ],
+        "acceptedChains": [["MOULDY", "MOULD", "LOUD", "DUO", "DO"]],
+        "lettersAid": false,
+        "explanation": "MOULDY drops Y to leave MOULD, MOULD drops M and the rest rearrange to make LOUD, LOUD drops L and the rest rearrange to make DUO, and DUO drops U to leave DO."
+      }
+    },
+    {
+      "id": "sc-s10",
+      "title": "Standard staircase 10",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CANINE",
+        "rungs": [
+          { "clue": "Silly and without any meaning, as in 'an ___ remark'", "length": 5 },
+          { "clue": "One more than eight", "length": 4 },
+          { "clue": "A pub with rooms for travellers", "length": 3 },
+          { "clue": "Inside; the opposite of out", "length": 2 }
+        ],
+        "acceptedChains": [["CANINE", "INANE", "NINE", "INN", "IN"]],
+        "lettersAid": false,
+        "explanation": "CANINE drops C and the rest rearrange to make INANE, INANE drops A and the rest rearrange to make NINE, NINE drops E and the rest rearrange to make INN, and INN drops N to leave IN."
+      }
+    },
+    {
+      "id": "sc-s11",
+      "title": "Standard staircase 11",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "WHISKY",
+        "rungs": [
+          { "clue": "Beat eggs or cream quickly and lightly", "length": 5 },
+          { "clue": "A longing for something to happen, as in 'make a ___'", "length": 4 },
+          { "clue": "Belonging to him", "length": 3 },
+          { "clue": "A friendly, informal greeting", "length": 2 }
+        ],
+        "acceptedChains": [["WHISKY", "WHISK", "WISH", "HIS", "HI"]],
+        "lettersAid": false,
+        "explanation": "WHISKY drops Y to leave WHISK, WHISK drops K and the rest rearrange to make WISH, WISH drops W and the rest rearrange to make HIS, and HIS drops S to leave HI."
+      }
+    },
+    {
+      "id": "sc-s12",
+      "title": "Standard staircase 12",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "APIECE",
+        "rungs": [
+          { "clue": "A part cut or broken off a whole", "length": 5 },
+          { "clue": "Grand and heroic in scale, as in 'an ___ poem'", "length": 4 },
+          { "clue": "A baked dish with a pastry crust and a filling", "length": 3 },
+          { "clue": "The number 3.14, used for working out the area of a circle", "length": 2 }
+        ],
+        "acceptedChains": [["APIECE", "PIECE", "EPIC", "PIE", "PI"]],
+        "lettersAid": false,
+        "explanation": "APIECE drops A to leave PIECE, PIECE drops E and the rest rearrange to make EPIC, EPIC drops C and the rest rearrange to make PIE, and PIE drops E to leave PI."
+      }
+    },
+    {
+      "id": "sc-s13",
+      "title": "Standard staircase 13",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "WICKET",
+        "rungs": [
+          { "clue": "On two occasions", "length": 5 },
+          { "clue": "Quote as an example or as evidence", "length": 4 },
+          { "clue": "Fasten with a knot or a bow", "length": 3 },
+          { "clue": "A word for the thing being talked about, as in 'I like ___'", "length": 2 }
+        ],
+        "acceptedChains": [["WICKET", "TWICE", "CITE", "TIE", "IT"]],
+        "lettersAid": false,
+        "explanation": "WICKET drops K and the rest rearrange to make TWICE, TWICE drops W and the rest rearrange to make CITE, CITE drops C and the rest rearrange to make TIE, and TIE drops E and the rest rearrange to make IT."
+      }
+    },
+    {
+      "id": "sc-s14",
+      "title": "Standard staircase 14",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MONKEY",
+        "rungs": [
+          { "clue": "Coins and notes used to pay for things", "length": 5 },
+          { "clue": "A sign of good or bad luck to come", "length": 4 },
+          { "clue": "Grown-up male people, more than one", "length": 3 },
+          { "clue": "The word I becomes after a verb, as in 'give it to ___'", "length": 2 }
+        ],
+        "acceptedChains": [["MONKEY", "MONEY", "OMEN", "MEN", "ME"]],
+        "lettersAid": false,
+        "explanation": "MONKEY drops K to leave MONEY, MONEY drops Y and the rest rearrange to make OMEN, OMEN drops O to leave MEN, and MEN drops N to leave ME."
+      }
+    },
+    {
       "id": "sc-e1",
       "title": "Expert staircase 1",
       "difficulty": "expert",
@@ -239,12 +536,9 @@
           { "clue": "Magnificent and imposing", "length": 5 },
           { "clue": "Sounded, as a bell did", "length": 4 },
           { "clue": "Keep on at someone with complaints", "length": 3 },
-          { "clue": "The form of 'a' used before a vowel sound", "length": 2 }
+          { "clue": "Used instead of 'a' before a word such as 'apple'", "length": 2 }
         ],
-        "acceptedChains": [
-          ["ENDANGER", "ANGERED", "DANGER", "GRAND", "RANG", "NAG", "AN"],
-          ["ENDANGER", "ENRAGED", "DANGER", "GRAND", "RANG", "NAG", "AN"]
-        ],
+        "acceptedChains": [["ENDANGER", "ANGERED", "DANGER", "GRAND", "RANG", "NAG", "AN"], ["ENDANGER", "ENRAGED", "DANGER", "GRAND", "RANG", "NAG", "AN"]],
         "lettersAid": false,
         "explanation": "ENDANGER has two Ns and two Es. Losing an N gives ANGERED or ENRAGED (both accepted). Then an E goes for DANGER, another E for GRAND, D for RANG, R for NAG and G for AN."
       }
@@ -264,10 +558,7 @@
           { "clue": "A male child", "length": 3 },
           { "clue": "The opposite of yes", "length": 2 }
         ],
-        "acceptedChains": [
-          ["HONESTY", "HONEST", "NOTES", "NOSE", "SON", "NO"],
-          ["HONESTY", "HONEST", "TONES", "NOSE", "SON", "NO"]
-        ],
+        "acceptedChains": [["HONESTY", "HONEST", "NOTES", "NOSE", "SON", "NO"], ["HONESTY", "HONEST", "TONES", "NOSE", "SON", "NO"]],
         "lettersAid": false,
         "explanation": "HONESTY loses Y for HONEST, then H for NOTES or TONES (both accepted), T for NOSE, E for SON and S for NO."
       }
@@ -287,10 +578,7 @@
           { "clue": "Touch lightly and gently", "length": 3 },
           { "clue": "Present in, as in 'see you ___ six'", "length": 2 }
         ],
-        "acceptedChains": [
-          ["PATTERN", "PARENT", "TAPER", "TAPE", "PAT", "AT"],
-          ["PATTERN", "PARENT", "TAPER", "TAPE", "TAP", "AT"]
-        ],
+        "acceptedChains": [["PATTERN", "PARENT", "TAPER", "TAPE", "PAT", "AT"], ["PATTERN", "PARENT", "TAPER", "TAPE", "TAP", "AT"]],
         "lettersAid": false,
         "explanation": "PATTERN has two Ts; losing one gives PARENT. Then N goes for TAPER, R for TAPE, E for PAT or TAP (both accepted) and P for AT."
       }
@@ -328,11 +616,193 @@
           { "clue": "One more than two", "length": 5 },
           { "clue": "In this place", "length": 4 },
           { "clue": "Belonging to that woman or girl", "length": 3 },
-          { "clue": "That man or boy", "length": 2 }
+          { "clue": "The pronoun for a man you have just mentioned", "length": 2 }
         ],
         "acceptedChains": [["TEACHER", "HEATER", "THREE", "HERE", "HER", "HE"]],
         "lettersAid": false,
         "explanation": "TEACHER loses C for HEATER, A for THREE, T for HERE, one of the two Es for HER and R for HE."
+      }
+    },
+    {
+      "id": "sc-e6",
+      "title": "Expert staircase 6",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "DROUGHT",
+        "rungs": [
+          { "clue": "A long, narrow container that farm animals feed or drink from", "length": 6 },
+          { "clue": "Not smooth; bumpy and uneven", "length": 5 },
+          { "clue": "Sixty minutes", "length": 4 },
+          { "clue": "Belonging to us", "length": 3 },
+          { "clue": "Used before the last of a list of choices", "length": 2 }
+        ],
+        "acceptedChains": [["DROUGHT", "TROUGH", "ROUGH", "HOUR", "OUR", "OR"]],
+        "lettersAid": false,
+        "explanation": "DROUGHT drops D and the rest rearrange to make TROUGH, TROUGH drops T to leave ROUGH, ROUGH drops G and the rest rearrange to make HOUR, HOUR drops H to leave OUR, and OUR drops U to leave OR."
+      }
+    },
+    {
+      "id": "sc-e7",
+      "title": "Expert staircase 7",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "EXPLOIT",
+        "rungs": [
+          { "clue": "Having good manners", "length": 6 },
+          { "clue": "The person who flies an aeroplane", "length": 5 },
+          { "clue": "Long, hard, tiring work", "length": 4 },
+          { "clue": "A great many, as in 'a ___ of people'", "length": 3 },
+          { "clue": "The word before a verb in 'I want ___ go'", "length": 2 }
+        ],
+        "acceptedChains": [["EXPLOIT", "POLITE", "PILOT", "TOIL", "LOT", "TO"]],
+        "lettersAid": false,
+        "explanation": "EXPLOIT drops X and the rest rearrange to make POLITE, POLITE drops E and the rest rearrange to make PILOT, PILOT drops P and the rest rearrange to make TOIL, TOIL drops I and the rest rearrange to make LOT, and LOT drops L and the rest rearrange to make TO."
+      }
+    },
+    {
+      "id": "sc-e8",
+      "title": "Expert staircase 8",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BAYONET",
+        "rungs": [
+          { "clue": "The scientific study of plants", "length": 6 },
+          { "clue": "The stick passed from runner to runner in a relay", "length": 5 },
+          { "clue": "A small vessel for travelling on water", "length": 4 },
+          { "clue": "A flying mammal that sleeps upside down", "length": 3 },
+          { "clue": "Where, as in 'she is ___ school'", "length": 2 }
+        ],
+        "acceptedChains": [["BAYONET", "BOTANY", "BATON", "BOAT", "BAT", "AT"]],
+        "lettersAid": false,
+        "explanation": "BAYONET drops E and the rest rearrange to make BOTANY, BOTANY drops Y and the rest rearrange to make BATON, BATON drops N and the rest rearrange to make BOAT, BOAT drops O to leave BAT, and BAT drops B to leave AT."
+      }
+    },
+    {
+      "id": "sc-e9",
+      "title": "Expert staircase 9",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CONCORD",
+        "rungs": [
+          { "clue": "A huge vulture of the Andes", "length": 6 },
+          { "clue": "A person who gives blood or money", "length": 5 },
+          { "clue": "You open it to go into a room", "length": 4 },
+          { "clue": "A long, thin stick or bar, used by anglers", "length": 3 },
+          { "clue": "The linking word in 'now ___ never'", "length": 2 }
+        ],
+        "acceptedChains": [["CONCORD", "CONDOR", "DONOR", "DOOR", "ROD", "OR"]],
+        "lettersAid": false,
+        "explanation": "CONCORD drops C and the rest rearrange to make CONDOR, CONDOR drops C and the rest rearrange to make DONOR, DONOR drops N to leave DOOR, DOOR drops O and the rest rearrange to make ROD, and ROD drops D and the rest rearrange to make OR."
+      }
+    },
+    {
+      "id": "sc-e10",
+      "title": "Expert staircase 10",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HARMONIC",
+        "rungs": [
+          { "clue": "A king or a queen", "length": 7 },
+          { "clue": "The heavy hook dropped from a ship to stop it drifting", "length": 6 },
+          { "clue": "The nut of an oak tree", "length": 5 },
+          { "clue": "Maize, grown for its yellow kernels", "length": 4 },
+          { "clue": "A trick played to swindle someone", "length": 3 },
+          { "clue": "Resting upon, as in 'the book is ___ the table'", "length": 2 }
+        ],
+        "acceptedChains": [["HARMONIC", "MONARCH", "ANCHOR", "ACORN", "CORN", "CON", "ON"]],
+        "lettersAid": false,
+        "explanation": "HARMONIC drops I and the rest rearrange to make MONARCH, MONARCH drops M and the rest rearrange to make ANCHOR, ANCHOR drops H and the rest rearrange to make ACORN, ACORN drops A to leave CORN, CORN drops R to leave CON, and CON drops C to leave ON."
+      }
+    },
+    {
+      "id": "sc-e11",
+      "title": "Expert staircase 11",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "THIMBLE",
+        "rungs": [
+          { "clue": "Cheerful and carefree", "length": 6 },
+          { "clue": "Slim, supple and graceful", "length": 5 },
+          { "clue": "The handle of a sword or dagger", "length": 4 },
+          { "clue": "Set alight, as in 'he ___ a candle'", "length": 3 },
+          { "clue": "The pronoun in 'what time is ___?'", "length": 2 }
+        ],
+        "acceptedChains": [["THIMBLE", "BLITHE", "LITHE", "HILT", "LIT", "IT"]],
+        "lettersAid": false,
+        "explanation": "THIMBLE drops M and the rest rearrange to make BLITHE, BLITHE drops B to leave LITHE, LITHE drops E and the rest rearrange to make HILT, HILT drops H and the rest rearrange to make LIT, and LIT drops L to leave IT."
+      }
+    },
+    {
+      "id": "sc-e12",
+      "title": "Expert staircase 12",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ATHLETIC",
+        "rungs": [
+          { "clue": "A criss-cross framework of crossed strips, as on a garden trellis", "length": 7 },
+          { "clue": "Cows and bulls kept on a farm", "length": 6 },
+          { "clue": "A strip on the sole of a boot that grips the ground", "length": 5 },
+          { "clue": "A soft powder used after a bath", "length": 4 },
+          { "clue": "A small furry pet that purrs", "length": 3 },
+          { "clue": "Where, as in 'the shop ___ the corner'", "length": 2 }
+        ],
+        "acceptedChains": [["ATHLETIC", "LATTICE", "CATTLE", "CLEAT", "TALC", "CAT", "AT"]],
+        "lettersAid": false,
+        "explanation": "ATHLETIC drops H and the rest rearrange to make LATTICE, LATTICE drops I and the rest rearrange to make CATTLE, CATTLE drops T and the rest rearrange to make CLEAT, CLEAT drops E and the rest rearrange to make TALC, TALC drops L and the rest rearrange to make CAT, and CAT drops C to leave AT."
+      }
+    },
+    {
+      "id": "sc-e13",
+      "title": "Expert staircase 13",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "DIAMOND",
+        "rungs": [
+          { "clue": "The area of land ruled or controlled by one person", "length": 6 },
+          { "clue": "A person who wanders with no settled home", "length": 5 },
+          { "clue": "A long, low sound of pain or complaint", "length": 4 },
+          { "clue": "A grown-up male person", "length": 3 },
+          { "clue": "What I say after 'I', as in 'I ___ tired'", "length": 2 }
+        ],
+        "acceptedChains": [["DIAMOND", "DOMAIN", "NOMAD", "MOAN", "MAN", "AM"]],
+        "lettersAid": false,
+        "explanation": "DIAMOND drops D and the rest rearrange to make DOMAIN, DOMAIN drops I and the rest rearrange to make NOMAD, NOMAD drops D and the rest rearrange to make MOAN, MOAN drops O to leave MAN, and MAN drops N and the rest rearrange to make AM."
+      }
+    },
+    {
+      "id": "sc-e14",
+      "title": "Expert staircase 14",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PYRAMID",
+        "rungs": [
+          { "clue": "A countless number, as in 'a ___ of stars'", "length": 6 },
+          { "clue": "A farm or shop that deals in milk, butter and cheese", "length": 5 },
+          { "clue": "Very dry, as a desert is", "length": 4 },
+          { "clue": "Free of, as in 'to get ___ of'", "length": 3 },
+          { "clue": "Proof of who you are, such as a passport", "length": 2 }
+        ],
+        "acceptedChains": [["PYRAMID", "MYRIAD", "DAIRY", "ARID", "RID", "ID"]],
+        "lettersAid": false,
+        "explanation": "PYRAMID drops P and the rest rearrange to make MYRIAD, MYRIAD drops M and the rest rearrange to make DAIRY, DAIRY drops Y and the rest rearrange to make ARID, ARID drops A to leave RID, and RID drops R to leave ID."
       }
     }
   ]

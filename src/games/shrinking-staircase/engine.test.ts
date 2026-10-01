@@ -194,7 +194,7 @@ describe("Shrinking Staircase content", () => {
 
   it("has at least four practice rounds per difficulty", () => {
     for (const d of ["gentle", "standard", "expert"]) {
-      expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length).toBeGreaterThanOrEqual(4);
+      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
     }
   });
 

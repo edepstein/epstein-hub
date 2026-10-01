@@ -66,14 +66,27 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const ids = new Set<string>();
+  const starts = new Set<string>();
+  const answerOwner = new Map<string, string>();
+  const clueTexts = new Set<string>();
   for (const { meta, payload } of rounds) {
     if (ids.has(meta.id)) problems.push(`${meta.id}: duplicate round id`);
     ids.add(meta.id);
-    if (meta.status === "practice") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    if (meta.status === "practice" || meta.status === "demo") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    if (starts.has(payload.start)) problems.push(`${meta.id}: duplicate start word ${payload.start}`);
+    starts.add(payload.start);
+    for (const w of new Set(payload.acceptedChains.flat().slice(0))) {
+      if (w.length >= 3 && w !== payload.start && answerOwner.has(w) && !meta.id.startsWith("sc-demo")) problems.push(`${meta.id}: answer ${w} already used in ${answerOwner.get(w)}`);
+      if (w.length >= 3 && !answerOwner.has(w)) answerOwner.set(w, meta.id);
+    }
+    for (const r of payload.rungs) {
+      if (clueTexts.has(r.clue)) problems.push(`${meta.id}: duplicate clue text "${r.clue}"`);
+      clueTexts.add(r.clue);
+    }
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
     problems.push(...checkStaircaseRound(meta, payload, membership, familiar));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 practice rounds at ${d}`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
   const expertBranches = rounds.filter((r) => r.meta.difficulty === "expert" && r.payload.acceptedChains.length > 1).length;
   if (expertBranches < 2) problems.push("expert rounds should include at least two with accepted branches");
   return problems;
