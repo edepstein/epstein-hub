@@ -1,5 +1,5 @@
 import { rounds } from "./rounds";
-import { loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { compoundOf } from "./engine";
 
 /**
@@ -15,9 +15,18 @@ import { compoundOf } from "./engine";
  *   (gentle: 3 branches + visible bank; standard: 3 branches, optional bank, mixed directions;
  *   expert: 4 branches, optional bank).
  */
+/**
+ * Master compounds are drawn from the familiar plus uncommon layers (SCOWL 60). These closed compounds are
+ * real, standard words that only appear in the full gameplay list; each was checked by hand and is logged
+ * for editorial review in docs/REVIEW-LOG.md. Nothing else outside the two layers may appear in a Master board.
+ */
+export const MASTER_COMPOUND_ALLOW = new Set(["MUGWORT", "SOAPWORT"]);
+
 export function validateContent(): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
+  const layer = new Set<string>([...loadFamiliarSync(), ...loadUncommonSync()]);
+  const compoundsSeen = new Map<string, string>();
   const perDifficulty: Record<string, number> = {};
   const links = new Map<string, string>();
   const clues = new Map<string, string>();
@@ -33,7 +42,7 @@ export function validateContent(): string[] {
       const at = (f: string) => `${meta.id}.boards[${bi}].${f}`;
       if (ids.has(b.id)) problems.push(`${at("id")}: duplicate board id`);
       ids.add(b.id);
-      const want = practice ? (meta.difficulty === "expert" ? 4 : 3) : 3;
+      const want = practice ? (meta.difficulty === "expert" || meta.difficulty === "master" ? 4 : 3) : 3;
       if (b.branches.length !== want) problems.push(`${at("branches")}: expected ${want} branches, found ${b.branches.length}`);
       const brIds = new Set(b.branches.map((x) => x.id));
       if (brIds.size !== b.branches.length) problems.push(`${at("branches")}: duplicate branch ids`);
@@ -57,6 +66,11 @@ export function validateContent(): string[] {
           const expected = compoundOf(br, s.link);
           if (s.compounds[br.id] !== expected) problems.push(`${at(f)}.compounds.${br.id}: stored ${s.compounds[br.id]}, substitution gives ${expected}`);
           if (practice && !membership.has(expected)) problems.push(`${at(f)}.compounds.${br.id}: ${expected} is not a closed compound in the word list`);
+          if (meta.difficulty === "master" && !layer.has(expected) && !MASTER_COMPOUND_ALLOW.has(expected)) problems.push(`${at(f)}.compounds.${br.id}: master compound ${expected} is outside the familiar and uncommon layers and not on the reviewed allow-list`);
+          if (meta.difficulty === "master" || meta.difficulty === "expert") {
+            if (compoundsSeen.has(expected)) problems.push(`${at(f)}.compounds.${br.id}: ${expected} already appears in ${compoundsSeen.get(expected)}`);
+            compoundsSeen.set(expected, meta.id);
+          }
           if (practice && br.clue.toUpperCase().includes(s.link)) problems.push(`${at(`branches.${br.id}.clue`)}: clue contains the link ${s.link}`);
         }
       }
@@ -80,11 +94,12 @@ export function validateContent(): string[] {
       const title = `${meta.title ?? ""} ${meta.id}`.toUpperCase();
       for (const s of b.solutions) if (title.includes(s.link)) problems.push(`${meta.id}: id/title may spoil the link ${s.link}`);
     });
-    if (practice && (meta.difficulty === "standard" || meta.difficulty === "expert")) {
+    if (practice && (meta.difficulty === "standard" || meta.difficulty === "expert" || meta.difficulty === "master")) {
       const mixed = payload.boards.some((b) => b.branches.some((br) => br.prefix === "") && b.branches.some((br) => br.suffix === ""));
       if (!mixed) problems.push(`${meta.id}: ${meta.difficulty} rounds need at least one board mixing before and after blanks`);
     }
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 ${d} rounds`);
+  const minimum: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 12 };
+  for (const [d, n] of Object.entries(minimum)) if ((perDifficulty[d] ?? 0) < n) problems.push(`fewer than ${n} ${d} rounds`);
   return problems;
 }

@@ -63,6 +63,7 @@ export const definition: GameDefinition = {
           "Gentle: concrete everyday compounds, three branches and a visible word bank.",
           "Standard: blanks before and after, less obvious links and a hidden bank.",
           "Expert: four branches per board, with plausible competing words that fit some branches but not all.",
+          "Master: four branches of less obvious closed compounds, such as trades, tools and technical terms, with links of four to seven letters and a hidden bank. Only one word completes every branch, and every compound is a standard word from the familiar and uncommon layers (a few reviewed exceptions are logged for editors). Spaced or hyphenated forms are never counted.",
           "Each difficulty has its own rounds. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

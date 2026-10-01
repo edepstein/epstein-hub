@@ -146,3 +146,20 @@ test("@mobile bridge boards stack on a phone", async ({ page }) => {
   await enter(page, "mother");
   await expect(page.getByTestId("board-outcome")).toContainText("Solved with MOTHER");
 });
+
+test("master round: loads with four branches per board, a wrong link is explained, all three boards solve", async ({ page }) => {
+  await page.goto("/games/missing-links");
+  await page.getByTestId("round-ml-m1").click();
+  await expect(page.getByTestId("active-board").getByRole("listitem")).toHaveCount(4);
+  await expect(page.getByTestId("enumeration")).toHaveText("missing word: 6 letters");
+  await enter(page, "master");
+  await expect(feedback(page)).toHaveAttribute("data-ok", "false");
+  await enter(page, "wright");
+  await expect(page.getByTestId("board-outcome")).toContainText("Solved with WRIGHT");
+  await page.getByTestId("board-tab-2").click();
+  await enter(page, "monger");
+  await expect(page.getByTestId("board-outcome")).toContainText("Solved with MONGER");
+  await page.getByTestId("board-tab-3").click();
+  await enter(page, "hood");
+  await expect(page.getByTestId("result-panel")).toHaveAttribute("data-outcome", "completed");
+});

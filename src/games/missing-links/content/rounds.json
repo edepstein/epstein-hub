@@ -5996,6 +5996,2922 @@
      }
     ]
    }
+  },
+  {
+   "id": "ml-m1",
+   "title": "Master bridges 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "WAIN",
+        "suffix": "",
+        "clue": "Builder of farm wagons"
+       },
+       {
+        "id": "b",
+        "prefix": "SHIP",
+        "suffix": "",
+        "clue": "Craftsman at a boatyard"
+       },
+       {
+        "id": "c",
+        "prefix": "WHEEL",
+        "suffix": "",
+        "clue": "Maker of spoked rounds for carts"
+       },
+       {
+        "id": "d",
+        "prefix": "PLAY",
+        "suffix": "",
+        "clue": "Dramatist"
+       }
+      ],
+      "candidates": [
+       "WORKER",
+       "TURNER",
+       "MASTER",
+       "CARTER",
+       "WRIGHT"
+      ],
+      "solutions": [
+       {
+        "link": "WRIGHT",
+        "compounds": {
+         "a": "WAINWRIGHT",
+         "b": "SHIPWRIGHT",
+         "c": "WHEELWRIGHT",
+         "d": "PLAYWRIGHT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WRIGHT completes every branch: WAINWRIGHT, SHIPWRIGHT, WHEELWRIGHT, PLAYWRIGHT."
+     },
+     {
+      "id": "2",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "IRON",
+        "suffix": "",
+        "clue": "Hardware merchant"
+       },
+       {
+        "id": "b",
+        "prefix": "RUMOUR",
+        "suffix": "",
+        "clue": "Spreader of gossip"
+       },
+       {
+        "id": "c",
+        "prefix": "SCARE",
+        "suffix": "",
+        "clue": "One who needlessly alarms people"
+       },
+       {
+        "id": "d",
+        "prefix": "WAR",
+        "suffix": "",
+        "clue": "Advocate of conflict"
+       }
+      ],
+      "candidates": [
+       "MONGER",
+       "VENDOR",
+       "DEALER",
+       "TRADER",
+       "SELLER"
+      ],
+      "solutions": [
+       {
+        "link": "MONGER",
+        "compounds": {
+         "a": "IRONMONGER",
+         "b": "RUMOURMONGER",
+         "c": "SCAREMONGER",
+         "d": "WARMONGER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "MONGER completes every branch: IRONMONGER, RUMOURMONGER, SCAREMONGER, WARMONGER."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FALSE",
+        "suffix": "",
+        "clue": "A lie"
+       },
+       {
+        "id": "b",
+        "prefix": "KNIGHT",
+        "suffix": "",
+        "clue": "Rank that earns the title Sir"
+       },
+       {
+        "id": "c",
+        "prefix": "SAINT",
+        "suffix": "",
+        "clue": "State of being a holy person"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WINK",
+        "clue": "Deceive"
+       }
+      ],
+      "candidates": [
+       "WORD",
+       "HOOD",
+       "SHIP",
+       "KIND",
+       "HEAD"
+      ],
+      "solutions": [
+       {
+        "link": "HOOD",
+        "compounds": {
+         "a": "FALSEHOOD",
+         "b": "KNIGHTHOOD",
+         "c": "SAINTHOOD",
+         "d": "HOODWINK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HOOD completes every branch: FALSEHOOD, KNIGHTHOOD, SAINTHOOD, HOODWINK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m2",
+   "title": "Master bridges 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "WORD",
+        "suffix": "",
+        "clue": "Skilled writer, a craftsman of prose"
+       },
+       {
+        "id": "b",
+        "prefix": "LOCK",
+        "suffix": "",
+        "clue": "Maker of keys and fastenings"
+       },
+       {
+        "id": "c",
+        "prefix": "TIN",
+        "suffix": "",
+        "clue": "Worker in light sheet metal"
+       },
+       {
+        "id": "d",
+        "prefix": "SILVER",
+        "suffix": "",
+        "clue": "Maker of fine tableware"
+       }
+      ],
+      "candidates": [
+       "FORGE",
+       "WORKS",
+       "ANVIL",
+       "MAKER",
+       "SMITH"
+      ],
+      "solutions": [
+       {
+        "link": "SMITH",
+        "compounds": {
+         "a": "WORDSMITH",
+         "b": "LOCKSMITH",
+         "c": "TINSMITH",
+         "d": "SILVERSMITH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SMITH completes every branch: WORDSMITH, LOCKSMITH, TINSMITH, SILVERSMITH."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "NEWS",
+        "suffix": "",
+        "clue": "Reporter hot on a story"
+       },
+       {
+        "id": "b",
+        "prefix": "BLOOD",
+        "suffix": "",
+        "clue": "Tracker dog with exceptional sense of smell"
+       },
+       {
+        "id": "c",
+        "prefix": "GREY",
+        "suffix": "",
+        "clue": "Slender, swift racing dog"
+       },
+       {
+        "id": "d",
+        "prefix": "FOX",
+        "suffix": "",
+        "clue": "Hunting dog bred to run in a pack"
+       }
+      ],
+      "candidates": [
+       "RACER",
+       "TRAIL",
+       "SCENT",
+       "CHASE",
+       "HOUND"
+      ],
+      "solutions": [
+       {
+        "link": "HOUND",
+        "compounds": {
+         "a": "NEWSHOUND",
+         "b": "BLOODHOUND",
+         "c": "GREYHOUND",
+         "d": "FOXHOUND"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HOUND completes every branch: NEWSHOUND, BLOODHOUND, GREYHOUND, FOXHOUND."
+     },
+     {
+      "id": "3",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "YELLOW",
+        "suffix": "",
+        "clue": "Bunting with a bright head"
+       },
+       {
+        "id": "b",
+        "prefix": "JACK",
+        "suffix": "",
+        "clue": "Pneumatic drill"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "Shark with a mallet-shaped skull"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "TOE",
+        "clue": "Deformity of a second toe"
+       }
+      ],
+      "candidates": [
+       "SLEDGE",
+       "HAMMER",
+       "MALLET",
+       "STRIKE",
+       "DRIVER"
+      ],
+      "solutions": [
+       {
+        "link": "HAMMER",
+        "compounds": {
+         "a": "YELLOWHAMMER",
+         "b": "JACKHAMMER",
+         "c": "HAMMERHEAD",
+         "d": "HAMMERTOE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HAMMER completes every branch: YELLOWHAMMER, JACKHAMMER, HAMMERHEAD, HAMMERTOE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m3",
+   "title": "Master bridges 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BELL",
+        "clue": "Weight lifted in a gym"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FOUND",
+        "clue": "Astonish"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "STRUCK",
+        "clue": "Speechless with amazement"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WAITER",
+        "clue": "Small lift for serving dishes between floors"
+       }
+      ],
+      "candidates": [
+       "MUTE",
+       "DUMB",
+       "DEAF",
+       "DULL",
+       "SLOW"
+      ],
+      "solutions": [
+       {
+        "link": "DUMB",
+        "compounds": {
+         "a": "DUMBBELL",
+         "b": "DUMBFOUND",
+         "c": "DUMBSTRUCK",
+         "d": "DUMBWAITER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "DUMB completes every branch: DUMBBELL, DUMBFOUND, DUMBSTRUCK, DUMBWAITER."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "VAN",
+        "suffix": "",
+        "clue": "Leading part of an army"
+       },
+       {
+        "id": "b",
+        "prefix": "MUD",
+        "suffix": "",
+        "clue": "Cover over a wheel"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "RAIL",
+        "clue": "Safety barrier at a roadside"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "Quarters for soldiers on duty"
+       }
+      ],
+      "candidates": [
+       "WATCH",
+       "GUARD",
+       "CLOAK",
+       "GUIDE",
+       "SHELL"
+      ],
+      "solutions": [
+       {
+        "link": "GUARD",
+        "compounds": {
+         "a": "VANGUARD",
+         "b": "MUDGUARD",
+         "c": "GUARDRAIL",
+         "d": "GUARDROOM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "GUARD completes every branch: VANGUARD, MUDGUARD, GUARDRAIL, GUARDROOM."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FLOOD",
+        "suffix": "",
+        "clue": "Sluice controlling a river"
+       },
+       {
+        "id": "b",
+        "prefix": "TAIL",
+        "suffix": "",
+        "clue": "Rear door of an estate car"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "KEEPER",
+        "clue": "Porter at an entrance"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "CRASH",
+        "clue": "Join a party uninvited"
+       }
+      ],
+      "candidates": [
+       "DOOR",
+       "GATE",
+       "WALL",
+       "POST",
+       "LOCK"
+      ],
+      "solutions": [
+       {
+        "link": "GATE",
+        "compounds": {
+         "a": "FLOODGATE",
+         "b": "TAILGATE",
+         "c": "GATEKEEPER",
+         "d": "GATECRASH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "GATE completes every branch: FLOODGATE, TAILGATE, GATEKEEPER, GATECRASH."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m4",
+   "title": "Master bridges 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "ORC",
+        "suffix": "",
+        "clue": "Plantation of fruit trees"
+       },
+       {
+        "id": "b",
+        "prefix": "BLOW",
+        "suffix": "",
+        "clue": "Boaster"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "TACK",
+        "clue": "Ship's biscuit"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "SCRABBLE",
+        "clue": "Marked by struggle, as poor farmland"
+       }
+      ],
+      "candidates": [
+       "SOFT",
+       "DEEP",
+       "SLOW",
+       "HIGH",
+       "HARD"
+      ],
+      "solutions": [
+       {
+        "link": "HARD",
+        "compounds": {
+         "a": "ORCHARD",
+         "b": "BLOWHARD",
+         "c": "HARDTACK",
+         "d": "HARDSCRABBLE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HARD completes every branch: ORCHARD, BLOWHARD, HARDTACK, HARDSCRABBLE."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BED",
+        "suffix": "",
+        "clue": "Frame for a mattress"
+       },
+       {
+        "id": "b",
+        "prefix": "FARM",
+        "suffix": "",
+        "clue": "Farmhouse and its buildings"
+       },
+       {
+        "id": "c",
+        "prefix": "HOME",
+        "suffix": "",
+        "clue": "Family dwelling with its land"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "FAST",
+        "clue": "Firm and unwavering"
+       }
+      ],
+      "candidates": [
+       "HOUSE",
+       "BARNS",
+       "STEAD",
+       "PLACE",
+       "ABODE"
+      ],
+      "solutions": [
+       {
+        "link": "STEAD",
+        "compounds": {
+         "a": "BEDSTEAD",
+         "b": "FARMSTEAD",
+         "c": "HOMESTEAD",
+         "d": "STEADFAST"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STEAD completes every branch: BEDSTEAD, FARMSTEAD, HOMESTEAD, STEADFAST."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "GRAND",
+        "suffix": "",
+        "clue": "Main spectator seating"
+       },
+       {
+        "id": "b",
+        "prefix": "HAT",
+        "suffix": "",
+        "clue": "Pole for hanging headwear"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PIPE",
+        "clue": "Vertical water outlet"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OFF",
+        "clue": "Deadlock between opponents"
+       }
+      ],
+      "candidates": [
+       "STOOP",
+       "TABLE",
+       "BENCH",
+       "STALL",
+       "STAND"
+      ],
+      "solutions": [
+       {
+        "link": "STAND",
+        "compounds": {
+         "a": "GRANDSTAND",
+         "b": "HATSTAND",
+         "c": "STANDPIPE",
+         "d": "STANDOFF"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STAND completes every branch: GRANDSTAND, HATSTAND, STANDPIPE, STANDOFF."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m5",
+   "title": "Master bridges 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DOWN",
+        "suffix": "",
+        "clue": "Decline in fortunes"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "COAT",
+        "clue": "One who changes sides"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "STILE",
+        "clue": "Rotating barrier at an entrance"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "PIKE",
+        "clue": "Road on which tolls are charged"
+       }
+      ],
+      "candidates": [
+       "BEND",
+       "ROLL",
+       "TURN",
+       "FLIP",
+       "SPIN"
+      ],
+      "solutions": [
+       {
+        "link": "TURN",
+        "compounds": {
+         "a": "DOWNTURN",
+         "b": "TURNCOAT",
+         "c": "TURNSTILE",
+         "d": "TURNPIKE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "TURN completes every branch: DOWNTURN, TURNCOAT, TURNSTILE, TURNPIKE."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CHAR",
+        "suffix": "",
+        "clue": "Daily cleaner"
+       },
+       {
+        "id": "b",
+        "prefix": "LAND",
+        "suffix": "",
+        "clue": "Woman who runs a boarding house"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BIRD",
+        "clue": "Spotted beetle"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "SHIP",
+        "clue": "Form of address for a peeress"
+       }
+      ],
+      "candidates": [
+       "DAME",
+       "MISS",
+       "LADY",
+       "MAID",
+       "WIFE"
+      ],
+      "solutions": [
+       {
+        "link": "LADY",
+        "compounds": {
+         "a": "CHARLADY",
+         "b": "LANDLADY",
+         "c": "LADYBIRD",
+         "d": "LADYSHIP"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "LADY completes every branch: CHARLADY, LANDLADY, LADYBIRD, LADYSHIP."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CROSS",
+        "suffix": "",
+        "clue": "Shade with parallel lines"
+       },
+       {
+        "id": "b",
+        "prefix": "NUT",
+        "suffix": "",
+        "clue": "Small bird that climbs down tree trunks"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BACK",
+        "clue": "Car with a rear door that lifts"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WAY",
+        "clue": "Opening in a ship's deck"
+       }
+      ],
+      "candidates": [
+       "BATCH",
+       "SHELL",
+       "LATCH",
+       "BROOD",
+       "HATCH"
+      ],
+      "solutions": [
+       {
+        "link": "HATCH",
+        "compounds": {
+         "a": "CROSSHATCH",
+         "b": "NUTHATCH",
+         "c": "HATCHBACK",
+         "d": "HATCHWAY"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HATCH completes every branch: CROSSHATCH, NUTHATCH, HATCHBACK, HATCHWAY."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m6",
+   "title": "Master bridges 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "GRUB",
+        "suffix": "",
+        "clue": "Funds advanced to a prospector"
+       },
+       {
+        "id": "b",
+        "prefix": "SWEEP",
+        "suffix": "",
+        "clue": "Lottery with drawn entrants"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HOLDER",
+        "clue": "One with an interest in a venture"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Police surveillance operation"
+       }
+      ],
+      "candidates": [
+       "SHARE",
+       "WAGER",
+       "STOCK",
+       "STAKE",
+       "STACK"
+      ],
+      "solutions": [
+       {
+        "link": "STAKE",
+        "compounds": {
+         "a": "GRUBSTAKE",
+         "b": "SWEEPSTAKE",
+         "c": "STAKEHOLDER",
+         "d": "STAKEOUT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STAKE completes every branch: GRUBSTAKE, SWEEPSTAKE, STAKEHOLDER, STAKEOUT."
+     },
+     {
+      "id": "2",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CATCH",
+        "suffix": "",
+        "clue": "Memorable slogan"
+       },
+       {
+        "id": "b",
+        "prefix": "PARA",
+        "suffix": "",
+        "clue": "Restate in other words"
+       },
+       {
+        "id": "c",
+        "prefix": "PASS",
+        "suffix": "",
+        "clue": "Secret string of words for access"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BOOK",
+        "clue": "Traveller's guide to foreign expressions"
+       }
+      ],
+      "candidates": [
+       "STRING",
+       "TERMED",
+       "PHRASE",
+       "WORDED",
+       "SAYING"
+      ],
+      "solutions": [
+       {
+        "link": "PHRASE",
+        "compounds": {
+         "a": "CATCHPHRASE",
+         "b": "PARAPHRASE",
+         "c": "PASSPHRASE",
+         "d": "PHRASEBOOK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PHRASE completes every branch: CATCHPHRASE, PARAPHRASE, PASSPHRASE, PHRASEBOOK."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CON",
+        "suffix": "",
+        "clue": "Surrounding circumstances"
+       },
+       {
+        "id": "b",
+        "prefix": "HYPER",
+        "suffix": "",
+        "clue": "Linked online document"
+       },
+       {
+        "id": "c",
+        "prefix": "SUB",
+        "suffix": "",
+        "clue": "Implied underlying meaning"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BOOK",
+        "clue": "Standard manual for a course"
+       }
+      ],
+      "candidates": [
+       "NOTE",
+       "PAGE",
+       "TEXT",
+       "FONT",
+       "LINE"
+      ],
+      "solutions": [
+       {
+        "link": "TEXT",
+        "compounds": {
+         "a": "CONTEXT",
+         "b": "HYPERTEXT",
+         "c": "SUBTEXT",
+         "d": "TEXTBOOK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "TEXT completes every branch: CONTEXT, HYPERTEXT, SUBTEXT, TEXTBOOK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m7",
+   "title": "Master bridges 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EYE",
+        "suffix": "",
+        "clue": "Cosmetic for the lids"
+       },
+       {
+        "id": "b",
+        "prefix": "FORE",
+        "suffix": "",
+        "clue": "Presage"
+       },
+       {
+        "id": "c",
+        "prefix": "OVER",
+        "suffix": "",
+        "clue": "Dwarf by looming above"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BOX",
+        "clue": "Spar with an imaginary opponent"
+       }
+      ],
+      "candidates": [
+       "SCREEN",
+       "SHADES",
+       "SHADOW",
+       "SHROUD",
+       "GHOSTS"
+      ],
+      "solutions": [
+       {
+        "link": "SHADOW",
+        "compounds": {
+         "a": "EYESHADOW",
+         "b": "FORESHADOW",
+         "c": "OVERSHADOW",
+         "d": "SHADOWBOX"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SHADOW completes every branch: EYESHADOW, FORESHADOW, OVERSHADOW, SHADOWBOX."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "COTTON",
+        "suffix": "",
+        "clue": "Venomous American water snake"
+       },
+       {
+        "id": "b",
+        "prefix": "LOUD",
+        "suffix": "",
+        "clue": "Tactless blabber"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WASH",
+        "clue": "Antiseptic rinse"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "FEEL",
+        "clue": "Texture of food on the tongue"
+       }
+      ],
+      "candidates": [
+       "MOUTH",
+       "CHEEK",
+       "SPEAK",
+       "VOICE",
+       "TEETH"
+      ],
+      "solutions": [
+       {
+        "link": "MOUTH",
+        "compounds": {
+         "a": "COTTONMOUTH",
+         "b": "LOUDMOUTH",
+         "c": "MOUTHWASH",
+         "d": "MOUTHFEEL"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "MOUTH completes every branch: COTTONMOUTH, LOUDMOUTH, MOUTHWASH, MOUTHFEEL."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HOB",
+        "suffix": "",
+        "clue": "Stud in a boot sole"
+       },
+       {
+        "id": "b",
+        "prefix": "HANG",
+        "suffix": "",
+        "clue": "Torn skin beside a finger"
+       },
+       {
+        "id": "c",
+        "prefix": "THUMB",
+        "suffix": "",
+        "clue": "Small preview image"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BRUSH",
+        "clue": "Manicurist's scrubber"
+       }
+      ],
+      "candidates": [
+       "STUD",
+       "BOLT",
+       "NAIL",
+       "PINS",
+       "TACK"
+      ],
+      "solutions": [
+       {
+        "link": "NAIL",
+        "compounds": {
+         "a": "HOBNAIL",
+         "b": "HANGNAIL",
+         "c": "THUMBNAIL",
+         "d": "NAILBRUSH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "NAIL completes every branch: HOBNAIL, HANGNAIL, THUMBNAIL, NAILBRUSH."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m8",
+   "title": "Master bridges 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HIDE",
+        "suffix": "",
+        "clue": "Narrow-minded and set in its ways"
+       },
+       {
+        "id": "b",
+        "prefix": "SPELL",
+        "suffix": "",
+        "clue": "Captivated"
+       },
+       {
+        "id": "c",
+        "prefix": "MUSCLE",
+        "suffix": "",
+        "clue": "Stiff from overdeveloped brawn"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LESS",
+        "clue": "Without limit"
+       }
+      ],
+      "candidates": [
+       "ROUND",
+       "BOUND",
+       "SOUND",
+       "FOUND",
+       "MOUND"
+      ],
+      "solutions": [
+       {
+        "link": "BOUND",
+        "compounds": {
+         "a": "HIDEBOUND",
+         "b": "SPELLBOUND",
+         "c": "MUSCLEBOUND",
+         "d": "BOUNDLESS"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BOUND completes every branch: HIDEBOUND, SPELLBOUND, MUSCLEBOUND, BOUNDLESS."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "LOIN",
+        "suffix": "",
+        "clue": "Minimal garment"
+       },
+       {
+        "id": "b",
+        "prefix": "SACK",
+        "suffix": "",
+        "clue": "Coarse fabric worn in penance"
+       },
+       {
+        "id": "c",
+        "prefix": "BROAD",
+        "suffix": "",
+        "clue": "Smooth, dense woollen fabric"
+       },
+       {
+        "id": "d",
+        "prefix": "HAIR",
+        "suffix": "",
+        "clue": "Fabric woven from horsehair"
+       }
+      ],
+      "candidates": [
+       "DENIM",
+       "SHEET",
+       "TWEED",
+       "CLOTH",
+       "LINEN"
+      ],
+      "solutions": [
+       {
+        "link": "CLOTH",
+        "compounds": {
+         "a": "LOINCLOTH",
+         "b": "SACKCLOTH",
+         "c": "BROADCLOTH",
+         "d": "HAIRCLOTH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "CLOTH completes every branch: LOINCLOTH, SACKCLOTH, BROADCLOTH, HAIRCLOTH."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BOILER",
+        "suffix": "",
+        "clue": "Standard wording reused in documents"
+       },
+       {
+        "id": "b",
+        "prefix": "FOOT",
+        "suffix": "",
+        "clue": "Driver's platform on a locomotive"
+       },
+       {
+        "id": "c",
+        "prefix": "COPPER",
+        "suffix": "",
+        "clue": "Elegant, rounded handwriting"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LET",
+        "clue": "Cell fragment in blood"
+       }
+      ],
+      "candidates": [
+       "PLATE",
+       "SLATE",
+       "STEEL",
+       "PLAIN",
+       "SHEET"
+      ],
+      "solutions": [
+       {
+        "link": "PLATE",
+        "compounds": {
+         "a": "BOILERPLATE",
+         "b": "FOOTPLATE",
+         "c": "COPPERPLATE",
+         "d": "PLATELET"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PLATE completes every branch: BOILERPLATE, FOOTPLATE, COPPERPLATE, PLATELET."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m9",
+   "title": "Master bridges 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CORK",
+        "suffix": "",
+        "clue": "Opener for a wine bottle"
+       },
+       {
+        "id": "b",
+        "prefix": "THUMB",
+        "suffix": "",
+        "clue": "Medieval torture device"
+       },
+       {
+        "id": "c",
+        "prefix": "SET",
+        "suffix": "",
+        "clue": "Hardened fastener holding a part in place"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "DRIVER",
+        "clue": "Tool for turning fasteners"
+       }
+      ],
+      "candidates": [
+       "NAILS",
+       "STUDS",
+       "SCREW",
+       "RIVET",
+       "BOLTS"
+      ],
+      "solutions": [
+       {
+        "link": "SCREW",
+        "compounds": {
+         "a": "CORKSCREW",
+         "b": "THUMBSCREW",
+         "c": "SETSCREW",
+         "d": "SCREWDRIVER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SCREW completes every branch: CORKSCREW, THUMBSCREW, SETSCREW, SCREWDRIVER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "TAD",
+        "suffix": "",
+        "clue": "Young frog"
+       },
+       {
+        "id": "b",
+        "prefix": "MAY",
+        "suffix": "",
+        "clue": "Decorated post danced around in spring"
+       },
+       {
+        "id": "c",
+        "prefix": "BEAN",
+        "suffix": "",
+        "clue": "Tall, thin person"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "AXE",
+        "clue": "Long-handled battle weapon"
+       }
+      ],
+      "candidates": [
+       "POLE",
+       "ROPE",
+       "POST",
+       "MAST",
+       "BEAM"
+      ],
+      "solutions": [
+       {
+        "link": "POLE",
+        "compounds": {
+         "a": "TADPOLE",
+         "b": "MAYPOLE",
+         "c": "BEANPOLE",
+         "d": "POLEAXE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "POLE completes every branch: TADPOLE, MAYPOLE, BEANPOLE, POLEAXE."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FOG",
+        "suffix": "",
+        "clue": "Warning sounded at sea"
+       },
+       {
+        "id": "b",
+        "prefix": "SHOE",
+        "suffix": "",
+        "clue": "Aid for putting on footwear"
+       },
+       {
+        "id": "c",
+        "prefix": "LEG",
+        "suffix": "",
+        "clue": "White chicken breed named after an Italian port"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BEAM",
+        "clue": "Tree with very hard wood"
+       }
+      ],
+      "candidates": [
+       "HORN",
+       "CLAW",
+       "TUSK",
+       "BONE",
+       "FANG"
+      ],
+      "solutions": [
+       {
+        "link": "HORN",
+        "compounds": {
+         "a": "FOGHORN",
+         "b": "SHOEHORN",
+         "c": "LEGHORN",
+         "d": "HORNBEAM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HORN completes every branch: FOGHORN, SHOEHORN, LEGHORN, HORNBEAM."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m10",
+   "title": "Master bridges 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "YARD",
+        "suffix": "",
+        "clue": "Rule used for measuring"
+       },
+       {
+        "id": "b",
+        "prefix": "DIP",
+        "suffix": "",
+        "clue": "Gauge for oil in an engine"
+       },
+       {
+        "id": "c",
+        "prefix": "SLAP",
+        "suffix": "",
+        "clue": "Knockabout comedy"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "PIN",
+        "clue": "Tie fastener"
+       }
+      ],
+      "candidates": [
+       "STICK",
+       "BATON",
+       "WANDS",
+       "STAFF",
+       "TWIGS"
+      ],
+      "solutions": [
+       {
+        "link": "STICK",
+        "compounds": {
+         "a": "YARDSTICK",
+         "b": "DIPSTICK",
+         "c": "SLAPSTICK",
+         "d": "STICKPIN"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STICK completes every branch: YARDSTICK, DIPSTICK, SLAPSTICK, STICKPIN."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "WOOD",
+        "suffix": "",
+        "clue": "Print made from an engraved plank"
+       },
+       {
+        "id": "b",
+        "prefix": "SUN",
+        "suffix": "",
+        "clue": "Lotion for the beach"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BUSTER",
+        "clue": "Hit film"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "Dunce"
+       }
+      ],
+      "candidates": [
+       "CHUNK",
+       "STONE",
+       "BLOCK",
+       "BRICK",
+       "CUBES"
+      ],
+      "solutions": [
+       {
+        "link": "BLOCK",
+        "compounds": {
+         "a": "WOODBLOCK",
+         "b": "SUNBLOCK",
+         "c": "BLOCKBUSTER",
+         "d": "BLOCKHEAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BLOCK completes every branch: WOODBLOCK, SUNBLOCK, BLOCKBUSTER, BLOCKHEAD."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "STRANGLE",
+        "suffix": "",
+        "clue": "Total control"
+       },
+       {
+        "id": "b",
+        "prefix": "LEASE",
+        "suffix": "",
+        "clue": "Tenure of property for a fixed term"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "ALL",
+        "clue": "Large travelling bag"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OVER",
+        "clue": "Remnant of an earlier era"
+       }
+      ],
+      "candidates": [
+       "GRIP",
+       "HOLD",
+       "CLAW",
+       "LOCK",
+       "KEEP"
+      ],
+      "solutions": [
+       {
+        "link": "HOLD",
+        "compounds": {
+         "a": "STRANGLEHOLD",
+         "b": "LEASEHOLD",
+         "c": "HOLDALL",
+         "d": "HOLDOVER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HOLD completes every branch: STRANGLEHOLD, LEASEHOLD, HOLDALL, HOLDOVER."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m11",
+   "title": "Master bridges 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BIND",
+        "suffix": "",
+        "clue": "Climber with trumpet-shaped flowers"
+       },
+       {
+        "id": "b",
+        "prefix": "TUMBLE",
+        "suffix": "",
+        "clue": "Prairie plant blown across plains"
+       },
+       {
+        "id": "c",
+        "prefix": "MILK",
+        "suffix": "",
+        "clue": "Plant that feeds monarch caterpillars"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "KILLER",
+        "clue": "Garden poison"
+       }
+      ],
+      "candidates": [
+       "VINE",
+       "ROOT",
+       "WEED",
+       "HERB",
+       "TARE"
+      ],
+      "solutions": [
+       {
+        "link": "WEED",
+        "compounds": {
+         "a": "BINDWEED",
+         "b": "TUMBLEWEED",
+         "c": "MILKWEED",
+         "d": "WEEDKILLER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WEED completes every branch: BINDWEED, TUMBLEWEED, MILKWEED, WEEDKILLER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "RAG",
+        "suffix": "",
+        "clue": "Yellow-flowered plant poisonous to horses"
+       },
+       {
+        "id": "b",
+        "prefix": "LIVER",
+        "suffix": "",
+        "clue": "Primitive plant like a flat moss"
+       },
+       {
+        "id": "c",
+        "prefix": "MUG",
+        "suffix": "",
+        "clue": "Aromatic herb used to flavour food"
+       },
+       {
+        "id": "d",
+        "prefix": "SOAP",
+        "suffix": "",
+        "clue": "Plant whose sap makes a lather"
+       }
+      ],
+      "candidates": [
+       "ROOT",
+       "LEAF",
+       "WORT",
+       "BUDS",
+       "HERB"
+      ],
+      "solutions": [
+       {
+        "link": "WORT",
+        "compounds": {
+         "a": "RAGWORT",
+         "b": "LIVERWORT",
+         "c": "MUGWORT",
+         "d": "SOAPWORT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WORT completes every branch: RAGWORT, LIVERWORT, MUGWORT, SOAPWORT."
+     },
+     {
+      "id": "3",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "PROOF",
+        "suffix": "",
+        "clue": "Checker of galleys"
+       },
+       {
+        "id": "b",
+        "prefix": "LIP",
+        "suffix": "",
+        "clue": "One who follows speech without sound"
+       },
+       {
+        "id": "c",
+        "prefix": "NEWS",
+        "suffix": "",
+        "clue": "Presenter of bulletins"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "SHIP",
+        "clue": "University teaching post"
+       }
+      ],
+      "candidates": [
+       "SCRIBE",
+       "EDITOR",
+       "WRITER",
+       "READER",
+       "LECTOR"
+      ],
+      "solutions": [
+       {
+        "link": "READER",
+        "compounds": {
+         "a": "PROOFREADER",
+         "b": "LIPREADER",
+         "c": "NEWSREADER",
+         "d": "READERSHIP"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "READER completes every branch: PROOFREADER, LIPREADER, NEWSREADER, READERSHIP."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-m12",
+   "title": "Master bridges 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "REIN",
+        "suffix": "",
+        "clue": "Restore to a former position"
+       },
+       {
+        "id": "b",
+        "prefix": "UNDER",
+        "suffix": "",
+        "clue": "Play down"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CRAFT",
+        "clue": "Skill in government"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "Private compartment on a ship"
+       }
+      ],
+      "candidates": [
+       "STAGE",
+       "REALM",
+       "STATE",
+       "STAKE",
+       "PLACE"
+      ],
+      "solutions": [
+       {
+        "link": "STATE",
+        "compounds": {
+         "a": "REINSTATE",
+         "b": "UNDERSTATE",
+         "c": "STATECRAFT",
+         "d": "STATEROOM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "STATE completes every branch: REINSTATE, UNDERSTATE, STATECRAFT, STATEROOM."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HUM",
+        "suffix": "",
+        "clue": "Dull and monotonous"
+       },
+       {
+        "id": "b",
+        "prefix": "KETTLE",
+        "suffix": "",
+        "clue": "Orchestral percussion instrument with a bowl"
+       },
+       {
+        "id": "c",
+        "prefix": "EAR",
+        "suffix": "",
+        "clue": "Tympanic membrane"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "Taut skin of a percussion instrument"
+       }
+      ],
+      "candidates": [
+       "BEAT",
+       "GONG",
+       "BASS",
+       "DRUM",
+       "BELL"
+      ],
+      "solutions": [
+       {
+        "link": "DRUM",
+        "compounds": {
+         "a": "HUMDRUM",
+         "b": "KETTLEDRUM",
+         "c": "EARDRUM",
+         "d": "DRUMHEAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "DRUM completes every branch: HUMDRUM, KETTLEDRUM, EARDRUM, DRUMHEAD."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "OVER",
+        "suffix": "",
+        "clue": "Feudal superior"
+       },
+       {
+        "id": "b",
+        "prefix": "SLUM",
+        "suffix": "",
+        "clue": "Exploitative property owner"
+       },
+       {
+        "id": "c",
+        "prefix": "WAR",
+        "suffix": "",
+        "clue": "Regional commander with a private army"
+       },
+       {
+        "id": "d",
+        "prefix": "LAND",
+        "suffix": "",
+        "clue": "One who lets out property"
+       }
+      ],
+      "candidates": [
+       "KING",
+       "DUKE",
+       "LORD",
+       "HEAD",
+       "EARL"
+      ],
+      "solutions": [
+       {
+        "link": "LORD",
+        "compounds": {
+         "a": "OVERLORD",
+         "b": "SLUMLORD",
+         "c": "WARLORD",
+         "d": "LANDLORD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "LORD completes every branch: OVERLORD, SLUMLORD, WARLORD, LANDLORD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e15",
+   "title": "Expert bridges 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BANTAM",
+        "suffix": "",
+        "clue": "Boxing division just above the lightest"
+       },
+       {
+        "id": "b",
+        "prefix": "PAPER",
+        "suffix": "",
+        "clue": "Small object that stops sheets blowing away"
+       },
+       {
+        "id": "c",
+        "prefix": "WELTER",
+        "suffix": "",
+        "clue": "Boxing division between light and middle"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LIFTER",
+        "clue": "Gym strongman"
+       }
+      ],
+      "candidates": [
+       "WEIGHT",
+       "HEIGHT",
+       "BURDEN",
+       "STRAIN",
+       "LENGTH"
+      ],
+      "solutions": [
+       {
+        "link": "WEIGHT",
+        "compounds": {
+         "a": "BANTAMWEIGHT",
+         "b": "PAPERWEIGHT",
+         "c": "WELTERWEIGHT",
+         "d": "WEIGHTLIFTER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WEIGHT completes every branch: BANTAMWEIGHT, PAPERWEIGHT, WELTERWEIGHT, WEIGHTLIFTER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "OFF",
+        "suffix": "",
+        "clue": "Unconventional"
+       },
+       {
+        "id": "b",
+        "prefix": "DEAD",
+        "suffix": "",
+        "clue": "One who avoids paying"
+       },
+       {
+        "id": "c",
+        "prefix": "HEART",
+        "suffix": "",
+        "clue": "Pulse"
+       },
+       {
+        "id": "d",
+        "prefix": "DOWN",
+        "suffix": "",
+        "clue": "Pessimistic"
+       }
+      ],
+      "candidates": [
+       "BEAT",
+       "TONE",
+       "TIME",
+       "PACE",
+       "RATE"
+      ],
+      "solutions": [
+       {
+        "link": "BEAT",
+        "compounds": {
+         "a": "OFFBEAT",
+         "b": "DEADBEAT",
+         "c": "HEARTBEAT",
+         "d": "DOWNBEAT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BEAT completes every branch: OFFBEAT, DEADBEAT, HEARTBEAT, DOWNBEAT."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BILL",
+        "suffix": "",
+        "clue": "Wallet"
+       },
+       {
+        "id": "b",
+        "prefix": "BLIND",
+        "suffix": "",
+        "clue": "Cover the eyes"
+       },
+       {
+        "id": "c",
+        "prefix": "CENTRE",
+        "suffix": "",
+        "clue": "Magazine pull-out pin-up"
+       },
+       {
+        "id": "d",
+        "prefix": "SHEEP",
+        "suffix": "",
+        "clue": "Pen for a flock"
+       }
+      ],
+      "candidates": [
+       "TUCK",
+       "HERD",
+       "FOLD",
+       "FLAP",
+       "PLAY"
+      ],
+      "solutions": [
+       {
+        "link": "FOLD",
+        "compounds": {
+         "a": "BILLFOLD",
+         "b": "BLINDFOLD",
+         "c": "CENTREFOLD",
+         "d": "SHEEPFOLD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "FOLD completes every branch: BILLFOLD, BLINDFOLD, CENTREFOLD, SHEEPFOLD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e16",
+   "title": "Expert bridges 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FORE",
+        "suffix": "",
+        "clue": "Spar nearest the bow"
+       },
+       {
+        "id": "b",
+        "prefix": "MAIN",
+        "suffix": "",
+        "clue": "Principal vertical spar"
+       },
+       {
+        "id": "c",
+        "prefix": "MIZZEN",
+        "suffix": "",
+        "clue": "Aftermost spar"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "Top of a ship's spar"
+       }
+      ],
+      "candidates": [
+       "BOOM",
+       "MAST",
+       "DECK",
+       "KEEL",
+       "SAIL"
+      ],
+      "solutions": [
+       {
+        "link": "MAST",
+        "compounds": {
+         "a": "FOREMAST",
+         "b": "MAINMAST",
+         "c": "MIZZENMAST",
+         "d": "MASTHEAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "MAST completes every branch: FOREMAST, MAINMAST, MIZZENMAST, MASTHEAD."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "TOW",
+        "suffix": "",
+        "clue": "Canal-side route for horses"
+       },
+       {
+        "id": "b",
+        "prefix": "WAR",
+        "suffix": "",
+        "clue": "Course of hostile action"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "FINDER",
+        "clue": "Scout who locates new routes"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WAY",
+        "clue": "Track across a garden"
+       }
+      ],
+      "candidates": [
+       "STEP",
+       "PATH",
+       "LANE",
+       "GATE",
+       "ROAD"
+      ],
+      "solutions": [
+       {
+        "link": "PATH",
+        "compounds": {
+         "a": "TOWPATH",
+         "b": "WARPATH",
+         "c": "PATHFINDER",
+         "d": "PATHWAY"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PATH completes every branch: TOWPATH, WARPATH, PATHFINDER, PATHWAY."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SCARE",
+        "suffix": "",
+        "clue": "Field figure stuffed with straw"
+       },
+       {
+        "id": "b",
+        "prefix": "COCK",
+        "suffix": "",
+        "clue": "Dawn call of the rooster"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BAR",
+        "clue": "Lever for prising"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "FOOT",
+        "clue": "Buttercup-type plant"
+       }
+      ],
+      "candidates": [
+       "CROW",
+       "KITE",
+       "HAWK",
+       "DOVE",
+       "LARK"
+      ],
+      "solutions": [
+       {
+        "link": "CROW",
+        "compounds": {
+         "a": "SCARECROW",
+         "b": "COCKCROW",
+         "c": "CROWBAR",
+         "d": "CROWFOOT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "CROW completes every branch: SCARECROW, COCKCROW, CROWBAR, CROWFOOT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e17",
+   "title": "Expert bridges 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "ALL",
+        "clue": "Roomy bag with handles"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "COT",
+        "clue": "Portable baby bed"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Takeaway meal"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OVER",
+        "clue": "Balance brought forward"
+       }
+      ],
+      "candidates": [
+       "CARRY",
+       "TOTES",
+       "SHIFT",
+       "HAULS",
+       "FETCH"
+      ],
+      "solutions": [
+       {
+        "link": "CARRY",
+        "compounds": {
+         "a": "CARRYALL",
+         "b": "CARRYCOT",
+         "c": "CARRYOUT",
+         "d": "CARRYOVER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "CARRY completes every branch: CARRYALL, CARRYCOT, CARRYOUT, CARRYOVER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "COW",
+        "suffix": "",
+        "clue": "Leather from an ox"
+       },
+       {
+        "id": "b",
+        "prefix": "RAW",
+        "suffix": "",
+        "clue": "Untanned leather"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "AWAY",
+        "clue": "Secluded retreat"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Secret refuge"
+       }
+      ],
+      "candidates": [
+       "FELL",
+       "SKIN",
+       "HIDE",
+       "PELT",
+       "LAIR"
+      ],
+      "solutions": [
+       {
+        "link": "HIDE",
+        "compounds": {
+         "a": "COWHIDE",
+         "b": "RAWHIDE",
+         "c": "HIDEAWAY",
+         "d": "HIDEOUT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HIDE completes every branch: COWHIDE, RAWHIDE, HIDEAWAY, HIDEOUT."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HAND",
+        "suffix": "",
+        "clue": "Greeting with a clasp"
+       },
+       {
+        "id": "b",
+        "prefix": "MILK",
+        "suffix": "",
+        "clue": "Thick drink from a blender"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "DOWN",
+        "clue": "Thorough search"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Reshuffle of personnel"
+       }
+      ],
+      "candidates": [
+       "SWING",
+       "QUAKE",
+       "ROCKS",
+       "JOLTS",
+       "SHAKE"
+      ],
+      "solutions": [
+       {
+        "link": "SHAKE",
+        "compounds": {
+         "a": "HANDSHAKE",
+         "b": "MILKSHAKE",
+         "c": "SHAKEDOWN",
+         "d": "SHAKEOUT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SHAKE completes every branch: HANDSHAKE, MILKSHAKE, SHAKEDOWN, SHAKEOUT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e18",
+   "title": "Expert bridges 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BED",
+        "suffix": "",
+        "clue": "Pressure ulcer"
+       },
+       {
+        "id": "b",
+        "prefix": "EYE",
+        "suffix": "",
+        "clue": "Ugly building"
+       },
+       {
+        "id": "c",
+        "prefix": "FOOT",
+        "suffix": "",
+        "clue": "Weary from walking"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "Bad loser"
+       }
+      ],
+      "candidates": [
+       "ACHE",
+       "HURT",
+       "SORE",
+       "PAIN",
+       "BURN"
+      ],
+      "solutions": [
+       {
+        "link": "SORE",
+        "compounds": {
+         "a": "BEDSORE",
+         "b": "EYESORE",
+         "c": "FOOTSORE",
+         "d": "SOREHEAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SORE completes every branch: BEDSORE, EYESORE, FOOTSORE, SOREHEAD."
+     },
+     {
+      "id": "2",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Waist-high defensive wall"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BONE",
+        "clue": "Sternum"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PLATE",
+        "clue": "Body armour"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "STROKE",
+        "clue": "Swimming style"
+       }
+      ],
+      "candidates": [
+       "BREAST",
+       "FLANKS",
+       "SHIELD",
+       "THROAT",
+       "ARMPIT"
+      ],
+      "solutions": [
+       {
+        "link": "BREAST",
+        "compounds": {
+         "a": "BREASTWORK",
+         "b": "BREASTBONE",
+         "c": "BREASTPLATE",
+         "d": "BREASTSTROKE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BREAST completes every branch: BREASTWORK, BREASTBONE, BREASTPLATE, BREASTSTROKE."
+     },
+     {
+      "id": "3",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "MID",
+        "suffix": "",
+        "clue": "Coldest part of the year"
+       },
+       {
+        "id": "b",
+        "prefix": "OVER",
+        "suffix": "",
+        "clue": "Survive the cold months"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GREEN",
+        "clue": "Evergreen herb with minty oil"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "TIME",
+        "clue": "Season of snow"
+       }
+      ],
+      "candidates": [
+       "FREEZE",
+       "SPRING",
+       "WINTER",
+       "AUTUMN",
+       "SUMMER"
+      ],
+      "solutions": [
+       {
+        "link": "WINTER",
+        "compounds": {
+         "a": "MIDWINTER",
+         "b": "OVERWINTER",
+         "c": "WINTERGREEN",
+         "d": "WINTERTIME"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WINTER completes every branch: MIDWINTER, OVERWINTER, WINTERGREEN, WINTERTIME."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e19",
+   "title": "Expert bridges 19",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EYE",
+        "suffix": "",
+        "clue": "Hair above the eye"
+       },
+       {
+        "id": "b",
+        "prefix": "HIGH",
+        "suffix": "",
+        "clue": "Intellectual, snobbish about culture"
+       },
+       {
+        "id": "c",
+        "prefix": "LOW",
+        "suffix": "",
+        "clue": "Unrefined in taste"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BEAT",
+        "clue": "Bully verbally"
+       }
+      ],
+      "candidates": [
+       "NOSE",
+       "LASH",
+       "CHIN",
+       "BROW",
+       "FACE"
+      ],
+      "solutions": [
+       {
+        "link": "BROW",
+        "compounds": {
+         "a": "EYEBROW",
+         "b": "HIGHBROW",
+         "c": "LOWBROW",
+         "d": "BROWBEAT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BROW completes every branch: EYEBROW, HIGHBROW, LOWBROW, BROWBEAT."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DAIRY",
+        "suffix": "",
+        "clue": "Girl who milks cows"
+       },
+       {
+        "id": "b",
+        "prefix": "HAND",
+        "suffix": "",
+        "clue": "Servant"
+       },
+       {
+        "id": "c",
+        "prefix": "NURSE",
+        "suffix": "",
+        "clue": "Girl who looks after children"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "SERVANT",
+        "clue": "Female domestic"
+       }
+      ],
+      "candidates": [
+       "MISS",
+       "GIRL",
+       "MAID",
+       "LASS",
+       "DAME"
+      ],
+      "solutions": [
+       {
+        "link": "MAID",
+        "compounds": {
+         "a": "DAIRYMAID",
+         "b": "HANDMAID",
+         "c": "NURSEMAID",
+         "d": "MAIDSERVANT"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "MAID completes every branch: DAIRYMAID, HANDMAID, NURSEMAID, MAIDSERVANT."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "AFTER",
+        "suffix": "",
+        "clue": "Existence beyond death"
+       },
+       {
+        "id": "b",
+        "prefix": "NIGHT",
+        "suffix": "",
+        "clue": "Evening entertainment scene"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GUARD",
+        "clue": "Pool rescuer"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LONG",
+        "clue": "Lasting for a whole existence"
+       }
+      ],
+      "candidates": [
+       "FATE",
+       "DEAD",
+       "LOVE",
+       "TIME",
+       "LIFE"
+      ],
+      "solutions": [
+       {
+        "link": "LIFE",
+        "compounds": {
+         "a": "AFTERLIFE",
+         "b": "NIGHTLIFE",
+         "c": "LIFEGUARD",
+         "d": "LIFELONG"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "LIFE completes every branch: AFTERLIFE, NIGHTLIFE, LIFEGUARD, LIFELONG."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e20",
+   "title": "Expert bridges 20",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BLUE",
+        "suffix": "",
+        "clue": "Aristocrat"
+       },
+       {
+        "id": "b",
+        "prefix": "LIFE",
+        "suffix": "",
+        "clue": "Vital essential flow"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SHOT",
+        "clue": "Red, as tired eyes"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "STREAM",
+        "clue": "Circulatory flow"
+       }
+      ],
+      "candidates": [
+       "SWEAT",
+       "BLOOD",
+       "SKULL",
+       "FLESH",
+       "WATER"
+      ],
+      "solutions": [
+       {
+        "link": "BLOOD",
+        "compounds": {
+         "a": "BLUEBLOOD",
+         "b": "LIFEBLOOD",
+         "c": "BLOODSHOT",
+         "d": "BLOODSTREAM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BLOOD completes every branch: BLUEBLOOD, LIFEBLOOD, BLOODSHOT, BLOODSTREAM."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "COG",
+        "suffix": "",
+        "clue": "Toothed gear"
+       },
+       {
+        "id": "b",
+        "prefix": "PIN",
+        "suffix": "",
+        "clue": "Firework that spins"
+       },
+       {
+        "id": "c",
+        "prefix": "FLY",
+        "suffix": "",
+        "clue": "Heavy rotating disc storing energy"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BARROW",
+        "clue": "Garden cart with one tyre and two handles"
+       }
+      ],
+      "candidates": [
+       "SPOKE",
+       "GEARS",
+       "TYRES",
+       "AXLES",
+       "WHEEL"
+      ],
+      "solutions": [
+       {
+        "link": "WHEEL",
+        "compounds": {
+         "a": "COGWHEEL",
+         "b": "PINWHEEL",
+         "c": "FLYWHEEL",
+         "d": "WHEELBARROW"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "WHEEL completes every branch: COGWHEEL, PINWHEEL, FLYWHEEL, WHEELBARROW."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "GUN",
+        "suffix": "",
+        "clue": "Armed river patrol vessel"
+       },
+       {
+        "id": "b",
+        "prefix": "ROW",
+        "suffix": "",
+        "clue": "Small craft with oars"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HOUSE",
+        "clue": "Waterside shed for oars"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LOAD",
+        "clue": "Cargo that fills a vessel"
+       }
+      ],
+      "candidates": [
+       "SKIF",
+       "BARK",
+       "SHIP",
+       "YAWL",
+       "BOAT"
+      ],
+      "solutions": [
+       {
+        "link": "BOAT",
+        "compounds": {
+         "a": "GUNBOAT",
+         "b": "ROWBOAT",
+         "c": "BOATHOUSE",
+         "d": "BOATLOAD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BOAT completes every branch: GUNBOAT, ROWBOAT, BOATHOUSE, BOATLOAD."
+     }
+    ]
+   }
   }
  ]
 }

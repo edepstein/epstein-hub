@@ -216,9 +216,9 @@ describe("missing links: rounds of several boards", () => {
 describe("missing links: content", () => {
   it("validator passes; each difficulty has at least four practice rounds of three boards", () => {
     expect(validateContent()).toEqual([]);
-    for (const d of ["gentle", "standard", "expert"] as const) {
+    for (const d of ["gentle", "standard", "expert", "master"] as const) {
       const rs = rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice");
-      expect(rs.length, d).toBeGreaterThanOrEqual(4);
+      expect(rs.length, d).toBeGreaterThanOrEqual(d === "master" ? 12 : d === "expert" ? 20 : 4);
       for (const r of rs) expect(r.payload.boards.length).toBe(3);
     }
   });
@@ -256,5 +256,47 @@ describe("missing links: content", () => {
       }),
       { numRuns: 300 },
     );
+  });
+});
+
+describe("missing links: master tier", () => {
+  const master = rounds.filter((r) => r.meta.difficulty === "master");
+
+  it("holds at least twelve rounds of three four-branch boards with a hidden bank", () => {
+    expect(master.length).toBeGreaterThanOrEqual(12);
+    for (const r of master) {
+      expect(r.payload.bank).toBe("optional");
+      expect(r.payload.boards).toHaveLength(3);
+      for (const b of r.payload.boards) {
+        expect(b.branches).toHaveLength(4);
+        expect(b.linkLength).toBeGreaterThanOrEqual(4);
+        expect(b.linkLength).toBeLessThanOrEqual(7);
+      }
+    }
+  });
+
+  it("every master link is the only completing word of its length in the whole word list", () => {
+    for (const r of master)
+      for (const b of r.payload.boards) {
+        const alts = [...membership].filter((w) => w.length === b.linkLength && !b.solutions.some((s) => s.link === w) && b.branches.every((br) => membership.has(compoundOf(br, w))));
+        expect(alts, `${r.meta.id}/${b.id}`).toEqual([]);
+        expect(b.solutions).toHaveLength(1);
+      }
+  });
+
+  it("a full master round is solved board by board and scores 100 per board", () => {
+    let s = start("ml-m1");
+    for (const b of bundle("ml-m1").payload.boards) s = guess(s, b.solutions[0].link, b.id).state;
+    expect(engine.result(s)!.outcome).toBe("completed");
+    expect(engine.result(s)!.score).toBe(POINTS_PER_LINK * 3);
+  });
+
+  it("direction is part of the puzzle: the master link is refused when written the wrong way round", () => {
+    const s = start("ml-m1");
+    const hood = guess(s, "HOOD", "3");
+    expect(hood.ok).toBe(true);
+    const whole = guess(s, "KNIGHTHOOD", "3");
+    expect(whole.ok).toBe(false);
+    expect(whole.code).toBe("whole-compound");
   });
 });
