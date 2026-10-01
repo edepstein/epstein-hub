@@ -20,6 +20,21 @@ const play = (s: CircuitState, ...words: string[]) => {
   return s;
 };
 
+describe("Master tier", () => {
+  it("has twelve Master rounds on the Master pool, solvable by their par chain with truthful wording", () => {
+    const masters = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(masters).toHaveLength(12);
+    for (const m of masters) {
+      expect(m.payload.pool).toBe("master");
+      const s = play(start(m.meta.id), ...m.payload.parChain);
+      expect(engine.outcome(s)).toBe("completed");
+      const res = engine.result(s)!;
+      expect(res.details.join(" ")).toContain("Master pool");
+      expect(res.details.join(" ")).not.toContain("only everyday words");
+    }
+  });
+});
+
 describe("letter circuit rules", () => {
   it("all three pack fixture chains pass sides, chaining and coverage", () => {
     for (const id of ["lc-demo-1", "lc-demo-2", "lc-demo-3"]) {

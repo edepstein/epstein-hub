@@ -89,7 +89,7 @@ test("keyboard only: rules, typing, Escape resets to the required letter", async
   await page.getByRole("button", { name: "How to play" }).focus();
   await page.keyboard.press("Enter");
   const rules = page.getByRole("dialog", { name: /How to play Letter Circuit/ });
-  await expect(rules).toContainText("Par is the fewest words");
+  await expect(rules).toContainText("par is the fewest words");
   await page.keyboard.press("Escape");
   await page.getByLabel("Your word").focus();
   await page.keyboard.type("cold");
@@ -117,6 +117,17 @@ test("hint ladder follows the current chain end and marks played words", async (
   await page.getByRole("button", { name: "Get a hint" }).click();
   await dialog.getByRole("listitem").filter({ has: page.getByText("Play it for me", { exact: true }) }).getByRole("button", { name: "Reveal" }).click();
   await expect(page.getByTestId("chain")).toContainText("played for you");
+});
+
+test("Master round loads and a full par chain completes", async ({ page }) => {
+  await page.goto("/play/letter-circuit/lc-m3"); // sides SVZ IAN EWK LJP
+  await expect(page.getByTestId("par")).toHaveText("3");
+  await expect(page.getByText("Par (Master word pool)")).toBeVisible();
+  for (const w of ["java", "alkalizes", "spawn"]) await enter(page, w);
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("matching par");
+  await expect(result).toContainText("Master pool");
 });
 
 test("@mobile circuit fits a phone and plays", async ({ page }) => {
