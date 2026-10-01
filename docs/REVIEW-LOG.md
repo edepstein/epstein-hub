@@ -251,3 +251,13 @@ Cryptic clues (letters verified by the Cryptic Workshop checker; synonyms and su
 - [ ] Distractor evidence phrases are deliberately weaker (they name the subject or repeat the target word, or give context without the deciding detail). In a few cases (FRAGILE "in plenty of paper", SPECIOUS "looked convincing", NONPLUSSED "the strange instructions") the distractor is partly relevant; explanations say why the chosen phrase is more direct. Reviewer should confirm each is unambiguous.
 - [ ] dictionaryVersion is null for these rounds: no word-list membership is involved.
 - [ ] "Report an answer issue" is not implemented (no editorial queue yet). Only 4 files per difficulty; docs/08 asks for 10.
+
+## Word Fragments
+- [ ] Practice boards wf-g1..g5, wf-s1..s5, wf-e1..e5 and clues are by the build agent; answers are ESDB members in the size-35 familiar layer. The exact solver finds exactly one sharing-out of fragment texts for every board, so every board carries the "One solution" claim; it also found no rival board in which every lane spells some other dictionary word (other than swapping whole answers between equal-length lanes, which the clues settle). An editor should still read the clues for such swaps (e.g. wf-g2 CUPBOARD/RAINCOAT/DOORSTEP, wf-s1 GARDEN/CARPET/BASKET).
+- [ ] Clue judgement calls: HOCKEY "played with sticks, on a field or on ice" (UK hockey is usually field hockey); PANCAKE "eaten on Shrove Tuesday"; SPOTLIGHT "a strong beam of light on a stage".
+- [ ] Decision: a lane may not hold more letters than its answer (rejected with a reason) rather than allowing overfilled drafts.
+- [ ] Decision: a wrong Submit is rejected atomically and not stored, so failed board checks are not counted in results; single-lane checks are stored actions and counted as assistance. A correct board scores 100 whatever help was used (the brief says assisted completion remains a success); the result lists checks, hints and reveals.
+- [ ] Decision: "Complete a lane" locks that lane and clears the undo history (so undo can never unlock a hint-filled lane). The first-fragment hint can be undone.
+- [ ] Decision: three lanes at Gentle and Standard (wf-s3 and wf-s5 have four), four lanes at Expert; the brief's "more lanes" for Expert is met with four. No five-lane boards yet.
+- [ ] Optional drag-and-drop is not implemented; select-then-place covers touch, mouse and keyboard.
+- [ ] Only 5 practice boards per difficulty plus 2 demos; docs/08 asks for 10.
