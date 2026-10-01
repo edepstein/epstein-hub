@@ -539,7 +539,7 @@ export function verifyCompound(clue: TreeClueInput, root: Node, where: string): 
 
   const res = ev(root, "root");
   if (res.letters !== answer) problems.push(`${where}: the construction tree makes ${res.letters || "nothing"}, not ${answer}`);
-  if (countOps(root) < 2) problems.push(`${where}: a compound clue combines at least two operations`);
+  if (countOps(root) < 2 && !clue.lit) problems.push(`${where}: a compound clue combines at least two operations`);
   if (!hasHidden(root) && normaliseLetters(text).includes(answer)) problems.push(`${where}: the answer appears inside the clue text`);
 
   // Definition position and the &lit variants.

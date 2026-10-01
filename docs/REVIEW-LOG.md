@@ -220,6 +220,78 @@ Content expansion 2026-10-01: 22 new practice rounds (cw-g5..g11, cw-s5..s11, cw
 - [ ] Deletion clues use only the first-letter removal ('headless'/'beheaded' are the only house deletion indicators). Proper-noun answers MALTA and PERU were dropped (not in the word list); PARIS and SPAIN are in it.
 - [ ] Validator minimum raised from 4 to 12 rounds per difficulty.
 
+Master tier and Expert additions (2026-10-01 Master wave). Construction checker extended (src/games/cryptic-workshop/tree.ts): nested trees (anagram, charade, container, reversal, deletion, subtraction, letter selection, hidden, homophone) are recomputed bottom-up; indicators must be on the per-operation house lists; container and charade order must match the indicator; anagram fodder must be literal clue text; every word of a clue must be definition, indicator, material or a plain link word; &lit/semi-&lit and flagged cryptic definitions are supported. Synonym, homophone and double-definition links cannot be machine-checked and are listed below for a cryptic-fluent editor.
+- [ ] Master: 16 workshops (cw-m1..cw-m16, 48 clues); Expert: 6 more workshops (cw-e13..cw-e18, 18 clues). Expert is deliberately easier than Master: two operations at most (a reversed charade or a reversed hidden word) with plain indicators; Master adds nested containers, subtractive anagrams, selected letters, homophones of charades, &lit, double definitions and cryptic definitions.
+- [ ] Candid limits: only one full &lit (REVOLUTION, "Our violent upset!") and no true semi-&lit clue were written (the checker supports semi-&lit; I could not make one I trusted). Surfaces are often gloss-style ("Definition: wordplay") rather than fully natural; an editor may want to polish them. Initials were not used as a Master device. Several anagram fodders in container clues produce a non-word intermediate (e.g. ARMSTICE); this is legitimate but less elegant.
+- [ ] Indicator lists are broad house lists; a Ximenean purist may want to strike entries (e.g. "out", "around", "about", "on" style ambiguities, "mixture", "fancy", "poor", "ill"). Containers use "in" (inner first) which a few setters call lazy beside "holding".
+- [ ] Abbreviation table (clue-text.ts) was greatly extended with standard crossword short forms; please skim it. Master answers were required to be in familiar or uncommon dictionary layers (all pass); MAGNOLIA, STEVEDORE, SNAFFLE, SEMAPHORE, TRAPEZE, NOCTURNE, DIALECTIC-style words are the obscurer end.
+- [ ] cw-e13.a PARTNER: "Mate: hire, then knock, in reverse" (7) definition "Mate". Check: "hire" = RENT; "knock" = RAP.
+- [ ] cw-e13.b TOMATO: "Salad item seen in quota mothers, going back" (6) definition "Salad item". Check: .
+- [ ] cw-e13.c STATIONERY: "Pens and paper, we hear, not moving" (10) definition "Pens and paper". Check: HOMOPHONE: STATIONARY / STATIONERY (STATIONERY and STATIONARY share a usual UK pronunciation.); "not moving" = STATIONARY.
+- [ ] cw-e14.a PASTIME: "Hobby: give off, then drain, going back" (7) definition "Hobby". Check: "give off" = EMIT; "drain" = SAP.
+- [ ] cw-e14.b BALLAD: "Song found in feudal labour, turned back" (6) definition "Song". Check: .
+- [ ] cw-e14.c TRACTOR: "Farm vehicle: rubbish, then wagon, returned" (7) definition "Farm vehicle". Check: "rubbish" = ROT; "wagon" = CART.
+- [ ] cw-e15.a WARTIME: "Period of conflict: give off raw, returned" (7) definition "Period of conflict". Check: "give off" = EMIT.
+- [ ] cw-e15.b PARSNIP: "Root vegetable: tacks, then knock, sent back" (7) definition "Root vegetable". Check: "tacks" = PINS; "knock" = RAP.
+- [ ] cw-e15.c SPACEMAN: "Astronaut: title and hats, sent back" (8) definition "Astronaut". Check: "title" = NAME; "hats" = CAPS.
+- [ ] cw-e16.a WELFARE: "State help: period, then soared, going back" (7) definition "State help". Check: "period" = ERA; "soared" = FLEW.
+- [ ] cw-e16.b SNIFFLE: "Cold symptom: sprite, then flippers, sent back" (7) definition "Cold symptom". Check: "sprite" = ELF; "flippers" = FINS.
+- [ ] cw-e16.c PANNIER: "Cycle bag: control, then doze, returned" (7) definition "Cycle bag". Check: "control" = REIN; "doze" = NAP.
+- [ ] cw-e17.a STARTUP: "Fledgling firm: place, then rodents, turned back" (7) definition "Fledgling firm". Check: "place" = PUT; "rodents" = RATS.
+- [ ] cw-e17.b BOREDOM: "Tedium: fashion, then plunder, going back" (7) definition "Tedium". Check: "fashion" = MODE; "plunder" = ROB.
+- [ ] cw-e17.c LEGROOM: "Space for passengers: tie up, then hair product, going back" (7) definition "Space for passengers". Check: "tie up" = MOOR; "hair product" = GEL.
+- [ ] cw-e18.a STARDOM: "Fame: sixties teen with informers, reversed" (7) definition "Fame". Check: "sixties teen" = MOD; "informers" = RATS.
+- [ ] cw-e18.b REVOLVER: "Gun: engine speed, then sweetheart, going back" (8) definition "Gun". Check: "engine speed" = REV; "sweetheart" = LOVER.
+- [ ] cw-e18.c TRUCKLE: "Submit: deer, then brusque, going back" (7) definition "Submit". Check: "deer" = ELK; "brusque" = CURT.
+- [ ] cw-m1.a ARMISTICE: "Ceasefire's one in wrecked matrices" (9) definition "Ceasefire". Check: .
+- [ ] cw-m1.b LOBSTER: "Crustacean found in secrets bolder, going back" (7) definition "Crustacean". Check: .
+- [ ] cw-m1.c PRESENTLY: "Soon, or now, to some" (9) definition "Soon". Check: DOUBLE DEFINITION: confirm "Soon" and "now, to some" both mean PRESENTLY.
+- [ ] cw-m2.a ACRIMONY: "Bitterness: romantically losing tall, wildly" (8) definition "Bitterness". Check: .
+- [ ] cw-m2.b RAMPART: "Fortification: snare, then spoil, returned" (7) definition "Fortification". Check: "snare" = TRAP; "spoil" = MAR.
+- [ ] cw-m2.c REINDEER: "Sleigh-puller: showers, loved, we hear" (8) definition "Sleigh-puller". Check: "showers" = RAIN; "loved" = DEAR; HOMOPHONE: REINDEER sounds like the parts above (REINDEER and RAIN DEAR share a usual UK pronunciation.).
+- [ ] cw-m3.a SPLENDOUR: "Grandeur from ring in plunders, rearranged" (9) definition "Grandeur". Check: .
+- [ ] cw-m3.b CATASTROPHE: "Calamity: pet as prize cut short with energy" (11) definition "Calamity". Check: "pet" = CAT; "prize" = TROPHY.
+- [ ] cw-m3.c UMBRELLA: "Cover often put up when things are falling" (8) definition "Cover often put up when things are falling". Check: CRYPTIC DEFINITION (no wordplay): confirm it is a fair, accurate, misleading definition.
+- [ ] cw-m4.a BAROMETER: "Weather gauge from troublemakers without sulk, mixed" (9) definition "Weather gauge". Check: .
+- [ ] cw-m4.b TRAPEZE: "Circus swing seen in freeze party, going back" (7) definition "Circus swing". Check: .
+- [ ] cw-m4.c FORMULA: "Equation or milk for babies" (7) definition "Equation". Check: DOUBLE DEFINITION: confirm "Equation" and "milk for babies" both mean FORMULA.
+- [ ] cw-m5.a STRATAGEM: "Ploy: label in shattered master" (9) definition "Ploy". Check: "label" = TAG.
+- [ ] cw-m5.b ACCORDION: "Squeezebox: agreement with disown evenly" (9) definition "Squeezebox". Check: "agreement" = ACCORD.
+- [ ] cw-m5.c LEEWARD: "Sheltered side: tie, then fish, going back" (7) definition "Sheltered side". Check: "tie" = DRAW; "fish" = EEL.
+- [ ] cw-m6.a NOSTALGIA: "Wistfulness: strangulation without turn, unusual" (9) definition "Wistfulness". Check: .
+- [ ] cw-m6.b EMBARGO: "Ban: printer's measure, seize back and ring" (7) definition "Ban". Check: "printer's measure" = EM; "seize" = GRAB.
+- [ ] cw-m6.c OVERTURE: "Orchestral opening, or advance" (8) definition "Orchestral opening". Check: DOUBLE DEFINITION: confirm "Orchestral opening" and "advance" both mean OVERTURE.
+- [ ] cw-m7.a TOURNIQUET: "Tight bandage: our in rearranged quintet" (10) definition "Tight bandage". Check: .
+- [ ] cw-m7.b STEVEDORE: "Docker: wear away, then checks, going back" (9) definition "Docker". Check: "wear away" = ERODE; "checks" = VETS.
+- [ ] cw-m7.c REVOLUTION: "Our violent upset!" (10) [&lit] definition "Our violent upset". Check: .
+- [ ] cw-m8.a MAGNOLIA: "Flowering tree from megalomaniac dropping came, rearranged" (8) definition "Flowering tree". Check: .
+- [ ] cw-m8.b CABARET: "Nightclub show hidden in rooster abacus, going back" (7) definition "Nightclub show". Check: .
+- [ ] cw-m8.c REGISTER: "Roll, or till" (8) definition "Roll". Check: DOUBLE DEFINITION: confirm "Roll" and "till" both mean REGISTER.
+- [ ] cw-m9.a MASQUERADE: "Pretence: notice in reorganised marquees" (10) definition "Pretence". Check: "notice" = AD.
+- [ ] cw-m9.b CONUNDRUM: "Puzzle: swindle one with drums, unfinished" (9) definition "Puzzle". Check: "swindle" = CON.
+- [ ] cw-m9.c ESCALATOR: "It lets you go up without taking a step" (9) definition "It lets you go up without taking a step". Check: CRYPTIC DEFINITION (no wordplay): confirm it is a fair, accurate, misleading definition.
+- [ ] cw-m10.a MERIDIAN: "Great circle from intermediary lacking tyre, scrambled" (8) definition "Great circle". Check: .
+- [ ] cw-m10.b SNAFFLE: "Horse's bit: sprite, then supporters, sent back" (7) definition "Horse's bit". Check: "sprite" = ELF; "supporters" = FANS.
+- [ ] cw-m10.c GRATEFUL: "Thankful: super, stuffed, we hear" (8) definition "Thankful". Check: "super" = GREAT; "stuffed" = FULL; HOMOPHONE: GRATEFUL sounds like the parts above (GRATEFUL and GREAT FULL share a usual UK pronunciation.).
+- [ ] cw-m11.a MISCREANT: "Villain: right in jumbled semantic" (9) definition "Villain". Check: .
+- [ ] cw-m11.b ABSORBENT: "Spongy: drink in with peanut evenly" (9) definition "Spongy". Check: "drink in" = ABSORB.
+- [ ] cw-m11.c DISCHARGE: "Fire, or release" (9) definition "Fire". Check: DOUBLE DEFINITION: confirm "Fire" and "release" both mean DISCHARGE.
+- [ ] cw-m12.a LAVENDER: "Pale purple: deliverance without ice, reformed" (8) definition "Pale purple". Check: .
+- [ ] cw-m12.b BRACELET: "Wristband found in clientele carbon, turned back" (8) definition "Wristband". Check: .
+- [ ] cw-m12.c PARACHUTE: "Something to help you fall safely" (9) definition "Something to help you fall safely". Check: CRYPTIC DEFINITION (no wordplay): confirm it is a fair, accurate, misleading definition.
+- [ ] cw-m13.a CRESCENDO: "Increasing volume: cold in censored, revised" (9) definition "Increasing volume". Check: .
+- [ ] cw-m13.b PILLAGER: "Raider: royal lip, sent back" (8) definition "Raider". Check: "royal" = REGAL.
+- [ ] cw-m13.c ANTIDOTE: "Remedy for poison: ring in tainted, reformed" (8) definition "Remedy for poison". Check: .
+- [ ] cw-m14.a PINNACLE: "Peak from contemplation losing motto, worked" (8) definition "Peak". Check: .
+- [ ] cw-m14.b ACCOUNTANT: "Bean counter: report with magnet evenly" (10) definition "Bean counter". Check: "report" = ACCOUNT.
+- [ ] cw-m14.c FLOTILLA: "Small fleet: poorly in mangled float" (8) definition "Small fleet". Check: "poorly" = ILL.
+- [ ] cw-m15.a RAMSHACKLE: "Rickety hut in reformed realm" (10) definition "Rickety". Check: "hut" = SHACK.
+- [ ] cw-m15.b SEMAPHORE: "Flag signalling: chart in wrecked heroes" (9) definition "Flag signalling". Check: "chart" = MAP.
+- [ ] cw-m15.c QUARANTINE: "Isolation: managed in rearranged antique" (10) definition "Isolation". Check: "managed" = RAN.
+- [ ] cw-m16.a TRANSPARENT: "See-through: box in reorganised entrant" (11) definition "See-through". Check: "box" = SPAR.
+- [ ] cw-m16.b NOCTURNE: "Piece for night-time: new in reformed counter" (8) definition "Piece for night-time". Check: .
+- [ ] cw-m16.c DECADENT: "Self-indulgent lair in tangled cadet" (8) definition "Self-indulgent". Check: "lair" = DEN.
+
 ## Word Ladder
 - [ ] 15 original practice ladders (5 per difficulty) plus 3 demo fixtures (COLD/WARM and CAT/DOG gentle, HEAD/TAIL standard). Endpoints were hand-picked by the author from everyday words; optima are BFS-proven over ESDB membership and each stored example route uses only size-35 familiar words of the same length. An editor should read every example route for oddities (e.g. SLAKE in expert 3, TRACT and TRAIT in expert 5, FRET in expert 1) and confirm endpoints are not a published puzzle's.
 - [ ] Difficulty bands (validator-enforced): gentle = 3-4 letters, 3-4 moves, optional word bank; standard = 4-5 letters, 4-6 moves; expert = 6-8 moves where the optimum exceeds the letter difference (a forced detour). Needs calibration with players.

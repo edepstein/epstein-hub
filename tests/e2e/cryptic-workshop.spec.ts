@@ -148,3 +148,38 @@ test("@mobile workshop fits a phone and plays", async ({ page }) => {
   await expect(page.getByTestId("cw-parse")).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });
+
+test("Master workshop: no device list, hints name the compound device, a full valid solve completes", async ({ page }) => {
+  await page.goto("/play/cryptic-workshop/cw-m1");
+  await expect(page.getByTestId("cw-clue")).toContainText("Ceasefire's one in wrecked matrices (9)");
+  await expect(page.getByText("Master clues offer no device list")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Practise naming the device" })).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Next hint: Identify the definition" }).click();
+  await page.getByRole("button", { name: /Next hint: Name the device/ }).click();
+  await expect(page.getByTestId("cw-notes")).toContainText("Compound: container, anagram");
+
+  await answer(page, "truce");
+  await expect(feedback(page)).toContainText("asks for 9 letters");
+  await answer(page, "armistice");
+  await expect(page.getByTestId("cw-parse")).toContainText("Step 1: Rearrange MATRICES to make ARMSTICE");
+
+  await tab(page, 2).click();
+  await answer(page, "lobster");
+  await expect(page.getByTestId("cw-parse")).toContainText("hidden in");
+  await tab(page, 3).click();
+  await answer(page, "presently");
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("Master clues offer no device list");
+  await expect(result).toContainText("100 of 100");
+});
+
+test("@mobile Master clue fits a phone", async ({ page }) => {
+  await page.goto("/play/cryptic-workshop/cw-m7");
+  await expect(page.getByTestId("cw-clue")).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+  await answer(page, "tourniquet");
+  await expect(page.getByTestId("cw-parse")).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+});

@@ -10,7 +10,7 @@
  */
 
 import { ABBREVIATIONS, findPhrase, normaliseLetters, reverse, sortLetters, type Span } from "./clue-text";
-import { describeTree, treeIndicators, treeLetters, treeOps, treeSources, verifyCompound, type Node } from "./tree";
+import { describeTree, treeLetters, treeOps, treeSources, verifyCompound, type Node } from "./tree";
 
 export { ABBREVIATIONS, findPhrase, normaliseLetters };
 export type { Span, Node };
@@ -522,4 +522,6 @@ export const HELP_EXAMPLES: { device: Device; clue: string; answer: string; how:
   { device: "initials", clue: "Initially some unusual nights bring sunshine (3)", answer: "SUN", how: "Some Unusual Nights." },
   { device: "double-definition", clue: "Contest for a light (5)", answer: "MATCH", how: "A match is a contest, and a match gives a light." },
   { device: "homophone", clue: "Seven days, we hear, feeble (4)", answer: "WEAK", how: "Sounds like WEEK." },
+  { device: "compound", clue: "First appearance: Underground, then day, going back (5)", answer: "DEBUT", how: "Nested operations: TUBE (Underground) + D (day) gives TUBED, which is then reversed. Each result feeds the next." },
+  { device: "cryptic-definition", clue: "Something to hold in the dark, if you are brave (6)", answer: "CANDLE", how: "No wordplay: the whole clue is one misleading definition." },
 ];

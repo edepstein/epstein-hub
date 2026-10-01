@@ -1,6 +1,6 @@
 {
   "contentVersion": "1.0",
-  "note": "cw-demo-* are the two pack fixtures (status demo, original fixture ids kept). All cw-g/s/e rounds are original clues authored for this build (status practice) and need independent semantic review before publication; see docs/REVIEW-LOG.md.",
+  "note": "cw-demo-* are the two pack fixtures (status demo, original fixture ids kept). All cw-g/s/e/m rounds are original clues authored for this build (status practice) and need independent semantic review before publication; see docs/REVIEW-LOG.md.",
   "rounds": [
     {
       "id": "cw-demo-1",
@@ -2319,6 +2319,2392 @@
                 "via": "literal"
               },
               "remove": "first"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e13",
+      "title": "Expert workshop 13",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Mate: hire, then knock, in reverse",
+            "answer": "PARTNER",
+            "enumeration": "7",
+            "definition": "Mate",
+            "indicators": [
+              "in reverse",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "hire",
+                      "letters": "RENT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "knock",
+                      "letters": "RAP",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "in reverse"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Salad item seen in quota mothers, going back",
+            "answer": "TOMATO",
+            "enumeration": "6",
+            "definition": "Salad item",
+            "indicators": [
+              "going back",
+              "seen in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "quota mothers",
+                  "letters": "OTAMOT",
+                  "indicator": "seen in"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Pens and paper, we hear, not moving",
+            "answer": "STATIONERY",
+            "enumeration": "10",
+            "definition": "Pens and paper",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "op": "part",
+                "source": "not moving",
+                "letters": "STATIONARY",
+                "via": "synonym"
+              },
+              "pronunciationNote": "STATIONERY and STATIONARY share a usual UK pronunciation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e14",
+      "title": "Expert workshop 14",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Hobby: give off, then drain, going back",
+            "answer": "PASTIME",
+            "enumeration": "7",
+            "definition": "Hobby",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "give off",
+                      "letters": "EMIT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "drain",
+                      "letters": "SAP",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Song found in feudal labour, turned back",
+            "answer": "BALLAD",
+            "enumeration": "6",
+            "definition": "Song",
+            "indicators": [
+              "turned back",
+              "found in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "feudal labour",
+                  "letters": "DALLAB",
+                  "indicator": "found in"
+                },
+                "indicator": "turned back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Farm vehicle: rubbish, then wagon, returned",
+            "answer": "TRACTOR",
+            "enumeration": "7",
+            "definition": "Farm vehicle",
+            "indicators": [
+              "returned",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "rubbish",
+                      "letters": "ROT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "wagon",
+                      "letters": "CART",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "returned"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e15",
+      "title": "Expert workshop 15",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Period of conflict: give off raw, returned",
+            "answer": "WARTIME",
+            "enumeration": "7",
+            "definition": "Period of conflict",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "give off",
+                      "letters": "EMIT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "raw",
+                      "letters": "RAW",
+                      "via": "literal"
+                    }
+                  ]
+                },
+                "indicator": "returned"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Root vegetable: tacks, then knock, sent back",
+            "answer": "PARSNIP",
+            "enumeration": "7",
+            "definition": "Root vegetable",
+            "indicators": [
+              "sent back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "tacks",
+                      "letters": "PINS",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "knock",
+                      "letters": "RAP",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "sent back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Astronaut: title and hats, sent back",
+            "answer": "SPACEMAN",
+            "enumeration": "8",
+            "definition": "Astronaut",
+            "indicators": [
+              "sent back",
+              "and"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "title",
+                      "letters": "NAME",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "hats",
+                      "letters": "CAPS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "and"
+                },
+                "indicator": "sent back"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e16",
+      "title": "Expert workshop 16",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "State help: period, then soared, going back",
+            "answer": "WELFARE",
+            "enumeration": "7",
+            "definition": "State help",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "period",
+                      "letters": "ERA",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "soared",
+                      "letters": "FLEW",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Cold symptom: sprite, then flippers, sent back",
+            "answer": "SNIFFLE",
+            "enumeration": "7",
+            "definition": "Cold symptom",
+            "indicators": [
+              "sent back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "sprite",
+                      "letters": "ELF",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "flippers",
+                      "letters": "FINS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "sent back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Cycle bag: control, then doze, returned",
+            "answer": "PANNIER",
+            "enumeration": "7",
+            "definition": "Cycle bag",
+            "indicators": [
+              "returned",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "control",
+                      "letters": "REIN",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "doze",
+                      "letters": "NAP",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "returned"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e17",
+      "title": "Expert workshop 17",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Fledgling firm: place, then rodents, turned back",
+            "answer": "STARTUP",
+            "enumeration": "7",
+            "definition": "Fledgling firm",
+            "indicators": [
+              "turned back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "place",
+                      "letters": "PUT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "rodents",
+                      "letters": "RATS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "turned back"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Tedium: fashion, then plunder, going back",
+            "answer": "BOREDOM",
+            "enumeration": "7",
+            "definition": "Tedium",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "fashion",
+                      "letters": "MODE",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "plunder",
+                      "letters": "ROB",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Space for passengers: tie up, then hair product, going back",
+            "answer": "LEGROOM",
+            "enumeration": "7",
+            "definition": "Space for passengers",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "tie up",
+                      "letters": "MOOR",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "hair product",
+                      "letters": "GEL",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e18",
+      "title": "Expert workshop 18",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Fame: sixties teen with informers, reversed",
+            "answer": "STARDOM",
+            "enumeration": "7",
+            "definition": "Fame",
+            "indicators": [
+              "reversed",
+              "with"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "sixties teen",
+                      "letters": "MOD",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "informers",
+                      "letters": "RATS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "with"
+                },
+                "indicator": "reversed"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Gun: engine speed, then sweetheart, going back",
+            "answer": "REVOLVER",
+            "enumeration": "8",
+            "definition": "Gun",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "engine speed",
+                      "letters": "REV",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "sweetheart",
+                      "letters": "LOVER",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Submit: deer, then brusque, going back",
+            "answer": "TRUCKLE",
+            "enumeration": "7",
+            "definition": "Submit",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "deer",
+                      "letters": "ELK",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "brusque",
+                      "letters": "CURT",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m1",
+      "title": "Master workshop 1",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Ceasefire's one in wrecked matrices",
+            "answer": "ARMISTICE",
+            "enumeration": "9",
+            "definition": "Ceasefire",
+            "indicators": [
+              "in",
+              "wrecked"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "matrices",
+                      "letters": "MATRICES",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "ARMSTICE",
+                  "indicator": "wrecked"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "one",
+                  "letters": "I",
+                  "via": "abbreviation"
+                },
+                "at": 3,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Crustacean found in secrets bolder, going back",
+            "answer": "LOBSTER",
+            "enumeration": "7",
+            "definition": "Crustacean",
+            "indicators": [
+              "going back",
+              "found in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "secrets bolder",
+                  "letters": "RETSBOL",
+                  "indicator": "found in"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Soon, or now, to some",
+            "answer": "PRESENTLY",
+            "enumeration": "9",
+            "definition": "Soon",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "now, to some"
+            },
+            "note": "Presently means soon in standard English, and now in Scots and American usage."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m2",
+      "title": "Master workshop 2",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Bitterness: romantically losing tall, wildly",
+            "answer": "ACRIMONY",
+            "enumeration": "8",
+            "definition": "Bitterness",
+            "indicators": [
+              "wildly",
+              "losing"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "romantically",
+                      "letters": "ROMANTICALLY",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "tall",
+                      "letters": "TALL",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "losing"
+                  }
+                ],
+                "letters": "ACRIMONY",
+                "indicator": "wildly"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Fortification: snare, then spoil, returned",
+            "answer": "RAMPART",
+            "enumeration": "7",
+            "definition": "Fortification",
+            "indicators": [
+              "returned",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "snare",
+                      "letters": "TRAP",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "spoil",
+                      "letters": "MAR",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "returned"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Sleigh-puller: showers, loved, we hear",
+            "answer": "REINDEER",
+            "enumeration": "8",
+            "definition": "Sleigh-puller",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "homophone",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "showers",
+                      "letters": "RAIN",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "loved",
+                      "letters": "DEAR",
+                      "via": "synonym"
+                    }
+                  ]
+                },
+                "letters": "REINDEER",
+                "note": "REINDEER and RAIN DEAR share a usual UK pronunciation.",
+                "indicator": "we hear"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m3",
+      "title": "Master workshop 3",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Grandeur from ring in plunders, rearranged",
+            "answer": "SPLENDOUR",
+            "enumeration": "9",
+            "definition": "Grandeur",
+            "indicators": [
+              "in",
+              "rearranged"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "plunders",
+                      "letters": "PLUNDERS",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "SPLENDUR",
+                  "indicator": "rearranged"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "ring",
+                  "letters": "O",
+                  "via": "abbreviation"
+                },
+                "at": 6,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Calamity: pet as prize cut short with energy",
+            "answer": "CATASTROPHE",
+            "enumeration": "11",
+            "definition": "Calamity",
+            "indicators": [
+              "with",
+              "cut short"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "pet",
+                    "letters": "CAT",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "part",
+                    "source": "as",
+                    "letters": "AS",
+                    "via": "literal"
+                  },
+                  {
+                    "op": "deletion",
+                    "of": {
+                      "op": "part",
+                      "source": "prize",
+                      "letters": "TROPHY",
+                      "via": "synonym"
+                    },
+                    "remove": "last",
+                    "indicator": "cut short"
+                  },
+                  {
+                    "op": "part",
+                    "source": "energy",
+                    "letters": "E",
+                    "via": "abbreviation"
+                  }
+                ],
+                "link": "with"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Cover often put up when things are falling",
+            "answer": "UMBRELLA",
+            "enumeration": "8",
+            "definition": "Cover often put up when things are falling",
+            "indicators": [],
+            "construction": {
+              "type": "cryptic-definition"
+            },
+            "note": "A cryptic definition: no wordplay, only a deliberately misleading description."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m4",
+      "title": "Master workshop 4",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Weather gauge from troublemakers without sulk, mixed",
+            "answer": "BAROMETER",
+            "enumeration": "9",
+            "definition": "Weather gauge",
+            "indicators": [
+              "mixed",
+              "without"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "troublemakers",
+                      "letters": "TROUBLEMAKERS",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "sulk",
+                      "letters": "SULK",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "without"
+                  }
+                ],
+                "letters": "BAROMETER",
+                "indicator": "mixed"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Circus swing seen in freeze party, going back",
+            "answer": "TRAPEZE",
+            "enumeration": "7",
+            "definition": "Circus swing",
+            "indicators": [
+              "going back",
+              "seen in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "freeze party",
+                  "letters": "EZEPART",
+                  "indicator": "seen in"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Equation or milk for babies",
+            "answer": "FORMULA",
+            "enumeration": "7",
+            "definition": "Equation",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "milk for babies"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m5",
+      "title": "Master workshop 5",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Ploy: label in shattered master",
+            "answer": "STRATAGEM",
+            "enumeration": "9",
+            "definition": "Ploy",
+            "indicators": [
+              "in",
+              "shattered"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "master",
+                      "letters": "MASTER",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "STRAEM",
+                  "indicator": "shattered"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "label",
+                  "letters": "TAG",
+                  "via": "synonym"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Squeezebox: agreement with disown evenly",
+            "answer": "ACCORDION",
+            "enumeration": "9",
+            "definition": "Squeezebox",
+            "indicators": [
+              "with",
+              "evenly"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "agreement",
+                    "letters": "ACCORD",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "select",
+                    "source": "disown",
+                    "how": "even",
+                    "indicator": "evenly"
+                  }
+                ],
+                "link": "with"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Sheltered side: tie, then fish, going back",
+            "answer": "LEEWARD",
+            "enumeration": "7",
+            "definition": "Sheltered side",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "tie",
+                      "letters": "DRAW",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "fish",
+                      "letters": "EEL",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m6",
+      "title": "Master workshop 6",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Wistfulness: strangulation without turn, unusual",
+            "answer": "NOSTALGIA",
+            "enumeration": "9",
+            "definition": "Wistfulness",
+            "indicators": [
+              "unusual",
+              "without"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "strangulation",
+                      "letters": "STRANGULATION",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "turn",
+                      "letters": "TURN",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "without"
+                  }
+                ],
+                "letters": "NOSTALGIA",
+                "indicator": "unusual"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Ban: printer's measure, seize back and ring",
+            "answer": "EMBARGO",
+            "enumeration": "7",
+            "definition": "Ban",
+            "indicators": [
+              "and",
+              "back"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "printer's measure",
+                    "letters": "EM",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "reversal",
+                    "of": {
+                      "op": "part",
+                      "source": "seize",
+                      "letters": "GRAB",
+                      "via": "synonym"
+                    },
+                    "indicator": "back"
+                  },
+                  {
+                    "op": "part",
+                    "source": "ring",
+                    "letters": "O",
+                    "via": "abbreviation"
+                  }
+                ],
+                "link": "and"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Orchestral opening, or advance",
+            "answer": "OVERTURE",
+            "enumeration": "8",
+            "definition": "Orchestral opening",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "advance"
+            },
+            "note": "Overture also means an approach, as in making overtures to someone."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m7",
+      "title": "Master workshop 7",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Tight bandage: our in rearranged quintet",
+            "answer": "TOURNIQUET",
+            "enumeration": "10",
+            "definition": "Tight bandage",
+            "indicators": [
+              "in",
+              "rearranged"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "quintet",
+                      "letters": "QUINTET",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "TNIQUET",
+                  "indicator": "rearranged"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "our",
+                  "letters": "OUR",
+                  "via": "literal"
+                },
+                "at": 1,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Docker: wear away, then checks, going back",
+            "answer": "STEVEDORE",
+            "enumeration": "9",
+            "definition": "Docker",
+            "indicators": [
+              "going back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "wear away",
+                      "letters": "ERODE",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "checks",
+                      "letters": "VETS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Our violent upset!",
+            "answer": "REVOLUTION",
+            "enumeration": "10",
+            "definition": "Our violent upset",
+            "indicators": [
+              "upset"
+            ],
+            "lit": "full",
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "part",
+                    "source": "our violent",
+                    "letters": "OURVIOLENT",
+                    "via": "literal"
+                  }
+                ],
+                "letters": "REVOLUTION",
+                "indicator": "upset"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m8",
+      "title": "Master workshop 8",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Flowering tree from megalomaniac dropping came, rearranged",
+            "answer": "MAGNOLIA",
+            "enumeration": "8",
+            "definition": "Flowering tree",
+            "indicators": [
+              "rearranged",
+              "dropping"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "megalomaniac",
+                      "letters": "MEGALOMANIAC",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "came",
+                      "letters": "CAME",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "dropping"
+                  }
+                ],
+                "letters": "MAGNOLIA",
+                "indicator": "rearranged"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Nightclub show hidden in rooster abacus, going back",
+            "answer": "CABARET",
+            "enumeration": "7",
+            "definition": "Nightclub show",
+            "indicators": [
+              "going back",
+              "hidden in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "rooster abacus",
+                  "letters": "TERABAC",
+                  "indicator": "hidden in"
+                },
+                "indicator": "going back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Roll, or till",
+            "answer": "REGISTER",
+            "enumeration": "8",
+            "definition": "Roll",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "till"
+            },
+            "note": "A register is a roll of names and also a cash register."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m9",
+      "title": "Master workshop 9",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Pretence: notice in reorganised marquees",
+            "answer": "MASQUERADE",
+            "enumeration": "10",
+            "definition": "Pretence",
+            "indicators": [
+              "in",
+              "reorganised"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "marquees",
+                      "letters": "MARQUEES",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "MASQUERE",
+                  "indicator": "reorganised"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "notice",
+                  "letters": "AD",
+                  "via": "synonym"
+                },
+                "at": 7,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Puzzle: swindle one with drums, unfinished",
+            "answer": "CONUNDRUM",
+            "enumeration": "9",
+            "definition": "Puzzle",
+            "indicators": [
+              "with",
+              "unfinished"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "swindle",
+                    "letters": "CON",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "part",
+                    "source": "one",
+                    "letters": "UN",
+                    "via": "abbreviation"
+                  },
+                  {
+                    "op": "deletion",
+                    "of": {
+                      "op": "part",
+                      "source": "drums",
+                      "letters": "DRUMS",
+                      "via": "literal"
+                    },
+                    "remove": "last",
+                    "indicator": "unfinished"
+                  }
+                ],
+                "link": "with"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "It lets you go up without taking a step",
+            "answer": "ESCALATOR",
+            "enumeration": "9",
+            "definition": "It lets you go up without taking a step",
+            "indicators": [],
+            "construction": {
+              "type": "cryptic-definition"
+            },
+            "note": "A cryptic definition: no wordplay, only a deliberately misleading description."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m10",
+      "title": "Master workshop 10",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Great circle from intermediary lacking tyre, scrambled",
+            "answer": "MERIDIAN",
+            "enumeration": "8",
+            "definition": "Great circle",
+            "indicators": [
+              "scrambled",
+              "lacking"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "intermediary",
+                      "letters": "INTERMEDIARY",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "tyre",
+                      "letters": "TYRE",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "lacking"
+                  }
+                ],
+                "letters": "MERIDIAN",
+                "indicator": "scrambled"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Horse's bit: sprite, then supporters, sent back",
+            "answer": "SNAFFLE",
+            "enumeration": "7",
+            "definition": "Horse's bit",
+            "indicators": [
+              "sent back",
+              "then"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "sprite",
+                      "letters": "ELF",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "supporters",
+                      "letters": "FANS",
+                      "via": "synonym"
+                    }
+                  ],
+                  "link": "then"
+                },
+                "indicator": "sent back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Thankful: super, stuffed, we hear",
+            "answer": "GRATEFUL",
+            "enumeration": "8",
+            "definition": "Thankful",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "homophone",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "super",
+                      "letters": "GREAT",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "stuffed",
+                      "letters": "FULL",
+                      "via": "synonym"
+                    }
+                  ]
+                },
+                "letters": "GRATEFUL",
+                "note": "GRATEFUL and GREAT FULL share a usual UK pronunciation.",
+                "indicator": "we hear"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m11",
+      "title": "Master workshop 11",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Villain: right in jumbled semantic",
+            "answer": "MISCREANT",
+            "enumeration": "9",
+            "definition": "Villain",
+            "indicators": [
+              "in",
+              "jumbled"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "semantic",
+                      "letters": "SEMANTIC",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "MISCEANT",
+                  "indicator": "jumbled"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "right",
+                  "letters": "R",
+                  "via": "abbreviation"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Spongy: drink in with peanut evenly",
+            "answer": "ABSORBENT",
+            "enumeration": "9",
+            "definition": "Spongy",
+            "indicators": [
+              "with",
+              "evenly"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "drink in",
+                    "letters": "ABSORB",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "select",
+                    "source": "peanut",
+                    "how": "even",
+                    "indicator": "evenly"
+                  }
+                ],
+                "link": "with"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Fire, or release",
+            "answer": "DISCHARGE",
+            "enumeration": "9",
+            "definition": "Fire",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "release"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m12",
+      "title": "Master workshop 12",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Pale purple: deliverance without ice, reformed",
+            "answer": "LAVENDER",
+            "enumeration": "8",
+            "definition": "Pale purple",
+            "indicators": [
+              "reformed",
+              "without"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "deliverance",
+                      "letters": "DELIVERANCE",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "ice",
+                      "letters": "ICE",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "without"
+                  }
+                ],
+                "letters": "LAVENDER",
+                "indicator": "reformed"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Wristband found in clientele carbon, turned back",
+            "answer": "BRACELET",
+            "enumeration": "8",
+            "definition": "Wristband",
+            "indicators": [
+              "turned back",
+              "found in"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "hidden",
+                  "fodder": "clientele carbon",
+                  "letters": "TELECARB",
+                  "indicator": "found in"
+                },
+                "indicator": "turned back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Something to help you fall safely",
+            "answer": "PARACHUTE",
+            "enumeration": "9",
+            "definition": "Something to help you fall safely",
+            "indicators": [],
+            "construction": {
+              "type": "cryptic-definition"
+            },
+            "note": "A cryptic definition: no wordplay, only a deliberately misleading description."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m13",
+      "title": "Master workshop 13",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Increasing volume: cold in censored, revised",
+            "answer": "CRESCENDO",
+            "enumeration": "9",
+            "definition": "Increasing volume",
+            "indicators": [
+              "in",
+              "revised"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "censored",
+                      "letters": "CENSORED",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "CRESENDO",
+                  "indicator": "revised"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "cold",
+                  "letters": "C",
+                  "via": "abbreviation"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Raider: royal lip, sent back",
+            "answer": "PILLAGER",
+            "enumeration": "8",
+            "definition": "Raider",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "reversal",
+                "of": {
+                  "op": "charade",
+                  "parts": [
+                    {
+                      "op": "part",
+                      "source": "royal",
+                      "letters": "REGAL",
+                      "via": "synonym"
+                    },
+                    {
+                      "op": "part",
+                      "source": "lip",
+                      "letters": "LIP",
+                      "via": "literal"
+                    }
+                  ]
+                },
+                "indicator": "sent back"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Remedy for poison: ring in tainted, reformed",
+            "answer": "ANTIDOTE",
+            "enumeration": "8",
+            "definition": "Remedy for poison",
+            "indicators": [
+              "in",
+              "reformed"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "tainted",
+                      "letters": "TAINTED",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "ANTIDTE",
+                  "indicator": "reformed"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "ring",
+                  "letters": "O",
+                  "via": "abbreviation"
+                },
+                "at": 5,
+                "indicator": "in"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m14",
+      "title": "Master workshop 14",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Peak from contemplation losing motto, worked",
+            "answer": "PINNACLE",
+            "enumeration": "8",
+            "definition": "Peak",
+            "indicators": [
+              "worked",
+              "losing"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "anagram",
+                "of": [
+                  {
+                    "op": "remove",
+                    "from": {
+                      "op": "part",
+                      "source": "contemplation",
+                      "letters": "CONTEMPLATION",
+                      "via": "literal"
+                    },
+                    "take": {
+                      "op": "part",
+                      "source": "motto",
+                      "letters": "MOTTO",
+                      "via": "literal"
+                    },
+                    "mode": "letters",
+                    "indicator": "losing"
+                  }
+                ],
+                "letters": "PINNACLE",
+                "indicator": "worked"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Bean counter: report with magnet evenly",
+            "answer": "ACCOUNTANT",
+            "enumeration": "10",
+            "definition": "Bean counter",
+            "indicators": [
+              "with",
+              "evenly"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "charade",
+                "parts": [
+                  {
+                    "op": "part",
+                    "source": "report",
+                    "letters": "ACCOUNT",
+                    "via": "synonym"
+                  },
+                  {
+                    "op": "select",
+                    "source": "magnet",
+                    "how": "even",
+                    "indicator": "evenly"
+                  }
+                ],
+                "link": "with"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Small fleet: poorly in mangled float",
+            "answer": "FLOTILLA",
+            "enumeration": "8",
+            "definition": "Small fleet",
+            "indicators": [
+              "in",
+              "mangled"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "float",
+                      "letters": "FLOAT",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "FLOTA",
+                  "indicator": "mangled"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "poorly",
+                  "letters": "ILL",
+                  "via": "synonym"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m15",
+      "title": "Master workshop 15",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Rickety hut in reformed realm",
+            "answer": "RAMSHACKLE",
+            "enumeration": "10",
+            "definition": "Rickety",
+            "indicators": [
+              "in",
+              "reformed"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "realm",
+                      "letters": "REALM",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "RAMLE",
+                  "indicator": "reformed"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "hut",
+                  "letters": "SHACK",
+                  "via": "synonym"
+                },
+                "at": 3,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Flag signalling: chart in wrecked heroes",
+            "answer": "SEMAPHORE",
+            "enumeration": "9",
+            "definition": "Flag signalling",
+            "indicators": [
+              "in",
+              "wrecked"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "heroes",
+                      "letters": "HEROES",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "SEHORE",
+                  "indicator": "wrecked"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "chart",
+                  "letters": "MAP",
+                  "via": "synonym"
+                },
+                "at": 2,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Isolation: managed in rearranged antique",
+            "answer": "QUARANTINE",
+            "enumeration": "10",
+            "definition": "Isolation",
+            "indicators": [
+              "in",
+              "rearranged"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "antique",
+                      "letters": "ANTIQUE",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "QUATINE",
+                  "indicator": "rearranged"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "managed",
+                  "letters": "RAN",
+                  "via": "synonym"
+                },
+                "at": 3,
+                "indicator": "in"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-m16",
+      "title": "Master workshop 16",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "See-through: box in reorganised entrant",
+            "answer": "TRANSPARENT",
+            "enumeration": "11",
+            "definition": "See-through",
+            "indicators": [
+              "in",
+              "reorganised"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "entrant",
+                      "letters": "ENTRANT",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "TRANENT",
+                  "indicator": "reorganised"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "box",
+                  "letters": "SPAR",
+                  "via": "synonym"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "b",
+            "text": "Piece for night-time: new in reformed counter",
+            "answer": "NOCTURNE",
+            "enumeration": "8",
+            "definition": "Piece for night-time",
+            "indicators": [
+              "in",
+              "reformed"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "counter",
+                      "letters": "COUNTER",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "NOCTURE",
+                  "indicator": "reformed"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "new",
+                  "letters": "N",
+                  "via": "abbreviation"
+                },
+                "at": 6,
+                "indicator": "in"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Self-indulgent lair in tangled cadet",
+            "answer": "DECADENT",
+            "enumeration": "8",
+            "definition": "Self-indulgent",
+            "indicators": [
+              "in",
+              "tangled"
+            ],
+            "construction": {
+              "type": "compound",
+              "root": {
+                "op": "container",
+                "outer": {
+                  "op": "anagram",
+                  "of": [
+                    {
+                      "op": "part",
+                      "source": "cadet",
+                      "letters": "CADET",
+                      "via": "literal"
+                    }
+                  ],
+                  "letters": "DECAT",
+                  "indicator": "tangled"
+                },
+                "inner": {
+                  "op": "part",
+                  "source": "lair",
+                  "letters": "DEN",
+                  "via": "synonym"
+                },
+                "at": 4,
+                "indicator": "in"
+              }
             }
           }
         ]

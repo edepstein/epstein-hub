@@ -255,3 +255,68 @@ describe("workshop engine", () => {
     );
   });
 });
+
+describe("compound clues and Master tier", () => {
+  const m1a = () => clue("cw-m1", "a");
+  const mutate = (c: CrypticClue, f: (x: CrypticClue) => void) => {
+    const x = structuredClone(c);
+    f(x);
+    return verifyClue(x).problems.join(" | ");
+  };
+
+  it("verifies nested trees mechanically and explains them step by step", () => {
+    expect(verifyClue(m1a()).problems).toEqual([]);
+    const text = explainOperation(m1a());
+    expect(text).toMatch(/Step 1: Rearrange MATRICES to make ARMSTICE/);
+    expect(text).toMatch(/I \(short for "one"\) goes inside ARMSTICE/);
+    expect(text).toMatch(/The result is ARMISTICE/);
+  });
+
+  it("rejects wrong order, synonym fodder, stray words and bad arithmetic", () => {
+    expect(mutate(m1a(), (c) => void (c.text = "Ceasefire's wrecked matrices in one"))).toMatch(/inner part first/);
+    expect(mutate(m1a(), (c) => void (c.text = "Ceasefire's one in wrecked matrices quickly"))).toMatch(/"quickly" is not part of/);
+    expect(mutate(m1a(), (c) => void ((c.construction as { root: { at: number } }).root.at = 2))).toMatch(/not ARMISTICE/);
+    expect(mutate(m1a(), (c) => void ((c.construction as { root: { indicator: string } }).root.indicator = "outside"))).toMatch(/not a house container indicator/);
+    expect(verifyClue(clue("cw-m2", "a")).problems).toEqual([]);
+    const synFodder = structuredClone(m1a());
+    (synFodder.construction as { root: { outer: { of: { via: string }[] } } }).root.outer.of[0].via = "synonym";
+    expect(verifyClue(synFodder).problems.join()).toMatch(/literal clue text/);
+  });
+
+  it("supports &lit, reversed hidden words, reversed charades and flagged cryptic definitions", () => {
+    const lit = clue("cw-m7", "c");
+    expect(lit.lit).toBe("full");
+    expect(verifyClue(lit).problems).toEqual([]);
+    expect(mutate(lit, (c) => void (c.lit = undefined))).toMatch(/whole clue/);
+    expect(verifyClue(clue("cw-m1", "b")).problems).toEqual([]);
+    expect(verifyClue(clue("cw-m2", "b")).problems).toEqual([]);
+    const cdef = clue("cw-m3", "c");
+    expect(cdef.construction.type).toBe("cryptic-definition");
+    expect(verifyClue(cdef).editorial.join()).toMatch(/cryptic definition \(no wordplay/);
+    expect(explainOperation(cdef)).toMatch(/no wordplay/);
+  });
+
+  it("Master offers no device list, but the ladder still names the device and indicators", () => {
+    let s = start("cw-m1");
+    expect(s.mode).toBe("master");
+    const t = engine.apply(s, { type: "identify", clueId: "a", device: "anagram" });
+    expect(t.ok).toBe(false);
+    expect(t.code).toBe("device-list-unavailable");
+    expect(t.state).toBe(s);
+    s = engine.apply(s, { type: "hint", clueId: "a", stage: STAGE_DEFINITION }).state;
+    const dev = engine.apply(s, { type: "hint", clueId: "a", stage: STAGE_DEVICE });
+    expect(dev.message).toBe("The device is: Compound: container, anagram.");
+    const ind = engine.apply(dev.state, { type: "hint", clueId: "a", stage: STAGE_INDICATOR });
+    expect(ind.message).toMatch(/"in" signals a container; "wrecked" signals an anagram/);
+    const fod = engine.apply(ind.state, { type: "hint", clueId: "a", stage: STAGE_FODDER });
+    expect(fod.message).not.toMatch(/ARMISTICE|ARMSTICE/);
+  });
+
+  it("Master and Expert banks meet the minimums", () => {
+    expect(rounds.filter((r) => r.meta.difficulty === "master")).toHaveLength(16);
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(18);
+    for (const r of rounds.filter((x) => x.meta.difficulty === "master")) {
+      for (const c of r.payload.clues) expect(c.answer.length, `${r.meta.id}.${c.id}`).toBeGreaterThanOrEqual(7);
+    }
+  });
+});
