@@ -1,5 +1,5 @@
 import type { RoundMeta } from "@/lib/engine/types";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { rounds } from "./rounds";
 import { extraLetters, type RelayPayload } from "./engine";
 
@@ -15,11 +15,21 @@ export function checkRelayRound(
   p: RelayPayload,
   membership: ReadonlySet<string>,
   familiar: ReadonlySet<string>,
+  uncommon: ReadonlySet<string> = new Set(),
+  difficulty: string = "standard",
 ): string[] {
+  const master = difficulty === "master";
   const problems: string[] = [];
   const at = (f: string) => `${meta.id}.${f}`;
   if (!/^[A-Z]+$/.test(p.start)) problems.push(`${at("start")}: must be upper-case A-Z`);
-  if (p.stages.length !== 3) problems.push(`${at("stages")}: a relay has three stages, found ${p.stages.length}`);
+  if (!master && p.stages.length !== 3) problems.push(`${at("stages")}: a relay has three stages, found ${p.stages.length}`);
+  if (master) {
+    if (p.stages.length < 3 || p.stages.length > 4) problems.push(`${at("stages")}: a Master relay has three or four stages, found ${p.stages.length}`);
+    if (p.start.length < 4 || p.start.length > 7) problems.push(`${at("start")}: Master starts must have 4 to 7 letters`);
+    const finalLength = p.start.length + p.stages.length;
+    if (finalLength < 9 || finalLength > 10) problems.push(`${at("stages")}: a Master relay must finish on a nine- or ten-letter word, found ${finalLength}`);
+    if (p.suggestAddedLetter) problems.push(`${at("suggestAddedLetter")}: Master rounds never show the letter to add`);
+  }
   p.stages.forEach((st, i) => {
     if (st.length !== p.start.length + i + 1) problems.push(`${at(`stages[${i}].length`)}: expected ${p.start.length + i + 1}, found ${st.length}`);
     if (!st.clue || st.clue.trim().length < 3) problems.push(`${at(`stages[${i}].clue`)}: missing clue`);
@@ -52,7 +62,15 @@ export function checkRelayRound(
     }
     for (const w of chain) {
       if (!membership.has(w)) problems.push(`${where}: ${w} is not in gameplay membership`);
-      if (meta.status !== "demo" && !familiar.has(w)) problems.push(`${where}: ${w} is not in the familiar (size-35) layer`);
+      if (meta.status !== "demo" && !master && !familiar.has(w)) problems.push(`${where}: ${w} is not in the familiar (size-35) layer`);
+      if (master && !familiar.has(w) && !uncommon.has(w) && (c === 0 || chain.indexOf(w) === p.acceptedChains[0].indexOf(w))) problems.push(`${where}: ${w} is outside the familiar and uncommon layers (Master answers must be in one of them)`);
+    }
+    if (master) {
+      for (let i = 1; i < chain.length; i++) {
+        const prev = chain[i - 1];
+        const next = chain[i];
+        if ([...next].some((_, k) => next.slice(0, k) + next.slice(k + 1) === prev)) problems.push(`${where}[${i}]: ${next} is ${prev} with a letter slipped in without rearranging, too easy for Master`);
+      }
     }
     if (meta.status !== "demo") {
       const plurals = chain.slice(1).filter((w, i) => w === chain[i] + "S").length;
@@ -72,6 +90,7 @@ const LEGACY_REPEATS: ReadonlySet<string> = new Set(["NOTE"]);
 export function validateContent(): string[] {
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const ids = new Set<string>();
@@ -95,8 +114,9 @@ export function validateContent(): string[] {
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
     if (meta.difficulty !== "gentle" && payload.acceptedChains.some((c) => c.slice(1).some((w, i) => w === c[i] + "S")))
       problems.push(`${meta.id}: plural-only stages are reserved for Gentle rounds`);
-    problems.push(...checkRelayRound(meta, payload, membership, familiar));
+    problems.push(...checkRelayRound(meta, payload, membership, familiar, uncommon, meta.difficulty));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
+  const minimum: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+  for (const d of Object.keys(minimum)) if ((perDifficulty[d] ?? 0) < minimum[d]) problems.push(`fewer than ${minimum[d]} rounds (practice plus demo) at ${d}`);
   return problems;
 }

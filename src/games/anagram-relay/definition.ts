@@ -16,12 +16,12 @@ export const definition: GameDefinition = {
     poster: "relay",
   },
   rules: {
-    summary: "Start from the given word. At each of three stages, keep every letter, add exactly one more, and rearrange them all to answer the clue.",
+    summary: "Start from the given word. At each stage (three, or four in Master), keep every letter, add exactly one more, and rearrange them all to answer the clue.",
     sections: [
       {
         heading: "Running a stage",
         points: [
-          "A relay has a start word and three clued stages. Each answer is exactly one letter longer than the word before it.",
+          "A relay has a start word and three clued stages (Master relays may have four). Each answer is exactly one letter longer than the word before it.",
           "Use every letter of the previous word, plus exactly one new letter, and rearrange them into the clued answer.",
           "You may never drop, swap or leave out a letter. Rearranging the same letters without adding one is not a move.",
           "The new letter may be one that is already there, for example a second R.",
@@ -47,7 +47,7 @@ export const definition: GameDefinition = {
       {
         heading: "Scoring",
         points: [
-          "Each stage you solve earns one third of 100 points; the total is rounded once at the end.",
+          "Each stage you solve earns an equal share of 100 points (a third, or a quarter in a four-stage Master relay); the total is rounded once at the end.",
           "A stage filled by a hint scores 0. Revealing the whole relay ends the round as revealed.",
           "The result lists every letter that was added and shows the whole chain.",
         ],
@@ -68,6 +68,7 @@ export const definition: GameDefinition = {
           "Gentle: short start words, direct clues, and the letter to add is shown. A simple plural may appear as a learning step.",
           "Standard: you work out the added letter yourself, and the rearrangements are less obvious.",
           "Expert: repeated letters, precise but less obvious clues, and some stages with two accepted answers.",
+          "Master: five- to seven-letter starts that grow to a nine- or ten-letter word. The letter to add is never shown, and clues are cryptic-flavoured: an indicator such as 'recast with a newcomer' tells you to rearrange the word above plus one extra letter, and the rest of the clue defines the answer. Answers may be uncommon words that a strong player will know. Where the larger word list allows another word from the same letters, the definition is written to point to one answer.",
           "Each difficulty is a different set of relays. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

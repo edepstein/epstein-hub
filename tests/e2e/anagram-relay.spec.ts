@@ -123,3 +123,23 @@ test("@mobile relay fits a phone and the alphabet picker is usable", async ({ pa
   await expect(page.getByTestId("stage-1")).toContainText("HEART");
   await expectNoHorizontalOverflow(page);
 });
+
+test("Master relay hides the added letter, rejects a rival, restores after refresh and completes all four stages", async ({ page }) => {
+  await page.goto("/play/anagram-relay/ar-m1");
+  await expect(page.getByTestId("suggested-letter")).toHaveCount(0);
+  await expect(page.getByText("Recast with a newcomer: in name only")).toBeVisible();
+
+  await answer(page, 1, "virtual");
+  await expect(feedback(page)).toContainText("not the answer to this clue");
+  await answer(page, 1, "titular");
+  await answer(page, 2, "tutorial");
+  await expect(page.getByTestId("save-indicator")).toContainText("Saved");
+  await page.reload();
+  await expect(page.getByTestId("restored-banner")).toBeVisible();
+
+  await answer(page, 3, "mutilator");
+  await answer(page, 4, "stimulator");
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("100 of 100 points");
+});

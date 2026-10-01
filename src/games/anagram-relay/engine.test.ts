@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { sessionOptionsFor } from "@/lib/progress/attempt";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import {
   addedLetter,
   addedPosition,
@@ -159,8 +159,42 @@ describe("Anagram Relay content", () => {
         expect(engine.outcome(play(engine.initialise(r.payload, sessionOptionsFor(r.meta, 1)), chain.slice(1).map(submit)))).toBe("completed");
   });
 
-  it("has at least fourteen rounds per difficulty", () => {
-    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
+  it("has the target number of rounds per difficulty", () => {
+    const min: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+    for (const d of Object.keys(min)) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(min[d]);
+  });
+
+  it("Master relays finish on nine or ten letters, never show the added letter and need rearranging", () => {
+    for (const r of rounds.filter((x) => x.meta.difficulty === "master")) {
+      const chain = r.payload.acceptedChains[0];
+      expect(chain[chain.length - 1].length).toBeGreaterThanOrEqual(9);
+      expect(r.payload.suggestAddedLetter).toBe(false);
+      expect(r.payload.stages.length).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it("a four-stage Master relay scores 25 per stage and its letter hint is a real hint", () => {
+    let s = start("ar-m1");
+    expect(engine.hints(s).find((h) => h.tier === HINT_LETTER)?.available).toBe(true);
+    s = play(s, [submit("TITULAR"), { type: "hint", tier: HINT_FILL }, submit("MUTILATOR"), submit("STIMULATOR")]);
+    const res = engine.result(s)!;
+    expect(res.score).toBe(75);
+  });
+
+  it("Master validation rejects shown letters, a slipped-in letter, wrong length and answers outside the Master layers", () => {
+    const uncommon = loadUncommonSync();
+    const m = (mut: (p: RelayPayload) => void) => {
+      const p = structuredClone(bundle("ar-m1").payload);
+      mut(p);
+      return checkRelayRound({ id: "x", status: "practice", title: "t" }, p, membership, familiar, uncommon, "master").join(" ");
+    };
+    expect(m(() => {})).toBe("");
+    expect(m((p) => (p.suggestAddedLetter = true))).toContain("never show the letter");
+    expect(m((p) => p.stages.pop())).toMatch(/nine- or ten-letter|answers for/);
+    expect(m((p) => {
+      p.acceptedChains[0][1] = "RITUALS";
+      p.addedLetters[0][0] = "S";
+    })).toContain("slipped in");
   });
 
   const broken = (mut: (p: RelayPayload) => void) => {

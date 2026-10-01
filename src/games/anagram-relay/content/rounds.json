@@ -1747,6 +1747,476 @@
         "suggestAddedLetter": false,
         "explanation": "TRUTH plus S rearranges into THRUST, plus E rearranges into SHUTTER, and plus F rearranges into FURTHEST."
       }
+    },
+    {
+      "id": "ar-m1",
+      "title": "Master relay 1",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "RITUAL",
+        "stages": [
+          { "clue": "Recast with a newcomer: in name only", "length": 7 },
+          { "clue": "Shuffled with a guest letter: small-group lesson", "length": 8 },
+          { "clue": "Upset with an extra: one who maims", "length": 9 },
+          { "clue": "Reorganised with a newcomer: one who rouses to action", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["RITUAL", "TITULAR", "TUTORIAL", "MUTILATOR", "STIMULATOR"]
+        ],
+        "addedLetters": [
+          ["T", "O", "M", "S"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "RITUAL plus T rearranges into TITULAR, TITULAR plus O rearranges into TUTORIAL, TUTORIAL plus M rearranges into MUTILATOR, and MUTILATOR plus S rearranges into STIMULATOR."
+      }
+    },
+    {
+      "id": "ar-m2",
+      "title": "Master relay 2",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "AMPERE",
+        "stages": [
+          { "clue": "Mixed up with a letter: paint bound with egg yolk", "length": 7 },
+          { "clue": "Reformed with one more: seep through", "length": 8 },
+          { "clue": "Rearranged with a newcomer: mild, as a climate", "length": 9 },
+          { "clue": "Recast, plus one: a line of five feet", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["AMPERE", "TEMPERA", "PERMEATE", "TEMPERATE", "PENTAMETER"]
+        ],
+        "addedLetters": [
+          ["T", "E", "T", "N"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "AMPERE plus T rearranges into TEMPERA, TEMPERA plus E rearranges into PERMEATE, PERMEATE plus T rearranges into TEMPERATE, and TEMPERATE plus N rearranges into PENTAMETER."
+      }
+    },
+    {
+      "id": "ar-m3",
+      "title": "Master relay 3",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "INDICT",
+        "stages": [
+          { "clue": "Reshuffled with one more: manner of speaking", "length": 7 },
+          { "clue": "Rejigged with a newcomer: of the notes of a major scale", "length": 8 },
+          { "clue": "Reordered, plus one: flashing signal on a car", "length": 9 },
+          { "clue": "Broken up with a newcomer: lexicon", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["INDICT", "DICTION", "DIATONIC", "INDICATOR", "DICTIONARY"]
+        ],
+        "addedLetters": [
+          ["O", "A", "R", "Y"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "INDICT plus O rearranges into DICTION, DICTION plus A rearranges into DIATONIC, DIATONIC plus R rearranges into INDICATOR, and INDICATOR plus Y rearranges into DICTIONARY."
+      }
+    },
+    {
+      "id": "ar-m4",
+      "title": "Master relay 4",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TRUISM",
+        "stages": [
+          { "clue": "Muddled with a new letter: the holiday trade", "length": 7 },
+          { "clue": "Shaken up with a newcomer: dampness", "length": 8 },
+          { "clue": "Reformed, plus one: fraudulent deception", "length": 9 },
+          { "clue": "Reworked with an extra: a fresh start after a break", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["TRUISM", "TOURISM", "MOISTURE", "IMPOSTURE", "RESUMPTION"]
+        ],
+        "addedLetters": [
+          ["O", "E", "P", "N"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "TRUISM plus O rearranges into TOURISM, TOURISM plus E rearranges into MOISTURE, MOISTURE plus P rearranges into IMPOSTURE, and IMPOSTURE plus N rearranges into RESUMPTION."
+      }
+    },
+    {
+      "id": "ar-m5",
+      "title": "Master relay 5",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "AGENDA",
+        "stages": [
+          { "clue": "Rearranged with a newcomer: dressing for a wound", "length": 7 },
+          { "clue": "Jumbled with an extra letter: light, teasing banter", "length": 8 },
+          { "clue": "Reformed, plus one: twill fabric for a raincoat", "length": 9 },
+          { "clue": "Scrambled with a newcomer: robbery by outlaws", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["AGENDA", "BANDAGE", "BADINAGE", "GABARDINE", "BRIGANDAGE"]
+        ],
+        "addedLetters": [
+          ["B", "I", "R", "G"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "AGENDA plus B rearranges into BANDAGE, BANDAGE plus I rearranges into BADINAGE, BADINAGE plus R rearranges into GABARDINE, and GABARDINE plus G rearranges into BRIGANDAGE."
+      }
+    },
+    {
+      "id": "ar-m6",
+      "title": "Master relay 6",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "STATION",
+        "stages": [
+          { "clue": "Rearranged with a newcomer: plant scientist", "length": 8 },
+          { "clue": "Reordered, plus one: pig-headed", "length": 9 },
+          { "clue": "Recast with an extra letter: refusal to cast a vote", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["STATION", "BOTANIST", "OBSTINATE", "ABSTENTION"]
+        ],
+        "addedLetters": [
+          ["B", "E", "N"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "STATION plus B rearranges into BOTANIST, BOTANIST plus E rearranges into OBSTINATE, and OBSTINATE plus N rearranges into ABSTENTION."
+      }
+    },
+    {
+      "id": "ar-m7",
+      "title": "Master relay 7",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "LICENCE",
+        "stages": [
+          { "clue": "Reshuffled with a newcomer: ring round", "length": 8 },
+          { "clue": "Reformed with an extra: bring back into harmony", "length": 9 },
+          { "clue": "Rewired, plus one: like a circuit-board device", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["LICENCE", "ENCIRCLE", "RECONCILE", "ELECTRONIC"]
+        ],
+        "addedLetters": [
+          ["R", "O", "T"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "LICENCE plus R rearranges into ENCIRCLE, ENCIRCLE plus O rearranges into RECONCILE, and RECONCILE plus T rearranges into ELECTRONIC."
+      }
+    },
+    {
+      "id": "ar-m8",
+      "title": "Master relay 8",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TUNIC",
+        "stages": [
+          { "clue": "Mixed up with an extra: formally install in a post", "length": 6 },
+          { "clue": "Shuffled, plus a letter: channel for water or cables", "length": 7 },
+          { "clue": "Reformed with a newcomer: money off", "length": 8 },
+          { "clue": "Reorganised with an extra: enticement by charm", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["TUNIC", "INDUCT", "CONDUIT", "DISCOUNT", "SEDUCTION"]
+        ],
+        "addedLetters": [
+          ["D", "O", "S", "E"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "TUNIC plus D rearranges into INDUCT, INDUCT plus O rearranges into CONDUIT, CONDUIT plus S rearranges into DISCOUNT, and DISCOUNT plus E rearranges into SEDUCTION."
+      }
+    },
+    {
+      "id": "ar-m9",
+      "title": "Master relay 9",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BELIE",
+        "stages": [
+          { "clue": "Rearranged with a newcomer: fit to eat", "length": 6 },
+          { "clue": "Reworked with an extra: unit of loudness", "length": 7 },
+          { "clue": "Recast, plus one: believable", "length": 8 },
+          { "clue": "Rejigged with a newcomer: able to be cut down", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["BELIE", "EDIBLE", "DECIBEL", "CREDIBLE", "REDUCIBLE"]
+        ],
+        "addedLetters": [
+          ["D", "C", "R", "U"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "BELIE plus D rearranges into EDIBLE, EDIBLE plus C rearranges into DECIBEL, DECIBEL plus R rearranges into CREDIBLE, and CREDIBLE plus U rearranges into REDUCIBLE."
+      }
+    },
+    {
+      "id": "ar-m10",
+      "title": "Master relay 10",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "GRAIL",
+        "stages": [
+          { "clue": "Reordered with a newcomer: pungent bulb", "length": 6 },
+          { "clue": "Shuffled, plus one: slow river of ice", "length": 7 },
+          { "clue": "Rearranged with an extra: sneezy near pollen, say", "length": 8 },
+          { "clue": "Reformed, plus a letter: symbolic, as a fable", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["GRAIL", "GARLIC", "GLACIER", "ALLERGIC", "ALLEGORIC"]
+        ],
+        "addedLetters": [
+          ["C", "E", "L", "O"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "GRAIL plus C rearranges into GARLIC, GARLIC plus E rearranges into GLACIER, GLACIER plus L rearranges into ALLERGIC, and ALLERGIC plus O rearranges into ALLEGORIC."
+      }
+    },
+    {
+      "id": "ar-m11",
+      "title": "Master relay 11",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CABARET",
+        "stages": [
+          { "clue": "Muddled with a newcomer: germs", "length": 8 },
+          { "clue": "Reworked, plus one: set a gauge against a standard", "length": 9 },
+          { "clue": "Recast with an extra: generous towards the needy", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["CABARET", "BACTERIA", "CALIBRATE", "CHARITABLE"]
+        ],
+        "addedLetters": [
+          ["I", "L", "H"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CABARET plus I rearranges into BACTERIA, BACTERIA plus L rearranges into CALIBRATE, and CALIBRATE plus H rearranges into CHARITABLE."
+      }
+    },
+    {
+      "id": "ar-m12",
+      "title": "Master relay 12",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "REMATCH",
+        "stages": [
+          { "clue": "Rearranged, plus one: trader", "length": 8 },
+          { "clue": "Reformed with a newcomer: old writing material made of skin", "length": 9 },
+          { "clue": "Scrambled with an extra: tedious sermonising", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["REMATCH", "MERCHANT", "PARCHMENT", "PREACHMENT"]
+        ],
+        "addedLetters": [
+          ["N", "P", "E"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "REMATCH plus N rearranges into MERCHANT, MERCHANT plus P rearranges into PARCHMENT, and PARCHMENT plus E rearranges into PREACHMENT."
+      }
+    },
+    {
+      "id": "ar-m13",
+      "title": "Master relay 13",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HINDER",
+        "stages": [
+          { "clue": "Reshuffled with a newcomer: more convenient", "length": 7 },
+          { "clue": "Stirred, plus one: uncompromising", "length": 8 },
+          { "clue": "Reworked with an extra: star at the top of the bill", "length": 9 },
+          { "clue": "Reformed, plus a letter: hanging light with branches", "length": 10 }
+        ],
+        "acceptedChains": [
+          ["HINDER", "HANDIER", "HARDLINE", "HEADLINER", "CHANDELIER"]
+        ],
+        "addedLetters": [
+          ["A", "L", "E", "C"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "HINDER plus A rearranges into HANDIER, HANDIER plus L rearranges into HARDLINE, HARDLINE plus E rearranges into HEADLINER, and HEADLINER plus C rearranges into CHANDELIER."
+      }
+    },
+    {
+      "id": "ar-m14",
+      "title": "Master relay 14",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "COUNT",
+        "stages": [
+          { "clue": "Scrambled with a newcomer: big-billed tropical bird", "length": 6 },
+          { "clue": "Rearranged, plus one: word of warning", "length": 7 },
+          { "clue": "Reworked with an extra: selecting for an exhibition", "length": 8 },
+          { "clue": "Reformed with a newcomer: warm cabinet for a premature baby", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["COUNT", "TOUCAN", "CAUTION", "CURATION", "INCUBATOR"]
+        ],
+        "addedLetters": [
+          ["A", "I", "R", "B"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "COUNT plus A rearranges into TOUCAN, TOUCAN plus I rearranges into CAUTION, CAUTION plus R rearranges into CURATION, and CURATION plus B rearranges into INCUBATOR."
+      }
+    },
+    {
+      "id": "ar-e15",
+      "title": "Expert relay 15",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "VICAR",
+        "stages": [
+          { "clue": "Salty delicacy from sturgeon", "length": 6 },
+          { "clue": "Greed for money", "length": 7 },
+          { "clue": "Offhand and carefree in attitude", "length": 8 }
+        ],
+        "acceptedChains": [
+          ["VICAR", "CAVIAR", "AVARICE", "CAVALIER"]
+        ],
+        "addedLetters": [
+          ["A", "E", "L"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "VICAR plus A rearranges into CAVIAR, CAVIAR plus E rearranges into AVARICE, and AVARICE plus L rearranges into CAVALIER."
+      }
+    },
+    {
+      "id": "ar-e16",
+      "title": "Expert relay 16",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CELLO",
+        "stages": [
+          { "clue": "The setting of a story or event", "length": 6 },
+          { "clue": "Gather and arrange in order, as pages", "length": 7 },
+          { "clue": "Share out for a purpose", "length": 8 }
+        ],
+        "acceptedChains": [
+          ["CELLO", "LOCALE", "COLLATE", "ALLOCATE"]
+        ],
+        "addedLetters": [
+          ["A", "T", "A"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CELLO plus A rearranges into LOCALE, LOCALE plus T rearranges into COLLATE, and COLLATE plus A rearranges into ALLOCATE."
+      }
+    },
+    {
+      "id": "ar-e17",
+      "title": "Expert relay 17",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MANIAC",
+        "stages": [
+          { "clue": "Pale and short of iron", "length": 7 },
+          { "clue": "The atmosphere of a place", "length": 8 },
+          { "clue": "Lack of proportion or equality", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["MANIAC", "ANAEMIC", "AMBIANCE", "IMBALANCE"]
+        ],
+        "addedLetters": [
+          ["E", "B", "L"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "MANIAC plus E rearranges into ANAEMIC, ANAEMIC plus B rearranges into AMBIANCE, and AMBIANCE plus L rearranges into IMBALANCE."
+      }
+    },
+    {
+      "id": "ar-e18",
+      "title": "Expert relay 18",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CAPTOR",
+        "stages": [
+          { "clue": "Orange stone fruit", "length": 7 },
+          { "clue": "Of hot, humid regions near the equator", "length": 8 },
+          { "clue": "Using pictures, as some magazines do", "length": 9 }
+        ],
+        "acceptedChains": [
+          ["CAPTOR", "APRICOT", "TROPICAL", "PICTORIAL"]
+        ],
+        "addedLetters": [
+          ["I", "L", "I"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CAPTOR plus I rearranges into APRICOT, APRICOT plus L rearranges into TROPICAL, and TROPICAL plus I rearranges into PICTORIAL."
+      }
+    },
+    {
+      "id": "ar-e19",
+      "title": "Expert relay 19",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CULT",
+        "stages": [
+          { "clue": "Political influence or power", "length": 5 },
+          { "clue": "Grasshopper that swarms", "length": 6 },
+          { "clue": "Seek advice from a doctor or lawyer", "length": 7 }
+        ],
+        "acceptedChains": [
+          ["CULT", "CLOUT", "LOCUST", "CONSULT"]
+        ],
+        "addedLetters": [
+          ["O", "S", "N"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CULT plus O rearranges into CLOUT, CLOUT plus S rearranges into LOCUST, and LOCUST plus N rearranges into CONSULT."
+      }
+    },
+    {
+      "id": "ar-e20",
+      "title": "Expert relay 20",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CLEF",
+        "stages": [
+          { "clue": "Small spot or speck", "length": 5 },
+          { "clue": "Changeable in loyalties", "length": 6 },
+          { "clue": "Shine unsteadily", "length": 7 }
+        ],
+        "acceptedChains": [
+          ["CLEF", "FLECK", "FICKLE", "FLICKER"]
+        ],
+        "addedLetters": [
+          ["K", "I", "R"]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CLEF plus K rearranges into FLECK, FLECK plus I rearranges into FICKLE, and FICKLE plus R rearranges into FLICKER."
+      }
     }
   ]
 }
