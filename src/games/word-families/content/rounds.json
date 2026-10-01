@@ -2054,6 +2054,941 @@
      "resolvedBy": "As for SHINE: the MOON group needs BEAM; BARS completes the apparatus."
     }
    ]
+  },
+  {
+   "id": "wf-g10",
+   "title": "Gentle families 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Garden tools",
+     "terms": [
+      "SPADE",
+      "RAKE",
+      "HOE",
+      "TROWEL"
+     ],
+     "explanation": "SPADE, RAKE, HOE and TROWEL: garden tools."
+    },
+    {
+     "label": "Types of bread",
+     "terms": [
+      "BAGUETTE",
+      "CIABATTA",
+      "NAAN",
+      "PITTA"
+     ],
+     "explanation": "BAGUETTE, CIABATTA, NAAN and PITTA: types of bread."
+    },
+    {
+     "label": "Bodies of water",
+     "terms": [
+      "LAKE",
+      "POND",
+      "RIVER",
+      "STREAM"
+     ],
+     "explanation": "LAKE, POND, RIVER and STREAM: bodies of water."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "POND",
+     "rival": "A pond is a feature of many gardens.",
+     "resolvedBy": "No garden features group exists, and a pond is not a tool; POND completes the bodies of water."
+    }
+   ]
+  },
+  {
+   "id": "wf-g11",
+   "title": "Gentle families 11",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Pets",
+     "terms": [
+      "CAT",
+      "RABBIT",
+      "HAMSTER",
+      "BUDGIE"
+     ],
+     "explanation": "CAT, RABBIT, HAMSTER and BUDGIE: pets."
+    },
+    {
+     "label": "School stationery",
+     "terms": [
+      "RULER",
+      "STAPLER",
+      "ERASER",
+      "PENCIL"
+     ],
+     "explanation": "RULER, STAPLER, ERASER and PENCIL: school stationery."
+    },
+    {
+     "label": "Winter sports",
+     "terms": [
+      "SKIING",
+      "CURLING",
+      "LUGE",
+      "SKATING"
+     ],
+     "explanation": "SKIING, CURLING, LUGE and SKATING: winter sports."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "RULER",
+     "rival": "A ruler is also a person who governs.",
+     "resolvedBy": "No leaders group exists; RULER completes the stationery."
+    }
+   ]
+  },
+  {
+   "id": "wf-g12",
+   "title": "Gentle families 12",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Baked treats",
+     "terms": [
+      "SCONE",
+      "MUFFIN",
+      "DOUGHNUT",
+      "ECLAIR"
+     ],
+     "explanation": "SCONE, MUFFIN, DOUGHNUT and ECLAIR: baked treats."
+    },
+    {
+     "label": "Parts of a car",
+     "terms": [
+      "BONNET",
+      "BUMPER",
+      "CLUTCH",
+      "EXHAUST"
+     ],
+     "explanation": "BONNET, BUMPER, CLUTCH and EXHAUST: parts of a car."
+    },
+    {
+     "label": "Shops",
+     "terms": [
+      "PHARMACY",
+      "FLORIST",
+      "BUTCHER",
+      "OPTICIAN"
+     ],
+     "explanation": "PHARMACY, FLORIST, BUTCHER and OPTICIAN: shops."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "BONNET",
+     "rival": "A bonnet is also a hat.",
+     "resolvedBy": "No hats group exists; BONNET completes the car parts."
+    },
+    {
+     "term": "BUTCHER",
+     "rival": "A butcher is also a job.",
+     "resolvedBy": "No jobs group exists; BUTCHER completes the shops."
+    }
+   ]
+  },
+  {
+   "id": "wf-g13",
+   "title": "Gentle families 13",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Bones",
+     "terms": [
+      "SKULL",
+      "RIB",
+      "SPINE",
+      "FEMUR"
+     ],
+     "explanation": "SKULL, RIB, SPINE and FEMUR: bones."
+    },
+    {
+     "label": "Days of the week",
+     "terms": [
+      "MONDAY",
+      "TUESDAY",
+      "FRIDAY",
+      "SUNDAY"
+     ],
+     "explanation": "MONDAY, TUESDAY, FRIDAY and SUNDAY: days of the week."
+    },
+    {
+     "label": "Zoo animals",
+     "terms": [
+      "GIRAFFE",
+      "ZEBRA",
+      "HIPPO",
+      "PENGUIN"
+     ],
+     "explanation": "GIRAFFE, ZEBRA, HIPPO and PENGUIN: zoo animals."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "SPINE",
+     "rival": "A spine is also the edge of a book.",
+     "resolvedBy": "No book parts group exists; SPINE completes the bones."
+    }
+   ]
+  },
+  {
+   "id": "wf-g14",
+   "title": "Gentle families 14",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sandwich fillings",
+     "terms": [
+      "HAM",
+      "TUNA",
+      "CHEESE",
+      "EGG"
+     ],
+     "explanation": "HAM, TUNA, CHEESE and EGG: sandwich fillings."
+    },
+    {
+     "label": "Bedroom items",
+     "terms": [
+      "PILLOW",
+      "DUVET",
+      "WARDROBE",
+      "MATTRESS"
+     ],
+     "explanation": "PILLOW, DUVET, WARDROBE and MATTRESS: bedroom items."
+    },
+    {
+     "label": "Parts of a book",
+     "terms": [
+      "COVER",
+      "CHAPTER",
+      "INDEX",
+      "PAGE"
+     ],
+     "explanation": "COVER, CHAPTER, INDEX and PAGE: parts of a book."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "EGG",
+     "rival": "An egg is also a breakfast food.",
+     "resolvedBy": "No breakfast group exists; EGG completes the sandwich fillings."
+    },
+    {
+     "term": "COVER",
+     "rival": "To cover is also a verb, and a duvet is a cover.",
+     "resolvedBy": "COVER completes the parts of a book; DUVET stays with the bedroom items."
+    }
+   ]
+  },
+  {
+   "id": "wf-s10",
+   "title": "Standard families 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before PAPER",
+     "terms": [
+      "NEWS",
+      "SAND",
+      "WALL",
+      "TISSUE"
+     ],
+     "explanation": "NEWSPAPER,SANDPAPER,WALLPAPER and TISSUEPAPER."
+    },
+    {
+     "label": "Words after RAIN",
+     "terms": [
+      "BOW",
+      "COAT",
+      "DROP",
+      "FALL"
+     ],
+     "explanation": "RAINBOW, RAINCOAT, RAINDROP and RAINFALL."
+    },
+    {
+     "label": "Tools",
+     "terms": [
+      "HAMMER",
+      "CHISEL",
+      "PLIERS",
+      "SPANNER"
+     ],
+     "explanation": "HAMMER, CHISEL, PLIERS and SPANNER: tools."
+    },
+    {
+     "label": "Fictional detectives",
+     "terms": [
+      "HOLMES",
+      "POIROT",
+      "MARPLE",
+      "MORSE"
+     ],
+     "explanation": "HOLMES, POIROT, MARPLE and MORSE: fictional detectives."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "MORSE",
+     "rival": "Morse is also a code of dots and dashes.",
+     "resolvedBy": "No codes group exists; MORSE completes the detectives."
+    },
+    {
+     "term": "SPANNER",
+     "rival": "A spanner can be thrown 'in the works'.",
+     "resolvedBy": "The idiom is not a group; SPANNER completes the tools."
+    },
+    {
+     "term": "WALL",
+     "rival": "A wall is a structure, and FALL could follow WATER or WALL.",
+     "resolvedBy": "Only WALLPAPER fits the PAPER group; FALL is needed after RAIN."
+    }
+   ]
+  },
+  {
+   "id": "wf-s11",
+   "title": "Standard families 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after BLACK",
+     "terms": [
+      "BIRD",
+      "BOARD",
+      "SMITH",
+      "MAIL"
+     ],
+     "explanation": "BLACKBIRD, BLACKBOARD, BLACKSMITH and BLACKMAIL."
+    },
+    {
+     "label": "Shakespeare plays",
+     "terms": [
+      "HAMLET",
+      "MACBETH",
+      "OTHELLO",
+      "TEMPEST"
+     ],
+     "explanation": "HAMLET, MACBETH, OTHELLO and TEMPEST: shakespeare plays."
+    },
+    {
+     "label": "Fabrics",
+     "terms": [
+      "SILK",
+      "COTTON",
+      "WOOL",
+      "VELVET"
+     ],
+     "explanation": "SILK, COTTON, WOOL and VELVET: fabrics."
+    },
+    {
+     "label": "Parts of a boat",
+     "terms": [
+      "MAST",
+      "SAIL",
+      "KEEL",
+      "RUDDER"
+     ],
+     "explanation": "MAST, SAIL, KEEL and RUDDER: parts of a boat."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "TEMPEST",
+     "rival": "A tempest is also a violent storm.",
+     "resolvedBy": "No weather group exists; TEMPEST completes the plays."
+    },
+    {
+     "term": "MAIL",
+     "rival": "Mail is also post.",
+     "resolvedBy": "BLACKMAIL is the only reading with a group; MAIL completes the BLACK words."
+    },
+    {
+     "term": "BOARD",
+     "rival": "A board could be part of a boat.",
+     "resolvedBy": "BLACKBOARD completes the BLACK words; the boat group is MAST, SAIL, KEEL and RUDDER."
+    }
+   ]
+  },
+  {
+   "id": "wf-s12",
+   "title": "Standard families 12",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before HOUSE",
+     "terms": [
+      "GREEN",
+      "LIGHT",
+      "FARM",
+      "DOG"
+     ],
+     "explanation": "GREENHOUSE,LIGHTHOUSE,FARMHOUSE and DOGHOUSE."
+    },
+    {
+     "label": "Greek letters",
+     "terms": [
+      "ALPHA",
+      "BETA",
+      "GAMMA",
+      "DELTA"
+     ],
+     "explanation": "ALPHA, BETA, GAMMA and DELTA: greek letters."
+    },
+    {
+     "label": "Parts of a bird",
+     "terms": [
+      "BEAK",
+      "WING",
+      "FEATHER",
+      "TALON"
+     ],
+     "explanation": "BEAK, WING, FEATHER and TALON: parts of a bird."
+    },
+    {
+     "label": "Seas",
+     "terms": [
+      "NORTH",
+      "IRISH",
+      "BALTIC",
+      "ARABIAN"
+     ],
+     "explanation": "NORTH, IRISH, BALTIC and ARABIAN: seas."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "BETA",
+     "rival": "Beta is also a test version of software.",
+     "resolvedBy": "No software group exists; BETA completes the Greek letters."
+    },
+    {
+     "term": "DELTA",
+     "rival": "A delta is also where a river meets the sea.",
+     "resolvedBy": "No river group exists; DELTA completes the Greek letters."
+    },
+    {
+     "term": "WING",
+     "rival": "A wing is part of a building or aircraft.",
+     "resolvedBy": "No buildings group exists; WING completes the bird parts."
+    }
+   ]
+  },
+  {
+   "id": "wf-s13",
+   "title": "Standard families 13",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before FLY",
+     "terms": [
+      "BUTTER",
+      "DRAGON",
+      "HOUSE",
+      "FRUIT"
+     ],
+     "explanation": "BUTTERFLY,DRAGONFLY,HOUSEFLY and FRUITFLY."
+    },
+    {
+     "label": "Mythical creatures",
+     "terms": [
+      "UNICORN",
+      "PHOENIX",
+      "GRIFFIN",
+      "KRAKEN"
+     ],
+     "explanation": "UNICORN, PHOENIX, GRIFFIN and KRAKEN: mythical creatures."
+    },
+    {
+     "label": "Kitchen appliances",
+     "terms": [
+      "KETTLE",
+      "TOASTER",
+      "FRIDGE",
+      "OVEN"
+     ],
+     "explanation": "KETTLE, TOASTER, FRIDGE and OVEN: kitchen appliances."
+    },
+    {
+     "label": "Music genres",
+     "terms": [
+      "JAZZ",
+      "BLUES",
+      "FOLK",
+      "REGGAE"
+     ],
+     "explanation": "JAZZ, BLUES, FOLK and REGGAE: music genres."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "DRAGON",
+     "rival": "A dragon is a mythical creature.",
+     "resolvedBy": "Only four words form a FLY word, so DRAGON must complete DRAGONFLY; the myths are UNICORN, PHOENIX, GRIFFIN and KRAKEN."
+    },
+    {
+     "term": "HOUSE",
+     "rival": "House is also a style of dance music.",
+     "resolvedBy": "The FLY group needs HOUSE (HOUSEFLY) once DRAGON is placed; the genres are JAZZ, BLUES, FOLK and REGGAE."
+    }
+   ]
+  },
+  {
+   "id": "wf-s14",
+   "title": "Standard families 14",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after SNOW",
+     "terms": [
+      "MAN",
+      "FLAKE",
+      "BALL",
+      "DRIFT"
+     ],
+     "explanation": "SNOWMAN, SNOWFLAKE, SNOWBALL and SNOWDRIFT."
+    },
+    {
+     "label": "Poets",
+     "terms": [
+      "BYRON",
+      "KEATS",
+      "BLAKE",
+      "SHELLEY"
+     ],
+     "explanation": "BYRON, KEATS, BLAKE and SHELLEY: poets."
+    },
+    {
+     "label": "Types of cloud",
+     "terms": [
+      "CIRRUS",
+      "CUMULUS",
+      "STRATUS",
+      "NIMBUS"
+     ],
+     "explanation": "CIRRUS, CUMULUS, STRATUS and NIMBUS: types of cloud."
+    },
+    {
+     "label": "Parts of a church",
+     "terms": [
+      "SPIRE",
+      "ALTAR",
+      "NAVE",
+      "PEW"
+     ],
+     "explanation": "SPIRE, ALTAR, NAVE and PEW: parts of a church."
+    }
+   ],
+   "explanation": "Direct categories mixed with a word-building category. Some terms could suit two groups; only one full partition uses every term.",
+   "redHerrings": [
+    {
+     "term": "BLAKE",
+     "rival": "Blake could be a first name.",
+     "resolvedBy": "Only the poets group uses surnames; BLAKE is the poet William Blake."
+    },
+    {
+     "term": "DRIFT",
+     "rival": "A drift is also a movement of clouds.",
+     "resolvedBy": "SNOWDRIFT completes the SNOW words; the cloud group is CIRRUS, CUMULUS, STRATUS and NIMBUS."
+    }
+   ]
+  },
+  {
+   "id": "wf-e11",
+   "title": "Expert families 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like animals",
+     "terms": [
+      "DEAR",
+      "BORE",
+      "HAIR",
+      "MOUSSE"
+     ],
+     "explanation": "DEAR, BORE, HAIR and MOUSSE: sound like animals."
+    },
+    {
+     "label": "Words before CUT",
+     "terms": [
+      "SHORT",
+      "PAPER",
+      "CREW",
+      "BUZZ"
+     ],
+     "explanation": "SHORTCUT,PAPERCUT,CREWCUT and BUZZCUT."
+    },
+    {
+     "label": "Costly",
+     "terms": [
+      "STEEP",
+      "PRICEY",
+      "COSTLY",
+      "EXPENSIVE"
+     ],
+     "explanation": "STEEP, PRICEY, COSTLY and EXPENSIVE: costly."
+    },
+    {
+     "label": "Make a hole in",
+     "terms": [
+      "DRILL",
+      "PIERCE",
+      "PUNCH",
+      "PUNCTURE"
+     ],
+     "explanation": "DRILL, PIERCE, PUNCH and PUNCTURE: make a hole in."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "HAIR",
+     "rival": "HAIR fits before CUT (HAIRCUT).",
+     "resolvedBy": "The sound-alike group needs all four of DEAR, BORE, HAIR and MOUSSE (deer, boar, hare, moose), so HAIR cannot be spared."
+    },
+    {
+     "term": "DEAR",
+     "rival": "DEAR means costly.",
+     "resolvedBy": "Only DEAR, BORE, HAIR and MOUSSE sound like animals; STEEP, PRICEY, COSTLY and EXPENSIVE complete the costly group."
+    },
+    {
+     "term": "BORE",
+     "rival": "To bore is to drill a hole.",
+     "resolvedBy": "BORE is the boar of the sound-alike group; DRILL, PIERCE, PUNCH and PUNCTURE make the holes."
+    }
+   ]
+  },
+  {
+   "id": "wf-e12",
+   "title": "Expert families 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Silent first letter",
+     "terms": [
+      "KNIFE",
+      "WRIST",
+      "GNOME",
+      "KNEE"
+     ],
+     "explanation": "KNIFE, WRIST, GNOME and KNEE: silent first letter."
+    },
+    {
+     "label": "Items on a laid table",
+     "terms": [
+      "FORK",
+      "SPOON",
+      "PLATE",
+      "NAPKIN"
+     ],
+     "explanation": "FORK, SPOON, PLATE and NAPKIN: items on a laid table."
+    },
+    {
+     "label": "Words before WATCH",
+     "terms": [
+      "STOP",
+      "BIRD",
+      "DOG",
+      "FOB"
+     ],
+     "explanation": "STOPWATCH,BIRDWATCH,DOGWATCH and FOBWATCH."
+    },
+    {
+     "label": "Parts of the leg",
+     "terms": [
+      "ANKLE",
+      "CALF",
+      "SHIN",
+      "THIGH"
+     ],
+     "explanation": "ANKLE, CALF, SHIN and THIGH: parts of the leg."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "KNIFE",
+     "rival": "A knife is part of a table setting.",
+     "resolvedBy": "Only four tiles start with a silent letter (KNIFE, WRIST, GNOME, KNEE), so KNIFE leaves the table group at FORK, SPOON, PLATE and NAPKIN."
+    },
+    {
+     "term": "WRIST",
+     "rival": "A wrist is worn with a watch.",
+     "resolvedBy": "WRIST is one of the four silent starters; STOP, BIRD, DOG and FOB complete WATCH words."
+    },
+    {
+     "term": "KNEE",
+     "rival": "The knee is part of the leg.",
+     "resolvedBy": "KNEE is silent-K; ANKLE, CALF, SHIN and THIGH remain."
+    }
+   ]
+  },
+  {
+   "id": "wf-e13",
+   "title": "Expert families 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Lose the first letter to leave a body part",
+     "terms": [
+      "FARM",
+      "BLIP",
+      "CHAIR",
+      "FEAR"
+     ],
+     "explanation": "FARM, BLIP, CHAIR and FEAR: lose the first letter to leave a body part."
+    },
+    {
+     "label": "Words before HAND",
+     "terms": [
+      "STAGE",
+      "DECK",
+      "FIRST",
+      "UNDER"
+     ],
+     "explanation": "STAGEHAND,DECKHAND,FIRSTHAND and UNDERHAND."
+    },
+    {
+     "label": "Minor problems",
+     "terms": [
+      "GLITCH",
+      "HICCUP",
+      "SNAG",
+      "HITCH"
+     ],
+     "explanation": "GLITCH, HICCUP, SNAG and HITCH: minor problems."
+    },
+    {
+     "label": "Furniture",
+     "terms": [
+      "TABLE",
+      "SOFA",
+      "STOOL",
+      "DESK"
+     ],
+     "explanation": "TABLE, SOFA, STOOL and DESK: furniture."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "FARM",
+     "rival": "FARM fits before HAND (FARMHAND).",
+     "resolvedBy": "The body-part group needs FARM (arm); STAGE, DECK, FIRST and UNDER complete HAND words."
+    },
+    {
+     "term": "BLIP",
+     "rival": "A blip is a minor problem.",
+     "resolvedBy": "BLIP leaves LIP; GLITCH, HICCUP, SNAG and HITCH remain the problems."
+    },
+    {
+     "term": "CHAIR",
+     "rival": "A chair is furniture.",
+     "resolvedBy": "CHAIR leaves HAIR; TABLE, SOFA, STOOL and DESK remain the furniture."
+    }
+   ]
+  },
+  {
+   "id": "wf-e14",
+   "title": "Expert families 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Add S to the front for a new word",
+     "terms": [
+      "NAIL",
+      "WORD",
+      "HARE",
+      "TEAM"
+     ],
+     "explanation": "NAIL, WORD, HARE and TEAM: add S to the front for a new word."
+    },
+    {
+     "label": "Fixings",
+     "terms": [
+      "SCREW",
+      "BOLT",
+      "STAPLE",
+      "RIVET"
+     ],
+     "explanation": "SCREW, BOLT, STAPLE and RIVET: fixings."
+    },
+    {
+     "label": "Units of language",
+     "terms": [
+      "LETTER",
+      "SENTENCE",
+      "PHRASE",
+      "CLAUSE"
+     ],
+     "explanation": "LETTER, SENTENCE, PHRASE and CLAUSE: units of language."
+    },
+    {
+     "label": "Aesop's fable animals",
+     "terms": [
+      "TORTOISE",
+      "FOX",
+      "CROW",
+      "LION"
+     ],
+     "explanation": "TORTOISE, FOX, CROW and LION: aesop's fable animals."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "NAIL",
+     "rival": "A nail is a fixing.",
+     "resolvedBy": "NAIL becomes SNAIL; SCREW, BOLT, STAPLE and RIVET remain the fixings."
+    },
+    {
+     "term": "WORD",
+     "rival": "A word is a unit of language.",
+     "resolvedBy": "WORD becomes SWORD; LETTER, SENTENCE, PHRASE and CLAUSE remain the units."
+    },
+    {
+     "term": "HARE",
+     "rival": "The hare appears in the fable of the tortoise and the hare.",
+     "resolvedBy": "HARE becomes SHARE; TORTOISE, FOX, CROW and LION remain the fable animals."
+    }
+   ]
+  },
+  {
+   "id": "wf-e15",
+   "title": "Expert families 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Palindromes",
+     "terms": [
+      "LEVEL",
+      "RADAR",
+      "MADAM",
+      "CIVIC"
+     ],
+     "explanation": "LEVEL, RADAR, MADAM and CIVIC: palindromes."
+    },
+    {
+     "label": "Titles and forms of address",
+     "terms": [
+      "SIR",
+      "MISS",
+      "LORD",
+      "LADY"
+     ],
+     "explanation": "SIR, MISS, LORD and LADY: titles and forms of address."
+    },
+    {
+     "label": "Flat",
+     "terms": [
+      "FLAT",
+      "EVEN",
+      "SMOOTH",
+      "FLUSH"
+     ],
+     "explanation": "FLAT, EVEN, SMOOTH and FLUSH: flat."
+    },
+    {
+     "label": "Aids to navigation",
+     "terms": [
+      "SONAR",
+      "COMPASS",
+      "BEACON",
+      "CHART"
+     ],
+     "explanation": "SONAR, COMPASS, BEACON and CHART: aids to navigation."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "LEVEL",
+     "rival": "LEVEL means flat.",
+     "resolvedBy": "LEVEL is a palindrome; FLAT, EVEN, SMOOTH and FLUSH remain."
+    },
+    {
+     "term": "MADAM",
+     "rival": "MADAM is a form of address.",
+     "resolvedBy": "MADAM is a palindrome; SIR, MISS, LORD and LADY remain."
+    },
+    {
+     "term": "RADAR",
+     "rival": "Radar is a navigation aid.",
+     "resolvedBy": "RADAR is a palindrome; SONAR, COMPASS, BEACON and CHART remain."
+    }
+   ]
   }
  ]
 }

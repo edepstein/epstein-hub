@@ -45,9 +45,9 @@ describe("Word Families content", () => {
     }
   });
 
-  it("has at least ten rounds per difficulty (practice plus demo)", () => {
+  it("has at least fifteen rounds per difficulty (practice plus demo)", () => {
     for (const d of ["gentle", "standard", "expert"] as const) {
-      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(10);
+      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(15);
     }
   });
 

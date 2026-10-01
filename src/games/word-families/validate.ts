@@ -70,6 +70,15 @@ export function validateContent(): string[] {
     if (spoil.some((s) => norm(meta.title ?? "").includes(s) || meta.id.toUpperCase().includes(s))) problems.push(`${meta.id}: id/title may spoil an answer`);
     if (!/Gentle|Standard|Expert|Starter|Everyday/.test(meta.title ?? "")) problems.push(`${meta.id}: title should be a neutral round name`);
   });
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 ${d} rounds`);
+  const seenLabels = new Map<string, string>();
+  for (const { meta, payload: p } of rounds) {
+    if (meta.id === "wf-e1") continue; // grandfathered: wf-e1 deliberately reuses plain Trees/Birds beside wordplay groups
+    for (const g of p.groups) {
+      const k = norm(g.label);
+      if (seenLabels.has(k)) problems.push(`${meta.id}: category "${g.label}" is already used in ${seenLabels.get(k)}`);
+      else seenLabels.set(k, meta.id);
+    }
+  }
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 15) problems.push(`fewer than 15 ${d} rounds`);
   return problems;
 }
