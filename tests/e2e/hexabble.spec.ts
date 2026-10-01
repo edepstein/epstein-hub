@@ -250,14 +250,19 @@ test("ending the match shows the final result, which survives a refresh", async 
   await page.getByRole("button", { name: "End game" }).click();
   await page.getByRole("dialog", { name: "End the match now?" }).getByRole("button", { name: "End the match" }).click();
   const results = page.getByTestId("hx-results");
-  await expect(results).toContainText("Final result: Mum wins");
+  // Each player loses the value of the tiles left on their (randomly dealt) rack, so either player
+  // can win. Check the headline names a winner and agrees with the marked winner row.
+  const headline = (await results.getByRole("heading").first().textContent()) ?? "";
+  const winner = /Final result: (Mum|Ed) wins/.exec(headline)?.[1];
+  expect(winner, `a winner in "${headline}"`).toBeTruthy();
+  await expect(results.getByRole("row", { name: new RegExp(`${winner} \\(winner\\)`) })).toHaveCount(1);
   await expect(results.getByRole("row", { name: /Mum/ })).toContainText("10");
   await expect(page.getByTestId("hx-turn")).toContainText("Match over");
   await expect(page.getByTestId("hx-history")).toContainText("Match over. The players agreed to end the match.");
 
   await page.reload();
   await expect(page.getByTestId("hx-restored")).toContainText("finished match");
-  await expect(page.getByTestId("hx-results")).toContainText("Final result: Mum wins");
+  await expect(page.getByTestId("hx-results")).toContainText(`Final result: ${winner} wins`);
   await page.goto("/library");
   await expect(page.getByText(/Local match: Mum v Ed/)).toBeVisible();
 });
