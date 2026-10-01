@@ -67,6 +67,13 @@ Grouped by area; each game appends its own section.
 - [ ] Difficulty bands are heuristics: gentle 4x5 with about one turn per word and at most one straight-line word; standard 5x6 with no straight-line words; expert 5x6/5x7 with an indirect theme and as many turns as the generator could find. Needs pilot calibration. Only 4-5 practice rounds per difficulty (docs/08 asks 10).
 - [ ] Drag is optional (tap, keyboard or drag all work); the grid disables touch scrolling while dragging, and 7-column boards scroll inside their own container on narrow phones.
 
+
+### Hidden Word Trail: expansion wave 2026-10-01 (12 rounds per difficulty)
+- Added 19 practice rounds (hwt-g6..g10, hwt-s6..s11, hwt-e5..e12) with the existing offline generator plus exact-cover proof (each board has exactly one tiling). New themes only; validator now also rejects repeated practice answers and themes (legacy exception: hwt-e4 repeats KING/QUEEN from hwt-e1, left untouched).
+- Membership v2 re-check: every board was scanned against the familiar list for traceable on-theme words not in the answer set. Candidate boards with such words (SHORTS in a wardrobe board, DELTA in a water board, HOES in a shed board, SCONE not familiar in a bakery board) were dropped. Remaining boards only trace plural/inflected forms of their own answers (e.g. BEANS/BEAN) or unrelated words.
+- Review: some answers (e.g. MACE, JIG, MINUET, HUSKY) are everyday but on the harder side for expert; theme labels such as "Metals and alloys" and "Dog breeds" are open-ended in principle, mitigated by the avoid-lists used in generation (GOLD, ZINC, TERRIER, CORGI, etc. cannot be traced).
+- Clues are original; human editorial review still needed.
+
 ## Letter Set
 - [ ] Practice rounds ls-g1..ls-e4 (4 per difficulty, plus 3 demo fixtures at standard): targets were hand-picked from ESDB membership AND the SCOWL size-35 familiar layer. Deliberately left out of the everyday lists (they still score as bonus words if in ESDB): KINK, NETT, CHINK (slur), THENCE, TENET, CINCH, HENCE, INCITE, ETHNIC, NINETIETH, NINETEENTH, ACED, CEDE, CEDED, ACCEDE, ACCEDED, CABBED, CABLED, CANED, CANDLED, CALLABLE, LANCED, CADENCE, DECADENCE, RACY, AORTA, CARAT, RATTY, TARRY, TARTAR, ORATORY, ROTOR, ANON, UNTO, FOUNT, INFO, INTONATION, NEURONE, NEURON, COERCE, CONCURRENCE, CHAR, HART, HATH, CACTI, CIRCA, HURRAH, ARTHRITIC, BUGGER (vulgar), BURR, BUGLER, BURBLE, BLUER, BUMMER, DUDE, DUDED, LAUD, LAUDED, GULLED, HULLED, LEAGUED, LULLED, LUGGED, DUELLED, ELUDED, MATT, TATTY, ERGO, HUGER, EAGERER, CONDOM, DAMN, MADMAN, MINIMA, MANIA, MANIC, MANIAC, PALL, PAPA, PLOP, POOP, PAPAL, OPTIMA. An editor should confirm each target list and these exclusions.
 - [ ] Bonus-word universe is the whole ESDB candidate list (minus the shared exclusions). Boards were chosen without S to avoid plural-dominated sets; the three pack demos (parents, teachers) do include S and are kept as-is.
@@ -213,6 +220,12 @@ Content expansion 2026-10-01: 22 new practice rounds (cw-g5..g11, cw-s5..s11, cw
 - [ ] Difficulty bands: gentle = par 2 with 700-1100 everyday words and tens of thousands of 3-word routes; standard = par 3, no 2-word everyday finish, 250-420 words; expert = par 4, 130-200 words, awkward letters (V, Z, W, Y). Heuristic, not calibrated. 5 practice boards per difficulty (docs/08 asks 10).
 - [ ] Any hint marks the chain being built as helped; the best chain records which words were played by the hint. "Start a new chain" asks for confirmation and always keeps the best completed chain.
 
+
+### Letter Circuit: expansion wave 2026-10-01 (12 rounds per difficulty)
+- Added 18 practice rounds (lc-g6..g12, lc-s6..s9, lc-e6..e12): random letter splits (3-4 vowels, optional J/V/X/Z/Q), par proved by breadth-first search over the everyday pool exactly as the validator recomputes it (par bands kept: gentle 2, standard 3, expert 4). The validator now enforces the band for practice rounds, a minimum of 12 per difficulty, and distinct twelve-letter sets across all rounds.
+- Gentle boards were picked for the largest number of two-word routes, standard/expert for large pools. Par chains use everyday words, but a few are unglamorous (e.g. PUNKER, TZARS, SINEWS); players may find friendlier chains of the same length. Membership v2 only widens what players may type, it never lowers par over the everyday pool, so a player using obscure words could occasionally beat par; that is shown honestly as under par.
+- Not yet human-reviewed; difficulty labels are the author's intention.
+
 ## Family space (Batch 8)
 - [ ] **Needs the owner's Supabase project** before any signed-in flow can be exercised: URL/publishable key, auth redirect URLs, email template, SMTP, migrations applied, first curator bootstrapped (steps in docs/FAMILY-SPACE.md). Until then pages show "Setup needed" and APIs return 503.
 - [ ] Signed-in browser journeys (sign-in by link/code, invite acceptance, upload with real storage, curator approval, favourite/reply persistence, book resume, withdrawal) are implemented but untested end to end: no credentials exist. The database rules they rely on are proven in `tests/family/rls.test.ts` against real Postgres 16 with a Supabase shim, not against a real Supabase stack (PostgREST/Storage/GoTrue behaviour is assumed from their documentation).
@@ -294,6 +307,12 @@ Cryptic clues (letters verified by the Cryptic Workshop checker; synonyms and su
 - [ ] Decision: a wrong full-grid submission is recorded (counted in the result) but changes no letters and does not say where the error is; "Check this lane" (confirmed) marks wrong letters and is counted as help. The word bank and "Suggest a lane" count as hints; revealed squares never score. Squares already correct when a lane is revealed stay the player's own.
 - [ ] The pack's sample hint strings for the two fixtures are kept as regression data (sampleHints); the live hint ladder is the brief's (suggest lane, reveal letter, reveal lane, reveal all).
 - [ ] "Report an answer issue" from the brief is not implemented for Word Weave.
+
+
+### Word Weave: expansion wave 2026-10-01 (12 rounds per difficulty)
+- Added 19 practice rounds (wv-g6..g10, wv-s6..s12, wv-e6..e12) using the existing lane templates (comb, eye, aitch, frame for gentle with word banks; 5x5 lattice for standard; 5x7 lattice for expert). Fills were found offline by backtracking over familiar words (no plurals, -ED or -ING forms, no blocklisted words), then clues were written for this build. Validator now requires 12 per difficulty and rejects repeated practice answers and repeated clue texts.
+- Alternative fills: the engine accepts only the listed accepted grid, so obscure Scrabble words in membership v2 cannot create a second accepted fill. A player who finds a different legal fill would still be marked against the authored grid; templates with only three or four lanes (gentle) are the most exposed, and are covered by word banks.
+- A few answers are on the edge of everyday (ABYSS, TINNY, PIETY, ETHOS, ORBITAL); several clues have two senses (e.g. TRAIN, PRESS, SCOOP) by design. Human editorial review still needed.
 
 ## Definition Detective
 - [ ] 12 original practice case files (4 per difficulty, 3 cases each) plus the 2 pack fixtures (dd-demo-1, dd-demo-2) with their sentences, options and answers unchanged. Sentences, definitions, distractor notes, pointer hints, explanations and Learn more examples are original to this build (not quoted from dictionaries). Every definition and every "why not" note needs a second reader per the brief, especially the expert polysemy cases: SANCTION (approve vs penalise), QUALIFIED, DISINTERESTED (traditional "impartial" sense tested; some usage treats it as "uninterested"), TEMPERED, FLAG, OVERSIGHT, CHEQUERED, SPECIOUS, EQUANIMITY, ENERVATE, NONPLUSSED (established "bewildered" sense tested; the newer "unconcerned" usage is a distractor with a usage note), INVIDIOUS.
