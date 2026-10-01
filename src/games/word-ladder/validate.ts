@@ -57,7 +57,7 @@ export function validateContent(): string[] {
     const label = `${meta.id} ${meta.title ?? ""}`.toUpperCase();
     if (label.includes(p.target) || label.includes(p.start)) problems.push(`${meta.id}: id/title names an endpoint`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 ${d} rounds`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 16) problems.push(`fewer than 16 ${d} rounds`);
   const expected = [...familiar].filter((w) => w.length >= 3 && w.length <= 5 && membership.has(w)).sort();
   if (expected.length !== familiarList.length || expected.some((w, i) => w !== familiarList[i])) problems.push("content/familiar.json is out of date with the size-35 layer");
   return problems;

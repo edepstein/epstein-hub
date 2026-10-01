@@ -378,6 +378,188 @@
    }
   },
   {
+   "id": "wl-g9",
+   "title": "Gentle ladder 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "LEG",
+    "target": "PIE",
+    "optimalMoves": 3,
+    "examplePath": [
+     "LEG",
+     "PEG",
+     "PIG",
+     "PIE"
+    ],
+    "bank": [
+     "BEG",
+     "LAG",
+     "LEG",
+     "LOG",
+     "PEA",
+     "PEG",
+     "PIE",
+     "PIG",
+     "PIN"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g10",
+   "title": "Gentle ladder 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BUS",
+    "target": "BOX",
+    "optimalMoves": 3,
+    "examplePath": [
+     "BUS",
+     "BUG",
+     "BOG",
+     "BOX"
+    ],
+    "bank": [
+     "BAG",
+     "BOG",
+     "BOX",
+     "BOY",
+     "BUG",
+     "BUN",
+     "BUS",
+     "BUT",
+     "DOG"
+    ],
+    "explanation": "The two words differ in only 2 positions, but no 2-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 3 moves in all."
+   }
+  },
+  {
+   "id": "wl-g11",
+   "title": "Gentle ladder 11",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SIX",
+    "target": "RUG",
+    "optimalMoves": 4,
+    "examplePath": [
+     "SIX",
+     "FIX",
+     "FIG",
+     "RIG",
+     "RUG"
+    ],
+    "bank": [
+     "BIG",
+     "FIG",
+     "FIN",
+     "FIX",
+     "MIX",
+     "MUG",
+     "RIG",
+     "RUG",
+     "SIX"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 4 moves in all."
+   }
+  },
+  {
+   "id": "wl-g12",
+   "title": "Gentle ladder 12",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "GIFT",
+    "target": "LAKE",
+    "optimalMoves": 4,
+    "examplePath": [
+     "GIFT",
+     "LIFT",
+     "LIFE",
+     "LIKE",
+     "LAKE"
+    ],
+    "bank": [
+     "GIFT",
+     "LAKE",
+     "LIFE",
+     "LIFT",
+     "LIKE",
+     "LIME",
+     "LINE",
+     "RIFT",
+     "SIFT"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
+   }
+  },
+  {
+   "id": "wl-g13",
+   "title": "Gentle ladder 13",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SAND",
+    "target": "BALL",
+    "optimalMoves": 3,
+    "examplePath": [
+     "SAND",
+     "BAND",
+     "BALD",
+     "BALL"
+    ],
+    "bank": [
+     "BALD",
+     "BALL",
+     "BAND",
+     "BELL",
+     "BOLD",
+     "HAND",
+     "LAND",
+     "SAND",
+     "SEND"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g14",
+   "title": "Gentle ladder 14",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "WEEK",
+    "target": "PARK",
+    "optimalMoves": 3,
+    "examplePath": [
+     "WEEK",
+     "PEEK",
+     "PERK",
+     "PARK"
+    ],
+    "bank": [
+     "DARK",
+     "PARK",
+     "PEAK",
+     "PEEK",
+     "PERK",
+     "PORK",
+     "SEEK",
+     "WEAK",
+     "WEEK"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
    "id": "wl-s1",
    "title": "Standard ladder 1",
    "difficulty": "standard",
@@ -563,6 +745,132 @@
      "MINT"
     ],
     "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s10",
+   "title": "Standard ladder 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SOAP",
+    "target": "MAIL",
+    "optimalMoves": 5,
+    "examplePath": [
+     "SOAP",
+     "SOUP",
+     "SOUL",
+     "SOIL",
+     "SAIL",
+     "MAIL"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s11",
+   "title": "Standard ladder 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "DOOR",
+    "target": "TALL",
+    "optimalMoves": 5,
+    "examplePath": [
+     "DOOR",
+     "POOR",
+     "POOL",
+     "TOOL",
+     "TOLL",
+     "TALL"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s12",
+   "title": "Standard ladder 12",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BELT",
+    "target": "HAIR",
+    "optimalMoves": 5,
+    "examplePath": [
+     "BELT",
+     "BEAT",
+     "HEAT",
+     "HEAR",
+     "HEIR",
+     "HAIR"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s13",
+   "title": "Standard ladder 13",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BREAD",
+    "target": "BLACK",
+    "optimalMoves": 6,
+    "examplePath": [
+     "BREAD",
+     "BREED",
+     "BLEED",
+     "BLEND",
+     "BLAND",
+     "BLANK",
+     "BLACK"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-s14",
+   "title": "Standard ladder 14",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BEACH",
+    "target": "PLANT",
+    "optimalMoves": 5,
+    "examplePath": [
+     "BEACH",
+     "PEACH",
+     "PEACE",
+     "PLACE",
+     "PLANE",
+     "PLANT"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s15",
+   "title": "Standard ladder 15",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "STORM",
+    "target": "SNAKE",
+    "optimalMoves": 4,
+    "examplePath": [
+     "STORM",
+     "STORE",
+     "SNORE",
+     "SNARE",
+     "SNAKE"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
    }
   },
   {
@@ -788,6 +1096,142 @@
      "SNOW"
     ],
     "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e11",
+   "title": "Expert ladder 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "COIN",
+    "target": "KING",
+    "optimalMoves": 7,
+    "examplePath": [
+     "COIN",
+     "CORN",
+     "WORN",
+     "WORE",
+     "WIRE",
+     "WINE",
+     "WING",
+     "KING"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e12",
+   "title": "Expert ladder 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "ZERO",
+    "target": "SOAP",
+    "optimalMoves": 7,
+    "examplePath": [
+     "ZERO",
+     "HERO",
+     "HERD",
+     "HEAD",
+     "HEAR",
+     "SEAR",
+     "SOAR",
+     "SOAP"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e13",
+   "title": "Expert ladder 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "NAIL",
+    "target": "LOCK",
+    "optimalMoves": 6,
+    "examplePath": [
+     "NAIL",
+     "TAIL",
+     "TOIL",
+     "TOOL",
+     "TOOK",
+     "LOOK",
+     "LOCK"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e14",
+   "title": "Expert ladder 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CLOCK",
+    "target": "PAINT",
+    "optimalMoves": 7,
+    "examplePath": [
+     "CLOCK",
+     "CLICK",
+     "SLICK",
+     "STICK",
+     "STINK",
+     "STINT",
+     "SAINT",
+     "PAINT"
+    ],
+    "explanation": "The two words differ in only 5 positions, but no 5-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e15",
+   "title": "Expert ladder 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "WHEAT",
+    "target": "SWEET",
+    "optimalMoves": 6,
+    "examplePath": [
+     "WHEAT",
+     "CHEAT",
+     "CHEAP",
+     "CHEEP",
+     "SHEEP",
+     "SWEEP",
+     "SWEET"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e16",
+   "title": "Expert ladder 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BRAIN",
+    "target": "CRANE",
+    "optimalMoves": 7,
+    "examplePath": [
+     "BRAIN",
+     "TRAIN",
+     "TRAIT",
+     "TRACT",
+     "TRACK",
+     "CRACK",
+     "CRANK",
+     "CRANE"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
    }
   }
  ]

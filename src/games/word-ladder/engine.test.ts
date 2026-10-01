@@ -223,7 +223,7 @@ describe("hints from the current word", () => {
       const s = engine.initialise(r.payload, sessionOptionsFor(r.meta, 1));
       expect(engine.suggest(s)!.route, r.meta.id).toEqual(r.payload.examplePath.slice(1));
     }
-  });
+  }, 120_000);
 });
 
 describe("persistence and content", () => {
