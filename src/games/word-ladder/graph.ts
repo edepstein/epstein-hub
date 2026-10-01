@@ -24,8 +24,8 @@ export function neighbours(word: string, has: (w: string) => boolean): string[] 
   return out;
 }
 
-/** Breadth-first distances from `from` to every reachable word. */
-export function distancesFrom(from: string, has: (w: string) => boolean): Map<string, number> {
+/** Breadth-first distances from `from` to every reachable word (or, with `stopAt`, until that word is reached). */
+export function distancesFrom(from: string, has: (w: string) => boolean, stopAt?: string): Map<string, number> {
   const dist = new Map<string, number>([[from, 0]]);
   const queue = [from];
   for (let i = 0; i < queue.length; i++) {
@@ -34,6 +34,7 @@ export function distancesFrom(from: string, has: (w: string) => boolean): Map<st
     for (const n of neighbours(cur, has)) {
       if (!dist.has(n)) {
         dist.set(n, d + 1);
+        if (n === stopAt) return dist;
         queue.push(n);
       }
     }

@@ -21,6 +21,11 @@ export interface LadderPayload {
   optimalMoves: number;
   /** One shortest route using familiar words. An example, never the only accepted answer. */
   examplePath: string[];
+  /**
+   * Which word layer defines par. "everyday" (default, every non-Master round): shortest route over everyday words.
+   * "full": shortest route over the whole word list (Master rounds), so par may need Scrabble-grade vocabulary.
+   */
+  parLexicon?: "everyday" | "full";
   /** Optional visible word bank (Gentle and demo rounds). */
   bank?: string[];
   explanation: string;
@@ -54,8 +59,9 @@ export interface LadderState {
   start: string;
   target: string;
   length: number;
-  /** Par: BFS minimum over everyday words (falls back to the full list when no familiar layer is supplied). */
+  /** Par: BFS minimum over everyday words (or over the full list when parLexicon is "full"). */
   optimalMoves: number;
+  parLexicon: "everyday" | "full";
   path: Step[];
   hints: HintRecord[];
   revealed: boolean;
@@ -78,10 +84,15 @@ export function ladderScore(optimal: number, moves: number): number {
   return Math.min(100, 60 + Math.floor((40 * optimal) / moves));
 }
 
-function parNote(par: number, moves: number): string {
+/** Describes what par means for a round, for rules-aware result text. */
+export function parDescription(lexicon: "everyday" | "full"): string {
+  return lexicon === "full" ? "the shortest route over the whole word list" : "the shortest route using everyday words";
+}
+
+function parNote(par: number, moves: number, lexicon: "everyday" | "full"): string {
   if (moves < par) return `That beats par (${par}) using less common words.`;
-  if (moves === par) return "That is par: the shortest route using everyday words.";
-  return `Par is ${par}, the shortest route using everyday words.`;
+  if (moves === par) return `That is par: ${parDescription(lexicon)}.`;
+  return `Par is ${par}, ${parDescription(lexicon)}.`;
 }
 
 const ordinal = (n: number) => ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"][n] ?? `${n + 1}th`;
@@ -110,12 +121,12 @@ export function createWordLadderEngine(
   const distCache = new Map<string, Map<string, number>>();
   const has = (extra: ReadonlySet<string>, blocked: ReadonlySet<string>) => (w: string) => !blocked.has(w) && (membership.has(w) || extra.has(w));
 
-  function distances(target: string, extra: ReadonlySet<string>, blocked: ReadonlySet<string>, familiarOnly = false): Map<string, number> {
-    const key = `${familiarOnly ? "F" : "M"}|${target}|${[...extra].sort().join(",")}|${[...blocked].sort().join(",")}`;
+  function distances(target: string, extra: ReadonlySet<string>, blocked: ReadonlySet<string>, familiarOnly = false, stopAt?: string): Map<string, number> {
+    const key = `${familiarOnly ? "F" : "M"}|${stopAt ?? ""}|${target}|${[...extra].sort().join(",")}|${[...blocked].sort().join(",")}`;
     let d = distCache.get(key);
     if (!d) {
       const base = has(extra, blocked);
-      d = distancesFrom(target, familiarOnly ? (w) => base(w) && (familiar.has(w) || extra.has(w)) : base);
+      d = distancesFrom(target, familiarOnly ? (w) => base(w) && (familiar.has(w) || extra.has(w)) : base, stopAt);
       if (distCache.size > 200) distCache.clear();
       distCache.set(key, d);
     }
@@ -130,10 +141,10 @@ export function createWordLadderEngine(
     if (cur === state.target) return null;
     const blocked = new Set(state.path.slice(0, -1).map((p) => p.word));
     const extra = endpoints(state);
-    const famDist = familiar.size ? distances(state.target, extra, blocked, true) : null;
+    const famDist = familiar.size && state.parLexicon !== "full" ? distances(state.target, extra, blocked, true) : null;
     // Prefer a route of everyday words (par); fall back to any legal route (computed lazily, it
     // searches the whole word list) if the player has wandered somewhere everyday words cannot get back from.
-    const dist = famDist && famDist.get(cur) != null ? famDist : distances(state.target, extra, blocked);
+    const dist = famDist && famDist.get(cur) != null ? famDist : distances(state.target, extra, blocked, false, state.parLexicon === "full" ? cur : undefined);
     const d = dist.get(cur);
     if (d == null) return null;
     const route: string[] = [];
@@ -212,12 +223,19 @@ export function createWordLadderEngine(
       // Par is the shortest route using everyday words (the familiar layer), so obscure
       // tile-game words never define the target. Every membership word remains a legal step.
       const ends = new Set([start, target]);
-      const dist = (familiar.size ? distances(target, ends, new Set(), true).get(start) : undefined) ?? distances(target, ends, new Set()).get(start);
+      const parLexicon = round.parLexicon === "full" ? "full" : "everyday";
+      // Master (full-list par): the validator has proved the stored optimum by BFS over the whole list, so it is
+      // trusted here rather than recomputed on the player's device (the full-list search is the heaviest in the game).
+      const dist =
+        parLexicon === "full"
+          ? round.optimalMoves
+          : (familiar.size ? distances(target, ends, new Set(), true).get(start) : undefined) ?? distances(target, ends, new Set()).get(start);
       return {
         start,
         target,
         length: start.length,
         optimalMoves: dist ?? round.optimalMoves,
+        parLexicon,
         path: [{ word: start, assisted: false }],
         hints: [],
         revealed: false,
@@ -242,7 +260,7 @@ export function createWordLadderEngine(
           const next = appendSteps(state, [word], false);
           if (word === state.target) {
             const m = moves(next);
-            return accept(next, "complete", `${word}! You reached the target in ${plural(m, "move")}. ${parNote(state.optimalMoves, m)}`);
+            return accept(next, "complete", `${word}! You reached the target in ${plural(m, "move")}. ${parNote(state.optimalMoves, m, state.parLexicon)}`);
           }
           return accept(next, "step", `${word} added. Move ${moves(next)}. Next: change one letter of ${word}.`);
         }
@@ -374,7 +392,7 @@ export function createWordLadderEngine(
           details: [
             `Your route had ${plural(state.hints.find((h) => h.tier === HINT_REVEAL)?.atStep ?? m, "move")} before the reveal.`,
             `Full route: ${route}.`,
-            `Par is ${plural(state.optimalMoves, "move")} (the shortest route using everyday words), for example ${example}.`,
+            `Par is ${plural(state.optimalMoves, "move")} (${parDescription(state.parLexicon)}), for example ${example}.`,
           ],
           shareText: `Word Club · Word Ladder · ${state.length} letters · route revealed · par ${state.optimalMoves}`,
           explanation: [state.explanation, `A par route: ${example}.`],
@@ -384,7 +402,7 @@ export function createWordLadderEngine(
       const eff = Math.min(1, state.optimalMoves / m);
       return {
         outcome,
-        headline: `Reached ${state.target} in ${plural(m, "move")}. ${parNote(state.optimalMoves, m)}`,
+        headline: `Reached ${state.target} in ${plural(m, "move")}. ${parNote(state.optimalMoves, m, state.parLexicon)}`,
         scoreText: `${score} of 100 points`,
         score,
         maxScore: 100,

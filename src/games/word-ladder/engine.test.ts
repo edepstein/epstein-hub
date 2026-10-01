@@ -256,6 +256,7 @@ describe("persistence and content", () => {
     for (const r of rounds) {
       const s = engine.initialise(r.payload, sessionOptionsFor(r.meta, 1));
       expect(s.optimalMoves, r.meta.id).toBe(r.payload.optimalMoves);
+      if (r.payload.parLexicon === "full") continue;
       const ends = new Set([r.payload.start, r.payload.target]);
       const fam = shortestPath(r.payload.start, r.payload.target, (w) => ends.has(w) || familiar.has(w));
       expect(fam && fam.length - 1, r.meta.id).toBe(r.payload.optimalMoves);
@@ -263,7 +264,7 @@ describe("persistence and content", () => {
       expect(engine.outcome(done), r.meta.id).toBe("completed");
     }
     const lengths = new Set(rounds.map((r) => r.payload.start.length));
-    expect([...lengths].sort()).toEqual([3, 4, 5]);
+    expect([...lengths].sort()).toEqual([3, 4, 5, 6]);
   });
 
   it("par is defined over everyday words, so an obscure shortcut beats par without being rejected", () => {
@@ -277,6 +278,35 @@ describe("persistence and content", () => {
     expect(r.score).toBe(100);
     expect(r.efficiency).toBe(1);
     expect(r.headline).toContain("beats par");
+  });
+
+  it("Master rounds define par over the full list, with hints, result text and example route to match", () => {
+    const masters = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(masters.length).toBeGreaterThanOrEqual(12);
+    for (const r of masters) {
+      expect(r.payload.parLexicon).toBe("full");
+      const s = start(r.meta.id);
+      expect(s.parLexicon).toBe("full");
+      expect(s.optimalMoves).toBe(r.payload.optimalMoves);
+      expect(distancesFrom(r.payload.target, (w) => membership.has(w), r.payload.start).get(r.payload.start)).toBe(r.payload.optimalMoves);
+      // Hints follow the full-list shortest route from the start.
+      const h = engine.apply(s, { type: "hint", tier: HINT_INSERT });
+      expect(h.ok).toBe(true);
+      const sug = engine.suggest(s)!;
+      expect(sug.remaining).toBe(r.payload.optimalMoves);
+      expect(sug.route).toHaveLength(r.payload.optimalMoves);
+      const done = play(s, r.payload.examplePath.slice(1));
+      const res = engine.result(done)!;
+      expect(res.headline).toContain("whole word list");
+      expect(res.score).toBe(100);
+    }
+  });
+
+  it("an everyday-par round keeps everyday wording, and a Master par is not undercut by everyday-only routes", () => {
+    const s = start("wl-demo-1");
+    expect(s.parLexicon).toBe("everyday");
+    const done = play(s, ["CORD", "CARD", "WARD", "WARM"]);
+    expect(engine.result(done)!.headline).toContain("everyday words");
   });
 
   it("difficulties are distinct: expert ladders force a detour", () => {

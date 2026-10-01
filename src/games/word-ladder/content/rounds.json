@@ -1233,6 +1233,431 @@
     ],
     "explanation": "The two words differ in only 3 positions, but no 3-move route exists in everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
    }
+  },
+  {
+   "id": "wl-m1",
+   "title": "Master ladder 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "ATOM",
+    "target": "WIND",
+    "optimalMoves": 8,
+    "parLexicon": "full",
+    "examplePath": [
+     "ATOM",
+     "ATOP",
+     "STOP",
+     "STEP",
+     "SEEP",
+     "SEED",
+     "SEND",
+     "WEND",
+     "WIND"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 8 moves. Everyday words alone cannot connect these two at all; the example route needs ATOP, WEND (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m2",
+   "title": "Master ladder 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FETE",
+    "target": "EGGS",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "FETE",
+     "FATE",
+     "FATS",
+     "EATS",
+     "EARS",
+     "ERRS",
+     "ERGS",
+     "EGGS"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs ERGS (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m3",
+   "title": "Master ladder 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CUFF",
+    "target": "LOVE",
+    "optimalMoves": 5,
+    "parLexicon": "full",
+    "examplePath": [
+     "CUFF",
+     "CAFF",
+     "CAFE",
+     "CAVE",
+     "COVE",
+     "LOVE"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 5 moves. Everyday words alone cannot connect these two at all; the example route needs CAFF (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m4",
+   "title": "Master ladder 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "ITCH",
+    "target": "POST",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "ITCH",
+     "ETCH",
+     "EACH",
+     "MACH",
+     "MASH",
+     "MAST",
+     "MOST",
+     "POST"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs MACH (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m5",
+   "title": "Master ladder 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BELIE",
+    "target": "FUDGE",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "BELIE",
+     "BELLE",
+     "BELLY",
+     "BULLY",
+     "BULGY",
+     "BULGE",
+     "BUDGE",
+     "FUDGE"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs BELLE, BULGY (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m6",
+   "title": "Master ladder 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CADET",
+    "target": "GAWKY",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "CADET",
+     "CARET",
+     "CARES",
+     "HARES",
+     "HARKS",
+     "HAWKS",
+     "GAWKS",
+     "GAWKY"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs CARET (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m7",
+   "title": "Master ladder 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "BOSOM",
+    "target": "MIGHT",
+    "optimalMoves": 6,
+    "parLexicon": "full",
+    "examplePath": [
+     "BOSOM",
+     "BESOM",
+     "BESOT",
+     "BEGOT",
+     "BIGOT",
+     "BIGHT",
+     "MIGHT"
+    ],
+    "explanation": "The endpoints differ in 5 positions, but the shortest route over the whole word list takes 6 moves. Everyday words alone cannot connect these two at all; the example route needs BESOM, BESOT, BEGOT, BIGHT (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m8",
+   "title": "Master ladder 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CRAZE",
+    "target": "BOOZE",
+    "optimalMoves": 9,
+    "parLexicon": "full",
+    "examplePath": [
+     "CRAZE",
+     "CRATE",
+     "PRATE",
+     "PRATS",
+     "BRATS",
+     "BOATS",
+     "BOOTS",
+     "BOOTY",
+     "BOOZY",
+     "BOOZE"
+    ],
+    "explanation": "The endpoints differ in 3 positions, but the shortest route over the whole word list takes 9 moves. Everyday words alone cannot connect these two at all; the example route needs PRATE, PRATS, BOOZY (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m9",
+   "title": "Master ladder 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CANNON",
+    "target": "ROTTEN",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "CANNON",
+     "CANTON",
+     "CANTOR",
+     "CANTER",
+     "RANTER",
+     "RATTER",
+     "ROTTER",
+     "ROTTEN"
+    ],
+    "explanation": "The endpoints differ in 5 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs CANTON, CANTOR, RANTER, RATTER, ROTTER (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m10",
+   "title": "Master ladder 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "KETTLE",
+    "target": "WEAKEN",
+    "optimalMoves": 8,
+    "parLexicon": "full",
+    "examplePath": [
+     "KETTLE",
+     "SETTLE",
+     "SETTEE",
+     "SETTER",
+     "BETTER",
+     "BEATER",
+     "BEAKER",
+     "WEAKER",
+     "WEAKEN"
+    ],
+    "explanation": "The endpoints differ in 5 positions, but the shortest route over the whole word list takes 8 moves. Everyday words alone cannot connect these two at all; the example route needs SETTEE (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m11",
+   "title": "Master ladder 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FACIAL",
+    "target": "DENTAL",
+    "optimalMoves": 7,
+    "parLexicon": "full",
+    "examplePath": [
+     "FACIAL",
+     "RACIAL",
+     "RADIAL",
+     "REDIAL",
+     "MEDIAL",
+     "MENIAL",
+     "DENIAL",
+     "DENTAL"
+    ],
+    "explanation": "The endpoints differ in 4 positions, but the shortest route over the whole word list takes 7 moves. Everyday words alone cannot connect these two at all; the example route needs REDIAL, MEDIAL (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-m12",
+   "title": "Master ladder 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SHRIMP",
+    "target": "STRIVE",
+    "optimalMoves": 6,
+    "parLexicon": "full",
+    "examplePath": [
+     "SHRIMP",
+     "SCRIMP",
+     "SCRIMS",
+     "SCRIPS",
+     "STRIPS",
+     "STRIPE",
+     "STRIVE"
+    ],
+    "explanation": "The endpoints differ in 3 positions, but the shortest route over the whole word list takes 6 moves. Everyday words alone cannot connect these two at all; the example route needs SCRIMP, SCRIMS, SCRIPS (uncommon but genuine words)."
+   }
+  },
+  {
+   "id": "wl-e17",
+   "title": "Expert ladder 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "DUMB",
+    "target": "DAFT",
+    "optimalMoves": 6,
+    "examplePath": [
+     "DUMB",
+     "DUMP",
+     "DAMP",
+     "DAME",
+     "DARE",
+     "DART",
+     "DAFT"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e18",
+   "title": "Expert ladder 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FANG",
+    "target": "FOAM",
+    "optimalMoves": 6,
+    "examplePath": [
+     "FANG",
+     "FANS",
+     "FINS",
+     "FIRS",
+     "FIRM",
+     "FORM",
+     "FOAM"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e19",
+   "title": "Expert ladder 19",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "CROW",
+    "target": "FEUD",
+    "optimalMoves": 7,
+    "examplePath": [
+     "CROW",
+     "BROW",
+     "BLOW",
+     "BLEW",
+     "BLED",
+     "FLED",
+     "FEED",
+     "FEUD"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e20",
+   "title": "Expert ladder 20",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "NICE",
+    "target": "SLOT",
+    "optimalMoves": 7,
+    "examplePath": [
+     "NICE",
+     "DICE",
+     "DIRE",
+     "SIRE",
+     "SORE",
+     "SORT",
+     "SOOT",
+     "SLOT"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
+  },
+  {
+   "id": "wl-e21",
+   "title": "Expert ladder 21",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "ACID",
+    "target": "PUNK",
+    "optimalMoves": 8,
+    "examplePath": [
+     "ACID",
+     "ACED",
+     "APED",
+     "SPED",
+     "SUED",
+     "SUES",
+     "SUNS",
+     "PUNS",
+     "PUNK"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 8 moves in all."
+   }
+  },
+  {
+   "id": "wl-e22",
+   "title": "Expert ladder 22",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "LIMB",
+    "target": "DEAL",
+    "optimalMoves": 7,
+    "examplePath": [
+     "LIMB",
+     "LIME",
+     "MIME",
+     "MILE",
+     "MILL",
+     "DILL",
+     "DIAL",
+     "DEAL"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no route that short exists among everyday words: a shortest route has to change some letters away from the target and back, for 7 moves in all."
+   }
   }
  ]
 }
