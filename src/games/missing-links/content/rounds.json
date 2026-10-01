@@ -1979,6 +1979,4023 @@
      }
     ]
    }
+  },
+  {
+   "id": "ml-g5",
+   "title": "Gentle bridges 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SET",
+        "clue": "When the day ends and the sky turns red"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FLOWER",
+        "clue": "A tall plant with a huge yellow head"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BURN",
+        "clue": "Sore red skin from too long outdoors in summer"
+       }
+      ],
+      "candidates": [
+       "OUT",
+       "MAY",
+       "MOW",
+       "DAY",
+       "SUN"
+      ],
+      "solutions": [
+       {
+        "link": "SUN",
+        "compounds": {
+         "a": "SUNSET",
+         "b": "SUNFLOWER",
+         "c": "SUNBURN"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SUN fits every branch: SUNSET, SUNFLOWER and SUNBURN."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BOARD",
+        "clue": "A dark panel in a classroom for chalk"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BERRY",
+        "clue": "A dark purple fruit picked from brambles"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BIRD",
+        "clue": "A songbird, the male being glossy and dark with a yellow beak"
+       }
+      ],
+      "candidates": [
+       "STRAW",
+       "WATER",
+       "BREAD",
+       "BLACK",
+       "SUGAR"
+      ],
+      "solutions": [
+       {
+        "link": "BLACK",
+        "compounds": {
+         "a": "BLACKBOARD",
+         "b": "BLACKBERRY",
+         "c": "BLACKBIRD"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BLACK fits every branch: BLACKBOARD, BLACKBERRY and BLACKBIRD."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "LID",
+        "clue": "A fold of skin that closes to protect your sight"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BALL",
+        "clue": "The round part of the body that sees, in its socket"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SIGHT",
+        "clue": "Your ability to see"
+       }
+      ],
+      "candidates": [
+       "ODD",
+       "PAL",
+       "EYE",
+       "PAT",
+       "OUT"
+      ],
+      "solutions": [
+       {
+        "link": "EYE",
+        "compounds": {
+         "a": "EYELID",
+         "b": "EYEBALL",
+         "c": "EYESIGHT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "EYE fits every branch: EYELID, EYEBALL and EYESIGHT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g6",
+   "title": "Gentle bridges 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SHAKE",
+        "clue": "A greeting in which two people clasp palms"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BAG",
+        "clue": "A small bag for a purse and keys"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BOOK",
+        "clue": "A small guide with useful instructions"
+       }
+      ],
+      "candidates": [
+       "HAND",
+       "CASH",
+       "DATE",
+       "WORK",
+       "HARD"
+      ],
+      "solutions": [
+       {
+        "link": "HAND",
+        "compounds": {
+         "a": "HANDSHAKE",
+         "b": "HANDBAG",
+         "c": "HANDBOOK"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "HAND fits every branch: HANDSHAKE, HANDBAG and HANDBOOK."
+     },
+     {
+      "id": "2",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WEED",
+        "clue": "A green or brown plant growing in salt water"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SHELL",
+        "clue": "The empty case of a creature found on the beach"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SIDE",
+        "clue": "A coastal place where people take holidays"
+       }
+      ],
+      "candidates": [
+       "OUT",
+       "DAY",
+       "SEA",
+       "MAT",
+       "SUB"
+      ],
+      "solutions": [
+       {
+        "link": "SEA",
+        "compounds": {
+         "a": "SEAWEED",
+         "b": "SEASHELL",
+         "c": "SEASIDE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "SEA fits every branch: SEAWEED, SEASHELL and SEASIDE."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "PICK",
+        "clue": "A small stick for removing food from between teeth"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "PASTE",
+        "clue": "A minty cream squeezed onto a brush"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BRUSH",
+        "clue": "A small brush for the mouth"
+       }
+      ],
+      "candidates": [
+       "TOOTH",
+       "EASES",
+       "PAINT",
+       "UNDER",
+       "BROAD"
+      ],
+      "solutions": [
+       {
+        "link": "TOOTH",
+        "compounds": {
+         "a": "TOOTHPICK",
+         "b": "TOOTHPASTE",
+         "c": "TOOTHBRUSH"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "TOOTH fits every branch: TOOTHPICK, TOOTHPASTE and TOOTHBRUSH."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g7",
+   "title": "Gentle bridges 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "The office where journalists prepare reports"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "AGENT",
+        "clue": "A shop that sells papers and magazines"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PAPER",
+        "clue": "Daily printed sheets of reports and photographs"
+       }
+      ],
+      "candidates": [
+       "WASH",
+       "NOTE",
+       "WIRE",
+       "NEWS",
+       "WORK"
+      ],
+      "solutions": [
+       {
+        "link": "NEWS",
+        "compounds": {
+         "a": "NEWSROOM",
+         "b": "NEWSAGENT",
+         "c": "NEWSPAPER"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "NEWS fits every branch: NEWSROOM, NEWSAGENT and NEWSPAPER."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "PEN",
+        "clue": "A small fenced area where a baby can be left safely"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MATE",
+        "clue": "A child who joins in a game with another"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GROUND",
+        "clue": "An outdoor area with swings and slides"
+       }
+      ],
+      "candidates": [
+       "WORK",
+       "AUTO",
+       "FORE",
+       "PLAY",
+       "SHIP"
+      ],
+      "solutions": [
+       {
+        "link": "PLAY",
+        "compounds": {
+         "a": "PLAYPEN",
+         "b": "PLAYMATE",
+         "c": "PLAYGROUND"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "PLAY fits every branch: PLAYPEN, PLAYMATE and PLAYGROUND."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "GROUND",
+        "clue": "The part of a picture behind the main subject"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BONE",
+        "clue": "The line of bones down the middle of the spine"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PACK",
+        "clue": "A bag carried on the shoulders"
+       }
+      ],
+      "candidates": [
+       "TAIL",
+       "RING",
+       "FAIR",
+       "BACK",
+       "OVER"
+      ],
+      "solutions": [
+       {
+        "link": "BACK",
+        "compounds": {
+         "a": "BACKGROUND",
+         "b": "BACKBONE",
+         "c": "BACKPACK"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BACK fits every branch: BACKGROUND, BACKBONE and BACKPACK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g8",
+   "title": "Gentle bridges 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Tasks set for pupils"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOY",
+        "clue": "A young lad who attends lessons"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GIRL",
+        "clue": "A young lass who attends lessons"
+       }
+      ],
+      "candidates": [
+       "SCHOOL",
+       "STABLE",
+       "CAMERA",
+       "GRILLE",
+       "BASKET"
+      ],
+      "solutions": [
+       {
+        "link": "SCHOOL",
+        "compounds": {
+         "a": "SCHOOLWORK",
+         "b": "SCHOOLBOY",
+         "c": "SCHOOLGIRL"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SCHOOL fits every branch: SCHOOLWORK, SCHOOLBOY and SCHOOLGIRL."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SCREEN",
+        "clue": "The front glass of a car"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FALL",
+        "clue": "A fruit blown from a tree, or an unexpected gift of money"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "MILL",
+        "clue": "A building with sails that grinds grain"
+       }
+      ],
+      "candidates": [
+       "RAIN",
+       "SILK",
+       "SNOW",
+       "WIND",
+       "BACK"
+      ],
+      "solutions": [
+       {
+        "link": "WIND",
+        "compounds": {
+         "a": "WINDSCREEN",
+         "b": "WINDFALL",
+         "c": "WINDMILL"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WIND fits every branch: WINDSCREEN, WINDFALL and WINDMILL."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BAG",
+        "clue": "A sack of earth used to hold back floods"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "PAPER",
+        "clue": "A rough sheet for smoothing wood"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "STORM",
+        "clue": "A desert gale that whips up grit"
+       }
+      ],
+      "candidates": [
+       "WIND",
+       "BARN",
+       "RAIN",
+       "HAND",
+       "SAND"
+      ],
+      "solutions": [
+       {
+        "link": "SAND",
+        "compounds": {
+         "a": "SANDBAG",
+         "b": "SANDPAPER",
+         "c": "SANDSTORM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SAND fits every branch: SANDBAG, SANDPAPER and SANDSTORM."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g9",
+   "title": "Gentle bridges 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BAND",
+        "clue": "A stretchy loop for tying up a ponytail"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "CUT",
+        "clue": "A trim at the barber's"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BRUSH",
+        "clue": "A tool for tidying your locks"
+       }
+      ],
+      "candidates": [
+       "CREW",
+       "SIDE",
+       "HAIR",
+       "BUZZ",
+       "JUMP"
+      ],
+      "solutions": [
+       {
+        "link": "HAIR",
+        "compounds": {
+         "a": "HAIRBAND",
+         "b": "HAIRCUT",
+         "c": "HAIRBRUSH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HAIR fits every branch: HAIRBAND, HAIRCUT and HAIRBRUSH."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SMITH",
+        "clue": "A craftsman who makes jewellery from precious metal"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MINE",
+        "clue": "A place where yellow metal is dug out of the ground"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "FISH",
+        "clue": "A small orange pet in a bowl"
+       }
+      ],
+      "candidates": [
+       "BOAR",
+       "GOLD",
+       "OVER",
+       "COAL",
+       "LUNG"
+      ],
+      "solutions": [
+       {
+        "link": "GOLD",
+        "compounds": {
+         "a": "GOLDSMITH",
+         "b": "GOLDMINE",
+         "c": "GOLDFISH"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "GOLD fits every branch: GOLDSMITH, GOLDMINE and GOLDFISH."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "STRING",
+        "clue": "A very small amount of money to live or work on"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOX",
+        "clue": "A cardboard container for a new pair"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "LACE",
+        "clue": "A cord for tying footwear"
+       }
+      ],
+      "candidates": [
+       "WORK",
+       "MAIL",
+       "SEED",
+       "SOAP",
+       "SHOE"
+      ],
+      "solutions": [
+       {
+        "link": "SHOE",
+        "compounds": {
+         "a": "SHOESTRING",
+         "b": "SHOEBOX",
+         "c": "SHOELACE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SHOE fits every branch: SHOESTRING, SHOEBOX and SHOELACE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g10",
+   "title": "Gentle bridges 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HAND",
+        "suffix": "",
+        "clue": "A bar beside steps to hold on to"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "WAY",
+        "clue": "A route along which trains run"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "ROAD",
+        "clue": "An American word for a train track"
+       }
+      ],
+      "candidates": [
+       "HIGH",
+       "SIDE",
+       "RAIL",
+       "CART",
+       "SOME"
+      ],
+      "solutions": [
+       {
+        "link": "RAIL",
+        "compounds": {
+         "a": "HANDRAIL",
+         "b": "RAILWAY",
+         "c": "RAILROAD"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "RAIL fits every branch: HANDRAIL, RAILWAY and RAILROAD."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "MATE",
+        "clue": "A person who shares your lodgings"
+       },
+       {
+        "id": "b",
+        "prefix": "MUSH",
+        "suffix": "",
+        "clue": "A fungus with a cap, often fried for breakfast"
+       },
+       {
+        "id": "c",
+        "prefix": "BATH",
+        "suffix": "",
+        "clue": "Where you wash in a tub"
+       }
+      ],
+      "candidates": [
+       "TUBS",
+       "CELL",
+       "ROOM",
+       "SEAT",
+       "SOUL"
+      ],
+      "solutions": [
+       {
+        "link": "ROOM",
+        "compounds": {
+         "a": "ROOMMATE",
+         "b": "MUSHROOM",
+         "c": "BATHROOM"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "ROOM fits every branch: ROOMMATE, MUSHROOM and BATHROOM."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BLUE",
+        "suffix": "",
+        "clue": "A woodland flower of spring with nodding purple-blue heads"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOY",
+        "clue": "A hotel worker who carries luggage"
+       },
+       {
+        "id": "c",
+        "prefix": "DUMB",
+        "suffix": "",
+        "clue": "A weight lifted for exercise"
+       }
+      ],
+      "candidates": [
+       "LADY",
+       "HEAD",
+       "GOWN",
+       "BALL",
+       "BELL"
+      ],
+      "solutions": [
+       {
+        "link": "BELL",
+        "compounds": {
+         "a": "BLUEBELL",
+         "b": "BELLBOY",
+         "c": "DUMBBELL"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "BELL fits every branch: BLUEBELL, BELLBOY and DUMBBELL."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-g11",
+   "title": "Gentle bridges 11",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "shown",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "MID",
+        "suffix": "",
+        "clue": "Twelve o'clock after dark"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MARE",
+        "clue": "A frightening dream"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GOWN",
+        "clue": "A loose garment worn in bed"
+       }
+      ],
+      "candidates": [
+       "STORY",
+       "BRAIN",
+       "YEARS",
+       "NIGHT",
+       "POINT"
+      ],
+      "solutions": [
+       {
+        "link": "NIGHT",
+        "compounds": {
+         "a": "MIDNIGHT",
+         "b": "NIGHTMARE",
+         "c": "NIGHTGOWN"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "NIGHT fits every branch: MIDNIGHT, NIGHTMARE and NIGHTGOWN."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "PRINT",
+        "clue": "An early detailed plan for a building or machine"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BIRD",
+        "clue": "A small songbird with brilliant plumage"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BERRY",
+        "clue": "A small dark fruit often in muffins"
+       }
+      ],
+      "candidates": [
+       "WHIM",
+       "WHIP",
+       "BLUE",
+       "SNOW",
+       "FERN"
+      ],
+      "solutions": [
+       {
+        "link": "BLUE",
+        "compounds": {
+         "a": "BLUEPRINT",
+         "b": "BLUEBIRD",
+         "c": "BLUEBERRY"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BLUE fits every branch: BLUEPRINT, BLUEBIRD and BLUEBERRY."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "KEEPER",
+        "clue": "A person who owns a small store"
+       },
+       {
+        "id": "b",
+        "prefix": "BOOK",
+        "suffix": "",
+        "clue": "A store that sells novels"
+       },
+       {
+        "id": "c",
+        "prefix": "WORK",
+        "suffix": "",
+        "clue": "A room where things are made or mended"
+       }
+      ],
+      "candidates": [
+       "LESS",
+       "WEEK",
+       "BOOK",
+       "SHOP",
+       "ABLE"
+      ],
+      "solutions": [
+       {
+        "link": "SHOP",
+        "compounds": {
+         "a": "SHOPKEEPER",
+         "b": "BOOKSHOP",
+         "c": "WORKSHOP"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SHOP fits every branch: SHOPKEEPER, BOOKSHOP and WORKSHOP."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s5",
+   "title": "Standard bridges 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Cleaning and tidying at home"
+       },
+       {
+        "id": "b",
+        "prefix": "GREEN",
+        "suffix": "",
+        "clue": "A glass building for growing plants"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "HOLD",
+        "clue": "All the people living under one roof"
+       }
+      ],
+      "candidates": [
+       "STONE",
+       "WHEEL",
+       "DRAWN",
+       "FIELD",
+       "HOUSE"
+      ],
+      "solutions": [
+       {
+        "link": "HOUSE",
+        "compounds": {
+         "a": "HOUSEWORK",
+         "b": "GREENHOUSE",
+         "c": "HOUSEHOLD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HOUSE fits every branch: HOUSEWORK, GREENHOUSE and HOUSEHOLD."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BRIEF",
+        "suffix": "",
+        "clue": "A flat bag for carrying papers to work"
+       },
+       {
+        "id": "b",
+        "prefix": "SHOW",
+        "suffix": "",
+        "clue": "A glass cabinet for displaying objects"
+       },
+       {
+        "id": "c",
+        "prefix": "STAIR",
+        "suffix": "",
+        "clue": "A set of steps inside a building"
+       }
+      ],
+      "candidates": [
+       "STEP",
+       "WISE",
+       "CASE",
+       "OFFS",
+       "ABLE"
+      ],
+      "solutions": [
+       {
+        "link": "CASE",
+        "compounds": {
+         "a": "BRIEFCASE",
+         "b": "SHOWCASE",
+         "c": "STAIRCASE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "CASE fits every branch: BRIEFCASE, SHOWCASE and STAIRCASE."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HALL",
+        "suffix": "",
+        "clue": "A stamp on silver or gold guaranteeing quality"
+       },
+       {
+        "id": "b",
+        "prefix": "LAND",
+        "suffix": "",
+        "clue": "A prominent feature that helps travellers find their way"
+       },
+       {
+        "id": "c",
+        "prefix": "TRADE",
+        "suffix": "",
+        "clue": "A symbol that identifies a company's goods"
+       }
+      ],
+      "candidates": [
+       "LESS",
+       "MINE",
+       "FILL",
+       "WIND",
+       "MARK"
+      ],
+      "solutions": [
+       {
+        "link": "MARK",
+        "compounds": {
+         "a": "HALLMARK",
+         "b": "LANDMARK",
+         "c": "TRADEMARK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "MARK fits every branch: HALLMARK, LANDMARK and TRADEMARK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s6",
+   "title": "Standard bridges 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "SKATE",
+        "suffix": "",
+        "clue": "A plank on wheels that you ride"
+       },
+       {
+        "id": "b",
+        "prefix": "CARD",
+        "suffix": "",
+        "clue": "Thick stiff paper used for boxes"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WALK",
+        "clue": "A path of planks beside a beach"
+       }
+      ],
+      "candidates": [
+       "PHONE",
+       "CASES",
+       "BOARD",
+       "CROSS",
+       "SLEEP"
+      ],
+      "solutions": [
+       {
+        "link": "BOARD",
+        "compounds": {
+         "a": "SKATEBOARD",
+         "b": "CARDBOARD",
+         "c": "BOARDWALK"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BOARD fits every branch: SKATEBOARD, CARDBOARD and BOARDWALK."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DEAD",
+        "suffix": "",
+        "clue": "The last moment for finishing a task"
+       },
+       {
+        "id": "b",
+        "prefix": "HEAD",
+        "suffix": "",
+        "clue": "The large title above a newspaper report"
+       },
+       {
+        "id": "c",
+        "prefix": "LIFE",
+        "suffix": "",
+        "clue": "A rope thrown to a person in difficulty"
+       }
+      ],
+      "candidates": [
+       "WORK",
+       "LESS",
+       "LINE",
+       "LONG",
+       "LOCK"
+      ],
+      "solutions": [
+       {
+        "link": "LINE",
+        "compounds": {
+         "a": "DEADLINE",
+         "b": "HEADLINE",
+         "c": "LIFELINE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "LINE fits every branch: DEADLINE, HEADLINE and LIFELINE."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "CLOTH",
+        "clue": "A cover spread over a dining surface"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SPOON",
+        "clue": "A large spoon for serving"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "TOP",
+        "clue": "The flat upper part of a dining piece"
+       }
+      ],
+      "candidates": [
+       "TABLE",
+       "BROAD",
+       "FLOOR",
+       "WAIST",
+       "LONGS"
+      ],
+      "solutions": [
+       {
+        "link": "TABLE",
+        "compounds": {
+         "a": "TABLECLOTH",
+         "b": "TABLESPOON",
+         "c": "TABLETOP"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "TABLE fits every branch: TABLECLOTH, TABLESPOON and TABLETOP."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s7",
+   "title": "Standard bridges 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "POINT",
+        "clue": "A pen with a tiny rolling tip"
+       },
+       {
+        "id": "b",
+        "prefix": "BASE",
+        "suffix": "",
+        "clue": "A bat and glove game with four bases"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "A large hall for formal dances"
+       }
+      ],
+      "candidates": [
+       "LESS",
+       "BALL",
+       "LARD",
+       "BORN",
+       "COOK"
+      ],
+      "solutions": [
+       {
+        "link": "BALL",
+        "compounds": {
+         "a": "BALLPOINT",
+         "b": "BASEBALL",
+         "c": "BALLROOM"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "BALL fits every branch: BALLPOINT, BASEBALL and BALLROOM."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "STAR",
+        "suffix": "",
+        "clue": "A sea creature with five arms"
+       },
+       {
+        "id": "b",
+        "prefix": "SHELL",
+        "suffix": "",
+        "clue": "Crabs, prawns and mussels"
+       },
+       {
+        "id": "c",
+        "prefix": "SWORD",
+        "suffix": "",
+        "clue": "A large sea creature with a long pointed upper jaw"
+       }
+      ],
+      "candidates": [
+       "LESS",
+       "SPOT",
+       "LIKE",
+       "FISH",
+       "PLAY"
+      ],
+      "solutions": [
+       {
+        "link": "FISH",
+        "compounds": {
+         "a": "STARFISH",
+         "b": "SHELLFISH",
+         "c": "SWORDFISH"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "FISH fits every branch: STARFISH, SHELLFISH and SWORDFISH."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "ROADS",
+        "clue": "A place where two highways meet"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "WORD",
+        "clue": "A puzzle with a grid of clues"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BOW",
+        "clue": "A weapon that fires bolts, held sideways"
+       }
+      ],
+      "candidates": [
+       "BACKS",
+       "AFTER",
+       "CROSS",
+       "SUPER",
+       "WATCH"
+      ],
+      "solutions": [
+       {
+        "link": "CROSS",
+        "compounds": {
+         "a": "CROSSROADS",
+         "b": "CROSSWORD",
+         "c": "CROSSBOW"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "CROSS fits every branch: CROSSROADS, CROSSWORD and CROSSBOW."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s8",
+   "title": "Standard bridges 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CAULI",
+        "suffix": "",
+        "clue": "A vegetable with a white head and green leaves"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BED",
+        "clue": "A garden plot planted with blooms"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "POT",
+        "clue": "A container for plants on a windowsill"
+       }
+      ],
+      "candidates": [
+       "MONKEY",
+       "FLOWER",
+       "PREFAB",
+       "NIGHTS",
+       "BLACKS"
+      ],
+      "solutions": [
+       {
+        "link": "FLOWER",
+        "compounds": {
+         "a": "CAULIFLOWER",
+         "b": "FLOWERBED",
+         "c": "FLOWERPOT"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "FLOWER fits every branch: CAULIFLOWER, FLOWERBED and FLOWERPOT."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "STRAW",
+        "suffix": "",
+        "clue": "A red fruit eaten with cream at Wimbledon"
+       },
+       {
+        "id": "b",
+        "prefix": "CRAN",
+        "suffix": "",
+        "clue": "A sharp red fruit served with turkey"
+       },
+       {
+        "id": "c",
+        "prefix": "RASP",
+        "suffix": "",
+        "clue": "A red fruit made of tiny segments"
+       }
+      ],
+      "candidates": [
+       "WORMS",
+       "GOALS",
+       "BERRY",
+       "CHASE",
+       "BOARD"
+      ],
+      "solutions": [
+       {
+        "link": "BERRY",
+        "compounds": {
+         "a": "STRAWBERRY",
+         "b": "CRANBERRY",
+         "c": "RASPBERRY"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BERRY fits every branch: STRAWBERRY, CRANBERRY and RASPBERRY."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "RUN",
+        "suffix": "",
+        "clue": "A strip where planes take off"
+       },
+       {
+        "id": "b",
+        "prefix": "MOTOR",
+        "suffix": "",
+        "clue": "A fast road with several lanes"
+       },
+       {
+        "id": "c",
+        "prefix": "HIGH",
+        "suffix": "",
+        "clue": "A main road between towns"
+       }
+      ],
+      "candidates": [
+       "NET",
+       "MEN",
+       "WAY",
+       "MAN",
+       "BOY"
+      ],
+      "solutions": [
+       {
+        "link": "WAY",
+        "compounds": {
+         "a": "RUNWAY",
+         "b": "MOTORWAY",
+         "c": "HIGHWAY"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "WAY fits every branch: RUNWAY, MOTORWAY and HIGHWAY."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s9",
+   "title": "Standard bridges 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "LUNCH",
+        "suffix": "",
+        "clue": "The part of the day when sandwiches are eaten"
+       },
+       {
+        "id": "b",
+        "prefix": "PAS",
+        "suffix": "",
+        "clue": "A hobby you enjoy"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "TABLE",
+        "clue": "A chart of when lessons or trains run"
+       }
+      ],
+      "candidates": [
+       "TIES",
+       "TIER",
+       "TIME",
+       "PAIN",
+       "PAIL"
+      ],
+      "solutions": [
+       {
+        "link": "TIME",
+        "compounds": {
+         "a": "LUNCHTIME",
+         "b": "PASTIME",
+         "c": "TIMETABLE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "TIME fits every branch: LUNCHTIME, PASTIME and TIMETABLE."
+     },
+     {
+      "id": "2",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HOUSE",
+        "suffix": "",
+        "clue": "A person employed to run a home"
+       },
+       {
+        "id": "b",
+        "prefix": "TIME",
+        "suffix": "",
+        "clue": "An official who records minutes in a match"
+       },
+       {
+        "id": "c",
+        "prefix": "GOAL",
+        "suffix": "",
+        "clue": "A player who defends the net"
+       }
+      ],
+      "candidates": [
+       "GUESTS",
+       "TRAINS",
+       "SERVER",
+       "WORKER",
+       "KEEPER"
+      ],
+      "solutions": [
+       {
+        "link": "KEEPER",
+        "compounds": {
+         "a": "HOUSEKEEPER",
+         "b": "TIMEKEEPER",
+         "c": "GOALKEEPER"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "KEEPER fits every branch: HOUSEKEEPER, TIMEKEEPER and GOALKEEPER."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "IN",
+        "suffix": "",
+        "clue": "Within the walls"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "WALK",
+        "clue": "An American word for a pavement"
+       },
+       {
+        "id": "c",
+        "prefix": "OUT",
+        "suffix": "",
+        "clue": "Beyond the walls"
+       }
+      ],
+      "candidates": [
+       "FALL",
+       "SIDE",
+       "WORK",
+       "SOLE",
+       "HAUL"
+      ],
+      "solutions": [
+       {
+        "link": "SIDE",
+        "compounds": {
+         "a": "INSIDE",
+         "b": "SIDEWALK",
+         "c": "OUTSIDE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SIDE fits every branch: INSIDE, SIDEWALK and OUTSIDE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s10",
+   "title": "Standard bridges 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FRAME",
+        "suffix": "",
+        "clue": "A basic structure that supports something"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOOK",
+        "clue": "A printed volume with exercises to fill in"
+       },
+       {
+        "id": "c",
+        "prefix": "NET",
+        "suffix": "",
+        "clue": "A group of connected computers"
+       }
+      ],
+      "candidates": [
+       "PLAY",
+       "LESS",
+       "OVER",
+       "WORK",
+       "NOTE"
+      ],
+      "solutions": [
+       {
+        "link": "WORK",
+        "compounds": {
+         "a": "FRAMEWORK",
+         "b": "WORKBOOK",
+         "c": "NETWORK"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WORK fits every branch: FRAMEWORK, WORKBOOK and NETWORK."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "LORD",
+        "clue": "An owner who rents out rooms"
+       },
+       {
+        "id": "b",
+        "prefix": "IS",
+        "suffix": "",
+        "clue": "A piece of ground surrounded by sea"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SLIDE",
+        "clue": "Earth and rocks sliding down a hillside"
+       }
+      ],
+      "candidates": [
+       "LAND",
+       "OVER",
+       "SNOW",
+       "SLUM",
+       "LETS"
+      ],
+      "solutions": [
+       {
+        "link": "LAND",
+        "compounds": {
+         "a": "LANDLORD",
+         "b": "ISLAND",
+         "c": "LANDSLIDE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "LAND fits every branch: LANDLORD, ISLAND and LANDSLIDE."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "PIT",
+        "suffix": "",
+        "clue": "A hidden danger"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "Radioactive dust after an explosion"
+       },
+       {
+        "id": "c",
+        "prefix": "RAIN",
+        "suffix": "",
+        "clue": "The amount of wet weather in a year"
+       }
+      ],
+      "candidates": [
+       "WALK",
+       "WASH",
+       "DROP",
+       "FALL",
+       "LINE"
+      ],
+      "solutions": [
+       {
+        "link": "FALL",
+        "compounds": {
+         "a": "PITFALL",
+         "b": "FALLOUT",
+         "c": "RAINFALL"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "FALL fits every branch: PITFALL, FALLOUT and RAINFALL."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s11",
+   "title": "Standard bridges 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "CAGE",
+        "clue": "A wire home for a canary"
+       },
+       {
+        "id": "b",
+        "prefix": "SONG",
+        "suffix": "",
+        "clue": "A small singing creature of the trees"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SEED",
+        "clue": "Grain scattered for garden songsters"
+       }
+      ],
+      "candidates": [
+       "HEMP",
+       "BOOK",
+       "LESS",
+       "BIRD",
+       "GAPE"
+      ],
+      "solutions": [
+       {
+        "link": "BIRD",
+        "compounds": {
+         "a": "BIRDCAGE",
+         "b": "SONGBIRD",
+         "c": "BIRDSEED"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BIRD fits every branch: BIRDCAGE, SONGBIRD and BIRDSEED."
+     },
+     {
+      "id": "2",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FIRE",
+        "suffix": "",
+        "clue": "A person who puts out blazes"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "HOLE",
+        "clue": "A covered opening in a road leading underground"
+       },
+       {
+        "id": "c",
+        "prefix": "POST",
+        "suffix": "",
+        "clue": "A person who delivers letters"
+       }
+      ],
+      "candidates": [
+       "DOG",
+       "MAN",
+       "BOX",
+       "MEN",
+       "ARM"
+      ],
+      "solutions": [
+       {
+        "link": "MAN",
+        "compounds": {
+         "a": "FIREMAN",
+         "b": "MANHOLE",
+         "c": "POSTMAN"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "MAN fits every branch: FIREMAN, MANHOLE and POSTMAN."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WEIGHT",
+        "clue": "A small heavy object that stops sheets blowing away"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BACK",
+        "clue": "A book with a soft cover"
+       },
+       {
+        "id": "c",
+        "prefix": "WALL",
+        "suffix": "",
+        "clue": "Decorative sheets pasted onto a room's surfaces"
+       }
+      ],
+      "candidates": [
+       "UNDER",
+       "HEAVY",
+       "CROOK",
+       "PAPER",
+       "GREEN"
+      ],
+      "solutions": [
+       {
+        "link": "PAPER",
+        "compounds": {
+         "a": "PAPERWEIGHT",
+         "b": "PAPERBACK",
+         "c": "WALLPAPER"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "PAPER fits every branch: PAPERWEIGHT, PAPERBACK and WALLPAPER."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s12",
+   "title": "Standard bridges 12",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "ROOM",
+        "clue": "A very small spare bedroom"
+       },
+       {
+        "id": "b",
+        "prefix": "POST",
+        "suffix": "",
+        "clue": "A red pillar where letters are dropped"
+       },
+       {
+        "id": "c",
+        "prefix": "MATCH",
+        "suffix": "",
+        "clue": "A small container for lights"
+       }
+      ],
+      "candidates": [
+       "LEG",
+       "UPS",
+       "BOX",
+       "BAG",
+       "BAR"
+      ],
+      "solutions": [
+       {
+        "link": "BOX",
+        "compounds": {
+         "a": "BOXROOM",
+         "b": "POSTBOX",
+         "c": "MATCHBOX"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "BOX fits every branch: BOXROOM, POSTBOX and MATCHBOX."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "HOLE",
+        "clue": "A round window in a ship"
+       },
+       {
+        "id": "b",
+        "prefix": "AIR",
+        "suffix": "",
+        "clue": "A place where planes take off and land"
+       },
+       {
+        "id": "c",
+        "prefix": "PASS",
+        "suffix": "",
+        "clue": "A document needed to travel abroad"
+       }
+      ],
+      "candidates": [
+       "POST",
+       "SHOT",
+       "WORD",
+       "LESS",
+       "PORT"
+      ],
+      "solutions": [
+       {
+        "link": "PORT",
+        "compounds": {
+         "a": "PORTHOLE",
+         "b": "AIRPORT",
+         "c": "PASSPORT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "PORT fits every branch: PORTHOLE, AIRPORT and PASSPORT."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "FORE",
+        "suffix": "",
+        "clue": "The part of the face above the eyebrows"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "LIGHT",
+        "clue": "A lamp on the front of a car"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "MASTER",
+        "clue": "The person in charge of a school"
+       }
+      ],
+      "candidates": [
+       "FOOT",
+       "LOCK",
+       "SHIP",
+       "HEAD",
+       "YARD"
+      ],
+      "solutions": [
+       {
+        "link": "HEAD",
+        "compounds": {
+         "a": "FOREHEAD",
+         "b": "HEADLIGHT",
+         "c": "HEADMASTER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "HEAD fits every branch: FOREHEAD, HEADLIGHT and HEADMASTER."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s13",
+   "title": "Standard bridges 13",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BALL",
+        "clue": "An arcade game with flippers"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "POINT",
+        "clue": "To locate exactly"
+       },
+       {
+        "id": "c",
+        "prefix": "HAIR",
+        "suffix": "",
+        "clue": "A thin bent clip that holds a bun in place"
+       }
+      ],
+      "candidates": [
+       "CAP",
+       "PIN",
+       "DRY",
+       "NET",
+       "EYE"
+      ],
+      "solutions": [
+       {
+        "link": "PIN",
+        "compounds": {
+         "a": "PINBALL",
+         "b": "PINPOINT",
+         "c": "HAIRPIN"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PIN fits every branch: PINBALL, PINPOINT and HAIRPIN."
+     },
+     {
+      "id": "2",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WHEEL",
+        "clue": "A heavy turning disc in an engine"
+       },
+       {
+        "id": "b",
+        "prefix": "DRAGON",
+        "suffix": "",
+        "clue": "A hovering insect with a long slender body"
+       },
+       {
+        "id": "c",
+        "prefix": "FIRE",
+        "suffix": "",
+        "clue": "A beetle that glows at night"
+       }
+      ],
+      "candidates": [
+       "PAN",
+       "PIT",
+       "POT",
+       "BUG",
+       "FLY"
+      ],
+      "solutions": [
+       {
+        "link": "FLY",
+        "compounds": {
+         "a": "FLYWHEEL",
+         "b": "DRAGONFLY",
+         "c": "FIREFLY"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "FLY fits every branch: FLYWHEEL, DRAGONFLY and FIREFLY."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "DESK",
+        "suffix": "",
+        "clue": "A computer screen background, or a flat work surface"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "COAT",
+        "clue": "A final layer of paint"
+       },
+       {
+        "id": "c",
+        "prefix": "TREE",
+        "suffix": "",
+        "clue": "The highest branches of a forest giant"
+       }
+      ],
+      "candidates": [
+       "TOP",
+       "ILL",
+       "PEA",
+       "MAN",
+       "MEN"
+      ],
+      "solutions": [
+       {
+        "link": "TOP",
+        "compounds": {
+         "a": "DESKTOP",
+         "b": "TOPCOAT",
+         "c": "TREETOP"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "TOP fits every branch: DESKTOP, TOPCOAT and TREETOP."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-s14",
+   "title": "Standard bridges 14",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "OUT",
+        "clue": "A paper copy from a computer"
+       },
+       {
+        "id": "b",
+        "prefix": "THUMB",
+        "suffix": "",
+        "clue": "A mark made by pressing the digit that grips a pen"
+       },
+       {
+        "id": "c",
+        "prefix": "FINGER",
+        "suffix": "",
+        "clue": "A swirling mark that can identify a person"
+       }
+      ],
+      "candidates": [
+       "HOLES",
+       "STALL",
+       "PRINT",
+       "SHAKE",
+       "NAILS"
+      ],
+      "solutions": [
+       {
+        "link": "PRINT",
+        "compounds": {
+         "a": "PRINTOUT",
+         "b": "THUMBPRINT",
+         "c": "FINGERPRINT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "PRINT fits every branch: PRINTOUT, THUMBPRINT and FINGERPRINT."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "WATER",
+        "suffix": "",
+        "clue": "A building powered by a stream"
+       },
+       {
+        "id": "b",
+        "prefix": "TREAD",
+        "suffix": "",
+        "clue": "A running machine in a gym"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "POND",
+        "clue": "A still lake that fed a water wheel"
+       }
+      ],
+      "candidates": [
+       "FISH",
+       "STEW",
+       "LESS",
+       "MILL",
+       "DOGS"
+      ],
+      "solutions": [
+       {
+        "link": "MILL",
+        "compounds": {
+         "a": "WATERMILL",
+         "b": "TREADMILL",
+         "c": "MILLPOND"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "MILL fits every branch: WATERMILL, TREADMILL and MILLPOND."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "OVER",
+        "suffix": "",
+        "clue": "A long warm garment worn over a suit"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "RACK",
+        "clue": "A stand in a hall for outer garments"
+       },
+       {
+        "id": "c",
+        "prefix": "PETTI",
+        "suffix": "",
+        "clue": "A skirt-like undergarment"
+       }
+      ],
+      "candidates": [
+       "YEAR",
+       "MUCH",
+       "BOOK",
+       "COAT",
+       "TONE"
+      ],
+      "solutions": [
+       {
+        "link": "COAT",
+        "compounds": {
+         "a": "OVERCOAT",
+         "b": "COATRACK",
+         "c": "PETTICOAT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "COAT fits every branch: OVERCOAT, COATRACK and PETTICOAT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e5",
+   "title": "Expert bridges 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WALK",
+        "clue": "A dance glide, or a stroll on the lunar surface"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "SHINE",
+        "clue": "Illicit home-distilled spirit"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BEAM",
+        "clue": "A ray of silver light"
+       },
+       {
+        "id": "d",
+        "prefix": "HONEY",
+        "suffix": "",
+        "clue": "A holiday after the wedding"
+       }
+      ],
+      "candidates": [
+       "RACE",
+       "ROPE",
+       "CAKE",
+       "DUCK",
+       "MOON"
+      ],
+      "solutions": [
+       {
+        "link": "MOON",
+        "compounds": {
+         "a": "MOONWALK",
+         "b": "MOONSHINE",
+         "c": "MOONBEAM",
+         "d": "HONEYMOON"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "MOON fits every branch: MOONWALK, MOONSHINE, MOONBEAM and HONEYMOON."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "COMB",
+        "clue": "The wax structure where bees store their sweet food"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "DEW",
+        "clue": "A pale green melon"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SUCKLE",
+        "clue": "A climbing shrub with fragrant flowers"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BEE",
+        "clue": "An insect that makes a golden spread"
+       }
+      ],
+      "candidates": [
+       "BEACH",
+       "CURRY",
+       "WANNA",
+       "HONEY",
+       "COCKS"
+      ],
+      "solutions": [
+       {
+        "link": "HONEY",
+        "compounds": {
+         "a": "HONEYCOMB",
+         "b": "HONEYDEW",
+         "c": "HONEYSUCKLE",
+         "d": "HONEYBEE"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "HONEY fits every branch: HONEYCOMB, HONEYDEW, HONEYSUCKLE and HONEYBEE."
+     },
+     {
+      "id": "3",
+      "linkLength": 7,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "STRUCK",
+        "clue": "Completely astonished"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOLT",
+        "clue": "A lightning strike"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CLAP",
+        "clue": "A sudden loud crash from the sky"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "STORM",
+        "clue": "A violent tempest with rumbling and flashes"
+       }
+      ],
+      "candidates": [
+       "THUNDER",
+       "PLOTTER",
+       "FIGMENT",
+       "CHECKUP",
+       "REVISED"
+      ],
+      "solutions": [
+       {
+        "link": "THUNDER",
+        "compounds": {
+         "a": "THUNDERSTRUCK",
+         "b": "THUNDERBOLT",
+         "c": "THUNDERCLAP",
+         "d": "THUNDERSTORM"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "THUNDER fits every branch: THUNDERSTRUCK, THUNDERBOLT, THUNDERCLAP and THUNDERSTORM."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e6",
+   "title": "Expert bridges 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "HOPPER",
+        "clue": "A jumping insect that chirps in summer"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "LAND",
+        "clue": "Open country covered with turf"
+       },
+       {
+        "id": "c",
+        "prefix": "BLUE",
+        "suffix": "",
+        "clue": "A style of American string music"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "ROOTS",
+        "clue": "Ordinary people at the base of a movement"
+       }
+      ],
+      "candidates": [
+       "FAIRY",
+       "GRASS",
+       "BLOOD",
+       "BRUSH",
+       "LOTUS"
+      ],
+      "solutions": [
+       {
+        "link": "GRASS",
+        "compounds": {
+         "a": "GRASSHOPPER",
+         "b": "GRASSLAND",
+         "c": "BLUEGRASS",
+         "d": "GRASSROOTS"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "GRASS fits every branch: GRASSHOPPER, GRASSLAND, BLUEGRASS and GRASSROOTS."
+     },
+     {
+      "id": "2",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "LIGHT",
+        "clue": "A window in a roof"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "LINE",
+        "clue": "The outline of buildings against the heavens"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "ROCKET",
+        "clue": "To rise very quickly"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "SCRAPER",
+        "clue": "A very tall city building"
+       }
+      ],
+      "candidates": [
+       "BEE",
+       "TOW",
+       "TOP",
+       "DAY",
+       "SKY"
+      ],
+      "solutions": [
+       {
+        "link": "SKY",
+        "compounds": {
+         "a": "SKYLIGHT",
+         "b": "SKYLINE",
+         "c": "SKYROCKET",
+         "d": "SKYSCRAPER"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "SKY fits every branch: SKYLIGHT, SKYLINE, SKYROCKET and SKYSCRAPER."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "QUAKE",
+        "clue": "A violent shaking of the ground"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BOUND",
+        "clue": "Unable to leave the planet"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "RISE",
+        "clue": "The view of our planet appearing above the lunar horizon"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "A bank of soil built as a defence"
+       }
+      ],
+      "candidates": [
+       "FROST",
+       "EARTH",
+       "SHELL",
+       "HOUSE",
+       "PAPER"
+      ],
+      "solutions": [
+       {
+        "link": "EARTH",
+        "compounds": {
+         "a": "EARTHQUAKE",
+         "b": "EARTHBOUND",
+         "c": "EARTHRISE",
+         "d": "EARTHWORK"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "EARTH fits every branch: EARTHQUAKE, EARTHBOUND, EARTHRISE and EARTHWORK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e7",
+   "title": "Expert bridges 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "WHEEL",
+        "suffix": "",
+        "clue": "A seat on wheels for someone who cannot walk"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "MAN",
+        "clue": "The person who leads a meeting"
+       },
+       {
+        "id": "c",
+        "prefix": "ARM",
+        "suffix": "",
+        "clue": "A comfortable seat with supports at the sides"
+       },
+       {
+        "id": "d",
+        "prefix": "DECK",
+        "suffix": "",
+        "clue": "A folding seat of canvas for the beach"
+       }
+      ],
+      "candidates": [
+       "BANDS",
+       "CHAIR",
+       "HOUSE",
+       "HORSE",
+       "LOCKS"
+      ],
+      "solutions": [
+       {
+        "link": "CHAIR",
+        "compounds": {
+         "a": "WHEELCHAIR",
+         "b": "CHAIRMAN",
+         "c": "ARMCHAIR",
+         "d": "DECKCHAIR"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "CHAIR fits every branch: WHEELCHAIR, CHAIRMAN, ARMCHAIR and DECKCHAIR."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "MAKER",
+        "clue": "A person who controls who gets power"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FISHER",
+        "clue": "A bright blue bird that dives for minnows"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "DOM",
+        "clue": "A land ruled by a monarch"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "PIN",
+        "clue": "The most important person in a group"
+       }
+      ],
+      "candidates": [
+       "PAPA",
+       "NEWS",
+       "FILM",
+       "KING",
+       "HEIR"
+      ],
+      "solutions": [
+       {
+        "link": "KING",
+        "compounds": {
+         "a": "KINGMAKER",
+         "b": "KINGFISHER",
+         "c": "KINGDOM",
+         "d": "KINGPIN"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "KING fits every branch: KINGMAKER, KINGFISHER, KINGDOM and KINGPIN."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "WOOD",
+        "clue": "A giant Californian tree"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "BREAST",
+        "clue": "A garden bird with an orange chest"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CURRANT",
+        "clue": "A small sharp berry in jelly"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HEAD",
+        "clue": "A person with ginger hair"
+       }
+      ],
+      "candidates": [
+       "EGG",
+       "SAP",
+       "RED",
+       "FAT",
+       "BIG"
+      ],
+      "solutions": [
+       {
+        "link": "RED",
+        "compounds": {
+         "a": "REDWOOD",
+         "b": "REDBREAST",
+         "c": "REDCURRANT",
+         "d": "REDHEAD"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "RED fits every branch: REDWOOD, REDBREAST, REDCURRANT and REDHEAD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e8",
+   "title": "Expert bridges 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "GINGER",
+        "suffix": "",
+        "clue": "A spicy cake shaped into little men"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "CRUMB",
+        "clue": "A tiny scrap of baked loaf"
+       },
+       {
+        "id": "c",
+        "prefix": "SHORT",
+        "suffix": "",
+        "clue": "A crumbly Scottish biscuit"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WINNER",
+        "clue": "The person who earns the family's money"
+       }
+      ],
+      "candidates": [
+       "BREAD",
+       "WAVES",
+       "ROOTS",
+       "HANDS",
+       "CRUST"
+      ],
+      "solutions": [
+       {
+        "link": "BREAD",
+        "compounds": {
+         "a": "GINGERBREAD",
+         "b": "BREADCRUMB",
+         "c": "SHORTBREAD",
+         "d": "BREADWINNER"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "BREAD fits every branch: GINGERBREAD, BREADCRUMB, SHORTBREAD and BREADWINNER."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "BOARD",
+        "clue": "A classroom panel for erasable pens"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "WASH",
+        "clue": "Lime paint for walls, or a cover-up"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "FLY",
+        "clue": "A tiny winged garden pest"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BAIT",
+        "clue": "Tiny fish fried and eaten whole"
+       }
+      ],
+      "candidates": [
+       "STONE",
+       "BLOCK",
+       "WHITE",
+       "BLACK",
+       "GREEN"
+      ],
+      "solutions": [
+       {
+        "link": "WHITE",
+        "compounds": {
+         "a": "WHITEBOARD",
+         "b": "WHITEWASH",
+         "c": "WHITEFLY",
+         "d": "WHITEBAIT"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "WHITE fits every branch: WHITEBOARD, WHITEWASH, WHITEFLY and WHITEBAIT."
+     },
+     {
+      "id": "3",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "GROUND",
+        "clue": "Beneath the surface, or the tube railway"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "WEAR",
+        "clue": "Clothes worn next to the skin"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "PASS",
+        "clue": "A tunnel for walkers beneath a road"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LINE",
+        "clue": "To draw a line below a word"
+       }
+      ],
+      "candidates": [
+       "STORY",
+       "DANCE",
+       "UNDER",
+       "SLEEP",
+       "STRAP"
+      ],
+      "solutions": [
+       {
+        "link": "UNDER",
+        "compounds": {
+         "a": "UNDERGROUND",
+         "b": "UNDERWEAR",
+         "c": "UNDERPASS",
+         "d": "UNDERLINE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "UNDER fits every branch: UNDERGROUND, UNDERWEAR, UNDERPASS and UNDERLINE."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e9",
+   "title": "Expert bridges 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "PECKER",
+        "clue": "A bird that drums its beak on trees"
+       },
+       {
+        "id": "b",
+        "prefix": "FIRE",
+        "suffix": "",
+        "clue": "Logs for the grate"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WORK",
+        "clue": "Skill with timber, such as carpentry"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "LAND",
+        "clue": "An area covered with trees"
+       }
+      ],
+      "candidates": [
+       "WOOD",
+       "BACK",
+       "BOOK",
+       "FARM",
+       "HOME"
+      ],
+      "solutions": [
+       {
+        "link": "WOOD",
+        "compounds": {
+         "a": "WOODPECKER",
+         "b": "FIREWOOD",
+         "c": "WOODWORK",
+         "d": "WOODLAND"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "WOOD fits every branch: WOODPECKER, FIREWOOD, WOODWORK and WOODLAND."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "RAIN",
+        "suffix": "",
+        "clue": "A heavy downpour"
+       },
+       {
+        "id": "b",
+        "prefix": "SNOW",
+        "suffix": "",
+        "clue": "A heavy fall of white flakes in a gale"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CLOUD",
+        "clue": "A dark mass that brings heavy rain"
+       },
+       {
+        "id": "d",
+        "prefix": "BRAIN",
+        "suffix": "",
+        "clue": "A burst of creative thinking"
+       }
+      ],
+      "candidates": [
+       "DROPS",
+       "STORM",
+       "FALLS",
+       "BIRDS",
+       "MAKER"
+      ],
+      "solutions": [
+       {
+        "link": "STORM",
+        "compounds": {
+         "a": "RAINSTORM",
+         "b": "SNOWSTORM",
+         "c": "STORMCLOUD",
+         "d": "BRAINSTORM"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "STORM fits every branch: RAINSTORM, SNOWSTORM, STORMCLOUD and BRAINSTORM."
+     },
+     {
+      "id": "3",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "PEN",
+        "suffix": "",
+        "clue": "A person you write to abroad"
+       },
+       {
+        "id": "b",
+        "prefix": "GIRL",
+        "suffix": "",
+        "clue": "A female partner"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "SHIP",
+        "clue": "The bond between people who like one another"
+       },
+       {
+        "id": "d",
+        "prefix": "BOY",
+        "suffix": "",
+        "clue": "A male partner"
+       }
+      ],
+      "candidates": [
+       "HERALD",
+       "WARDEN",
+       "MASTER",
+       "FRIEND",
+       "EDITOR"
+      ],
+      "solutions": [
+       {
+        "link": "FRIEND",
+        "compounds": {
+         "a": "PENFRIEND",
+         "b": "GIRLFRIEND",
+         "c": "FRIENDSHIP",
+         "d": "BOYFRIEND"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "FRIEND fits every branch: PENFRIEND, GIRLFRIEND, FRIENDSHIP and BOYFRIEND."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e10",
+   "title": "Expert bridges 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "NAIL",
+        "clue": "The hard covering on the tip of a digit"
+       },
+       {
+        "id": "b",
+        "prefix": "LADY",
+        "suffix": "",
+        "clue": "A light sponge biscuit"
+       },
+       {
+        "id": "c",
+        "prefix": "FORE",
+        "suffix": "",
+        "clue": "The one next to your thumb"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "TIP",
+        "clue": "The end of a digit"
+       }
+      ],
+      "candidates": [
+       "SHOCKS",
+       "JUDGES",
+       "HANDED",
+       "FINGER",
+       "WARNED"
+      ],
+      "solutions": [
+       {
+        "link": "FINGER",
+        "compounds": {
+         "a": "FINGERNAIL",
+         "b": "LADYFINGER",
+         "c": "FOREFINGER",
+         "d": "FINGERTIP"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "FINGER fits every branch: FINGERNAIL, LADYFINGER, FOREFINGER and FINGERTIP."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "LACE",
+        "clue": "A string of beads worn round the throat"
+       },
+       {
+        "id": "b",
+        "prefix": "BOTTLE",
+        "suffix": "",
+        "clue": "A narrow place where traffic slows"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "LINE",
+        "clue": "The edge of a garment at the throat"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "TIE",
+        "clue": "A strip of cloth knotted under a collar"
+       }
+      ],
+      "candidates": [
+       "NECK",
+       "PLOT",
+       "FLAT",
+       "TRAP",
+       "NOSE"
+      ],
+      "solutions": [
+       {
+        "link": "NECK",
+        "compounds": {
+         "a": "NECKLACE",
+         "b": "BOTTLENECK",
+         "c": "NECKLINE",
+         "d": "NECKTIE"
+        }
+       }
+      ],
+      "hintBranch": "c",
+      "explanation": "NECK fits every branch: NECKLACE, BOTTLENECK, NECKLINE and NECKTIE."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "HOT",
+        "suffix": "",
+        "clue": "A sausage in a bun"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "HOUSE",
+        "clue": "A small kennel in the garden"
+       },
+       {
+        "id": "c",
+        "prefix": "BULL",
+        "suffix": "",
+        "clue": "A stocky breed with a wrinkled face"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "WOOD",
+        "clue": "A shrub with red stems"
+       }
+      ],
+      "candidates": [
+       "POT",
+       "BAR",
+       "DOG",
+       "NUT",
+       "BOX"
+      ],
+      "solutions": [
+       {
+        "link": "DOG",
+        "compounds": {
+         "a": "HOTDOG",
+         "b": "DOGHOUSE",
+         "c": "BULLDOG",
+         "d": "DOGWOOD"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "DOG fits every branch: HOTDOG, DOGHOUSE, BULLDOG and DOGWOOD."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e11",
+   "title": "Expert bridges 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "BUMBLE",
+        "suffix": "",
+        "clue": "A large furry insect that buzzes"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "LINE",
+        "clue": "The shortest route"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "KEEPER",
+        "clue": "A person who looks after hives"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HIVE",
+        "clue": "A box where honey-makers live"
+       }
+      ],
+      "candidates": [
+       "HOT",
+       "RED",
+       "ANI",
+       "BEE",
+       "AIR"
+      ],
+      "solutions": [
+       {
+        "link": "BEE",
+        "compounds": {
+         "a": "BUMBLEBEE",
+         "b": "BEELINE",
+         "c": "BEEKEEPER",
+         "d": "BEEHIVE"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "BEE fits every branch: BUMBLEBEE, BEELINE, BEEKEEPER and BEEHIVE."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "SAUCE",
+        "clue": "A puree served with pork"
+       },
+       {
+        "id": "b",
+        "prefix": "PINE",
+        "suffix": "",
+        "clue": "A spiky tropical fruit with sweet yellow flesh"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CART",
+        "clue": "A barrow of fruit, which you should not upset"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "JACK",
+        "clue": "A strong drink made from cider"
+       }
+      ],
+      "candidates": [
+       "LANCE",
+       "CROSS",
+       "APPLE",
+       "CONES",
+       "UNDER"
+      ],
+      "solutions": [
+       {
+        "link": "APPLE",
+        "compounds": {
+         "a": "APPLESAUCE",
+         "b": "PINEAPPLE",
+         "c": "APPLECART",
+         "d": "APPLEJACK"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "APPLE fits every branch: APPLESAUCE, PINEAPPLE, APPLECART and APPLEJACK."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "HEN",
+        "clue": "The female of the bird with the showy tail"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "NUT",
+        "clue": "A small snack that grows underground"
+       },
+       {
+        "id": "c",
+        "prefix": "CHICK",
+        "suffix": "",
+        "clue": "The main ingredient in hummus"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "COCK",
+        "clue": "A bird with a magnificent fan-shaped tail"
+       }
+      ],
+      "candidates": [
+       "HAY",
+       "HOG",
+       "WAS",
+       "MUD",
+       "PEA"
+      ],
+      "solutions": [
+       {
+        "link": "PEA",
+        "compounds": {
+         "a": "PEAHEN",
+         "b": "PEANUT",
+         "c": "CHICKPEA",
+         "d": "PEACOCK"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "PEA fits every branch: PEAHEN, PEANUT, CHICKPEA and PEACOCK."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e12",
+   "title": "Expert bridges 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "CHEST",
+        "suffix": "",
+        "clue": "A brown kernel roasted on an open fire"
+       },
+       {
+        "id": "b",
+        "prefix": "COCO",
+        "suffix": "",
+        "clue": "A hairy tropical fruit with white flesh"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "CRACKER",
+        "clue": "A tool for breaking shells"
+       },
+       {
+        "id": "d",
+        "prefix": "WAL",
+        "suffix": "",
+        "clue": "A wrinkly brain-shaped kernel"
+       }
+      ],
+      "candidates": [
+       "NUT",
+       "LIE",
+       "LED",
+       "LOW",
+       "LOP"
+      ],
+      "solutions": [
+       {
+        "link": "NUT",
+        "compounds": {
+         "a": "CHESTNUT",
+         "b": "COCONUT",
+         "c": "NUTCRACKER",
+         "d": "WALNUT"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "NUT fits every branch: CHESTNUT, COCONUT, NUTCRACKER and WALNUT."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EVER",
+        "suffix": "",
+        "clue": "A tree that keeps its leaves all year"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FLY",
+        "clue": "A tiny garden pest that sucks sap"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "GROCER",
+        "clue": "A person who sells vegetables"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "HORN",
+        "clue": "An inexperienced person"
+       }
+      ],
+      "candidates": [
+       "STONE",
+       "WHITE",
+       "BLACK",
+       "STINK",
+       "GREEN"
+      ],
+      "solutions": [
+       {
+        "link": "GREEN",
+        "compounds": {
+         "a": "EVERGREEN",
+         "b": "GREENFLY",
+         "c": "GREENGROCER",
+         "d": "GREENHORN"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "GREEN fits every branch: EVERGREEN, GREENFLY, GREENGROCER and GREENHORN."
+     },
+     {
+      "id": "3",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "TAKE",
+        "suffix": "",
+        "clue": "The buying of one company by another"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "TIME",
+        "clue": "Extra hours of work"
+       },
+       {
+        "id": "c",
+        "prefix": "HANG",
+        "suffix": "",
+        "clue": "The sore head after too much to drink"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "NIGHT",
+        "clue": "Lasting until the following morning"
+       }
+      ],
+      "candidates": [
+       "OVER",
+       "ABLE",
+       "OUTS",
+       "GOOD",
+       "FORE"
+      ],
+      "solutions": [
+       {
+        "link": "OVER",
+        "compounds": {
+         "a": "TAKEOVER",
+         "b": "OVERTIME",
+         "c": "HANGOVER",
+         "d": "OVERNIGHT"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "OVER fits every branch: TAKEOVER, OVERTIME, HANGOVER and OVERNIGHT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e13",
+   "title": "Expert bridges 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "POUR",
+        "clue": "A very heavy shower"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "HILL",
+        "clue": "Sloping towards the bottom"
+       },
+       {
+        "id": "c",
+        "prefix": "BREAK",
+        "suffix": "",
+        "clue": "A failure of an engine"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "STAIRS",
+        "clue": "On a lower floor"
+       }
+      ],
+      "candidates": [
+       "ABLE",
+       "SIDE",
+       "DOWN",
+       "BACK",
+       "WANT"
+      ],
+      "solutions": [
+       {
+        "link": "DOWN",
+        "compounds": {
+         "a": "DOWNPOUR",
+         "b": "DOWNHILL",
+         "c": "BREAKDOWN",
+         "d": "DOWNSTAIRS"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "DOWN fits every branch: DOWNPOUR, DOWNHILL, BREAKDOWN and DOWNSTAIRS."
+     },
+     {
+      "id": "2",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "HOUSE",
+        "clue": "A building for tender plants"
+       },
+       {
+        "id": "b",
+        "prefix": "WINE",
+        "suffix": "",
+        "clue": "A stemmed vessel for claret"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WARE",
+        "clue": "Tumblers and jugs"
+       },
+       {
+        "id": "d",
+        "prefix": "HOUR",
+        "suffix": "",
+        "clue": "A timer with falling sand"
+       }
+      ],
+      "candidates": [
+       "STONE",
+       "POWER",
+       "GLASS",
+       "CHINA",
+       "METAL"
+      ],
+      "solutions": [
+       {
+        "link": "GLASS",
+        "compounds": {
+         "a": "GLASSHOUSE",
+         "b": "WINEGLASS",
+         "c": "GLASSWARE",
+         "d": "HOURGLASS"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "GLASS fits every branch: GLASSHOUSE, WINEGLASS, GLASSWARE and HOURGLASS."
+     },
+     {
+      "id": "3",
+      "linkLength": 3,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "NAP",
+        "clue": "A brief doze"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "FISH",
+        "clue": "A river creature with whiskers"
+       },
+       {
+        "id": "c",
+        "prefix": "BOB",
+        "suffix": "",
+        "clue": "A North American feline with a short tail"
+       },
+       {
+        "id": "d",
+        "prefix": "POLE",
+        "suffix": "",
+        "clue": "A small smelly relative of the weasel"
+       }
+      ],
+      "candidates": [
+       "RAG",
+       "BAT",
+       "DOG",
+       "CAT",
+       "INK"
+      ],
+      "solutions": [
+       {
+        "link": "CAT",
+        "compounds": {
+         "a": "CATNAP",
+         "b": "CATFISH",
+         "c": "BOBCAT",
+         "d": "POLECAT"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "CAT fits every branch: CATNAP, CATFISH, BOBCAT and POLECAT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ml-e14",
+   "title": "Expert bridges 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "bank": "optional",
+    "boards": [
+     {
+      "id": "1",
+      "linkLength": 5,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EGG",
+        "suffix": "",
+        "clue": "The brittle covering of a breakfast food"
+       },
+       {
+        "id": "b",
+        "prefix": "NUT",
+        "suffix": "",
+        "clue": "The hard outside of a kernel"
+       },
+       {
+        "id": "c",
+        "prefix": "BOMB",
+        "suffix": "",
+        "clue": "A shocking piece of news"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "FIRE",
+        "clue": "Bombardment by artillery"
+       }
+      ],
+      "candidates": [
+       "CASES",
+       "SHELL",
+       "GALLS",
+       "HEADS",
+       "MEATS"
+      ],
+      "solutions": [
+       {
+        "link": "SHELL",
+        "compounds": {
+         "a": "EGGSHELL",
+         "b": "NUTSHELL",
+         "c": "BOMBSHELL",
+         "d": "SHELLFIRE"
+        }
+       }
+      ],
+      "hintBranch": "b",
+      "explanation": "SHELL fits every branch: EGGSHELL, NUTSHELL, BOMBSHELL and SHELLFIRE."
+     },
+     {
+      "id": "2",
+      "linkLength": 4,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "EAR",
+        "suffix": "",
+        "clue": "Jewellery worn on a lobe"
+       },
+       {
+        "id": "b",
+        "prefix": "",
+        "suffix": "LEADER",
+        "clue": "The chief of a group causing trouble"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "WORM",
+        "clue": "A skin infection that is not caused by a creature"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "TONE",
+        "clue": "The sound a mobile makes when called"
+       }
+      ],
+      "candidates": [
+       "LAPS",
+       "GUNS",
+       "RING",
+       "WOOD",
+       "RAGS"
+      ],
+      "solutions": [
+       {
+        "link": "RING",
+        "compounds": {
+         "a": "EARRING",
+         "b": "RINGLEADER",
+         "c": "RINGWORM",
+         "d": "RINGTONE"
+        }
+       }
+      ],
+      "hintBranch": "d",
+      "explanation": "RING fits every branch: EARRING, RINGLEADER, RINGWORM and RINGTONE."
+     },
+     {
+      "id": "3",
+      "linkLength": 6,
+      "branches": [
+       {
+        "id": "a",
+        "prefix": "",
+        "suffix": "TIME",
+        "clue": "The season when daffodils bloom"
+       },
+       {
+        "id": "b",
+        "prefix": "MAIN",
+        "suffix": "",
+        "clue": "The chief coil that drives a clock"
+       },
+       {
+        "id": "c",
+        "prefix": "",
+        "suffix": "BOARD",
+        "clue": "A flexible plank for diving"
+       },
+       {
+        "id": "d",
+        "prefix": "",
+        "suffix": "BOK",
+        "clue": "A South African antelope"
+       }
+      ],
+      "candidates": [
+       "STRING",
+       "CENTRE",
+       "SPRING",
+       "BRACES",
+       "WINTER"
+      ],
+      "solutions": [
+       {
+        "link": "SPRING",
+        "compounds": {
+         "a": "SPRINGTIME",
+         "b": "MAINSPRING",
+         "c": "SPRINGBOARD",
+         "d": "SPRINGBOK"
+        }
+       }
+      ],
+      "hintBranch": "a",
+      "explanation": "SPRING fits every branch: SPRINGTIME, MAINSPRING, SPRINGBOARD and SPRINGBOK."
+     }
+    ]
+   }
   }
  ]
 }

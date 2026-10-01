@@ -20,6 +20,7 @@ export function validateContent(): string[] {
   const membership = loadMembershipSync();
   const perDifficulty: Record<string, number> = {};
   const links = new Map<string, string>();
+  const clues = new Map<string, string>();
   for (const { meta, payload } of rounds) {
     perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
     const practice = meta.status !== "demo";
@@ -43,6 +44,8 @@ export function validateContent(): string[] {
         if (blanks !== 1) problems.push(`${at(f)}: template must have exactly one blank (prefix or suffix empty, not both)`);
         if (!/^[A-Z]*$/.test(br.prefix + br.suffix)) problems.push(`${at(f)}: components must be upper-case A-Z with no spaces`);
         if (!br.clue || br.clue.length < 4) problems.push(`${at(f)}.clue: missing definition`);
+        if (clues.has(br.clue)) problems.push(`${at(f)}.clue: repeats a clue already used in ${clues.get(br.clue)}`);
+        clues.set(br.clue, meta.id);
         if (/—/.test(br.clue)) problems.push(`${at(f)}.clue: em dash in user-facing copy`);
       });
       if (!b.solutions.length) problems.push(`${at("solutions")}: no accepted link`);
@@ -82,6 +85,6 @@ export function validateContent(): string[] {
       if (!mixed) problems.push(`${meta.id}: ${meta.difficulty} rounds need at least one board mixing before and after blanks`);
     }
   }
-  for (const d of ["gentle", "standard", "expert"]) if (!perDifficulty[d]) problems.push(`no ${d} rounds`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 ${d} rounds`);
   return problems;
 }
