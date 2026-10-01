@@ -13,6 +13,7 @@ import { plural } from "@/lib/text";
 import {
   DEVICE_LABEL,
   DEVICES,
+  deviceDetail,
   enumerationLengths,
   explainOperation,
   fodderHint,
@@ -82,6 +83,9 @@ export type WorkshopAction =
 /** Gentle names the device up front, so that stage is given rather than taken. */
 export const deviceGiven = (s: Pick<WorkshopState, "mode">) => s.mode === "gentle";
 
+/** Master offers no device list at all: naming the trick is part of the solve. The hint ladder still names it on request. */
+export const deviceListOffered = (s: Pick<WorkshopState, "mode">) => s.mode !== "master";
+
 export function clueById(s: WorkshopState, id: string): WorkshopClue | undefined {
   return s.clues.find((c) => c.id === id);
 }
@@ -113,9 +117,15 @@ export function stageText(clue: WorkshopClue, stage: number): string {
     case STAGE_DEFINITION:
       return clue.construction.type === "double-definition"
         ? `"${clue.definition}" is one definition; the clue holds a second.`
-        : `The definition is "${clue.definition}".`;
+        : clue.lit === "full"
+          ? "The whole clue is the definition, and the wordplay is in it too (an &lit)."
+          : clue.construction.type === "cryptic-definition"
+            ? "The whole clue is the definition."
+            : clue.lit === "semi"
+              ? `The definition is "${clue.definition}", which runs on into the wordplay (a semi-&lit).`
+              : `The definition is "${clue.definition}".`;
     case STAGE_DEVICE:
-      return `The device is: ${DEVICE_LABEL[clue.construction.type]}.`;
+      return `The device is: ${deviceDetail(clue)}.`;
     case STAGE_INDICATOR:
       return indicatorHint(clue);
     case STAGE_FODDER:
@@ -251,6 +261,7 @@ export const crypticWorkshopEngine: GameEngine<WorkshopPayload, WorkshopState, W
       case "identify": {
         if (!DEVICES.includes(action.device)) return reject(state, "unknown-device", "That is not one of the listed devices.");
         if (deviceGiven(state)) return reject(state, "device-given", "Gentle clues name their device already.");
+        if (!deviceListOffered(state)) return reject(state, "device-list-unavailable", "Master clues offer no device list. The hint ladder names the device when you ask for it.");
         const correct = clue.construction.type;
         if (p.guesses.includes(correct)) return reject(state, "device-known", `You have already named the device for clue ${idx}.`);
         if (p.guesses.includes(action.device)) return reject(state, "device-repeat", `You have already tried ${DEVICE_LABEL[action.device]} for clue ${idx}.`);
@@ -315,14 +326,16 @@ export const crypticWorkshopEngine: GameEngine<WorkshopPayload, WorkshopState, W
       hints ? `${plural(hints, "hint")} taken. Hints cost no points: learning the trick is the point.` : "No hints taken.",
       state.mode === "gentle"
         ? "Gentle clues name their device, so there was no device practice this round."
-        : guessed.length
+        : state.mode === "master"
+          ? "Master clues offer no device list, so there was no device practice this round."
+          : guessed.length
           ? `Device practice: named the device first time on ${firstTry} of ${plural(guessed.length, "clue")} you tried.`
           : "Device practice was not tried this round; it is optional.",
       ...(revealed.length ? [`Revealed clues score 0 and mark the round as assisted.`] : []),
     ];
     const explanation = state.clues.map((c, i) => {
       const how = explainOperation(c);
-      return `${i + 1}. ${c.text} ${enumerationText(c)}: ${c.answer}. Definition "${c.definition}". ${DEVICE_LABEL[c.construction.type]}. ${how}${c.note ? ` ${c.note}` : ""}`;
+      return `${i + 1}. ${c.text} ${enumerationText(c)}: ${c.answer}. Definition "${c.definition}". ${deviceDetail(c)}. ${how}${c.note ? ` ${c.note}` : ""}`;
     });
     return {
       outcome,

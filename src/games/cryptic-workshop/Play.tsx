@@ -8,6 +8,7 @@ import {
   clueById,
   crypticWorkshopEngine as engine,
   deviceGiven,
+  deviceListOffered,
   enumerationText,
   hintOffersFor,
   nextStage,
@@ -29,6 +30,7 @@ import {
 import {
   DEVICE_LABEL,
   DEVICES,
+  deviceDetail,
   explainOperation,
   findPhrase,
   HELP_EXAMPLES,
@@ -304,11 +306,13 @@ function Workshop({ bundle, siblings }: { bundle: RoundBundle<WorkshopPayload>; 
             </p>
 
             <section className="cw-device" aria-labelledby="cw-device-h">
-              <h3 id="cw-device-h">{deviceGiven(state) ? "Device" : "What kind of clue is it? (optional practice)"}</h3>
+              <h3 id="cw-device-h">{deviceGiven(state) ? "Device" : deviceListOffered(state) ? "What kind of clue is it? (optional practice)" : "What is the trick?"}</h3>
               {deviceGiven(state) ? (
                 <p>
                   <strong>{DEVICE_LABEL[device]}</strong>: {deviceBlurb(device)}
                 </p>
+              ) : !deviceListOffered(state) ? (
+                <p className="cw-muted">Master clues offer no device list. Work out the trick yourself; the hint ladder will name it if you ask.</p>
               ) : devicesOpen ? (
                 <div className="cw-device-list" role="group" aria-label="Choose a device">
                   {DEVICES.map((d) => {
@@ -376,15 +380,16 @@ function Workshop({ bundle, siblings }: { bundle: RoundBundle<WorkshopPayload>; 
             <dl>
               <dt>Definition</dt>
               <dd>
-                “{active.definition}”
+                {active.lit === "full" || active.construction.type === "cryptic-definition" ? "The whole clue" : `“${active.definition}”`}
+                {active.lit === "full" ? " (&lit: the wordplay is also the definition)" : active.lit === "semi" ? " (semi-&lit: it runs on into the wordplay)" : ""}
                 {active.construction.type === "double-definition" ? ` and “${active.construction.second}”` : ""}
               </dd>
               <dt>Device</dt>
-              <dd>{DEVICE_LABEL[device]}</dd>
+              <dd>{deviceDetail(active)}</dd>
               <dt>Indicator</dt>
-              <dd>{active.indicators.length ? active.indicators.map((i) => `“${i}”`).join(", ") : "None: the parts sit side by side"}</dd>
+              <dd>{active.indicators.length ? active.indicators.map((i) => `“${i}”`).join(", ") : device === "cryptic-definition" ? "None: there is no wordplay" : "None: the parts sit side by side"}</dd>
               <dt>Wordplay material</dt>
-              <dd>{wordplaySources(active.construction).map((w) => `“${w}”`).join(" + ")}</dd>
+              <dd>{wordplaySources(active.construction).length ? wordplaySources(active.construction).map((w) => `“${w}”`).join(" + ") : "None: a cryptic definition has no wordplay"}</dd>
               <dt>How it works</dt>
               <dd>{explainOperation(active)}</dd>
               {active.note ? (

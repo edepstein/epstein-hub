@@ -9,6 +9,12 @@
  * lists what cannot (synonyms, homophones) as editorial checks.
  */
 
+import { ABBREVIATIONS, findPhrase, normaliseLetters, reverse, sortLetters, type Span } from "./clue-text";
+import { describeTree, treeIndicators, treeLetters, treeOps, treeSources, verifyCompound, type Node } from "./tree";
+
+export { ABBREVIATIONS, findPhrase, normaliseLetters };
+export type { Span, Node };
+
 export type Device =
   | "anagram"
   | "hidden"
@@ -18,7 +24,9 @@ export type Device =
   | "deletion"
   | "initials"
   | "double-definition"
-  | "homophone";
+  | "homophone"
+  | "compound"
+  | "cryptic-definition";
 
 export const DEVICES: readonly Device[] = [
   "anagram",
@@ -30,6 +38,8 @@ export const DEVICES: readonly Device[] = [
   "initials",
   "double-definition",
   "homophone",
+  "compound",
+  "cryptic-definition",
 ];
 
 export const DEVICE_LABEL: Record<Device, string> = {
@@ -42,6 +52,8 @@ export const DEVICE_LABEL: Record<Device, string> = {
   initials: "Initial letters",
   "double-definition": "Double definition",
   homophone: "Homophone",
+  compound: "Compound",
+  "cryptic-definition": "Cryptic definition",
 };
 
 /** One-sentence explanation of each device, used in hints and the help card. */
@@ -55,6 +67,8 @@ export const DEVICE_EXPLAINER: Record<Device, string> = {
   initials: "the first letters of some words spell the answer",
   "double-definition": "two separate definitions of the same word sit side by side",
   homophone: "the answer sounds like another word",
+  compound: "several operations are nested: the result of one becomes the material for the next",
+  "cryptic-definition": "there is no wordplay: the whole clue is one deliberately misleading definition",
 };
 
 /** Allowed indicator phrases per device (house list; extend deliberately, with review). */
@@ -68,15 +82,8 @@ export const INDICATORS: Record<Device, readonly string[]> = {
   initials: ["initially", "at first", "leaders of"],
   "double-definition": [],
   homophone: ["we hear", "sounds like", "reportedly", "on the radio"],
-};
-
-/** Allowed abbreviations (source phrase, lower case) -> letters. Keep to familiar ones. */
-export const ABBREVIATIONS: Record<string, readonly string[]> = {
-  thanks: ["TA"],
-  ring: ["O"],
-  energy: ["E"],
-  time: ["T"],
-  quiet: ["P"],
+  compound: [],
+  "cryptic-definition": [],
 };
 
 export type PartVia = "literal" | "synonym" | "abbreviation" | "anagram" | "reversal";
@@ -98,7 +105,11 @@ export type Construction =
   | { type: "deletion"; source: Part; remove: "first" | "last" }
   | { type: "initials"; fodder: string }
   | { type: "double-definition"; second: string }
-  | { type: "homophone"; soundsLike: Part; pronunciationNote: string };
+  | { type: "homophone"; soundsLike: Part; pronunciationNote: string }
+  /** Nested operations (anagram inside a charade, a reversed container, ...). See tree.ts. */
+  | { type: "compound"; root: Node }
+  /** No wordplay: the whole clue is one misleading definition. Flagged honestly to editors and players. */
+  | { type: "cryptic-definition" };
 
 export interface CrypticClue {
   /** Surface reading without the enumeration. */
@@ -112,44 +123,13 @@ export interface CrypticClue {
   /** Exact indicator phrases from the text (may be empty for charades and double definitions). */
   indicators: string[];
   construction: Construction;
+  /**
+   * &lit ("full": the whole clue is both definition and wordplay) or semi-&lit ("semi": the
+   * definition runs from one end into the wordplay). Compound clues only.
+   */
+  lit?: "full" | "semi";
   /** Optional authored remark shown in the explanation. */
   note?: string;
-}
-
-export const normaliseLetters = (s: string) =>
-  s
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toUpperCase()
-    .replace(/[^A-Z]/g, "");
-
-const sortLetters = (s: string) => [...s].sort().join("");
-const reverse = (s: string) => [...s].reverse().join("");
-
-export interface Span {
-  start: number;
-  end: number;
-}
-
-/**
- * Every whole-word, case-insensitive occurrence of `phrase` in `text`.
- * "in" does not match inside "interior".
- */
-export function findPhrase(text: string, phrase: string): Span[] {
-  const out: Span[] = [];
-  if (!phrase.trim()) return out;
-  const hay = text.toLowerCase();
-  const needle = phrase.toLowerCase();
-  let from = 0;
-  for (;;) {
-    const i = hay.indexOf(needle, from);
-    if (i < 0) break;
-    const before = i === 0 ? "" : hay[i - 1];
-    const after = hay[i + needle.length] ?? "";
-    if (!/[a-z]/.test(before) && !/[a-z]/.test(after)) out.push({ start: i, end: i + needle.length });
-    from = i + 1;
-  }
-  return out;
 }
 
 export function enumerationLengths(enumeration: string): number[] {
@@ -175,6 +155,10 @@ export function wordplaySources(c: Construction): string[] {
       return [c.second];
     case "homophone":
       return [c.soundsLike.source];
+    case "compound":
+      return treeSources(c.root);
+    case "cryptic-definition":
+      return [];
   }
 }
 
@@ -231,7 +215,10 @@ export function wordplayLetters(c: Construction, answerLength: number): string |
         .join("");
     case "double-definition":
     case "homophone":
+    case "cryptic-definition":
       return null;
+    case "compound":
+      return treeLetters(c.root);
   }
 }
 
@@ -244,6 +231,22 @@ export function verifyClue(clue: CrypticClue, where = "clue"): ClueCheck {
   if (lens.some((n) => !Number.isInteger(n) || n < 1)) problems.push(`${where}.enumeration: "${clue.enumeration}" is malformed`);
   else if (lens.reduce((a, b) => a + b, 0) !== answer.length) problems.push(`${where}.enumeration: ${clue.enumeration} does not total ${answer.length} letters`);
   if (/\(\d/.test(text)) problems.push(`${where}.text: must not include the enumeration`);
+  if (clue.lit && c.type !== "compound") problems.push(`${where}: only compound clues can be marked &lit`);
+
+  if (c.type === "compound") {
+    const r = verifyCompound(clue, c.root, where);
+    return { problems: [...problems, ...r.problems], editorial: r.editorial };
+  }
+  if (c.type === "cryptic-definition") {
+    const def = findPhrase(text, clue.definition)[0];
+    const stripped = text.replace(/[^A-Za-z]+$/, "");
+    const lead = text.length - text.replace(/^[^A-Za-z]+/, "").length;
+    if (!def || def.start !== lead || def.end !== stripped.length) problems.push(`${where}: a cryptic definition's definition is the whole clue`);
+    if (clue.indicators.length) problems.push(`${where}: a cryptic definition has no indicators`);
+    if (normaliseLetters(text).includes(answer)) problems.push(`${where}: the answer appears inside the clue text`);
+    editorial.push(`${where}: cryptic definition (no wordplay, so nothing can be machine-checked): confirm the whole clue is a fair, misleading-but-accurate definition of ${answer}`);
+    return { problems, editorial };
+  }
 
   // Phrases: definition, indicators and wordplay sources must each appear exactly once, whole-word.
   const spans: { label: string; span: Span }[] = [];
@@ -375,6 +378,10 @@ export function explainOperation(clue: CrypticClue): string {
       return `"${clue.definition}" and "${c.second}" both mean ${answer}.`;
     case "homophone":
       return `${answer} sounds like ${describePart(c.soundsLike)}. ${c.pronunciationNote}`;
+    case "compound":
+      return `${describeTree(c.root, answer)}${clue.lit === "full" ? " The whole clue is also the definition (&lit)." : clue.lit === "semi" ? " The definition runs on into the wordplay (semi-&lit)." : ""}`;
+    case "cryptic-definition":
+      return `There is no wordplay: the whole clue is a cryptic definition of ${answer}.`;
   }
 }
 
@@ -402,7 +409,75 @@ export function fodderHint(clue: CrypticClue): string {
       return `The second definition is ${q(c.second)}. Find one word that fits both.`;
     case "homophone":
       return `The answer sounds like ${partHint(c.soundsLike)}.`;
+    case "compound": {
+      const srcs = treeSources(c.root).map(q).join(", ");
+      return `The wordplay is built from ${srcs}, in more than one step. Work from the inside out: the result of one step becomes the material for the next.`;
+    }
+    case "cryptic-definition":
+      return "There is no wordplay to find: the whole clue is one deliberately misleading definition. Read it again for its other meaning.";
   }
+}
+
+/** Each indicator with the kind of operation it signals, for the stage-3 hint. */
+export function treeIndicatorKinds(root: Node): [string, string][] {
+  const out: [string, string][] = [];
+  const kinds: Record<string, string> = {
+    anagram: "an anagram",
+    container: "a container",
+    reversal: "a reversal",
+    deletion: "a deletion",
+    remove: "something removed",
+    select: "a selection of letters",
+    hidden: "a hidden word",
+    homophone: "a homophone",
+    charade: "how two parts are joined",
+  };
+  const walk = (n: Node): void => {
+    switch (n.op) {
+      case "part":
+        return;
+      case "charade":
+        if (n.link) out.push([n.link, kinds.charade]);
+        n.parts.forEach(walk);
+        return;
+      case "container":
+        out.push([n.indicator, kinds.container]);
+        walk(n.outer);
+        walk(n.inner);
+        return;
+      case "reversal":
+      case "deletion":
+      case "homophone":
+        out.push([n.indicator, kinds[n.op]]);
+        walk(n.of);
+        return;
+      case "anagram":
+        out.push([n.indicator, kinds.anagram]);
+        n.of.forEach(walk);
+        return;
+      case "remove":
+        out.push([n.indicator, kinds.remove]);
+        walk(n.from);
+        walk(n.take);
+        return;
+      case "select":
+      case "hidden":
+        out.push([n.indicator, kinds[n.op]]);
+        return;
+    }
+  };
+  walk(root);
+  return out;
+}
+
+/** Stage-2 text: the device, with a compound clue's operations named. */
+export function deviceDetail(clue: CrypticClue): string {
+  const c = clue.construction;
+  if (c.type === "compound") {
+    const lit = clue.lit === "full" ? ", also an &lit (the whole clue is the definition)" : clue.lit === "semi" ? ", also a semi-&lit (the definition runs into the wordplay)" : "";
+    return `${DEVICE_LABEL.compound}: ${treeOps(c.root).join(", ")}${lit}`;
+  }
+  return DEVICE_LABEL[c.type];
 }
 
 /** Stage-3 hint text. */
@@ -411,7 +486,13 @@ export function indicatorHint(clue: CrypticClue): string {
   if (!clue.indicators.length) {
     return c.type === "double-definition"
       ? "There is no indicator: two definitions simply sit side by side."
+      : c.type === "cryptic-definition"
+        ? "There is no indicator: a cryptic definition has no wordplay to signal."
       : "There is no indicator word: the parts just follow one another.";
+  }
+  if (c.type === "compound") {
+    const named = treeIndicatorKinds(c.root);
+    return `${named.map(([ind, kind]) => `"${ind}" signals ${kind}`).join("; ")}.`;
   }
   const list = clue.indicators.map((i) => `"${i}"`).join(" and ");
   return `${list} ${clue.indicators.length > 1 ? "signal" : "signals"} the device: ${DEVICE_EXPLAINER[c.type]}.`;
