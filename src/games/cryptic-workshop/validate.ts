@@ -39,7 +39,7 @@ export function validateRounds(rounds: RoundBundle<WorkshopPayload>[]): string[]
   for (const ex of HELP_EXAMPLES) {
     if (seen.has(ex.answer)) problems.push(`help example ${ex.answer} collides with an answer in ${seen.get(ex.answer)}`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((per[d] ?? 0) < 4) problems.push(`only ${per[d] ?? 0} ${d} rounds; at least 4 required`);
+  for (const d of ["gentle", "standard", "expert"]) if ((per[d] ?? 0) < 12) problems.push(`only ${per[d] ?? 0} ${d} rounds; at least 12 required`);
   return problems;
 }
 

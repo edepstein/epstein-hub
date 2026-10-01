@@ -10,11 +10,58 @@
       "sourceFixtureId": "cryptic-001",
       "payload": {
         "clues": [
-          { "id": "a", "text": "Quiet: listen, upset", "answer": "SILENT", "enumeration": "6", "definition": "Quiet", "indicators": ["upset"], "construction": { "type": "anagram", "fodder": "listen" } },
-          { "id": "b", "text": "Bird found in show rental", "answer": "WREN", "enumeration": "4", "definition": "Bird", "indicators": ["found in"], "construction": { "type": "hidden", "fodder": "show rental", "start": 3 } },
-          { "id": "c", "text": "Under pressure, desserts returned", "answer": "STRESSED", "enumeration": "8", "definition": "Under pressure", "indicators": ["returned"], "construction": { "type": "reversal", "fodder": { "source": "desserts", "letters": "DESSERTS", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Quiet: listen, upset",
+            "answer": "SILENT",
+            "enumeration": "6",
+            "definition": "Quiet",
+            "indicators": [
+              "upset"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "listen"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Bird found in show rental",
+            "answer": "WREN",
+            "enumeration": "4",
+            "definition": "Bird",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "show rental",
+              "start": 3
+            }
+          },
+          {
+            "id": "c",
+            "text": "Under pressure, desserts returned",
+            "answer": "STRESSED",
+            "enumeration": "8",
+            "definition": "Under pressure",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "desserts",
+                "letters": "DESSERTS",
+                "via": "literal"
+              }
+            }
+          }
         ],
-        "fixtureHints": ["In a, Quiet is the definition.", "In b, read consecutive letters across the space."],
+        "fixtureHints": [
+          "In a, Quiet is the definition.",
+          "In b, read consecutive letters across the space."
+        ],
         "fixtureExplanation": "SILENT uses every letter of LISTEN; WREN is inside SHOWRENTAL; STRESSED is DESSERTS reversed."
       }
     },
@@ -26,11 +73,62 @@
       "sourceFixtureId": "cryptic-002",
       "payload": {
         "clues": [
-          { "id": "a", "text": "Not fresh: broken tales", "answer": "STALE", "enumeration": "5", "definition": "Not fresh", "indicators": ["broken"], "construction": { "type": "anagram", "fodder": "tales" } },
-          { "id": "b", "text": "Pots returned to halt", "answer": "STOP", "enumeration": "4", "definition": "halt", "indicators": ["returned"], "construction": { "type": "reversal", "fodder": { "source": "Pots", "letters": "POTS", "via": "literal" } } },
-          { "id": "c", "text": "A flower sounds like lines of people", "answer": "ROSE", "enumeration": "4", "definition": "A flower", "indicators": ["sounds like"], "construction": { "type": "homophone", "soundsLike": { "source": "lines of people", "letters": "ROWS", "via": "synonym" }, "pronunciationNote": "ROSE and ROWS share a usual UK pronunciation." } }
+          {
+            "id": "a",
+            "text": "Not fresh: broken tales",
+            "answer": "STALE",
+            "enumeration": "5",
+            "definition": "Not fresh",
+            "indicators": [
+              "broken"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "tales"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Pots returned to halt",
+            "answer": "STOP",
+            "enumeration": "4",
+            "definition": "halt",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "Pots",
+                "letters": "POTS",
+                "via": "literal"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "A flower sounds like lines of people",
+            "answer": "ROSE",
+            "enumeration": "4",
+            "definition": "A flower",
+            "indicators": [
+              "sounds like"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "lines of people",
+                "letters": "ROWS",
+                "via": "synonym"
+              },
+              "pronunciationNote": "ROSE and ROWS share a usual UK pronunciation."
+            }
+          }
         ],
-        "fixtureHints": ["In a, broken indicates an anagram.", "In b, read POTS backwards."],
+        "fixtureHints": [
+          "In a, broken indicates an anagram.",
+          "In b, read POTS backwards."
+        ],
         "fixtureExplanation": "STALE is an anagram of TALES; STOP reverses POTS; ROSE sounds like ROWS."
       }
     },
@@ -42,9 +140,53 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Cheap mixture makes a fruit", "answer": "PEACH", "enumeration": "5", "definition": "a fruit", "indicators": ["mixture"], "construction": { "type": "anagram", "fodder": "Cheap" } },
-          { "id": "b", "text": "Metal found in hot interior", "answer": "TIN", "enumeration": "3", "definition": "Metal", "indicators": ["found in"], "construction": { "type": "hidden", "fodder": "hot interior", "start": 2 } },
-          { "id": "c", "text": "Snare part sent back", "answer": "TRAP", "enumeration": "4", "definition": "Snare", "indicators": ["sent back"], "construction": { "type": "reversal", "fodder": { "source": "part", "letters": "PART", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Cheap mixture makes a fruit",
+            "answer": "PEACH",
+            "enumeration": "5",
+            "definition": "a fruit",
+            "indicators": [
+              "mixture"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "Cheap"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Metal found in hot interior",
+            "answer": "TIN",
+            "enumeration": "3",
+            "definition": "Metal",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "hot interior",
+              "start": 2
+            }
+          },
+          {
+            "id": "c",
+            "text": "Snare part sent back",
+            "answer": "TRAP",
+            "enumeration": "4",
+            "definition": "Snare",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "part",
+                "letters": "PART",
+                "via": "literal"
+              }
+            }
+          }
         ]
       }
     },
@@ -56,9 +198,53 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Sword, broken, becomes lyrics", "answer": "WORDS", "enumeration": "5", "definition": "lyrics", "indicators": ["broken"], "construction": { "type": "anagram", "fodder": "Sword" } },
-          { "id": "b", "text": "Bird found in theme music", "answer": "EMU", "enumeration": "3", "definition": "Bird", "indicators": ["found in"], "construction": { "type": "hidden", "fodder": "theme music", "start": 4 } },
-          { "id": "c", "text": "Prize drawer turned over", "answer": "REWARD", "enumeration": "6", "definition": "Prize", "indicators": ["turned over"], "construction": { "type": "reversal", "fodder": { "source": "drawer", "letters": "DRAWER", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Sword, broken, becomes lyrics",
+            "answer": "WORDS",
+            "enumeration": "5",
+            "definition": "lyrics",
+            "indicators": [
+              "broken"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "Sword"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Bird found in theme music",
+            "answer": "EMU",
+            "enumeration": "3",
+            "definition": "Bird",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "theme music",
+              "start": 4
+            }
+          },
+          {
+            "id": "c",
+            "text": "Prize drawer turned over",
+            "answer": "REWARD",
+            "enumeration": "6",
+            "definition": "Prize",
+            "indicators": [
+              "turned over"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "drawer",
+                "letters": "DRAWER",
+                "via": "literal"
+              }
+            }
+          }
         ]
       }
     },
@@ -70,9 +256,53 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Shore scrambled for a mount", "answer": "HORSE", "enumeration": "5", "definition": "a mount", "indicators": ["scrambled"], "construction": { "type": "anagram", "fodder": "Shore" } },
-          { "id": "b", "text": "Stone hidden in huge mound", "answer": "GEM", "enumeration": "3", "definition": "Stone", "indicators": ["hidden in"], "construction": { "type": "hidden", "fodder": "huge mound", "start": 2 } },
-          { "id": "c", "text": "Rodents: star returned", "answer": "RATS", "enumeration": "4", "definition": "Rodents", "indicators": ["returned"], "construction": { "type": "reversal", "fodder": { "source": "star", "letters": "STAR", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Shore scrambled for a mount",
+            "answer": "HORSE",
+            "enumeration": "5",
+            "definition": "a mount",
+            "indicators": [
+              "scrambled"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "Shore"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Stone hidden in huge mound",
+            "answer": "GEM",
+            "enumeration": "3",
+            "definition": "Stone",
+            "indicators": [
+              "hidden in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "huge mound",
+              "start": 2
+            }
+          },
+          {
+            "id": "c",
+            "text": "Rodents: star returned",
+            "answer": "RATS",
+            "enumeration": "4",
+            "definition": "Rodents",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "star",
+                "letters": "STAR",
+                "via": "literal"
+              }
+            }
+          }
         ]
       }
     },
@@ -84,9 +314,52 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Peaceful: initially cats and lions mingle", "answer": "CALM", "enumeration": "4", "definition": "Peaceful", "indicators": ["initially"], "construction": { "type": "initials", "fodder": "cats and lions mingle" } },
-          { "id": "b", "text": "Object made by night shift", "answer": "THING", "enumeration": "5", "definition": "Object", "indicators": ["shift"], "construction": { "type": "anagram", "fodder": "night" } },
-          { "id": "c", "text": "Beer that's regal when sent back", "answer": "LAGER", "enumeration": "5", "definition": "Beer", "indicators": ["sent back"], "construction": { "type": "reversal", "fodder": { "source": "regal", "letters": "REGAL", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Peaceful: initially cats and lions mingle",
+            "answer": "CALM",
+            "enumeration": "4",
+            "definition": "Peaceful",
+            "indicators": [
+              "initially"
+            ],
+            "construction": {
+              "type": "initials",
+              "fodder": "cats and lions mingle"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Object made by night shift",
+            "answer": "THING",
+            "enumeration": "5",
+            "definition": "Object",
+            "indicators": [
+              "shift"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "night"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Beer that's regal when sent back",
+            "answer": "LAGER",
+            "enumeration": "5",
+            "definition": "Beer",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "regal",
+                "letters": "REGAL",
+                "via": "literal"
+              }
+            }
+          }
         ]
       }
     },
@@ -98,9 +371,67 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Vehicle and pet make a floor covering", "answer": "CARPET", "enumeration": "6", "definition": "a floor covering", "indicators": [], "construction": { "type": "charade", "parts": [{ "source": "Vehicle", "letters": "CAR", "via": "synonym" }, { "source": "pet", "letters": "PET", "via": "literal" }] } },
-          { "id": "b", "text": "Chief dealer is out", "answer": "LEADER", "enumeration": "6", "definition": "Chief", "indicators": ["out"], "construction": { "type": "anagram", "fodder": "dealer" } },
-          { "id": "c", "text": "Sin receives thanks for a mark", "answer": "STAIN", "enumeration": "5", "definition": "a mark", "indicators": ["receives"], "construction": { "type": "container", "outer": { "source": "Sin", "letters": "SIN", "via": "literal" }, "inner": { "source": "thanks", "letters": "TA", "via": "abbreviation" }, "at": 1 } }
+          {
+            "id": "a",
+            "text": "Vehicle and pet make a floor covering",
+            "answer": "CARPET",
+            "enumeration": "6",
+            "definition": "a floor covering",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Vehicle",
+                  "letters": "CAR",
+                  "via": "synonym"
+                },
+                {
+                  "source": "pet",
+                  "letters": "PET",
+                  "via": "literal"
+                }
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "text": "Chief dealer is out",
+            "answer": "LEADER",
+            "enumeration": "6",
+            "definition": "Chief",
+            "indicators": [
+              "out"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "dealer"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Sin receives thanks for a mark",
+            "answer": "STAIN",
+            "enumeration": "5",
+            "definition": "a mark",
+            "indicators": [
+              "receives"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Sin",
+                "letters": "SIN",
+                "via": "literal"
+              },
+              "inner": {
+                "source": "thanks",
+                "letters": "TA",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          }
         ]
       }
     },
@@ -112,9 +443,58 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Leap season", "answer": "SPRING", "enumeration": "6", "definition": "Leap", "indicators": [], "construction": { "type": "double-definition", "second": "season" } },
-          { "id": "b", "text": "Heavenly being found in Cuban gelato", "answer": "ANGEL", "enumeration": "5", "definition": "Heavenly being", "indicators": ["found in"], "construction": { "type": "hidden", "fodder": "Cuban gelato", "start": 3 } },
-          { "id": "c", "text": "Number with insect is a renter", "answer": "TENANT", "enumeration": "6", "definition": "a renter", "indicators": ["with"], "construction": { "type": "charade", "parts": [{ "source": "Number", "letters": "TEN", "via": "synonym" }, { "source": "insect", "letters": "ANT", "via": "synonym" }] } }
+          {
+            "id": "a",
+            "text": "Leap season",
+            "answer": "SPRING",
+            "enumeration": "6",
+            "definition": "Leap",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "season"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Heavenly being found in Cuban gelato",
+            "answer": "ANGEL",
+            "enumeration": "5",
+            "definition": "Heavenly being",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "Cuban gelato",
+              "start": 3
+            }
+          },
+          {
+            "id": "c",
+            "text": "Number with insect is a renter",
+            "answer": "TENANT",
+            "enumeration": "6",
+            "definition": "a renter",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Number",
+                  "letters": "TEN",
+                  "via": "synonym"
+                },
+                {
+                  "source": "insect",
+                  "letters": "ANT",
+                  "via": "synonym"
+                }
+              ]
+            }
+          }
         ]
       }
     },
@@ -126,9 +506,62 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Courage when earth moves", "answer": "HEART", "enumeration": "5", "definition": "Courage", "indicators": ["moves"], "construction": { "type": "anagram", "fodder": "earth" } },
-          { "id": "b", "text": "Fiend lived in reverse", "answer": "DEVIL", "enumeration": "5", "definition": "Fiend", "indicators": ["in reverse"], "construction": { "type": "reversal", "fodder": { "source": "lived", "letters": "LIVED", "via": "literal" } } },
-          { "id": "c", "text": "Cat swallowing ring makes a layer of paint", "answer": "COAT", "enumeration": "4", "definition": "a layer of paint", "indicators": ["swallowing"], "construction": { "type": "container", "outer": { "source": "Cat", "letters": "CAT", "via": "literal" }, "inner": { "source": "ring", "letters": "O", "via": "abbreviation" }, "at": 1 } }
+          {
+            "id": "a",
+            "text": "Courage when earth moves",
+            "answer": "HEART",
+            "enumeration": "5",
+            "definition": "Courage",
+            "indicators": [
+              "moves"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "earth"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Fiend lived in reverse",
+            "answer": "DEVIL",
+            "enumeration": "5",
+            "definition": "Fiend",
+            "indicators": [
+              "in reverse"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "lived",
+                "letters": "LIVED",
+                "via": "literal"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Cat swallowing ring makes a layer of paint",
+            "answer": "COAT",
+            "enumeration": "4",
+            "definition": "a layer of paint",
+            "indicators": [
+              "swallowing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Cat",
+                "letters": "CAT",
+                "via": "literal"
+              },
+              "inner": {
+                "source": "ring",
+                "letters": "O",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          }
         ]
       }
     },
@@ -140,9 +573,59 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Look at timepiece", "answer": "WATCH", "enumeration": "5", "definition": "Look at", "indicators": [], "construction": { "type": "double-definition", "second": "timepiece" } },
-          { "id": "b", "text": "Average boy becomes a clergyman", "answer": "PARSON", "enumeration": "6", "definition": "a clergyman", "indicators": [], "construction": { "type": "charade", "parts": [{ "source": "Average", "letters": "PAR", "via": "synonym" }, { "source": "boy", "letters": "SON", "via": "synonym" }] } },
-          { "id": "c", "text": "Discharge time, going back", "answer": "EMIT", "enumeration": "4", "definition": "Discharge", "indicators": ["going back"], "construction": { "type": "reversal", "fodder": { "source": "time", "letters": "TIME", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Look at timepiece",
+            "answer": "WATCH",
+            "enumeration": "5",
+            "definition": "Look at",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "timepiece"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Average boy becomes a clergyman",
+            "answer": "PARSON",
+            "enumeration": "6",
+            "definition": "a clergyman",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Average",
+                  "letters": "PAR",
+                  "via": "synonym"
+                },
+                {
+                  "source": "boy",
+                  "letters": "SON",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Discharge time, going back",
+            "answer": "EMIT",
+            "enumeration": "4",
+            "definition": "Discharge",
+            "indicators": [
+              "going back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "time",
+                "letters": "TIME",
+                "via": "literal"
+              }
+            }
+          }
         ]
       }
     },
@@ -154,9 +637,72 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Bird to box and quarrel", "answer": "SPARROW", "enumeration": "7", "definition": "Bird", "indicators": [], "construction": { "type": "charade", "parts": [{ "source": "box", "letters": "SPAR", "via": "synonym" }, { "source": "quarrel", "letters": "ROW", "via": "synonym" }] } },
-          { "id": "b", "text": "Headless card game's crest", "answer": "RIDGE", "enumeration": "5", "definition": "crest", "indicators": ["Headless"], "construction": { "type": "deletion", "source": { "source": "card game", "letters": "BRIDGE", "via": "synonym" }, "remove": "first" } },
-          { "id": "c", "text": "Buttonhole motor state", "answer": "CARNATION", "enumeration": "9", "definition": "Buttonhole", "indicators": [], "construction": { "type": "charade", "parts": [{ "source": "motor", "letters": "CAR", "via": "synonym" }, { "source": "state", "letters": "NATION", "via": "synonym" }] }, "note": "A buttonhole is a flower worn in a lapel, very often a carnation." }
+          {
+            "id": "a",
+            "text": "Bird to box and quarrel",
+            "answer": "SPARROW",
+            "enumeration": "7",
+            "definition": "Bird",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "box",
+                  "letters": "SPAR",
+                  "via": "synonym"
+                },
+                {
+                  "source": "quarrel",
+                  "letters": "ROW",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "text": "Headless card game's crest",
+            "answer": "RIDGE",
+            "enumeration": "5",
+            "definition": "crest",
+            "indicators": [
+              "Headless"
+            ],
+            "construction": {
+              "type": "deletion",
+              "source": {
+                "source": "card game",
+                "letters": "BRIDGE",
+                "via": "synonym"
+              },
+              "remove": "first"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Buttonhole motor state",
+            "answer": "CARNATION",
+            "enumeration": "9",
+            "definition": "Buttonhole",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "motor",
+                  "letters": "CAR",
+                  "via": "synonym"
+                },
+                {
+                  "source": "state",
+                  "letters": "NATION",
+                  "via": "synonym"
+                }
+              ]
+            },
+            "note": "A buttonhole is a flower worn in a lapel, very often a carnation."
+          }
         ]
       }
     },
@@ -168,9 +714,62 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Ocean wrecked a small boat", "answer": "CANOE", "enumeration": "5", "definition": "a small boat", "indicators": ["wrecked"], "construction": { "type": "anagram", "fodder": "Ocean" } },
-          { "id": "b", "text": "Tie support? There's a snag", "answer": "DRAWBACK", "enumeration": "8", "definition": "a snag", "indicators": [], "construction": { "type": "charade", "parts": [{ "source": "Tie", "letters": "DRAW", "via": "synonym" }, { "source": "support", "letters": "BACK", "via": "synonym" }] } },
-          { "id": "c", "text": "Dark time, we hear, for a chess piece", "answer": "KNIGHT", "enumeration": "6", "definition": "a chess piece", "indicators": ["we hear"], "construction": { "type": "homophone", "soundsLike": { "source": "Dark time", "letters": "NIGHT", "via": "synonym" }, "pronunciationNote": "KNIGHT and NIGHT are pronounced identically in standard UK English; the K is silent." } }
+          {
+            "id": "a",
+            "text": "Ocean wrecked a small boat",
+            "answer": "CANOE",
+            "enumeration": "5",
+            "definition": "a small boat",
+            "indicators": [
+              "wrecked"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "Ocean"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Tie support? There's a snag",
+            "answer": "DRAWBACK",
+            "enumeration": "8",
+            "definition": "a snag",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Tie",
+                  "letters": "DRAW",
+                  "via": "synonym"
+                },
+                {
+                  "source": "support",
+                  "letters": "BACK",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Dark time, we hear, for a chess piece",
+            "answer": "KNIGHT",
+            "enumeration": "6",
+            "definition": "a chess piece",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "Dark time",
+                "letters": "NIGHT",
+                "via": "synonym"
+              },
+              "pronunciationNote": "KNIGHT and NIGHT are pronounced identically in standard UK English; the K is silent."
+            }
+          }
         ]
       }
     },
@@ -182,9 +781,56 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Factory absorbing energy is a world", "answer": "PLANET", "enumeration": "6", "definition": "a world", "indicators": ["absorbing"], "construction": { "type": "container", "outer": { "source": "Factory", "letters": "PLANT", "via": "synonym" }, "inner": { "source": "energy", "letters": "E", "via": "abbreviation" }, "at": 4 } },
-          { "id": "b", "text": "Demon ale shaken up for a soft drink", "answer": "LEMONADE", "enumeration": "8", "definition": "a soft drink", "indicators": ["shaken up"], "construction": { "type": "anagram", "fodder": "Demon ale" } },
-          { "id": "c", "text": "Soft offer", "answer": "TENDER", "enumeration": "6", "definition": "Soft", "indicators": [], "construction": { "type": "double-definition", "second": "offer" } }
+          {
+            "id": "a",
+            "text": "Factory absorbing energy is a world",
+            "answer": "PLANET",
+            "enumeration": "6",
+            "definition": "a world",
+            "indicators": [
+              "absorbing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Factory",
+                "letters": "PLANT",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "energy",
+                "letters": "E",
+                "via": "abbreviation"
+              },
+              "at": 4
+            }
+          },
+          {
+            "id": "b",
+            "text": "Demon ale shaken up for a soft drink",
+            "answer": "LEMONADE",
+            "enumeration": "8",
+            "definition": "a soft drink",
+            "indicators": [
+              "shaken up"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "Demon ale"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Soft offer",
+            "answer": "TENDER",
+            "enumeration": "6",
+            "definition": "Soft",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "offer"
+            }
+          }
         ]
       }
     },
@@ -196,9 +842,1485 @@
       "sourceFixtureId": null,
       "payload": {
         "clues": [
-          { "id": "a", "text": "Nose around insect in larder", "answer": "PANTRY", "enumeration": "6", "definition": "larder", "indicators": ["around"], "construction": { "type": "container", "outer": { "source": "Nose", "letters": "PRY", "via": "synonym" }, "inner": { "source": "insect", "letters": "ANT", "via": "synonym" }, "at": 1 } },
-          { "id": "b", "text": "Capital served in bistro menu", "answer": "ROME", "enumeration": "4", "definition": "Capital", "indicators": ["served in"], "construction": { "type": "hidden", "fodder": "bistro menu", "start": 4 } },
-          { "id": "c", "text": "Celebrate pulling lever back", "answer": "REVEL", "enumeration": "5", "definition": "Celebrate", "indicators": ["back"], "construction": { "type": "reversal", "fodder": { "source": "lever", "letters": "LEVER", "via": "literal" } } }
+          {
+            "id": "a",
+            "text": "Nose around insect in larder",
+            "answer": "PANTRY",
+            "enumeration": "6",
+            "definition": "larder",
+            "indicators": [
+              "around"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Nose",
+                "letters": "PRY",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "insect",
+                "letters": "ANT",
+                "via": "synonym"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Capital served in bistro menu",
+            "answer": "ROME",
+            "enumeration": "4",
+            "definition": "Capital",
+            "indicators": [
+              "served in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "bistro menu",
+              "start": 4
+            }
+          },
+          {
+            "id": "c",
+            "text": "Celebrate pulling lever back",
+            "answer": "REVEL",
+            "enumeration": "5",
+            "definition": "Celebrate",
+            "indicators": [
+              "back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "lever",
+                "letters": "LEVER",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g5",
+      "title": "Gentle workshop 5",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Loaf made when beard is scrambled",
+            "answer": "BREAD",
+            "enumeration": "5",
+            "definition": "Loaf",
+            "indicators": [
+              "scrambled"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "beard"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Animal seen in hot terrace",
+            "answer": "OTTER",
+            "enumeration": "5",
+            "definition": "Animal",
+            "indicators": [
+              "seen in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "hot terrace",
+              "start": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Reside: evil sent back",
+            "answer": "LIVE",
+            "enumeration": "4",
+            "definition": "Reside",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "evil",
+                "letters": "EVIL",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g6",
+      "title": "Gentle workshop 6",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Finest: initially bananas eat sweet treats",
+            "answer": "BEST",
+            "enumeration": "4",
+            "definition": "Finest",
+            "indicators": [
+              "initially"
+            ],
+            "construction": {
+              "type": "initials",
+              "fodder": "bananas eat sweet treats"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Furniture from bleat, wrecked",
+            "answer": "TABLE",
+            "enumeration": "5",
+            "definition": "Furniture",
+            "indicators": [
+              "wrecked"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "bleat"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Stag, say: reed in reverse",
+            "answer": "DEER",
+            "enumeration": "4",
+            "definition": "Stag, say",
+            "indicators": [
+              "in reverse"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "reed",
+                "letters": "REED",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g7",
+      "title": "Gentle workshop 7",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Grizzly found in herb earthy",
+            "answer": "BEAR",
+            "enumeration": "4",
+            "definition": "Grizzly",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "herb earthy",
+              "start": 3
+            }
+          },
+          {
+            "id": "b",
+            "text": "Reel: loops returned",
+            "answer": "SPOOL",
+            "enumeration": "5",
+            "definition": "Reel",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "loops",
+                "letters": "LOOPS",
+                "via": "literal"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Grin from limes, shaken up",
+            "answer": "SMILE",
+            "enumeration": "5",
+            "definition": "Grin",
+            "indicators": [
+              "shaken up"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "limes"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g8",
+      "title": "Gentle workshop 8",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Drink: initially, we invite neighbours everywhere",
+            "answer": "WINE",
+            "enumeration": "4",
+            "definition": "Drink",
+            "indicators": [
+              "initially"
+            ],
+            "construction": {
+              "type": "initials",
+              "fodder": "we invite neighbours everywhere"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Bird seen in mad overtures",
+            "answer": "DOVE",
+            "enumeration": "4",
+            "definition": "Bird",
+            "indicators": [
+              "seen in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "mad overtures",
+              "start": 2
+            }
+          },
+          {
+            "id": "c",
+            "text": "Hospital room: draw sent back",
+            "answer": "WARD",
+            "enumeration": "4",
+            "definition": "Hospital room",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "draw",
+                "letters": "DRAW",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g9",
+      "title": "Gentle workshop 9",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Worries when scare is broken",
+            "answer": "CARES",
+            "enumeration": "5",
+            "definition": "Worries",
+            "indicators": [
+              "broken"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "scare"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Capital hidden in spa rising",
+            "answer": "PARIS",
+            "enumeration": "5",
+            "definition": "Capital",
+            "indicators": [
+              "hidden in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "spa rising",
+              "start": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Quick photo: pans turned over",
+            "answer": "SNAP",
+            "enumeration": "4",
+            "definition": "Quick photo",
+            "indicators": [
+              "turned over"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "pans",
+                "letters": "PANS",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g10",
+      "title": "Gentle workshop 10",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Satellite: at first many old owls nap",
+            "answer": "MOON",
+            "enumeration": "4",
+            "definition": "Satellite",
+            "indicators": [
+              "at first"
+            ],
+            "construction": {
+              "type": "initials",
+              "fodder": "many old owls nap"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Memos: stone scrambled",
+            "answer": "NOTES",
+            "enumeration": "5",
+            "definition": "Memos",
+            "indicators": [
+              "scrambled"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "stone"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Clock face: laid returned",
+            "answer": "DIAL",
+            "enumeration": "4",
+            "definition": "Clock face",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "laid",
+                "letters": "LAID",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-g11",
+      "title": "Gentle workshop 11",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Winter fall: leaders of sleepy nights over woodland",
+            "answer": "SNOW",
+            "enumeration": "4",
+            "definition": "Winter fall",
+            "indicators": [
+              "leaders of"
+            ],
+            "construction": {
+              "type": "initials",
+              "fodder": "sleepy nights over woodland"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Big cat found in million",
+            "answer": "LION",
+            "enumeration": "4",
+            "definition": "Big cat",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "million",
+              "start": 3
+            }
+          },
+          {
+            "id": "c",
+            "text": "Smack: pals turned over",
+            "answer": "SLAP",
+            "enumeration": "4",
+            "definition": "Smack",
+            "indicators": [
+              "turned over"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "pals",
+                "letters": "PALS",
+                "via": "literal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s5",
+      "title": "Standard workshop 5",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Club taking in energy to defeat",
+            "answer": "BEAT",
+            "enumeration": "4",
+            "definition": "defeat",
+            "indicators": [
+              "taking in"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Club",
+                "letters": "BAT",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "energy",
+                "letters": "E",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Throw; sports field",
+            "answer": "PITCH",
+            "enumeration": "5",
+            "definition": "Throw",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "sports field"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Group with era is a dressing",
+            "answer": "BANDAGE",
+            "enumeration": "7",
+            "definition": "a dressing",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Group",
+                  "letters": "BAND",
+                  "via": "synonym"
+                },
+                {
+                  "source": "era",
+                  "letters": "AGE",
+                  "via": "synonym"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s6",
+      "title": "Standard workshop 6",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Pastime: kind receives quiet",
+            "answer": "SPORT",
+            "enumeration": "5",
+            "definition": "Pastime",
+            "indicators": [
+              "receives"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "kind",
+                "letters": "SORT",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "quiet",
+                "letters": "P",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Dog's cry; tree covering",
+            "answer": "BARK",
+            "enumeration": "4",
+            "definition": "Dog's cry",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "tree covering"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Animals at home: pace returned",
+            "answer": "PETS",
+            "enumeration": "4",
+            "definition": "Animals at home",
+            "indicators": [
+              "returned"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "pace",
+                "letters": "STEP",
+                "via": "synonym"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s7",
+      "title": "Standard workshop 7",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Cargo: boy absorbing ring",
+            "answer": "LOAD",
+            "enumeration": "4",
+            "definition": "Cargo",
+            "indicators": [
+              "absorbing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "boy",
+                "letters": "LAD",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "ring",
+                "letters": "O",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Feline kip, a brief sleep",
+            "answer": "CATNAP",
+            "enumeration": "6",
+            "definition": "a brief sleep",
+            "indicators": [],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Feline",
+                  "letters": "CAT",
+                  "via": "synonym"
+                },
+                {
+                  "source": "kip",
+                  "letters": "NAP",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Post: man, we hear",
+            "answer": "MAIL",
+            "enumeration": "4",
+            "definition": "Post",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "man",
+                "letters": "MALE",
+                "via": "synonym"
+              },
+              "pronunciationNote": "MAIL and MALE are pronounced identically in standard UK English."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s8",
+      "title": "Standard workshop 8",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Locks: chair beheaded",
+            "answer": "HAIR",
+            "enumeration": "4",
+            "definition": "Locks",
+            "indicators": [
+              "beheaded"
+            ],
+            "construction": {
+              "type": "deletion",
+              "source": {
+                "source": "chair",
+                "letters": "CHAIR",
+                "via": "literal"
+              },
+              "remove": "first"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Money store; river edge",
+            "answer": "BANK",
+            "enumeration": "4",
+            "definition": "Money store",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "river edge"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Instructor: cheater reorganised",
+            "answer": "TEACHER",
+            "enumeration": "7",
+            "definition": "Instructor",
+            "indicators": [
+              "reorganised"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "cheater"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s9",
+      "title": "Standard workshop 9",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Child holding ring: before long",
+            "answer": "SOON",
+            "enumeration": "4",
+            "definition": "before long",
+            "indicators": [
+              "holding"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "Child",
+                "letters": "SON",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "ring",
+                "letters": "O",
+                "via": "abbreviation"
+              },
+              "at": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Hound: deity going back",
+            "answer": "DOG",
+            "enumeration": "3",
+            "definition": "Hound",
+            "indicators": [
+              "going back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "deity",
+                "letters": "GOD",
+                "via": "synonym"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Plot with space is a place to sleep",
+            "answer": "BEDROOM",
+            "enumeration": "7",
+            "definition": "a place to sleep",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Plot",
+                  "letters": "BED",
+                  "via": "synonym"
+                },
+                {
+                  "source": "space",
+                  "letters": "ROOM",
+                  "via": "synonym"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s10",
+      "title": "Standard workshop 10",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Place to sit: rested taking in energy",
+            "answer": "SEAT",
+            "enumeration": "4",
+            "definition": "Place to sit",
+            "indicators": [
+              "taking in"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "rested",
+                "letters": "SAT",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "energy",
+                "letters": "E",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Couple: pear, reportedly",
+            "answer": "PAIR",
+            "enumeration": "4",
+            "definition": "Couple",
+            "indicators": [
+              "reportedly"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "pear",
+                "letters": "PEAR",
+                "via": "literal"
+              },
+              "pronunciationNote": "PAIR and PEAR are pronounced identically in standard UK English."
+            }
+          },
+          {
+            "id": "c",
+            "text": "Seagoing soldier: remain, changed",
+            "answer": "MARINE",
+            "enumeration": "6",
+            "definition": "Seagoing soldier",
+            "indicators": [
+              "changed"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "remain"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-s11",
+      "title": "Standard workshop 11",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Cooker: witches' group beheaded",
+            "answer": "OVEN",
+            "enumeration": "4",
+            "definition": "Cooker",
+            "indicators": [
+              "beheaded"
+            ],
+            "construction": {
+              "type": "deletion",
+              "source": {
+                "source": "witches' group",
+                "letters": "COVEN",
+                "via": "synonym"
+              },
+              "remove": "first"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Blaze with fellow, an emergency worker",
+            "answer": "FIREMAN",
+            "enumeration": "7",
+            "definition": "an emergency worker",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Blaze",
+                  "letters": "FIRE",
+                  "via": "synonym"
+                },
+                {
+                  "source": "fellow",
+                  "letters": "MAN",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Depart; time off",
+            "answer": "LEAVE",
+            "enumeration": "5",
+            "definition": "Depart",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "time off"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e5",
+      "title": "Expert workshop 5",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Rodent: ponder absorbing ring",
+            "answer": "MOUSE",
+            "enumeration": "5",
+            "definition": "Rodent",
+            "indicators": [
+              "absorbing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "ponder",
+                "letters": "MUSE",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "ring",
+                "letters": "O",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Roasting rod: advice going back",
+            "answer": "SPIT",
+            "enumeration": "4",
+            "definition": "Roasting rod",
+            "indicators": [
+              "going back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "advice",
+                "letters": "TIPS",
+                "via": "synonym"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Support with earth: setting",
+            "answer": "BACKGROUND",
+            "enumeration": "10",
+            "definition": "setting",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "Support",
+                  "letters": "BACK",
+                  "via": "synonym"
+                },
+                {
+                  "source": "earth",
+                  "letters": "GROUND",
+                  "via": "synonym"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e6",
+      "title": "Expert workshop 6",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Metal found in whiz incredibly",
+            "answer": "ZINC",
+            "enumeration": "4",
+            "definition": "Metal",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "whiz incredibly",
+              "start": 3
+            }
+          },
+          {
+            "id": "b",
+            "text": "Clever: city transport, sent back",
+            "answer": "SMART",
+            "enumeration": "5",
+            "definition": "Clever",
+            "indicators": [
+              "sent back"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "city transport",
+                "letters": "TRAMS",
+                "via": "synonym"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Middle: squander, on the radio",
+            "answer": "WAIST",
+            "enumeration": "5",
+            "definition": "Middle",
+            "indicators": [
+              "on the radio"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "squander",
+                "letters": "WASTE",
+                "via": "synonym"
+              },
+              "pronunciationNote": "WAIST and WASTE are pronounced identically in standard UK English."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e7",
+      "title": "Expert workshop 7",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Country hidden in Kansas pain",
+            "answer": "SPAIN",
+            "enumeration": "5",
+            "definition": "Country",
+            "indicators": [
+              "hidden in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "Kansas pain",
+              "start": 5
+            }
+          },
+          {
+            "id": "b",
+            "text": "Fungus: frog and seat",
+            "answer": "TOADSTOOL",
+            "enumeration": "9",
+            "definition": "Fungus",
+            "indicators": [
+              "and"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "frog",
+                  "letters": "TOAD",
+                  "via": "synonym"
+                },
+                {
+                  "source": "seat",
+                  "letters": "STOOL",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Our planet: hearth headless",
+            "answer": "EARTH",
+            "enumeration": "5",
+            "definition": "Our planet",
+            "indicators": [
+              "headless"
+            ],
+            "construction": {
+              "type": "deletion",
+              "source": {
+                "source": "hearth",
+                "letters": "HEARTH",
+                "via": "literal"
+              },
+              "remove": "first"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e8",
+      "title": "Expert workshop 8",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Big beast: the plane wrecked",
+            "answer": "ELEPHANT",
+            "enumeration": "8",
+            "definition": "Big beast",
+            "indicators": [
+              "wrecked"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "the plane"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Shore: actors absorbing ring",
+            "answer": "COAST",
+            "enumeration": "5",
+            "definition": "Shore",
+            "indicators": [
+              "absorbing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "actors",
+                "letters": "CAST",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "ring",
+                "letters": "O",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Annoyed; traverse",
+            "answer": "CROSS",
+            "enumeration": "5",
+            "definition": "Annoyed",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "traverse"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e9",
+      "title": "Expert workshop 9",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Musical work seen in shop era",
+            "answer": "OPERA",
+            "enumeration": "5",
+            "definition": "Musical work",
+            "indicators": [
+              "seen in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "shop era",
+              "start": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Drinking tube: skin blemishes turned over",
+            "answer": "STRAW",
+            "enumeration": "5",
+            "definition": "Drinking tube",
+            "indicators": [
+              "turned over"
+            ],
+            "construction": {
+              "type": "reversal",
+              "fodder": {
+                "source": "skin blemishes",
+                "letters": "WARTS",
+                "via": "synonym"
+              }
+            }
+          },
+          {
+            "id": "c",
+            "text": "Meat cut: wager, reportedly",
+            "answer": "STEAK",
+            "enumeration": "5",
+            "definition": "Meat cut",
+            "indicators": [
+              "reportedly"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "wager",
+                "letters": "STAKE",
+                "via": "synonym"
+              },
+              "pronunciationNote": "STEAK and STAKE are pronounced identically in standard UK English."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e10",
+      "title": "Expert workshop 10",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Fuel: stroke absorbing energy",
+            "answer": "PEAT",
+            "enumeration": "4",
+            "definition": "Fuel",
+            "indicators": [
+              "absorbing"
+            ],
+            "construction": {
+              "type": "container",
+              "outer": {
+                "source": "stroke",
+                "letters": "PAT",
+                "via": "synonym"
+              },
+              "inner": {
+                "source": "energy",
+                "letters": "E",
+                "via": "abbreviation"
+              },
+              "at": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Musicians: carthorse reorganised",
+            "answer": "ORCHESTRA",
+            "enumeration": "9",
+            "definition": "Musicians",
+            "indicators": [
+              "reorganised"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "carthorse"
+            }
+          },
+          {
+            "id": "c",
+            "text": "Sea mammal; close tightly",
+            "answer": "SEAL",
+            "enumeration": "4",
+            "definition": "Sea mammal",
+            "indicators": [],
+            "construction": {
+              "type": "double-definition",
+              "second": "close tightly"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e11",
+      "title": "Expert workshop 11",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Compete: trick and look after",
+            "answer": "CONTEND",
+            "enumeration": "7",
+            "definition": "Compete",
+            "indicators": [
+              "and"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "trick",
+                  "letters": "CON",
+                  "via": "synonym"
+                },
+                {
+                  "source": "look after",
+                  "letters": "TEND",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "b",
+            "text": "Evergreen found in crisp inedible fruit",
+            "answer": "PINE",
+            "enumeration": "4",
+            "definition": "Evergreen",
+            "indicators": [
+              "found in"
+            ],
+            "construction": {
+              "type": "hidden",
+              "fodder": "crisp inedible",
+              "start": 4
+            }
+          },
+          {
+            "id": "c",
+            "text": "Rest: stopper, we hear",
+            "answer": "BREAK",
+            "enumeration": "5",
+            "definition": "Rest",
+            "indicators": [
+              "we hear"
+            ],
+            "construction": {
+              "type": "homophone",
+              "soundsLike": {
+                "source": "stopper",
+                "letters": "BRAKE",
+                "via": "synonym"
+              },
+              "pronunciationNote": "BREAK and BRAKE are pronounced identically in standard UK English."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cw-e12",
+      "title": "Expert workshop 12",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clues": [
+          {
+            "id": "a",
+            "text": "Fighter: soil red scrambled",
+            "answer": "SOLDIER",
+            "enumeration": "7",
+            "definition": "Fighter",
+            "indicators": [
+              "scrambled"
+            ],
+            "construction": {
+              "type": "anagram",
+              "fodder": "soil red"
+            }
+          },
+          {
+            "id": "b",
+            "text": "Outline: expert with folder",
+            "answer": "PROFILE",
+            "enumeration": "7",
+            "definition": "Outline",
+            "indicators": [
+              "with"
+            ],
+            "construction": {
+              "type": "charade",
+              "parts": [
+                {
+                  "source": "expert",
+                  "letters": "PRO",
+                  "via": "synonym"
+                },
+                {
+                  "source": "folder",
+                  "letters": "FILE",
+                  "via": "synonym"
+                }
+              ]
+            }
+          },
+          {
+            "id": "c",
+            "text": "Teach: strain headless",
+            "answer": "TRAIN",
+            "enumeration": "5",
+            "definition": "Teach",
+            "indicators": [
+              "headless"
+            ],
+            "construction": {
+              "type": "deletion",
+              "source": {
+                "source": "strain",
+                "letters": "STRAIN",
+                "via": "literal"
+              },
+              "remove": "first"
+            }
+          }
         ]
       }
     }
