@@ -30,7 +30,7 @@ game by design.
 |---|---|
 | `pnpm lint` | pass |
 | `pnpm typecheck` | pass |
-| `pnpm test` | 557 tests pass (engines, properties, session layer, family RLS on Postgres 16) |
+| `pnpm test` | 559 tests pass (engines, properties, session layer, family RLS on Postgres 16) |
 | `pnpm validate:content` | all 19 validators pass |
 | `pnpm build` | pass |
 | `pnpm test:e2e` | 138 browser tests pass (desktop 1440 and phone 390) |
@@ -53,7 +53,7 @@ Priority order. Details per game are in `docs/REVIEW-LOG.md`.
    permission. Steps: `docs/FAMILY-SPACE.md`.
 4. **Approved word list**: review the ESDB candidate list and the exclusion list per game
    (two-letter tile words such as QI/ZA are absent, which affects Hexabble and Shared Word Board).
-5. **Content volume**: Letter Wheel, Word Deduction and Word Ladder have 10+ rounds per difficulty;
+5. **Content volume**: the four launch games (Letter Wheel, Word Deduction, Word Families, Word Ladder) have 10+ rounds per difficulty;
    most other games have 4–7, labelled "limited preview". Daily editions need 30 scheduled reviewed
    editions per game.
 6. **Real people**: observed pilot with experienced word-game players (and the recipient), difficulty
