@@ -4026,84 +4026,80 @@
    "sourceFixtureId": null,
    "payload": {
     "letters": [
-     "D",
-     "A",
-     "G",
-     "L",
-     "U",
+     "T",
      "Y",
-     "B"
+     "A",
+     "H",
+     "I",
+     "C",
+     "R"
     ],
-    "required": "B",
+    "required": "Y",
     "minimumLength": 4,
     "targets": [
      {
-      "word": "ABLY",
-      "clue": "In a skilful and competent way"
+      "word": "AIRY",
+      "clue": "Light and well ventilated; casual and unconcerned"
      },
      {
-      "word": "BABY",
-      "clue": "A very young child"
+      "word": "CITY",
+      "clue": "A large and important town"
      },
      {
-      "word": "BALD",
-      "clue": "Having no hair on the head"
+      "word": "RACY",
+      "clue": "Lively and slightly shocking"
      },
      {
-      "word": "BALL",
-      "clue": "A round object used in games; also a grand dance"
+      "word": "TRAY",
+      "clue": "A flat board for carrying plates and cups"
      },
      {
-      "word": "BULB",
-      "clue": "The glass part of a lamp that gives light; an onion-like plant root"
+      "word": "ARRAY",
+      "clue": "A neat and impressive arrangement of things"
      },
      {
-      "word": "BULL",
-      "clue": "A male cow"
+      "word": "CARRY",
+      "clue": "To hold something and take it elsewhere"
      },
      {
-      "word": "DAUB",
-      "clue": "To spread a sticky substance carelessly"
+      "word": "HAIRY",
+      "clue": "Covered with a lot of body hair"
      },
      {
-      "word": "BADLY",
-      "clue": "In a poor or unsatisfactory way"
+      "word": "ITCHY",
+      "clue": "Giving you an urge to scratch"
      },
      {
-      "word": "BAGGY",
-      "clue": "Hanging loosely, like clothes that are too big"
+      "word": "RATTY",
+      "clue": "Bad-tempered and irritable"
      },
      {
-      "word": "BUDDY",
-      "clue": "A close friend"
+      "word": "YACHT",
+      "clue": "A sailing boat used for racing or cruising"
      },
      {
-      "word": "BUGGY",
-      "clue": "A light carriage; a pushchair for a child"
+      "word": "CATCHY",
+      "clue": "Pleasant and easy to remember, like a tune"
      },
      {
-      "word": "BULLY",
-      "clue": "A person who frightens or hurts weaker people"
+      "word": "CHATTY",
+      "clue": "Fond of friendly talk"
      },
      {
-      "word": "BALLAD",
-      "clue": "A song or poem that tells a story"
+      "word": "RARITY",
+      "clue": "Something not often found"
      },
      {
-      "word": "BUBBLY",
-      "clue": "Full of small gas bubbles; lively and cheerful"
+      "word": "THIRTY",
+      "clue": "Three times ten"
      },
      {
-      "word": "LADYBUG",
-      "clue": "The American name for a small red beetle with black spots"
-     },
-     {
-      "word": "LULLABY",
-      "clue": "A soothing song to send a baby to sleep"
+      "word": "CHARITY",
+      "clue": "An organisation that raises money for good causes; kindness to others"
      }
     ],
     "allLetterTargets": [
-     "LADYBUG"
+     "CHARITY"
     ],
     "explanation": "A word may repeat any of the seven letters, so all-letter words can be longer than seven letters. Four-letter words score 1, longer words score their length, and all-letter words earn 7 more."
    }
