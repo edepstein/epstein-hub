@@ -141,7 +141,18 @@ test("setup, invalid move keeps state, legal first move by clicks, handover and 
   // Racks are hidden until the player chooses to show theirs.
   await expect(page.getByTestId("rack")).toHaveCount(0);
   await reveal(page, "Ann");
-  const rack = await rackLetters(page);
+  let rack = await rackLetters(page);
+  // Racks are dealt at random, and a rare all-consonant rack has no word at all. Start a fresh
+  // match until the opening rack can make a word, so the test is deterministic in what it checks.
+  for (let attempt = 0; attempt < 8 && !wordFrom(rack, 2, 5); attempt++) {
+    await clearProgress(page);
+    await page.goto("/play/shared-word-board/match");
+    await names.nth(0).fill("Ann");
+    await names.nth(1).fill("Ben");
+    await page.getByRole("button", { name: "Start the match" }).click();
+    await reveal(page, "Ann");
+    rack = await rackLetters(page);
+  }
   expect(rack).toHaveLength(7);
   await expect(page.getByTestId("bag-count")).toContainText("18");
 
