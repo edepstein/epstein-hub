@@ -292,6 +292,293 @@
       }
     },
     {
+      "id": "ar-g6",
+      "title": "Gentle relay 6",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TOT",
+        "stages": [
+          {
+            "clue": "A short blast on a car horn",
+            "length": 4
+          },
+          {
+            "clue": "A short saying that a person or group lives by",
+            "length": 5
+          },
+          {
+            "clue": "A round red fruit often sliced into salads",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "TOT",
+            "TOOT",
+            "MOTTO",
+            "TOMATO"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "O",
+            "M",
+            "A"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "TOT plus O makes TOOT, plus M rearranges into MOTTO, and plus A rearranges into TOMATO."
+      }
+    },
+    {
+      "id": "ar-g7",
+      "title": "Gentle relay 7",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CAW",
+        "stages": [
+          {
+            "clue": "A sharp, curved nail on an animal's foot",
+            "length": 4
+          },
+          {
+            "clue": "Move slowly along on hands and knees",
+            "length": 5
+          },
+          {
+            "clue": "Write in a rushed, untidy way",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "CAW",
+            "CLAW",
+            "CRAWL",
+            "SCRAWL"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "L",
+            "R",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "CAW plus L makes CLAW, plus R rearranges into CRAWL, and plus S makes SCRAWL."
+      }
+    },
+    {
+      "id": "ar-g8",
+      "title": "Gentle relay 8",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "COW",
+        "stages": [
+          {
+            "clue": "A large black bird with a harsh call",
+            "length": 4
+          },
+          {
+            "clue": "A large group of people gathered together",
+            "length": 5
+          },
+          {
+            "clue": "Someone who is too frightened to face danger",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "COW",
+            "CROW",
+            "CROWD",
+            "COWARD"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "D",
+            "A"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "COW plus R makes CROW, plus D makes CROWD, and plus A rearranges into COWARD."
+      }
+    },
+    {
+      "id": "ar-g9",
+      "title": "Gentle relay 9",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BID",
+        "stages": [
+          {
+            "clue": "A creature with feathers and wings",
+            "length": 4
+          },
+          {
+            "clue": "A plait of woven hair",
+            "length": 5
+          },
+          {
+            "clue": "To do with a wedding or a bride",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "BID",
+            "BIRD",
+            "BRAID",
+            "BRIDAL"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "A",
+            "L"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "BID plus R makes BIRD, plus A rearranges into BRAID, and plus L rearranges into BRIDAL."
+      }
+    },
+    {
+      "id": "ar-g10",
+      "title": "Gentle relay 10",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ZOO",
+        "stages": [
+          {
+            "clue": "Seep out slowly, like thick mud",
+            "length": 4
+          },
+          {
+            "clue": "A form of oxygen found high in the atmosphere",
+            "length": 5
+          },
+          {
+            "clue": "A short, light sleep",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "ZOO",
+            "OOZE",
+            "OZONE",
+            "SNOOZE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "E",
+            "N",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "ZOO plus E rearranges into OOZE, plus N rearranges into OZONE, and plus S rearranges into SNOOZE."
+      }
+    },
+    {
+      "id": "ar-g11",
+      "title": "Gentle relay 11",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "DIP",
+        "stages": [
+          {
+            "clue": "Handed over money for something",
+            "length": 4
+          },
+          {
+            "clue": "Tartan cloth with a criss-cross pattern",
+            "length": 5
+          },
+          {
+            "clue": "Calm and not easily upset",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "DIP",
+            "PAID",
+            "PLAID",
+            "PLACID"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "A",
+            "L",
+            "C"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "DIP plus A rearranges into PAID, plus L makes PLAID, and plus C makes PLACID."
+      }
+    },
+    {
+      "id": "ar-g12",
+      "title": "Gentle relay 12",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "BOY",
+        "stages": [
+          {
+            "clue": "Do as you are told",
+            "length": 4
+          },
+          {
+            "clue": "A hard, black wood",
+            "length": 5
+          },
+          {
+            "clue": "On the far side of",
+            "length": 6
+          }
+        ],
+        "acceptedChains": [
+          [
+            "BOY",
+            "OBEY",
+            "EBONY",
+            "BEYOND"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "E",
+            "N",
+            "D"
+          ]
+        ],
+        "suggestAddedLetter": true,
+        "explanation": "BOY plus E rearranges into OBEY, plus N rearranges into EBONY, and plus D rearranges into BEYOND."
+      }
+    },
+    {
       "id": "ar-s1",
       "title": "Standard relay 1",
       "difficulty": "standard",
@@ -549,6 +836,334 @@
       }
     },
     {
+      "id": "ar-s7",
+      "title": "Standard relay 7",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TAUT",
+        "stages": [
+          {
+            "clue": "Tease someone with cruel remarks",
+            "length": 5
+          },
+          {
+            "clue": "A pupil who stays away from school without permission",
+            "length": 6
+          },
+          {
+            "clue": "A sudden fit of bad temper, as in a small child",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "TAUT",
+            "TAUNT",
+            "TRUANT",
+            "TANTRUM"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "N",
+            "R",
+            "M"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "TAUT plus N makes TAUNT, plus R rearranges into TRUANT, and plus M rearranges into TANTRUM."
+      }
+    },
+    {
+      "id": "ar-s8",
+      "title": "Standard relay 8",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HEEL",
+        "stages": [
+          {
+            "clue": "A blood-sucking worm",
+            "length": 5
+          },
+          {
+            "clue": "Interrupt a speaker with shouted comments",
+            "length": 6
+          },
+          {
+            "clue": "Someone in the audience who shouts at a performer to put them off",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "HEEL",
+            "LEECH",
+            "HECKLE",
+            "HECKLER"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "C",
+            "K",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "HEEL plus C rearranges into LEECH, plus K rearranges into HECKLE, and plus R makes HECKLER."
+      }
+    },
+    {
+      "id": "ar-s9",
+      "title": "Standard relay 9",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PONY",
+        "stages": [
+          {
+            "clue": "Fake or false",
+            "length": 5
+          },
+          {
+            "clue": "A large snake that squeezes its prey",
+            "length": 6
+          },
+          {
+            "clue": "A violent tropical storm in the western Pacific",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "PONY",
+            "PHONY",
+            "PYTHON",
+            "TYPHOON"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "H",
+            "T",
+            "O"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "PONY plus H makes PHONY, plus T rearranges into PYTHON, and plus O rearranges into TYPHOON."
+      }
+    },
+    {
+      "id": "ar-s10",
+      "title": "Standard relay 10",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CRAG",
+        "stages": [
+          {
+            "clue": "Goods carried by a ship or plane",
+            "length": 5
+          },
+          {
+            "clue": "A large wild cat of the Americas, also called a puma",
+            "length": 6
+          },
+          {
+            "clue": "The bravery to face danger",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "CRAG",
+            "CARGO",
+            "COUGAR",
+            "COURAGE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "O",
+            "U",
+            "E"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CRAG plus O rearranges into CARGO, plus U rearranges into COUGAR, and plus E rearranges into COURAGE."
+      }
+    },
+    {
+      "id": "ar-s11",
+      "title": "Standard relay 11",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MICE",
+        "stages": [
+          {
+            "clue": "Chop meat into tiny pieces",
+            "length": 5
+          },
+          {
+            "clue": "Money you earn or receive regularly",
+            "length": 6
+          },
+          {
+            "clue": "Join together",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "MICE",
+            "MINCE",
+            "INCOME",
+            "COMBINE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "N",
+            "O",
+            "B"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "MICE plus N makes MINCE, plus O rearranges into INCOME, and plus B rearranges into COMBINE."
+      }
+    },
+    {
+      "id": "ar-s12",
+      "title": "Standard relay 12",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "WREN",
+        "stages": [
+          {
+            "clue": "Someone who has something that belongs to them",
+            "length": 5
+          },
+          {
+            "clue": "Great fame and respect",
+            "length": 6
+          },
+          {
+            "clue": "A baby that has only just arrived in the world",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "WREN",
+            "OWNER",
+            "RENOWN",
+            "NEWBORN"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "O",
+            "N",
+            "B"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "WREN plus O rearranges into OWNER, plus N rearranges into RENOWN, and plus B rearranges into NEWBORN."
+      }
+    },
+    {
+      "id": "ar-s13",
+      "title": "Standard relay 13",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "LENT",
+        "stages": [
+          {
+            "clue": "Went down on bended legs",
+            "length": 5
+          },
+          {
+            "clue": "A light, high ringing sound",
+            "length": 6
+          },
+          {
+            "clue": "Shine with quick little flashes",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "LENT",
+            "KNELT",
+            "TINKLE",
+            "TWINKLE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "K",
+            "I",
+            "W"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "LENT plus K rearranges into KNELT, plus I rearranges into TINKLE, and plus W makes TWINKLE."
+      }
+    },
+    {
+      "id": "ar-s14",
+      "title": "Standard relay 14",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MAIL",
+        "stages": [
+          {
+            "clue": "State that something is true, or ask for what is yours",
+            "length": 5
+          },
+          {
+            "clue": "The most exciting point of a story",
+            "length": 6
+          },
+          {
+            "clue": "Cry out suddenly in surprise",
+            "length": 7
+          }
+        ],
+        "acceptedChains": [
+          [
+            "MAIL",
+            "CLAIM",
+            "CLIMAX",
+            "EXCLAIM"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "C",
+            "X",
+            "E"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "MAIL plus C rearranges into CLAIM, plus X rearranges into CLIMAX, and plus E rearranges into EXCLAIM."
+      }
+    },
+    {
       "id": "ar-e1",
       "title": "Expert relay 1",
       "difficulty": "expert",
@@ -762,6 +1377,375 @@
         ],
         "suggestAddedLetter": false,
         "explanation": "TEETH plus R rearranges into TETHER, plus A into THEATRE, and plus N into THREATEN."
+      }
+    },
+    {
+      "id": "ar-e6",
+      "title": "Expert relay 6",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "KARAT",
+        "stages": [
+          {
+            "clue": "A martial art from Japan that uses kicks and punches",
+            "length": 6
+          },
+          {
+            "clue": "Join in, or take a share of food",
+            "length": 7
+          },
+          {
+            "clue": "A small, brightly coloured bird of the parrot family",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "KARAT",
+            "KARATE",
+            "PARTAKE",
+            "PARAKEET"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "E",
+            "P",
+            "E"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "KARAT plus E makes KARATE, plus P rearranges into PARTAKE, and plus E rearranges into PARAKEET."
+      }
+    },
+    {
+      "id": "ar-e7",
+      "title": "Expert relay 7",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "OLIVE",
+        "stages": [
+          {
+            "clue": "A small purple flower with a sweet scent",
+            "length": 6
+          },
+          {
+            "clue": "Using rough force to hurt others",
+            "length": 7
+          },
+          {
+            "clue": "A person who writes long made-up stories",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "OLIVE",
+            "VIOLET",
+            "VIOLENT",
+            "NOVELIST"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "T",
+            "N",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "OLIVE plus T rearranges into VIOLET, plus N makes VIOLENT, and plus S rearranges into NOVELIST."
+      }
+    },
+    {
+      "id": "ar-e8",
+      "title": "Expert relay 8",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PANIC",
+        "stages": [
+          {
+            "clue": "A plant that cats love to roll in",
+            "length": 6
+          },
+          {
+            "clue": "Words printed beneath a photograph",
+            "length": 7
+          },
+          {
+            "clue": "A person who tests eyes and sells glasses",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "PANIC",
+            "CATNIP",
+            "CAPTION",
+            "OPTICIAN"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "T",
+            "O",
+            "I"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "PANIC plus T rearranges into CATNIP, plus O rearranges into CAPTION, and plus I rearranges into OPTICIAN."
+      }
+    },
+    {
+      "id": "ar-e9",
+      "title": "Expert relay 9",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "VOICE",
+        "stages": [
+          {
+            "clue": "A beginner with no experience",
+            "length": 6
+          },
+          {
+            "clue": "A bill listing goods and what you owe",
+            "length": 7
+          },
+          {
+            "clue": "The act of forcing a tenant out of their home",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "VOICE",
+            "NOVICE",
+            "INVOICE",
+            "EVICTION"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "N",
+            "I",
+            "T"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "VOICE plus N rearranges into NOVICE, plus I rearranges into INVOICE, and plus T rearranges into EVICTION."
+      }
+    },
+    {
+      "id": "ar-e10",
+      "title": "Expert relay 10",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "LEAVE",
+        "stages": [
+          {
+            "clue": "Show what was hidden",
+            "length": 6
+          },
+          {
+            "clue": "More than two but not very many",
+            "length": 7
+          },
+          {
+            "clue": "A complete turn round to the opposite direction",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "LEAVE",
+            "REVEAL",
+            "SEVERAL",
+            "REVERSAL"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "R",
+            "S",
+            "R"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "LEAVE plus R rearranges into REVEAL, plus S rearranges into SEVERAL, and plus R rearranges into REVERSAL."
+      }
+    },
+    {
+      "id": "ar-e11",
+      "title": "Expert relay 11",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "UNTIL",
+        "stages": [
+          {
+            "clue": "A rude remark meant to offend",
+            "length": 6
+          },
+          {
+            "clue": "A tool used in the kitchen, such as a whisk",
+            "length": 7
+          },
+          {
+            "clue": "Cover with material to keep heat in",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "UNTIL",
+            "INSULT",
+            "UTENSIL",
+            "INSULATE"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "S",
+            "E",
+            "A"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "UNTIL plus S rearranges into INSULT, plus E rearranges into UTENSIL, and plus A rearranges into INSULATE."
+      }
+    },
+    {
+      "id": "ar-e12",
+      "title": "Expert relay 12",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "ULTRA",
+        "stages": [
+          {
+            "clue": "Clever, and sometimes sly",
+            "length": 6
+          },
+          {
+            "clue": "Crying, or close to it",
+            "length": 7
+          },
+          {
+            "clue": "Thankful for what you have been given",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "ULTRA",
+            "ARTFUL",
+            "TEARFUL",
+            "GRATEFUL"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "F",
+            "E",
+            "G"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "ULTRA plus F rearranges into ARTFUL, plus E rearranges into TEARFUL, and plus G rearranges into GRATEFUL."
+      }
+    },
+    {
+      "id": "ar-e13",
+      "title": "Expert relay 13",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CANON",
+        "stages": [
+          {
+            "clue": "Is unable to, as in 'I ___ come'",
+            "length": 6
+          },
+          {
+            "clue": "Hold inside, or keep within limits",
+            "length": 7
+          },
+          {
+            "clue": "Official permission or approval",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "CANON",
+            "CANNOT",
+            "CONTAIN",
+            "SANCTION"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "T",
+            "I",
+            "S"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "CANON plus T rearranges into CANNOT, plus I rearranges into CONTAIN, and plus S rearranges into SANCTION."
+      }
+    },
+    {
+      "id": "ar-e14",
+      "title": "Expert relay 14",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "TRUTH",
+        "stages": [
+          {
+            "clue": "Push hard and suddenly",
+            "length": 6
+          },
+          {
+            "clue": "A hinged cover for a window",
+            "length": 7
+          },
+          {
+            "clue": "Most distant",
+            "length": 8
+          }
+        ],
+        "acceptedChains": [
+          [
+            "TRUTH",
+            "THRUST",
+            "SHUTTER",
+            "FURTHEST"
+          ]
+        ],
+        "addedLetters": [
+          [
+            "S",
+            "E",
+            "F"
+          ]
+        ],
+        "suggestAddedLetter": false,
+        "explanation": "TRUTH plus S rearranges into THRUST, plus E rearranges into SHUTTER, and plus F rearranges into FURTHEST."
       }
     }
   ]

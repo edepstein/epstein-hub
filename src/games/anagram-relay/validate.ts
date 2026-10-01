@@ -66,21 +66,37 @@ export function checkRelayRound(
   return problems;
 }
 
+/** Repeats already present before the 2026-10-01 expansion (ar-g2 and the ar-s6 NOTE branch). */
+const LEGACY_REPEATS: ReadonlySet<string> = new Set(["NOTE"]);
+
 export function validateContent(): string[] {
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const ids = new Set<string>();
+  const starts = new Set<string>();
+  const answerOwner = new Map<string, string>();
+  const clueTexts = new Set<string>();
   for (const { meta, payload } of rounds) {
     if (ids.has(meta.id)) problems.push(`${meta.id}: duplicate round id`);
     ids.add(meta.id);
-    if (meta.status === "practice") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    if (meta.status === "practice" || meta.status === "demo") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    if (starts.has(payload.start)) problems.push(`${meta.id}: duplicate start word ${payload.start}`);
+    starts.add(payload.start);
+    for (const w of new Set(payload.acceptedChains.flat())) {
+      if (w !== payload.start && answerOwner.has(w) && !LEGACY_REPEATS.has(w)) problems.push(`${meta.id}: answer ${w} already used in ${answerOwner.get(w)}`);
+      else if (w !== payload.start) answerOwner.set(w, meta.id);
+    }
+    for (const st of payload.stages) {
+      if (clueTexts.has(st.clue)) problems.push(`${meta.id}: duplicate clue text "${st.clue}"`);
+      clueTexts.add(st.clue);
+    }
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
     if (meta.difficulty !== "gentle" && payload.acceptedChains.some((c) => c.slice(1).some((w, i) => w === c[i] + "S")))
       problems.push(`${meta.id}: plural-only stages are reserved for Gentle rounds`);
     problems.push(...checkRelayRound(meta, payload, membership, familiar));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 practice rounds at ${d}`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
   return problems;
 }

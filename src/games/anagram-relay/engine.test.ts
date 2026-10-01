@@ -159,8 +159,8 @@ describe("Anagram Relay content", () => {
         expect(engine.outcome(play(engine.initialise(r.payload, sessionOptionsFor(r.meta, 1)), chain.slice(1).map(submit)))).toBe("completed");
   });
 
-  it("has at least four practice rounds per difficulty", () => {
-    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length).toBeGreaterThanOrEqual(4);
+  it("has at least fourteen rounds per difficulty", () => {
+    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
   });
 
   const broken = (mut: (p: RelayPayload) => void) => {
