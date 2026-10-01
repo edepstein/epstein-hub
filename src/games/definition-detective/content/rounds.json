@@ -2405,6 +2405,3746 @@
     ],
     "explanation": "Each case turns on one phrase in the sentence that decides between nearby meanings."
    }
+  },
+  {
+   "id": "dd-g5",
+   "title": "Gentle case file 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "generous",
+      "sentence": "The generous neighbour left a basket of fruit on the doorstep and asked for nothing in return.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Quick to take offence"
+       },
+       {
+        "id": "d2",
+        "text": "Willing to give freely, more than is expected"
+       },
+       {
+        "id": "d3",
+        "text": "Rich and living in a large house"
+       },
+       {
+        "id": "d4",
+        "text": "Curious about other people's affairs"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "asked for nothing in return"
+       },
+       {
+        "id": "e2",
+        "text": "The generous neighbour"
+       },
+       {
+        "id": "e3",
+        "text": "left a basket of fruit on the doorstep"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "What did the neighbour want in exchange?",
+      "whyNot": {
+       "d1": "Nothing suggests anyone is offended; a gift was left.",
+       "d3": "The neighbour may be wealthy, but the sentence is about giving, not money.",
+       "d4": "Leaving a gift is kind, not nosy."
+      },
+      "eliminate": "d1",
+      "explanation": "Generous means willing to give freely. Asking for nothing in return shows it; the basket of fruit is only what was given.",
+      "learnMore": {
+       "definition": "Willing to give more of something, such as money, time or kindness, than is strictly needed.",
+       "example": "A generous helping of gravy covered the whole plate."
+      }
+     },
+     {
+      "id": "b",
+      "word": "obvious",
+      "sentence": "The answer was obvious to everyone in the room, and even the youngest child spotted it at once while the teacher was still writing the question.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Hidden and hard to find"
+       },
+       {
+        "id": "d2",
+        "text": "Wrong and misleading"
+       },
+       {
+        "id": "d3",
+        "text": "Easy to see or understand"
+       },
+       {
+        "id": "d4",
+        "text": "Long and complicated"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The answer was obvious"
+       },
+       {
+        "id": "e2",
+        "text": "even the youngest child spotted it at once"
+       },
+       {
+        "id": "e3",
+        "text": "while the teacher was still writing the question"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "Who managed to spot the answer, and how quickly?",
+      "whyNot": {
+       "d1": "Spotting it at once shows it was not hidden.",
+       "d2": "Nothing says the answer was incorrect.",
+       "d4": "A complicated answer would not be spotted at once by a young child."
+      },
+      "eliminate": "d1",
+      "explanation": "Obvious means easy to see or understand. A young child spotting it at once shows how plain it was; the teacher's writing only tells us when this happened.",
+      "learnMore": {
+       "definition": "Easily seen, recognised or understood.",
+       "example": "It was obvious from his muddy boots that he had walked across the field."
+      }
+     },
+     {
+      "id": "c",
+      "word": "brief",
+      "sentence": "Her speech was brief, lasting barely two minutes, so the guests were soon back to their tea and cake.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Boring and repetitive"
+       },
+       {
+        "id": "d2",
+        "text": "Loud enough to be heard at the back"
+       },
+       {
+        "id": "d3",
+        "text": "Prepared with great care"
+       },
+       {
+        "id": "d4",
+        "text": "Lasting only a short time"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "lasting barely two minutes"
+       },
+       {
+        "id": "e2",
+        "text": "the guests were soon back to their tea and cake"
+       },
+       {
+        "id": "e3",
+        "text": "Her speech was brief"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "How long did the speech take?",
+      "whyNot": {
+       "d1": "Nothing in the sentence says it was dull.",
+       "d2": "Volume is not mentioned.",
+       "d3": "Nothing is said about how much preparation it needed."
+      },
+      "eliminate": "d1",
+      "explanation": "Brief means short in time. Barely two minutes is the direct evidence; the guests returning to tea is only the result.",
+      "learnMore": {
+       "definition": "Short in time or in the number of words used.",
+       "example": "He gave a brief wave and disappeared round the corner."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g6",
+   "title": "Gentle case file 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "ancient",
+      "sentence": "The ancient oak in the churchyard was already old when the village was founded, and it still bears leaves every spring.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Extremely old, from a very long time ago"
+       },
+       {
+        "id": "d2",
+        "text": "Newly planted and still growing"
+       },
+       {
+        "id": "d3",
+        "text": "Struck by lightning"
+       },
+       {
+        "id": "d4",
+        "text": "Protected by a fence"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "still bears leaves every spring"
+       },
+       {
+        "id": "e2",
+        "text": "The ancient oak in the churchyard"
+       },
+       {
+        "id": "e3",
+        "text": "was already old when the village was founded"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "How does the age of the tree compare with the village?",
+      "whyNot": {
+       "d2": "It was old before the village existed, so it was not newly planted.",
+       "d3": "Lightning is not mentioned.",
+       "d4": "A fence is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Ancient means extremely old. The tree being old before the village was founded shows how far back it goes; leaves each spring show only that it is alive.",
+      "learnMore": {
+       "definition": "Belonging to the very distant past, or very old indeed.",
+       "example": "Visitors walked among the ancient stones of the abbey."
+      }
+     },
+     {
+      "id": "b",
+      "word": "hesitate",
+      "sentence": "If you hesitate at the edge of the diving board, count to three and jump before you have time to worry.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Dive in without thinking"
+       },
+       {
+        "id": "d2",
+        "text": "Pause before doing something, because you are unsure"
+       },
+       {
+        "id": "d3",
+        "text": "Climb the steps very slowly"
+       },
+       {
+        "id": "d4",
+        "text": "Shout for help"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "If you hesitate at the edge of the diving board"
+       },
+       {
+        "id": "e2",
+        "text": "count to three and jump"
+       },
+       {
+        "id": "e3",
+        "text": "before you have time to worry"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "What does the advice try to stop you having time to do?",
+      "whyNot": {
+       "d1": "The advice is to jump before you have time to worry, so it is the opposite of diving at once.",
+       "d3": "The sentence is about pausing at the edge, not climbing.",
+       "d4": "Nobody asks for help."
+      },
+      "eliminate": "d1",
+      "explanation": "Hesitate means to pause because you are unsure. The advice to jump before you have time to worry shows that the danger is dithering at the edge.",
+      "learnMore": {
+       "definition": "To pause or delay before doing something, usually because of doubt or nerves.",
+       "example": "She did not hesitate for a second before saying yes."
+      }
+     },
+     {
+      "id": "c",
+      "word": "enormous",
+      "sentence": "An enormous crate blocked the whole doorway, and it took six workmen to shift it into the warehouse.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Surprisingly light"
+       },
+       {
+        "id": "d2",
+        "text": "Brightly painted"
+       },
+       {
+        "id": "d3",
+        "text": "Very large"
+       },
+       {
+        "id": "d4",
+        "text": "Badly damaged"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "blocked the whole doorway"
+       },
+       {
+        "id": "e2",
+        "text": "it took six workmen to shift it"
+       },
+       {
+        "id": "e3",
+        "text": "An enormous crate"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What did it take to move the crate?",
+      "whyNot": {
+       "d1": "Six workmen were needed, so it was not light.",
+       "d2": "Colour is not mentioned.",
+       "d4": "Damage is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Enormous means very large. Needing six workmen to move it is the clearest sign; blocking the doorway also hints at size but is less direct.",
+      "learnMore": {
+       "definition": "Extremely large in size or amount.",
+       "example": "An enormous wave rolled in and soaked the whole beach."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g7",
+   "title": "Gentle case file 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "refuse",
+      "sentence": "The shop will refuse to take back goods without a receipt, so keep it safe until you are certain you want them.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Rubbish that has been thrown away"
+       },
+       {
+        "id": "d2",
+        "text": "Ask politely for"
+       },
+       {
+        "id": "d3",
+        "text": "Change the price of"
+       },
+       {
+        "id": "d4",
+        "text": "Say no to, or decline to accept"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "keep it safe until you are certain you want them"
+       },
+       {
+        "id": "e2",
+        "text": "The shop will refuse to take back goods"
+       },
+       {
+        "id": "e3",
+        "text": "without a receipt"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "What will the shop not do if you have no receipt?",
+      "whyNot": {
+       "d1": "Refuse can mean rubbish, but here it is a verb with 'to'.",
+       "d2": "The shop is saying no, not asking.",
+       "d3": "Prices are not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Here refuse is a verb meaning decline. The shop will not take goods back, which is what it is declining to do.",
+      "learnMore": {
+       "definition": "To say that you will not do or accept something.",
+       "example": "The guard will refuse entry to anyone without a ticket."
+      }
+     },
+     {
+      "id": "b",
+      "word": "rapid",
+      "sentence": "The river was rapid after the storm, carrying branches downstream so fast, while a heron stood on the far bank.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Moving or happening very quickly"
+       },
+       {
+        "id": "d2",
+        "text": "Calm and shallow"
+       },
+       {
+        "id": "d3",
+        "text": "Muddy and brown"
+       },
+       {
+        "id": "d4",
+        "text": "Frozen at the edges"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The river was rapid after the storm"
+       },
+       {
+        "id": "e2",
+        "text": "carrying branches downstream so fast"
+       },
+       {
+        "id": "e3",
+        "text": "a heron stood on the far bank"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "How fast were the branches carried along?",
+      "whyNot": {
+       "d2": "Branches carried quickly are not in calm water.",
+       "d3": "The colour is not described.",
+       "d4": "Ice is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Rapid means very fast. Branches carried downstream so fast is the direct evidence; the heron is an unrelated detail.",
+      "learnMore": {
+       "definition": "Happening or moving with great speed.",
+       "example": "There has been a rapid rise in the price of bread."
+      }
+     },
+     {
+      "id": "c",
+      "word": "peculiar",
+      "sentence": "The soup had a peculiar taste, like nothing the family had eaten before, so nobody could say what was in it.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Very pleasant"
+       },
+       {
+        "id": "d2",
+        "text": "Strange or unusual"
+       },
+       {
+        "id": "d3",
+        "text": "Rather salty"
+       },
+       {
+        "id": "d4",
+        "text": "Far too hot"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "like nothing the family had eaten before"
+       },
+       {
+        "id": "e2",
+        "text": "nobody could say what was in it"
+       },
+       {
+        "id": "e3",
+        "text": "The soup had a peculiar taste"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "How does the taste compare with what the family knew?",
+      "whyNot": {
+       "d1": "Nothing suggests anyone enjoyed it.",
+       "d3": "Saltiness is not mentioned.",
+       "d4": "Temperature is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Peculiar means strange or unusual. A taste unlike anything eaten before is the direct evidence.",
+      "learnMore": {
+       "definition": "Strange, odd or unlike what is usual.",
+       "example": "There was a peculiar smell coming from the cupboard."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g8",
+   "title": "Gentle case file 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "abandon",
+      "sentence": "The crew had to abandon the sinking ship and row for the shore, leaving everything behind except their lifejackets.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Repair quickly"
+       },
+       {
+        "id": "d2",
+        "text": "Sell for a good price"
+       },
+       {
+        "id": "d3",
+        "text": "Leave something completely, usually for good"
+       },
+       {
+        "id": "d4",
+        "text": "Paint a new colour"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "leaving everything behind except their lifejackets"
+       },
+       {
+        "id": "e2",
+        "text": "The crew had to abandon the sinking ship"
+       },
+       {
+        "id": "e3",
+        "text": "row for the shore"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "What happened to their belongings?",
+      "whyNot": {
+       "d1": "Nobody repairs a sinking ship while rowing away from it.",
+       "d2": "No sale takes place.",
+       "d4": "Painting is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Abandon means to leave completely. Leaving everything behind shows the crew gave up the ship entirely.",
+      "learnMore": {
+       "definition": "To leave a person, place or thing for good, giving up on it.",
+       "example": "The farmers had to abandon their fields when the river flooded."
+      }
+     },
+     {
+      "id": "b",
+      "word": "accurate",
+      "sentence": "Her map was accurate down to the last footpath, and the hikers never once went astray when they followed it.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Colourful and decorated"
+       },
+       {
+        "id": "d2",
+        "text": "Very old"
+       },
+       {
+        "id": "d3",
+        "text": "Large enough to hang on a wall"
+       },
+       {
+        "id": "d4",
+        "text": "Correct and free from mistakes"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Her map was accurate"
+       },
+       {
+        "id": "e2",
+        "text": "down to the last footpath"
+       },
+       {
+        "id": "e3",
+        "text": "the hikers never once went astray when they followed it"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "What happened to the hikers who followed it?",
+      "whyNot": {
+       "d1": "Decoration is not mentioned.",
+       "d2": "Age is not mentioned.",
+       "d3": "Size is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Accurate means correct in every detail. Hikers who never went astray prove it; the footpath detail shows how thorough it was but not that it was right.",
+      "learnMore": {
+       "definition": "Correct and exact, with no errors.",
+       "example": "The weather forecast was accurate, so we took our umbrellas."
+      }
+     },
+     {
+      "id": "c",
+      "word": "grateful",
+      "sentence": "The grateful family wrote a long letter to the lifeguard, thanking him for saving their daughter from the waves.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Feeling thankful"
+       },
+       {
+        "id": "d2",
+        "text": "Rather jealous"
+       },
+       {
+        "id": "d3",
+        "text": "Extremely tired"
+       },
+       {
+        "id": "d4",
+        "text": "Rather careless"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "wrote a long letter to the lifeguard"
+       },
+       {
+        "id": "e2",
+        "text": "thanking him for saving their daughter from the waves"
+       },
+       {
+        "id": "e3",
+        "text": "The grateful family"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the family say to the lifeguard?",
+      "whyNot": {
+       "d2": "Nothing suggests envy.",
+       "d3": "Tiredness is not mentioned.",
+       "d4": "Their letter shows care, not carelessness."
+      },
+      "eliminate": "d2",
+      "explanation": "Grateful means thankful. The letter thanking him for saving their daughter is the direct evidence.",
+      "learnMore": {
+       "definition": "Feeling or showing thanks for something done for you.",
+       "example": "I am grateful for your help with the move."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g9",
+   "title": "Gentle case file 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "conceal",
+      "sentence": "He tried to conceal the present behind his back, but the bright ribbon peeping out gave the game away.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Open and show off"
+       },
+       {
+        "id": "d2",
+        "text": "Hide something so it is not seen"
+       },
+       {
+        "id": "d3",
+        "text": "Wrap in paper"
+       },
+       {
+        "id": "d4",
+        "text": "Give to a friend"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the bright ribbon peeping out gave the game away"
+       },
+       {
+        "id": "e2",
+        "text": "He tried to conceal the present"
+       },
+       {
+        "id": "e3",
+        "text": "behind his back"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "Where did he put the present?",
+      "whyNot": {
+       "d1": "Showing it off would be the opposite of hiding it.",
+       "d3": "He is hiding it, not wrapping it.",
+       "d4": "He is keeping it from his sister, not giving it away."
+      },
+      "eliminate": "d1",
+      "explanation": "Conceal means to hide. Putting the present behind his back shows what he was doing; the ribbon only shows that it did not work.",
+      "learnMore": {
+       "definition": "To keep something out of sight or secret.",
+       "example": "The thick fog helped to conceal the soldiers' movements."
+      }
+     },
+     {
+      "id": "b",
+      "word": "modest",
+      "sentence": "Though she had won the national prize, she was modest about it and simply said that she had been lucky.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Proud and boastful"
+       },
+       {
+        "id": "d2",
+        "text": "Unable to remember it"
+       },
+       {
+        "id": "d3",
+        "text": "Not boastful about your achievements"
+       },
+       {
+        "id": "d4",
+        "text": "Angry about the result"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "she had won the national prize"
+       },
+       {
+        "id": "e2",
+        "text": "was modest about it"
+       },
+       {
+        "id": "e3",
+        "text": "simply said that she had been lucky"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "How did she describe her own success?",
+      "whyNot": {
+       "d1": "She plays it down, so she is not boasting.",
+       "d2": "She talks about it, so she remembers.",
+       "d4": "Nothing suggests anger."
+      },
+      "eliminate": "d1",
+      "explanation": "Modest means not boastful. Putting her win down to luck shows it; having won the prize shows only what she achieved.",
+      "learnMore": {
+       "definition": "Not showing off about your own abilities or success.",
+       "example": "He lives in a modest house at the end of the lane."
+      }
+     },
+     {
+      "id": "c",
+      "word": "weary",
+      "sentence": "On the last night of their holiday, the weary travellers dropped their bags by the fire and hardly spoke before falling asleep.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Excited and full of energy"
+       },
+       {
+        "id": "d2",
+        "text": "Lost and confused"
+       },
+       {
+        "id": "d3",
+        "text": "Cold and wet"
+       },
+       {
+        "id": "d4",
+        "text": "Very tired"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the weary travellers"
+       },
+       {
+        "id": "e2",
+        "text": "dropped their bags by the fire and hardly spoke before falling asleep"
+       },
+       {
+        "id": "e3",
+        "text": "On the last night of their holiday"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the travellers do once they stopped?",
+      "whyNot": {
+       "d1": "They fell asleep, which is not what energetic people do.",
+       "d2": "They are described as stopping by the fire, not as lost.",
+       "d3": "Weather is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Weary means very tired. Hardly speaking and falling asleep straight away show it.",
+      "learnMore": {
+       "definition": "Very tired, especially after effort.",
+       "example": "The weary nurse sat down at the end of her long shift."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g10",
+   "title": "Gentle case file 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "sturdy",
+      "sentence": "The sturdy table held the weight of three people standing on it, while the children cheered and clapped.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Strongly made and not easily broken"
+       },
+       {
+        "id": "d2",
+        "text": "Light and easy to carry"
+       },
+       {
+        "id": "d3",
+        "text": "Fashionable and expensive"
+       },
+       {
+        "id": "d4",
+        "text": "Too small for the room"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the children cheered and clapped"
+       },
+       {
+        "id": "e2",
+        "text": "The sturdy table"
+       },
+       {
+        "id": "e3",
+        "text": "held the weight of three people standing on it"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "What was put on the table?",
+      "whyNot": {
+       "d2": "Carrying the weight of three people suggests it is solid, not light.",
+       "d3": "Style and price are not mentioned.",
+       "d4": "Size compared with the room is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Sturdy means strongly made. Holding the weight of three people shows it; the cheering children are an unrelated detail.",
+      "learnMore": {
+       "definition": "Strong, solid and not likely to break.",
+       "example": "He wore sturdy boots for the long walk across the moor."
+      }
+     },
+     {
+      "id": "b",
+      "word": "delicate",
+      "sentence": "The delicate lace had been in the shop window for a week, and the assistant laid it on the counter as if it might tear at the slightest touch.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Thick and heavy"
+       },
+       {
+        "id": "d2",
+        "text": "Fine and easily damaged"
+       },
+       {
+        "id": "d3",
+        "text": "Bright red"
+       },
+       {
+        "id": "d4",
+        "text": "Cheap to buy"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The delicate lace"
+       },
+       {
+        "id": "e2",
+        "text": "had been in the shop window for a week"
+       },
+       {
+        "id": "e3",
+        "text": "laid it on the counter as if it might tear at the slightest touch"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "How did the assistant handle it?",
+      "whyNot": {
+       "d1": "She handles it as if it might tear, so it is not heavy.",
+       "d3": "Colour is not mentioned.",
+       "d4": "Price is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Delicate means fine and easily damaged. Laying it down as if it might tear at the slightest touch is the direct sign; its week in the window says nothing about its quality.",
+      "learnMore": {
+       "definition": "Light, fine and easily broken or harmed.",
+       "example": "The delicate petals fell at the first breath of wind."
+      }
+     },
+     {
+      "id": "c",
+      "word": "stubborn",
+      "sentence": "The stubborn donkey would not move, however hard they pulled, even though a queue of cars was building up behind.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Gentle and quiet"
+       },
+       {
+        "id": "d2",
+        "text": "Sick and weak"
+       },
+       {
+        "id": "d3",
+        "text": "Refusing to change or give way"
+       },
+       {
+        "id": "d4",
+        "text": "Hungry and thin"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "would not move, however hard they pulled"
+       },
+       {
+        "id": "e2",
+        "text": "a queue of cars was building up behind"
+       },
+       {
+        "id": "e3",
+        "text": "The stubborn donkey"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "What happened when they pulled?",
+      "whyNot": {
+       "d1": "Refusing to move is not being gentle.",
+       "d2": "Nothing suggests illness.",
+       "d4": "Hunger is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Stubborn means refusing to change. Not moving however hard they pulled shows it.",
+      "learnMore": {
+       "definition": "Determined not to change your mind or your behaviour.",
+       "example": "The stubborn stain would not come out of the shirt."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-g11",
+   "title": "Gentle case file 11",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "curious",
+      "sentence": "The curious cat kept sniffing at the closed cupboard, wanting to find out what was inside.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Frightened of loud noises"
+       },
+       {
+        "id": "d2",
+        "text": "Fond of sleeping all day"
+       },
+       {
+        "id": "d3",
+        "text": "Angry with its owner"
+       },
+       {
+        "id": "d4",
+        "text": "Eager to find out or learn something"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "wanting to find out what was inside"
+       },
+       {
+        "id": "e2",
+        "text": "The curious cat"
+       },
+       {
+        "id": "e3",
+        "text": "kept sniffing at the closed cupboard"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "What did the cat want?",
+      "whyNot": {
+       "d1": "Nothing in the sentence suggests fear.",
+       "d2": "Sleep is not mentioned.",
+       "d3": "Anger is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Curious means eager to find out. Wanting to find out what was inside is the direct evidence.",
+      "learnMore": {
+       "definition": "Eager to know or learn about something.",
+       "example": "The curious children crowded round the strange machine."
+      }
+     },
+     {
+      "id": "b",
+      "word": "cluttered",
+      "sentence": "The cluttered desk was buried under papers, mugs and old letters, and she could barely find space for her laptop.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Untidy and crowded with things"
+       },
+       {
+        "id": "d2",
+        "text": "Perfectly clean"
+       },
+       {
+        "id": "d3",
+        "text": "Made of old wood"
+       },
+       {
+        "id": "d4",
+        "text": "Placed by the window"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The cluttered desk"
+       },
+       {
+        "id": "e2",
+        "text": "buried under papers, mugs and old letters"
+       },
+       {
+        "id": "e3",
+        "text": "barely find space for her laptop"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What was on the desk?",
+      "whyNot": {
+       "d2": "Papers and mugs everywhere is the opposite of clean.",
+       "d3": "The material is not mentioned.",
+       "d4": "Position is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Cluttered means crowded with untidy things. Papers, mugs and old letters piled up show it.",
+      "learnMore": {
+       "definition": "Filled with too many things, in an untidy way.",
+       "example": "The cluttered garage was full of broken chairs and boxes."
+      }
+     },
+     {
+      "id": "c",
+      "word": "anxious",
+      "sentence": "The anxious pupils sat in rows before the exam, and several of them bit their nails as they waited.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Fast asleep"
+       },
+       {
+        "id": "d2",
+        "text": "Worried and uneasy"
+       },
+       {
+        "id": "d3",
+        "text": "Proud of themselves"
+       },
+       {
+        "id": "d4",
+        "text": "Bored with their lessons"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "sat in rows before the exam"
+       },
+       {
+        "id": "e2",
+        "text": "several of them bit their nails as they waited"
+       },
+       {
+        "id": "e3",
+        "text": "The anxious pupils"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "What did several pupils do as they waited?",
+      "whyNot": {
+       "d1": "They are checking the clock, so they are awake.",
+       "d3": "Nothing suggests pride.",
+       "d4": "Boredom is not shown by nail-biting."
+      },
+      "eliminate": "d1",
+      "explanation": "Anxious means worried and uneasy. Biting nails while waiting shows it.",
+      "learnMore": {
+       "definition": "Feeling worried or nervous about what might happen.",
+       "example": "She was anxious about meeting her new teacher."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s5",
+   "title": "Standard case file 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "furious",
+      "sentence": "The coach was furious after the match, slamming the door so hard that the windows rattled and shouting at the referee for ten minutes.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Mildly annoyed"
+       },
+       {
+        "id": "d2",
+        "text": "Extremely angry"
+       },
+       {
+        "id": "d3",
+        "text": "Deeply disappointed but calm"
+       },
+       {
+        "id": "d4",
+        "text": "Surprised and amused"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "shouting at the referee for ten minutes"
+       },
+       {
+        "id": "e2",
+        "text": "The coach was furious after the match"
+       },
+       {
+        "id": "e3",
+        "text": "slamming the door so hard that the windows rattled"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "How did the coach treat the door?",
+      "whyNot": {
+       "d1": "Slamming a door until the windows rattle is far beyond mild annoyance.",
+       "d3": "Nothing here is calm; the reaction is violent.",
+       "d4": "Nothing suggests amusement."
+      },
+      "eliminate": "d1",
+      "explanation": "Furious is anger at its strongest. Slamming the door hard enough to rattle the windows shows intensity, which separates it from simple annoyance.",
+      "learnMore": {
+       "definition": "Extremely angry, with strong feelings that are plain to see.",
+       "example": "She was furious when she found that her bicycle had been taken."
+      }
+     },
+     {
+      "id": "b",
+      "word": "exhausted",
+      "sentence": "By the end of the marathon she was exhausted, and her legs gave way at the finish line so that two stewards had to help her to a chair.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Slightly sleepy"
+       },
+       {
+        "id": "d2",
+        "text": "Pleased with her time"
+       },
+       {
+        "id": "d3",
+        "text": "Completely worn out, with no energy left"
+       },
+       {
+        "id": "d4",
+        "text": "Nervous about the next race"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "By the end of the marathon she was exhausted"
+       },
+       {
+        "id": "e2",
+        "text": "her legs gave way at the finish line"
+       },
+       {
+        "id": "e3",
+        "text": "two stewards had to help her to a chair"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What happened to her legs at the line?",
+      "whyNot": {
+       "d1": "Her legs gave way, which is far more than being sleepy.",
+       "d2": "Nothing is said about her time.",
+       "d4": "A next race is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Exhausted means completely drained of energy. Her legs giving way at the line shows she had nothing left.",
+      "learnMore": {
+       "definition": "Having used up all your strength or energy.",
+       "example": "The exhausted climbers collapsed into their tents."
+      }
+     },
+     {
+      "id": "c",
+      "word": "delighted",
+      "sentence": "The children were delighted with the surprise party, laughing and clapping while their grandmother carried in a cake with ten candles.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Slightly confused"
+       },
+       {
+        "id": "d2",
+        "text": "Rather shy"
+       },
+       {
+        "id": "d3",
+        "text": "Very tired"
+       },
+       {
+        "id": "d4",
+        "text": "Greatly pleased"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "laughing and clapping"
+       },
+       {
+        "id": "e2",
+        "text": "their grandmother carried in a cake with ten candles"
+       },
+       {
+        "id": "e3",
+        "text": "The children were delighted with the surprise party"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "What were the children doing?",
+      "whyNot": {
+       "d1": "Laughing and clapping is not confusion.",
+       "d2": "Shyness is the opposite of clapping and laughing out loud.",
+       "d3": "Tiredness is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Delighted means greatly pleased. Laughing and clapping are open signs of joy; the cake is just what was brought in.",
+      "learnMore": {
+       "definition": "Feeling or showing great pleasure.",
+       "example": "We were delighted to hear that the baby had arrived safely."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s6",
+   "title": "Standard case file 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "adamant",
+      "sentence": "The mayor was adamant that the old bridge would stay open, and no petition or protest could persuade her to change her mind.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Firmly refusing to change your mind"
+       },
+       {
+        "id": "d2",
+        "text": "Undecided and unsure"
+       },
+       {
+        "id": "d3",
+        "text": "Willing to listen to both sides"
+       },
+       {
+        "id": "d4",
+        "text": "Quick to agree with critics"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "no petition or protest could persuade her to change her mind"
+       },
+       {
+        "id": "e2",
+        "text": "The mayor was adamant"
+       },
+       {
+        "id": "e3",
+        "text": "the old bridge would stay open"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "What could not shift her view?",
+      "whyNot": {
+       "d2": "No petition could move her, so she was not undecided.",
+       "d3": "She refuses to change her mind, so she is not weighing the other side.",
+       "d4": "She rejects every protest, so she is not agreeing with her critics."
+      },
+      "eliminate": "d2",
+      "explanation": "Adamant means unshakeably firm. Resisting every petition and protest shows it; the bridge decision is what she was firm about.",
+      "learnMore": {
+       "definition": "Refusing to be persuaded or to change a decision.",
+       "example": "He was adamant that he had locked the door before leaving."
+      }
+     },
+     {
+      "id": "b",
+      "word": "reckless",
+      "sentence": "The reckless driver overtook on a blind bend at high speed, and was fined for it later that week.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Careful and slow"
+       },
+       {
+        "id": "d2",
+        "text": "Acting without thinking about the danger"
+       },
+       {
+        "id": "d3",
+        "text": "Learning to drive"
+       },
+       {
+        "id": "d4",
+        "text": "Rather lost"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The reckless driver"
+       },
+       {
+        "id": "e2",
+        "text": "overtook on a blind bend at high speed"
+       },
+       {
+        "id": "e3",
+        "text": "was fined for it later that week"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the driver do at the bend?",
+      "whyNot": {
+       "d1": "Overtaking at speed on a blind bend is not careful or slow.",
+       "d3": "Nothing says the driver is a learner.",
+       "d4": "Being lost is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Reckless means heedless of danger. Overtaking at speed where nothing can be seen ahead shows it; the fine only records the consequence.",
+      "learnMore": {
+       "definition": "Showing no care about the risks of what you do.",
+       "example": "It was reckless to climb the cliff without a rope."
+      }
+     },
+     {
+      "id": "c",
+      "word": "lavish",
+      "sentence": "The wedding was lavish, with a dozen courses, a live orchestra and fountains of champagne, and the guests danced until midnight.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Small and quiet"
+       },
+       {
+        "id": "d2",
+        "text": "Hurried and badly planned"
+       },
+       {
+        "id": "d3",
+        "text": "Rich and extravagant"
+       },
+       {
+        "id": "d4",
+        "text": "Held outdoors"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "a dozen courses, a live orchestra and fountains of champagne"
+       },
+       {
+        "id": "e2",
+        "text": "the guests danced until midnight"
+       },
+       {
+        "id": "e3",
+        "text": "The wedding was lavish"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "What was provided at the wedding?",
+      "whyNot": {
+       "d1": "A dozen courses and an orchestra are the opposite of small.",
+       "d2": "Nothing suggests poor planning.",
+       "d4": "The setting is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Lavish means richly extravagant. A dozen courses, an orchestra and fountains of champagne show it; the dancing only says how long the party lasted.",
+      "learnMore": {
+       "definition": "Very generous or luxurious, with plenty spent on it.",
+       "example": "The hotel offered a lavish breakfast buffet."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s7",
+   "title": "Standard case file 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "solitary",
+      "sentence": "The solitary lighthouse keeper saw nobody for weeks at a time, and the lamp was lit each evening at dusk.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Very friendly"
+       },
+       {
+        "id": "d2",
+        "text": "Poorly paid"
+       },
+       {
+        "id": "d3",
+        "text": "Afraid of heights"
+       },
+       {
+        "id": "d4",
+        "text": "Alone, without other people"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the lamp was lit each evening at dusk"
+       },
+       {
+        "id": "e2",
+        "text": "The solitary lighthouse keeper"
+       },
+       {
+        "id": "e3",
+        "text": "saw nobody for weeks at a time"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "How often did he see other people?",
+      "whyNot": {
+       "d1": "Seeing nobody is not being friendly.",
+       "d2": "Pay is not mentioned.",
+       "d3": "Fear of heights is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Solitary means alone. Seeing nobody for weeks shows it; lighting the lamp is simply part of his job.",
+      "learnMore": {
+       "definition": "Done or living alone, without company.",
+       "example": "She took a solitary walk along the empty beach."
+      }
+     },
+     {
+      "id": "b",
+      "word": "mundane",
+      "sentence": "Her days were mundane, a routine of the same bus, the same desk and the same sandwich, with nothing unusual ever happening.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Ordinary and lacking excitement"
+       },
+       {
+        "id": "d2",
+        "text": "Dangerous"
+       },
+       {
+        "id": "d3",
+        "text": "Full of surprises"
+       },
+       {
+        "id": "d4",
+        "text": "Expensive"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Her days were mundane"
+       },
+       {
+        "id": "e2",
+        "text": "a routine of the same bus, the same desk and the same sandwich"
+       },
+       {
+        "id": "e3",
+        "text": "nothing unusual ever happening"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What did each day involve?",
+      "whyNot": {
+       "d2": "Nothing dangerous is described.",
+       "d3": "The same routine each day means few surprises.",
+       "d4": "Cost is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Mundane means dull and ordinary. The identical routine each day shows it; 'nothing unusual' restates the same point.",
+      "learnMore": {
+       "definition": "Ordinary and everyday, lacking interest or excitement.",
+       "example": "They chatted about mundane matters such as the shopping."
+      }
+     },
+     {
+      "id": "c",
+      "word": "famished",
+      "sentence": "On the second night of the trip, the famished walkers fell upon the stew as soon as it was served and asked for second helpings.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Slightly peckish"
+       },
+       {
+        "id": "d2",
+        "text": "Extremely hungry"
+       },
+       {
+        "id": "d3",
+        "text": "Fussy about food"
+       },
+       {
+        "id": "d4",
+        "text": "Tired of walking"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the famished walkers"
+       },
+       {
+        "id": "e2",
+        "text": "fell upon the stew as soon as it was served and asked for second helpings"
+       },
+       {
+        "id": "e3",
+        "text": "On the second night of the trip"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "How did they react when the stew came?",
+      "whyNot": {
+       "d1": "Falling upon the stew and asking for more is stronger than being slightly peckish.",
+       "d3": "Fussy people would not rush at second helpings.",
+       "d4": "Tiredness is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Famished means extremely hungry. Falling on the food and asking for more shows it; the night of the trip is only background.",
+      "learnMore": {
+       "definition": "Extremely hungry.",
+       "example": "I am famished, so let us stop for something to eat."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s8",
+   "title": "Standard case file 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "abundant",
+      "sentence": "Wild berries were abundant along the hedgerows that autumn, so thick on the branches that the children filled their baskets in minutes.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Hard to reach"
+       },
+       {
+        "id": "d2",
+        "text": "Poisonous"
+       },
+       {
+        "id": "d3",
+        "text": "Present in large quantities"
+       },
+       {
+        "id": "d4",
+        "text": "Sold in shops"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the children filled their baskets in minutes"
+       },
+       {
+        "id": "e2",
+        "text": "Wild berries were abundant along the hedgerows that autumn"
+       },
+       {
+        "id": "e3",
+        "text": "so thick on the branches"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "How thickly did the berries grow?",
+      "whyNot": {
+       "d1": "Children filled baskets in minutes, so they were easy to reach.",
+       "d2": "Nothing suggests they were harmful.",
+       "d4": "The sentence is about hedgerows, not shops."
+      },
+      "eliminate": "d1",
+      "explanation": "Abundant means plentiful. Berries growing thick on the branches show it; baskets filled in minutes is a result.",
+      "learnMore": {
+       "definition": "Existing in large amounts, more than enough.",
+       "example": "Rain was abundant in the valley, so the grass stayed green."
+      }
+     },
+     {
+      "id": "b",
+      "word": "reprimand",
+      "sentence": "The headmaster chose to reprimand the pupils for running in the corridor, telling them sternly that it must never happen again.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Reward for good behaviour"
+       },
+       {
+        "id": "d2",
+        "text": "Teach a new skill to"
+       },
+       {
+        "id": "d3",
+        "text": "Ask for the opinion of"
+       },
+       {
+        "id": "d4",
+        "text": "Tell someone off formally for doing wrong"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The headmaster chose to reprimand the pupils"
+       },
+       {
+        "id": "e2",
+        "text": "for running in the corridor"
+       },
+       {
+        "id": "e3",
+        "text": "telling them sternly that it must never happen again"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "What did he say to them?",
+      "whyNot": {
+       "d1": "Telling them sternly that it must not happen again is not a reward.",
+       "d2": "No skill is being taught.",
+       "d3": "Nobody is asking for opinions."
+      },
+      "eliminate": "d1",
+      "explanation": "Reprimand means to criticise formally for a fault. The stern warning shows it; the running was the fault itself.",
+      "learnMore": {
+       "definition": "To criticise someone formally and seriously for something they did wrong.",
+       "example": "The referee will reprimand any player who argues."
+      }
+     },
+     {
+      "id": "c",
+      "word": "gloomy",
+      "sentence": "It was a gloomy afternoon, with low grey cloud and rain on the windows, and the cat slept on the sofa.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Dark and depressing"
+       },
+       {
+        "id": "d2",
+        "text": "Bright and cheerful"
+       },
+       {
+        "id": "d3",
+        "text": "Hot and dry"
+       },
+       {
+        "id": "d4",
+        "text": "Noisy and crowded"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "low grey cloud and rain on the windows"
+       },
+       {
+        "id": "e2",
+        "text": "the cat slept on the sofa"
+       },
+       {
+        "id": "e3",
+        "text": "It was a gloomy afternoon"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "What was the sky like?",
+      "whyNot": {
+       "d2": "Grey cloud and rain is not bright or cheerful.",
+       "d3": "Rain on the windows means it was not dry.",
+       "d4": "Noise and crowds are not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Gloomy means dark and depressing. Low grey cloud and rain show the weather behind the mood; the sleeping cat is an unrelated detail.",
+      "learnMore": {
+       "definition": "Dark or dull in a way that makes people feel sad.",
+       "example": "A gloomy cellar lay beneath the old inn."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s9",
+   "title": "Standard case file 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "witty",
+      "sentence": "The witty host kept the table roaring with laughter, replying to every remark with a clever joke that no one saw coming.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Rude and unkind"
+       },
+       {
+        "id": "d2",
+        "text": "Clever and amusing in what you say"
+       },
+       {
+        "id": "d3",
+        "text": "Wealthy and generous"
+       },
+       {
+        "id": "d4",
+        "text": "Quiet and shy"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "replying to every remark with a clever joke that no one saw coming"
+       },
+       {
+        "id": "e2",
+        "text": "The witty host"
+       },
+       {
+        "id": "e3",
+        "text": "kept the table roaring with laughter"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "How did he answer each remark?",
+      "whyNot": {
+       "d1": "The table roared with laughter, so he was not hurtful.",
+       "d3": "Money is not mentioned.",
+       "d4": "Replying to every remark is not shy."
+      },
+      "eliminate": "d1",
+      "explanation": "Witty means clever and funny in speech. Clever jokes in reply to every remark show it; the laughter is the result.",
+      "learnMore": {
+       "definition": "Showing quick, clever humour.",
+       "example": "Her witty reply made even the judge smile."
+      }
+     },
+     {
+      "id": "b",
+      "word": "gullible",
+      "sentence": "He was so gullible that he believed his brother's story about the dragon in the garden shed, and even went out with a torch to look.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Brave in a crisis"
+       },
+       {
+        "id": "d2",
+        "text": "Good at telling stories"
+       },
+       {
+        "id": "d3",
+        "text": "Too ready to believe things"
+       },
+       {
+        "id": "d4",
+        "text": "Afraid of the dark"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "He was so gullible"
+       },
+       {
+        "id": "e2",
+        "text": "believed his brother's story about the dragon in the garden shed"
+       },
+       {
+        "id": "e3",
+        "text": "even went out with a torch to look"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What did he believe about the shed?",
+      "whyNot": {
+       "d1": "Nothing is said about bravery.",
+       "d2": "It is his brother who tells the story, not him.",
+       "d4": "He went out with a torch, so darkness did not stop him."
+      },
+      "eliminate": "d1",
+      "explanation": "Gullible means too easily fooled. Believing a story about a dragon shows it; going to look is a further sign.",
+      "learnMore": {
+       "definition": "Easily persuaded to believe something that is not true.",
+       "example": "Gullible tourists were sold a map of a place that did not exist."
+      }
+     },
+     {
+      "id": "c",
+      "word": "blunt",
+      "sentence": "Her answer was blunt: she said the cake was dry and the icing far too sweet, and she did not soften it with a smile.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Sharp and pointed"
+       },
+       {
+        "id": "d2",
+        "text": "Dishonest"
+       },
+       {
+        "id": "d3",
+        "text": "Generous with praise"
+       },
+       {
+        "id": "d4",
+        "text": "Direct, with no attempt to be gentle"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "she said the cake was dry and the icing far too sweet"
+       },
+       {
+        "id": "e2",
+        "text": "she did not soften it with a smile"
+       },
+       {
+        "id": "e3",
+        "text": "Her answer was blunt"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "Did she try to soften her words?",
+      "whyNot": {
+       "d1": "Blunt can describe a knife that is not sharp, but here it describes her words.",
+       "d2": "She says what she thinks, so she is honest.",
+       "d3": "She criticises the cake instead of praising it."
+      },
+      "eliminate": "d1",
+      "explanation": "Blunt here means direct without gentleness. Not softening the criticism shows it; what she said is only the content.",
+      "learnMore": {
+       "definition": "Speaking plainly and directly, even if it hurts.",
+       "example": "He gave a blunt warning that anyone arriving late would be turned away."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s10",
+   "title": "Standard case file 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "hostile",
+      "sentence": "The crowd was hostile to the visiting team, booing every touch of the ball while the stewards watched from the gates.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Unfriendly and aggressive"
+       },
+       {
+        "id": "d2",
+        "text": "Warm and welcoming"
+       },
+       {
+        "id": "d3",
+        "text": "Silent and bored"
+       },
+       {
+        "id": "d4",
+        "text": "Confused about the rules"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the stewards watched from the gates"
+       },
+       {
+        "id": "e2",
+        "text": "The crowd was hostile to the visiting team"
+       },
+       {
+        "id": "e3",
+        "text": "booing every touch of the ball"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "How did the crowd react whenever the visitors had the ball?",
+      "whyNot": {
+       "d2": "Booing every touch is the opposite of welcoming.",
+       "d3": "The crowd is noisy, not silent.",
+       "d4": "Confusion about rules is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Hostile means unfriendly and aggressive. Booing every touch of the ball shows it; the stewards are only part of the scene.",
+      "learnMore": {
+       "definition": "Showing strong dislike or opposition, in an aggressive way.",
+       "example": "The explorers met a hostile reception from the villagers."
+      }
+     },
+     {
+      "id": "b",
+      "word": "zealous",
+      "sentence": "The zealous volunteer gave up every weekend to the campaign, knocking on doors from dawn to dusk and never stopping to rest.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Reluctant and slow"
+       },
+       {
+        "id": "d2",
+        "text": "Showing great energy and enthusiasm for a cause"
+       },
+       {
+        "id": "d3",
+        "text": "Paid very well"
+       },
+       {
+        "id": "d4",
+        "text": "Unsure what to say"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The zealous volunteer"
+       },
+       {
+        "id": "e2",
+        "text": "gave up every weekend to the campaign"
+       },
+       {
+        "id": "e3",
+        "text": "knocking on doors from dawn to dusk and never stopping to rest"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "How did the volunteer spend each day?",
+      "whyNot": {
+       "d1": "Working from dawn to dusk is not reluctant.",
+       "d3": "A volunteer is not paid.",
+       "d4": "Knocking on doors does not suggest being lost for words."
+      },
+      "eliminate": "d1",
+      "explanation": "Zealous means passionately devoted. Knocking on doors from dawn to dusk without rest shows it; giving up weekends supports it but is less vivid.",
+      "learnMore": {
+       "definition": "Full of enthusiastic energy for a cause or aim.",
+       "example": "The zealous gardener weeded the borders every morning."
+      }
+     },
+     {
+      "id": "c",
+      "word": "lenient",
+      "sentence": "The lenient judge let the young man off with a warning rather than a fine, saying that everyone deserves a second chance.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Very harsh"
+       },
+       {
+        "id": "d2",
+        "text": "Unable to hear"
+       },
+       {
+        "id": "d3",
+        "text": "Not strict about punishment"
+       },
+       {
+        "id": "d4",
+        "text": "Unfair to everyone"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "let the young man off with a warning rather than a fine"
+       },
+       {
+        "id": "e2",
+        "text": "everyone deserves a second chance"
+       },
+       {
+        "id": "e3",
+        "text": "The lenient judge"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e1"
+      },
+      "focus": "What sentence did the young man receive?",
+      "whyNot": {
+       "d1": "A warning instead of a fine is the opposite of harsh.",
+       "d2": "Hearing is not mentioned.",
+       "d4": "Nothing suggests unfairness."
+      },
+      "eliminate": "d1",
+      "explanation": "Lenient means mild in punishment. A warning instead of a fine shows it; the remark about a second chance gives the reason.",
+      "learnMore": {
+       "definition": "Merciful and mild, especially in punishing people.",
+       "example": "The teacher was lenient with those who handed in work a day late."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-s11",
+   "title": "Standard case file 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "obsolete",
+      "sentence": "The typewriter is now almost obsolete, since hardly anyone uses one and the factories that made them closed years ago.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Newly invented"
+       },
+       {
+        "id": "d2",
+        "text": "Very expensive"
+       },
+       {
+        "id": "d3",
+        "text": "Hard to repair"
+       },
+       {
+        "id": "d4",
+        "text": "No longer used because replaced by something newer"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the factories that made them closed years ago"
+       },
+       {
+        "id": "e2",
+        "text": "The typewriter is now almost obsolete"
+       },
+       {
+        "id": "e3",
+        "text": "hardly anyone uses one"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "How many people still use one?",
+      "whyNot": {
+       "d1": "Almost nobody uses one, so it is not new.",
+       "d2": "Price is not mentioned.",
+       "d3": "Repairs are not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Obsolete means out of date and no longer used. Hardly anyone using one shows it; the factories closing is a consequence.",
+      "learnMore": {
+       "definition": "Out of date and no longer in use.",
+       "example": "The old railway signal became obsolete when the line was electrified."
+      }
+     },
+     {
+      "id": "b",
+      "word": "tactful",
+      "sentence": "She was tactful about his awful singing, saying only that his enthusiasm lit up the room, so he left the stage feeling cheerful.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Careful not to hurt people's feelings"
+       },
+       {
+        "id": "d2",
+        "text": "Eager to criticise"
+       },
+       {
+        "id": "d3",
+        "text": "Unable to hear him"
+       },
+       {
+        "id": "d4",
+        "text": "Jealous of his talent"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "She was tactful about his awful singing"
+       },
+       {
+        "id": "e2",
+        "text": "saying only that his enthusiasm lit up the room"
+       },
+       {
+        "id": "e3",
+        "text": "he left the stage feeling cheerful"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What did she choose to say about his performance?",
+      "whyNot": {
+       "d2": "She avoids criticising, so she is not eager to find fault.",
+       "d3": "She comments on his enthusiasm, so she heard him.",
+       "d4": "Nothing suggests envy; she plainly thinks his singing is poor."
+      },
+      "eliminate": "d2",
+      "explanation": "Tactful means careful to avoid hurting people. Praising his enthusiasm instead of his singing shows it; his cheerful exit is the result.",
+      "learnMore": {
+       "definition": "Careful about what you say so that you do not upset others.",
+       "example": "A tactful friend never mentioned the burnt toast."
+      }
+     },
+     {
+      "id": "c",
+      "word": "serene",
+      "sentence": "The lake was serene at dawn, without a ripple on its surface or a sound in the trees, and the mist drifted slowly over the water.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Stormy and rough"
+       },
+       {
+        "id": "d2",
+        "text": "Calm and peaceful"
+       },
+       {
+        "id": "d3",
+        "text": "Crowded and noisy"
+       },
+       {
+        "id": "d4",
+        "text": "Cold and frozen"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "without a ripple on its surface or a sound in the trees"
+       },
+       {
+        "id": "e2",
+        "text": "the mist drifted slowly over the water"
+       },
+       {
+        "id": "e3",
+        "text": "The lake was serene at dawn"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "How did the surface of the water look?",
+      "whyNot": {
+       "d1": "Without a ripple means it was not rough.",
+       "d3": "No sound in the trees means it was not noisy.",
+       "d4": "Ice is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Serene means calm and peaceful. No ripple and no sound show it; the drifting mist adds to the scene.",
+      "learnMore": {
+       "definition": "Calm, quiet and untroubled.",
+       "example": "She smiled in a serene way as the argument went on around her."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e5",
+   "title": "Expert case file 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "bolster",
+      "sentence": "The new evidence arrived late, but it helped to bolster her argument and gave the committee a firmer reason to back her plan.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Weaken or undermine"
+       },
+       {
+        "id": "d2",
+        "text": "Strengthen or support"
+       },
+       {
+        "id": "d3",
+        "text": "Put forward for the first time"
+       },
+       {
+        "id": "d4",
+        "text": "A long pillow placed beneath other pillows"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "gave the committee a firmer reason to back her plan"
+       },
+       {
+        "id": "e2",
+        "text": "The new evidence arrived late"
+       },
+       {
+        "id": "e3",
+        "text": "it helped to bolster her argument"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "What did the committee gain?",
+      "whyNot": {
+       "d1": "A firmer reason to back her plan makes her case stronger, not weaker.",
+       "d3": "Nothing says the argument was new; it was supported by new evidence.",
+       "d4": "That is the noun meaning; here bolster is a verb."
+      },
+      "eliminate": "d1",
+      "explanation": "Bolster means to strengthen or support. The committee gaining a firmer reason shows the effect on her argument; the late arrival of the evidence says nothing about its meaning.",
+      "learnMore": {
+       "definition": "To support or strengthen something, such as confidence or an argument.",
+       "example": "A cup of tea helped to bolster his courage before the interview."
+      }
+     },
+     {
+      "id": "b",
+      "word": "defer",
+      "sentence": "Unable to attend the whole meeting, the director chose to defer to the board's judgement and let them decide the matter.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Put off until a later time"
+       },
+       {
+        "id": "d2",
+        "text": "Disagree strongly with"
+       },
+       {
+        "id": "d3",
+        "text": "Yield to someone else's opinion or authority"
+       },
+       {
+        "id": "d4",
+        "text": "Explain in detail to"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Unable to attend the whole meeting"
+       },
+       {
+        "id": "e2",
+        "text": "the director chose to defer to the board's judgement"
+       },
+       {
+        "id": "e3",
+        "text": "let them decide the matter"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "Who decided the matter in the end?",
+      "whyNot": {
+       "d1": "Defer can mean postpone, but 'defer to' someone means to give way to them; here the board decides.",
+       "d2": "Letting them decide is the opposite of disagreeing.",
+       "d4": "Nothing is being explained."
+      },
+      "eliminate": "d1",
+      "explanation": "Defer to means to yield to another's view. The board deciding the matter shows the director gave way; the missed meeting is only the situation.",
+      "learnMore": {
+       "definition": "To give way to the opinion or authority of someone else, or (with a different construction) to put something off.",
+       "example": "The young player chose to defer to the captain's greater experience."
+      }
+     },
+     {
+      "id": "c",
+      "word": "crude",
+      "sentence": "The crude shelter, made from a few planks and a tarpaulin, kept off the rain but nothing else.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Rude or offensive"
+       },
+       {
+        "id": "d2",
+        "text": "Newly dug from the ground"
+       },
+       {
+        "id": "d3",
+        "text": "Costly and elaborate"
+       },
+       {
+        "id": "d4",
+        "text": "Rough and simply made"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "made from a few planks and a tarpaulin"
+       },
+       {
+        "id": "e2",
+        "text": "kept off the rain but nothing else"
+       },
+       {
+        "id": "e3",
+        "text": "The crude shelter"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "What was the shelter made from?",
+      "whyNot": {
+       "d1": "That sense applies to jokes and language, not to a shelter.",
+       "d2": "Crude oil is unrefined, but nobody digs up a shelter.",
+       "d3": "A few planks and a tarpaulin is cheap and plain."
+      },
+      "eliminate": "d1",
+      "explanation": "Crude here means rough and basic. A few planks and a tarpaulin show how simply it was made; the rain remark tells us what it could do.",
+      "learnMore": {
+       "definition": "In a natural or rough state, not carefully made or refined.",
+       "example": "The children drew a crude map of the island with a stick in the sand."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e6",
+   "title": "Expert case file 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "fastidious",
+      "sentence": "The fastidious chef walked round the kitchen at six o'clock and sent back any dish with a single fingerprint on the rim.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Very careful about detail and cleanliness"
+       },
+       {
+        "id": "d2",
+        "text": "Hurried and careless"
+       },
+       {
+        "id": "d3",
+        "text": "Fond of eating large meals"
+       },
+       {
+        "id": "d4",
+        "text": "Famous for inventing new dishes"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "sent back any dish with a single fingerprint on the rim"
+       },
+       {
+        "id": "e2",
+        "text": "The fastidious chef"
+       },
+       {
+        "id": "e3",
+        "text": "walked round the kitchen at six o'clock"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e1"
+      },
+      "focus": "What would make him send a dish back?",
+      "whyNot": {
+       "d2": "Rejecting a dish over a fingerprint is the opposite of careless.",
+       "d3": "Appetite is not mentioned.",
+       "d4": "Nothing says he invents dishes."
+      },
+      "eliminate": "d2",
+      "explanation": "Fastidious means very particular about detail. Sending back a dish for one fingerprint shows it; the time of his rounds does not.",
+      "learnMore": {
+       "definition": "Very attentive to accuracy and cleanliness, and hard to please.",
+       "example": "She was fastidious about keeping her desk free of dust."
+      }
+     },
+     {
+      "id": "b",
+      "word": "inured",
+      "sentence": "After years in the noisy city, she was inured to the traffic and slept soundly through the loudest rush hour.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Made ill by repeated exposure"
+       },
+       {
+        "id": "d2",
+        "text": "Made used to something unpleasant"
+       },
+       {
+        "id": "d3",
+        "text": "Forced to leave"
+       },
+       {
+        "id": "d4",
+        "text": "Kept safe from harm"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "After years in the noisy city"
+       },
+       {
+        "id": "e2",
+        "text": "she was inured to the traffic"
+       },
+       {
+        "id": "e3",
+        "text": "slept soundly through the loudest rush hour"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "How well did she sleep when the noise was worst?",
+      "whyNot": {
+       "d1": "She slept soundly, so she was not made ill.",
+       "d3": "She stays in the city.",
+       "d4": "Being protected is different from being accustomed; the noise still exists."
+      },
+      "eliminate": "d1",
+      "explanation": "Inured means accustomed to something harsh. Sleeping through the loudest rush hour shows the noise no longer troubled her.",
+      "learnMore": {
+       "definition": "Accustomed to something unpleasant, so that it no longer troubles you.",
+       "example": "Nurses become inured to long shifts and little sleep."
+      }
+     },
+     {
+      "id": "c",
+      "word": "obdurate",
+      "sentence": "The obdurate minister ignored every plea from the families and refused to reverse his decision, however many letters arrived.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Eager to please the public"
+       },
+       {
+        "id": "d2",
+        "text": "Forgetful and disorganised"
+       },
+       {
+        "id": "d3",
+        "text": "Stubbornly unmoved, refusing to change"
+       },
+       {
+        "id": "d4",
+        "text": "Sorry for the harm done"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "ignored every plea from the families"
+       },
+       {
+        "id": "e2",
+        "text": "refused to reverse his decision, however many letters arrived"
+       },
+       {
+        "id": "e3",
+        "text": "The obdurate minister"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "How did the minister respond to the letters?",
+      "whyNot": {
+       "d1": "Ignoring pleas is the opposite of pleasing people.",
+       "d2": "Nothing suggests forgetfulness; his refusal is deliberate.",
+       "d4": "He gives no sign of regret."
+      },
+      "eliminate": "d1",
+      "explanation": "Obdurate means hard-hearted and stubborn. Refusing to reverse his decision whatever the pressure shows it; ignoring the pleas is part of the picture but less decisive.",
+      "learnMore": {
+       "definition": "Stubbornly refusing to change your mind or feelings.",
+       "example": "The obdurate tenant would not leave, whatever the landlord offered."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e7",
+   "title": "Expert case file 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "ostensible",
+      "sentence": "The ostensible reason for the visit was to deliver a parcel, but he spent the whole afternoon searching the study.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Honest and entirely true"
+       },
+       {
+        "id": "d2",
+        "text": "Deliberately kept secret"
+       },
+       {
+        "id": "d3",
+        "text": "The most important of several"
+       },
+       {
+        "id": "d4",
+        "text": "Stated or apparent, but not the real one"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "he spent the whole afternoon searching the study"
+       },
+       {
+        "id": "e2",
+        "text": "The ostensible reason for the visit"
+       },
+       {
+        "id": "e3",
+        "text": "was to deliver a parcel"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "What did he actually spend the afternoon doing?",
+      "whyNot": {
+       "d1": "The contrast with what he really did shows the stated reason was not the whole truth.",
+       "d2": "The reason was announced openly, not hidden.",
+       "d3": "Nothing ranks the reasons."
+      },
+      "eliminate": "d1",
+      "explanation": "Ostensible means seeming or stated, but suspected not to be real. His afternoon in the study suggests the real purpose was different.",
+      "learnMore": {
+       "definition": "Appearing or claimed to be true, but possibly not so.",
+       "example": "The ostensible purpose of the meeting was to plan the party."
+      }
+     },
+     {
+      "id": "b",
+      "word": "penchant",
+      "sentence": "She had a penchant for second-hand bookshops, and she could never walk past one without going in, even when late for work.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "A strong liking or habit"
+       },
+       {
+        "id": "d2",
+        "text": "A strong dislike"
+       },
+       {
+        "id": "d3",
+        "text": "A talent for writing"
+       },
+       {
+        "id": "d4",
+        "text": "A feeling of regret"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "She had a penchant for second-hand bookshops"
+       },
+       {
+        "id": "e2",
+        "text": "she could never walk past one without going in"
+       },
+       {
+        "id": "e3",
+        "text": "even when late for work"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What happened whenever she passed a shop?",
+      "whyNot": {
+       "d2": "She cannot resist going in, so she does not dislike them.",
+       "d3": "Nothing says she writes.",
+       "d4": "Regret is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Penchant means a strong liking. Being unable to walk past one without going in shows it; being late for work only shows how strong it was.",
+      "learnMore": {
+       "definition": "A strong and lasting liking or tendency.",
+       "example": "He has a penchant for bright waistcoats."
+      }
+     },
+     {
+      "id": "c",
+      "word": "perfunctory",
+      "sentence": "His perfunctory goodbye was a quick nod without a glance, and the door closed behind her with a click.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Warm and heartfelt"
+       },
+       {
+        "id": "d2",
+        "text": "Done quickly, with little care or interest"
+       },
+       {
+        "id": "d3",
+        "text": "Spoken in a foreign language"
+       },
+       {
+        "id": "d4",
+        "text": "Long and elaborate"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "was a quick nod without a glance"
+       },
+       {
+        "id": "e2",
+        "text": "the door closed behind her with a click"
+       },
+       {
+        "id": "e3",
+        "text": "His perfunctory goodbye"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "What form did the goodbye take?",
+      "whyNot": {
+       "d1": "A quick nod without a glance is the opposite of heartfelt.",
+       "d3": "No language is mentioned.",
+       "d4": "A quick nod is short and plain."
+      },
+      "eliminate": "d1",
+      "explanation": "Perfunctory means done as a duty, without effort. A nod with no glance shows it; the click of the door only records what followed.",
+      "learnMore": {
+       "definition": "Done with the minimum of effort or interest, as a routine.",
+       "example": "The inspector gave the room a perfunctory glance and moved on."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e8",
+   "title": "Expert case file 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "plausible",
+      "sentence": "The excuse sounded plausible, since trains really had been delayed that morning, but the teacher still asked for a note.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Certainly true"
+       },
+       {
+        "id": "d2",
+        "text": "Completely absurd"
+       },
+       {
+        "id": "d3",
+        "text": "Seeming reasonable and likely to be true"
+       },
+       {
+        "id": "d4",
+        "text": "Rude and dismissive"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the teacher still asked for a note"
+       },
+       {
+        "id": "e2",
+        "text": "The excuse sounded plausible"
+       },
+       {
+        "id": "e3",
+        "text": "trains really had been delayed that morning"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "What made the excuse sound believable?",
+      "whyNot": {
+       "d1": "The teacher still asks for a note, so it is not proven.",
+       "d2": "Delayed trains make it believable, not absurd.",
+       "d4": "Nothing about the tone is described."
+      },
+      "eliminate": "d1",
+      "explanation": "Plausible means believable without being proved. Delayed trains made it believable; the request for a note shows it was not certain.",
+      "learnMore": {
+       "definition": "Seeming reasonable or probable, though not necessarily true.",
+       "example": "It is plausible that the dog ate the sandwich, as the plate is empty and he is licking his lips."
+      }
+     },
+     {
+      "id": "b",
+      "word": "precipitate",
+      "sentence": "The precipitate decision to sell the shop, made in an hour without checking the figures, left the family badly out of pocket.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Carefully planned over many months"
+       },
+       {
+        "id": "d2",
+        "text": "Forced on them by the law"
+       },
+       {
+        "id": "d3",
+        "text": "Agreed by a large committee"
+       },
+       {
+        "id": "d4",
+        "text": "Done too quickly, without enough thought"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The precipitate decision to sell the shop"
+       },
+       {
+        "id": "e2",
+        "text": "made in an hour without checking the figures"
+       },
+       {
+        "id": "e3",
+        "text": "left the family badly out of pocket"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "How long did the decision take?",
+      "whyNot": {
+       "d1": "An hour without checking is not careful planning.",
+       "d2": "Nothing mentions the law.",
+       "d3": "No committee is mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Here precipitate is an adjective meaning rash and hasty. Deciding within an hour without checking the figures shows it; the loss is only the result.",
+      "learnMore": {
+       "definition": "Done suddenly and without careful thought.",
+       "example": "Her precipitate departure left the guests puzzled."
+      }
+     },
+     {
+      "id": "c",
+      "word": "prosaic",
+      "sentence": "After the wild opening, the rest of the film was prosaic, a series of ordinary conversations in ordinary kitchens.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Dull and ordinary, lacking imagination"
+       },
+       {
+        "id": "d2",
+        "text": "Written as poetry"
+       },
+       {
+        "id": "d3",
+        "text": "Dramatic and exciting"
+       },
+       {
+        "id": "d4",
+        "text": "Beautifully filmed"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "the rest of the film was prosaic"
+       },
+       {
+        "id": "e2",
+        "text": "a series of ordinary conversations in ordinary kitchens"
+       },
+       {
+        "id": "e3",
+        "text": "After the wild opening"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the remainder of the film show?",
+      "whyNot": {
+       "d2": "Prosaic comes from prose, the opposite of verse, and nothing here is poetry.",
+       "d3": "The wild opening is contrasted with the rest, which is ordinary.",
+       "d4": "Nothing is said about the photography."
+      },
+      "eliminate": "d2",
+      "explanation": "Prosaic means plain and unimaginative. Ordinary conversations in ordinary kitchens show it; the wild opening is a contrast.",
+      "learnMore": {
+       "definition": "Ordinary and unexciting, with no imagination or poetry.",
+       "example": "He gave a prosaic reason for the delay: the bus was late."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e9",
+   "title": "Expert case file 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "quixotic",
+      "sentence": "His quixotic plan to cross the Atlantic in a bathtub won the admiration of his friends, and the local paper ran his picture.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Cowardly and cautious"
+       },
+       {
+        "id": "d2",
+        "text": "Idealistic but impractical"
+       },
+       {
+        "id": "d3",
+        "text": "Cleverly practical"
+       },
+       {
+        "id": "d4",
+        "text": "Based on careful research"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "won the admiration of his friends"
+       },
+       {
+        "id": "e2",
+        "text": "His quixotic plan"
+       },
+       {
+        "id": "e3",
+        "text": "to cross the Atlantic in a bathtub"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e3"
+      },
+      "focus": "What did he intend to cross the ocean in?",
+      "whyNot": {
+       "d1": "Crossing an ocean in a bathtub is bold, not cautious.",
+       "d3": "A bathtub is not a practical vessel.",
+       "d4": "The plan sounds unrealistic, not researched."
+      },
+      "eliminate": "d1",
+      "explanation": "Quixotic means noble in aim but impractical. Planning an ocean crossing in a bathtub shows both; the friends' admiration does not decide the meaning.",
+      "learnMore": {
+       "definition": "Extremely idealistic and not realistic or practical.",
+       "example": "It was a quixotic hope that a single letter would change the law."
+      }
+     },
+     {
+      "id": "b",
+      "word": "redolent",
+      "sentence": "The old kitchen was redolent of cinnamon and baked apples, so that visitors smiled the moment they stepped inside.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Unpleasant to smell"
+       },
+       {
+        "id": "d2",
+        "text": "Decorated with pictures of"
+       },
+       {
+        "id": "d3",
+        "text": "Strongly smelling of, or reminding you of"
+       },
+       {
+        "id": "d4",
+        "text": "Warmed by"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The old kitchen was redolent of"
+       },
+       {
+        "id": "e2",
+        "text": "cinnamon and baked apples"
+       },
+       {
+        "id": "e3",
+        "text": "visitors smiled the moment they stepped inside"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "Which things were noticed in the kitchen?",
+      "whyNot": {
+       "d1": "The visitors smile, so the effect is pleasant.",
+       "d2": "Nothing is said about decorations.",
+       "d4": "Temperature is not mentioned."
+      },
+      "eliminate": "d1",
+      "explanation": "Redolent of means strongly suggesting something, especially by smell. Cinnamon and baked apples are what the kitchen smelled of; the smiles are the reaction.",
+      "learnMore": {
+       "definition": "Strongly suggesting a smell or a memory of something.",
+       "example": "The village was redolent of woodsmoke on autumn evenings."
+      }
+     },
+     {
+      "id": "c",
+      "word": "sanguine",
+      "sentence": "Despite the setback, she remained sanguine about the future, certain that the business would recover by spring.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Blood-red in colour"
+       },
+       {
+        "id": "d2",
+        "text": "Gloomy and resigned"
+       },
+       {
+        "id": "d3",
+        "text": "Angry and resentful"
+       },
+       {
+        "id": "d4",
+        "text": "Cheerfully optimistic"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "she remained sanguine about the future"
+       },
+       {
+        "id": "e2",
+        "text": "certain that the business would recover by spring"
+       },
+       {
+        "id": "e3",
+        "text": "Despite the setback"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e2"
+      },
+      "focus": "What did she expect to happen to the business?",
+      "whyNot": {
+       "d1": "The word can relate to blood, but nothing here concerns colour.",
+       "d2": "Expecting recovery is not gloomy.",
+       "d3": "Nothing suggests anger."
+      },
+      "eliminate": "d1",
+      "explanation": "Sanguine here means hopeful. Expecting the business to recover shows it; the setback is the reason hope was in doubt.",
+      "learnMore": {
+       "definition": "Optimistic, especially in a difficult situation.",
+       "example": "The doctors were sanguine about the patient's chances."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e10",
+   "title": "Expert case file 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "staid",
+      "sentence": "The staid old club never changed its rules or its menu, and members who asked for anything new were gently ignored.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Serious and set in its ways"
+       },
+       {
+        "id": "d2",
+        "text": "Lively and fashionable"
+       },
+       {
+        "id": "d3",
+        "text": "Newly founded"
+       },
+       {
+        "id": "d4",
+        "text": "Expensive and exclusive"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "members who asked for anything new were gently ignored"
+       },
+       {
+        "id": "e2",
+        "text": "The staid old club"
+       },
+       {
+        "id": "e3",
+        "text": "never changed its rules or its menu"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e3"
+      },
+      "focus": "What did the club do about its rules?",
+      "whyNot": {
+       "d2": "Never changing is the opposite of fashionable.",
+       "d3": "It is called old, not new.",
+       "d4": "Cost is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Staid means sedate and unadventurous. Never changing its rules or menu shows it; ignoring requests for anything new is a consequence.",
+      "learnMore": {
+       "definition": "Respectable, serious and unwilling to change.",
+       "example": "The staid bank manager wore the same grey suit every day."
+      }
+     },
+     {
+      "id": "b",
+      "word": "trenchant",
+      "sentence": "Her trenchant review cut straight to the weakness of the plot, and it appeared in Saturday's paper.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Long and rambling"
+       },
+       {
+        "id": "d2",
+        "text": "Sharp, forceful and direct"
+       },
+       {
+        "id": "d3",
+        "text": "Polite but vague"
+       },
+       {
+        "id": "d4",
+        "text": "Dull and repetitive"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "Her trenchant review"
+       },
+       {
+        "id": "e2",
+        "text": "cut straight to the weakness of the plot"
+       },
+       {
+        "id": "e3",
+        "text": "it appeared in Saturday's paper"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e2"
+      },
+      "focus": "What did the review go straight to?",
+      "whyNot": {
+       "d1": "Cutting straight to the point is not rambling.",
+       "d3": "Going straight to the weakness is not vague.",
+       "d4": "Nothing suggests it repeats itself."
+      },
+      "eliminate": "d1",
+      "explanation": "Trenchant means incisive and forceful. Cutting straight to the weakness shows it; Saturday's paper only says where it appeared.",
+      "learnMore": {
+       "definition": "Sharp, strong and effective in expression or argument.",
+       "example": "The report made a trenchant criticism of the plan."
+      }
+     },
+     {
+      "id": "c",
+      "word": "vindicate",
+      "sentence": "The inquiry's final report was expected to vindicate the pilot, showing that he had followed every procedure and was not to blame.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Punish severely"
+       },
+       {
+        "id": "d2",
+        "text": "Make a public apology to"
+       },
+       {
+        "id": "d3",
+        "text": "Clear of blame by showing to be right"
+       },
+       {
+        "id": "d4",
+        "text": "Keep a secret for"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "was expected to vindicate the pilot"
+       },
+       {
+        "id": "e2",
+        "text": "showing that he had followed every procedure and was not to blame"
+       },
+       {
+        "id": "e3",
+        "text": "The inquiry's final report"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e2"
+      },
+      "focus": "What would the report show about the pilot?",
+      "whyNot": {
+       "d1": "The report shows he was not to blame, so there is no punishment.",
+       "d2": "Nobody is apologising; the report is an inquiry's finding.",
+       "d4": "Nothing is being kept secret."
+      },
+      "eliminate": "d1",
+      "explanation": "Vindicate means to clear of blame or prove right. Showing he followed procedure and was not to blame is the direct evidence.",
+      "learnMore": {
+       "definition": "To show that someone or something is right, reasonable or free from blame.",
+       "example": "The discovery of the lost letters vindicated her claim."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e11",
+   "title": "Expert case file 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "anodyne",
+      "sentence": "The politician gave an anodyne reply at the end of a long press conference, so bland and general that it offended no one.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Sharp and aggressive"
+       },
+       {
+        "id": "d2",
+        "text": "Relieving pain"
+       },
+       {
+        "id": "d3",
+        "text": "Memorable and bold"
+       },
+       {
+        "id": "d4",
+        "text": "Deliberately inoffensive and bland"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "so bland and general that it offended no one"
+       },
+       {
+        "id": "e2",
+        "text": "The politician gave an anodyne reply"
+       },
+       {
+        "id": "e3",
+        "text": "at the end of a long press conference"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e1"
+      },
+      "focus": "How did the reply affect the audience?",
+      "whyNot": {
+       "d1": "A reply that offends no one is not aggressive.",
+       "d2": "Anodyne can mean a painkiller, but a reply cannot relieve pain.",
+       "d3": "A bland reply is not bold."
+      },
+      "eliminate": "d1",
+      "explanation": "Anodyne here means safe and bland. A reply so general that it offends no one shows it; the press conference is the setting.",
+      "learnMore": {
+       "definition": "Not likely to offend, or lacking strong ideas, so as to be bland.",
+       "example": "The film was an anodyne comedy that nobody could object to."
+      }
+     },
+     {
+      "id": "b",
+      "word": "sedulous",
+      "sentence": "The sedulous clerk checked every column twice and stayed at his desk until the last figure agreed, in a small office above the bakery.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Hard-working and persevering"
+       },
+       {
+        "id": "d2",
+        "text": "Sleepy and slow"
+       },
+       {
+        "id": "d3",
+        "text": "Dishonest with figures"
+       },
+       {
+        "id": "d4",
+        "text": "Easily distracted"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The sedulous clerk"
+       },
+       {
+        "id": "e2",
+        "text": "checked every column twice and stayed at his desk until the last figure agreed"
+       },
+       {
+        "id": "e3",
+        "text": "in a small office above the bakery"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "How thoroughly did he do his sums?",
+      "whyNot": {
+       "d2": "Staying until the last figure agreed is not sleepy or slow.",
+       "d3": "He checks everything twice, so he is not cheating.",
+       "d4": "Staying at his desk until the work is done shows focus."
+      },
+      "eliminate": "d2",
+      "explanation": "Sedulous means diligent and persistent. Checking every column twice and staying until the figures agreed shows it; the bakery is unrelated.",
+      "learnMore": {
+       "definition": "Showing dedication and diligence in doing a task.",
+       "example": "The sedulous gardener pulled up every weed by hand."
+      }
+     },
+     {
+      "id": "c",
+      "word": "truculent",
+      "sentence": "The truculent customer glared at the waiter, snapped at everyone nearby and demanded a refund before he had even tasted the food.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Shy and timid"
+       },
+       {
+        "id": "d2",
+        "text": "Aggressively defiant, ready to quarrel"
+       },
+       {
+        "id": "d3",
+        "text": "Extremely hungry"
+       },
+       {
+        "id": "d4",
+        "text": "Exceptionally polite"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "glared at the waiter, snapped at everyone nearby"
+       },
+       {
+        "id": "e2",
+        "text": "demanded a refund before he had even tasted the food"
+       },
+       {
+        "id": "e3",
+        "text": "The truculent customer"
+       }
+      ],
+      "answer": {
+       "definitionId": "d2",
+       "evidenceId": "e1"
+      },
+      "focus": "How did he treat the people around him?",
+      "whyNot": {
+       "d1": "Snapping at everyone is the opposite of shy.",
+       "d3": "Hunger is not mentioned.",
+       "d4": "Glaring and snapping is rude."
+      },
+      "eliminate": "d1",
+      "explanation": "Truculent means aggressively hostile. Glaring and snapping at everyone shows it; demanding a refund before eating adds to it.",
+      "learnMore": {
+       "definition": "Eager to argue or fight; aggressively defiant.",
+       "example": "A truculent teenager slammed the door and refused to explain."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dd-e12",
+   "title": "Expert case file 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "cases": [
+     {
+      "id": "a",
+      "word": "cleave",
+      "sentence": "The axe could cleave the log in a single blow, leaving two clean halves on the chopping block.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Cling firmly to"
+       },
+       {
+        "id": "d2",
+        "text": "Polish until smooth"
+       },
+       {
+        "id": "d3",
+        "text": "Split apart"
+       },
+       {
+        "id": "d4",
+        "text": "Lift off the ground"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "on the chopping block"
+       },
+       {
+        "id": "e2",
+        "text": "The axe could cleave the log in a single blow"
+       },
+       {
+        "id": "e3",
+        "text": "leaving two clean halves"
+       }
+      ],
+      "answer": {
+       "definitionId": "d3",
+       "evidenceId": "e3"
+      },
+      "focus": "What was left of the log?",
+      "whyNot": {
+       "d1": "Cleave can also mean cling, but two halves show splitting.",
+       "d2": "Nothing is being polished.",
+       "d4": "Nothing is being lifted."
+      },
+      "eliminate": "d1",
+      "explanation": "Cleave has two opposite senses, split and stick. Two clean halves show that it means split.",
+      "learnMore": {
+       "definition": "To split or divide something, especially with a sharp blow. (It can also mean to cling.)",
+       "example": "The ship's bow seemed to cleave the waves."
+      }
+     },
+     {
+      "id": "b",
+      "word": "scrupulous",
+      "sentence": "The scrupulous accountant found a clerical error that had paid the firm too much, and returned the extra money at once, even though nobody would ever have noticed.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Mean with money"
+       },
+       {
+        "id": "d2",
+        "text": "Careless with detail"
+       },
+       {
+        "id": "d3",
+        "text": "Easily fooled"
+       },
+       {
+        "id": "d4",
+        "text": "Careful to act honestly and correctly"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "The scrupulous accountant"
+       },
+       {
+        "id": "e2",
+        "text": "found a clerical error that had paid the firm too much"
+       },
+       {
+        "id": "e3",
+        "text": "returned the extra money at once, even though nobody would ever have noticed"
+       }
+      ],
+      "answer": {
+       "definitionId": "d4",
+       "evidenceId": "e3"
+      },
+      "focus": "What did the accountant do about the mistake?",
+      "whyNot": {
+       "d1": "He gives the money back, so he is not being mean.",
+       "d2": "He found the error, so he was careful.",
+       "d3": "Nothing says anyone fooled him."
+      },
+      "eliminate": "d1",
+      "explanation": "Scrupulous means strictly honest and careful. Returning the money even though no one would have noticed shows it; finding the error is only the starting point.",
+      "learnMore": {
+       "definition": "Careful to do what is right, and extremely attentive to detail.",
+       "example": "The scrupulous judge refused any gift from the people in her court."
+      }
+     },
+     {
+      "id": "c",
+      "word": "inveterate",
+      "sentence": "An inveterate gambler, he could not pass a racecourse without placing a bet, and he had done so every week for thirty years.",
+      "definitions": [
+       {
+        "id": "d1",
+        "text": "Having a long-established habit that is hard to change"
+       },
+       {
+        "id": "d2",
+        "text": "Newly started and still learning"
+       },
+       {
+        "id": "d3",
+        "text": "Reformed and honest"
+       },
+       {
+        "id": "d4",
+        "text": "Unlucky"
+       }
+      ],
+      "evidence": [
+       {
+        "id": "e1",
+        "text": "he could not pass a racecourse without placing a bet"
+       },
+       {
+        "id": "e2",
+        "text": "he had done so every week for thirty years"
+       },
+       {
+        "id": "e3",
+        "text": "An inveterate gambler"
+       }
+      ],
+      "answer": {
+       "definitionId": "d1",
+       "evidenceId": "e2"
+      },
+      "focus": "For how long had he done this?",
+      "whyNot": {
+       "d2": "Thirty years is not a new habit.",
+       "d3": "He still bets every week, so he has not reformed.",
+       "d4": "Luck is not mentioned."
+      },
+      "eliminate": "d2",
+      "explanation": "Inveterate means deeply fixed by long habit. Betting every week for thirty years shows it; the racecourse remark shows the strength of the habit but not its length.",
+      "learnMore": {
+       "definition": "Having a habit or feeling that is firmly fixed after a long time.",
+       "example": "She was an inveterate collector of old postcards."
+      }
+     }
+    ]
+   }
   }
  ]
 }

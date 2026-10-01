@@ -53,6 +53,6 @@ export function validateContent(): string[] {
       if (`${meta.title ?? ""} ${meta.id}`.toLowerCase().includes(w)) problems.push(`${meta.id}: title or id spoils ${w}`);
     });
   }
-  for (const d of ["gentle", "standard", "expert"]) if (!perDifficulty[d]) problems.push(`no ${d} rounds`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
   return problems;
 }
