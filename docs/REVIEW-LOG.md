@@ -1,5 +1,8 @@
 # Review log: things a human must check
 
+Start with the prioritised summary in `docs/COMPLETION-REPORT.md` ("What a human must do before
+public release"). The sections below hold every individual item, grouped by area.
+
 Everything the build made a best-effort or recommended decision on, or could not verify.
 Grouped by area; each game appends its own section.
 
