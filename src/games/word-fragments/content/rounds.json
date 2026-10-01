@@ -1525,6 +1525,2191 @@
         "claimsUnique": true,
         "explanation": "Three POT tiles, two TEA tiles and a lone S: S+POT could also read SPOT, so the clues decide."
       }
+    },
+    {
+      "id": "wf-g6",
+      "title": "Gentle board 6",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A hearth in a living room where logs burn",
+            "length": 9
+          },
+          {
+            "id": "b",
+            "clue": "Pale light from the moon at night",
+            "length": 9
+          },
+          {
+            "id": "c",
+            "clue": "Daily printed sheets of reports and photographs",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "PAPER"
+          },
+          {
+            "id": "t2",
+            "text": "MOON"
+          },
+          {
+            "id": "t3",
+            "text": "NEWS"
+          },
+          {
+            "id": "t4",
+            "text": "LIGHT"
+          },
+          {
+            "id": "t5",
+            "text": "PLACE"
+          },
+          {
+            "id": "t6",
+            "text": "FIRE"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "FIREPLACE"
+          ],
+          "b": [
+            "MOONLIGHT"
+          ],
+          "c": [
+            "NEWSPAPER"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t6",
+              "t5"
+            ],
+            "b": [
+              "t2",
+              "t4"
+            ],
+            "c": [
+              "t3",
+              "t1"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g7",
+      "title": "Gentle board 7",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A place where aircraft take off and land",
+            "length": 7
+          },
+          {
+            "id": "b",
+            "clue": "A plant that grows in the sea and washes up on beaches",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "The wax structure where bees store honey",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "PORT"
+          },
+          {
+            "id": "t2",
+            "text": "AIR"
+          },
+          {
+            "id": "t3",
+            "text": "HONEY"
+          },
+          {
+            "id": "t4",
+            "text": "SEA"
+          },
+          {
+            "id": "t5",
+            "text": "WEED"
+          },
+          {
+            "id": "t6",
+            "text": "COMB"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "AIRPORT"
+          ],
+          "b": [
+            "SEAWEED"
+          ],
+          "c": [
+            "HONEYCOMB"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t1"
+            ],
+            "b": [
+              "t4",
+              "t5"
+            ],
+            "c": [
+              "t3",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g8",
+      "title": "Gentle board 8",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "The strip of hair above your eye",
+            "length": 7
+          },
+          {
+            "id": "b",
+            "clue": "A small brush for cleaning your teeth",
+            "length": 10
+          },
+          {
+            "id": "c",
+            "clue": "The hard covering at the tip of a finger",
+            "length": 10
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BRUSH"
+          },
+          {
+            "id": "t2",
+            "text": "NAIL"
+          },
+          {
+            "id": "t3",
+            "text": "EYE"
+          },
+          {
+            "id": "t4",
+            "text": "FINGER"
+          },
+          {
+            "id": "t5",
+            "text": "TOOTH"
+          },
+          {
+            "id": "t6",
+            "text": "BROW"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "EYEBROW"
+          ],
+          "b": [
+            "TOOTHBRUSH"
+          ],
+          "c": [
+            "FINGERNAIL"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t3",
+              "t6"
+            ],
+            "b": [
+              "t5",
+              "t1"
+            ],
+            "c": [
+              "t4",
+              "t2"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g9",
+      "title": "Gentle board 9",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A dark panel in a classroom for writing on with chalk",
+            "length": 10
+          },
+          {
+            "id": "b",
+            "clue": "An outdoor area where children play at school",
+            "length": 10
+          },
+          {
+            "id": "c",
+            "clue": "Tasks set by a teacher to be done at home",
+            "length": 8
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BLACK"
+          },
+          {
+            "id": "t2",
+            "text": "GROUND"
+          },
+          {
+            "id": "t3",
+            "text": "WORK"
+          },
+          {
+            "id": "t4",
+            "text": "PLAY"
+          },
+          {
+            "id": "t5",
+            "text": "BOARD"
+          },
+          {
+            "id": "t6",
+            "text": "HOME"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BLACKBOARD"
+          ],
+          "b": [
+            "PLAYGROUND"
+          ],
+          "c": [
+            "HOMEWORK"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t5"
+            ],
+            "b": [
+              "t4",
+              "t2"
+            ],
+            "c": [
+              "t6",
+              "t3"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g10",
+      "title": "Gentle board 10",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A bag carried on the shoulders",
+            "length": 8
+          },
+          {
+            "id": "b",
+            "clue": "The area next to the sea where people go on holiday",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "The moment in the morning when the sun first appears",
+            "length": 7
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BACK"
+          },
+          {
+            "id": "t2",
+            "text": "SEA"
+          },
+          {
+            "id": "t3",
+            "text": "SIDE"
+          },
+          {
+            "id": "t4",
+            "text": "PACK"
+          },
+          {
+            "id": "t5",
+            "text": "SUN"
+          },
+          {
+            "id": "t6",
+            "text": "RISE"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BACKPACK"
+          ],
+          "b": [
+            "SEASIDE"
+          ],
+          "c": [
+            "SUNRISE"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t4"
+            ],
+            "b": [
+              "t2",
+              "t3"
+            ],
+            "c": [
+              "t5",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g11",
+      "title": "Gentle board 11",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A rack for storing books",
+            "length": 9
+          },
+          {
+            "id": "b",
+            "clue": "A rectangle of stiff paper sent from a holiday",
+            "length": 8
+          },
+          {
+            "id": "c",
+            "clue": "A route along which trains run",
+            "length": 7
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "POST"
+          },
+          {
+            "id": "t2",
+            "text": "CARD"
+          },
+          {
+            "id": "t3",
+            "text": "SHELF"
+          },
+          {
+            "id": "t4",
+            "text": "RAIL"
+          },
+          {
+            "id": "t5",
+            "text": "BOOK"
+          },
+          {
+            "id": "t6",
+            "text": "WAY"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BOOKSHELF"
+          ],
+          "b": [
+            "POSTCARD"
+          ],
+          "c": [
+            "RAILWAY"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t5",
+              "t3"
+            ],
+            "b": [
+              "t1",
+              "t2"
+            ],
+            "c": [
+              "t4",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-g12",
+      "title": "Gentle board 12",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "Natural brightness from the sun during the day",
+            "length": 8
+          },
+          {
+            "id": "b",
+            "clue": "A small orange pet fish kept in a bowl",
+            "length": 8
+          },
+          {
+            "id": "c",
+            "clue": "A comfortable seat with supports for your arms",
+            "length": 8
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "DAY"
+          },
+          {
+            "id": "t2",
+            "text": "GOLD"
+          },
+          {
+            "id": "t3",
+            "text": "FISH"
+          },
+          {
+            "id": "t4",
+            "text": "LIGHT"
+          },
+          {
+            "id": "t5",
+            "text": "CHAIR"
+          },
+          {
+            "id": "t6",
+            "text": "ARM"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "DAYLIGHT"
+          ],
+          "b": [
+            "GOLDFISH"
+          ],
+          "c": [
+            "ARMCHAIR"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t4"
+            ],
+            "b": [
+              "t2",
+              "t3"
+            ],
+            "c": [
+              "t6",
+              "t5"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three compounds of two whole words each."
+      }
+    },
+    {
+      "id": "wf-s6",
+      "title": "Standard board 6",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A pair of uprights with rungs for climbing",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A place where traders sell goods from stalls",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "A shiny grey-white precious metal",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "MAR"
+          },
+          {
+            "id": "t2",
+            "text": "DER"
+          },
+          {
+            "id": "t3",
+            "text": "LAD"
+          },
+          {
+            "id": "t4",
+            "text": "KET"
+          },
+          {
+            "id": "t5",
+            "text": "SIL"
+          },
+          {
+            "id": "t6",
+            "text": "VER"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "LADDER"
+          ],
+          "b": [
+            "MARKET"
+          ],
+          "c": [
+            "SILVER"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t3",
+              "t2"
+            ],
+            "b": [
+              "t1",
+              "t4"
+            ],
+            "c": [
+              "t5",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Each word splits into two spelling chunks, and the second chunks look interchangeable: only one sharing-out spells all three answers."
+      }
+    },
+    {
+      "id": "wf-s7",
+      "title": "Standard board 7",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A person who treats the sick",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A girl or woman with the same parents as you",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "The coldest season of the year",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "TER"
+          },
+          {
+            "id": "t2",
+            "text": "WIN"
+          },
+          {
+            "id": "t3",
+            "text": "SIS"
+          },
+          {
+            "id": "t4",
+            "text": "TER"
+          },
+          {
+            "id": "t5",
+            "text": "DOC"
+          },
+          {
+            "id": "t6",
+            "text": "TOR"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "DOCTOR"
+          ],
+          "b": [
+            "SISTER"
+          ],
+          "c": [
+            "WINTER"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t5",
+              "t6"
+            ],
+            "b": [
+              "t3",
+              "t1"
+            ],
+            "c": [
+              "t2",
+              "t4"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "TER is shared by two words, so the clues decide which opening goes with it."
+      }
+    },
+    {
+      "id": "wf-s8",
+      "title": "Standard board 8",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A long-eared small mammal kept as a pet",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A short coat",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "A piece of metal that attracts iron",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "MAG"
+          },
+          {
+            "id": "t2",
+            "text": "NET"
+          },
+          {
+            "id": "t3",
+            "text": "JAC"
+          },
+          {
+            "id": "t4",
+            "text": "BIT"
+          },
+          {
+            "id": "t5",
+            "text": "KET"
+          },
+          {
+            "id": "t6",
+            "text": "RAB"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "RABBIT"
+          ],
+          "b": [
+            "JACKET"
+          ],
+          "c": [
+            "MAGNET"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t6",
+              "t4"
+            ],
+            "b": [
+              "t3",
+              "t5"
+            ],
+            "c": [
+              "t1",
+              "t2"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Spelling chunks, not syllables: RAB+BIT, JAC+KET, MAG+NET."
+      }
+    },
+    {
+      "id": "wf-s9",
+      "title": "Standard board 9",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A large area thickly covered with trees",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "The main meal of the evening",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "A small folding case for banknotes and cards",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "NER"
+          },
+          {
+            "id": "t2",
+            "text": "FOR"
+          },
+          {
+            "id": "t3",
+            "text": "LET"
+          },
+          {
+            "id": "t4",
+            "text": "EST"
+          },
+          {
+            "id": "t5",
+            "text": "WAL"
+          },
+          {
+            "id": "t6",
+            "text": "DIN"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "FOREST"
+          ],
+          "b": [
+            "DINNER"
+          ],
+          "c": [
+            "WALLET"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t4"
+            ],
+            "b": [
+              "t6",
+              "t1"
+            ],
+            "c": [
+              "t5",
+              "t3"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Spelling chunks, not syllables: FOR+EST, DIN+NER, WAL+LET."
+      }
+    },
+    {
+      "id": "wf-s10",
+      "title": "Standard board 10",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "An eight-legged creature that spins webs",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A large wild cat with stripes",
+            "length": 5
+          },
+          {
+            "id": "c",
+            "clue": "A small scaly reptile that often basks in the sun",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "SPI"
+          },
+          {
+            "id": "t2",
+            "text": "DER"
+          },
+          {
+            "id": "t3",
+            "text": "LIZ"
+          },
+          {
+            "id": "t4",
+            "text": "ARD"
+          },
+          {
+            "id": "t5",
+            "text": "GER"
+          },
+          {
+            "id": "t6",
+            "text": "TI"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "SPIDER"
+          ],
+          "b": [
+            "TIGER"
+          ],
+          "c": [
+            "LIZARD"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t2"
+            ],
+            "b": [
+              "t6",
+              "t5"
+            ],
+            "c": [
+              "t3",
+              "t4"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Spelling chunks, not syllables: SPI+DER, TI+GER, LIZ+ARD."
+      }
+    },
+    {
+      "id": "wf-s11",
+      "title": "Standard board 11",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A large fortified building",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A soft cushion for your head in bed",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "An underground passage through a hill",
+            "length": 6
+          },
+          {
+            "id": "d",
+            "clue": "A light open shoe worn in summer",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "LOW"
+          },
+          {
+            "id": "t2",
+            "text": "TLE"
+          },
+          {
+            "id": "t3",
+            "text": "NEL"
+          },
+          {
+            "id": "t4",
+            "text": "CAS"
+          },
+          {
+            "id": "t5",
+            "text": "SAN"
+          },
+          {
+            "id": "t6",
+            "text": "TUN"
+          },
+          {
+            "id": "t7",
+            "text": "DAL"
+          },
+          {
+            "id": "t8",
+            "text": "PIL"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "CASTLE"
+          ],
+          "b": [
+            "PILLOW"
+          ],
+          "c": [
+            "TUNNEL"
+          ],
+          "d": [
+            "SANDAL"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t4",
+              "t2"
+            ],
+            "b": [
+              "t8",
+              "t1"
+            ],
+            "c": [
+              "t6",
+              "t3"
+            ],
+            "d": [
+              "t5",
+              "t7"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four lanes with chunks split inside the words: CAS+TLE, PIL+LOW, TUN+NEL, SAN+DAL."
+      }
+    },
+    {
+      "id": "wf-s12",
+      "title": "Standard board 12",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A mother or father",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A travelling show with clowns and acrobats",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "A round green leafy vegetable",
+            "length": 7
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BAGE"
+          },
+          {
+            "id": "t2",
+            "text": "CUS"
+          },
+          {
+            "id": "t3",
+            "text": "CIR"
+          },
+          {
+            "id": "t4",
+            "text": "PAR"
+          },
+          {
+            "id": "t5",
+            "text": "CAB"
+          },
+          {
+            "id": "t6",
+            "text": "ENT"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "PARENT"
+          ],
+          "b": [
+            "CIRCUS"
+          ],
+          "c": [
+            "CABBAGE"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t4",
+              "t6"
+            ],
+            "b": [
+              "t3",
+              "t2"
+            ],
+            "c": [
+              "t5",
+              "t1"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Spelling chunks, not syllables; CAB+BAGE uses two chunks to spell a two-syllable word."
+      }
+    },
+    {
+      "id": "wf-s13",
+      "title": "Standard board 13",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A glass in which you can see yourself",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A glass or plastic container for liquid",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "A game of fitting small pieces into a picture",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "TLE"
+          },
+          {
+            "id": "t2",
+            "text": "MIR"
+          },
+          {
+            "id": "t3",
+            "text": "ROR"
+          },
+          {
+            "id": "t4",
+            "text": "PUZ"
+          },
+          {
+            "id": "t5",
+            "text": "BOT"
+          },
+          {
+            "id": "t6",
+            "text": "ZLE"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "MIRROR"
+          ],
+          "b": [
+            "BOTTLE"
+          ],
+          "c": [
+            "PUZZLE"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t3"
+            ],
+            "b": [
+              "t5",
+              "t1"
+            ],
+            "c": [
+              "t4",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Spelling chunks, not syllables: MIR+ROR, BOT+TLE, PUZ+ZLE."
+      }
+    },
+    {
+      "id": "wf-s14",
+      "title": "Standard board 14",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A sour yellow citrus fruit",
+            "length": 5
+          },
+          {
+            "id": "b",
+            "clue": "A large sweet fruit with watery flesh",
+            "length": 5
+          },
+          {
+            "id": "c",
+            "clue": "A dish of raw vegetables, often served cold",
+            "length": 5
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "LEM"
+          },
+          {
+            "id": "t2",
+            "text": "MEL"
+          },
+          {
+            "id": "t3",
+            "text": "AD"
+          },
+          {
+            "id": "t4",
+            "text": "SAL"
+          },
+          {
+            "id": "t5",
+            "text": "ON"
+          },
+          {
+            "id": "t6",
+            "text": "ON"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "LEMON"
+          ],
+          "b": [
+            "MELON"
+          ],
+          "c": [
+            "SALAD"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t5"
+            ],
+            "b": [
+              "t2",
+              "t6"
+            ],
+            "c": [
+              "t4",
+              "t3"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "ON appears twice; the clues decide which opening it follows."
+      }
+    },
+    {
+      "id": "wf-e6",
+      "title": "Expert board 6",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A fastener sewn on a shirt",
+            "length": 6
+          },
+          {
+            "id": "b",
+            "clue": "A soft white fibre from a plant, used for cloth",
+            "length": 6
+          },
+          {
+            "id": "c",
+            "clue": "Meat from a fully grown sheep",
+            "length": 6
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "TON"
+          },
+          {
+            "id": "t2",
+            "text": "MUT"
+          },
+          {
+            "id": "t3",
+            "text": "TON"
+          },
+          {
+            "id": "t4",
+            "text": "COT"
+          },
+          {
+            "id": "t5",
+            "text": "BUT"
+          },
+          {
+            "id": "t6",
+            "text": "TON"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BUTTON"
+          ],
+          "b": [
+            "COTTON"
+          ],
+          "c": [
+            "MUTTON"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t5",
+              "t1"
+            ],
+            "b": [
+              "t4",
+              "t3"
+            ],
+            "c": [
+              "t2",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three identical TON tiles: any TON can finish any lane, so the challenge is pairing the openings."
+      }
+    },
+    {
+      "id": "wf-e7",
+      "title": "Expert board 7",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "Any day from Monday to Friday",
+            "length": 7
+          },
+          {
+            "id": "b",
+            "clue": "The present day",
+            "length": 5
+          },
+          {
+            "id": "c",
+            "clue": "A period of time away from work or school",
+            "length": 7
+          },
+          {
+            "id": "d",
+            "clue": "The day before today",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "TO"
+          },
+          {
+            "id": "t2",
+            "text": "DAY"
+          },
+          {
+            "id": "t3",
+            "text": "YESTER"
+          },
+          {
+            "id": "t4",
+            "text": "DAY"
+          },
+          {
+            "id": "t5",
+            "text": "HOLI"
+          },
+          {
+            "id": "t6",
+            "text": "WEEK"
+          },
+          {
+            "id": "t7",
+            "text": "DAY"
+          },
+          {
+            "id": "t8",
+            "text": "DAY"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "WEEKDAY"
+          ],
+          "b": [
+            "TODAY"
+          ],
+          "c": [
+            "HOLIDAY"
+          ],
+          "d": [
+            "YESTERDAY"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t6",
+              "t8"
+            ],
+            "b": [
+              "t1",
+              "t2"
+            ],
+            "c": [
+              "t5",
+              "t7"
+            ],
+            "d": [
+              "t3",
+              "t4"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical DAY tiles: pair each opening with a DAY."
+      }
+    },
+    {
+      "id": "wf-e8",
+      "title": "Expert board 8",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A set of steps inside a building, with a rail",
+            "length": 9
+          },
+          {
+            "id": "b",
+            "clue": "A flat bag for carrying papers to work",
+            "length": 9
+          },
+          {
+            "id": "c",
+            "clue": "A cover for a pillow",
+            "length": 10
+          },
+          {
+            "id": "d",
+            "clue": "A rectangular bag for carrying clothes when travelling",
+            "length": 8
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "STAIR"
+          },
+          {
+            "id": "t2",
+            "text": "CASE"
+          },
+          {
+            "id": "t3",
+            "text": "SUIT"
+          },
+          {
+            "id": "t4",
+            "text": "CASE"
+          },
+          {
+            "id": "t5",
+            "text": "BRIEF"
+          },
+          {
+            "id": "t6",
+            "text": "CASE"
+          },
+          {
+            "id": "t7",
+            "text": "CASE"
+          },
+          {
+            "id": "t8",
+            "text": "PILLOW"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "STAIRCASE"
+          ],
+          "b": [
+            "BRIEFCASE"
+          ],
+          "c": [
+            "PILLOWCASE"
+          ],
+          "d": [
+            "SUITCASE"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t1",
+              "t2"
+            ],
+            "b": [
+              "t5",
+              "t6"
+            ],
+            "c": [
+              "t8",
+              "t7"
+            ],
+            "d": [
+              "t3",
+              "t4"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical CASE tiles; BRIEFCASE and STAIRCASE are the same length, so the clues decide."
+      }
+    },
+    {
+      "id": "wf-e9",
+      "title": "Expert board 9",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A person who delivers letters",
+            "length": 7
+          },
+          {
+            "id": "b",
+            "clue": "A person who delivers bottles to doorsteps in the early morning",
+            "length": 7
+          },
+          {
+            "id": "c",
+            "clue": "A covered opening in a road leading underground",
+            "length": 7
+          },
+          {
+            "id": "d",
+            "clue": "All human beings",
+            "length": 7
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "MAN"
+          },
+          {
+            "id": "t2",
+            "text": "POST"
+          },
+          {
+            "id": "t3",
+            "text": "MAN"
+          },
+          {
+            "id": "t4",
+            "text": "HOLE"
+          },
+          {
+            "id": "t5",
+            "text": "KIND"
+          },
+          {
+            "id": "t6",
+            "text": "MAN"
+          },
+          {
+            "id": "t7",
+            "text": "MAN"
+          },
+          {
+            "id": "t8",
+            "text": "MILK"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "POSTMAN"
+          ],
+          "b": [
+            "MILKMAN"
+          ],
+          "c": [
+            "MANHOLE"
+          ],
+          "d": [
+            "MANKIND"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t6"
+            ],
+            "b": [
+              "t8",
+              "t1"
+            ],
+            "c": [
+              "t7",
+              "t4"
+            ],
+            "d": [
+              "t3",
+              "t5"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four MAN tiles: MAN ends two words and starts two others."
+      }
+    },
+    {
+      "id": "wf-e10",
+      "title": "Expert board 10",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "Computers or people linked together",
+            "length": 7
+          },
+          {
+            "id": "b",
+            "clue": "People cooperating to achieve something",
+            "length": 8
+          },
+          {
+            "id": "c",
+            "clue": "A painting or sculpture",
+            "length": 7
+          },
+          {
+            "id": "d",
+            "clue": "A basic structure that supports something",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "WORK"
+          },
+          {
+            "id": "t2",
+            "text": "FRAME"
+          },
+          {
+            "id": "t3",
+            "text": "ART"
+          },
+          {
+            "id": "t4",
+            "text": "TEAM"
+          },
+          {
+            "id": "t5",
+            "text": "WORK"
+          },
+          {
+            "id": "t6",
+            "text": "WORK"
+          },
+          {
+            "id": "t7",
+            "text": "NET"
+          },
+          {
+            "id": "t8",
+            "text": "WORK"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "NETWORK"
+          ],
+          "b": [
+            "TEAMWORK"
+          ],
+          "c": [
+            "ARTWORK"
+          ],
+          "d": [
+            "FRAMEWORK"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t7",
+              "t5"
+            ],
+            "b": [
+              "t4",
+              "t1"
+            ],
+            "c": [
+              "t3",
+              "t8"
+            ],
+            "d": [
+              "t2",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical WORK tiles: pair each opening with a WORK."
+      }
+    },
+    {
+      "id": "wf-e11",
+      "title": "Expert board 11",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A game where players shoot a ball through a high hoop",
+            "length": 10
+          },
+          {
+            "id": "b",
+            "clue": "A bat-and-ball game with four bases",
+            "length": 8
+          },
+          {
+            "id": "c",
+            "clue": "The round part of the eye, in its socket",
+            "length": 7
+          },
+          {
+            "id": "d",
+            "clue": "A game like baseball but with a larger, softer ball",
+            "length": 8
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "BALL"
+          },
+          {
+            "id": "t2",
+            "text": "BASE"
+          },
+          {
+            "id": "t3",
+            "text": "BALL"
+          },
+          {
+            "id": "t4",
+            "text": "SOFT"
+          },
+          {
+            "id": "t5",
+            "text": "BASKET"
+          },
+          {
+            "id": "t6",
+            "text": "BALL"
+          },
+          {
+            "id": "t7",
+            "text": "EYE"
+          },
+          {
+            "id": "t8",
+            "text": "BALL"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "BASKETBALL"
+          ],
+          "b": [
+            "BASEBALL"
+          ],
+          "c": [
+            "EYEBALL"
+          ],
+          "d": [
+            "SOFTBALL"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t5",
+              "t6"
+            ],
+            "b": [
+              "t2",
+              "t3"
+            ],
+            "c": [
+              "t7",
+              "t8"
+            ],
+            "d": [
+              "t4",
+              "t1"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical BALL tiles: pair each opening with a BALL."
+      }
+    },
+    {
+      "id": "wf-e12",
+      "title": "Expert board 12",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A glass building for growing plants",
+            "length": 10
+          },
+          {
+            "id": "b",
+            "clue": "A building where a court of law meets",
+            "length": 10
+          },
+          {
+            "id": "c",
+            "clue": "A building for storing goods",
+            "length": 9
+          },
+          {
+            "id": "d",
+            "clue": "A luxury flat at the top of a tall building",
+            "length": 9
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "WARE"
+          },
+          {
+            "id": "t2",
+            "text": "PENT"
+          },
+          {
+            "id": "t3",
+            "text": "HOUSE"
+          },
+          {
+            "id": "t4",
+            "text": "GREEN"
+          },
+          {
+            "id": "t5",
+            "text": "HOUSE"
+          },
+          {
+            "id": "t6",
+            "text": "HOUSE"
+          },
+          {
+            "id": "t7",
+            "text": "COURT"
+          },
+          {
+            "id": "t8",
+            "text": "HOUSE"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "GREENHOUSE"
+          ],
+          "b": [
+            "COURTHOUSE"
+          ],
+          "c": [
+            "WAREHOUSE"
+          ],
+          "d": [
+            "PENTHOUSE"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t4",
+              "t6"
+            ],
+            "b": [
+              "t7",
+              "t5"
+            ],
+            "c": [
+              "t1",
+              "t8"
+            ],
+            "d": [
+              "t2",
+              "t3"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical HOUSE tiles: pair each opening with a HOUSE."
+      }
+    },
+    {
+      "id": "wf-e13",
+      "title": "Expert board 13",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "A small British coin",
+            "length": 5
+          },
+          {
+            "id": "b",
+            "clue": "Amusing",
+            "length": 5
+          },
+          {
+            "id": "c",
+            "clue": "Bright with sunshine",
+            "length": 5
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "NY"
+          },
+          {
+            "id": "t2",
+            "text": "PEN"
+          },
+          {
+            "id": "t3",
+            "text": "NY"
+          },
+          {
+            "id": "t4",
+            "text": "FUN"
+          },
+          {
+            "id": "t5",
+            "text": "NY"
+          },
+          {
+            "id": "t6",
+            "text": "SUN"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "PENNY"
+          ],
+          "b": [
+            "FUNNY"
+          ],
+          "c": [
+            "SUNNY"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t1"
+            ],
+            "b": [
+              "t4",
+              "t5"
+            ],
+            "c": [
+              "t6",
+              "t3"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Three identical NY tiles: pair each opening with a NY."
+      }
+    },
+    {
+      "id": "wf-e14",
+      "title": "Expert board 14",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "lanes": [
+          {
+            "id": "a",
+            "clue": "The bond between people who like one another",
+            "length": 10
+          },
+          {
+            "id": "b",
+            "clue": "A vehicle for travelling in outer space",
+            "length": 9
+          },
+          {
+            "id": "c",
+            "clue": "Great difficulty or suffering",
+            "length": 8
+          },
+          {
+            "id": "d",
+            "clue": "The position of being in charge of a group",
+            "length": 10
+          }
+        ],
+        "tiles": [
+          {
+            "id": "t1",
+            "text": "HARD"
+          },
+          {
+            "id": "t2",
+            "text": "FRIEND"
+          },
+          {
+            "id": "t3",
+            "text": "SHIP"
+          },
+          {
+            "id": "t4",
+            "text": "LEADER"
+          },
+          {
+            "id": "t5",
+            "text": "SHIP"
+          },
+          {
+            "id": "t6",
+            "text": "SHIP"
+          },
+          {
+            "id": "t7",
+            "text": "SPACE"
+          },
+          {
+            "id": "t8",
+            "text": "SHIP"
+          }
+        ],
+        "acceptedAnswers": {
+          "a": [
+            "FRIENDSHIP"
+          ],
+          "b": [
+            "SPACESHIP"
+          ],
+          "c": [
+            "HARDSHIP"
+          ],
+          "d": [
+            "LEADERSHIP"
+          ]
+        },
+        "allocations": [
+          {
+            "a": [
+              "t2",
+              "t8"
+            ],
+            "b": [
+              "t7",
+              "t3"
+            ],
+            "c": [
+              "t1",
+              "t5"
+            ],
+            "d": [
+              "t4",
+              "t6"
+            ]
+          }
+        ],
+        "claimsUnique": true,
+        "explanation": "Four identical SHIP tiles: pair each opening with a SHIP."
+      }
     }
   ]
 }
