@@ -80,3 +80,18 @@ UI at `/editor`, account sync of puzzle progress.
   Missing Links 14, Hidden Word Trail 12, Letter Circuit 12, Word Weave 12, Clue Pairs 12,
   Cryptic Workshop 12, Definition Detective 12, Daily Crossword 7.
 - All new rounds still need human editorial review; every uncertainty is in `docs/REVIEW-LOG.md`.
+
+## Update 2026-10-01 (later): Master tier
+
+A fourth difficulty, **Master**, was added for a recipient who is very strong at Scrabble and cryptic
+crosswords (DECISIONS D14). Every puzzle game now has 12-16 Master rounds (Daily Crossword 6 grids, 11x11 and
+13x13 included) and more Expert rounds (18-22; crossword 10). Counts per game: `docs/STATUS.md`.
+Highlights: Letter Wheel/Set Master racks with awkward centre letters and a definition hint for rarer
+targets; Word Deduction Master answers from the uncommon layer with hard mode on; Word Ladder Master par over
+the full Scrabble list; Letter Circuit Master pool; Cryptic Workshop Master with a nested-construction checker
+(compound devices, &lit); Word Weave and Word Families walls with machine-proved uniqueness; Clue Pairs with
+archaic/technical Collins senses; Definition Detective with abstruse vocabulary.
+Known weak point: Master cryptic clues are correct (all construction-checked) but plainer than a top setter's;
+only one true &lit and no semi-&lit. A cryptic-fluent human setter should review and upgrade them first.
+Deployed: Vercel project `epstein-hub` auto-deploys every push to `main` (https://epstein-hub.vercel.app);
+not verified from this environment (network-blocked), so check it in a browser.
