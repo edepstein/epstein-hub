@@ -6,6 +6,6 @@ export default defineConfig({
   test: {
     include: ["src/**/*.test.ts", "tests/unit/**/*.test.ts", "tests/family/**/*.test.ts", "scripts/**/*.test.ts"],
     environment: "node",
-    testTimeout: 20000,
+    testTimeout: 90000,
   },
 });

@@ -130,11 +130,10 @@ export function createWordLadderEngine(
     if (cur === state.target) return null;
     const blocked = new Set(state.path.slice(0, -1).map((p) => p.word));
     const extra = endpoints(state);
-    const memberDist = distances(state.target, extra, blocked);
     const famDist = familiar.size ? distances(state.target, extra, blocked, true) : null;
-    // Prefer a route of everyday words (par); fall back to any legal route if the player has
-    // wandered somewhere everyday words cannot get back from.
-    const dist = famDist && famDist.get(cur) != null ? famDist : memberDist;
+    // Prefer a route of everyday words (par); fall back to any legal route (computed lazily, it
+    // searches the whole word list) if the player has wandered somewhere everyday words cannot get back from.
+    const dist = famDist && famDist.get(cur) != null ? famDist : distances(state.target, extra, blocked);
     const d = dist.get(cur);
     if (d == null) return null;
     const route: string[] = [];
@@ -213,7 +212,7 @@ export function createWordLadderEngine(
       // Par is the shortest route using everyday words (the familiar layer), so obscure
       // tile-game words never define the target. Every membership word remains a legal step.
       const ends = new Set([start, target]);
-      const dist = (familiar.size ? distances(target, ends, new Set(), true) : distances(target, ends, new Set())).get(start) ?? distances(target, ends, new Set()).get(start);
+      const dist = (familiar.size ? distances(target, ends, new Set(), true).get(start) : undefined) ?? distances(target, ends, new Set()).get(start);
       return {
         start,
         target,
