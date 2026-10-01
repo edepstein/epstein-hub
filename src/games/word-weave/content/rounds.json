@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "gameId": "word-weave",
  "rulesVersion": "1.0",
- "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice grids are original: fills found offline by backtracking over familiar words (ESDB membership \u2229 SCOWL size-35), clues written for this build. Not yet human-reviewed.",
+ "note": "Demo rounds import the pack fixtures (sourceFixtureId). Practice grids are original: fills found offline by backtracking over familiar words (ESDB membership ∩ SCOWL size-35), clues written for this build. Not yet human-reviewed.",
  "rounds": [
   {
    "id": "wv-demo-1",
@@ -2496,6 +2496,1730 @@
      }
     ],
     "explanation": "Every shared square holds one letter that belongs to both crossing answers."
+   }
+  },
+  {
+   "id": "wv-m1",
+   "title": "Master weave 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Small apartment: level, then rent out"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Air display: soar, then gone by"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Talmudic college"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Southern, as in a Latin-derived word for the lights down under"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Stranded on the bottom, as a vessel"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Free time, if sure lie is reformed"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "Aromatic solvent from coal tar, a methylated benzene"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Silly nonsense; tosh"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "FLATLET",
+      "d00": "FLYPAST",
+      "a20": "YESHIVA",
+      "d02": "AUSTRAL",
+      "a40": "AGROUND",
+      "d04": "LEISURE",
+      "a60": "TOLUENE",
+      "d06": "TWADDLE"
+     }
+    ],
+    "reviewedAlternatives": {},
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m2",
+   "title": "Master weave 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Eye inflammation, affecting its middle layer"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Towards the source, against the current"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Vermin catcher, or a squalid dwelling"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Of the intestine (without an H, not captivating)"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Random quantity in statistics"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Violent whirling windstorm; a twister"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "Public launch of a new product, or an aircraft's unveiling"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Wise, like a modern human"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "UVEITIS",
+      "d00": "UPRIVER",
+      "a20": "RATTRAP",
+      "d02": "ENTERAL",
+      "a40": "VARIATE",
+      "d04": "TORNADO",
+      "a60": "ROLLOUT",
+      "d06": "SAPIENT"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d02": [
+      "ENTHRAL"
+     ],
+     "a40": [
+      "VIRGATE",
+      "VORLAGE"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m3",
+   "title": "Master weave 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Nevertheless, in archaic style"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Barn's upper store of fodder"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Spar's end, where the sun is said to be over before drinks"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Bellicose: conflict plus appreciate"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Egg-carrying tube"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Wartime child sent away from the city"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "By that means; in that place, beside"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Meadow grass, or a recipient of two New Testament epistles"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "HOWBEIT",
+      "d00": "HAYLOFT",
+      "a20": "YARDARM",
+      "d02": "WARLIKE",
+      "a40": "OVIDUCT",
+      "d04": "EVACUEE",
+      "a60": "THEREBY",
+      "d06": "TIMOTHY"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d02": [
+      "WARTIME"
+     ],
+     "d04": [
+      "ERASURE"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m4",
+   "title": "Master weave 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Heavy, or momentous"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Kitchen surface: toil, plus best"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Squash player's strung implement"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Embrace nuclide, rearranged"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Giant wave from an undersea quake"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Road freight business: drag, then era"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "Born early: before the school period"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Metal element, atomic number 39"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "WEIGHTY",
+      "d00": "WORKTOP",
+      "a20": "RACQUET",
+      "d02": "INCLUDE",
+      "a40": "TSUNAMI",
+      "d04": "HAULAGE",
+      "a60": "PRETERM",
+      "d06": "YTTRIUM"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d00": [
+      "WIRETAP"
+     ],
+     "a20": [
+      "RECOUNT",
+      "ROCQUET",
+      "RECRUIT"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m5",
+   "title": "Master weave 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Scandinavian spirit flavoured with caraway"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Of a single-celled shape-shifter"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Senior citizen, as opposed to a youngster"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Suffer: below, then leave"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Snip, or haggle: pub plus profit"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Spoil or impair; render ineffective"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "Art of preparing meals"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Despot's harsh rule"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "AQUAVIT",
+      "d00": "AMOEBIC",
+      "a20": "OLDSTER",
+      "d02": "UNDERGO",
+      "a40": "BARGAIN",
+      "d04": "VITIATE",
+      "a60": "COOKERY",
+      "d06": "TYRANNY"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d02": [
+      "UNDERDO"
+     ],
+     "d04": [
+      "VITTATE",
+      "VITRAGE"
+     ],
+     "a60": [
+      "CLOVERY",
+      "COOPERY",
+      "CLOSELY"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m6",
+   "title": "Master weave 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Bathing cloth, in America"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Coax with flattery"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Bound electron-hole pair in a solid"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Table sugar"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Oxide with a pair of oxygen atoms"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Greek wine flavoured with pine resin"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 7,
+      "clue": "Stare at; globe in the socket"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Refined: man plus fish"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "WASHRAG",
+      "d00": "WHEEDLE",
+      "a20": "EXCITON",
+      "d02": "SUCROSE",
+      "a40": "DIOXIDE",
+      "d04": "RETSINA",
+      "a60": "EYEBALL",
+      "d06": "GENTEEL"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d02": [
+      "SUCCOSE"
+     ],
+     "a40": [
+      "DIORITE"
+     ],
+     "a60": [
+      "EYEWALL"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m7",
+   "title": "Master weave 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "Fold up like an articulated lorry; a clasp blade"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Diary, or periodical"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Experienced, in the past"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Corpse for dissection"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "A would-be monk's or nun's probation"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Protein in hair and nails"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "Opera glasses on a handle"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Imprecise: at home with correct"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "Utmost; far out"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "JACKKNIFE",
+      "d00": "JOURNAL",
+      "a20": "UNDERWENT",
+      "d02": "CADAVER",
+      "a40": "NOVITIATE",
+      "d04": "KERATIN",
+      "a60": "LORGNETTE",
+      "d06": "INEXACT",
+      "d08": "EXTREME"
+     }
+    ],
+    "reviewedAlternatives": {
+     "a20": [
+      "UNDERFELT",
+      "UNDERVEST"
+     ],
+     "d06": [
+      "ITERANT"
+     ],
+     "d08": [
+      "ESTREPE",
+      "ESTHETE"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m8",
+   "title": "Master weave 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "Pioneer of the new"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Frosty state; frigidity"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Hostile raid into territory"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Type of acid in DNA"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "Basic; of earth, air, fire and water"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Vervain, a fragrant garden plant"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "Holy rite, such as baptism"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Prickly Scottish emblem"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "Curl: call, then allow"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "INNOVATOR",
+      "d00": "ICINESS",
+      "a20": "INCURSION",
+      "d02": "NUCLEIC",
+      "a40": "ELEMENTAL",
+      "d04": "VERBENA",
+      "a60": "SACRAMENT",
+      "d06": "THISTLE",
+      "d08": "RINGLET"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d06": [
+      "TWISTIE"
+     ],
+     "d08": [
+      "RUNFLAT",
+      "RUNDLET"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m9",
+   "title": "Master weave 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "Open curve; a conic section"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Century, or old subdivision of an English county"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Nourishing"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Kneecap"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "Unwilling; loath"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Wagon on the metals: bar plus vehicle"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "Accent or cedilla, say"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Agent that takes electrons from another"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "Free from germs; sterile"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "HYPERBOLA",
+      "d00": "HUNDRED",
+      "a20": "NUTRITIVE",
+      "d02": "PATELLA",
+      "a40": "RELUCTANT",
+      "d04": "RAILCAR",
+      "a60": "DIACRITIC",
+      "d06": "OXIDANT",
+      "d08": "ASEPTIC"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d00": [
+      "HONORED"
+     ],
+     "d04": [
+      "REINCUR"
+     ],
+     "a60": [
+      "DIAERETIC"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m10",
+   "title": "Master weave 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "Underhand, as intrigue from the servants' steps"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Menacing; malign"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Defamatory in print"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Floor show in a nightclub"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "Agitator, or burning stick"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Dissolvable: blue sol, mixed"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "Supple and graceful"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Pear-shaped green fruit used for guacamole"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "What remains; remainder"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "BACKSTAIR",
+      "d00": "BALEFUL",
+      "a20": "LIBELLOUS",
+      "d02": "CABARET",
+      "a40": "FIREBRAND",
+      "d04": "SOLUBLE",
+      "a60": "LITHESOME",
+      "d06": "AVOCADO",
+      "d08": "RESIDUE"
+     }
+    ],
+    "reviewedAlternatives": {
+     "a40": [
+      "FIREBOARD"
+     ],
+     "d04": [
+      "SALABLE"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m11",
+   "title": "Master weave 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "German pork sausage"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Adorn with gems"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Gelatinous; wobbly in consistency"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Hay fever, say; hypersensitivity"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "Causing anxiety; troubling"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Edge of a road, where some seed falls in the parable"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "Non-specialist; one not in holy orders"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Disastrous; in decay"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "In that place"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "BRATWURST",
+      "d00": "BEJEWEL",
+      "a20": "JELLYLIKE",
+      "d02": "ALLERGY",
+      "a40": "WORRISOME",
+      "d04": "WAYSIDE",
+      "a60": "LAYPERSON",
+      "d06": "RUINOUS",
+      "d08": "THEREIN"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d08": [
+      "THEREON"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-m12",
+   "title": "Master weave 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 7,
+    "cols": 9,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 9,
+      "clue": "Rate of occurrence; angle of striking"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Fit: fashionable, plus market booth"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 9,
+      "clue": "Tracksuit for jogging"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 7,
+      "clue": "Pause in a line of verse"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 9,
+      "clue": "Flattery from rearranged audit loan"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 7,
+      "clue": "Take away from; disparage"
+     },
+     {
+      "id": "a60",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "length": 9,
+      "clue": "At any rate; anyhow"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 7,
+      "clue": "Pearly molluscs, in the plural"
+     },
+     {
+      "id": "d08",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "length": 7,
+      "clue": "Friendly understanding between states"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "INCIDENCE",
+      "d00": "INSTALL",
+      "a20": "SWEATSUIT",
+      "d02": "CAESURA",
+      "a40": "ADULATION",
+      "d04": "DETRACT",
+      "a60": "LEASTWISE",
+      "d06": "NAUTILI",
+      "d08": "ENTENTE"
+     }
+    ],
+    "reviewedAlternatives": {
+     "d08": [
+      "EXTENSE"
+     ]
+    },
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e13",
+   "title": "Expert weave 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Victory, or a British motorcycle"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Band of soldiers, or march in file"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Standing applause"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Fuming with anger"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Come before"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Sweetcorn plant; a golden yellow"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "From here; therefore"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "TRIUMPH",
+      "d00": "TROOP",
+      "a20": "OVATION",
+      "d02": "IRATE",
+      "a40": "PRECEDE",
+      "d04": "MAIZE",
+      "d06": "HENCE"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e14",
+   "title": "Expert weave 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Caller; guest, not resident"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Brink, or the grass at the road's edge"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Royal emblems and finery"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Vision; a spectacle"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Beg earnestly"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Wavy mark over an n"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Cook in the oven; mock severely"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "VISITOR",
+      "d00": "VERGE",
+      "a20": "REGALIA",
+      "d02": "SIGHT",
+      "a40": "ENTREAT",
+      "d04": "TILDE",
+      "d06": "ROAST"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e15",
+   "title": "Expert weave 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "A few; a troublesome child"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Miserable shack"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Mountain that erupts"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Stocking material; synthetic fibre"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Long-winded"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Banquet; dine lavishly"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Crazy; barmy"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "HANDFUL",
+      "d00": "HOVEL",
+      "a20": "VOLCANO",
+      "d02": "NYLON",
+      "a40": "LENGTHY",
+      "d04": "FEAST",
+      "d06": "LOONY"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e16",
+   "title": "Expert weave 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Issue forth; flow out"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Fix firmly in surrounding mass"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Christen; initiate with water"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Quaking tree"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Ruling family line"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Otherwise known as; a false name"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Foe"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "EMANATE",
+      "d00": "EMBED",
+      "a20": "BAPTISE",
+      "d02": "ASPEN",
+      "a40": "DYNASTY",
+      "d04": "ALIAS",
+      "d06": "ENEMY"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e17",
+   "title": "Expert weave 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Mosquito-borne fever"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "Wildly excited; frenzied"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Candidate put forward"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Dance under a bar; state of uncertainty"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Make lace with a hooked needle"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Cattle farm"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Watchful; a warning"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "MALARIA",
+      "d00": "MANIC",
+      "a20": "NOMINEE",
+      "d02": "LIMBO",
+      "a40": "CROCHET",
+      "d04": "RANCH",
+      "d06": "ALERT"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
+   }
+  },
+  {
+   "id": "wv-e18",
+   "title": "Expert weave 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "rows": 5,
+    "cols": 7,
+    "lanes": [
+     {
+      "id": "a00",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "length": 7,
+      "clue": "Obedient, mindful of obligation"
+     },
+     {
+      "id": "d00",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "length": 5,
+      "clue": "One who gives blood or an organ"
+     },
+     {
+      "id": "a20",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "length": 7,
+      "clue": "Uncharged particle in the nucleus"
+     },
+     {
+      "id": "d02",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "length": 5,
+      "clue": "Heavy blow; hit hard"
+     },
+     {
+      "id": "a40",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "length": 7,
+      "clue": "Full to the brim; well fed"
+     },
+     {
+      "id": "d04",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "length": 5,
+      "clue": "Strong point; loudly in music"
+     },
+     {
+      "id": "d06",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "length": 5,
+      "clue": "Sudden thrust, as in fencing"
+     }
+    ],
+    "acceptedGrids": [
+     {
+      "a00": "DUTIFUL",
+      "d00": "DONOR",
+      "a20": "NEUTRON",
+      "d02": "THUMP",
+      "a40": "REPLETE",
+      "d04": "FORTE",
+      "d06": "LUNGE"
+     }
+    ],
+    "explanation": "Each answer is fixed by its clue and by the letters it shares with the lanes that cross it."
    }
   }
  ]

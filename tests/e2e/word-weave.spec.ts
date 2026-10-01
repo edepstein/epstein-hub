@@ -106,3 +106,39 @@ test("@mobile expert weave keeps the page from overflowing and accepts typing", 
   await page.keyboard.type("PAT");
   await expect(cell(page, 0, 2)).toHaveValue("T");
 });
+
+test("master weave loads as a large lattice and a full valid solve completes", async ({ page }) => {
+  const { readFileSync } = await import("node:fs");
+  const data = JSON.parse(readFileSync("src/games/word-weave/content/rounds.json", "utf8"));
+  const round = data.rounds.find((r: { id: string }) => r.id === "wv-m1");
+  expect(round.difficulty).toBe("master");
+  const lanes: { id: string; clue: string }[] = round.payload.lanes;
+  const grid: Record<string, string> = round.payload.acceptedGrids[0];
+  expect(lanes.length).toBeGreaterThanOrEqual(8);
+
+  await page.goto("/play/word-weave/wv-m1");
+  await expect(cell(page, 6, 6)).toBeVisible();
+  const whole = page.getByLabel(/Whole answer for/);
+  const first = lanes[0];
+  await page.getByRole("button", { name: new RegExp(first.clue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
+  await whole.fill("ab");
+  await whole.press("Enter");
+  await expect(feedback(page)).toContainText("needs 7 letters");
+  await expect(whole).toHaveValue("AB");
+  for (const l of lanes) {
+    await page.getByRole("button", { name: new RegExp(l.clue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) }).click();
+    await whole.fill(grid[l.id].toLowerCase());
+    await whole.press("Enter");
+    await expect(feedback(page)).toContainText("Entered");
+  }
+  await page.getByRole("button", { name: "Submit grid" }).click();
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("100 of 100");
+});
+
+test("@mobile master weave (nine columns) does not overflow the page", async ({ page }) => {
+  await page.goto("/play/word-weave/wv-m7");
+  await expect(cell(page, 0, 8)).toBeAttached();
+  await expectNoHorizontalOverflow(page);
+});

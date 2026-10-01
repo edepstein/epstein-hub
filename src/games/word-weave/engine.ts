@@ -20,6 +20,8 @@ export interface WeavePayload {
   lanes: LaneSpec[];
   /** Complete accepted grids, lane id -> answer. The first is the reference solution. */
   acceptedGrids: Record<string, string>[];
+  /** Master rounds: other membership words that fit a lane's crossing pattern, each judged excluded by the clue. */
+  reviewedAlternatives?: Record<string, string[]>;
   /** Gentle rounds: optional answer bank the player may choose to see. */
   bank?: string[];
   /** Pack fixtures: the original sample hints (kept as regression data). */

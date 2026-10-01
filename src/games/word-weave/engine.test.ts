@@ -187,6 +187,12 @@ describe("content", () => {
     expect(validateContent()).toEqual([]);
   });
 
+  it("has twelve master and eighteen expert rounds with large lattices", () => {
+    expect(rounds.filter((r) => r.meta.difficulty === "master")).toHaveLength(12);
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(18);
+    for (const { meta, payload } of rounds.filter((r) => r.meta.difficulty === "master")) expect(payload.lanes.length, meta.id).toBeGreaterThanOrEqual(8);
+  });
+
   it("every accepted grid completes through the engine", () => {
     for (const { meta, payload } of rounds)
       for (const g of payload.acceptedGrids) {

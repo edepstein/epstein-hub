@@ -59,6 +59,7 @@ export const definition: GameDefinition = {
           "Gentle: three or four lanes, direct definitions and an optional word bank.",
           "Standard: six five-letter lanes woven together, crossing at nine squares.",
           "Expert: seven lanes (three of seven letters, four of five) crossing at twelve squares, with clues that need the crossings to pin them down.",
+          "Master: eight or nine lanes of seven to nine letters (sixteen to twenty crossings). Clues are terse definitions or cryptic-style (a definition plus wordplay such as a charade or anagram), and answers come from fuller vocabulary, including less common words. Each lane is meant to be fixed by its clue together with its crossings; where another word would fit the crossing letters, the clue is written to rule it out.",
           "Each difficulty is a different set of grids. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

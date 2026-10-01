@@ -1,5 +1,5 @@
 import { rounds } from "./rounds";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { buildBoard, connected, idx, maximalRuns } from "./board";
 
 /**
@@ -12,6 +12,14 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
+  const membershipByLength = new Map<number, string[]>();
+  for (const w of membership) {
+    if (w.length < 7 || w.length > 9) continue;
+    const bucket = membershipByLength.get(w.length);
+    if (bucket) bucket.push(w);
+    else membershipByLength.set(w.length, [w]);
+  }
   const perDifficulty: Record<string, number> = {};
   const seen = new Set<string>();
   const seenAnswers = new Map<string, string>();
@@ -50,7 +58,9 @@ export function validateContent(): string[] {
         });
         if (meta.status !== "demo") {
           if (!membership.has(w)) problems.push(`${at(`acceptedGrids[${gi}].${l.id}`)}: ${w} not in membership`);
-          if (!familiar.has(w)) problems.push(`${at(`acceptedGrids[${gi}].${l.id}`)}: ${w} not in the familiar (size-35) layer`);
+          if (meta.difficulty === "master") {
+            if (!familiar.has(w) && !uncommon.has(w)) problems.push(`${at(`acceptedGrids[${gi}].${l.id}`)}: ${w} not in the familiar or uncommon layer`);
+          } else if (!familiar.has(w)) problems.push(`${at(`acceptedGrids[${gi}].${l.id}`)}: ${w} not in the familiar (size-35) layer`);
         }
         if ((meta.title ?? "").toUpperCase().includes(w) || meta.id.toUpperCase().includes(w)) problems.push(`${meta.id}: id/title spoils ${w}`);
       }
@@ -67,6 +77,28 @@ export function validateContent(): string[] {
         seenClues.set(k, meta.id);
       }
     }
+    if (meta.difficulty === "master") {
+      // Every other membership word that fits a lane's crossing pattern must be listed as reviewed
+      // (the clue excludes it); an unlisted fit is an unreviewed ambiguity.
+      const ref = p.acceptedGrids[0];
+      for (const l of board.lanes) {
+        const w = ref[l.id];
+        if (!w) continue;
+        const fixed = new Map<number, string>();
+        l.cells.forEach((c, i) => {
+          if ((board.lanesAt.get(c) ?? []).length > 1) fixed.set(i, w[i]);
+        });
+        const accepted = new Set(p.acceptedGrids.map((g) => g[l.id]));
+        const fits = (membershipByLength.get(l.length) ?? []).filter((x) => !accepted.has(x) && [...fixed].every(([i, ch]) => x[i] === ch));
+        const listed = new Set(p.reviewedAlternatives?.[l.id] ?? []);
+        for (const x of fits) if (!listed.has(x)) problems.push(`${at(`lanes.${l.id}`)}: unreviewed alternative ${x} fits the crossings of ${w}`);
+        for (const x of listed) if (!fits.includes(x)) problems.push(`${at(`reviewedAlternatives.${l.id}`)}: ${x} is listed but does not fit`);
+      }
+      const crossings = board.active.filter((c) => (board.lanesAt.get(c) ?? []).length > 1).length;
+      if (p.lanes.length < 8 || p.lanes.length > 12) problems.push(`${meta.id}: master rounds have 8 to 12 lanes`);
+      if (crossings < 16) problems.push(`${meta.id}: master rounds need at least 16 crossings (has ${crossings})`);
+      if (p.acceptedGrids[0] && Object.values(p.acceptedGrids[0]).filter((w) => w.length >= 7).length < 6) problems.push(`${meta.id}: master rounds need at least six lanes of 7+ letters`);
+    }
     if (p.bank) {
       const answers = [...new Set(p.acceptedGrids.flatMap((g) => Object.values(g)))].sort();
       if ([...p.bank].sort().join() !== answers.join()) problems.push(`${at("bank")}: bank must list exactly the answers`);
@@ -75,9 +107,11 @@ export function validateContent(): string[] {
     if (meta.status !== "demo") {
       const n = p.lanes.length;
       if (meta.difficulty === "gentle" && (n < 3 || n > 5)) problems.push(`${meta.id}: gentle rounds have 3 to 5 lanes`);
-      if (meta.difficulty !== "gentle" && (n < 6 || n > 10)) problems.push(`${meta.id}: standard and expert rounds have 6 to 10 lanes`);
+      if (meta.difficulty !== "gentle" && meta.difficulty !== "master" && (n < 6 || n > 10)) problems.push(`${meta.id}: standard and expert rounds have 6 to 10 lanes`);
     }
   }
   for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
+  if ((perDifficulty.expert ?? 0) < 18) problems.push("fewer than 18 expert rounds");
+  if ((perDifficulty.master ?? 0) < 12) problems.push("fewer than 12 master rounds");
   return problems;
 }
