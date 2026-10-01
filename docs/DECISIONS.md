@@ -112,3 +112,34 @@ The shared Dialog restored opener focus in a setTimeout, which could steal focus
 keyboard user who had already moved on (found via an intermittent Shrinking Staircase e2e failure:
 Enter on the stolen focus reopened the dialog). Focus is now restored synchronously and only when
 focus is lost (body or inside the closing dialog).
+
+## D11 Membership v2: official-Scrabble-sized word list (2026-10-01)
+Owner asked that dictionaries contain at least all official Scrabble words in UK English.
+Collins Scrabble Words (CSW) is the official UK tile-game list but is licensed by HarperCollins, so
+it is NOT copied into the repository. Instead `wc-membership-v2` (253,090 words) merges: SCOWL size 95
+(British -ise, British -ize and American spellings, at the pinned ESDB commit), the public-domain
+ENABLE list (every ENABLE word is covered), and the 127 Collins two-letter words. Two-letter entries
+are restricted to that official list (this removes abbreviation leaks such as CF/JR/OZ and restores
+QI/ZA/AA). Like CSW it accepts American spellings; puzzle answers/targets stay UK spellings (they come
+from the familiar layer and are authored per round).
+Limits, stated honestly: this is a large superset, not a verified copy of CSW (CSW21 has about 279k
+words), so a few rare official words may be missing and some non-CSW words are accepted. If the owner
+holds a CSW licence, put the file at `data/dictionaries/licensed/csw.txt` (gitignored) and run
+`pnpm build:membership`; it is merged automatically and the manifest records `licensedCswIncluded`.
+Exclusions now remove slurs only; ordinary rude words that are valid in Scrabble are accepted but
+filtered from the familiar layer (`crude.ts`) so they are never chosen as targets, hints or par routes.
+MEMBERSHIP_VERSION is `wc-membership-v2-candidate`; saved attempts pinned to v1.x restart cleanly.
+
+## D12 Word Ladder par is over everyday words
+A larger word list creates obscure shortcuts (EAST > WAST > WEST). "Shortest possible" is therefore
+renamed "par" and defined as the shortest route over the familiar layer. Every membership word stays a
+legal step; beating par with a less common word is accepted, scores 100 and is called out. Hints follow
+par routes. This mirrors Letter Circuit's everyday-word par.
+
+## D13 No repeated rounds
+A per-game "seen" registry (`wc:v1:seen:<game>`, never trimmed; the library index was also raised to
+5000 entries) records every round the player has made a move in. Practice, "Next unplayed round" and
+"Play something new" (/surprise) only offer unplayed rounds, preferring the same difficulty, and
+"Play something new" prefers the least recently played game and avoids the game just played. When a
+game is exhausted the player is told and offered the round played longest ago. A rejected word is
+not a move, so it does not mark a round as played. Caveat: this is per device/browser.

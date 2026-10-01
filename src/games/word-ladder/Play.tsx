@@ -86,7 +86,7 @@ function LadderGame({ bundle, words, siblings }: { bundle: RoundBundle<LadderPay
             {moves(state)} {moves(state) === 1 ? "move" : "moves"}
           </h2>
           <div className="stat-row">
-            <span>Shortest possible</span>
+            <span>Par (everyday words)</span>
             <span data-testid="optimum">{state.optimalMoves}</span>
           </div>
           <div className="stat-row">

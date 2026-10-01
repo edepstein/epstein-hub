@@ -101,3 +101,58 @@ test("@mobile core pages have no horizontal overflow at 390px", async ({ page })
     await expectNoHorizontalOverflow(page);
   }
 });
+
+test("a round that has been played is not offered again: practice, next round and surprise", async ({ page }) => {
+  // A rejected word is not a move, so it does not mark the round as played.
+  await page.goto("/play/letter-wheel/lw-demo-1");
+  await page.getByLabel("Your word").fill("zzzz");
+  await page.getByLabel("Your word").press("Enter");
+  expect(await page.evaluate(() => localStorage.getItem("wc:v1:seen:letter-wheel"))).toBeNull();
+
+  // A real move marks it played; asking for practice (same difficulty) never returns it.
+  await page.getByLabel("Your word").fill("date");
+  await page.getByLabel("Your word").press("Enter");
+  await expect(page.getByTestId("found-list")).toContainText("DATE");
+  expect(await page.evaluate(() => Object.keys(JSON.parse(localStorage.getItem("wc:v1:seen:letter-wheel") ?? "{}")))).toEqual(["lw-demo-1"]);
+
+  const offered = new Set<string>(["lw-demo-1"]);
+  for (let i = 0; i < 5; i++) {
+    await page.goto("/practice/letter-wheel?difficulty=standard");
+    await expect(page).toHaveURL(/\/play\/letter-wheel\//, { timeout: 15_000 });
+    const id = new URL(page.url()).pathname.split("/").pop()!;
+    expect(offered.has(id), `round ${id} was offered twice`).toBe(false);
+    offered.add(id);
+    await page.getByLabel("Your word").fill("zzzz");
+    await page.evaluate((rid) => {
+      const key = "wc:v1:seen:letter-wheel";
+      const seen = JSON.parse(localStorage.getItem(key) ?? "{}");
+      seen[rid] = new Date().toISOString();
+      localStorage.setItem(key, JSON.stringify(seen));
+    }, id);
+  }
+
+  // The result screen's "different game" link avoids the game just played.
+  await page.goto("/surprise?not=letter-wheel");
+  await expect(page).toHaveURL(/\/play\/(?!letter-wheel)[a-z-]+\//, { timeout: 15_000 });
+});
+
+test("when every round of a game is played the player is told and can replay the oldest", async ({ page }) => {
+  await page.goto("/games/letter-wheel");
+  const ids = await page.locator(".round-grid a").evaluateAll((els) => els.map((e) => (e as HTMLAnchorElement).href.split("/").pop()!));
+  expect(ids.length).toBeGreaterThanOrEqual(10);
+  await page.evaluate((all) => {
+    const seen: Record<string, string> = {};
+    all.forEach((id, i) => (seen[id] = new Date(2026, 9, 1, 10, i).toISOString()));
+    localStorage.setItem("wc:v1:seen:letter-wheel", JSON.stringify(seen));
+  }, ids);
+  await page.goto("/practice/letter-wheel");
+  await expect(page.getByTestId("practice-exhausted")).toBeVisible();
+  await page.getByRole("link", { name: /longest ago/ }).click();
+  await expect(page).toHaveURL(new RegExp(`/${ids[0]}$`));
+});
+
+test("home offers a surprise round from a game that still has unplayed rounds", async ({ page }) => {
+  await page.goto("/");
+  await page.getByTestId("surprise-me").click();
+  await expect(page).toHaveURL(/\/play\//, { timeout: 15_000 });
+});

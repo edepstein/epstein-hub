@@ -1,0 +1,19 @@
+{
+  "version": "wc-membership-v2",
+  "wordCount": 253090,
+  "sha256": "c0aa152a7fd22f63b25972e3dceeaa2991baa40c4548c6e79a0580544fbfb4c2",
+  "sources": [
+    {
+      "name": "scowl95-bza",
+      "rawCount": 252060
+    },
+    {
+      "name": "enable1",
+      "rawCount": 172823
+    }
+  ],
+  "twoLetterWords": 126,
+  "licensedCswIncluded": false,
+  "editoriallyApproved": false,
+  "note": "Candidate list. Includes American spellings, as Collins Scrabble Words does; puzzle answers use UK spellings. Not a copy of Collins Scrabble Words."
+}

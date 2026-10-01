@@ -22,6 +22,9 @@ export default function Home() {
           <Link className="btn" href={`/games/${featured.id}`}>
             Start with {featured.title} <span aria-hidden="true">↗</span>
           </Link>
+          <Link className="btn secondary" href="/surprise" style={{ marginLeft: 8 }} data-testid="surprise-me">
+            Play something new
+          </Link>
           <span className="welcome-note">
             Practice preview · no daily editions are published yet, so every round here is a labelled practice round.
           </span>

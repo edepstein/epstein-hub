@@ -99,7 +99,7 @@ export const definition: GameDefinition = {
       {
         heading: "Word list",
         points: [
-          "Words are checked against a British English spellings list (ESDB candidate list). It has not yet been reviewed for tile-game use, and it contains only a small set of two-letter words (for example AT, AS, OX and TA), so some two-letter words you know may be refused.",
+          "Words are checked against the Word Club word list (about 253,000 words, British and American spellings, with the 127 standard two-letter tile-game words). It is not Collins Scrabble Words itself and has not yet been reviewed for tile-game use, so a rare word you know may occasionally be refused.",
           "Only A to Z words count: no names, abbreviations, hyphens or apostrophes.",
         ],
       },

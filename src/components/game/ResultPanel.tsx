@@ -60,7 +60,7 @@ export function ResultPanel({
       <div className="toolbar" style={{ marginBottom: 0 }}>
         {nextHref ? (
           <Link className="btn" href={nextHref}>
-            Next practice round
+            Next unplayed round
           </Link>
         ) : exhausted ? (
           <span className="notice" style={{ margin: 0 }}>
@@ -86,6 +86,9 @@ export function ResultPanel({
         >
           Share result
         </button>
+        <Link className="text-button" href={`/surprise?not=${gameId}`} style={{ textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
+          Try a different game
+        </Link>
         <Link className="text-button" href={`/games/${gameId}`} style={{ textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
           All rounds
         </Link>

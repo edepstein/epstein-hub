@@ -30,10 +30,11 @@ export function validateContent(): string[] {
     if (p.examplePath[0] !== p.start || p.examplePath[p.examplePath.length - 1] !== p.target) problems.push(`${at("examplePath")}: must run from start to target`);
     if (!isLadder(p.examplePath)) problems.push(`${at("examplePath")}: every edge must change exactly one letter`);
     if (new Set(p.examplePath).size !== p.examplePath.length) problems.push(`${at("examplePath")}: repeats a word`);
-    const dist = distancesFrom(p.target, (w) => membership.has(w)).get(p.start);
-    if (dist == null) problems.push(`${meta.id}: endpoints are disconnected in membership`);
+    const ends = new Set([p.start, p.target]);
+    const dist = distancesFrom(p.target, (w) => ends.has(w) || (membership.has(w) && familiar.has(w))).get(p.start);
+    if (dist == null) problems.push(`${meta.id}: endpoints are not connected by everyday words`);
     else {
-      if (dist !== p.optimalMoves) problems.push(`${at("optimalMoves")}: stored ${p.optimalMoves}, BFS over membership gives ${dist}`);
+      if (dist !== p.optimalMoves) problems.push(`${at("optimalMoves")}: stored ${p.optimalMoves}, BFS over everyday words (par) gives ${dist}`);
       if (p.examplePath.length - 1 !== dist) problems.push(`${at("examplePath")}: ${p.examplePath.length - 1} moves, optimum ${dist}`);
     }
     if (meta.status !== "demo") {

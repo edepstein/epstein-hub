@@ -54,7 +54,7 @@ export interface LadderState {
   start: string;
   target: string;
   length: number;
-  /** BFS minimum under the membership this engine was created with. */
+  /** Par: BFS minimum over everyday words (falls back to the full list when no familiar layer is supplied). */
   optimalMoves: number;
   path: Step[];
   hints: HintRecord[];
@@ -76,6 +76,12 @@ export type LadderAction =
 export function ladderScore(optimal: number, moves: number): number {
   if (moves <= 0) return 0;
   return Math.min(100, 60 + Math.floor((40 * optimal) / moves));
+}
+
+function parNote(par: number, moves: number): string {
+  if (moves < par) return `That beats par (${par}) using less common words.`;
+  if (moves === par) return "That is par: the shortest route using everyday words.";
+  return `Par is ${par}, the shortest route using everyday words.`;
 }
 
 const ordinal = (n: number) => ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"][n] ?? `${n + 1}th`;
@@ -124,8 +130,11 @@ export function createWordLadderEngine(
     if (cur === state.target) return null;
     const blocked = new Set(state.path.slice(0, -1).map((p) => p.word));
     const extra = endpoints(state);
-    const dist = distances(state.target, extra, blocked);
-    const famDist = distances(state.target, extra, blocked, true);
+    const memberDist = distances(state.target, extra, blocked);
+    const famDist = familiar.size ? distances(state.target, extra, blocked, true) : null;
+    // Prefer a route of everyday words (par); fall back to any legal route if the player has
+    // wandered somewhere everyday words cannot get back from.
+    const dist = famDist && famDist.get(cur) != null ? famDist : memberDist;
     const d = dist.get(cur);
     if (d == null) return null;
     const route: string[] = [];
@@ -136,8 +145,7 @@ export function createWordLadderEngine(
       const cands = neighbours(w, has(extra, blocked)).filter((n) => dist.get(n) === remaining - 1);
       const i = ex.indexOf(w);
       const exNext = i >= 0 ? ex[i + 1] : undefined;
-      const rank = (n: string) => (n === exNext ? 0 : famDist.get(n) === remaining - 1 ? 1 : familiar.has(n) ? 2 : 3);
-      cands.sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+      cands.sort((a, b) => (a === exNext ? 0 : 1) - (b === exNext ? 0 : 1) || a.localeCompare(b));
       w = cands[0];
       route.push(w);
       remaining -= 1;
@@ -202,12 +210,15 @@ export function createWordLadderEngine(
       void _options;
       const start = round.start.toUpperCase();
       const target = round.target.toUpperCase();
-      const dist = distances(target, new Set([start, target]), new Set());
+      // Par is the shortest route using everyday words (the familiar layer), so obscure
+      // tile-game words never define the target. Every membership word remains a legal step.
+      const ends = new Set([start, target]);
+      const dist = (familiar.size ? distances(target, ends, new Set(), true) : distances(target, ends, new Set())).get(start) ?? distances(target, ends, new Set()).get(start);
       return {
         start,
         target,
         length: start.length,
-        optimalMoves: dist.get(start) ?? round.optimalMoves,
+        optimalMoves: dist ?? round.optimalMoves,
         path: [{ word: start, assisted: false }],
         hints: [],
         revealed: false,
@@ -232,7 +243,7 @@ export function createWordLadderEngine(
           const next = appendSteps(state, [word], false);
           if (word === state.target) {
             const m = moves(next);
-            return accept(next, "complete", `${word}! You reached the target in ${plural(m, "move")}; the shortest possible is ${state.optimalMoves}.`);
+            return accept(next, "complete", `${word}! You reached the target in ${plural(m, "move")}. ${parNote(state.optimalMoves, m)}`);
           }
           return accept(next, "step", `${word} added. Move ${moves(next)}. Next: change one letter of ${word}.`);
         }
@@ -364,17 +375,17 @@ export function createWordLadderEngine(
           details: [
             `Your route had ${plural(state.hints.find((h) => h.tier === HINT_REVEAL)?.atStep ?? m, "move")} before the reveal.`,
             `Full route: ${route}.`,
-            `The shortest possible is ${plural(state.optimalMoves, "move")}, for example ${example}.`,
+            `Par is ${plural(state.optimalMoves, "move")} (the shortest route using everyday words), for example ${example}.`,
           ],
-          shareText: `Word Club · Word Ladder · ${state.length} letters · route revealed · best ${state.optimalMoves}`,
-          explanation: [state.explanation, `A shortest route: ${example}.`],
+          shareText: `Word Club · Word Ladder · ${state.length} letters · route revealed · par ${state.optimalMoves}`,
+          explanation: [state.explanation, `A par route: ${example}.`],
         };
       }
       const score = ladderScore(state.optimalMoves, m);
-      const eff = state.optimalMoves / m;
+      const eff = Math.min(1, state.optimalMoves / m);
       return {
         outcome,
-        headline: m === state.optimalMoves ? `Reached ${state.target} in ${plural(m, "move")}: the shortest possible.` : `Reached ${state.target} in ${plural(m, "move")}. The shortest possible is ${state.optimalMoves}.`,
+        headline: `Reached ${state.target} in ${plural(m, "move")}. ${parNote(state.optimalMoves, m)}`,
         scoreText: `${score} of 100 points`,
         score,
         maxScore: 100,
@@ -382,13 +393,13 @@ export function createWordLadderEngine(
         assistance: { hints: nudges + inserts, reveals },
         details: [
           `Your route: ${route}.`,
-          `A shortest route: ${example}. Any legal route counts; this is only an example.`,
+          `A par route: ${example}. Any legal route counts; this is only an example.`,
           `Score: 60 for completing, plus ${Math.floor((40 * state.optimalMoves) / m)} for efficiency (${state.optimalMoves} ÷ ${m} of 40).`,
           `${plural(state.movesTried, "step")} tried in total, ${plural(state.undos, "step")} taken back.`,
           hinted ? `${plural(hinted, "step")} came from hints.` : assisted ? `${plural(nudges, "hint")} taken.` : "No hints taken.",
         ],
-        shareText: `Word Club · Word Ladder · ${state.length} letters · ${m} moves (best ${state.optimalMoves}) · ${score}/100 · ${assisted ? `assisted (${plural(nudges + inserts, "hint")})` : "unassisted"}`,
-        explanation: [state.explanation, `A shortest route: ${example}.`],
+        shareText: `Word Club · Word Ladder · ${state.length} letters · ${m} moves (par ${state.optimalMoves}) · ${score}/100 · ${assisted ? `assisted (${plural(nudges + inserts, "hint")})` : "unassisted"}`,
+        explanation: [state.explanation, `A par route: ${example}.`],
       };
     },
   };

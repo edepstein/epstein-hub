@@ -58,7 +58,7 @@ test("COLD to WARM: rejections keep input, refresh restores, hints from the curr
   await step(page, "warm");
   const result = page.getByTestId("result-panel");
   await expect(result).toHaveAttribute("data-outcome", "completed");
-  await expect(result).toContainText("Reached WARM in 4 moves: the shortest possible.");
+  await expect(result).toContainText("Reached WARM in 4 moves. That is par");
   await expect(result).toContainText("100 of 100 points");
   await expect(result).toContainText("2 hints · 0 reveals");
   await expect(page.getByTestId("reached")).toBeVisible();
@@ -87,7 +87,7 @@ test("keyboard only: rules, typed steps, Back one step and Enter to finish", asy
     await page.keyboard.press("Enter");
   }
   const result = page.getByTestId("result-panel");
-  await expect(result).toContainText("Reached SUN in 3 moves: the shortest possible.");
+  await expect(result).toContainText("Reached SUN in 3 moves. That is par");
   await expect(result).toContainText("Unassisted");
   await expect(result).toContainText("1 step taken back");
 });

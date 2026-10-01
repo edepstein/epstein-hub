@@ -7,6 +7,9 @@ Everything the build made a best-effort or recommended decision on, or could not
 Grouped by area; each game appends its own section.
 
 ## Shared
+- [ ] **Official Scrabble coverage (2026-10-01):** membership v2 is a 253k-word superset built from SCOWL 95 + public-domain ENABLE + the Collins two-letter list, NOT a copy of Collins Scrabble Words (licensed). Verify against a licensed CSW file if you have one: put it in `data/dictionaries/licensed/csw.txt` and run `pnpm build:membership`, then `pnpm regen:derived`, `pnpm validate:content` (par/optima may shift). See DECISIONS D11.
+- [ ] Exclusions now remove slurs only (ordinary rude words are valid Scrabble words and are accepted). Confirm this policy for a family space; stricter is a one-line change in `src/lib/dictionary/exclusions.ts`.
+- [ ] American spellings are accepted as guesses (as in Collins) while all authored answers use UK spellings. Confirm that is the desired reading of "UK English".
 - [ ] Dictionary exclusion list (`src/lib/dictionary/exclusions.ts`) is a quick automated first pass. An editor must review the ESDB candidate list for offensive, proper-name, abbreviation and archaic entries per game.
 - [ ] ESDB list lacks some common inflections/words players may expect; collect rejected-word reports during pilot.
 - [ ] No daily editions exist; content bank sizes are below the docs/08 "10 per difficulty" target for most games (see each game). Home and game pages label rounds "limited preview".

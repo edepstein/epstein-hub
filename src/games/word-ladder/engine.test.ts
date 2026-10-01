@@ -34,7 +34,7 @@ describe("pack acceptance cases", () => {
     const r = engine.result(s)!;
     expect(r.score).toBe(100);
     expect(r.efficiency).toBe(1);
-    expect(r.headline).toContain("the shortest possible");
+    expect(r.headline).toContain("That is par");
   });
 
   it("accepts the alternative COLD, CORD, WORD, WORM, WARM", () => {
@@ -124,7 +124,7 @@ describe("rules and rejections", () => {
     const s = play(start("wl-demo-3"), ["COT", "DOT", "LOT", "LOG", "DOG"]);
     const r = engine.result(s)!;
     expect(r.score).toBe(60 + Math.floor((40 * 3) / 5));
-    expect(r.headline).toContain("The shortest possible is 3");
+    expect(r.headline).toContain("Par is 3");
     expect(r.details.join(" ")).toContain("CAT → COT → DOT → LOT → LOG → DOG");
   });
 
@@ -256,13 +256,27 @@ describe("persistence and content", () => {
     for (const r of rounds) {
       const s = engine.initialise(r.payload, sessionOptionsFor(r.meta, 1));
       expect(s.optimalMoves, r.meta.id).toBe(r.payload.optimalMoves);
-      const fam = shortestPath(r.payload.start, r.payload.target, (w) => familiar.has(w));
+      const ends = new Set([r.payload.start, r.payload.target]);
+      const fam = shortestPath(r.payload.start, r.payload.target, (w) => ends.has(w) || familiar.has(w));
       expect(fam && fam.length - 1, r.meta.id).toBe(r.payload.optimalMoves);
       const done = play(s, r.payload.examplePath.slice(1));
       expect(engine.outcome(done), r.meta.id).toBe("completed");
     }
     const lengths = new Set(rounds.map((r) => r.payload.start.length));
     expect([...lengths].sort()).toEqual([3, 4, 5]);
+  });
+
+  it("par is defined over everyday words, so an obscure shortcut beats par without being rejected", () => {
+    // WAST is a valid tile-game word (an archaic form of "was") but is not an everyday word.
+    const b = rounds.find((r) => r.meta.id === "wl-g7")!;
+    let s = engine.initialise(b.payload, sessionOptionsFor(b.meta, 1));
+    expect(s.optimalMoves).toBe(3);
+    s = play(s, ["WAST", "WEST"]);
+    expect(engine.outcome(s)).toBe("completed");
+    const r = engine.result(s)!;
+    expect(r.score).toBe(100);
+    expect(r.efficiency).toBe(1);
+    expect(r.headline).toContain("beats par");
   });
 
   it("difficulties are distinct: expert ladders force a detour", () => {

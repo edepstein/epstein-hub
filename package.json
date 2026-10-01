@@ -16,7 +16,8 @@
     "validate:content": "tsx scripts/content/validate-all.ts",
     "build:dictionary": "bash scripts/content/build-dictionary.sh",
     "status": "tsx scripts/content/status.ts",
-    "regen:derived": "tsx scripts/content/regen-derived.ts"
+    "regen:derived": "tsx scripts/content/regen-derived.ts",
+    "build:membership": "tsx scripts/content/build-membership.ts"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.7",

@@ -143,7 +143,7 @@ export function readIndex(): IndexEntry[] {
 export function upsertIndex(entry: IndexEntry) {
   const list = readIndex().filter((e) => !(e.gameId === entry.gameId && e.roundId === entry.roundId));
   list.unshift(entry);
-  writeJson(INDEX_KEY, list.slice(0, 500));
+  writeJson(INDEX_KEY, list.slice(0, 5000));
 }
 
 export function removeFromIndex(gameId: string, roundId: string) {
@@ -155,8 +155,34 @@ export function removeFromIndex(gameId: string, roundId: string) {
   }
 }
 
+/* ---------------- Seen rounds (no-repeat tracking) ---------------- */
+
+const seenKey = (gameId: string) => `${KEY_PREFIX}:seen:${gameId}`;
+
+/** Round ids this player has made at least one move in. Lightweight and never trimmed, so rounds are not offered twice. */
+export function readSeen(gameId: string): Record<string, string> {
+  const r = readJson(seenKey(gameId));
+  if (r.status !== "ok" || typeof r.value !== "object" || r.value === null || Array.isArray(r.value)) return {};
+  const out: Record<string, string> = {};
+  for (const [k, v] of Object.entries(r.value as Record<string, unknown>)) if (typeof v === "string") out[k] = v;
+  return out;
+}
+
+export function markSeen(gameId: string, roundId: string, at: string) {
+  const seen = readSeen(gameId);
+  seen[roundId] = at;
+  writeJson(seenKey(gameId), seen);
+}
+
 export function saveAttempt(attempt: StoredAttempt, title: string) {
   writeJson(attemptKey(attempt.gameId, attempt.roundId), attempt);
+  if (attempt.actions.length > 0) {
+    try {
+      markSeen(attempt.gameId, attempt.roundId, attempt.updatedAt);
+    } catch {
+      /* the library index below is a second record */
+    }
+  }
   upsertIndex({
     gameId: attempt.gameId,
     roundId: attempt.roundId,

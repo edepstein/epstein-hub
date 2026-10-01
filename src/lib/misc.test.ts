@@ -3,7 +3,7 @@ import { createRng } from "./rng";
 import { contentHash } from "./hash";
 import { londonEditionDate } from "./edition";
 import { fitsMultiset, normaliseWord } from "./text";
-import { loadMembershipSync } from "./dictionary/node";
+import { loadFamiliarSync, loadMembershipSync } from "./dictionary/node";
 
 describe("shared helpers", () => {
   it("seeded RNG is deterministic", () => {
@@ -27,10 +27,17 @@ describe("shared helpers", () => {
     expect(fitsMultiset("AA", "AB")).toBe(false);
     expect(fitsMultiset("AA", "ABA")).toBe(true);
   });
-  it("loads the pinned membership list with exclusions applied", () => {
+  it("loads the membership list: two-letter tile words in, abbreviations and slurs out", () => {
     const m = loadMembershipSync();
-    expect(m.size).toBeGreaterThan(80000);
+    expect(m.size).toBeGreaterThan(250000);
     expect(m.has("EDUCATION")).toBe(true);
-    expect(m.has("FUCK")).toBe(false);
+    expect(m.has("QI")).toBe(true);
+    expect(m.has("ZA")).toBe(true);
+    expect(m.has("CF")).toBe(false);
+    expect(m.has("ORGANISE")).toBe(true);
+    expect(m.has("ORGANIZE")).toBe(true);
+    expect(m.has("COLOUR")).toBe(true);
+    expect(m.has("NIGGER")).toBe(false);
+    expect(loadFamiliarSync().has("ARSE")).toBe(false);
   });
 });

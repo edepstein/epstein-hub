@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { nextPracticeRound, type SiblingRound } from "@/lib/progress/next-round";
+import { nextPracticeRound, oldestPlayedRound, type SiblingRound } from "@/lib/progress/next-round";
 import { readIndex } from "@/lib/progress/storage";
 
 /** Sends the player to an unfinished round, else the next unseen one; explains exhaustion honestly. */
@@ -27,13 +27,15 @@ export function PracticeRedirect({ gameId, title, siblings, playable }: { gameId
     else setExhausted(true);
   }, [gameId, playable, router, search, siblings]);
   if (!exhausted) return <div className="empty" role="status">Finding your next {title} round…</div>;
+  const replay = oldestPlayedRound(gameId, siblings);
   return (
     <div className="empty" data-testid="practice-exhausted">
       <h1 className="section-title" style={{ marginTop: 0 }}>You have played every {title} practice round</h1>
-      <p>New rounds are added only after they are validated, so there is nothing fresh right now. You can replay any round from the list, or try another game.</p>
+      <p>New rounds are added only after they are validated, so there is nothing fresh right now. You can replay one, or try a different game.</p>
       <div className="toolbar" style={{ justifyContent: "center" }}>
-        <Link className="btn" href={`/games/${gameId}`}>See all rounds</Link>
-        <Link className="btn secondary" href="/games">Try another game</Link>
+        {replay ? <Link className="btn" href={`/play/${gameId}/${replay.id}`}>Replay the one you played longest ago</Link> : null}
+        <Link className="btn secondary" href={`/games/${gameId}`}>See all rounds</Link>
+        <Link className="btn secondary" href={`/surprise?not=${gameId}`}>Try a different game</Link>
       </div>
     </div>
   );

@@ -1,16 +1,20 @@
 /**
  * Dictionary layers (docs/04):
- *  1. Candidate GB spellings: ESDB export, 81,901 upper-case A–Z words (public/dictionaries/gb-esdb-v1.txt).
- *  2. Gameplay membership: candidates minus the exclusion list below. NOT editorially approved yet;
- *     the version string carries "-candidate" so every round pins that fact.
- *  3. Curated answer pools live with each game's rounds, never derived from the whole list.
+ *  1. Gameplay membership (public/dictionaries/wc-membership-v2.txt, ~253k upper-case A-Z words):
+ *     SCOWL size 95 (British -ise/-ize plus American spellings) merged with the public-domain
+ *     ENABLE list and the Collins two-letter list; built by `pnpm build:membership`. This is a
+ *     superset of the tile-game vocabulary, as Collins Scrabble Words is (it also accepts American
+ *     spellings). If you hold a Collins Scrabble Words licence, drop it in
+ *     data/dictionaries/licensed/csw.txt and rebuild. Minus the slur exclusions in exclusions.ts.
+ *     NOT editorially approved; the version string carries "-candidate".
+ *  2. Curated answer pools live with each game's rounds (UK spellings), never derived from this list.
  */
 import { EXCLUDED_WORDS } from "./exclusions";
 
-/** v1.1: exclusion list extended (ARSE, TURD, CRAP and variants). Saved attempts pinned to v1 restart cleanly. */
-export const MEMBERSHIP_VERSION = "gb-esdb-v1.1-candidate";
-export const DICTIONARY_URL = "/dictionaries/gb-esdb-v1.txt";
-export const DICTIONARY_SHA256 = "daf3a79020e327e63356e01529c1e8aca37d217dbf6a85edfc0ab27cf9a291ce";
+/** v2: ~253k-word membership (was 81,901). Saved attempts pinned to v1.x restart cleanly. */
+export const MEMBERSHIP_VERSION = "wc-membership-v2-candidate";
+export const DICTIONARY_URL = "/dictionaries/wc-membership-v2.txt";
+export const DICTIONARY_SHA256 = "c0aa152a7fd22f63b25972e3dceeaa2991baa40c4548c6e79a0580544fbfb4c2";
 
 export type Membership = ReadonlySet<string>;
 

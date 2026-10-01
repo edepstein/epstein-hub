@@ -108,9 +108,9 @@ export const definition: GameDefinition = {
       {
         heading: "Word list",
         points: [
-          "Words are checked against the Word Club candidate word list (UK spellings, about 82,000 words), the same list the other games use. It is not an official tile-game dictionary and has not yet had full editorial review.",
-          "Some two-letter words familiar from other tile games, such as QI, ZA, AA, AE and AI, are not in this list and are not accepted. A few abbreviations such as CF and JR are accepted.",
-          "The list holds ordinary words: names of places and people, hyphenated words and words with apostrophes are not included.",
+          "Words are checked against the Word Club word list (about 253,000 words), the same list the other games use. It includes the standard two-letter tile-game words (such as QI, ZA, AA and AE) and accepts both British and American spellings. It is not Collins Scrabble Words itself and has not yet had full editorial review.",
+          "Only the 127 two-letter words used in Collins Scrabble Words are accepted at two letters. Abbreviations that are not words (such as CF or JR) are refused.",
+          "The list holds ordinary words: names of places and people, hyphenated words and words with apostrophes are not included. Only slurs are removed from the list; ordinary rude words are accepted, as in tile-game dictionaries.",
         ],
       },
     ],

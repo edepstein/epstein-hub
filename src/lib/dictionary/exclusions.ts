@@ -1,13 +1,15 @@
 /**
- * Gameplay exclusions applied on top of the ESDB candidate list.
- * This is a first-pass automated filter for clearly offensive or slur terms and is NOT
- * an editorial review; see docs/REVIEW-LOG.md. Keep entries upper-case A–Z.
+ * Gameplay exclusions applied on top of the membership list.
+ * Collins Scrabble Words contains ordinary rude words (ARSE, BOLLOCKS, CRAP and so on), and a
+ * word-game player may reasonably play them, so those are ACCEPTED. Only slurs aimed at people
+ * for their race, disability, sexuality or gender identity are excluded, as a deliberate
+ * family-space policy. This is the one place where the game is stricter than official Scrabble
+ * word lists; an editor should confirm it (docs/REVIEW-LOG.md, Shared). Entries are upper-case A-Z.
+ * Curated puzzle answers and targets are chosen from the familiar-word layer, so ordinary rude
+ * words never become targets.
  */
 export const EXCLUDED_WORDS: ReadonlySet<string> = new Set([
-  "CUNT", "CUNTS", "FUCK", "FUCKED", "FUCKER", "FUCKERS", "FUCKING", "FUCKS", "SHIT", "SHITS", "SHITTY", "SHITTED",
-  "BITCH", "BITCHES", "BITCHY", "WANK", "WANKER", "WANKERS", "WANKED", "WANKING", "TWAT", "TWATS", "BOLLOCKS",
   "NIGGER", "NIGGERS", "NIGGA", "NIGGAS", "FAGGOT", "FAGGOTS", "FAG", "FAGS", "DYKE", "DYKES", "SPASTIC", "SPASTICS", "SPAZ",
   "RETARD", "RETARDS", "PAKI", "PAKIS", "CHINK", "CHINKS", "GOOK", "GOOKS", "KIKE", "KIKES", "WOP", "WOPS", "WETBACK", "WETBACKS",
-  "COON", "COONS", "DAGO", "DAGOS", "TRANNY", "TRANNIES", "PISS", "PISSED", "PISSING", "ARSEHOLE", "ARSEHOLES", "ASSHOLE", "ASSHOLES",
-  "DICKHEAD", "DICKHEADS", "ARSE", "ARSES", "ARSED", "TURD", "TURDS", "CRAP", "CRAPS", "CRAPPY", "CRAPPED", "BUGGERY", "SODOMY", "SODOMISE", "SODOMIZE", "COCKSUCKER", "MOTHERFUCKER", "SLUT", "SLUTS", "WHORE", "WHORES", "SPUNK", "JIZZ", "CLIT", "CLITS",
+  "COON", "COONS", "DAGO", "DAGOS", "TRANNY", "TRANNIES", "YID", "YIDS", "POLACK", "POLACKS", "SPIC", "SPICS", "SPICK", "SPICKS",
 ]);

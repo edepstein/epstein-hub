@@ -51,8 +51,8 @@ Priority order. Details per game are in `docs/REVIEW-LOG.md`.
 3. **Family space inputs**: Supabase project (URL, publishable key, auth redirect URLs, SMTP),
    recipient display name and birthday date, a named curator, approved photos/messages with
    permission. Steps: `docs/FAMILY-SPACE.md`.
-4. **Approved word list**: review the ESDB candidate list and the exclusion list per game
-   (two-letter tile words such as QI/ZA are absent, which affects Hexabble and Shared Word Board).
+4. **Approved word list**: membership v2 (253k words, includes the standard two-letter tile words) is a
+   candidate superset, not Collins Scrabble Words itself; see DECISIONS D11 for how to merge a licensed copy.
 5. **Content volume**: the four launch games (Letter Wheel, Word Deduction, Word Families, Word Ladder) have 10+ rounds per difficulty;
    most other games have 4–7, labelled "limited preview". Daily editions need 30 scheduled reviewed
    editions per game.

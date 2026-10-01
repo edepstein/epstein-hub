@@ -317,7 +317,13 @@
        }
       ],
       "hintBranch": "a",
-      "explanation": "ACHE follows TOOTH, EAR and HEAD: TOOTHACHE, EARACHE and HEADACHE."
+      "explanation": "ACHE follows TOOTH, EAR and HEAD: TOOTHACHE, EARACHE and HEADACHE.",
+      "rejectedAlternatives": [
+       {
+        "link": "LESS",
+        "reason": "LESS does make real words (TOOTHLESS, EARLESS, HEADLESS), but they do not fit the clues, which are all about a pain."
+       }
+      ]
      }
     ]
    }
