@@ -1,0 +1,1436 @@
+{
+ "contentVersion": "1.0",
+ "note": "dc-demo-* are the pack word-square fixtures (development boards). All other rounds are original grids and clues authored for this build; see docs/REVIEW-LOG.md.",
+ "rounds": [
+  {
+   "id": "dc-demo-1",
+   "title": "Demo word square 1",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "ball-square",
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "BALL",
+     "AREA",
+     "LEAD",
+     "LADY"
+    ],
+    "entries": [
+     {
+      "id": "across-1",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "BALL",
+      "enumeration": "4",
+      "clue": "A round object used in many games"
+     },
+     {
+      "id": "across-2",
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "answer": "AREA",
+      "enumeration": "4",
+      "clue": "The extent of a surface"
+     },
+     {
+      "id": "across-3",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "LEAD",
+      "enumeration": "4",
+      "clue": "To guide or be in front"
+     },
+     {
+      "id": "across-4",
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "answer": "LADY",
+      "enumeration": "4",
+      "clue": "A woman, in a traditional form of address"
+     },
+     {
+      "id": "down-1",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "BALL",
+      "enumeration": "4",
+      "clue": "A round object used in many games"
+     },
+     {
+      "id": "down-2",
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "answer": "AREA",
+      "enumeration": "4",
+      "clue": "The extent of a surface"
+     },
+     {
+      "id": "down-3",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "LEAD",
+      "enumeration": "4",
+      "clue": "To guide or be in front"
+     },
+     {
+      "id": "down-4",
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "answer": "LADY",
+      "enumeration": "4",
+      "clue": "A woman, in a traditional form of address"
+     }
+    ],
+    "fixtureHints": [
+     {
+      "stage": 1,
+      "kind": "firstLetter",
+      "entryId": "across-1",
+      "letter": "B",
+      "assisted": true
+     },
+     {
+      "stage": 2,
+      "kind": "revealEntry",
+      "entryId": "across-1",
+      "answer": "BALL",
+      "assisted": true
+     }
+    ],
+    "fixtureNote": "Complete word-square fixture; repeated across/down answers are not production-quality crossword design."
+   }
+  },
+  {
+   "id": "dc-demo-2",
+   "title": "Demo word square 2",
+   "difficulty": "gentle",
+   "status": "demo",
+   "sourceFixtureId": "sand-square",
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "SAND",
+     "AREA",
+     "NEAT",
+     "DATE"
+    ],
+    "entries": [
+     {
+      "id": "across-1",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "SAND",
+      "enumeration": "4",
+      "clue": "Grains commonly found on a beach"
+     },
+     {
+      "id": "across-2",
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "answer": "AREA",
+      "enumeration": "4",
+      "clue": "The extent of a surface"
+     },
+     {
+      "id": "across-3",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "NEAT",
+      "enumeration": "4",
+      "clue": "Tidy and orderly"
+     },
+     {
+      "id": "across-4",
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "answer": "DATE",
+      "enumeration": "4",
+      "clue": "A calendar day, or a sweet fruit"
+     },
+     {
+      "id": "down-1",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "SAND",
+      "enumeration": "4",
+      "clue": "Grains commonly found on a beach"
+     },
+     {
+      "id": "down-2",
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "answer": "AREA",
+      "enumeration": "4",
+      "clue": "The extent of a surface"
+     },
+     {
+      "id": "down-3",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "NEAT",
+      "enumeration": "4",
+      "clue": "Tidy and orderly"
+     },
+     {
+      "id": "down-4",
+      "direction": "down",
+      "row": 0,
+      "col": 3,
+      "answer": "DATE",
+      "enumeration": "4",
+      "clue": "A calendar day, or a sweet fruit"
+     }
+    ],
+    "fixtureHints": [
+     {
+      "stage": 1,
+      "kind": "firstLetter",
+      "entryId": "across-1",
+      "letter": "S",
+      "assisted": true
+     },
+     {
+      "stage": 2,
+      "kind": "revealEntry",
+      "entryId": "across-1",
+      "answer": "SAND",
+      "assisted": true
+     }
+    ],
+    "fixtureNote": "Complete word-square fixture; repeated across/down answers are not production-quality crossword design."
+   }
+  },
+  {
+   "id": "dc-gq1",
+   "title": "Gentle quick 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "PRICE",
+     "S#V#N",
+     "ALOFT",
+     "L#R#E",
+     "MAYOR"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "PRICE",
+      "enumeration": "5",
+      "clue": "What you pay for something"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "ALOFT",
+      "enumeration": "5",
+      "clue": "High up in the air"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "MAYOR",
+      "enumeration": "5",
+      "clue": "Head of a town council"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "PSALM",
+      "enumeration": "5",
+      "clue": "Sacred song from the Bible"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "IVORY",
+      "enumeration": "5",
+      "clue": "Creamy white colour"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "ENTER",
+      "enumeration": "5",
+      "clue": "Go into a room"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-gq2",
+   "title": "Gentle quick 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "FROSTY#",
+     "U#U#A#G",
+     "MATADOR",
+     "B#D#P#I",
+     "LOOKOUT",
+     "E#O#L#T",
+     "#FREELY"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "FROSTY",
+      "enumeration": "6",
+      "clue": "Icy cold, as on a winter morning"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "MATADOR",
+      "enumeration": "7",
+      "clue": "Bullfighter"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "LOOKOUT",
+      "enumeration": "7",
+      "clue": "Person keeping watch"
+     },
+     {
+      "id": "a-r6c1",
+      "direction": "across",
+      "row": 6,
+      "col": 1,
+      "answer": "FREELY",
+      "enumeration": "6",
+      "clue": "Without restriction"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "FUMBLE",
+      "enumeration": "6",
+      "clue": "Handle clumsily"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "OUTDOOR",
+      "enumeration": "7",
+      "clue": "Done in the open air"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "TADPOLE",
+      "enumeration": "7",
+      "clue": "Young frog"
+     },
+     {
+      "id": "d-r1c6",
+      "direction": "down",
+      "row": 1,
+      "col": 6,
+      "answer": "GRITTY",
+      "enumeration": "6",
+      "clue": "Sandy, or showing determination"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-gc1",
+   "title": "Gentle cryptic 1",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "SPOON",
+     "N#F#E",
+     "ALTER",
+     "I#E#V",
+     "LANCE"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "SPOON",
+      "enumeration": "5",
+      "clue": "Snoop around for a piece of cutlery",
+      "cryptic": {
+       "definition": "a piece of cutlery",
+       "indicators": [
+        "around"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "Snoop"
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "ALTER",
+      "enumeration": "5",
+      "clue": "Change seen in metal terminal",
+      "cryptic": {
+       "definition": "Change",
+       "indicators": [
+        "seen in"
+       ],
+       "construction": {
+        "type": "hidden",
+        "fodder": "metal terminal",
+        "start": 3
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "LANCE",
+      "enumeration": "5",
+      "clue": "Clean out weapon",
+      "cryptic": {
+       "definition": "weapon",
+       "indicators": [
+        "out"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "Clean"
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "SNAIL",
+      "enumeration": "5",
+      "clue": "Nails, bent, give a slow creature",
+      "cryptic": {
+       "definition": "a slow creature",
+       "indicators": [
+        "bent"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "Nails"
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "OFTEN",
+      "enumeration": "5",
+      "clue": "Frequently found in roof tent",
+      "cryptic": {
+       "definition": "Frequently",
+       "indicators": [
+        "found in"
+       ],
+       "construction": {
+        "type": "hidden",
+        "fodder": "roof tent",
+        "start": 2
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "NERVE",
+      "enumeration": "5",
+      "clue": "Courage never broken",
+      "cryptic": {
+       "definition": "Courage",
+       "indicators": [
+        "broken"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "never"
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sq1",
+   "title": "Standard quick 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "MISTAKE",
+     "A#C#V#X",
+     "CHERISH",
+     "A#P#A#I",
+     "BATHTUB",
+     "R#I#O#I",
+     "EXCERPT"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "MISTAKE",
+      "enumeration": "7",
+      "clue": "Blunder or oversight"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "CHERISH",
+      "enumeration": "7",
+      "clue": "Hold dear"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "BATHTUB",
+      "enumeration": "7",
+      "clue": "Place for a long soak"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "EXCERPT",
+      "enumeration": "7",
+      "clue": "Passage taken from a longer work"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "MACABRE",
+      "enumeration": "7",
+      "clue": "Gruesomely preoccupied with death"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "SCEPTIC",
+      "enumeration": "7",
+      "clue": "Doubting Thomas"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "AVIATOR",
+      "enumeration": "7",
+      "clue": "Pilot, especially an early one"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "EXHIBIT",
+      "enumeration": "7",
+      "clue": "Item on display in a museum or a courtroom"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sq2",
+   "title": "Standard quick 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "SPLASH#",
+     "U#I#P#M",
+     "GONDOLA",
+     "A#K#T#T",
+     "REACTOR",
+     "Y#G#E#O",
+     "#TENDON"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "SPLASH",
+      "enumeration": "6",
+      "clue": "Scatter water noisily"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "GONDOLA",
+      "enumeration": "7",
+      "clue": "Venetian boat"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "REACTOR",
+      "enumeration": "7",
+      "clue": "Core of a nuclear power station"
+     },
+     {
+      "id": "a-r6c1",
+      "direction": "across",
+      "row": 6,
+      "col": 1,
+      "answer": "TENDON",
+      "enumeration": "6",
+      "clue": "Cord joining muscle to bone"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "SUGARY",
+      "enumeration": "6",
+      "clue": "Sickly sweet"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "LINKAGE",
+      "enumeration": "7",
+      "clue": "Connection"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "SPOTTED",
+      "enumeration": "7",
+      "clue": "Seen, or dotted"
+     },
+     {
+      "id": "d-r1c6",
+      "direction": "down",
+      "row": 1,
+      "col": 6,
+      "answer": "MATRON",
+      "enumeration": "6",
+      "clue": "Senior nurse, in old-fashioned hospitals"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sc1",
+   "title": "Standard cryptic 1",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "ATTRACT",
+     "N#R#I#A",
+     "OVERRAN",
+     "T#A#M#G",
+     "HOSTAGE",
+     "E#O#I#N",
+     "RINGLET"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "ATTRACT",
+      "enumeration": "7",
+      "clue": "Draw at area of land",
+      "cryptic": {
+       "definition": "Draw",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "at",
+          "letters": "AT",
+          "via": "literal"
+         },
+         {
+          "source": "area of land",
+          "letters": "TRACT",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "OVERRAN",
+      "enumeration": "7",
+      "clue": "Invaded when finished and managed",
+      "cryptic": {
+       "definition": "Invaded",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "finished",
+          "letters": "OVER",
+          "via": "synonym"
+         },
+         {
+          "source": "managed",
+          "letters": "RAN",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "HOSTAGE",
+      "enumeration": "7",
+      "clue": "Crowd with era for a captive",
+      "cryptic": {
+       "definition": "a captive",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Crowd",
+          "letters": "HOST",
+          "via": "synonym"
+         },
+         {
+          "source": "era",
+          "letters": "AGE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "RINGLET",
+      "enumeration": "7",
+      "clue": "Call and allow a curl",
+      "cryptic": {
+       "definition": "a curl",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Call",
+          "letters": "RING",
+          "via": "synonym"
+         },
+         {
+          "source": "allow",
+          "letters": "LET",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "ANOTHER",
+      "enumeration": "7",
+      "clue": "An alternative? One more",
+      "cryptic": {
+       "definition": "One more",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "An",
+          "letters": "AN",
+          "via": "literal"
+         },
+         {
+          "source": "alternative",
+          "letters": "OTHER",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "TREASON",
+      "enumeration": "7",
+      "clue": "Betrayal of senator, changed",
+      "cryptic": {
+       "definition": "Betrayal",
+       "indicators": [
+        "changed"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "senator"
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "AIRMAIL",
+      "enumeration": "7",
+      "clue": "Tune and letters for overseas post",
+      "cryptic": {
+       "definition": "overseas post",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Tune",
+          "letters": "AIR",
+          "via": "synonym"
+         },
+         {
+          "source": "letters",
+          "letters": "MAIL",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "TANGENT",
+      "enumeration": "7",
+      "clue": "Brown man's digression",
+      "cryptic": {
+       "definition": "digression",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Brown",
+          "letters": "TAN",
+          "via": "synonym"
+         },
+         {
+          "source": "man",
+          "letters": "GENT",
+          "via": "synonym"
+         }
+        ]
+       }
+      },
+      "explanation": "To go off on a tangent is to digress."
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-eq1",
+   "title": "Expert quick 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "EAGLE#FEZ",
+     "M#E#V#R#I",
+     "BOOMERANG",
+     "R#G#N#M#Z",
+     "OKRA#ZETA",
+     "I#A#S#W#G",
+     "DIPHTHONG",
+     "E#H#U#R#E",
+     "RAY#NAKED"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "EAGLE",
+      "enumeration": "5",
+      "clue": "Two under par, for a golfer"
+     },
+     {
+      "id": "a-r0c6",
+      "direction": "across",
+      "row": 0,
+      "col": 6,
+      "answer": "FEZ",
+      "enumeration": "3",
+      "clue": "Tasselled hat"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "BOOMERANG",
+      "enumeration": "9",
+      "clue": "Something that comes back to its sender"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "OKRA",
+      "enumeration": "4",
+      "clue": "Ladies' fingers"
+     },
+     {
+      "id": "a-r4c5",
+      "direction": "across",
+      "row": 4,
+      "col": 5,
+      "answer": "ZETA",
+      "enumeration": "4",
+      "clue": "Sixth letter from Athens"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "DIPHTHONG",
+      "enumeration": "9",
+      "clue": "Vowel glide, as in 'coin'"
+     },
+     {
+      "id": "a-r8c0",
+      "direction": "across",
+      "row": 8,
+      "col": 0,
+      "answer": "RAY",
+      "enumeration": "3",
+      "clue": "Beam, or flat fish"
+     },
+     {
+      "id": "a-r8c4",
+      "direction": "across",
+      "row": 8,
+      "col": 4,
+      "answer": "NAKED",
+      "enumeration": "5",
+      "clue": "Unclothed; undisguised, as ambition may be"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "EMBROIDER",
+      "enumeration": "9",
+      "clue": "Embellish, with a needle or with the truth"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "GEOGRAPHY",
+      "enumeration": "9",
+      "clue": "Lie of the land"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "EVEN",
+      "enumeration": "4",
+      "clue": "Level, or divisible by two"
+     },
+     {
+      "id": "d-r5c4",
+      "direction": "down",
+      "row": 5,
+      "col": 4,
+      "answer": "STUN",
+      "enumeration": "4",
+      "clue": "Knock senseless; amaze"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "FRAMEWORK",
+      "enumeration": "9",
+      "clue": "Skeleton structure"
+     },
+     {
+      "id": "d-r0c8",
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "answer": "ZIGZAGGED",
+      "enumeration": "9",
+      "clue": "Tacked this way and that"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-eq2",
+   "title": "Expert quick 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "CONVENT",
+     "R#O#L#R",
+     "OUTRAGE",
+     "C#A#S#S",
+     "HABITAT",
+     "E#L#I#L",
+     "TREACLE"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "CONVENT",
+      "enumeration": "7",
+      "clue": "Where habits are worn"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "OUTRAGE",
+      "enumeration": "7",
+      "clue": "Fury at an atrocity"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "HABITAT",
+      "enumeration": "7",
+      "clue": "Natural home"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "TREACLE",
+      "enumeration": "7",
+      "clue": "Black syrup, or cloying sentimentality"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "CROCHET",
+      "enumeration": "7",
+      "clue": "Hooked needlework"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "NOTABLE",
+      "enumeration": "7",
+      "clue": "Worthy of mention"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "ELASTIC",
+      "enumeration": "7",
+      "clue": "Springy; adaptable"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "TRESTLE",
+      "enumeration": "7",
+      "clue": "Support for a table top"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-ec1",
+   "title": "Expert cryptic 1",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "TRODDEN",
+     "H#U#O#O",
+     "OUTGROW",
+     "U#S#M#H",
+     "GRIMACE",
+     "H#D#N#R",
+     "THEATRE"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "TRODDEN",
+      "enumeration": "7",
+      "clue": "Walked by den, trampled",
+      "cryptic": {
+       "definition": "trampled",
+       "indicators": [
+        "by"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Walked",
+          "letters": "TROD",
+          "via": "synonym"
+         },
+         {
+          "source": "den",
+          "letters": "DEN",
+          "via": "literal"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "OUTGROW",
+      "enumeration": "7",
+      "clue": "Away from home, develop and become too big for",
+      "cryptic": {
+       "definition": "become too big for",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Away from home",
+          "letters": "OUT",
+          "via": "synonym"
+         },
+         {
+          "source": "develop",
+          "letters": "GROW",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "GRIMACE",
+      "enumeration": "7",
+      "clue": "Stern expert pulls a face",
+      "cryptic": {
+       "definition": "pulls a face",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Stern",
+          "letters": "GRIM",
+          "via": "synonym"
+         },
+         {
+          "source": "expert",
+          "letters": "ACE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "THEATRE",
+      "enumeration": "7",
+      "clue": "The rate changed at the playhouse",
+      "cryptic": {
+       "definition": "playhouse",
+       "indicators": [
+        "changed"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "The rate"
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "THOUGHT",
+      "enumeration": "7",
+      "clue": "However, time for reflection",
+      "cryptic": {
+       "definition": "reflection",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "However",
+          "letters": "THOUGH",
+          "via": "synonym"
+         },
+         {
+          "source": "time",
+          "letters": "T",
+          "via": "abbreviation"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "OUTSIDE",
+      "enumeration": "7",
+      "clue": "Exterior of away team",
+      "cryptic": {
+       "definition": "Exterior",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "away",
+          "letters": "OUT",
+          "via": "synonym"
+         },
+         {
+          "source": "team",
+          "letters": "SIDE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "DORMANT",
+      "enumeration": "7",
+      "clue": "Sleeping quarters with insect, inactive",
+      "cryptic": {
+       "definition": "inactive",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Sleeping quarters",
+          "letters": "DORM",
+          "via": "synonym"
+         },
+         {
+          "source": "insect",
+          "letters": "ANT",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "NOWHERE",
+      "enumeration": "7",
+      "clue": "Currently attending, in no place",
+      "cryptic": {
+       "definition": "in no place",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Currently",
+          "letters": "NOW",
+          "via": "synonym"
+         },
+         {
+          "source": "attending",
+          "letters": "HERE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

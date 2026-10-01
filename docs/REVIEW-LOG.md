@@ -203,3 +203,27 @@ Every original clue, mechanically verified by validate.ts (letters) but needing 
 - [ ] Decision: "Efficient next move" can be asked for repeatedly; each use counts as a hint but costs no points (moves still count). Reveal scores 0.
 - [ ] The standard band includes the four-word EASY COME EASY GO (brief suggests five to seven words at Standard) because it is a good duplicate-token case.
 - [ ] Only 5 practice rounds per difficulty plus 3 demos; docs/08 asks for 10.
+
+## Daily Crossword
+Decisions and shortfalls:
+- [ ] Content: 2 pack word squares (demo, gentle quick, kept as engine regression boards) + 9 original grids: 3 per difficulty, each difficulty has Quick and Cryptic (gentle: 5x5 quick, 7x7 quick, 5x5 cryptic; standard: two 7x7 quick, 7x7 cryptic; expert: 9x9 quick, 7x7 quick, 7x7 cryptic). docs/08 asks for 10 per advertised difficulty and 30 scheduled editions; this is far short (grids are expensive to author well). Pages show "limited preview".
+- [ ] House style (enforced by validate.ts for non-demo grids): 180-degree symmetry, connected, answers of 3+ letters, at least roughly half of each entry checked (British-style lattice grids with alternate unchecked letters), no repeated answers, every single-word answer in ESDB. Confirm this style suits the audience; a denser, fully checked grid would need a different fill.
+- [ ] Fills were found with a local backtracking filler over the ESDB size-35 familiar list (tooling not committed), then every clue was written by hand. An editor should check for dull or awkward entries (e.g. OVERRAN, ZIGZAGGED).
+- [ ] No timer (brief says optional). Pencil mode, check/reveal letter/word/grid, clue-first answer form and paste are implemented. Checks count as "hints" in the shared result panel; reveals as reveals.
+- [ ] Mobile: 9x9 grid cells are about 38px at 100% on a 390px phone (below the 44px target); zoom to 125%-200% scrolls inside the grid frame. Needs real-device review.
+- [ ] Filled-grid verdict never locates errors; ordinary keystrokes are not announced (only verdicts). Screen-reader behaviour of the input-per-cell grid needs a manual NVDA/VoiceOver pass.
+- [ ] Typing does not skip over already-filled squares (it overwrites); confirm preference.
+- [ ] The word-square demos number conventionally (1, 5, 6, 7 Across; 1-4 Down), unlike the pack's reference UI which listed 1-4 for both.
+
+Quick clues needing independent solve (definitions original):
+- [ ] dc-gq1 PRICE "What you pay for something"; ALOFT "High up in the air"; MAYOR "Head of a town council"; PSALM "Sacred song from the Bible"; IVORY "Creamy white colour"; ENTER "Go into a room".
+- [ ] dc-gq2 FROSTY "Icy cold, as on a winter morning"; MATADOR "Bullfighter"; LOOKOUT "Person keeping watch"; FREELY "Without restriction"; FUMBLE "Handle clumsily"; OUTDOOR "Done in the open air"; TADPOLE "Young frog"; GRITTY "Sandy, or showing determination".
+- [ ] dc-sq1 MISTAKE "Blunder or oversight"; CHERISH "Hold dear"; BATHTUB "Place for a long soak"; EXCERPT "Passage taken from a longer work"; MACABRE "Gruesomely preoccupied with death"; SCEPTIC "Doubting Thomas"; AVIATOR "Pilot, especially an early one"; EXHIBIT "Item on display in a museum or a courtroom".
+- [ ] dc-sq2 SPLASH "Scatter water noisily"; GONDOLA "Venetian boat"; REACTOR "Core of a nuclear power station"; TENDON "Cord joining muscle to bone"; SUGARY "Sickly sweet"; LINKAGE "Connection"; SPOTTED "Seen, or dotted"; MATRON "Senior nurse, in old-fashioned hospitals".
+- [ ] dc-eq1 EAGLE "Two under par, for a golfer"; FEZ "Tasselled hat"; BOOMERANG "Something that comes back to its sender"; OKRA "Ladies' fingers"; ZETA "Sixth letter from Athens"; DIPHTHONG "Vowel glide, as in 'coin'"; RAY "Beam, or flat fish"; NAKED "Unclothed; undisguised, as ambition may be"; EMBROIDER "Embellish, with a needle or with the truth"; GEOGRAPHY "Lie of the land"; EVEN "Level, or divisible by two"; STUN "Knock senseless; amaze"; FRAMEWORK "Skeleton structure"; ZIGZAGGED "Tacked this way and that".
+- [ ] dc-eq2 CONVENT "Where habits are worn"; OUTRAGE "Fury at an atrocity"; HABITAT "Natural home"; TREACLE "Black syrup, or cloying sentimentality"; CROCHET "Hooked needlework"; NOTABLE "Worthy of mention"; ELASTIC "Springy; adaptable"; TRESTLE "Support for a table top".
+
+Cryptic clues (letters verified by the Cryptic Workshop checker; synonyms and surfaces need semantic review):
+- [ ] dc-gc1 "Snoop around for a piece of cutlery" SPOON (anagram); "Change seen in metal terminal" ALTER (hidden); "Clean out weapon" LANCE (anagram); "Nails, bent, give a slow creature" SNAIL (anagram); "Frequently found in roof tent" OFTEN (hidden); "Courage never broken" NERVE (anagram).
+- [ ] dc-sc1 "Draw at area of land" ATTRACT (AT + TRACT); "Invaded when finished and managed" OVERRAN (OVER + RAN); "Crowd with era for a captive" HOSTAGE; "Call and allow a curl" RINGLET; "An alternative? One more" ANOTHER; "Betrayal of senator, changed" TREASON (anagram); "Tune and letters for overseas post" AIRMAIL; "Brown man's digression" TANGENT (TAN + GENT; check fairness of "digression").
+- [ ] dc-ec1 "Walked by den, trampled" TRODDEN; "Away from home, develop and become too big for" OUTGROW; "Stern expert pulls a face" GRIMACE; "The rate changed at the playhouse" THEATRE (anagram); "However, time for reflection" THOUGHT (THOUGH + T); "Exterior of away team" OUTSIDE; "Sleeping quarters with insect, inactive" DORMANT (DORM + ANT); "Currently attending, in no place" NOWHERE (NOW + HERE).
