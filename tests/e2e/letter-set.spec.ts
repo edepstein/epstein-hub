@@ -1,5 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 import { clearProgress, expectNoHorizontalOverflow, feedback } from "./helpers";
+import data from "../../src/games/letter-set/content/rounds.json";
 
 // Pack "article" fixture: A C E I L R T, required R.
 const ARTICLE = "/play/letter-set/ls-demo-2";
@@ -144,6 +145,29 @@ test("finish early shows an honest partial result, then continue", async ({ page
   await expect(result).toContainText("left unexplored");
   await page.getByRole("button", { name: "Continue finding words" }).click();
   await expect(result).toBeHidden();
+});
+
+test("master garden loads with target wording, rejects a non-required word, and a full solve completes", async ({ page }) => {
+  const master = (data.rounds as { id: string; payload: { required: string; targets: { word: string }[] } }[]).find((r) => r.id === "ls-m8")!; // HAUBERK, K required
+  await page.goto("/play/letter-set/ls-m8");
+  await expect(page.getByTestId("target-progress")).toHaveText(`0 of ${master.payload.targets.length} target words`);
+  const input = page.getByLabel("Your word");
+  await input.fill("hubba");
+  await input.press("Enter");
+  await expect(feedback(page)).toContainText("This word needs K");
+  await expect(input).toHaveValue("HUBBA");
+  await page.getByRole("button", { name: "Get a hint" }).click();
+  const dialog = page.getByRole("dialog", { name: "A helpful nudge" });
+  await dialog.getByRole("listitem").filter({ has: page.getByText("Length and first letter", { exact: true }) }).getByRole("button", { name: "Take hint" }).click();
+  await expect(feedback(page)).toContainText("A target word of");
+  for (const t of master.payload.targets) {
+    await input.fill(t.word);
+    await input.press("Enter");
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toBeVisible();
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("Every target word found");
 });
 
 test("@mobile garden fits a phone screen and plays", async ({ page }) => {

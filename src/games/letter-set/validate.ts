@@ -1,5 +1,5 @@
 import { rounds } from "./rounds";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { fitsSet, scoreWord, usesAllLetters } from "./engine";
 
 /**
@@ -14,6 +14,7 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
   const perDifficulty: Record<string, number> = {};
   const boards = new Set<string>();
   for (const { meta, payload: p } of rounds) {
@@ -36,15 +37,25 @@ export function validateContent(): string[] {
       if (w.length < p.minimumLength) problems.push(`${at(f)}: ${w} shorter than minimum`);
       if (!w.includes(p.required)) problems.push(`${at(f)}: ${w} lacks required ${p.required}`);
       if (!fitsSet(w, p.letters)) problems.push(`${at(f)}: ${w} uses a letter outside the set`);
-      if (!t.clue || t.clue.length < 6) problems.push(`${at(f)}.clue: missing definition for ${w}`);
+      const isMaster = meta.difficulty === "master";
+      const inflectionOfTarget = [1, 2, 3].some((n) => w.length - n >= 4 && words.includes(w.slice(0, -n)) && /(S|ES|ED|ER|ERS|EST|ING)$/.test(w.slice(w.length - n)));
+      const clueNeeded = !isMaster || (!familiar.has(w) && !inflectionOfTarget);
+      if (clueNeeded && (!t.clue || t.clue.length < 6)) problems.push(`${at(f)}.clue: missing definition for ${w}`);
       if (t.clue && t.clue.toUpperCase().includes(w)) problems.push(`${at(f)}.clue: definition of ${w} contains the word`);
-      if (/—/.test(t.clue)) problems.push(`${at(f)}.clue: em dash in user-facing copy`);
+      if (/—/.test(t.clue ?? "")) problems.push(`${at(f)}.clue: em dash in user-facing copy`);
       if (meta.status !== "demo" && !membership.has(w)) problems.push(`${at(f)}: ${w} not in membership`);
-      if (meta.status !== "demo" && !familiar.has(w)) problems.push(`${at(f)}: ${w} not in the familiar (size-35) layer`);
+      if (meta.status !== "demo" && !isMaster && !familiar.has(w)) problems.push(`${at(f)}: ${w} not in the familiar (size-35) layer`);
+      if (isMaster && !familiar.has(w) && !uncommon.has(w)) problems.push(`${at(f)}: ${w} is in neither the familiar nor the uncommon layer`);
     });
     const computedAll = words.filter((w) => usesAllLetters(w, p.letters));
     if ([...computedAll].sort().join() !== [...p.allLetterTargets].sort().join())
       problems.push(`${at("allLetterTargets")}: stored ${p.allLetterTargets.join("/")}, computed ${computedAll.join("/")}`);
+    if (meta.difficulty === "master") {
+      if (p.wordLabel !== "target") problems.push(`${at("wordLabel")}: Master rounds must say "target" words`);
+      if (words.length < 18 || words.length > 60) problems.push(`${at("targets")}: Master needs 18 to 60 target words, has ${words.length}`);
+      if (!["J", "K", "Q", "V", "W", "X", "Y", "Z", "F", "H"].includes(p.required)) problems.push(`${at("required")}: Master required letter ${p.required} is not awkward`);
+      if (!computedAll.some((w) => !familiar.has(w))) problems.push(`${at("allLetterTargets")}: Master needs an uncommon (non-familiar) all-letter target`);
+    }
     if (!computedAll.length) problems.push(`${at("allLetterTargets")}: at least one everyday all-letter word is required`);
     if (p.fixtureLexicon) {
       if (p.fixtureMaximumScore != null) {
@@ -60,5 +71,7 @@ export function validateContent(): string[] {
     if (meta.status !== "demo" && p.allLetterTargets.includes(p.letters.join(""))) problems.push(`${at("letters")}: display order spells the answer`);
   }
   for (const d of ["gentle", "standard", "expert"]) if (!perDifficulty[d]) problems.push(`no ${d} rounds`);
+  if ((perDifficulty.expert ?? 0) < 20) problems.push("fewer than 20 expert rounds");
+  if ((perDifficulty.master ?? 0) < 14) problems.push("fewer than 14 master rounds");
   return problems;
 }

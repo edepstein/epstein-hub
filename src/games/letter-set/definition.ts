@@ -57,7 +57,7 @@ export const definition: GameDefinition = {
         heading: "Hints",
         points: [
           "Length and first letter: for one everyday word you have not found.",
-          "Definition: a short definition of that same word.",
+          "Definition: a short definition of that same word. Familiar words and plain inflections may have none; the hint then says so and gives the last letter instead.",
           "Reveal: adds the word to your list with its definition. It counts towards completion but scores 0 and is marked as revealed.",
           "All-letter nudge: the first letter and length of an all-letter word.",
           "Hints never block completion; your result shows how many you used and a saved game always remembers them.",
@@ -69,6 +69,7 @@ export const definition: GameDefinition = {
           "Gentle sets have plenty of familiar words and an all-letter word you are likely to know.",
           "Standard sets balance quick finds with deeper ones.",
           "Expert sets have fewer obvious words and a harder all-letter word, without relying on specialist vocabulary.",
+          "Master sets are for strong Scrabble and crossword players: an awkward required letter (J, K, Q, V, W, X, Y, Z, F or H) and an uncommon all-letter word, with a target list that mixes familiar and less common words. Master rounds say \"target words\" instead of \"everyday words\", and every other word in the word list is still accepted as a bonus.",
           "Each difficulty is a different set of letters. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

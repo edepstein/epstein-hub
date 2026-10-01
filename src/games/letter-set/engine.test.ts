@@ -238,9 +238,29 @@ describe("letter set rules", () => {
 
   it("content validator passes and difficulties have distinct boards", () => {
     expect(validateContent()).toEqual([]);
-    for (const d of ["gentle", "standard", "expert"] as const) {
+    for (const d of ["gentle", "standard", "expert", "master"] as const) {
       expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length, d).toBeGreaterThanOrEqual(4);
     }
+  });
+
+  it("master rounds: target wording, definition hint with a fallback for undefined familiar words, uncommon pangram", () => {
+    const masters = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(masters.length).toBeGreaterThanOrEqual(14);
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(20);
+    const b = masters[0];
+    let s = engine.initialise(b.payload, sessionOptionsFor(b.meta, 1));
+    expect(s.wordLabel).toBe("target");
+    const h1 = engine.apply(s, { type: "hint", tier: HINT_START });
+    expect(h1.message).toMatch(/^A target word of \d+ letters begins with [A-Z]\.$/);
+    const h2 = engine.apply(h1.state, { type: "hint", tier: HINT_DEFINITION });
+    expect(h2.ok).toBe(true);
+    expect(h2.message).toMatch(/means: |no separate definition/);
+    for (const t of b.payload.targets) s = submit(s, t.word).state;
+    const r = engine.result(s)!;
+    expect(r.headline).toBe("Every target word found.");
+    expect(r.details.join(" ")).not.toMatch(/everyday/);
+    const g = engine.initialise(bundle("ls-g1").payload, sessionOptionsFor(bundle("ls-g1").meta, 1));
+    expect(g.wordLabel).toBe("everyday");
   });
 
   it("property: any accepted word uses only the seven letters, includes the required letter and is 4+ long", () => {

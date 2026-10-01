@@ -92,10 +92,10 @@ function GardenGame({ bundle, words, siblings }: { bundle: RoundBundle<SetPayloa
             <span style={{ width: `${pct}%` }} />
           </div>
           <p style={{ margin: "0 0 6px" }} data-testid="target-progress">
-            {targetFound} of {state.targets.length} everyday words
+            {targetFound} of {state.targets.length} {state.wordLabel} words
           </p>
           <p style={{ margin: "0 0 8px", fontSize: ".8rem", color: "var(--muted)" }}>
-            The everyday list is a curated set of familiar words. Bonus words from the full list score but do not count towards it.
+            {state.wordLabel === "target" ? "The target list is a curated set of familiar and less common words that a strong player should find." : "The everyday list is a curated set of familiar words."} Bonus words from the full list score but do not count towards it.
           </p>
           <div className="stat-row">
             <span>All-letter words</span>
@@ -158,7 +158,7 @@ function GardenGame({ bundle, words, siblings }: { bundle: RoundBundle<SetPayloa
 
       {complete ? (
         <p className="ls-complete" role="note" data-testid="complete-note">
-          <span aria-hidden="true">✦ </span>Every everyday word found. The garden stays open: keep finding bonus words.
+          <span aria-hidden="true">✦ </span>Every {state.wordLabel} word found. The garden stays open: keep finding bonus words.
         </p>
       ) : null}
 
