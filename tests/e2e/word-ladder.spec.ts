@@ -128,3 +128,16 @@ test("@mobile ladder fits a phone and plays a five-letter step", async ({ page }
   await expect(page.getByTestId("step-1")).toHaveAttribute("data-word", "STEEP");
   await expectNoHorizontalOverflow(page);
 });
+
+test("Master ladder: par over the full word list, uncommon steps accepted, full solve", async ({ page }) => {
+  await page.goto("/play/word-ladder/wl-m3");
+  await expect(page.getByTestId("optimum")).toHaveText("5");
+  await expect(page.getByText("Par (full word list)")).toBeVisible();
+  for (const w of ["caff", "cafe", "cave", "cove", "love"]) {
+    await page.getByLabel("Next word").fill(w);
+    await page.keyboard.press("Enter");
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("Reached LOVE in 5 moves. That is par: the shortest route over the whole word list");
+});
