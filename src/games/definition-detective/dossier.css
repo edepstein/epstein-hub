@@ -1,0 +1,21 @@
+[data-game="definition-detective"] .dd-strip { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 0 0 16px; }
+[data-game="definition-detective"] .dd-strip-btn {
+  min-height: 44px; border-radius: 6px; border: 2px solid #acb48c; background: #fffefa; padding: 8px 14px; font-weight: 650; color: var(--ink);
+}
+[data-game="definition-detective"] .dd-strip-btn[aria-current="step"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-game="definition-detective"] .dd-strip-status { font-weight: 400; font-size: .8rem; }
+[data-game="definition-detective"] .dd-sentence { font-size: clamp(1.2rem, 2.6vw, 1.55rem); margin: 14px 0 18px; overflow-wrap: anywhere; }
+[data-game="definition-detective"] .dd-target { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+[data-game="definition-detective"] .dd-group { border: 0; padding: 0; margin: 0 0 14px; min-width: 0; }
+[data-game="definition-detective"] .dd-group legend { font-weight: 650; margin-bottom: 8px; }
+[data-game="definition-detective"] .dd-option { display: flex; gap: 10px; align-items: flex-start; min-height: 44px; cursor: pointer; margin-bottom: 8px; overflow-wrap: anywhere; }
+[data-game="definition-detective"] .dd-option input { margin-top: 4px; flex: none; }
+[data-game="definition-detective"] .dd-option.out { opacity: .7; text-decoration: line-through; text-decoration-thickness: 1px; }
+[data-game="definition-detective"] .dd-option.out .dd-tag { text-decoration: none; display: inline-block; }
+[data-game="definition-detective"] .dd-option.right { border-left-width: 6px; font-weight: 600; }
+[data-game="definition-detective"] .dd-tag { font-size: .82rem; color: #3f4a31; font-weight: 600; }
+[data-game="definition-detective"] .dd-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+[data-game="definition-detective"] .dd-learn { background: #fffefa; border: 1px solid #d5d6c4; border-radius: 3px; padding: 12px 16px; line-height: 1.6; }
+[data-game="definition-detective"] .dd-learn summary { cursor: pointer; font-weight: 650; min-height: 32px; }
+[data-game="definition-detective"] .dd-next { margin-top: 14px; text-align: center; }
+[data-game="definition-detective"] fieldset:disabled .dd-option { cursor: default; }
