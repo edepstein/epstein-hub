@@ -111,11 +111,18 @@ test("@mobile tiles stack vertically on a phone and still swap", async ({ page }
 });
 
 async function sortTo(page: Page, target: string[], limit = target.length) {
+  // The board renders after hydration and save restore; reading it earlier returns no tiles.
+  await expect.poll(async () => (await tiles(page).count()) >= target.length).toBe(true);
   for (let i = 0; i < limit; i++) {
     const now = await tiles(page).allTextContents();
     let j = now.findIndex((w, k) => k >= i && w === target[i]);
     while (j > i) {
+      const moved = now[j];
       await page.getByRole("button", { name: new RegExp(`^Move \\S+ left \\(word ${j + 1} of `) }).click();
+      // Wait for the swap to render before the next click, or a stale button can be hit under load.
+      await expect(tiles(page).nth(j - 1)).toHaveText(moved);
+      now[j] = now[j - 1];
+      now[j - 1] = moved;
       j--;
     }
   }
