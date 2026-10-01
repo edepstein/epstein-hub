@@ -35,6 +35,22 @@ describe("Clue Pairs content", () => {
     expect(rounds.filter((r) => r.meta.status === "demo").map((r) => r.meta.sourceFixtureId)).toEqual(["pairs-001", "pairs-002"]);
   });
 
+  it("Master rounds: twelve five-card rounds of 4-9 letter answers that a full solve completes", () => {
+    const masters = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(masters.length).toBeGreaterThanOrEqual(12);
+    for (const r of masters) {
+      expect(r.payload.cards.length).toBe(5);
+      for (const c of r.payload.cards) {
+        expect(c.length).toBeGreaterThanOrEqual(4);
+        expect(c.length).toBeLessThanOrEqual(9);
+      }
+      let s = start(r.meta.id);
+      s = run(s, ...r.payload.cards.map((c) => submit(c.id, c.accepted[0])));
+      expect(engine.outcome(s)).toBe("completed");
+    }
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(18);
+  });
+
   it("regression DRAFT/DRAUGHT: the air-current card accepts only DRAUGHT, and DRAFT is only used for its own senses", () => {
     const all = rounds.flatMap((r) => r.payload.cards);
     const draught = all.find((c) => c.accepted.includes("DRAUGHT"))!;

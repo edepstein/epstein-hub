@@ -63,6 +63,7 @@ export const definition: GameDefinition = {
           "Gentle cards pair two concrete, everyday meanings.",
           "Standard cards pair a concrete meaning with a more abstract one.",
           "Expert cards use less obvious but established meanings, and the wording may point you the wrong way.",
+          "Master cards pair a familiar-looking word with an archaic, regional or technical second sense of the kind a Collins dictionary lists (a northern stream, an old weight, a shipping term). Answers have four to nine letters and are real words a strong player will know, but the second meaning may be unfamiliar; one of the two meanings is always recognisable.",
           "Each difficulty is a different set of rounds. Labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

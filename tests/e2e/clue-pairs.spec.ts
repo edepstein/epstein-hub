@@ -159,3 +159,19 @@ test("@mobile one card at a time fits a phone and plays", async ({ page }) => {
   await expect(page.getByTestId("card-explanation")).toContainText("FAIR");
   await expectNoHorizontalOverflow(page);
 });
+
+test("Master pairs: second senses are solvable and a full round completes", async ({ page }) => {
+  await page.goto("/play/clue-pairs/cp-m1");
+  await expect(page.getByTestId("meaning-2")).toContainText("summons");
+  await answer(page).fill("brook");
+  await answer(page).press("Enter");
+  await expect(feedback(page)).toContainText("5");
+  for (const [n, word] of [[1, "beck"], [2, "scruple"], [3, "gammon"], [4, "quire"], [5, "fluke"]] as const) {
+    await cardButton(page, n).click();
+    await answer(page).fill(word);
+    await answer(page).press("Enter");
+    await expect(page.getByTestId("card-explanation")).toBeVisible();
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+});

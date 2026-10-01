@@ -2709,6 +2709,1357 @@
     }
    ],
    "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-m1",
+   "title": "Master pairs 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A small stream in the north of England",
+      "A gesture of summons, as in the phrase 'at his ... and call'"
+     ],
+     "length": 4,
+     "accepted": [
+      "BECK"
+     ],
+     "example": "The children paddled in the ____ behind the farm.",
+     "explanation": "Beck means a small stream in the north of England, and also a gesture of summons, as in the phrase 'at his ... and call'. Both senses are in Collins: beck as a northern brook, and beck as a beckoning gesture."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A pang of conscience about doing something",
+      "An old apothecaries' weight of twenty grains"
+     ],
+     "length": 7,
+     "accepted": [
+      "SCRUPLE"
+     ],
+     "example": "He had no ____ about telling the truth.",
+     "explanation": "Scruple means a pang of conscience about doing something, and also an old apothecaries' weight of twenty grains. Scruple the weight (20 grains) survives in old pharmacy texts."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Cured ham, often sold as a thick steak",
+      "Old-fashioned word for deceitful nonsense"
+     ],
+     "length": 6,
+     "accepted": [
+      "GAMMON"
+     ],
+     "example": "She served ____ with a fried egg and chips.",
+     "explanation": "Gammon means cured ham, often sold as a thick steak, and also old-fashioned word for deceitful nonsense. Gammon meaning humbug is dated, as in 'it is all gammon and spinach'."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "Twenty-four sheets of paper",
+      "An old spelling of a body of singers"
+     ],
+     "length": 5,
+     "accepted": [
+      "QUIRE"
+     ],
+     "example": "He bought a ____ of cream laid paper.",
+     "explanation": "Quire means twenty-four sheets of paper, and also an old spelling of a body of singers. A quire is a twenty-fourth of a ream; quire is also an archaic variant of choir."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A lucky and unlikely success",
+      "One of the barbed ends of an anchor, or a lobe of a whale's tail"
+     ],
+     "length": 5,
+     "accepted": [
+      "FLUKE"
+     ],
+     "example": "Winning the raffle twice was a complete ____.",
+     "explanation": "Fluke means a lucky and unlikely success, and also one of the barbed ends of an anchor, or a lobe of a whale's tail. Fluke covers chance, an anchor's pointed arm, a whale's tail lobe and a flatworm."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m2",
+   "title": "Master pairs 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To cut down a tree",
+      "A bare upland moor in the north of England"
+     ],
+     "length": 4,
+     "accepted": [
+      "FELL"
+     ],
+     "example": "They used a chainsaw to ____ the dead oak.",
+     "explanation": "Fell means to cut down a tree, and also a bare upland moor in the north of England. Fell as moorland is northern English, as in Scafell and fell-running."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A basin for holy water in a church porch",
+      "An old word for a drinking vessel or flagon"
+     ],
+     "length": 5,
+     "accepted": [
+      "STOUP"
+     ],
+     "example": "She dipped her fingers in the ____ at the door.",
+     "explanation": "Stoup means a basin for holy water in a church porch, and also an old word for a drinking vessel or flagon. Stoup is both the holy-water basin and an old tankard."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A depth of six feet at sea",
+      "To understand after great effort"
+     ],
+     "length": 6,
+     "accepted": [
+      "FATHOM"
+     ],
+     "example": "I cannot ____ why he left so suddenly.",
+     "explanation": "Fathom means a depth of six feet at sea, and also to understand after great effort. A fathom is six feet; to fathom is also to plumb a mystery."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "To give official permission",
+      "A penalty imposed for disobeying a rule"
+     ],
+     "length": 8,
+     "accepted": [
+      "SANCTION"
+     ],
+     "example": "The council will ____ the new road.",
+     "explanation": "Sanction means to give official permission, and also a penalty imposed for disobeying a rule. Sanction is a contronym: approval and punishment."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A craftsman who turns hides into leather",
+      "An old slang name for a sixpenny coin"
+     ],
+     "length": 6,
+     "accepted": [
+      "TANNER"
+     ],
+     "example": "The ____ soaked the hides in bark liquor.",
+     "explanation": "Tanner means a craftsman who turns hides into leather, and also an old slang name for a sixpenny coin. A tanner was slang for sixpence before decimalisation."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m3",
+   "title": "Master pairs 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The organ a fish breathes with",
+      "A quarter of a pint"
+     ],
+     "length": 4,
+     "accepted": [
+      "GILL"
+     ],
+     "example": "A trout's ____ flares as it is landed.",
+     "explanation": "Gill means the organ a fish breathes with, and also a quarter of a pint. Gill the measure is a quarter pint (about 142 ml)."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "To split apart with a blow",
+      "To stick fast to"
+     ],
+     "length": 6,
+     "accepted": [
+      "CLEAVE"
+     ],
+     "example": "He could ____ a log with a single stroke.",
+     "explanation": "Cleave means to split apart with a blow, and also to stick fast to. Cleave is its own opposite: to split and to cling."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A sharp-tasting leafy herb",
+      "A horse of reddish-brown colour"
+     ],
+     "length": 6,
+     "accepted": [
+      "SORREL"
+     ],
+     "example": "Fresh ____ makes a tangy soup.",
+     "explanation": "Sorrel means a sharp-tasting leafy herb, and also a horse of reddish-brown colour. Sorrel is both a lemony plant and a chestnut-coloured horse."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A small measure of whisky",
+      "A unit of weight, one sixteenth of an ounce"
+     ],
+     "length": 4,
+     "accepted": [
+      "DRAM"
+     ],
+     "example": "He poured himself a ____ before bed.",
+     "explanation": "Dram means a small measure of whisky, and also a unit of weight, one sixteenth of an ounce. A dram is 1/16 oz avoirdupois; in Scotland, a tot of spirit."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Five hundred sheets of paper",
+      "To enlarge a hole with a tool"
+     ],
+     "length": 4,
+     "accepted": [
+      "REAM"
+     ],
+     "example": "The printer ordered another ____ of A4.",
+     "explanation": "Ream means five hundred sheets of paper, and also to enlarge a hole with a tool. A ream is traditionally 480 or 500 sheets; to ream is to widen a bore."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m4",
+   "title": "Master pairs 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "In robust health",
+      "To drag someone somewhere by force"
+     ],
+     "length": 4,
+     "accepted": [
+      "HALE"
+     ],
+     "example": "Though ninety, she was still ____ and hearty.",
+     "explanation": "Hale means in robust health, and also to drag someone somewhere by force. Hale as a verb ('hale into court') is archaic and legal."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A mistake caused by failing to notice something",
+      "Careful supervision of a task"
+     ],
+     "length": 9,
+     "accepted": [
+      "OVERSIGHT"
+     ],
+     "example": "Leaving her name off the list was an ____.",
+     "explanation": "Oversight means a mistake caused by failing to notice something, and also careful supervision of a task. Oversight is a contronym: an omission and a watchful overview."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To hold a person's arms fast so they cannot move",
+      "A small cogwheel that engages a larger one"
+     ],
+     "length": 6,
+     "accepted": [
+      "PINION"
+     ],
+     "example": "The guards moved to ____ the prisoner.",
+     "explanation": "Pinion means to hold a person's arms fast so they cannot move, and also a small cogwheel that engages a larger one. Pinion also means a bird's wing, but the two clues use the restraint and gear senses."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The kitchen of a ship",
+      "A printer's proof before it is made into pages"
+     ],
+     "length": 6,
+     "accepted": [
+      "GALLEY"
+     ],
+     "example": "The cook worked in the ship's ____.",
+     "explanation": "Galley means the kitchen of a ship, and also a printer's proof before it is made into pages. A galley proof is typeset text before page make-up."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A large book made of sheets folded once",
+      "A page number in a book"
+     ],
+     "length": 5,
+     "accepted": [
+      "FOLIO"
+     ],
+     "example": "The Shakespeare First ____ is a famous book.",
+     "explanation": "Folio means a large book made of sheets folded once, and also a page number in a book. Folio is a sheet folded once, a book of that size, and a page number."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m5",
+   "title": "Master pairs 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The trunk of a tree",
+      "A fine reddish clay used as a pigment"
+     ],
+     "length": 4,
+     "accepted": [
+      "BOLE"
+     ],
+     "example": "The oak's ____ was too wide to hug.",
+     "explanation": "Bole means the trunk of a tree, and also a fine reddish clay used as a pigment. Bole as clay is an old mineral term (as in bole armeniac)."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Plain and obvious",
+      "A list of cargo or passengers on a ship or plane"
+     ],
+     "length": 8,
+     "accepted": [
+      "MANIFEST"
+     ],
+     "example": "His relief was ____ to everyone.",
+     "explanation": "Manifest means plain and obvious, and also a list of cargo or passengers on a ship or plane. A manifest lists the cargo; manifest as an adjective means evident."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A horse whose coat is flecked with white",
+      "Soft sheepskin leather used in bookbinding"
+     ],
+     "length": 4,
+     "accepted": [
+      "ROAN"
+     ],
+     "example": "She rode a ____ mare.",
+     "explanation": "Roan means a horse whose coat is flecked with white, and also soft sheepskin leather used in bookbinding. Roan leather is a soft, flexible sheepskin tanned with sumac."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A ship's national flag",
+      "A junior officer who once carried a regiment's colours"
+     ],
+     "length": 6,
+     "accepted": [
+      "ENSIGN"
+     ],
+     "example": "The ____ was lowered at sunset.",
+     "explanation": "Ensign means a ship's national flag, and also a junior officer who once carried a regiment's colours. In the British Army the ensign was the junior officer who carried the colours, a rank abolished in 1871."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A hidden store of supplies",
+      "A fast memory area inside a computer"
+     ],
+     "length": 5,
+     "accepted": [
+      "CACHE"
+     ],
+     "example": "Police found a ____ of weapons.",
+     "explanation": "Cache means a hidden store of supplies, and also a fast memory area inside a computer. Cache is a French word for hiding place; in computing, a quick memory store."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m6",
+   "title": "Master pairs 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A raised mark left on the skin by a blow",
+      "A strip of leather stitched between a shoe's upper and sole"
+     ],
+     "length": 4,
+     "accepted": [
+      "WELT"
+     ],
+     "example": "The whip left an angry red ____.",
+     "explanation": "Welt means a raised mark left on the skin by a blow, and also a strip of leather stitched between a shoe's upper and sole. A welt is a raised weal, and the stitched strip in a Goodyear-welted shoe."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Moving swiftly and lightly",
+      "A small tidal creek or inlet in dialect"
+     ],
+     "length": 5,
+     "accepted": [
+      "FLEET"
+     ],
+     "example": "The deer was ____ of foot.",
+     "explanation": "Fleet means moving swiftly and lightly, and also a small tidal creek or inlet in dialect. Fleet the creek is dialect (Fleet Street takes its name from one)."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A hooked pole for landing large fish",
+      "A person's home, in slang"
+     ],
+     "length": 4,
+     "accepted": [
+      "GAFF"
+     ],
+     "example": "He struck the salmon with a ____.",
+     "explanation": "Gaff means a hooked pole for landing large fish, and also a person's home, in slang. Gaff is both the fisherman's hook and British slang for one's home."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A short nail with a broad head",
+      "The course a sailing boat steers relative to the wind"
+     ],
+     "length": 4,
+     "accepted": [
+      "TACK"
+     ],
+     "example": "He hammered a ____ into the board.",
+     "explanation": "Tack means a short nail with a broad head, and also the course a sailing boat steers relative to the wind. A tack is a small nail and a sailing zigzag leg."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To box with a partner in practice",
+      "A stout pole used as a ship's mast or boom"
+     ],
+     "length": 4,
+     "accepted": [
+      "SPAR"
+     ],
+     "example": "The two boxers ____ for three rounds.",
+     "explanation": "Spar means to box with a partner in practice, and also a stout pole used as a ship's mast or boom. A spar is a ship's pole; to spar is to box in practice or argue."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m7",
+   "title": "Master pairs 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A large barrel for wine or beer",
+      "To strike with the head or horns"
+     ],
+     "length": 4,
+     "accepted": [
+      "BUTT"
+     ],
+     "example": "The ale was kept in an oak ____.",
+     "explanation": "Butt means a large barrel for wine or beer, and also to strike with the head or horns. A butt is a large cask (about 108 gallons of wine); to butt is to strike with the head."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A thick rope or wire",
+      "A nautical unit of about a tenth of a nautical mile"
+     ],
+     "length": 5,
+     "accepted": [
+      "CABLE"
+     ],
+     "example": "The anchor ____ was thick as a wrist.",
+     "explanation": "Cable means a thick rope or wire, and also a nautical unit of about a tenth of a nautical mile. A cable's length is about 185 m (0.1 nautical mile)."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Ploughed but left unplanted for a season",
+      "Describing a pale yellowish-brown deer"
+     ],
+     "length": 6,
+     "accepted": [
+      "FALLOW"
+     ],
+     "example": "The field lay ____ for a year.",
+     "explanation": "Fallow means ploughed but left unplanted for a season, and also describing a pale yellowish-brown deer. Fallow deer are named for their pale tawny colour."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "To complain peevishly",
+      "A sharp pain in the bowels, often in the plural"
+     ],
+     "length": 5,
+     "accepted": [
+      "GRIPE"
+     ],
+     "example": "He loves to ____ about the weather.",
+     "explanation": "Gripe means to complain peevishly, and also a sharp pain in the bowels, often in the plural. Gripe the stomach pain is old-fashioned, as in gripe water for babies."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A shaped support for a coat",
+      "A wood on a steep hillside, especially in southern England"
+     ],
+     "length": 6,
+     "accepted": [
+      "HANGER"
+     ],
+     "example": "Please put your coat on a ____.",
+     "explanation": "Hanger means a shaped support for a coat, and also a wood on a steep hillside, especially in southern England. Hanger as a wood on a steep slope appears in Hampshire place names."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m8",
+   "title": "Master pairs 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A wish for a good outcome",
+      "A small enclosed valley in the hills"
+     ],
+     "length": 4,
+     "accepted": [
+      "HOPE"
+     ],
+     "example": "She clung to ____ through the long wait.",
+     "explanation": "Hope means a wish for a good outcome, and also a small enclosed valley in the hills. Hope as a valley is dialect (Hope Valley, Derbyshire)."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A narrow passage between buildings",
+      "A large and fine marble used in children's games"
+     ],
+     "length": 5,
+     "accepted": [
+      "ALLEY"
+     ],
+     "example": "The cat slipped down the ____.",
+     "explanation": "Alley means a narrow passage between buildings, and also a large and fine marble used in children's games. An alley (or alley taw) is a superior marble."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To hold off or prevent, as hunger is held back with a snack",
+      "The set of five lines on which music is written"
+     ],
+     "length": 5,
+     "accepted": [
+      "STAVE"
+     ],
+     "example": "A biscuit will ____ off hunger.",
+     "explanation": "Stave means to hold off or prevent, as hunger is held back with a snack, and also the set of five lines on which music is written. Stave is the musical staff and a verb meaning to ward off."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A woman who uses her charm to exploit men",
+      "The upper front part of a shoe or boot"
+     ],
+     "length": 4,
+     "accepted": [
+      "VAMP"
+     ],
+     "example": "The film starred a silent-era ____.",
+     "explanation": "Vamp means a woman who uses her charm to exploit men, and also the upper front part of a shoe or boot. Vamp is also a verb: to improvise an accompaniment."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A backward-pointing spike on a fish hook",
+      "A swift horse of a breed from North Africa"
+     ],
+     "length": 4,
+     "accepted": [
+      "BARB"
+     ],
+     "example": "The ____ stopped the hook from slipping out.",
+     "explanation": "Barb means a backward-pointing spike on a fish hook, and also a swift horse of a breed from North Africa. Barb the horse is the Barbary breed, ancestor of some thoroughbreds."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m9",
+   "title": "Master pairs 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To remain in place",
+      "A rope that holds a mast steady"
+     ],
+     "length": 4,
+     "accepted": [
+      "STAY"
+     ],
+     "example": "Please ____ where you are.",
+     "explanation": "Stay means to remain in place, and also a rope that holds a mast steady. A stay is a supporting rope; in the plural, an old word for a corset."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The part of the leg between knee and ankle",
+      "The shaft of an anchor or a key"
+     ],
+     "length": 5,
+     "accepted": [
+      "SHANK"
+     ],
+     "example": "He injured his ____ in the tackle.",
+     "explanation": "Shank means the part of the leg between knee and ankle, and also the shaft of an anchor or a key. Shank is the shin, a shaft, or in golf a mishit."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A British county",
+      "A very large breed of draught horse"
+     ],
+     "length": 5,
+     "accepted": [
+      "SHIRE"
+     ],
+     "example": "The old ____ boundary ran along the river.",
+     "explanation": "Shire means a British county, and also a very large breed of draught horse. Shire horses were the heavy draught breed of the English midlands."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A drink made from fermented honey",
+      "A meadow, in poetry"
+     ],
+     "length": 4,
+     "accepted": [
+      "MEAD"
+     ],
+     "example": "They drank ____ from horn cups.",
+     "explanation": "Mead means a drink made from fermented honey, and also a meadow, in poetry. Mead the drink is ancient; mead as meadow is poetic."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A musical note lasting half a semibreve",
+      "The smallest liquid measure used by apothecaries"
+     ],
+     "length": 5,
+     "accepted": [
+      "MINIM"
+     ],
+     "example": "Hold the ____ for two beats.",
+     "explanation": "Minim means a musical note lasting half a semibreve, and also the smallest liquid measure used by apothecaries. A minim is also about one drop, 1/60 of a fluid drachm."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m10",
+   "title": "Master pairs 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To play music or perform in the street for money",
+      "A stiffening strip of whalebone in a corset"
+     ],
+     "length": 4,
+     "accepted": [
+      "BUSK"
+     ],
+     "example": "She likes to ____ outside the station.",
+     "explanation": "Busk means to play music or perform in the street for money, and also a stiffening strip of whalebone in a corset. Busk the verb is to perform in the street; busk the noun is a corset stiffener."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "To remove a ruler from power",
+      "To give evidence under oath in writing"
+     ],
+     "length": 6,
+     "accepted": [
+      "DEPOSE"
+     ],
+     "example": "The army moved to ____ the king.",
+     "explanation": "Depose means to remove a ruler from power, and also to give evidence under oath in writing. In law, to depose is to testify on oath, usually in a written statement."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To carry something heavy",
+      "Short for the totalisator, a system of pooled betting"
+     ],
+     "length": 4,
+     "accepted": [
+      "TOTE"
+     ],
+     "example": "She had to ____ the shopping home.",
+     "explanation": "Tote means to carry something heavy, and also short for the totalisator, a system of pooled betting. The tote is the totalisator, a pooled betting system."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A shady leafy shelter in a garden",
+      "A heavy anchor carried at a ship's bow"
+     ],
+     "length": 5,
+     "accepted": [
+      "BOWER"
+     ],
+     "example": "They sat in a rose ____.",
+     "explanation": "Bower means a shady leafy shelter in a garden, and also a heavy anchor carried at a ship's bow. Bower anchors are the pair of heavy anchors carried in a ship's bow."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A book recording accounts",
+      "A flat stone slab laid over a grave"
+     ],
+     "length": 6,
+     "accepted": [
+      "LEDGER"
+     ],
+     "example": "The clerk entered the sum in the ____.",
+     "explanation": "Ledger means a book recording accounts, and also a flat stone slab laid over a grave. A ledger stone is a flat slab covering a grave."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m11",
+   "title": "Master pairs 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A knitting stitch",
+      "To flow with a soft murmuring sound, as a brook"
+     ],
+     "length": 4,
+     "accepted": [
+      "PURL"
+     ],
+     "example": "Knit one, ____ one.",
+     "explanation": "Purl means a knitting stitch, and also to flow with a soft murmuring sound, as a brook. Purl the verb is poetic for a gentle babbling of water."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "State of health or condition, as in 'in fine ...'",
+      "To trim rough edges from a casting"
+     ],
+     "length": 6,
+     "accepted": [
+      "FETTLE"
+     ],
+     "example": "She was in fine ____ after her holiday.",
+     "explanation": "Fettle means state of health or condition, as in 'in fine ...', and also to trim rough edges from a casting. To fettle is also to fix or tinker, from Lancashire dialect."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "The edible seed within a nut's shell",
+      "The core part of a computer's operating system"
+     ],
+     "length": 6,
+     "accepted": [
+      "KERNEL"
+     ],
+     "example": "Crack the shell to reach the ____.",
+     "explanation": "Kernel means the edible seed within a nut's shell, and also the core part of a computer's operating system. A kernel is the seed inside a nut and the heart of an operating system."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A lake",
+      "Nothing more than"
+     ],
+     "length": 4,
+     "accepted": [
+      "MERE"
+     ],
+     "example": "Rydal is a small ____ in the Lake District.",
+     "explanation": "Mere means a lake, and also nothing more than. Mere meaning a lake survives in place names such as Windermere."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A wild expanse of heather upland",
+      "To tie up a boat"
+     ],
+     "length": 4,
+     "accepted": [
+      "MOOR"
+     ],
+     "example": "The ____ was purple with heather.",
+     "explanation": "Moor means a wild expanse of heather upland, and also to tie up a boat. To moor is to secure a vessel; a moor is open heath."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-m12",
+   "title": "Master pairs 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A continuous flow or state of change",
+      "A substance used to help metals join when soldering"
+     ],
+     "length": 4,
+     "accepted": [
+      "FLUX"
+     ],
+     "example": "Her plans were in a state of ____.",
+     "explanation": "Flux means a continuous flow or state of change, and also a substance used to help metals join when soldering. Flux is both change and the cleaning agent in soldering."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A mouthful of strong drink swallowed quickly",
+      "A garden mollusc with no shell"
+     ],
+     "length": 4,
+     "accepted": [
+      "SLUG"
+     ],
+     "example": "He took a ____ of whisky.",
+     "explanation": "Slug means a mouthful of strong drink swallowed quickly, and also a garden mollusc with no shell. Slug is a gulp of spirits, a shell-less mollusc, and a bullet."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Chief or principal",
+      "The open sea, in poetry"
+     ],
+     "length": 4,
+     "accepted": [
+      "MAIN"
+     ],
+     "example": "The ____ road was blocked.",
+     "explanation": "Main means chief or principal, and also the open sea, in poetry. The Spanish Main and 'the main' are poetic names for the open sea."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A small swivelling wheel on a piece of furniture",
+      "A shaker with a perforated top for sprinkling sugar"
+     ],
+     "length": 6,
+     "accepted": [
+      "CASTER",
+      "CASTOR"
+     ],
+     "example": "The sofa has a ____ on each leg.",
+     "explanation": "Caster means a small swivelling wheel on a piece of furniture, and also a shaker with a perforated top for sprinkling sugar. Caster and castor are both accepted; both senses use either spelling."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To bend out of shape",
+      "The set of lengthwise threads on a loom"
+     ],
+     "length": 4,
+     "accepted": [
+      "WARP"
+     ],
+     "example": "Damp will ____ the door.",
+     "explanation": "Warp means to bend out of shape, and also the set of lengthwise threads on a loom. The warp threads run lengthways; to warp is to twist out of shape."
+    }
+   ],
+   "explanation": "Master cards pair a familiar-looking word with an archaic, regional or technical second sense, all found in Collins."
+  },
+  {
+   "id": "cp-e13",
+   "title": "Expert pairs 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The woolly coat of a sheep",
+      "To swindle someone out of money"
+     ],
+     "length": 6,
+     "accepted": [
+      "FLEECE"
+     ],
+     "example": "The shearer removed the ____ in one piece.",
+     "explanation": "Fleece means the woolly coat of a sheep, and also to swindle someone out of money. Fleece is a sheep's wool and also slang for swindling."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The actors in a production",
+      "A rigid plaster support for a broken limb"
+     ],
+     "length": 4,
+     "accepted": [
+      "CAST"
+     ],
+     "example": "The whole ____ took a bow.",
+     "explanation": "Cast means the actors in a production, and also a rigid plaster support for a broken limb. A cast is a company of actors and a plaster for a fracture."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A position in a hierarchy",
+      "Foul-smelling and offensive"
+     ],
+     "length": 4,
+     "accepted": [
+      "RANK"
+     ],
+     "example": "She rose quickly through the ____.",
+     "explanation": "Rank means a position in a hierarchy, and also foul-smelling and offensive. Rank is a position and, as an adjective, a strong, offensive smell."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A sharp pointed piece of metal",
+      "To secretly add alcohol to a drink"
+     ],
+     "length": 5,
+     "accepted": [
+      "SPIKE"
+     ],
+     "example": "Someone had put a ____ in the punch.",
+     "explanation": "Spike means a sharp pointed piece of metal, and also to secretly add alcohol to a drink. To spike a drink is to lace it with extra spirits."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A structure carrying a road over a river",
+      "A card game for four players"
+     ],
+     "length": 6,
+     "accepted": [
+      "BRIDGE"
+     ],
+     "example": "They played ____ every Tuesday.",
+     "explanation": "Bridge means a structure carrying a road over a river, and also a card game for four players. Bridge is both a crossing and a card game."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e14",
+   "title": "Expert pairs 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A furry fungal growth on old food",
+      "A hollow shape used to set a jelly"
+     ],
+     "length": 5,
+     "accepted": [
+      "MOULD"
+     ],
+     "example": "There was ____ on the bread.",
+     "explanation": "Mould means a furry fungal growth on old food, and also a hollow shape used to set a jelly. A mould is a fungus and a form for shaping food."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Severe and strict",
+      "The back end of a ship"
+     ],
+     "length": 5,
+     "accepted": [
+      "STERN"
+     ],
+     "example": "The headmistress gave a ____ look.",
+     "explanation": "Stern means severe and strict, and also the back end of a ship. Stern describes strictness and the rear of a boat."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To unravel at the edges",
+      "A noisy fight or brawl"
+     ],
+     "length": 4,
+     "accepted": [
+      "FRAY"
+     ],
+     "example": "The old rope began to ____.",
+     "explanation": "Fray means to unravel at the edges, and also a noisy fight or brawl. A fray is a scrap, and to fray is to wear into loose threads."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "Tied up with rope",
+      "A spring or jump"
+     ],
+     "length": 5,
+     "accepted": [
+      "BOUND"
+     ],
+     "example": "The prisoner was ____ hand and foot.",
+     "explanation": "Bound means tied up with rope, and also a spring or jump. Bound can mean tied, destined, or a leap."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A long exchange of shots in tennis",
+      "A mass public meeting in support of a cause"
+     ],
+     "length": 5,
+     "accepted": [
+      "RALLY"
+     ],
+     "example": "The ____ lasted forty shots.",
+     "explanation": "Rally means a long exchange of shots in tennis, and also a mass public meeting in support of a cause. A rally is a tennis exchange and a gathering of supporters."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e15",
+   "title": "Expert pairs 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "Cord thinner than rope",
+      "The violins, violas and cellos of an orchestra"
+     ],
+     "length": 6,
+     "accepted": [
+      "STRING"
+     ],
+     "example": "He tied the parcel with ____.",
+     "explanation": "String means cord thinner than rope, and also the violins, violas and cellos of an orchestra. String is thin cord and the bowed section of an orchestra."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The track of disturbed water behind a ship",
+      "A watch kept beside a dead person before burial"
+     ],
+     "length": 4,
+     "accepted": [
+      "WAKE"
+     ],
+     "example": "The boat left a white ____.",
+     "explanation": "Wake means the track of disturbed water behind a ship, and also a watch kept beside a dead person before burial. A wake is a ship's trail and a vigil for the dead."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A small house at the entrance to an estate",
+      "To become firmly stuck"
+     ],
+     "length": 5,
+     "accepted": [
+      "LODGE"
+     ],
+     "example": "The gatekeeper lived in the ____.",
+     "explanation": "Lodge means a small house at the entrance to an estate, and also to become firmly stuck. To lodge is to stick fast, and a lodge is a gatehouse."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A tool with bristles",
+      "A fox's bushy tail"
+     ],
+     "length": 5,
+     "accepted": [
+      "BRUSH"
+     ],
+     "example": "She gave her hair a quick ____.",
+     "explanation": "Brush means a tool with bristles, and also a fox's bushy tail. A fox's tail is called its brush."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "The end of a sleeve",
+      "To strike lightly with the open hand"
+     ],
+     "length": 4,
+     "accepted": [
+      "CUFF"
+     ],
+     "example": "A button on his shirt ____ had come loose.",
+     "explanation": "Cuff means the end of a sleeve, and also to strike lightly with the open hand. A cuff is part of a sleeve and a light blow."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e16",
+   "title": "Expert pairs 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To deduct money from someone's pay",
+      "A harbour area where ships load"
+     ],
+     "length": 4,
+     "accepted": [
+      "DOCK"
+     ],
+     "example": "The boss threatened to ____ his wages.",
+     "explanation": "Dock means to deduct money from someone's pay, and also a harbour area where ships load. To dock is to cut off or reduce, and a dock is a ship berth."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "To emerge from an egg",
+      "An opening in a ship's deck or a wall"
+     ],
+     "length": 5,
+     "accepted": [
+      "HATCH"
+     ],
+     "example": "The chicks began to ____ at dawn.",
+     "explanation": "Hatch means to emerge from an egg, and also an opening in a ship's deck or a wall. A hatch is an opening, and to hatch is to emerge from the egg."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A person who entertains guests",
+      "A great number of things"
+     ],
+     "length": 4,
+     "accepted": [
+      "HOST"
+     ],
+     "example": "The ____ welcomed everyone at the door.",
+     "explanation": "Host means a person who entertains guests, and also a great number of things. A host is also a multitude, as in a host of daffodils."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A part of the body with a specific function",
+      "A keyboard instrument with pipes"
+     ],
+     "length": 5,
+     "accepted": [
+      "ORGAN"
+     ],
+     "example": "The liver is a vital ____.",
+     "explanation": "Organ means a part of the body with a specific function, and also a keyboard instrument with pipes. An organ is a body part and a pipe instrument."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To choose from a selection",
+      "A pointed tool for breaking rock"
+     ],
+     "length": 4,
+     "accepted": [
+      "PICK"
+     ],
+     "example": "You can ____ any one you like.",
+     "explanation": "Pick means to choose from a selection, and also a pointed tool for breaking rock. A pick is a choice and a miner's tool."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e17",
+   "title": "Expert pairs 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A grass-like plant that grows in marshes",
+      "A sudden hurry"
+     ],
+     "length": 4,
+     "accepted": [
+      "RUSH"
+     ],
+     "example": "Reeds and ____ grew along the bank.",
+     "explanation": "Rush means a grass-like plant that grows in marshes, and also a sudden hurry. A rush is a marsh plant and a hurry."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A grey-green herb used in stuffing",
+      "A wise person"
+     ],
+     "length": 4,
+     "accepted": [
+      "SAGE"
+     ],
+     "example": "Roast pork is often served with ____ stuffing.",
+     "explanation": "Sage means a grey-green herb used in stuffing, and also a wise person. A sage is a wise elder and a culinary herb."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "Clever and quick-witted",
+      "To sting with sharp pain"
+     ],
+     "length": 5,
+     "accepted": [
+      "SMART"
+     ],
+     "example": "The cut began to ____ in the salt water.",
+     "explanation": "Smart means clever and quick-witted, and also to sting with sharp pain. Smart means intelligent and, as a verb, to sting."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A fastener for paper",
+      "A main food in a region's diet"
+     ],
+     "length": 6,
+     "accepted": [
+      "STAPLE"
+     ],
+     "example": "She used a ____ to join the pages.",
+     "explanation": "Staple means a fastener for paper, and also a main food in a region's diet. A staple holds papers and rice is a staple food."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A breed or variety",
+      "To pour through a sieve"
+     ],
+     "length": 6,
+     "accepted": [
+      "STRAIN"
+     ],
+     "example": "This ____ of wheat resists drought.",
+     "explanation": "Strain means a breed or variety, and also to pour through a sieve. Strain is a variety and to strain is to sieve."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e18",
+   "title": "Expert pairs 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "Pay for work",
+      "To carry on a war or campaign"
+     ],
+     "length": 4,
+     "accepted": [
+      "WAGE"
+     ],
+     "example": "She earned a good ____ at the factory.",
+     "explanation": "Wage means pay for work, and also to carry on a war or campaign. To wage a war is to carry it on."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Browned bread",
+      "To drink in honour of"
+     ],
+     "length": 5,
+     "accepted": [
+      "TOAST"
+     ],
+     "example": "He raised his glass to ____ the bride.",
+     "explanation": "Toast means browned bread, and also to drink in honour of. Toast is browned bread and a drink raised in tribute."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To move back and forth",
+      "A lively style of jazz"
+     ],
+     "length": 5,
+     "accepted": [
+      "SWING"
+     ],
+     "example": "Children love a ____ in the park.",
+     "explanation": "Swing means to move back and forth, and also a lively style of jazz. Swing is movement and a big-band jazz style."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The pitch or quality of a sound",
+      "Firmness in a muscle"
+     ],
+     "length": 4,
+     "accepted": [
+      "TONE"
+     ],
+     "example": "I did not like his ____ of voice.",
+     "explanation": "Tone means the pitch or quality of a sound, and also firmness in a muscle. Tone is sound quality and muscular firmness."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A secure room for valuables",
+      "To leap over an obstacle using the hands"
+     ],
+     "length": 5,
+     "accepted": [
+      "VAULT"
+     ],
+     "example": "The jewels were locked in the ____.",
+     "explanation": "Vault means a secure room for valuables, and also to leap over an obstacle using the hands. A vault is a strongroom and a leap."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
   }
  ]
 }

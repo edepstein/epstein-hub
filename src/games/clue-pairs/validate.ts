@@ -1,5 +1,5 @@
 import { rounds } from "./rounds";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 
 /** British spellings that must never be accepted for the listed senses (docs/05 DRAFT/DRAUGHT regression). */
 const UK_SPELLING_TRAPS: { wrong: string; right: string; senses: RegExp }[] = [
@@ -17,6 +17,7 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
   const perDifficulty: Record<string, number> = {};
   const roundIds = new Set<string>();
   for (const { meta, payload: p } of rounds) {
@@ -35,7 +36,9 @@ export function validateContent(): string[] {
         if (!/^[A-Z]+$/.test(a)) problems.push(`${cf("accepted")}: ${a} must be upper-case A-Z`);
         if (a.length !== c.length) problems.push(`${cf("accepted")}: ${a} is not ${c.length} letters`);
         if (!membership.has(a)) problems.push(`${cf("accepted")}: ${a} is not in the membership list`);
-        if (meta.status !== "demo" && !familiar.has(a)) problems.push(`${cf("accepted")}: ${a} is not in the familiar (size-35) layer`);
+        if (meta.status !== "demo" && meta.difficulty !== "master" && !familiar.has(a)) problems.push(`${cf("accepted")}: ${a} is not in the familiar (size-35) layer`);
+        if (meta.difficulty === "master" && !familiar.has(a) && !uncommon.has(a)) problems.push(`${cf("accepted")}: ${a} is outside the familiar and uncommon layers (Master answers must be recognisable)`);
+        if (meta.difficulty === "master" && (a.length < 4 || a.length > 9)) problems.push(`${cf("accepted")}: Master answers have 4-9 letters`);
         for (const trap of UK_SPELLING_TRAPS)
           if (a === trap.wrong && c.clues.some((cl) => trap.senses.test(cl))) problems.push(`${cf("accepted")}: ${trap.wrong} cannot answer a British "${c.clues.join(" / ")}" clue; use ${trap.right}`);
       }
@@ -61,6 +64,6 @@ export function validateContent(): string[] {
       if (owner.has(a)) problems.push(`${meta.id}: answer ${a} is already used in ${owner.get(a)}`);
       else owner.set(a, meta.id);
     }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
+  for (const [d, n] of [["gentle", 12], ["standard", 12], ["expert", 18], ["master", 12]] as const) if ((perDifficulty[d] ?? 0) < n) problems.push(`fewer than ${n} ${d} rounds`);
   return problems;
 }
