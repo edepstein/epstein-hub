@@ -140,3 +140,27 @@ test("@mobile tiles build an answer by tapping and the staircase fits a phone", 
   await expect(page.getByTestId("rung-1")).toContainText("SPOT");
   await expectNoHorizontalOverflow(page);
 });
+
+test("Master staircase loads, rejects a rival word, restores after refresh and completes with the American spelling", async ({ page }) => {
+  await page.goto("/play/shrinking-staircase/sc-m2");
+  await expect(page.getByTestId("rung-1")).toContainText("A billionth of a metre");
+  await expect(page.getByTestId("rung-progress")).toHaveText("Rung 1 of 6");
+
+  await answer(page, 1, "mentioner");
+  await expect(feedback(page)).toContainText("not the answer to this clue");
+  await answer(page, 1, "nanometer");
+  await expect(page.getByTestId("rung-1")).toContainText("NANOMETER");
+  await answer(page, 2, "ornament");
+  await expect(page.getByTestId("save-indicator")).toContainText("Saved");
+  await page.reload();
+  await expect(page.getByTestId("restored-banner")).toBeVisible();
+  await expect(page.getByTestId("rung-progress")).toHaveText("Rung 3 of 6");
+
+  await answer(page, 3, "remnant");
+  await answer(page, 4, "tanner");
+  await answer(page, 5, "anent");
+  await answer(page, 6, "neat");
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("100 of 100 points");
+});

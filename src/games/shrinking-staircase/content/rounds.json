@@ -804,6 +804,453 @@
         "lettersAid": false,
         "explanation": "PYRAMID drops P and the rest rearrange to make MYRIAD, MYRIAD drops M and the rest rearrange to make DAIRY, DAIRY drops Y and the rest rearrange to make ARID, ARID drops A to leave RID, and RID drops R to leave ID."
       }
+    },
+    {
+      "id": "sc-m1",
+      "title": "Master staircase 1",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "GEOTHERMIC",
+        "rungs": [
+          { "clue": "Of lines and angles, like a Euclidean proof", "length": 9 },
+          { "clue": "Rising fast, as some careers do", "length": 8 },
+          { "clue": "Exclusive set of friends", "length": 7 },
+          { "clue": "Deliver from memory, as a poem", "length": 6 },
+          { "clue": "Upright", "length": 5 },
+          { "clue": "Oak or ash, say", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["GEOTHERMIC", "GEOMETRIC", "METEORIC", "COTERIE", "RECITE", "ERECT", "TREE"]
+        ],
+        "lettersAid": false,
+        "explanation": "GEOTHERMIC drops H and the rest rearrange to make GEOMETRIC, GEOMETRIC drops G and the rest rearrange to make METEORIC, METEORIC drops M and the rest rearrange to make COTERIE, COTERIE drops O and the rest rearrange to make RECITE, RECITE drops I and the rest rearrange to make ERECT, and ERECT drops C and the rest rearrange to make TREE."
+      }
+    },
+    {
+      "id": "sc-m2",
+      "title": "Master staircase 2",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "RENOMINATE",
+        "rungs": [
+          { "clue": "A billionth of a metre (either spelling is accepted)", "length": 9 },
+          { "clue": "Mantelpiece decoration", "length": 8 },
+          { "clue": "Leftover scrap of cloth", "length": 7 },
+          { "clue": "Leather-maker, or an old sixpence", "length": 6 },
+          { "clue": "Concerning, in Scots", "length": 5 },
+          { "clue": "Tidy", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["RENOMINATE", "NANOMETRE", "ORNAMENT", "REMNANT", "TANNER", "ANENT", "NEAT"],
+          ["RENOMINATE", "NANOMETER", "ORNAMENT", "REMNANT", "TANNER", "ANENT", "NEAT"]
+        ],
+        "lettersAid": false,
+        "explanation": "RENOMINATE drops I and the rest rearrange to make NANOMETRE, NANOMETRE drops E and the rest rearrange to make ORNAMENT, ORNAMENT drops O and the rest rearrange to make REMNANT, REMNANT drops M and the rest rearrange to make TANNER, TANNER drops R and the rest rearrange to make ANENT, and ANENT drops N and the rest rearrange to make NEAT. NANOMETER is the American spelling and is also accepted."
+      }
+    },
+    {
+      "id": "sc-m3",
+      "title": "Master staircase 3",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "DECIMATION",
+        "rungs": [
+          { "clue": "Third-party attempt to settle a dispute", "length": 9 },
+          { "clue": "Forming of ideas", "length": 8 },
+          { "clue": "Print run, or a version of a book", "length": 7 },
+          { "clue": "Element in a tincture, I", "length": 6 },
+          { "clue": "Independent label's music, briefly", "length": 5 },
+          { "clue": "Have dinner", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["DECIMATION", "MEDIATION", "IDEATION", "EDITION", "IODINE", "INDIE", "DINE"]
+        ],
+        "lettersAid": false,
+        "explanation": "DECIMATION drops C and the rest rearrange to make MEDIATION, MEDIATION drops M and the rest rearrange to make IDEATION, IDEATION drops A and the rest rearrange to make EDITION, EDITION drops T and the rest rearrange to make IODINE, IODINE drops O and the rest rearrange to make INDIE, and INDIE drops I and the rest rearrange to make DINE."
+      }
+    },
+    {
+      "id": "sc-m4",
+      "title": "Master staircase 4",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "REGALEMENT",
+        "rungs": [
+          { "clue": "Treaty, accord", "length": 9 },
+          { "clue": "Produce, as electricity", "length": 8 },
+          { "clue": "Aged between twelve and twenty", "length": 7 },
+          { "clue": "Nullify", "length": 6 },
+          { "clue": "Consumed, as a meal", "length": 5 },
+          { "clue": "Poker stake", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["REGALEMENT", "AGREEMENT", "GENERATE", "TEENAGE", "NEGATE", "EATEN", "ANTE"]
+        ],
+        "lettersAid": false,
+        "explanation": "REGALEMENT drops L and the rest rearrange to make AGREEMENT, AGREEMENT drops M and the rest rearrange to make GENERATE, GENERATE drops R and the rest rearrange to make TEENAGE, TEENAGE drops E and the rest rearrange to make NEGATE, NEGATE drops G and the rest rearrange to make EATEN, and EATEN drops E and the rest rearrange to make ANTE."
+      }
+    },
+    {
+      "id": "sc-m5",
+      "title": "Master staircase 5",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MENDACITY",
+        "rungs": [
+          { "clue": "Cartoon stick that goes bang", "length": 8 },
+          { "clue": "Whenever you like", "length": 7 },
+          { "clue": "Deep-seated hostility", "length": 6 },
+          { "clue": "Fresh, like toothpaste", "length": 5 },
+          { "clue": "Wee", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["MENDACITY", "DYNAMITE", "ANYTIME", "ENMITY", "MINTY", "TINY"]
+        ],
+        "lettersAid": false,
+        "explanation": "MENDACITY drops C and the rest rearrange to make DYNAMITE, DYNAMITE drops D and the rest rearrange to make ANYTIME, ANYTIME drops A and the rest rearrange to make ENMITY, ENMITY drops E and the rest rearrange to make MINTY, and MINTY drops M and the rest rearrange to make TINY."
+      }
+    },
+    {
+      "id": "sc-m6",
+      "title": "Master staircase 6",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "COGNITIVE",
+        "rungs": [
+          { "clue": "Tenant's removal by the landlord", "length": 8 },
+          { "clue": "Bill for goods supplied", "length": 7 },
+          { "clue": "Raw beginner", "length": 6 },
+          { "clue": "Express aloud, as a concern", "length": 5 },
+          { "clue": "Small sheltered bay", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["COGNITIVE", "EVICTION", "INVOICE", "NOVICE", "VOICE", "COVE"]
+        ],
+        "lettersAid": false,
+        "explanation": "COGNITIVE drops G and the rest rearrange to make EVICTION, EVICTION drops T and the rest rearrange to make INVOICE, INVOICE drops I and the rest rearrange to make NOVICE, NOVICE drops N and the rest rearrange to make VOICE, and VOICE drops I and the rest rearrange to make COVE."
+      }
+    },
+    {
+      "id": "sc-m7",
+      "title": "Master staircase 7",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "REDUCIBLE",
+        "rungs": [
+          { "clue": "Believable", "length": 8 },
+          { "clue": "Unit of loudness", "length": 7 },
+          { "clue": "Fit to eat", "length": 6 },
+          { "clue": "Omit a sound in speech", "length": 5 },
+          { "clue": "Shop selling cold cuts and cheeses, informally", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["REDUCIBLE", "CREDIBLE", "DECIBEL", "EDIBLE", "ELIDE", "DELI"]
+        ],
+        "lettersAid": false,
+        "explanation": "REDUCIBLE drops U and the rest rearrange to make CREDIBLE, CREDIBLE drops R and the rest rearrange to make DECIBEL, DECIBEL drops C and the rest rearrange to make EDIBLE, EDIBLE drops B and the rest rearrange to make ELIDE, and ELIDE drops E and the rest rearrange to make DELI."
+      }
+    },
+    {
+      "id": "sc-m8",
+      "title": "Master staircase 8",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PROPHETIC",
+        "rungs": [
+          { "clue": "Rougher on the waves", "length": 8 },
+          { "clue": "Bright and cheerful", "length": 7 },
+          { "clue": "Secret code", "length": 6 },
+          { "clue": "Cheep", "length": 5 },
+          { "clue": "Loaded", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["PROPHETIC", "CHOPPIER", "CHIPPER", "CIPHER", "CHIRP", "RICH"]
+        ],
+        "lettersAid": false,
+        "explanation": "PROPHETIC drops T and the rest rearrange to make CHOPPIER, CHOPPIER drops O and the rest rearrange to make CHIPPER, CHIPPER drops P and the rest rearrange to make CIPHER, CIPHER drops E and the rest rearrange to make CHIRP, and CHIRP drops P and the rest rearrange to make RICH."
+      }
+    },
+    {
+      "id": "sc-m9",
+      "title": "Master staircase 9",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PANTOMIME",
+        "rungs": [
+          { "clue": "Poison from decaying food", "length": 8 },
+          { "clue": "Platform on a ship's mainmast", "length": 7 },
+          { "clue": "Absorbent plug of cotton", "length": 6 },
+          { "clue": "Christmas show with a dame, briefly", "length": 5 },
+          { "clue": "On the summit of", "length": 4 }
+        ],
+        "acceptedChains": [
+          ["PANTOMIME", "PTOMAINE", "MAINTOP", "TAMPON", "PANTO", "ATOP"]
+        ],
+        "lettersAid": false,
+        "explanation": "PANTOMIME drops M and the rest rearrange to make PTOMAINE, PTOMAINE drops E and the rest rearrange to make MAINTOP, MAINTOP drops I and the rest rearrange to make TAMPON, TAMPON drops M and the rest rearrange to make PANTO, and PANTO drops N and the rest rearrange to make ATOP."
+      }
+    },
+    {
+      "id": "sc-m10",
+      "title": "Master staircase 10",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MEDICINE",
+        "rungs": [
+          { "clue": "Peculiar to a region, like some diseases", "length": 7 },
+          { "clue": "Old-time deliverers of frozen blocks", "length": 6 },
+          { "clue": "Sister's daughter", "length": 5 },
+          { "clue": "Film, as in ___ camera", "length": 4 },
+          { "clue": "Frozen water", "length": 3 }
+        ],
+        "acceptedChains": [
+          ["MEDICINE", "ENDEMIC", "ICEMEN", "NIECE", "CINE", "ICE"]
+        ],
+        "lettersAid": false,
+        "explanation": "MEDICINE drops I and the rest rearrange to make ENDEMIC, ENDEMIC drops D and the rest rearrange to make ICEMEN, ICEMEN drops M and the rest rearrange to make NIECE, NIECE drops E and the rest rearrange to make CINE, and CINE drops N and the rest rearrange to make ICE."
+      }
+    },
+    {
+      "id": "sc-m11",
+      "title": "Master staircase 11",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "COVENANT",
+        "rungs": [
+          { "clue": "Hundredth of a Mexican peso", "length": 7 },
+          { "clue": "Interval of eight notes", "length": 6 },
+          { "clue": "Egg-shaped", "length": 5 },
+          { "clue": "Block a bill", "length": 4 },
+          { "clue": "Digit on the foot", "length": 3 }
+        ],
+        "acceptedChains": [
+          ["COVENANT", "CENTAVO", "OCTAVE", "OVATE", "VETO", "TOE"]
+        ],
+        "lettersAid": false,
+        "explanation": "COVENANT drops N and the rest rearrange to make CENTAVO, CENTAVO drops N and the rest rearrange to make OCTAVE, OCTAVE drops C and the rest rearrange to make OVATE, OVATE drops A and the rest rearrange to make VETO, and VETO drops V and the rest rearrange to make TOE."
+      }
+    },
+    {
+      "id": "sc-m12",
+      "title": "Master staircase 12",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CIRCULAR",
+        "rungs": [
+          { "clue": "Decisive", "length": 7 },
+          { "clue": "Base found in RNA", "length": 6 },
+          { "clue": "Papal court", "length": 5 },
+          { "clue": "Of the acid behind gout", "length": 4 },
+          { "clue": "Mongrel", "length": 3 }
+        ],
+        "acceptedChains": [
+          ["CIRCULAR", "CRUCIAL", "URACIL", "CURIA", "URIC", "CUR"]
+        ],
+        "lettersAid": false,
+        "explanation": "CIRCULAR drops R and the rest rearrange to make CRUCIAL, CRUCIAL drops C and the rest rearrange to make URACIL, URACIL drops L and the rest rearrange to make CURIA, CURIA drops A and the rest rearrange to make URIC, and URIC drops I and the rest rearrange to make CUR."
+      }
+    },
+    {
+      "id": "sc-m13",
+      "title": "Master staircase 13",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "OUTFLANK",
+        "rungs": [
+          { "clue": "Fill-up for a thirsty car", "length": 7 },
+          { "clue": "Show off", "length": 6 },
+          { "clue": "Tennis service error", "length": 5 },
+          { "clue": "Apartment", "length": 4 },
+          { "clue": "Towards the stern", "length": 3 }
+        ],
+        "acceptedChains": [
+          ["OUTFLANK", "TANKFUL", "FLAUNT", "FAULT", "FLAT", "AFT"]
+        ],
+        "lettersAid": false,
+        "explanation": "OUTFLANK drops O and the rest rearrange to make TANKFUL, TANKFUL drops K and the rest rearrange to make FLAUNT, FLAUNT drops N and the rest rearrange to make FAULT, FAULT drops U and the rest rearrange to make FLAT, and FLAT drops L and the rest rearrange to make AFT."
+      }
+    },
+    {
+      "id": "sc-m14",
+      "title": "Master staircase 14",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "HONEYPOT",
+        "rungs": [
+          { "clue": "Pacific tropical storm", "length": 7 },
+          { "clue": "Constrictor", "length": 6 },
+          { "clue": "Fake", "length": 5 },
+          { "clue": "Syringe, informally", "length": 4 },
+          { "clue": "Skip on one leg", "length": 3 }
+        ],
+        "acceptedChains": [
+          ["HONEYPOT", "TYPHOON", "PYTHON", "PHONY", "HYPO", "HOP"]
+        ],
+        "lettersAid": false,
+        "explanation": "HONEYPOT drops E and the rest rearrange to make TYPHOON, TYPHOON drops O and the rest rearrange to make PYTHON, PYTHON drops T and the rest rearrange to make PHONY, PHONY drops N and the rest rearrange to make HYPO, and HYPO drops Y and the rest rearrange to make HOP."
+      }
+    },
+    {
+      "id": "sc-e15",
+      "title": "Expert staircase 15",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "CLEANSE",
+        "rungs": [
+          { "clue": "Enclose in a protective covering", "length": 6 },
+          { "clue": "Stop", "length": 5 },
+          { "clue": "Top cards in each suit", "length": 4 },
+          { "clue": "Ocean", "length": 3 },
+          { "clue": "In the same way as", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["CLEANSE", "ENCASE", "CEASE", "ACES", "SEA", "AS"]
+        ],
+        "lettersAid": false,
+        "explanation": "CLEANSE drops L and the rest rearrange to make ENCASE, ENCASE drops N and the rest rearrange to make CEASE, CEASE drops E and the rest rearrange to make ACES, ACES drops C and the rest rearrange to make SEA, and SEA drops E and the rest rearrange to make AS."
+      }
+    },
+    {
+      "id": "sc-e16",
+      "title": "Expert staircase 16",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "INHERENT",
+        "rungs": [
+          { "clue": "Paint solvent, or less fat", "length": 7 },
+          { "clue": "Trainee doctor in a hospital", "length": 6 },
+          { "clue": "Central, or inside", "length": 5 },
+          { "clue": "Horse's control strap", "length": 4 },
+          { "clue": "Anger", "length": 3 },
+          { "clue": "Concerning, in a memo heading", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["INHERENT", "THINNER", "INTERN", "INNER", "REIN", "IRE", "RE"]
+        ],
+        "lettersAid": false,
+        "explanation": "INHERENT drops E and the rest rearrange to make THINNER, THINNER drops H and the rest rearrange to make INTERN, INTERN drops T and the rest rearrange to make INNER, INNER drops N and the rest rearrange to make REIN, REIN drops N and the rest rearrange to make IRE, and IRE drops I to leave RE."
+      }
+    },
+    {
+      "id": "sc-e17",
+      "title": "Expert staircase 17",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "MECHANIC",
+        "rungs": [
+          { "clue": "Device with moving parts", "length": 7 },
+          { "clue": "Where films are shown", "length": 6 },
+          { "clue": "Wildly excited", "length": 5 },
+          { "clue": "Principal", "length": 4 },
+          { "clue": "Purpose, or to take a shot", "length": 3 },
+          { "clue": "Mother, informally", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["MECHANIC", "MACHINE", "CINEMA", "MANIC", "MAIN", "AIM", "MA"]
+        ],
+        "lettersAid": false,
+        "explanation": "MECHANIC drops C and the rest rearrange to make MACHINE, MACHINE drops H and the rest rearrange to make CINEMA, CINEMA drops E and the rest rearrange to make MANIC, MANIC drops C and the rest rearrange to make MAIN, MAIN drops N and the rest rearrange to make AIM, and AIM drops I and the rest rearrange to make MA."
+      }
+    },
+    {
+      "id": "sc-e18",
+      "title": "Expert staircase 18",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "PLUMMET",
+        "rungs": [
+          { "clue": "Beat repeatedly with the fists", "length": 6 },
+          { "clue": "Feather worn in a hat", "length": 5 },
+          { "clue": "Offspring of a horse and a donkey", "length": 4 },
+          { "clue": "Tree with serrated leaves", "length": 3 },
+          { "clue": "Printer's unit of width", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["PLUMMET", "PUMMEL", "PLUME", "MULE", "ELM", "EM"]
+        ],
+        "lettersAid": false,
+        "explanation": "PLUMMET drops T and the rest rearrange to make PUMMEL, PUMMEL drops M and the rest rearrange to make PLUME, PLUME drops P and the rest rearrange to make MULE, MULE drops U and the rest rearrange to make ELM, and ELM drops L to leave EM."
+      }
+    },
+    {
+      "id": "sc-e19",
+      "title": "Expert staircase 19",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "SKETCHY",
+        "rungs": [
+          { "clue": "Reaper's long curved blade", "length": 6 },
+          { "clue": "Treasure box, or part of the body", "length": 5 },
+          { "clue": "Engrave with acid", "length": 4 },
+          { "clue": "The definite article", "length": 3 },
+          { "clue": "Canadian tag question", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["SKETCHY", "SCYTHE", "CHEST", "ETCH", "THE", "EH"]
+        ],
+        "lettersAid": false,
+        "explanation": "SKETCHY drops K and the rest rearrange to make SCYTHE, SCYTHE drops Y and the rest rearrange to make CHEST, CHEST drops S and the rest rearrange to make ETCH, ETCH drops C and the rest rearrange to make THE, and THE drops T and the rest rearrange to make EH."
+      }
+    },
+    {
+      "id": "sc-e20",
+      "title": "Expert staircase 20",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "start": "FLUTTER",
+        "rungs": [
+          { "clue": "Slow reptile with a shell", "length": 6 },
+          { "clue": "Complete, as in 'utter nonsense'", "length": 5 },
+          { "clue": "Correct, not false", "length": 4 },
+          { "clue": "Regret bitterly", "length": 3 },
+          { "clue": "Second note of the sol-fa scale", "length": 2 }
+        ],
+        "acceptedChains": [
+          ["FLUTTER", "TURTLE", "UTTER", "TRUE", "RUE", "RE"]
+        ],
+        "lettersAid": false,
+        "explanation": "FLUTTER drops F and the rest rearrange to make TURTLE, TURTLE drops L and the rest rearrange to make UTTER, UTTER drops T and the rest rearrange to make TRUE, TRUE drops T to leave RUE, and RUE drops U to leave RE."
+      }
     }
   ]
 }

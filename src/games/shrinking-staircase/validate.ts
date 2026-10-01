@@ -1,7 +1,7 @@
 import type { RoundMeta } from "@/lib/engine/types";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import { rounds } from "./rounds";
-import { extraLetters, removedLetter, type StairPayload } from "./engine";
+import { describeStep, extraLetters, removedLetter, type StairPayload } from "./engine";
 
 /**
  * Semantic checks for one staircase round (exact multiset solver, docs/04):
@@ -15,7 +15,10 @@ export function checkStaircaseRound(
   p: StairPayload,
   membership: ReadonlySet<string>,
   familiar: ReadonlySet<string>,
+  uncommon: ReadonlySet<string> = new Set(),
+  difficulty: string = "standard",
 ): string[] {
+  const master = difficulty === "master";
   const problems: string[] = [];
   const at = (f: string) => `${meta.id}.${f}`;
   if (!/^[A-Z]+$/.test(p.start)) problems.push(`${at("start")}: must be upper-case A-Z`);
@@ -25,7 +28,14 @@ export function checkStaircaseRound(
     if (!r.clue || r.clue.trim().length < 3) problems.push(`${at(`rungs[${i}].clue`)}: missing clue`);
     if (/—/.test(r.clue)) problems.push(`${at(`rungs[${i}].clue`)}: contains an em dash`);
   });
-  if (p.rungs.length && p.rungs[p.rungs.length - 1].length !== 2) problems.push(`${at("rungs")}: the final rung must be a two-letter word`);
+  const last = p.rungs.length ? p.rungs[p.rungs.length - 1].length : 0;
+  if (!master && p.rungs.length && last !== 2) problems.push(`${at("rungs")}: the final rung must be a two-letter word`);
+  if (master) {
+    if (p.start.length < 8 || p.start.length > 10) problems.push(`${at("start")}: Master starts must have 8 to 10 letters`);
+    if (last < 3 || last > 4) problems.push(`${at("rungs")}: a Master staircase must end on a three- or four-letter word`);
+    if (p.rungs.length < 5) problems.push(`${at("rungs")}: Master staircases need at least five rungs`);
+    if (p.lettersAid) problems.push(`${at("lettersAid")}: Master rounds do not show letter tiles`);
+  }
   if (!p.acceptedChains.length) problems.push(`${at("acceptedChains")}: no accepted chain`);
   const seen = new Set<string>();
   p.acceptedChains.forEach((chain, c) => {
@@ -49,7 +59,13 @@ export function checkStaircaseRound(
     }
     for (const w of chain) {
       if (!membership.has(w)) problems.push(`${where}: ${w} is not in gameplay membership`);
-      if (meta.status !== "demo" && !familiar.has(w)) problems.push(`${where}: ${w} is not in the familiar (size-35) layer`);
+      if (meta.status !== "demo" && !master && !familiar.has(w)) problems.push(`${where}: ${w} is not in the familiar (size-35) layer`);
+      if (master && !familiar.has(w) && !uncommon.has(w) && (c === 0 || chain.indexOf(w) === p.acceptedChains[0].indexOf(w))) problems.push(`${where}: ${w} is outside the familiar and uncommon layers (Master answers must be in one of them)`);
+    }
+    if (master) {
+      for (let i = 1; i < chain.length; i++) {
+        if (chain[i].length > 3 && !describeStep(chain[i - 1], chain[i]).rearranged) problems.push(`${where}[${i}]: ${chain[i - 1]} to ${chain[i]} keeps the letters in order, which is too easy for Master`);
+      }
     }
   });
   const title = (meta.title ?? "").toUpperCase();
@@ -63,6 +79,7 @@ export function checkStaircaseRound(
 export function validateContent(): string[] {
   const membership = loadMembershipSync();
   const familiar = loadFamiliarSync();
+  const uncommon = loadUncommonSync();
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const ids = new Set<string>();
@@ -84,9 +101,10 @@ export function validateContent(): string[] {
       clueTexts.add(r.clue);
     }
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
-    problems.push(...checkStaircaseRound(meta, payload, membership, familiar));
+    problems.push(...checkStaircaseRound(meta, payload, membership, familiar, uncommon, meta.difficulty));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
+  const minimum: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+  for (const d of Object.keys(minimum)) if ((perDifficulty[d] ?? 0) < minimum[d]) problems.push(`fewer than ${minimum[d]} rounds (practice plus demo) at ${d}`);
   const expertBranches = rounds.filter((r) => r.meta.difficulty === "expert" && r.payload.acceptedChains.length > 1).length;
   if (expertBranches < 2) problems.push("expert rounds should include at least two with accepted branches");
   return problems;

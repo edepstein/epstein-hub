@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { sessionOptionsFor } from "@/lib/progress/attempt";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
 import {
   createStaircaseEngine,
   describeStep,
@@ -192,10 +192,45 @@ describe("Shrinking Staircase content", () => {
     expect(validateContent()).toEqual([]);
   });
 
-  it("has at least four practice rounds per difficulty", () => {
-    for (const d of ["gentle", "standard", "expert"]) {
-      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
+  it("has the target number of rounds per difficulty", () => {
+    const min: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+    for (const d of Object.keys(min)) {
+      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(min[d]);
     }
+  });
+
+  it("Master rounds start at 8 to 10 letters, end on 3 or 4 letters and show no letter tiles", () => {
+    for (const r of rounds.filter((x) => x.meta.difficulty === "master")) {
+      expect(r.payload.start.length).toBeGreaterThanOrEqual(8);
+      expect(r.payload.start.length).toBeLessThanOrEqual(10);
+      const end = r.payload.rungs[r.payload.rungs.length - 1].length;
+      expect(end === 3 || end === 4).toBe(true);
+      expect(r.payload.lettersAid).toBe(false);
+    }
+  });
+
+  it("the Master nanometre rung accepts both spellings and either continues to the bottom", () => {
+    const r = bundle("sc-m2");
+    for (const spelling of ["NANOMETRE", "NANOMETER"]) {
+      const chain = r.payload.acceptedChains.find((c) => c[1] === spelling)!;
+      const s = play(engine.initialise(r.payload, sessionOptionsFor(r.meta, 1)), chain.slice(1).map(submit));
+      expect(engine.outcome(s)).toBe("completed");
+    }
+  });
+
+  it("Master validation rejects in-order steps, a two-letter ending and answers outside the familiar and uncommon layers", () => {
+    const uncommon = loadUncommonSync();
+    const m = (mut: (p: StairPayload) => void) => {
+      const p = structuredClone(bundle("sc-m12").payload);
+      mut(p);
+      return checkStaircaseRound({ id: "x", status: "practice", title: "t" }, p, membership, familiar, uncommon, "master");
+    };
+    expect(m(() => {})).toEqual([]);
+    expect(m((p) => p.rungs.pop()).join(" ")).toContain("at least five rungs");
+    expect(m((p) => (p.lettersAid = true)).join(" ")).toContain("letter tiles");
+    const plain = structuredClone(bundle("sc-m12").payload);
+    plain.acceptedChains = [["CIRCULAR", "CIRCULA", "CIRCUL", "CIRCU", "CIRC", "CIR"]];
+    expect(checkStaircaseRound({ id: "x", status: "practice", title: "t" }, plain, membership, familiar, uncommon, "master").join(" ")).toMatch(/not in gameplay membership|outside the familiar/);
   });
 
   it("every accepted chain is playable to completion through the engine", () => {
