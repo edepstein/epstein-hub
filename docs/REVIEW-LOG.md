@@ -307,6 +307,20 @@ Cryptic clues (letters verified by the Cryptic Workshop checker; synonyms and su
 - [ ] dc-sc1 "Draw at area of land" ATTRACT (AT + TRACT); "Invaded when finished and managed" OVERRAN (OVER + RAN); "Crowd with era for a captive" HOSTAGE; "Call and allow a curl" RINGLET; "An alternative? One more" ANOTHER; "Betrayal of senator, changed" TREASON (anagram); "Tune and letters for overseas post" AIRMAIL; "Brown man's digression" TANGENT (TAN + GENT; check fairness of "digression").
 - [ ] dc-ec1 "Walked by den, trampled" TRODDEN; "Away from home, develop and become too big for" OUTGROW; "Stern expert pulls a face" GRIMACE; "The rate changed at the playhouse" THEATRE (anagram); "However, time for reflection" THOUGHT (THOUGH + T); "Exterior of away team" OUTSIDE; "Sleeping quarters with insect, inactive" DORMANT (DORM + ANT); "Currently attending, in no place" NOWHERE (NOW + HERE).
 
+- [ ] Content expansion 2026-10-01: 10 new practice grids (dc-gq3, dc-gc2, dc-sq3, dc-sq4, dc-sc2, dc-sc3, dc-eq3, dc-eq4, dc-ec2, dc-ec3). Every difficulty now has 7 grids (gentle: 5 practice + 2 demo word squares; standard 7; expert 7), each with Quick and Cryptic. Fills came from the existing backtracking filler over the familiar list (answers checked against membership v2), all answers new to the game. Validator minimum raised to 7 grids per difficulty (demo included).
+  - dc-gq3 (quick): CABIN, CANOE, AISLE, COCOA, BONUS, NIECE
+  - dc-gc2 (cryptic): CARVE, ACTOR, MARCH, CHARM, ROTOR, EARTH
+  - dc-sq3 (quick): COMICAL, DYNAMIC, INTRUDE, SURGEON, CADDIES, MONSTER, COMPUTE, LECTERN
+  - dc-sq4 (quick): OUTWARD, TRUMPET, MIDRIFF, MARITAL, OPTIMUM, THUNDER, APPOINT, DUTIFUL
+  - dc-sc2 (cryptic): CROWBAR, INFIELD, AGONISE, ENDLESS, COINAGE, OFFLOAD, BEEHIVE, REDRESS
+  - dc-sc3 (cryptic): CAPABLE, CURRIES, PLUMAGE, THEREON, COCKPIT, PERFUME, BRIGADE, EASTERN
+  - dc-eq3 (quick): STEALTH, ROTUNDA, VIADUCT, LITURGY, SHRIVEL, EXTRACT, LANGUOR, HEALTHY
+  - dc-eq4 (quick): RECOVER, CHASTEN, UNSCREW, TENANCY, RACQUET, COARSEN, VETERAN, RUNAWAY
+  - dc-ec2 (cryptic): IMPEACH, EARDRUM, AVARICE, THEREOF, INEXACT, PARTAKE, AIRLINE, HIMSELF
+  - dc-ec3 (cryptic): DOWRIES, SENATOR, TROUNCE, PREFECT, DESKTOP, WINSOME, INTENSE, SERPENT
+- [ ] New quick clues are original; expert quick clues are only mildly harder than standard (no cryptic-style definitions); an editor may want to sharpen them. New cryptic expert grids lean on anagram and two-part charades; synonym links to confirm: gold=OR (ACTOR), fashionable=IN, meadow=FIELD, Honey maker=BEE and colony=HIVE (BEEHIVE, loosest), In that place=THERE, working=ON, for each=PER, little devil=IMP, at home=IN, a few=SOME, strained=TENSE, best=TOP, standard=PAR. Anagram fodders ABRIDGE, CAVIARE, TREASON, COUNTER, PERFECT, PRESENT, NEAREST, DRESSER, CRUISER, AGONIES, HATER, CRAVE, CHARM/MARCH are real words. THEREOF is a hidden answer in 'tithe reoffer'; ROTOR is hidden in 'carrot or'.
+- [ ] Odd-but-legal entries to eyeball: CADDIES (plural), CURRIES (plural), DOWRIES (plural), INFIELD (cricket/baseball sense), THEREON, THEREOF.
+
 ## Word Weave
 - [ ] Practice grids wv-g1..g5, wv-s1..s5, wv-e1..e5: fills found offline by backtracking over familiar words (ESDB membership ∩ SCOWL size-35, excluding simple plurals, -ED/-ING forms and superlatives); every clue is original to this build. An editor must independently solve each grid and judge clue fairness. Expert clues are deliberately double-edged (e.g. "Trunk that is not on a tree" for TORSO).
 - [ ] Uniqueness rests on clues, not geometry: in the lattice grids the uncrossed letters admit other words. Only one accepted grid is stored per practice round; after review, add any fair alternative fills as extra accepted grids (the engine and validator already support them).

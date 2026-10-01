@@ -74,8 +74,8 @@ export function validateRounds(rounds: RoundBundle<CrosswordPayload>[]): string[
     }
   }
   for (const d of ["gentle", "standard", "expert"]) {
-    const n = rounds.filter((r) => r.meta.difficulty === d && r.meta.status !== "demo").length;
-    if (n < 3) problems.push(`only ${n} authored ${d} grids; at least 3 required`);
+    const n = rounds.filter((r) => r.meta.difficulty === d).length;
+    if (n < 7) problems.push(`only ${n} ${d} grids; at least 7 required`);
     if (!per[d]?.has("quick") || !per[d]?.has("cryptic")) problems.push(`${d} needs both a quick and a cryptic grid`);
   }
   return problems;

@@ -1431,6 +1431,1505 @@
      }
     ]
    }
+  },
+  {
+   "id": "dc-gq3",
+   "title": "Gentle quick 3",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "CABIN",
+     "O#O#I",
+     "CANOE",
+     "O#U#C",
+     "AISLE"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "CABIN",
+      "enumeration": "5",
+      "clue": "Small wooden hut, or a room on a ship"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "CANOE",
+      "enumeration": "5",
+      "clue": "Light boat moved with a paddle"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "AISLE",
+      "enumeration": "5",
+      "clue": "Gangway between rows of seats"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "COCOA",
+      "enumeration": "5",
+      "clue": "Hot chocolate drink"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "BONUS",
+      "enumeration": "5",
+      "clue": "Extra payment on top of wages"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "NIECE",
+      "enumeration": "5",
+      "clue": "Your sister's daughter"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-gc2",
+   "title": "Gentle cryptic 2",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "CARVE",
+     "H#O#A",
+     "ACTOR",
+     "R#O#T",
+     "MARCH"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "CARVE",
+      "enumeration": "5",
+      "clue": "Cut: crave scrambled",
+      "cryptic": {
+       "definition": "Cut",
+       "indicators": [
+        "scrambled"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "crave"
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "ACTOR",
+      "enumeration": "5",
+      "clue": "Perform with gold, a stage player",
+      "cryptic": {
+       "definition": "a stage player",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Perform",
+          "letters": "ACT",
+          "via": "synonym"
+         },
+         {
+          "source": "gold",
+          "letters": "OR",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "MARCH",
+      "enumeration": "5",
+      "clue": "Walk when charm is changed",
+      "cryptic": {
+       "definition": "Walk",
+       "indicators": [
+        "changed"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "charm"
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "CHARM",
+      "enumeration": "5",
+      "clue": "Appeal: march reorganised",
+      "cryptic": {
+       "definition": "Appeal",
+       "indicators": [
+        "reorganised"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "march"
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "ROTOR",
+      "enumeration": "5",
+      "clue": "Spinner seen in carrot or turnip",
+      "cryptic": {
+       "definition": "Spinner",
+       "indicators": [
+        "seen in"
+       ],
+       "construction": {
+        "type": "hidden",
+        "fodder": "carrot or",
+        "start": 3
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "EARTH",
+      "enumeration": "5",
+      "clue": "Soil: hater scrambled",
+      "cryptic": {
+       "definition": "Soil",
+       "indicators": [
+        "scrambled"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "hater"
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sq3",
+   "title": "Standard quick 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "COMICAL",
+     "A#O#O#E",
+     "DYNAMIC",
+     "D#S#P#T",
+     "INTRUDE",
+     "E#E#T#R",
+     "SURGEON"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "COMICAL",
+      "enumeration": "7",
+      "clue": "Funny and amusing"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "DYNAMIC",
+      "enumeration": "7",
+      "clue": "Full of energy and new ideas"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "INTRUDE",
+      "enumeration": "7",
+      "clue": "Barge in uninvited"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "SURGEON",
+      "enumeration": "7",
+      "clue": "Specialist who operates"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "CADDIES",
+      "enumeration": "7",
+      "clue": "Golfers' bag carriers"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "MONSTER",
+      "enumeration": "7",
+      "clue": "Fearsome creature of legend"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "COMPUTE",
+      "enumeration": "7",
+      "clue": "Work out with numbers"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "LECTERN",
+      "enumeration": "7",
+      "clue": "Reading stand in a church"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sq4",
+   "title": "Standard quick 4",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "OUTWARD",
+     "P#H#P#U",
+     "TRUMPET",
+     "I#N#O#I",
+     "MIDRIFF",
+     "U#E#N#U",
+     "MARITAL"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "OUTWARD",
+      "enumeration": "7",
+      "clue": "Facing away from the centre"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "TRUMPET",
+      "enumeration": "7",
+      "clue": "Brass instrument with three valves"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "MIDRIFF",
+      "enumeration": "7",
+      "clue": "Part of the body between chest and waist"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "MARITAL",
+      "enumeration": "7",
+      "clue": "Relating to marriage"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "OPTIMUM",
+      "enumeration": "7",
+      "clue": "Best possible"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "THUNDER",
+      "enumeration": "7",
+      "clue": "Rumble that follows lightning"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "APPOINT",
+      "enumeration": "7",
+      "clue": "Name for a job"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "DUTIFUL",
+      "enumeration": "7",
+      "clue": "Obedient and conscientious"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sc2",
+   "title": "Standard cryptic 2",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "CROWBAR",
+     "O#F#E#E",
+     "INFIELD",
+     "N#L#H#R",
+     "AGONISE",
+     "G#A#V#S",
+     "ENDLESS"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "CROWBAR",
+      "enumeration": "7",
+      "clue": "Bird with pub makes a lever",
+      "cryptic": {
+       "definition": "a lever",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Bird",
+          "letters": "CROW",
+          "via": "synonym"
+         },
+         {
+          "source": "pub",
+          "letters": "BAR",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "INFIELD",
+      "enumeration": "7",
+      "clue": "Fashionable meadow: part of the ground",
+      "cryptic": {
+       "definition": "part of the ground",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Fashionable",
+          "letters": "IN",
+          "via": "synonym"
+         },
+         {
+          "source": "meadow",
+          "letters": "FIELD",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "AGONISE",
+      "enumeration": "7",
+      "clue": "Suffer when agonies are scrambled",
+      "cryptic": {
+       "definition": "Suffer",
+       "indicators": [
+        "scrambled"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "agonies"
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "ENDLESS",
+      "enumeration": "7",
+      "clue": "Finish with minus, never stopping",
+      "cryptic": {
+       "definition": "never stopping",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Finish",
+          "letters": "END",
+          "via": "synonym"
+         },
+         {
+          "source": "minus",
+          "letters": "LESS",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "COINAGE",
+      "enumeration": "7",
+      "clue": "Piece of money with era: new word creation",
+      "cryptic": {
+       "definition": "new word creation",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Piece of money",
+          "letters": "COIN",
+          "via": "synonym"
+         },
+         {
+          "source": "era",
+          "letters": "AGE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "OFFLOAD",
+      "enumeration": "7",
+      "clue": "Unload: away with cargo",
+      "cryptic": {
+       "definition": "Unload",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "away",
+          "letters": "OFF",
+          "via": "synonym"
+         },
+         {
+          "source": "cargo",
+          "letters": "LOAD",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "BEEHIVE",
+      "enumeration": "7",
+      "clue": "Honey maker with colony makes a bees' home",
+      "cryptic": {
+       "definition": "a bees' home",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Honey maker",
+          "letters": "BEE",
+          "via": "synonym"
+         },
+         {
+          "source": "colony",
+          "letters": "HIVE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "REDRESS",
+      "enumeration": "7",
+      "clue": "Put right when dresser moves",
+      "cryptic": {
+       "definition": "Put right",
+       "indicators": [
+        "moves"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "dresser"
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-sc3",
+   "title": "Standard cryptic 3",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "CAPABLE",
+     "O#E#R#A",
+     "CURRIES",
+     "K#F#G#T",
+     "PLUMAGE",
+     "I#M#D#R",
+     "THEREON"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "CAPABLE",
+      "enumeration": "7",
+      "clue": "Hat and skilled, competent",
+      "cryptic": {
+       "definition": "competent",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Hat",
+          "letters": "CAP",
+          "via": "synonym"
+         },
+         {
+          "source": "skilled",
+          "letters": "ABLE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "CURRIES",
+      "enumeration": "7",
+      "clue": "Spicy dishes: cruiser wrecked",
+      "cryptic": {
+       "definition": "Spicy dishes",
+       "indicators": [
+        "wrecked"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "cruiser"
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "PLUMAGE",
+      "enumeration": "7",
+      "clue": "Feathers: fruit with era",
+      "cryptic": {
+       "definition": "Feathers",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "fruit",
+          "letters": "PLUM",
+          "via": "synonym"
+         },
+         {
+          "source": "era",
+          "letters": "AGE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "THEREON",
+      "enumeration": "7",
+      "clue": "In that place with working: on that",
+      "cryptic": {
+       "definition": "on that",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "In that place",
+          "letters": "THERE",
+          "via": "synonym"
+         },
+         {
+          "source": "working",
+          "letters": "ON",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "COCKPIT",
+      "enumeration": "7",
+      "clue": "Rooster with mine: pilot's place",
+      "cryptic": {
+       "definition": "pilot's place",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Rooster",
+          "letters": "COCK",
+          "via": "synonym"
+         },
+         {
+          "source": "mine",
+          "letters": "PIT",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "PERFUME",
+      "enumeration": "7",
+      "clue": "Scent: for each smoke",
+      "cryptic": {
+       "definition": "Scent",
+       "indicators": [],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "for each",
+          "letters": "PER",
+          "via": "synonym"
+         },
+         {
+          "source": "smoke",
+          "letters": "FUME",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "BRIGADE",
+      "enumeration": "7",
+      "clue": "Troops: abridge changed",
+      "cryptic": {
+       "definition": "Troops",
+       "indicators": [
+        "changed"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "abridge"
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "EASTERN",
+      "enumeration": "7",
+      "clue": "Oriental: nearest shaken up",
+      "cryptic": {
+       "definition": "Oriental",
+       "indicators": [
+        "shaken up"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "nearest"
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-eq3",
+   "title": "Expert quick 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "STEALTH",
+     "H#X#A#E",
+     "ROTUNDA",
+     "I#R#G#L",
+     "VIADUCT",
+     "E#C#O#H",
+     "LITURGY"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "STEALTH",
+      "enumeration": "7",
+      "clue": "Secrecy that lets a bomber slip past radar"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "ROTUNDA",
+      "enumeration": "7",
+      "clue": "Circular building under a dome"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "VIADUCT",
+      "enumeration": "7",
+      "clue": "Railway's bridge across a valley"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "LITURGY",
+      "enumeration": "7",
+      "clue": "Set form of public worship"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "SHRIVEL",
+      "enumeration": "7",
+      "clue": "Wrinkle up as a leaf in drought"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "EXTRACT",
+      "enumeration": "7",
+      "clue": "Pull out, as a dentist might; or a quoted passage"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "LANGUOR",
+      "enumeration": "7",
+      "clue": "Dreamy, pleasant lack of energy"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "HEALTHY",
+      "enumeration": "7",
+      "clue": "Hale and hearty"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-eq4",
+   "title": "Expert quick 4",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "quick",
+    "grid": [
+     "RECOVER",
+     "A#O#E#U",
+     "CHASTEN",
+     "Q#R#E#A",
+     "UNSCREW",
+     "E#E#A#A",
+     "TENANCY"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "RECOVER",
+      "enumeration": "7",
+      "clue": "Regain, or get better after illness"
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "CHASTEN",
+      "enumeration": "7",
+      "clue": "Subdue with a stern rebuke"
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "UNSCREW",
+      "enumeration": "7",
+      "clue": "Loosen a jar lid, perhaps"
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "TENANCY",
+      "enumeration": "7",
+      "clue": "Period of occupying rented property"
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "RACQUET",
+      "enumeration": "7",
+      "clue": "Squash player's implement"
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "COARSEN",
+      "enumeration": "7",
+      "clue": "Make less refined"
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "VETERAN",
+      "enumeration": "7",
+      "clue": "Old hand, especially from the wars"
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "RUNAWAY",
+      "enumeration": "7",
+      "clue": "Fugitive; or out of control"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-ec2",
+   "title": "Expert cryptic 2",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "IMPEACH",
+     "N#A#I#I",
+     "EARDRUM",
+     "X#T#L#S",
+     "AVARICE",
+     "C#K#N#L",
+     "THEREOF"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "IMPEACH",
+      "enumeration": "7",
+      "clue": "Accuse of misconduct: little devil with every",
+      "cryptic": {
+       "definition": "Accuse of misconduct",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "little devil",
+          "letters": "IMP",
+          "via": "synonym"
+         },
+         {
+          "source": "every",
+          "letters": "EACH",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "EARDRUM",
+      "enumeration": "7",
+      "clue": "Membrane? Listener with barrel",
+      "cryptic": {
+       "definition": "Membrane",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Listener",
+          "letters": "EAR",
+          "via": "synonym"
+         },
+         {
+          "source": "barrel",
+          "letters": "DRUM",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "AVARICE",
+      "enumeration": "7",
+      "clue": "Greed from caviare, wrecked",
+      "cryptic": {
+       "definition": "Greed",
+       "indicators": [
+        "wrecked"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "caviare"
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "THEREOF",
+      "enumeration": "7",
+      "clue": "Of that found in tithe reoffer",
+      "cryptic": {
+       "definition": "Of that",
+       "indicators": [
+        "found in"
+       ],
+       "construction": {
+        "type": "hidden",
+        "fodder": "tithe reoffer",
+        "start": 2
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "INEXACT",
+      "enumeration": "7",
+      "clue": "Not quite right, at home and precise",
+      "cryptic": {
+       "definition": "Not quite right",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "at home",
+          "letters": "IN",
+          "via": "synonym"
+         },
+         {
+          "source": "precise",
+          "letters": "EXACT",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "PARTAKE",
+      "enumeration": "7",
+      "clue": "Join in: standard and accept",
+      "cryptic": {
+       "definition": "Join in",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "standard",
+          "letters": "PAR",
+          "via": "synonym"
+         },
+         {
+          "source": "accept",
+          "letters": "TAKE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "AIRLINE",
+      "enumeration": "7",
+      "clue": "Carrier: tune with row",
+      "cryptic": {
+       "definition": "Carrier",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "tune",
+          "letters": "AIR",
+          "via": "synonym"
+         },
+         {
+          "source": "row",
+          "letters": "LINE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "HIMSELF",
+      "enumeration": "7",
+      "clue": "That man with ego, in person",
+      "cryptic": {
+       "definition": "in person",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "That man",
+          "letters": "HIM",
+          "via": "synonym"
+         },
+         {
+          "source": "ego",
+          "letters": "SELF",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "dc-ec3",
+   "title": "Expert cryptic 3",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "style": "cryptic",
+    "grid": [
+     "DOWRIES",
+     "E#I#N#E",
+     "SENATOR",
+     "K#S#E#P",
+     "TROUNCE",
+     "O#M#S#N",
+     "PREFECT"
+    ],
+    "entries": [
+     {
+      "id": "a-r0c0",
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "DOWRIES",
+      "enumeration": "7",
+      "clue": "Marriage portions: rowdies scrambled",
+      "cryptic": {
+       "definition": "Marriage portions",
+       "indicators": [
+        "scrambled"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "rowdies"
+       }
+      }
+     },
+     {
+      "id": "a-r2c0",
+      "direction": "across",
+      "row": 2,
+      "col": 0,
+      "answer": "SENATOR",
+      "enumeration": "7",
+      "clue": "Politician: treason shaken up",
+      "cryptic": {
+       "definition": "Politician",
+       "indicators": [
+        "shaken up"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "treason"
+       }
+      }
+     },
+     {
+      "id": "a-r4c0",
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "TROUNCE",
+      "enumeration": "7",
+      "clue": "Thrash: counter bent",
+      "cryptic": {
+       "definition": "Thrash",
+       "indicators": [
+        "bent"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "counter"
+       }
+      }
+     },
+     {
+      "id": "a-r6c0",
+      "direction": "across",
+      "row": 6,
+      "col": 0,
+      "answer": "PREFECT",
+      "enumeration": "7",
+      "clue": "School monitor: perfect scrambled",
+      "cryptic": {
+       "definition": "School monitor",
+       "indicators": [
+        "scrambled"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "perfect"
+       }
+      }
+     },
+     {
+      "id": "d-r0c0",
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "DESKTOP",
+      "enumeration": "7",
+      "clue": "Writing table with best, a type of computer",
+      "cryptic": {
+       "definition": "a type of computer",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Writing table",
+          "letters": "DESK",
+          "via": "synonym"
+         },
+         {
+          "source": "best",
+          "letters": "TOP",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c2",
+      "direction": "down",
+      "row": 0,
+      "col": 2,
+      "answer": "WINSOME",
+      "enumeration": "7",
+      "clue": "Charming: triumph with a few",
+      "cryptic": {
+       "definition": "Charming",
+       "indicators": [
+        "with"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "triumph",
+          "letters": "WIN",
+          "via": "synonym"
+         },
+         {
+          "source": "a few",
+          "letters": "SOME",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c4",
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "INTENSE",
+      "enumeration": "7",
+      "clue": "Extreme: fashionable and strained",
+      "cryptic": {
+       "definition": "Extreme",
+       "indicators": [
+        "and"
+       ],
+       "construction": {
+        "type": "charade",
+        "parts": [
+         {
+          "source": "Fashionable",
+          "letters": "IN",
+          "via": "synonym"
+         },
+         {
+          "source": "strained",
+          "letters": "TENSE",
+          "via": "synonym"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "id": "d-r0c6",
+      "direction": "down",
+      "row": 0,
+      "col": 6,
+      "answer": "SERPENT",
+      "enumeration": "7",
+      "clue": "Snake: present reorganised",
+      "cryptic": {
+       "definition": "Snake",
+       "indicators": [
+        "reorganised"
+       ],
+       "construction": {
+        "type": "anagram",
+        "fodder": "present"
+       }
+      }
+     }
+    ]
+   }
   }
  ]
 }
