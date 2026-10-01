@@ -461,6 +461,456 @@
    "explanation": "Gentle cards pair two concrete, everyday meanings."
   },
   {
+   "id": "cp-g5",
+   "title": "Gentle pairs 5",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A long, straight rod of metal or wood",
+      "A place that serves drinks"
+     ],
+     "length": 3,
+     "accepted": [
+      "BAR"
+     ],
+     "example": "He ordered a lemonade at the ____.",
+     "explanation": "Bar can mean a long straight rod, and it can also mean a place that serves drinks."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "An instrument for writing with ink",
+      "A small fenced area for animals"
+     ],
+     "length": 3,
+     "accepted": [
+      "PEN"
+     ],
+     "example": "The farmer put the lambs in a ____.",
+     "explanation": "Pen can mean a writing instrument, and it can also mean a small fenced area for animals."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A tool with a toothed blade for cutting wood",
+      "The past tense of see"
+     ],
+     "length": 3,
+     "accepted": [
+      "SAW"
+     ],
+     "example": "Yesterday I ____ a fox in the garden.",
+     "explanation": "Saw can mean a toothed cutting tool, and it can also mean the past tense of see."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A thin fried strip of potato",
+      "A small piece broken off something"
+     ],
+     "length": 4,
+     "accepted": [
+      "CHIP"
+     ],
+     "example": "There is a ____ in the corner of this mug.",
+     "explanation": "Chip can mean a fried strip of potato, and it can also mean a small broken-off piece."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A fastening that needs a key to open it",
+      "A section of a canal with gates that change the water level"
+     ],
+     "length": 4,
+     "accepted": [
+      "LOCK"
+     ],
+     "example": "The narrowboat waited in the ____.",
+     "explanation": "Lock can mean a fastening opened with a key, and it can also mean a section of canal with gates."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g6",
+   "title": "Gentle pairs 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A soft flat hat with a peak",
+      "A lid for a bottle or pen"
+     ],
+     "length": 3,
+     "accepted": [
+      "CAP"
+     ],
+     "example": "Put the ____ back on the marker.",
+     "explanation": "Cap can mean a soft hat with a peak, and it can also mean a lid for a bottle or pen."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A child who goes to school",
+      "The black circle at the centre of the eye"
+     ],
+     "length": 5,
+     "accepted": [
+      "PUPIL"
+     ],
+     "example": "In bright light, the ____ of the eye grows small.",
+     "explanation": "Pupil can mean a child at school, and it can also mean the dark centre of the eye."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A living thing that grows in soil",
+      "A factory where goods are made"
+     ],
+     "length": 5,
+     "accepted": [
+      "PLANT"
+     ],
+     "example": "He works at a car ____ outside town.",
+     "explanation": "Plant can mean a living thing that grows in soil, and it can also mean a factory."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A deep hole dug to get coal or metal",
+      "Belonging to me"
+     ],
+     "length": 4,
+     "accepted": [
+      "MINE"
+     ],
+     "example": "That umbrella is ____, not yours.",
+     "explanation": "Mine can mean a deep hole for digging out coal, and it can also mean belonging to me."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A tube that carries water or gas",
+      "An object used for smoking tobacco"
+     ],
+     "length": 4,
+     "accepted": [
+      "PIPE"
+     ],
+     "example": "A frozen ____ burst in the cellar.",
+     "explanation": "Pipe can mean a tube for water or gas, and it can also mean an object for smoking tobacco."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g7",
+   "title": "Gentle pairs 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A small room where a prisoner is kept",
+      "The smallest living unit of a plant or animal"
+     ],
+     "length": 4,
+     "accepted": [
+      "CELL"
+     ],
+     "example": "Under the microscope, each ____ was clearly visible.",
+     "explanation": "Cell can mean a small prison room, and it can also mean the smallest living unit of an organism."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The glass part of a lamp that gives light",
+      "A rounded underground part from which some plants grow"
+     ],
+     "length": 4,
+     "accepted": [
+      "BULB"
+     ],
+     "example": "Plant each tulip ____ in the autumn.",
+     "explanation": "Bulb can mean the glass part of a lamp, and it can also mean a rounded underground plant part."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A strong upright pole",
+      "The system for delivering letters"
+     ],
+     "length": 4,
+     "accepted": [
+      "POST"
+     ],
+     "example": "I will send the card by ____.",
+     "explanation": "Post can mean an upright pole, and it can also mean the system for delivering letters."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A boot with a blade for gliding on ice",
+      "A large flat-bodied sea fish"
+     ],
+     "length": 5,
+     "accepted": [
+      "SKATE"
+     ],
+     "example": "She laced up her ____ and stepped onto the rink.",
+     "explanation": "Skate can mean a boot with a blade for ice, and it can also mean a flat-bodied sea fish."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A set of rooms on one floor of a building",
+      "Smooth and level, with no bumps"
+     ],
+     "length": 4,
+     "accepted": [
+      "FLAT"
+     ],
+     "example": "The road across the fen is dead ____.",
+     "explanation": "Flat can mean a set of rooms in a building, and it can also mean smooth and level."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g8",
+   "title": "Gentle pairs 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A folder for keeping papers",
+      "A tool with a rough surface for smoothing metal"
+     ],
+     "length": 4,
+     "accepted": [
+      "FILE"
+     ],
+     "example": "She used a ____ to smooth the sharp edge.",
+     "explanation": "File can mean a folder for papers, and it can also mean a rough tool for smoothing metal."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The flat floor of a ship",
+      "A full set of playing cards"
+     ],
+     "length": 4,
+     "accepted": [
+      "DECK"
+     ],
+     "example": "Shuffle the ____ before you deal.",
+     "explanation": "Deck can mean the floor of a ship, and it can also mean a set of playing cards."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A bright point of light in the night sky",
+      "A famous performer"
+     ],
+     "length": 4,
+     "accepted": [
+      "STAR"
+     ],
+     "example": "The film ____ walked the red carpet.",
+     "explanation": "Star can mean a bright point in the night sky, and it can also mean a famous performer."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A small bird with a forked tail",
+      "To pass food down the throat"
+     ],
+     "length": 7,
+     "accepted": [
+      "SWALLOW"
+     ],
+     "example": "Chew your food well before you ____ it.",
+     "explanation": "Swallow can mean a small bird with a forked tail, and it can also mean to pass food down the throat."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A device that controls the flow of water",
+      "To knock gently"
+     ],
+     "length": 3,
+     "accepted": [
+      "TAP"
+     ],
+     "example": "Please ____ on the window if you need me.",
+     "explanation": "Tap can mean a device that controls the flow of water, and it can also mean to knock gently."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g9",
+   "title": "Gentle pairs 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A small clock worn on the wrist",
+      "To look at something carefully"
+     ],
+     "length": 5,
+     "accepted": [
+      "WATCH"
+     ],
+     "example": "I like to ____ the birds from my window.",
+     "explanation": "Watch can mean a clock worn on the wrist, and it can also mean to look at something carefully."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A large piece of stone",
+      "A style of loud guitar music"
+     ],
+     "length": 4,
+     "accepted": [
+      "ROCK"
+     ],
+     "example": "The band played ____ all night.",
+     "explanation": "Rock can mean a large piece of stone, and it can also mean a style of loud guitar music."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A line of carriages pulled by an engine",
+      "To practise regularly to improve at a sport"
+     ],
+     "length": 5,
+     "accepted": [
+      "TRAIN"
+     ],
+     "example": "Athletes ____ every morning before work.",
+     "explanation": "Train can mean a line of railway carriages, and it can also mean to practise regularly for a sport."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A large container for holding liquid or gas",
+      "A heavy armoured vehicle with guns"
+     ],
+     "length": 4,
+     "accepted": [
+      "TANK"
+     ],
+     "example": "The fuel ____ was nearly empty.",
+     "explanation": "Tank can mean a large container for liquid, and it can also mean an armoured fighting vehicle."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A deep hole dug to reach water",
+      "In good health"
+     ],
+     "length": 4,
+     "accepted": [
+      "WELL"
+     ],
+     "example": "I hope you feel ____ again soon.",
+     "explanation": "Well can mean a deep hole for water, and it can also mean in good health."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
+   "id": "cp-g10",
+   "title": "Gentle pairs 10",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "One of the small hard plates covering a fish",
+      "A device used for weighing things"
+     ],
+     "length": 5,
+     "accepted": [
+      "SCALE"
+     ],
+     "example": "Step on the ____ to see how heavy the parcel is.",
+     "explanation": "Scale can mean a small plate on a fish, and it can also mean a device for weighing."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A basin with taps in a kitchen",
+      "To go down below the surface of water"
+     ],
+     "length": 4,
+     "accepted": [
+      "SINK"
+     ],
+     "example": "A stone will ____ in a pond.",
+     "explanation": "Sink can mean a kitchen basin, and it can also mean to go down below the surface of water."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A sweet, sticky brown fruit from a palm",
+      "A particular day of the month"
+     ],
+     "length": 4,
+     "accepted": [
+      "DATE"
+     ],
+     "example": "What is today's ____?",
+     "explanation": "Date can mean a sweet brown fruit, and it can also mean a particular day of the month."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A thin piece of wood",
+      "To fix something with glue"
+     ],
+     "length": 5,
+     "accepted": [
+      "STICK"
+     ],
+     "example": "Use paste to ____ the picture in your book.",
+     "explanation": "Stick can mean a thin piece of wood, and it can also mean to fix something with glue."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A hard-shelled seed that you can eat",
+      "A small metal piece screwed onto a bolt"
+     ],
+     "length": 3,
+     "accepted": [
+      "NUT"
+     ],
+     "example": "Tighten the ____ with a spanner.",
+     "explanation": "Nut can mean a hard-shelled seed, and it can also mean a small metal piece that screws onto a bolt."
+    }
+   ],
+   "explanation": "Gentle cards pair two concrete, everyday meanings."
+  },
+  {
    "id": "cp-s1",
    "title": "Standard pairs 1",
    "difficulty": "standard",
@@ -761,6 +1211,606 @@
    "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
   },
   {
+   "id": "cp-s5",
+   "title": "Standard pairs 5",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A limb of the body between the shoulder and the hand",
+      "To supply with weapons"
+     ],
+     "length": 3,
+     "accepted": [
+      "ARM"
+     ],
+     "example": "The guards were told to ____ themselves.",
+     "explanation": "Arm can mean a limb of the body, and it can also mean to supply with weapons."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "To hand out the cards in a game",
+      "An agreement in business"
+     ],
+     "length": 4,
+     "accepted": [
+      "DEAL"
+     ],
+     "example": "They shook hands to seal the ____.",
+     "explanation": "Deal can mean to hand out cards, and it can also mean an agreement in business."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To walk in step like soldiers",
+      "The third month of the year"
+     ],
+     "length": 5,
+     "accepted": [
+      "MARCH"
+     ],
+     "example": "The parade will ____ down the high street.",
+     "explanation": "March can mean to walk in step, and it can also mean the third month of the year."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "One of four equal parts",
+      "A district of a town"
+     ],
+     "length": 7,
+     "accepted": [
+      "QUARTER"
+     ],
+     "example": "They live in the old ____ of the city.",
+     "explanation": "Quarter can mean one of four equal parts, and it can also mean a district of a town."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To hit hard",
+      "A refusal by workers to work"
+     ],
+     "length": 6,
+     "accepted": [
+      "STRIKE"
+     ],
+     "example": "The rail workers voted to go on ____.",
+     "explanation": "Strike can mean to hit hard, and it can also mean a refusal to work."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s6",
+   "title": "Standard pairs 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A large heavy animal with thick fur",
+      "To put up with something difficult"
+     ],
+     "length": 4,
+     "accepted": [
+      "BEAR"
+     ],
+     "example": "I cannot ____ this noise any longer.",
+     "explanation": "Bear can mean a large furry animal, and it can also mean to put up with something."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A hard, clear and sparkling gem",
+      "A red or black suit of playing cards"
+     ],
+     "length": 7,
+     "accepted": [
+      "DIAMOND"
+     ],
+     "example": "The ring held a single ____.",
+     "explanation": "Diamond can mean a hard sparkling gem, and it can also mean a suit of playing cards."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A small copy of a real thing",
+      "A person who shows off clothes"
+     ],
+     "length": 5,
+     "accepted": [
+      "MODEL"
+     ],
+     "example": "He built a ____ of the cathedral.",
+     "explanation": "Model can mean a small copy of something, and it can also mean a person who shows off clothes."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A row of mountains",
+      "A kitchen cooker with an oven and hobs"
+     ],
+     "length": 5,
+     "accepted": [
+      "RANGE"
+     ],
+     "example": "The shop sells a wide ____ of paints.",
+     "explanation": "Range can mean a row of mountains, and it can also mean a large cooker."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A piece of furniture with a flat top and legs",
+      "A list of facts or numbers set out in rows"
+     ],
+     "length": 5,
+     "accepted": [
+      "TABLE"
+     ],
+     "example": "Look at the train ____ for times.",
+     "explanation": "Table can mean a piece of furniture, and it can also mean a list of facts set out in rows."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s7",
+   "title": "Standard pairs 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A statement of money owed for goods or services",
+      "The hard front part of a bird's mouth"
+     ],
+     "length": 4,
+     "accepted": [
+      "BILL"
+     ],
+     "example": "The waiter brought the ____ to the table.",
+     "explanation": "Bill can mean a statement of money owed, and it can also mean a bird's beak."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A tool for making holes",
+      "Repeated practice of a skill or routine"
+     ],
+     "length": 5,
+     "accepted": [
+      "DRILL"
+     ],
+     "example": "The fire ____ took place on Monday.",
+     "explanation": "Drill can mean a tool for making holes, and it can also mean repeated practice of a routine."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A short message written down",
+      "A single musical sound"
+     ],
+     "length": 4,
+     "accepted": [
+      "NOTE"
+     ],
+     "example": "She held a high ____ for ten seconds.",
+     "explanation": "Note can mean a short written message, and it can also mean a single musical sound."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A flat disc played on a turntable",
+      "To write something down so it is kept"
+     ],
+     "length": 6,
+     "accepted": [
+      "RECORD"
+     ],
+     "example": "Please ____ your times in the notebook.",
+     "explanation": "Record can mean a disc played on a turntable, and it can also mean to write something down."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "To believe that someone is honest",
+      "A legal arrangement for looking after money or property"
+     ],
+     "length": 5,
+     "accepted": [
+      "TRUST"
+     ],
+     "example": "The money is held in a ____ for the children.",
+     "explanation": "Trust can mean to believe in someone, and it can also mean a legal arrangement for holding money."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s8",
+   "title": "Standard pairs 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A hard hit with a fist",
+      "To send out a strong stream of air"
+     ],
+     "length": 4,
+     "accepted": [
+      "BLOW"
+     ],
+     "example": "Make a wish and ____ out the candles.",
+     "explanation": "Blow can mean a hard hit, and it can also mean to send out a stream of air."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A business or company",
+      "Solid and not soft"
+     ],
+     "length": 4,
+     "accepted": [
+      "FIRM"
+     ],
+     "example": "The mattress felt too ____.",
+     "explanation": "Firm can mean a business, and it can also mean solid and not soft."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "One side of a sheet in a book",
+      "A young person who carries messages or serves"
+     ],
+     "length": 4,
+     "accepted": [
+      "PAGE"
+     ],
+     "example": "Turn to the next ____.",
+     "explanation": "Page can mean one sheet of a book, and it can also mean a young attendant or messenger."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The number of points in a game",
+      "The number twenty"
+     ],
+     "length": 5,
+     "accepted": [
+      "SCORE"
+     ],
+     "example": "Four ____ years make eighty.",
+     "explanation": "Score can mean the points in a game, and it can also mean twenty."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "An enclosed area beside a building",
+      "A length of three feet"
+     ],
+     "length": 4,
+     "accepted": [
+      "YARD"
+     ],
+     "example": "Cloth is sold by the ____ in some shops.",
+     "explanation": "Yard can mean an enclosed area outside a building, and it can also mean a length of three feet."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s9",
+   "title": "Standard pairs 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A flat piece of wood",
+      "To get onto a ship, train or plane"
+     ],
+     "length": 5,
+     "accepted": [
+      "BOARD"
+     ],
+     "example": "Passengers may ____ the ferry now.",
+     "explanation": "Board can mean a flat piece of wood, and it can also mean to get onto a ship or plane."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A single seed of wheat or rice",
+      "The pattern of lines in a piece of wood"
+     ],
+     "length": 5,
+     "accepted": [
+      "GRAIN"
+     ],
+     "example": "Sand the board along the ____.",
+     "explanation": "Grain can mean a seed of a cereal plant, and it can also mean the pattern of fibres in wood."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A celebration with food and games",
+      "A political group that contests elections"
+     ],
+     "length": 5,
+     "accepted": [
+      "PARTY"
+     ],
+     "example": "She joined the Green ____.",
+     "explanation": "Party can mean a celebration, and it can also mean a political group."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A small building for storing tools",
+      "To lose naturally, as a tree loses leaves"
+     ],
+     "length": 4,
+     "accepted": [
+      "SHED"
+     ],
+     "example": "Oak trees ____ their leaves in autumn.",
+     "explanation": "Shed can mean a small building for tools, and it can also mean to drop or lose naturally."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A piece of land with crops or grass",
+      "A particular area of study or work"
+     ],
+     "length": 5,
+     "accepted": [
+      "FIELD"
+     ],
+     "example": "She is an expert in her ____.",
+     "explanation": "Field can mean a piece of land with crops or grass, and it can also mean an area of study or work."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s10",
+   "title": "Standard pairs 10",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A limb growing from the trunk of a tree",
+      "A local office of a bank or shop"
+     ],
+     "length": 6,
+     "accepted": [
+      "BRANCH"
+     ],
+     "example": "The bank has a ____ on the high street.",
+     "explanation": "Branch can mean a limb of a tree, and it can also mean a local office of a larger organisation."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The part of a cup or door that you hold",
+      "To deal with a situation"
+     ],
+     "length": 6,
+     "accepted": [
+      "HANDLE"
+     ],
+     "example": "Can you ____ the problem on your own?",
+     "explanation": "Handle can mean the part you hold, and it can also mean to deal with a situation."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A route through the mountains",
+      "To hand something to someone"
+     ],
+     "length": 4,
+     "accepted": [
+      "PASS"
+     ],
+     "example": "Please ____ the salt.",
+     "explanation": "Pass can mean a route through mountains, and it can also mean to hand something over."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A fine mist of liquid drops",
+      "A small bunch of flowers"
+     ],
+     "length": 5,
+     "accepted": [
+      "SPRAY"
+     ],
+     "example": "She carried a ____ of roses.",
+     "explanation": "Spray can mean a fine mist of drops, and it can also mean a small bunch of flowers."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "The surface you walk on indoors",
+      "To knock someone to the ground"
+     ],
+     "length": 5,
+     "accepted": [
+      "FLOOR"
+     ],
+     "example": "The boxer was ready to ____ his rival.",
+     "explanation": "Floor can mean the surface you walk on indoors, and it can also mean to knock someone down."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s11",
+   "title": "Standard pairs 11",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "To split into pieces",
+      "A short rest from work"
+     ],
+     "length": 5,
+     "accepted": [
+      "BREAK"
+     ],
+     "example": "Let's have a ____ and a cup of tea.",
+     "explanation": "Break can mean to split into pieces, and it can also mean a short rest."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A sort or type",
+      "Gentle and thoughtful towards others"
+     ],
+     "length": 4,
+     "accepted": [
+      "KIND"
+     ],
+     "example": "It was ____ of you to help.",
+     "explanation": "Kind can mean a sort or type, and it can also mean gentle and considerate."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A large flat area of land",
+      "Simple, without decoration"
+     ],
+     "length": 5,
+     "accepted": [
+      "PLAIN"
+     ],
+     "example": "She wore a ____ white dress.",
+     "explanation": "Plain can mean a large flat area of land, and it can also mean simple and undecorated."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The people who work for a company",
+      "A pole or walking stick"
+     ],
+     "length": 5,
+     "accepted": [
+      "STAFF"
+     ],
+     "example": "The shepherd leaned on his ____.",
+     "explanation": "Staff can mean the people who work somewhere, and it can also mean a pole or walking stick."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "The part of the body at the end of the arm",
+      "To give something to someone"
+     ],
+     "length": 4,
+     "accepted": [
+      "HAND"
+     ],
+     "example": "Please ____ me that spanner.",
+     "explanation": "Hand can mean the part at the end of the arm, and it can also mean to give something to someone."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
+   "id": "cp-s12",
+   "title": "Standard pairs 12",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The coins you get back after paying",
+      "To make or become different"
+     ],
+     "length": 6,
+     "accepted": [
+      "CHANGE"
+     ],
+     "example": "I need to ____ my shirt before dinner.",
+     "explanation": "Change can mean coins given back, and it can also mean to make or become different."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A thick piece of wood cut from a tree",
+      "A written record of events"
+     ],
+     "length": 3,
+     "accepted": [
+      "LOG"
+     ],
+     "example": "The captain wrote it in the ship's ____.",
+     "explanation": "Log can mean a thick piece of wood, and it can also mean a written record of events."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "The storyline of a book or film",
+      "A small piece of ground for growing things"
+     ],
+     "length": 4,
+     "accepted": [
+      "PLOT"
+     ],
+     "example": "He grew leeks on his allotment ____.",
+     "explanation": "Plot can mean the storyline of a book, and it can also mean a small piece of ground."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A strong pointed post pushed into the ground",
+      "Money risked on the result of a bet"
+     ],
+     "length": 5,
+     "accepted": [
+      "STAKE"
+     ],
+     "example": "The tent was tied to a ____.",
+     "explanation": "Stake can mean a pointed post, and it can also mean money risked on a bet."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A mesh used for catching fish",
+      "What is left after all costs are taken off"
+     ],
+     "length": 3,
+     "accepted": [
+      "NET"
+     ],
+     "example": "The ____ profit was small.",
+     "explanation": "Net can mean a mesh for catching fish, and it can also mean what is left after costs are taken off."
+    }
+   ],
+   "explanation": "Standard cards pair a concrete meaning with a more abstract one, with tighter wording."
+  },
+  {
    "id": "cp-e1",
    "title": "Expert pairs 1",
    "difficulty": "expert",
@@ -1056,6 +2106,606 @@
      ],
      "example": "Whisk the ____ until it is smooth, then fry the pancakes.",
      "explanation": "To batter is to strike repeatedly, and batter is the mixture used for pancakes and fried fish."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e5",
+   "title": "Expert pairs 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A curved structure spanning an opening",
+      "Knowing or playfully mischievous"
+     ],
+     "length": 4,
+     "accepted": [
+      "ARCH"
+     ],
+     "example": "She gave him an ____ look.",
+     "explanation": "Arch can mean a curved structure over an opening, and it can also mean playfully mischievous."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A short, fast run",
+      "A small amount added to food"
+     ],
+     "length": 4,
+     "accepted": [
+      "DASH"
+     ],
+     "example": "Add a ____ of pepper.",
+     "explanation": "Dash can mean a short fast run, and it can also mean a small amount added."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A group of teams that play against each other",
+      "An old unit of distance, about three miles"
+     ],
+     "length": 6,
+     "accepted": [
+      "LEAGUE"
+     ],
+     "example": "The club finished top of the ____.",
+     "explanation": "League can mean a group of competing teams, and it can also mean an old unit of distance."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A long, narrow passage going down, such as in a mine",
+      "The long thin handle of a tool"
+     ],
+     "length": 5,
+     "accepted": [
+      "SHAFT"
+     ],
+     "example": "The lift ____ was dark.",
+     "explanation": "Shaft can mean a long narrow passage, and it can also mean the long thin handle of a tool."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A room or section of a hospital",
+      "A child under the legal care of a guardian"
+     ],
+     "length": 4,
+     "accepted": [
+      "WARD"
+     ],
+     "example": "The judge made the orphan a ____ of the court.",
+     "explanation": "Ward can mean a hospital room, and it can also mean a child under legal care."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e6",
+   "title": "Expert pairs 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A flat-bottomed boat used on canals",
+      "To push into someone roughly"
+     ],
+     "length": 5,
+     "accepted": [
+      "BARGE"
+     ],
+     "example": "Don't ____ into the queue.",
+     "explanation": "Barge can mean a flat-bottomed canal boat, and it can also mean to push roughly."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "Soft feathers on a young bird",
+      "Rolling, grassy, treeless hills"
+     ],
+     "length": 4,
+     "accepted": [
+      "DOWN"
+     ],
+     "example": "A duckling is covered in yellow ____.",
+     "explanation": "Down can mean soft feathers, and it can also mean rolling grassy hills."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A church service in some Christian traditions",
+      "A large quantity or heap"
+     ],
+     "length": 4,
+     "accepted": [
+      "MASS"
+     ],
+     "example": "A ____ of dark clouds gathered.",
+     "explanation": "Mass can mean a church service, and it can also mean a large quantity."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A grey rock that splits into thin sheets for roofs",
+      "To criticise something harshly"
+     ],
+     "length": 5,
+     "accepted": [
+      "SLATE"
+     ],
+     "example": "Critics will ____ the film.",
+     "explanation": "Slate can mean a grey roofing rock, and it can also mean to criticise harshly."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Spun thread used for knitting",
+      "A long, entertaining story"
+     ],
+     "length": 4,
+     "accepted": [
+      "YARN"
+     ],
+     "example": "The old sailor spun a ____ about pirates.",
+     "explanation": "Yarn can mean spun thread, and it can also mean a long, entertaining story."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e7",
+   "title": "Expert pairs 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A sliding bar that fastens a door",
+      "To run away suddenly"
+     ],
+     "length": 4,
+     "accepted": [
+      "BOLT"
+     ],
+     "example": "The horse took fright and tried to ____.",
+     "explanation": "Bolt can mean a sliding bar that fastens a door, and it can also mean to run away suddenly."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A barrier round a garden or field",
+      "A person who knowingly buys and sells stolen goods"
+     ],
+     "length": 5,
+     "accepted": [
+      "FENCE"
+     ],
+     "example": "The thief took the jewels to a ____.",
+     "explanation": "Fence can mean a barrier round a field, and it can also mean a dealer in stolen goods."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A piece of cloth sewn over a hole",
+      "A small plot where vegetables are grown"
+     ],
+     "length": 5,
+     "accepted": [
+      "PATCH"
+     ],
+     "example": "He dug the vegetable ____ in spring.",
+     "explanation": "Patch can mean a piece of cloth over a hole, and it can also mean a small plot of ground."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A tool with a flat blade for digging",
+      "A suit of playing cards"
+     ],
+     "length": 5,
+     "accepted": [
+      "SPADE"
+     ],
+     "example": "The ace of ____ was missing from the pack.",
+     "explanation": "Spade can mean a digging tool, and it can also mean a suit of playing cards."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "Lasting only a short time",
+      "To give someone instructions or information in advance"
+     ],
+     "length": 5,
+     "accepted": [
+      "BRIEF"
+     ],
+     "example": "The minister will ____ the press at noon.",
+     "explanation": "Brief can mean lasting a short time, and it can also mean to give instructions in advance."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e8",
+   "title": "Expert pairs 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A deep, loud echoing sound",
+      "A pole that holds the bottom edge of a sail"
+     ],
+     "length": 4,
+     "accepted": [
+      "BOOM"
+     ],
+     "example": "The sail swung round and the ____ nearly hit her.",
+     "explanation": "Boom can mean a deep loud sound, and it can also mean a pole holding the foot of a sail."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A sum of money paid as a punishment",
+      "Of very high quality"
+     ],
+     "length": 4,
+     "accepted": [
+      "FINE"
+     ],
+     "example": "He had to pay a ____ for parking there.",
+     "explanation": "Fine can mean a sum paid as punishment, and it can also mean of very high quality."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "To look hard at something",
+      "A member of the nobility"
+     ],
+     "length": 4,
+     "accepted": [
+      "PEER"
+     ],
+     "example": "She had to ____ through the mist.",
+     "explanation": "Peer can mean to look hard, and it can also mean a noble."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A table or booth for selling goods",
+      "To stop suddenly, as an engine does"
+     ],
+     "length": 5,
+     "accepted": [
+      "STALL"
+     ],
+     "example": "The old car will ____ on the hill.",
+     "explanation": "Stall can mean a booth for selling goods, and it can also mean to stop suddenly."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A disease that withers plants",
+      "Something that spoils or ruins"
+     ],
+     "length": 6,
+     "accepted": [
+      "BLIGHT"
+     ],
+     "example": "Rust is a ____ on the roses.",
+     "explanation": "Blight can mean a plant disease, and it can also mean something that spoils things."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e9",
+   "title": "Expert pairs 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A male deer or rabbit",
+      "An informal word for a dollar"
+     ],
+     "length": 4,
+     "accepted": [
+      "BUCK"
+     ],
+     "example": "He spent fifty ____ at the fair.",
+     "explanation": "Buck can mean a male deer or rabbit, and it can also mean an informal word for a dollar."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A thin sheet of metal used for wrapping food",
+      "To stop a plan from succeeding"
+     ],
+     "length": 4,
+     "accepted": [
+      "FOIL"
+     ],
+     "example": "The detectives managed to ____ the robbery.",
+     "explanation": "Foil can mean thin metal sheet, and it can also mean to prevent a plan from succeeding."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A bar for a bird to rest on",
+      "A freshwater fish with spiny fins"
+     ],
+     "length": 5,
+     "accepted": [
+      "PERCH"
+     ],
+     "example": "The parrot flew up to its ____.",
+     "explanation": "Perch can mean a bar for a bird to rest on, and it can also mean a spiny freshwater fish."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "The goods a shop has for sale",
+      "A flavoured liquid used as a base for soups"
+     ],
+     "length": 5,
+     "accepted": [
+      "STOCK"
+     ],
+     "example": "She made chicken ____ from the bones.",
+     "explanation": "Stock can mean the goods a shop holds, and it can also mean a liquid base for soup."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "An enthusiast, such as a film fan",
+      "A pale yellow-brown colour"
+     ],
+     "length": 4,
+     "accepted": [
+      "BUFF"
+     ],
+     "example": "He is a real history ____.",
+     "explanation": "Buff can mean an enthusiast, and it can also mean a pale yellow-brown colour."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e10",
+   "title": "Expert pairs 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A small fastener for holding papers together",
+      "A short extract from a film"
+     ],
+     "length": 4,
+     "accepted": [
+      "CLIP"
+     ],
+     "example": "He watched a ____ of the match online.",
+     "explanation": "Clip can mean a small fastener, and it can also mean a short extract from a film."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A printed paper with spaces to fill in",
+      "A class of pupils in a school"
+     ],
+     "length": 4,
+     "accepted": [
+      "FORM"
+     ],
+     "example": "She is in the sixth ____ at school.",
+     "explanation": "Form can mean a printed paper to fill in, and it can also mean a school class."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A long thin rounded piece of wood or metal",
+      "Either end of the Earth's axis"
+     ],
+     "length": 4,
+     "accepted": [
+      "POLE"
+     ],
+     "example": "Explorers hoped to reach the South ____.",
+     "explanation": "Pole can mean a long thin rounded piece, and it can also mean an end of the Earth's axis."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A short journey",
+      "To catch your foot and stumble"
+     ],
+     "length": 4,
+     "accepted": [
+      "TRIP"
+     ],
+     "example": "Mind you don't ____ on the step.",
+     "explanation": "Trip can mean a short journey, and it can also mean to stumble."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A glass container with a wide mouth",
+      "To jolt or shake suddenly"
+     ],
+     "length": 3,
+     "accepted": [
+      "JAR"
+     ],
+     "example": "The noise made him ____ in his seat.",
+     "explanation": "Jar can mean a wide-mouthed glass container, and it can also mean to jolt or shake."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e11",
+   "title": "Expert pairs 11",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "The part of a shirt that goes round the neck",
+      "To catch or arrest someone"
+     ],
+     "length": 6,
+     "accepted": [
+      "COLLAR"
+     ],
+     "example": "The police managed to ____ the thief.",
+     "explanation": "Collar can mean the neck part of a shirt, and it can also mean to catch or arrest."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "A metal frame that holds the fire in a fireplace",
+      "To shred food into small pieces"
+     ],
+     "length": 5,
+     "accepted": [
+      "GRATE"
+     ],
+     "example": "____ the cheese onto the pasta.",
+     "explanation": "Grate can mean a metal frame for a fire, and it can also mean to shred food."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "The noise a duck makes",
+      "A person who falsely claims to be a doctor"
+     ],
+     "length": 5,
+     "accepted": [
+      "QUACK"
+     ],
+     "example": "The fraud was just a ____.",
+     "explanation": "Quack can mean the noise a duck makes, and it can also mean a person who falsely claims medical skill."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A machine in a shop that holds the takings",
+      "To plough and prepare land for crops"
+     ],
+     "length": 4,
+     "accepted": [
+      "TILL"
+     ],
+     "example": "Farmers ____ the fields before sowing.",
+     "explanation": "Till can mean a shop's cash machine, and it can also mean to plough land."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A thin coating on a surface",
+      "A story shown as moving pictures"
+     ],
+     "length": 4,
+     "accepted": [
+      "FILM"
+     ],
+     "example": "A ____ of oil floated on the puddle.",
+     "explanation": "Film can mean a thin coating, and it can also mean a story shown as moving pictures."
+    }
+   ],
+   "explanation": "Expert cards use less obvious, established senses and restrained misdirection."
+  },
+  {
+   "id": "cp-e12",
+   "title": "Expert pairs 12",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "cards": [
+    {
+     "id": "a",
+     "clues": [
+      "A place where trials are held",
+      "To try to win someone's love"
+     ],
+     "length": 5,
+     "accepted": [
+      "COURT"
+     ],
+     "example": "He used to ____ her with flowers.",
+     "explanation": "Court can mean a place where trials are held, and it can also mean to try to win someone's love."
+    },
+    {
+     "id": "b",
+     "clues": [
+      "The space below deck where a ship's cargo is kept",
+      "To grasp firmly"
+     ],
+     "length": 4,
+     "accepted": [
+      "HOLD"
+     ],
+     "example": "Please ____ my bag while I tie my shoe.",
+     "explanation": "Hold can mean a ship's cargo space, and it can also mean to grasp firmly."
+    },
+    {
+     "id": "c",
+     "clues": [
+      "A group of words that makes a complete statement",
+      "The punishment given to someone found guilty"
+     ],
+     "length": 8,
+     "accepted": [
+      "SENTENCE"
+     ],
+     "example": "The judge passed a ____ of two years.",
+     "explanation": "Sentence can mean a group of words with a full meaning, and it can also mean a punishment passed by a judge."
+    },
+    {
+     "id": "d",
+     "clues": [
+      "A ship or large boat",
+      "A tube that carries blood around the body"
+     ],
+     "length": 6,
+     "accepted": [
+      "VESSEL"
+     ],
+     "example": "A blood ____ burst in his eye.",
+     "explanation": "Vessel can mean a ship or boat, and it can also mean a tube carrying blood."
+    },
+    {
+     "id": "e",
+     "clues": [
+      "A jacket and trousers made from the same cloth",
+      "To be convenient or appropriate for someone"
+     ],
+     "length": 4,
+     "accepted": [
+      "SUIT"
+     ],
+     "example": "Blue will ____ you.",
+     "explanation": "Suit can mean a matching jacket and trousers, and it can also mean to be right for someone."
     }
    ],
    "explanation": "Expert cards use less obvious, established senses and restrained misdirection."

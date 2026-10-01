@@ -54,6 +54,13 @@ export function validateContent(): string[] {
     const spoil = answers.some((a) => (meta.title ?? "").toUpperCase().includes(a) || meta.id.toUpperCase().includes(a));
     if (spoil) problems.push(`${meta.id}: id/title may spoil an answer`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 ${d} rounds`);
+  const owner = new Map<string, string>();
+  for (const { meta, payload: p } of rounds)
+    for (const c of p.cards) {
+      const a = c.accepted[0];
+      if (owner.has(a)) problems.push(`${meta.id}: answer ${a} is already used in ${owner.get(a)}`);
+      else owner.set(a, meta.id);
+    }
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
   return problems;
 }
