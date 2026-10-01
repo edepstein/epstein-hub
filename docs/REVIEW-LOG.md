@@ -25,6 +25,7 @@ Grouped by area; each game appends its own section.
 - [ ] Demo rounds are played with full membership (not the finite fixture lexicon) so reasonable words are not rejected; fixture lexicons are kept as regression data (maximumScore reproduced in tests).
 - [ ] Hints reveal words from the curated list only; there are no authored definitions yet (brief mentions a definition tier). Recommend adding editor-written short definitions per target.
 - [ ] Shuffle uses a client-time seed; the resulting order is stored in the action, so replay is exact.
+- [ ] Expansion wave (2026-10-01): added lw-g11..g16, lw-s8..s13, lw-e11..e16 (16 per difficulty incl. demos). Fresh nine-letter answers (no repeats, no repeated letter sets). Targets = membership AND size-35 familiar words minus an extra blocklist (IKON, IKONS, BANI, TOGAE, OCTAL, RICED, RICES, VICED, SIRED, VISED, DICES, CHICER, ROBING, BONIER, COOS, MOOS, SPITING, SOLOS, LAMING, SACS, FOWLED, WOLFED, LACIER, ACUTER, LOWED, CUTER, UNDERFLOW). CATALOGUE also lists COAGULATE as a second nine-letter answer. Expert lw-e13..e16 sit near the 20-target floor; an editor may prefer richer lists. Kept but worth a look: CACTI, GAOL, ANON, CLARET.
 
 ## Hexabble
 - [ ] Publication permission for the Hexabble name, board/premium layout and the supplied source code is unconfirmed; the originating rules PDF is not in the pack. `productionEnabled` stays false.
