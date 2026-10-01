@@ -2218,6 +2218,1564 @@
         "minimumAdjacentSwaps": 9,
         "explanation": "WHAT CANNOT BE CURED MUST BE ENDURED repeats BE; the two BE tiles are interchangeable."
       }
+    },
+    {
+      "id": "pr-m1",
+      "title": "Master phrase 1",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Hamlet's dilemma, opening a famous soliloquy",
+        "enumeration": [
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          4,
+          2,
+          3,
+          8
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THE"
+          },
+          {
+            "id": "t2",
+            "text": "IS"
+          },
+          {
+            "id": "t3",
+            "text": "BE"
+          },
+          {
+            "id": "t4",
+            "text": "NOT"
+          },
+          {
+            "id": "t5",
+            "text": "THAT"
+          },
+          {
+            "id": "t6",
+            "text": "OR"
+          },
+          {
+            "id": "t7",
+            "text": "BE"
+          },
+          {
+            "id": "t8",
+            "text": "QUESTION"
+          },
+          {
+            "id": "t9",
+            "text": "TO"
+          },
+          {
+            "id": "t10",
+            "text": "TO"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "TO",
+            "BE",
+            "OR",
+            "NOT",
+            "TO",
+            "BE",
+            "THAT",
+            "IS",
+            "THE",
+            "QUESTION"
+          ]
+        ],
+        "minimumAdjacentSwaps": 27,
+        "explanation": "TO BE OR NOT TO BE THAT IS THE QUESTION: repeated words (BE, TO) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m2",
+      "title": "Master phrase 2",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Dickens on the age of the French Revolution",
+        "enumeration": [
+          2,
+          3,
+          3,
+          4,
+          2,
+          5,
+          2,
+          3,
+          3,
+          5,
+          2,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THE"
+          },
+          {
+            "id": "t2",
+            "text": "TIMES"
+          },
+          {
+            "id": "t3",
+            "text": "THE"
+          },
+          {
+            "id": "t4",
+            "text": "BEST"
+          },
+          {
+            "id": "t5",
+            "text": "TIMES"
+          },
+          {
+            "id": "t6",
+            "text": "WORST"
+          },
+          {
+            "id": "t7",
+            "text": "IT"
+          },
+          {
+            "id": "t8",
+            "text": "OF"
+          },
+          {
+            "id": "t9",
+            "text": "IT"
+          },
+          {
+            "id": "t10",
+            "text": "OF"
+          },
+          {
+            "id": "t11",
+            "text": "WAS"
+          },
+          {
+            "id": "t12",
+            "text": "WAS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "IT",
+            "WAS",
+            "THE",
+            "BEST",
+            "OF",
+            "TIMES",
+            "IT",
+            "WAS",
+            "THE",
+            "WORST",
+            "OF",
+            "TIMES"
+          ]
+        ],
+        "minimumAdjacentSwaps": 30,
+        "explanation": "IT WAS THE BEST OF TIMES IT WAS THE WORST OF TIMES: repeated words (IT, OF, THE, TIMES, WAS) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m3",
+      "title": "Master phrase 3",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Other people's lot always looks more attractive",
+        "enumeration": [
+          3,
+          5,
+          2,
+          6,
+          7,
+          2,
+          3,
+          5,
+          4,
+          2,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "ON"
+          },
+          {
+            "id": "t2",
+            "text": "SIDE"
+          },
+          {
+            "id": "t3",
+            "text": "GRASS"
+          },
+          {
+            "id": "t4",
+            "text": "THE"
+          },
+          {
+            "id": "t5",
+            "text": "OF"
+          },
+          {
+            "id": "t6",
+            "text": "OTHER"
+          },
+          {
+            "id": "t7",
+            "text": "FENCE"
+          },
+          {
+            "id": "t8",
+            "text": "THE"
+          },
+          {
+            "id": "t9",
+            "text": "IS"
+          },
+          {
+            "id": "t10",
+            "text": "ALWAYS"
+          },
+          {
+            "id": "t11",
+            "text": "GREENER"
+          },
+          {
+            "id": "t12",
+            "text": "THE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "GRASS",
+            "IS",
+            "ALWAYS",
+            "GREENER",
+            "ON",
+            "THE",
+            "OTHER",
+            "SIDE",
+            "OF",
+            "THE",
+            "FENCE"
+          ]
+        ],
+        "minimumAdjacentSwaps": 30,
+        "explanation": "THE GRASS IS ALWAYS GREENER ON THE OTHER SIDE OF THE FENCE: repeated words (THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m4",
+      "title": "Master phrase 4",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "The farmyard commandment as amended by the pigs",
+        "enumeration": [
+          3,
+          7,
+          3,
+          5,
+          3,
+          4,
+          7,
+          3,
+          4,
+          5,
+          4,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "EQUAL"
+          },
+          {
+            "id": "t2",
+            "text": "ANIMALS"
+          },
+          {
+            "id": "t3",
+            "text": "MORE"
+          },
+          {
+            "id": "t4",
+            "text": "THAN"
+          },
+          {
+            "id": "t5",
+            "text": "ALL"
+          },
+          {
+            "id": "t6",
+            "text": "ARE"
+          },
+          {
+            "id": "t7",
+            "text": "OTHERS"
+          },
+          {
+            "id": "t8",
+            "text": "EQUAL"
+          },
+          {
+            "id": "t9",
+            "text": "ANIMALS"
+          },
+          {
+            "id": "t10",
+            "text": "ARE"
+          },
+          {
+            "id": "t11",
+            "text": "SOME"
+          },
+          {
+            "id": "t12",
+            "text": "BUT"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ALL",
+            "ANIMALS",
+            "ARE",
+            "EQUAL",
+            "BUT",
+            "SOME",
+            "ANIMALS",
+            "ARE",
+            "MORE",
+            "EQUAL",
+            "THAN",
+            "OTHERS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 31,
+        "explanation": "ALL ANIMALS ARE EQUAL BUT SOME ANIMALS ARE MORE EQUAL THAN OTHERS: repeated words (ANIMALS, ARE, EQUAL) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m5",
+      "title": "Master phrase 5",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Counting-out rhyme that foretells a husband's trade",
+        "enumeration": [
+          6,
+          6,
+          7,
+          6,
+          4,
+          3,
+          4,
+          3,
+          6,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SAILOR"
+          },
+          {
+            "id": "t2",
+            "text": "RICH"
+          },
+          {
+            "id": "t3",
+            "text": "THIEF"
+          },
+          {
+            "id": "t4",
+            "text": "TINKER"
+          },
+          {
+            "id": "t5",
+            "text": "MAN"
+          },
+          {
+            "id": "t6",
+            "text": "MAN"
+          },
+          {
+            "id": "t7",
+            "text": "POOR"
+          },
+          {
+            "id": "t8",
+            "text": "MAN"
+          },
+          {
+            "id": "t9",
+            "text": "BEGGAR"
+          },
+          {
+            "id": "t10",
+            "text": "TAILOR"
+          },
+          {
+            "id": "t11",
+            "text": "SOLDIER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "TINKER",
+            "TAILOR",
+            "SOLDIER",
+            "SAILOR",
+            "RICH",
+            "MAN",
+            "POOR",
+            "MAN",
+            "BEGGAR",
+            "MAN",
+            "THIEF"
+          ]
+        ],
+        "minimumAdjacentSwaps": 26,
+        "explanation": "TINKER TAILOR SOLDIER SAILOR RICH MAN POOR MAN BEGGAR MAN THIEF: repeated words (MAN) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m6",
+      "title": "Master phrase 6",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Persistence, urged twice over for emphasis",
+        "enumeration": [
+          2,
+          2,
+          5,
+          3,
+          2,
+          3,
+          7,
+          3,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "AGAIN"
+          },
+          {
+            "id": "t2",
+            "text": "IF"
+          },
+          {
+            "id": "t3",
+            "text": "TRY"
+          },
+          {
+            "id": "t4",
+            "text": "SUCCEED"
+          },
+          {
+            "id": "t5",
+            "text": "TRY"
+          },
+          {
+            "id": "t6",
+            "text": "AT"
+          },
+          {
+            "id": "t7",
+            "text": "FIRST"
+          },
+          {
+            "id": "t8",
+            "text": "NOT"
+          },
+          {
+            "id": "t9",
+            "text": "DO"
+          },
+          {
+            "id": "t10",
+            "text": "YOU"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "IF",
+            "AT",
+            "FIRST",
+            "YOU",
+            "DO",
+            "NOT",
+            "SUCCEED",
+            "TRY",
+            "TRY",
+            "AGAIN"
+          ]
+        ],
+        "minimumAdjacentSwaps": 28,
+        "explanation": "IF AT FIRST YOU DO NOT SUCCEED TRY TRY AGAIN: repeated words (TRY) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m7",
+      "title": "Master phrase 7",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "The three wise monkeys' maxim",
+        "enumeration": [
+          3,
+          2,
+          4,
+          4,
+          2,
+          4,
+          5,
+          2,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "EVIL"
+          },
+          {
+            "id": "t2",
+            "text": "EVIL"
+          },
+          {
+            "id": "t3",
+            "text": "NO"
+          },
+          {
+            "id": "t4",
+            "text": "EVIL"
+          },
+          {
+            "id": "t5",
+            "text": "NO"
+          },
+          {
+            "id": "t6",
+            "text": "SPEAK"
+          },
+          {
+            "id": "t7",
+            "text": "HEAR"
+          },
+          {
+            "id": "t8",
+            "text": "SEE"
+          },
+          {
+            "id": "t9",
+            "text": "NO"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "SEE",
+            "NO",
+            "EVIL",
+            "HEAR",
+            "NO",
+            "EVIL",
+            "SPEAK",
+            "NO",
+            "EVIL"
+          ]
+        ],
+        "minimumAdjacentSwaps": 17,
+        "explanation": "SEE NO EVIL HEAR NO EVIL SPEAK NO EVIL: repeated words (EVIL, NO) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m8",
+      "title": "Master phrase 8",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Plus ca change, rendered in English",
+        "enumeration": [
+          3,
+          4,
+          6,
+          6,
+          3,
+          4,
+          4,
+          4,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THEY"
+          },
+          {
+            "id": "t2",
+            "text": "STAY"
+          },
+          {
+            "id": "t3",
+            "text": "CHANGE"
+          },
+          {
+            "id": "t4",
+            "text": "MORE"
+          },
+          {
+            "id": "t5",
+            "text": "SAME"
+          },
+          {
+            "id": "t6",
+            "text": "THE"
+          },
+          {
+            "id": "t7",
+            "text": "THE"
+          },
+          {
+            "id": "t8",
+            "text": "MORE"
+          },
+          {
+            "id": "t9",
+            "text": "THINGS"
+          },
+          {
+            "id": "t10",
+            "text": "THE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "MORE",
+            "THINGS",
+            "CHANGE",
+            "THE",
+            "MORE",
+            "THEY",
+            "STAY",
+            "THE",
+            "SAME"
+          ]
+        ],
+        "minimumAdjacentSwaps": 23,
+        "explanation": "THE MORE THINGS CHANGE THE MORE THEY STAY THE SAME: repeated words (MORE, THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m9",
+      "title": "Master phrase 9",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Hard times call for the hardy",
+        "enumeration": [
+          4,
+          3,
+          5,
+          4,
+          5,
+          3,
+          5,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "GOING"
+          },
+          {
+            "id": "t2",
+            "text": "TOUGH"
+          },
+          {
+            "id": "t3",
+            "text": "GETS"
+          },
+          {
+            "id": "t4",
+            "text": "GET"
+          },
+          {
+            "id": "t5",
+            "text": "TOUGH"
+          },
+          {
+            "id": "t6",
+            "text": "THE"
+          },
+          {
+            "id": "t7",
+            "text": "GOING"
+          },
+          {
+            "id": "t8",
+            "text": "WHEN"
+          },
+          {
+            "id": "t9",
+            "text": "THE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHEN",
+            "THE",
+            "GOING",
+            "GETS",
+            "TOUGH",
+            "THE",
+            "TOUGH",
+            "GET",
+            "GOING"
+          ]
+        ],
+        "minimumAdjacentSwaps": 17,
+        "explanation": "WHEN THE GOING GETS TOUGH THE TOUGH GET GOING: repeated words (GOING, THE, TOUGH) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m10",
+      "title": "Master phrase 10",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Ancient saying about how great undertakings begin",
+        "enumeration": [
+          1,
+          7,
+          2,
+          1,
+          8,
+          5,
+          6,
+          4,
+          1,
+          6,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SINGLE"
+          },
+          {
+            "id": "t2",
+            "text": "WITH"
+          },
+          {
+            "id": "t3",
+            "text": "THOUSAND"
+          },
+          {
+            "id": "t4",
+            "text": "A"
+          },
+          {
+            "id": "t5",
+            "text": "MILES"
+          },
+          {
+            "id": "t6",
+            "text": "OF"
+          },
+          {
+            "id": "t7",
+            "text": "A"
+          },
+          {
+            "id": "t8",
+            "text": "STEP"
+          },
+          {
+            "id": "t9",
+            "text": "BEGINS"
+          },
+          {
+            "id": "t10",
+            "text": "JOURNEY"
+          },
+          {
+            "id": "t11",
+            "text": "A"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "JOURNEY",
+            "OF",
+            "A",
+            "THOUSAND",
+            "MILES",
+            "BEGINS",
+            "WITH",
+            "A",
+            "SINGLE",
+            "STEP"
+          ]
+        ],
+        "minimumAdjacentSwaps": 29,
+        "explanation": "A JOURNEY OF A THOUSAND MILES BEGINS WITH A SINGLE STEP: repeated words (A) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m11",
+      "title": "Master phrase 11",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Determination always finds a route",
+        "enumeration": [
+          5,
+          5,
+          2,
+          1,
+          4,
+          5,
+          2,
+          1,
+          3
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "WILL"
+          },
+          {
+            "id": "t2",
+            "text": "IS"
+          },
+          {
+            "id": "t3",
+            "text": "THERE"
+          },
+          {
+            "id": "t4",
+            "text": "IS"
+          },
+          {
+            "id": "t5",
+            "text": "WAY"
+          },
+          {
+            "id": "t6",
+            "text": "A"
+          },
+          {
+            "id": "t7",
+            "text": "A"
+          },
+          {
+            "id": "t8",
+            "text": "WHERE"
+          },
+          {
+            "id": "t9",
+            "text": "THERE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHERE",
+            "THERE",
+            "IS",
+            "A",
+            "WILL",
+            "THERE",
+            "IS",
+            "A",
+            "WAY"
+          ]
+        ],
+        "minimumAdjacentSwaps": 17,
+        "explanation": "WHERE THERE IS A WILL THERE IS A WAY: repeated words (A, IS, THERE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m12",
+      "title": "Master phrase 12",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Judge the dish only by the eating of it",
+        "enumeration": [
+          3,
+          5,
+          2,
+          3,
+          7,
+          2,
+          2,
+          3,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "IS"
+          },
+          {
+            "id": "t2",
+            "text": "PROOF"
+          },
+          {
+            "id": "t3",
+            "text": "EATING"
+          },
+          {
+            "id": "t4",
+            "text": "THE"
+          },
+          {
+            "id": "t5",
+            "text": "THE"
+          },
+          {
+            "id": "t6",
+            "text": "IN"
+          },
+          {
+            "id": "t7",
+            "text": "THE"
+          },
+          {
+            "id": "t8",
+            "text": "PUDDING"
+          },
+          {
+            "id": "t9",
+            "text": "OF"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "PROOF",
+            "OF",
+            "THE",
+            "PUDDING",
+            "IS",
+            "IN",
+            "THE",
+            "EATING"
+          ]
+        ],
+        "minimumAdjacentSwaps": 18,
+        "explanation": "THE PROOF OF THE PUDDING IS IN THE EATING: repeated words (THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m13",
+      "title": "Master phrase 13",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Revenge in kind leaves everybody sightless",
+        "enumeration": [
+          2,
+          3,
+          3,
+          2,
+          3,
+          5,
+          3,
+          5,
+          5,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "EYE"
+          },
+          {
+            "id": "t2",
+            "text": "EYE"
+          },
+          {
+            "id": "t3",
+            "text": "WORLD"
+          },
+          {
+            "id": "t4",
+            "text": "WHOLE"
+          },
+          {
+            "id": "t5",
+            "text": "AN"
+          },
+          {
+            "id": "t6",
+            "text": "BLIND"
+          },
+          {
+            "id": "t7",
+            "text": "FOR"
+          },
+          {
+            "id": "t8",
+            "text": "THE"
+          },
+          {
+            "id": "t9",
+            "text": "MAKES"
+          },
+          {
+            "id": "t10",
+            "text": "AN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "AN",
+            "EYE",
+            "FOR",
+            "AN",
+            "EYE",
+            "MAKES",
+            "THE",
+            "WHOLE",
+            "WORLD",
+            "BLIND"
+          ]
+        ],
+        "minimumAdjacentSwaps": 22,
+        "explanation": "AN EYE FOR AN EYE MAKES THE WHOLE WORLD BLIND: repeated words (AN, EYE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-m14",
+      "title": "Master phrase 14",
+      "difficulty": "master",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Hold on to what you have rather than chase two",
+        "enumeration": [
+          1,
+          4,
+          2,
+          3,
+          4,
+          2,
+          5,
+          3,
+          2,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "BUSH"
+          },
+          {
+            "id": "t2",
+            "text": "TWO"
+          },
+          {
+            "id": "t3",
+            "text": "IN"
+          },
+          {
+            "id": "t4",
+            "text": "THE"
+          },
+          {
+            "id": "t5",
+            "text": "HAND"
+          },
+          {
+            "id": "t6",
+            "text": "IN"
+          },
+          {
+            "id": "t7",
+            "text": "IS"
+          },
+          {
+            "id": "t8",
+            "text": "THE"
+          },
+          {
+            "id": "t9",
+            "text": "WORTH"
+          },
+          {
+            "id": "t10",
+            "text": "BIRD"
+          },
+          {
+            "id": "t11",
+            "text": "A"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "BIRD",
+            "IN",
+            "THE",
+            "HAND",
+            "IS",
+            "WORTH",
+            "TWO",
+            "IN",
+            "THE",
+            "BUSH"
+          ]
+        ],
+        "minimumAdjacentSwaps": 35,
+        "explanation": "A BIRD IN THE HAND IS WORTH TWO IN THE BUSH: repeated words (IN, THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-e15",
+      "title": "Expert phrase 15",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Wise people avoid places where the reckless go",
+        "enumeration": [
+          5,
+          4,
+          2,
+          5,
+          6,
+          4,
+          2,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "RUSH"
+          },
+          {
+            "id": "t2",
+            "text": "TO"
+          },
+          {
+            "id": "t3",
+            "text": "IN"
+          },
+          {
+            "id": "t4",
+            "text": "TREAD"
+          },
+          {
+            "id": "t5",
+            "text": "FEAR"
+          },
+          {
+            "id": "t6",
+            "text": "WHERE"
+          },
+          {
+            "id": "t7",
+            "text": "ANGELS"
+          },
+          {
+            "id": "t8",
+            "text": "FOOLS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "FOOLS",
+            "RUSH",
+            "IN",
+            "WHERE",
+            "ANGELS",
+            "FEAR",
+            "TO",
+            "TREAD"
+          ]
+        ],
+        "minimumAdjacentSwaps": 16,
+        "explanation": "FOOLS RUSH IN WHERE ANGELS FEAR TO TREAD: no repeated words."
+      }
+    },
+    {
+      "id": "pr-e16",
+      "title": "Expert phrase 16",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Attractiveness is a matter of personal taste",
+        "enumeration": [
+          6,
+          2,
+          2,
+          3,
+          3,
+          2,
+          3,
+          8
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "EYE"
+          },
+          {
+            "id": "t2",
+            "text": "BEHOLDER"
+          },
+          {
+            "id": "t3",
+            "text": "IS"
+          },
+          {
+            "id": "t4",
+            "text": "THE"
+          },
+          {
+            "id": "t5",
+            "text": "BEAUTY"
+          },
+          {
+            "id": "t6",
+            "text": "THE"
+          },
+          {
+            "id": "t7",
+            "text": "OF"
+          },
+          {
+            "id": "t8",
+            "text": "IN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "BEAUTY",
+            "IS",
+            "IN",
+            "THE",
+            "EYE",
+            "OF",
+            "THE",
+            "BEHOLDER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 16,
+        "explanation": "BEAUTY IS IN THE EYE OF THE BEHOLDER: repeated words (THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-e17",
+      "title": "Expert phrase 17",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Do not criticise a present you have been given",
+        "enumeration": [
+          5,
+          4,
+          1,
+          4,
+          5,
+          2,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "LOOK"
+          },
+          {
+            "id": "t2",
+            "text": "HORSE"
+          },
+          {
+            "id": "t3",
+            "text": "GIFT"
+          },
+          {
+            "id": "t4",
+            "text": "MOUTH"
+          },
+          {
+            "id": "t5",
+            "text": "A"
+          },
+          {
+            "id": "t6",
+            "text": "THE"
+          },
+          {
+            "id": "t7",
+            "text": "NEVER"
+          },
+          {
+            "id": "t8",
+            "text": "IN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "NEVER",
+            "LOOK",
+            "A",
+            "GIFT",
+            "HORSE",
+            "IN",
+            "THE",
+            "MOUTH"
+          ]
+        ],
+        "minimumAdjacentSwaps": 13,
+        "explanation": "NEVER LOOK A GIFT HORSE IN THE MOUTH: no repeated words."
+      }
+    },
+    {
+      "id": "pr-e18",
+      "title": "Expert phrase 18",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Stay near those you trust, and nearer those you do not",
+        "enumeration": [
+          4,
+          4,
+          7,
+          5,
+          3,
+          4,
+          7,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "FRIENDS"
+          },
+          {
+            "id": "t2",
+            "text": "CLOSER"
+          },
+          {
+            "id": "t3",
+            "text": "YOUR"
+          },
+          {
+            "id": "t4",
+            "text": "CLOSE"
+          },
+          {
+            "id": "t5",
+            "text": "YOUR"
+          },
+          {
+            "id": "t6",
+            "text": "ENEMIES"
+          },
+          {
+            "id": "t7",
+            "text": "KEEP"
+          },
+          {
+            "id": "t8",
+            "text": "AND"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "KEEP",
+            "YOUR",
+            "FRIENDS",
+            "CLOSE",
+            "AND",
+            "YOUR",
+            "ENEMIES",
+            "CLOSER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 14,
+        "explanation": "KEEP YOUR FRIENDS CLOSE AND YOUR ENEMIES CLOSER: repeated words (YOUR) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-e19",
+      "title": "Expert phrase 19",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "The larger the opponent, the more painful the defeat",
+        "enumeration": [
+          3,
+          6,
+          4,
+          3,
+          3,
+          6,
+          4,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THEY"
+          },
+          {
+            "id": "t2",
+            "text": "FALL"
+          },
+          {
+            "id": "t3",
+            "text": "THE"
+          },
+          {
+            "id": "t4",
+            "text": "HARDER"
+          },
+          {
+            "id": "t5",
+            "text": "THE"
+          },
+          {
+            "id": "t6",
+            "text": "THEY"
+          },
+          {
+            "id": "t7",
+            "text": "ARE"
+          },
+          {
+            "id": "t8",
+            "text": "BIGGER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "BIGGER",
+            "THEY",
+            "ARE",
+            "THE",
+            "HARDER",
+            "THEY",
+            "FALL"
+          ]
+        ],
+        "minimumAdjacentSwaps": 16,
+        "explanation": "THE BIGGER THEY ARE THE HARDER THEY FALL: repeated words (THE, THEY) are interchangeable tiles, matched in order when the minimum is counted."
+      }
+    },
+    {
+      "id": "pr-e20",
+      "title": "Expert phrase 20",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Too much detail hides the whole picture",
+        "enumeration": [
+          3,
+          6,
+          3,
+          3,
+          4,
+          3,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "FOR"
+          },
+          {
+            "id": "t2",
+            "text": "THE"
+          },
+          {
+            "id": "t3",
+            "text": "CANNOT"
+          },
+          {
+            "id": "t4",
+            "text": "SEE"
+          },
+          {
+            "id": "t5",
+            "text": "YOU"
+          },
+          {
+            "id": "t6",
+            "text": "TREES"
+          },
+          {
+            "id": "t7",
+            "text": "THE"
+          },
+          {
+            "id": "t8",
+            "text": "WOOD"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "YOU",
+            "CANNOT",
+            "SEE",
+            "THE",
+            "WOOD",
+            "FOR",
+            "THE",
+            "TREES"
+          ]
+        ],
+        "minimumAdjacentSwaps": 13,
+        "explanation": "YOU CANNOT SEE THE WOOD FOR THE TREES: repeated words (THE) are interchangeable tiles, matched in order when the minimum is counted."
+      }
     }
   ]
 }

@@ -211,10 +211,35 @@ describe("Phrase Repair content", () => {
     }
   });
 
-  it("has at least fourteen rounds per difficulty, with repeated tokens at expert", () => {
-    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
+  it("has the target number of rounds per difficulty, with repeated tokens at expert", () => {
+    const min: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+    for (const d of Object.keys(min)) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(min[d]);
     const expertWithDuplicates = rounds.filter((r) => r.meta.difficulty === "expert" && new Set(r.payload.tokens.map((t) => t.text)).size < r.payload.tokens.length);
     expect(expertWithDuplicates.length).toBeGreaterThanOrEqual(4);
+  });
+
+  it("Master phrases have 8 to 12 words, repeat a word, and the near-miss order of a saying is not accepted", () => {
+    for (const r of rounds.filter((x) => x.meta.difficulty === "master")) {
+      expect(r.payload.tokens.length, r.meta.id).toBeGreaterThanOrEqual(8);
+      expect(r.payload.tokens.length, r.meta.id).toBeLessThanOrEqual(12);
+      expect(new Set(r.payload.tokens.map((t) => t.text)).size, r.meta.id).toBeLessThan(r.payload.tokens.length);
+    }
+    const p = bundle("pr-m1").payload;
+    expect(p.acceptedTargets).toHaveLength(1);
+    const near = "TO BE OR NOT TO BE IS THAT THE QUESTION".split(" ");
+    expect(minSwaps(near, p.acceptedTargets[0])).toBe(1);
+    expect(p.acceptedTargets.some((t) => t.join(" ") === near.join(" "))).toBe(false);
+  });
+
+  it("Master validation enforces the word range and a repeated word", () => {
+    const m = (mut: (p: PhrasePayload) => void) => {
+      const p = structuredClone(bundle("pr-m9").payload);
+      mut(p);
+      return checkPhraseRound({ id: "x", status: "practice", title: "t" }, p, membership, "master").join(" ");
+    };
+    expect(m(() => {})).toBe("");
+    expect(checkPhraseRound({ id: "x", status: "practice", title: "t" }, structuredClone(bundle("pr-e15").payload), membership, "master").join(" ")).toContain("repeat at least one word");
+    expect(checkPhraseRound({ id: "x", status: "practice", title: "t" }, structuredClone(bundle("pr-g1").payload), membership, "master").join(" ")).toContain("at least eight words");
   });
 
   const broken = (mut: (p: PhrasePayload) => void) => {

@@ -54,6 +54,7 @@ export const definition: GameDefinition = {
           "Gentle: short phrases of three to five words with direct clues.",
           "Standard: proverbs of four to six words with less direct clues.",
           "Expert: up to eight words with repeated words and fewer obvious anchors; one phrase accepts either of its two common orders.",
+          "Master: eight to twelve words, always with repeated words, taken from proverbs, idioms and well-known quotations. Only the exact wording is accepted, plus any order the round says is also in common use; a plausible rearrangement that is not the real saying will not count. Long boards can take many swaps, and the minimum is still worked out exactly.",
           "Each difficulty is a different set of phrases. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

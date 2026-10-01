@@ -4,21 +4,31 @@ import { rounds } from "./rounds";
 import { bfsMinSwaps, minSwaps, type PhrasePayload } from "./engine";
 
 const MAX_TOKENS = 8;
+const MASTER_MAX_TOKENS = 12;
+/** Exhaustive search is only run when the board has at most this many distinct orderings. */
+const BFS_STATE_LIMIT = 2_500_000;
+const factorial = (n: number): number => (n <= 1 ? 1 : n * factorial(n - 1));
 
 /**
  * Semantic checks for one Phrase Repair round (docs/04: token identity and minimum swap computation,
  * including duplicates): unique tile ids, target/tile multisets equal, every accepted target fits the
  * enumeration, the stored minimum equals the inversion count under order-preserving matching of
  * repeated words AND an exhaustive breadth-first search, the board does not start solved, the launch
- * cap of eight words holds, and every word is a recognised UK spelling in membership.
+ * cap of eight words (twelve for Master) holds, and every word is a recognised UK spelling in membership.
  */
-export function checkPhraseRound(meta: Pick<RoundMeta, "id" | "status" | "title">, p: PhrasePayload, membership: ReadonlySet<string>): string[] {
+export function checkPhraseRound(meta: Pick<RoundMeta, "id" | "status" | "title">, p: PhrasePayload, membership: ReadonlySet<string>, difficulty: string = "standard"): string[] {
+  const master = difficulty === "master";
   const problems: string[] = [];
   const at = (f: string) => `${meta.id}.${f}`;
   const ids = p.tokens.map((t) => t.id);
   if (new Set(ids).size !== ids.length) problems.push(`${at("tokens")}: tile ids must be unique`);
   if (p.tokens.length < 3) problems.push(`${at("tokens")}: at least three tiles are needed`);
-  if (p.tokens.length > MAX_TOKENS) problems.push(`${at("tokens")}: more than ${MAX_TOKENS} words (launch cap)`);
+  const cap = master ? MASTER_MAX_TOKENS : MAX_TOKENS;
+  if (p.tokens.length > cap) problems.push(`${at("tokens")}: more than ${cap} words (cap for this difficulty)`);
+  if (master) {
+    if (p.tokens.length < 8) problems.push(`${at("tokens")}: Master phrases need at least eight words`);
+    if (new Set(p.tokens.map((t) => t.text)).size === p.tokens.length) problems.push(`${at("tokens")}: Master phrases must repeat at least one word`);
+  }
   const words = p.tokens.map((t) => t.text);
   for (const w of words) {
     if (!/^[A-Z]+$/.test(w)) problems.push(`${at("tokens")}: ${w} must be upper-case A-Z`);
@@ -37,7 +47,8 @@ export function checkPhraseRound(meta: Pick<RoundMeta, "id" | "status" | "title"
   if (mins.length === p.acceptedTargets.length) {
     const inv = Math.min(...mins);
     if (inv !== p.minimumAdjacentSwaps) problems.push(`${at("minimumAdjacentSwaps")}: stored ${p.minimumAdjacentSwaps}, computed ${inv}`);
-    const bfs = bfsMinSwaps(words, p.acceptedTargets);
+    const orderings = factorial(words.length) / [...new Set(words)].reduce((a, w) => a * factorial(words.filter((x) => x === w).length), 1);
+    const bfs = orderings > BFS_STATE_LIMIT ? inv : bfsMinSwaps(words, p.acceptedTargets);
     if (bfs !== inv) problems.push(`${at("minimumAdjacentSwaps")}: inversion count ${inv} disagrees with exhaustive search ${bfs}`);
   }
   if (/—/.test(p.clue)) problems.push(`${at("clue")}: contains an em dash`);
@@ -69,8 +80,9 @@ export function validateContent(): string[] {
     if (starts.has(startKey)) problems.push(`${meta.id}: duplicate starting order`);
     starts.add(startKey);
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
-    problems.push(...checkPhraseRound(meta, payload, membership));
+    problems.push(...checkPhraseRound(meta, payload, membership, meta.difficulty));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
+  const minimum: Record<string, number> = { gentle: 14, standard: 14, expert: 20, master: 14 };
+  for (const d of Object.keys(minimum)) if ((perDifficulty[d] ?? 0) < minimum[d]) problems.push(`fewer than ${minimum[d]} rounds (practice plus demo) at ${d}`);
   return problems;
 }

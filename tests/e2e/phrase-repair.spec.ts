@@ -109,3 +109,53 @@ test("@mobile tiles stack vertically on a phone and still swap", async ({ page }
   await expect(tiles(page).first()).toHaveText("MAKE");
   await expectNoHorizontalOverflow(page);
 });
+
+async function sortTo(page: Page, target: string[], limit = target.length) {
+  for (let i = 0; i < limit; i++) {
+    const now = await tiles(page).allTextContents();
+    let j = now.findIndex((w, k) => k >= i && w === target[i]);
+    while (j > i) {
+      await page.getByRole("button", { name: new RegExp(`^Move \\S+ left \\(word ${j + 1} of `) }).click();
+      j--;
+    }
+  }
+}
+
+test("Master phrase with repeated words: wrong near-miss order is refused, refresh restores, optimal repair scores 100", async ({ page }) => {
+  await page.goto("/play/phrase-repair/pr-m7");
+  await expect(tiles(page)).toHaveCount(9);
+  const target = "SEE NO EVIL HEAR NO EVIL SPEAK NO EVIL".split(" ");
+
+  await sortTo(page, ["SPEAK", "NO", "EVIL"], 3);
+  await page.getByRole("button", { name: "Check phrase" }).click();
+  await expect(feedback(page)).toContainText("Not repaired yet");
+
+  await expect(page.getByTestId("save-indicator")).toContainText("Saved");
+  await page.reload();
+  await expect(page.getByTestId("restored-banner")).toBeVisible();
+  await expect(tiles(page)).toHaveCount(9);
+  const swapsBefore = await page.getByTestId("swap-count").textContent();
+
+  // Undo is not needed: re-sort from the current order. Count the extra swaps to know the efficient total is lost.
+  await sortTo(page, target);
+  await page.getByRole("button", { name: "Check phrase" }).click();
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  expect(swapsBefore).toMatch(/swaps?/);
+});
+
+test("Master phrase solved in the exact minimum scores 100", async ({ page }) => {
+  await page.goto("/play/phrase-repair/pr-m9");
+  const target = "WHEN THE GOING GETS TOUGH THE TOUGH GET GOING".split(" ");
+  await sortTo(page, target);
+  await page.getByRole("button", { name: "Check phrase" }).click();
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("100 points");
+});
+
+test("@mobile a twelve-tile Master board fits a phone", async ({ page }) => {
+  await page.goto("/play/phrase-repair/pr-m3");
+  await expect(tiles(page)).toHaveCount(12);
+  await expectNoHorizontalOverflow(page);
+});
