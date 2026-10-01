@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { DIFFICULTY_LABEL, type Difficulty } from "@/lib/engine/types";
 
 interface Row {
@@ -19,12 +20,25 @@ export function ArchiveView({ rounds, games }: { rounds: Row[]; games: { id: str
   const search = useSearchParams();
   const router = useRouter();
   const path = usePathname();
-  const game = search.get("game") ?? "all";
-  const diff = search.get("difficulty") ?? "all";
-  const set = (k: string, v: string) => {
-    const p = new URLSearchParams(search.toString());
-    if (v === "all") p.delete(k);
-    else p.set(k, v);
+  // Filters live in a ref updated synchronously, so rapid successive changes compose even though
+  // router.replace updates the URL asynchronously. The URL stays the shareable/back-button record.
+  const initial = { game: search.get("game") ?? "all", difficulty: search.get("difficulty") ?? "all" };
+  const [filters, setFilters] = useState(initial);
+  const latest = useRef(initial);
+  useEffect(() => {
+    const fromUrl = { game: search.get("game") ?? "all", difficulty: search.get("difficulty") ?? "all" };
+    latest.current = fromUrl;
+    setFilters(fromUrl);
+  }, [search]);
+  const game = filters.game;
+  const diff = filters.difficulty;
+  const set = (k: "game" | "difficulty", v: string) => {
+    const next = { ...latest.current, [k]: v };
+    latest.current = next;
+    setFilters(next);
+    const p = new URLSearchParams();
+    if (next.game !== "all") p.set("game", next.game);
+    if (next.difficulty !== "all") p.set("difficulty", next.difficulty);
     router.replace(`${path}${p.toString() ? `?${p}` : ""}`, { scroll: false });
   };
   const published = rounds.filter((r) => r.status === "published");

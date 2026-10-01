@@ -15,7 +15,7 @@ Grouped by area; each game appends its own section.
 ## Letter Wheel
 - [ ] Practice rounds lw-g1..lw-e5: targets were generated as ESDB membership AND SCOWL size-35 words fitting the rack, minus a small blocklist (ANUS, CRAP, VISAING, TIEING, GENII, FULCRA, EKING, INKIER, TINNIER, POISING, VISING, HIVING, HALING, TREED, RIFTED, PETER, PETERED, ACUTES, ARSE, SORTA, TORSI, APTER, RECTA, OARED, LOPING, POLING, SUBS, TARRY, ARDOUR, DEFTER, REINED). An editor should read every target list for oddities (e.g. CRETIN, RACIST, EROTIC appear only on racks not used; check used racks).
 - [ ] Difficulty bands are heuristics: gentle = vowel centre, 20-25 targets; standard = 45-51 targets; expert = consonant centre (F/G/V/P), 20-33 targets. Needs pilot calibration.
-- [ ] Only 5 rounds per difficulty (+3 demo at standard); docs/08 asks 10 per advertised difficulty. Pages show "limited preview".
+- [ ] 10 practice rounds per difficulty (+3 demo at standard) after the 2026-10-01 top-up (lw-g6..g10, lw-s6..s7, lw-e6..e10). Target lists for these also exclude IKON, LEMME, TEMPI, YOKING, INANER, BANI, ABACI, EVILLER, HARING, CANNIER. Editor to read all lists.
 - [ ] Demo rounds are played with full membership (not the finite fixture lexicon) so reasonable words are not rejected; fixture lexicons are kept as regression data (maximumScore reproduced in tests).
 - [ ] Hints reveal words from the curated list only; there are no authored definitions yet (brief mentions a definition tier). Recommend adding editor-written short definitions per target.
 - [ ] Shuffle uses a client-time seed; the resulting order is stored in the action, so replay is exact.
