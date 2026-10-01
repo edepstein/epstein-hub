@@ -289,6 +289,95 @@
    }
   },
   {
+   "id": "wl-g6",
+   "title": "Gentle ladder 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "TEA",
+    "target": "POT",
+    "optimalMoves": 3,
+    "examplePath": [
+     "TEA",
+     "PEA",
+     "PET",
+     "POT"
+    ],
+    "bank": [
+     "PEA",
+     "PEG",
+     "PET",
+     "POT",
+     "SEA",
+     "TEA",
+     "TEE",
+     "TEN"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 3 positions, so no route can be shorter than 3 moves."
+   }
+  },
+  {
+   "id": "wl-g7",
+   "title": "Gentle ladder 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "EAST",
+    "target": "WEST",
+    "optimalMoves": 3,
+    "examplePath": [
+     "EAST",
+     "VAST",
+     "VEST",
+     "WEST"
+    ],
+    "bank": [
+     "CAST",
+     "EASE",
+     "EAST",
+     "EASY",
+     "FAST",
+     "VAST",
+     "VEST",
+     "WEST"
+    ],
+    "explanation": "The two words differ in only 2 positions, but no 2-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 3 moves in all."
+   }
+  },
+  {
+   "id": "wl-g8",
+   "title": "Gentle ladder 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "MIND",
+    "target": "BODY",
+    "optimalMoves": 4,
+    "examplePath": [
+     "MIND",
+     "BIND",
+     "BOND",
+     "BONY",
+     "BODY"
+    ],
+    "bank": [
+     "BIND",
+     "BODY",
+     "BOND",
+     "BONY",
+     "FIND",
+     "HIND",
+     "KIND",
+     "MEND",
+     "MIND"
+    ],
+    "explanation": "Each move changes one letter. The two words differ in 4 positions, so no route can be shorter than 4 moves."
+   }
+  },
+  {
    "id": "wl-s1",
    "title": "Standard ladder 1",
    "difficulty": "standard",
@@ -390,6 +479,90 @@
      "FISH"
     ],
     "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-s6",
+   "title": "Standard ladder 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "LION",
+    "target": "BEAR",
+    "optimalMoves": 5,
+    "examplePath": [
+     "LION",
+     "LOON",
+     "LOAN",
+     "LEAN",
+     "BEAN",
+     "BEAR"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s7",
+   "title": "Standard ladder 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SHIP",
+    "target": "BOAT",
+    "optimalMoves": 5,
+    "examplePath": [
+     "SHIP",
+     "SHOP",
+     "SHOT",
+     "SOOT",
+     "BOOT",
+     "BOAT"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s8",
+   "title": "Standard ladder 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "COAL",
+    "target": "FIRE",
+    "optimalMoves": 5,
+    "examplePath": [
+     "COAL",
+     "FOAL",
+     "FOAM",
+     "FORM",
+     "FIRM",
+     "FIRE"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 5 moves in all."
+   }
+  },
+  {
+   "id": "wl-s9",
+   "title": "Standard ladder 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "LAMB",
+    "target": "MINT",
+    "optimalMoves": 5,
+    "examplePath": [
+     "LAMB",
+     "LIMB",
+     "LIME",
+     "LINE",
+     "MINE",
+     "MINT"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 5 moves in all."
    }
   },
   {
@@ -504,6 +677,117 @@
      "GRAIN"
     ],
     "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e6",
+   "title": "Expert ladder 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FAST",
+    "target": "SLOW",
+    "optimalMoves": 6,
+    "examplePath": [
+     "FAST",
+     "LAST",
+     "LOST",
+     "LOOT",
+     "SOOT",
+     "SLOT",
+     "SLOW"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e7",
+   "title": "Expert ladder 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "HIDE",
+    "target": "SEEK",
+    "optimalMoves": 6,
+    "examplePath": [
+     "HIDE",
+     "HIRE",
+     "HERE",
+     "HERD",
+     "HEED",
+     "SEED",
+     "SEEK"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e8",
+   "title": "Expert ladder 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "SINK",
+    "target": "SWIM",
+    "optimalMoves": 6,
+    "examplePath": [
+     "SINK",
+     "SANK",
+     "SAND",
+     "SAID",
+     "SLID",
+     "SLIM",
+     "SWIM"
+    ],
+    "explanation": "The two words differ in only 3 positions, but no 3-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e9",
+   "title": "Expert ladder 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "FOOL",
+    "target": "WISE",
+    "optimalMoves": 6,
+    "examplePath": [
+     "FOOL",
+     "FOOD",
+     "FOND",
+     "FIND",
+     "FINE",
+     "WINE",
+     "WISE"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 6 moves in all."
+   }
+  },
+  {
+   "id": "wl-e10",
+   "title": "Expert ladder 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "start": "RAIN",
+    "target": "SNOW",
+    "optimalMoves": 7,
+    "examplePath": [
+     "RAIN",
+     "RAID",
+     "SAID",
+     "SLID",
+     "SLIP",
+     "SLOP",
+     "SLOW",
+     "SNOW"
+    ],
+    "explanation": "The two words differ in only 4 positions, but no 4-move route exists in the word list: a shortest route has to change some letters away from the target and back, for 7 moves in all."
    }
   }
  ]
