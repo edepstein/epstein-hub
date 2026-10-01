@@ -328,17 +328,17 @@ describe("keyboard, share and persistence", () => {
 describe("content", () => {
   it("validator passes and every difficulty has at least ten distinct rounds", () => {
     expect(validateContent()).toEqual([]);
-    for (const d of ["gentle", "standard", "expert"] as const) {
+    for (const d of ["gentle", "standard", "expert", "master"] as const) {
       const list = rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice");
-      expect(list.length, d).toBeGreaterThanOrEqual(10);
+      expect(list.length, d).toBeGreaterThanOrEqual(d === "master" ? 14 : 10);
     }
     expect(new Set(rounds.map((r) => r.payload.answer)).size).toBe(rounds.length);
   });
 
-  it("every round is winnable and Expert rounds enforce hard mode", () => {
+  it("every round is winnable and Expert and Master rounds enforce hard mode", () => {
     for (const r of rounds) {
       const s = engine.initialise(r.payload, sessionOptionsFor(r.meta, 1));
-      expect(s.hardMode, r.meta.id).toBe(r.meta.difficulty === "expert");
+      expect(s.hardMode, r.meta.id).toBe(r.meta.difficulty === "expert" || r.meta.difficulty === "master");
       const t = guess(s, r.payload.answer);
       expect(t.ok, r.meta.id).toBe(true);
       expect(engine.outcome(t.state)).toBe("completed");

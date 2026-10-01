@@ -61,7 +61,8 @@ export const definition: GameDefinition = {
           "Standard: everyday answers, some with repeated letters, and no clue offered at the start.",
           "Expert: answers from crowded word families (think of all the words ending -IGHT), played in hard mode.",
           "Hard mode: every guess must keep revealed ✓ letters in place, include every letter shown to be in the answer (as many copies as shown), and not put a letter back in a place already marked ↔. Letters marked × are not banned outright, because a repeated letter can be × in one place and ✓ elsewhere. Hint letters count as revealed too.",
-          "You can switch hard mode off for the rest of an Expert round; your result will say so.",
+          "Master: respectable but less common words (think SYLPH or FJORD, not CHAIR), with unusual letter patterns, also in hard mode. Guesses may be any word in the word list, so you can still use ordinary words to narrow the field. Master keeps the same six guesses: hard mode already limits your choices, and the word list is the same for every difficulty.",
+          "You can switch hard mode off for the rest of an Expert or Master round; your result will say so.",
           "Each difficulty is a different set of answers. The labels are the author's intention and have not yet been calibrated with players.",
         ],
       },
@@ -70,7 +71,7 @@ export const definition: GameDefinition = {
         points: [
           "Your result shows how many guesses you used, any hints, extra rows or reveal, and whether hard mode was kept.",
           "The shared result is a grid of ✓ ↔ × symbols with no letters, so it never gives the answer away.",
-          "Words are checked against a British English spellings list (ESDB). Answers are chosen separately, from everyday words.",
+          "Words are checked against a British English spellings list (ESDB). Answers are chosen separately: everyday words, except on Master, where they are less common but real words with a stated meaning.",
         ],
       },
     ],

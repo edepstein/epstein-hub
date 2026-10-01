@@ -141,6 +141,19 @@ test("expert hard mode rejects a guess that ignores revealed letters, without co
   await expect(page.getByTestId("guesses-used")).toHaveText("2 of 6 guesses");
 });
 
+test("master round loads in hard mode by default and a valid solve completes with its definition", async ({ page }) => {
+  await page.goto("/play/word-deduction/wd-m2"); // FJORD
+  await expect(page.getByTestId("hard-mode")).toHaveText("On");
+  await expect(page.getByTestId("hard-mode-note")).toBeVisible();
+  await guess(page, "night");
+  await expect(page.getByTestId("guesses-used")).toHaveText("1 of 6 guesses");
+  await guess(page, "fjord");
+  const result = page.getByTestId("result-panel");
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("Hard mode was kept throughout");
+  await expect(page.getByTestId("answer-card")).toContainText("narrow inlet of the sea");
+});
+
 test("@mobile board and keyboard fit a phone screen and play", async ({ page }) => {
   await page.goto("/play/word-deduction/wd-s1");
   await expect(page.getByLabel("Your guess")).toBeVisible();
