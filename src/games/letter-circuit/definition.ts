@@ -43,7 +43,8 @@ export const definition: GameDefinition = {
         heading: "Par and your result",
         points: [
           "Fewer words is better. Ties are broken by fewer letters in total.",
-          "Par is the fewest words a computer search could complete the circuit with, using only a list of everyday words of three to eight letters. The search checks every possible chain, so par is exact for that list.",
+          "On Gentle, Standard and Expert boards, par is the fewest words a computer search could complete the circuit with, using only a list of everyday words of three to eight letters. The search checks every possible chain, so par is exact for that list.",
+          "Master boards define par over a wider Master pool: the everyday words plus less common but real words, of three to ten letters. Par is still exact for that pool, and a Master board is only used if the everyday words alone cannot finish as quickly.",
           "Because you may use any word in the full word list, it is sometimes possible to beat par.",
           "When you complete the circuit, your result shows your chain, word count and par. You can then try for fewer words; your best is kept, and Back to my best returns to it.",
         ],
@@ -51,7 +52,7 @@ export const definition: GameDefinition = {
       {
         heading: "Hints",
         points: [
-          "Letters to aim for: the first letter, length and new letters of a word that starts where your chain ends and lies on a shortest everyday route to the finish.",
+          "Letters to aim for: the first letter, length and new letters of a word that starts where your chain ends and lies on a shortest route to the finish through the round's word pool (everyday words, or the Master pool in Master rounds).",
           "Show the word: shows that word. You still type it in.",
           "Play it for me: adds that word to your chain, marked as played for you.",
           "Any hint marks the chain you finish as helped. Hints never block you from finishing.",
@@ -63,6 +64,7 @@ export const definition: GameDefinition = {
           "Gentle boards have hundreds of everyday words and many routes; par is two.",
           "Standard boards have fewer everyday words, no two-word finish, and need planning around the letters left over.",
           "Expert boards have awkward letters and only a few everyday routes; par is four.",
+          "Master boards carry at least three of J, K, Q, V, W, X and Z, and their sides force clever chaining through uncommon words (think JERKWATER or SQUAWKED); par is three to five, proved over the Master pool.",
           "Each difficulty is a different set of boards. These labels are the author's intention and have not yet been calibrated with players.",
         ],
       },

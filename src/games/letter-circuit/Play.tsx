@@ -118,7 +118,7 @@ function CircuitGame({ bundle, words, siblings }: { bundle: RoundBundle<CircuitP
             <span data-testid="chain-count">{state.chain.length}</span>
           </div>
           <div className="stat-row">
-            <span>Par (everyday words)</span>
+            <span>{state.master ? "Par (Master word pool)" : "Par (everyday words)"}</span>
             <span data-testid="par">{state.par}</span>
           </div>
           <div className="stat-row">

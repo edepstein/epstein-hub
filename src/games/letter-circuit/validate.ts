@@ -1,18 +1,22 @@
 import { rounds } from "./rounds";
-import { loadFamiliarSync, loadMembershipSync } from "@/lib/dictionary/node";
+import { loadFamiliarSync, loadMembershipSync, loadUncommonSync } from "@/lib/dictionary/node";
+import { EXCLUDED_WORDS } from "@/lib/dictionary/exclusions";
 import { boardProblem, makeBoard, maskOf, playableWords, searchPar } from "./solver";
-import { everydayPool } from "./pool";
+import { everydayPool, masterPool } from "./pool";
 
 /**
  * Letter Circuit content checks: four sides of three, twelve distinct A-Z letters; the stored
- * everyday pool equals the recomputed pool for the board; par and its chain are re-proved by
+ * everyday pool (Master pool for Master rounds, which also need three awkward letters, par 3 to 5 and
+ * a board the everyday pool cannot finish as quickly) equals the recomputed pool for the board; par and its chain are re-proved by
  * breadth-first search; the par chain is legal (sides, chaining, coverage); pack fixture
  * reference chains are legal and their finite-lexicon optimum is reproduced.
  */
 export function validateContent(): string[] {
   const problems: string[] = [];
   const membership = loadMembershipSync();
-  const pool = everydayPool(loadFamiliarSync(), membership);
+  const familiar = loadFamiliarSync();
+  const pool = everydayPool(familiar, membership);
+  const mPool = masterPool(familiar, loadUncommonSync(), membership, EXCLUDED_WORDS);
   const perDifficulty: Record<string, number> = {};
   const seen = new Set<string>();
   const seenSets = new Map<string, string>();
@@ -40,10 +44,22 @@ export function validateContent(): string[] {
     const setKey = letters.slice().sort().join("");
     if (seenSets.has(setKey)) problems.push(`${at("sides")}: same twelve letters as ${seenSets.get(setKey)}`);
     seenSets.set(setKey, meta.id);
+    const isMaster = meta.difficulty === "master";
+    if (isMaster !== (p.pool === "master")) problems.push(`${at("pool")}: exactly the Master rounds must declare pool "master"`);
     const bands: Record<string, number> = { gentle: 2, standard: 3, expert: 4 };
-    if (meta.status !== "demo" && p.par !== bands[meta.difficulty]) problems.push(`${at("par")}: ${meta.difficulty} rounds need par ${bands[meta.difficulty]}, got ${p.par}`);
+    if (isMaster) {
+      if (p.par < 3 || p.par > 5) problems.push(`${at("par")}: Master rounds need par 3 to 5, got ${p.par}`);
+    } else if (meta.status !== "demo" && p.par !== bands[meta.difficulty]) problems.push(`${at("par")}: ${meta.difficulty} rounds need par ${bands[meta.difficulty]}, got ${p.par}`);
     const board = makeBoard(p.sides);
-    const expected = playableWords(board, pool, p.minimumWordLength).map((e) => e.word);
+    if (isMaster) {
+      const awkward = letters.filter((l) => "JKQVWXZ".includes(l)).length;
+      if (awkward < 3) problems.push(`${at("sides")}: Master boards need at least three of J, K, Q, V, W, X, Z (has ${awkward})`);
+      // The Master pool must genuinely be needed: the everyday pool alone cannot match Master par.
+      const everyday = searchPar(board, playableWords(board, pool, p.minimumWordLength));
+      if (everyday.words !== null && everyday.words <= p.par) problems.push(`${at("par")}: the everyday pool already reaches par ${everyday.words}; not a Master board`);
+      if (!p.parChain.some((w) => !familiar.has(w))) problems.push(`${at("parChain")}: Master par chain uses only everyday words`);
+    }
+    const expected = playableWords(board, isMaster ? mPool : pool, p.minimumWordLength).map((e) => e.word);
     const stored = p.parPool.split(" ").filter(Boolean);
     if (expected.join(" ") !== stored.join(" ")) problems.push(`${at("parPool")}: stored pool (${stored.length}) differs from recomputed pool (${expected.length})`);
     const entries = playableWords(board, stored, p.minimumWordLength);
@@ -58,6 +74,7 @@ export function validateContent(): string[] {
     }
     if (meta.status !== "demo" && p.parChain.some((w) => (meta.title ?? "").toUpperCase().includes(w))) problems.push(`${meta.id}: title spoils the par chain`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
+  const minimums: Record<string, number> = { gentle: 12, standard: 12, expert: 18, master: 12 };
+  for (const [d, n] of Object.entries(minimums)) if ((perDifficulty[d] ?? 0) < n) problems.push(`fewer than ${n} ${d} rounds`);
   return problems;
 }

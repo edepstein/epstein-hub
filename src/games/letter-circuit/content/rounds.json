@@ -1485,6 +1485,757 @@
     "parPool": "AERIAL AFAR AFRAID AFTER AGE AGED AID AIDE AIDED AIL AIR AIRED AIRIER ALGAE ALGEBRA ALIBI ALIBIED ALIKE ALKALI ALTAR ALTER ALTERED APART APE APED ARE AREA ARIA ARID ART ARTERIAL ATE BEAK BEAKER BEAR BEARD BEARDED BEARER BEAT BEATER BED BEG BEIGE BERET BET BETA BIB BID BIDE BIDED BIG BIKE BIKED BIRD BIRDED BLARE BLARED BRA BRAG BRAID BRAIDED BRAKE BRAKED BRAT BREAK BRED BRIBE BRIBED BRIDE BRIDGE BRIDGED DEAF DEAL DEALT DEAR DEARER DEBT DEIFIED DEPART DEPARTED DERAIL DERIDE DERIDED DETAIL DETER DIAL DIAPER DIAPERED DIATRIBE DID DIE DIED DIET DIETED DIG DIKE DIKED DILATE DILATED DIRE DIRER DIRT DRAFT DRAFTED DRAG DRAPE DRAPED DREARIER DREDGE DREDGED DRIED DRIER DRIFT DRIFTED EAGER EAGERER EAR EARL EARLIER EAT EATER EDGE EDGED EDGIER EKE ERA FAIL FAIR FAIRER FAKE FAKED FALTER FALTERED FAR FARE FARED FAT FATAL FATE FATED FIB FIBRE FIDGET FIDGETED FIERIER FIG FILTER FILTERED FIR FIRE FIRED FRAIL FREAK FREAKED FRET FRIAR FRIED FRIGATE FRIGID GAG GAL GALA GAP GAPE GAPED GARAGE GARAGED GARB GARBED GARTER GATE GATED GEAR GEARED GERBIL GET GIBE GIBED GIFT GIFTED GIG GILD GILDED GILT GIRDER GIRL GLARE GLARED GLIB GLIDE GLIDED GLIDER IDEA IDEAL ILK IRATE IRE KARAT KARATE KEG KERB KERBED KID KILT LAG LAGER LAID LAIR LAKE LAP LARD LARDED LATE LATER LATERAL LIAR LIBERAL LIBERATE LID LIE LIED LIFT LIFTED LIKE LIKED LILT LILTED PAGE PAGED PAGER PAID PAIL PAIR PAIRED PAL PALATE PALTRIER PAP PAPA PAPAL PAPER PAPERED PAPRIKA PAR PARE PARED PART PARTAKE PARTED PAT PATE PEA PEAK PEAKED PEAL PEAR PEARL PEAT PEDLAR PEG PEP PER PERIL PERT PERTER PET PETAL PETER PETERED PLAID PLATE PLATED PLIED PRAIRIE PREPAID PREPARE PREPARED PRIDE PRIDED PRIED RAFT RAFTED RAFTER RAG RAGE RAGED RAID RAIDED RAIDER RAIL RAKE RAKED RAP RARE RARED RARER RAT RATE RATED REAL REAP REAPED REAPER REAR REARED RED REDID REDRAFT REGAL REGALIA REGARD REGARDED REPAID REPAIR REPAIRED REPEAL REPEAT REPEATED REPLIED RETAIL RETARDED RETREAT RIB RID RIDE RIDER RIDGE RIDGED RIFT RIFTED RIG RIGID TAG TAIL TAILGATE TAKE TALK TALKED TALKER TAP TAPE TAPED TAPER TAPERED TAR TARDIER TART TARTAR TARTER TEA TEAK TEAR TEARED TEAT TRAIL TRAP TREAT TREATED TREK TRIAL TRIBE TRIED",
     "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
    }
+  },
+  {
+   "id": "lc-e13",
+   "title": "Expert circuit 13",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "S",
+      "K",
+      "W"
+     ],
+     [
+      "I",
+      "Q",
+      "J"
+     ],
+     [
+      "U",
+      "E",
+      "R"
+     ],
+     [
+      "A",
+      "Z",
+      "P"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "JAW",
+     "WAKE",
+     "EQUIP",
+     "PRIZES"
+    ],
+    "parPool": "AIR AIRS AJAR AQUARIA ARIA ARIAS ARISE ARISES ARK AWAKE AWAKES AWE AWES EAR EARS EASE EASES EKE EKES EQUIP EQUIPS EWE EWES IRIS IRISES IRK JAR JARS JAW KIWI KIWIS PEA PEAK PEAR PEARS PEAS PEASE PEP PEPS PEW PIE PIES PIKE PIKES PIPE PIPES PRAIRIE PRAIRIES PRAISE PRAISES PRIES PRISE PRISES PRIZE PRIZES PUKES PUP PUPS QUA QUAKE QUAKES QUARK QUIP QUIPS QUIRK QUIZ RAISE RAISES RAKE RAKES RASP RASPS RAW RIP RIPE RIPS RISE RISES SAKE SAKI SAKIS SARI SARIS SAW SEA SEAR SEARS SEAS SEIZE SEIZES SEW SIP SIPS SIR SIRS SIZE SIZES SPEAK SPEAR SPEARS SPEW SPIES SPIKE SPIKES SUP UPS USE USES WAKE WAKES WAR WARP WARPS WARS WAS WASP WASPS WEAK WEAR WEARIES WEARS WIPE WIPES WISE WISES WISP WISPS WIZ ZIP ZIPS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-e14",
+   "title": "Expert circuit 14",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "X",
+      "R",
+      "U"
+     ],
+     [
+      "H",
+      "V",
+      "K"
+     ],
+     [
+      "W",
+      "A",
+      "Q"
+     ],
+     [
+      "C",
+      "T",
+      "E"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "CHEQUE",
+     "EXTRA",
+     "AVERT",
+     "TWEAK"
+    ],
+    "parPool": "ACHE ACRE ARC ARCH ARCHER ARE AREA ARK ART AVERT AXE CACHE CAKE CAR CARAT CARE CART CARVE CAT CAVE CAVEAT CHAR CHART CHAT CHEAT CHEQUE CHEW CHUCK CRACK CRACKER CRAVE CREAK CREW CREWCUT CUE CUT EACH EAR EARACHE EARTH EAT EKE ERA EVE EVER EWE EXERT EXTRA HACK HACKER HAH HARE HARK HART HAT HATH HAVE HEAR HEART HEARTH HEAT HEATH HEATHER HEAVE HER HERE HEW HUE HUH HUT KARAT QUA QUACK QUAKE QUARK QUART QUAVER QUEUE RACK RAKE RARE RARER RAT RATHER RAVE REACH REAR REV REVERE REVERT REVUE TACK TAKE TAR TART TARTAR TAUT TAX THAT THE THEATRE THERE THREAT THREW TRACK TREAT TREK TUCK TWEAK VACUA VAT VERVE VEX WEAK WEAKER WEAR WEATHER WEAVE WEAVER WERE WHACK WHAT WHEAT WHERE WHEREVER WHEW WRATH WREAK WREATH WREATHE",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-e15",
+   "title": "Expert circuit 15",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "W",
+      "O",
+      "U"
+     ],
+     [
+      "C",
+      "V",
+      "D"
+     ],
+     [
+      "X",
+      "E",
+      "N"
+     ],
+     [
+      "J",
+      "K",
+      "I"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "JUNKED",
+     "DECEIVED",
+     "DIOXIDE",
+     "EWE"
+    ],
+    "parPool": "CEDE CEDED CIVIC COCKED COD CODE CODED COIN COINCIDE COKE COKED CON CONCEDE CONCEDED CONCEIVE CONVINCE COVE COX CUE CUED DECEIVE DECEIVED DECIDE DECIDED DECK DECKED DECODE DECODED DEDUCE DEDUCED DEVICE DEVOID DEW DICE DICED DID DIE DIED DIN DIOXIDE DIVE DIVED DIVIDE DIVIDED DOCK DOCKED DODO DOE DON DOVE DUCK DUCKED DUD DUDE DUDED DUE DUKE DUNCE DUNK DUNKED EKE EVE EVOKE EVOKED EWE ICE ICED ICON INDUCE INDUCED INK INKED INVOICE INVOICED INVOKE INVOKED ION JOIN JOKE JOKED JUDO JUICE JUICED JUNK JUNKED KNOCK KNOCKED NICE NICK NICKED NIECE NOD NODE NON NOVICE NUN ODE ONCE ONION OXIDE UNDID UNDO UNDUE UNION UNWIND VEIN VICE VICED VIDEO VIDEOED VIE VIED VIEW VIEWED VIVID VOICE VOICED VOID VOIDED WED WICK WICKED WIDE WIN WINCE WINCED WIND WINDED WINK WINKED",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-e16",
+   "title": "Expert circuit 16",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "A",
+      "V",
+      "Z"
+     ],
+     [
+      "R",
+      "D",
+      "X"
+     ],
+     [
+      "O",
+      "E",
+      "W"
+     ],
+     [
+      "H",
+      "K",
+      "U"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "HAWKED",
+     "DEVOURED",
+     "DOZE",
+     "EXUDE"
+    ],
+    "parPool": "ADHERE ADHERED ADO ADORE ADORED AHEAD ARE AREA ARK AURA AURAE AWAKE AWARE AXE AXED DAD DARE DARED DARK DARKER DEAD DEADER DEAR DEARER DEVOUR DEVOURED DODO DOUR DOURER DOVE DOZE DOZED DUD DUDE DUDED DUE DUO EAR EKE ERA ERODE ERODED EUREKA EVE EVER EVOKE EVOKED EXUDE EXUDED HAD HAH HARE HARED HARK HARKED HAWK HAWKED HEAD HEADED HEADER HEAR HER HERE HERO HOAX HOAXED HOUR HOVE HOVER HOVERED OAK OAR OARED ODE ODOUR OKRA ORE OUR OVER OVERHEAD OVERHEAR RADAR RAKE RAKED RARE RARED RARER RAW READ READER REAR REARED RED REDHEAD REDO REREAD REV REVERE REVERED REVOKE REVOKED REVUE ROAD ROAR ROARED ROD RODE RUDE RUDER RUE RUED VERVE VEX VEXED VODKA WAD WADE WADED WAKE WAR WARHEAD WAX WAXED WHERE WHEREVER WHO WHOA WREAK WREAKED ZERO",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-e17",
+   "title": "Expert circuit 17",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "D",
+      "Z",
+      "W"
+     ],
+     [
+      "N",
+      "A",
+      "X"
+     ],
+     [
+      "O",
+      "K",
+      "U"
+     ],
+     [
+      "Q",
+      "E",
+      "T"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "QUA",
+     "AWAKENED",
+     "DOZEN",
+     "NEXT"
+    ],
+    "parPool": "ADO AEON ATONE ATONED AUNT AUTO AWAKE AWAKEN AWAKENED AWE AWED DAD DATA DAUNT DAWN DAWNED DAZE DAZED DEAD DEADEN DEADENED DEN DENT DEW DODO DOE DON DONE DOT DOWN DOWNED DOWNTOWN DOZE DOZED DOZEN DUD DUDE DUDED DUE DUNE DUNK DUNKED EAT EKE END ENDED ENDOW ENDOWED EWE EXUDE EXUDED KEN KNEAD KNEADED KNEW KNOT KNOW KNOWN NEAT NEON NEW NEWT NEWTON NEXT NOD NODE NON NONE NOT NOW NUN NUT OAK ODE ONE ONTO OWE OWED OWN OWNED OXEN OZONE QUA QUAKE QUAKED QUEUE QUEUED TAKE TAKEN TAUNT TAUT TOAD TOE TOED TON TONE TONED TOT TOW TOWED TOWN TUNE TUNED TUXEDO TWEAK TWEAKED TWO UNDO UNDONE UNDUE UNKNOWN UNTO WAD WADE WADED WAKE WAKEN WAKENED WEAK WEAKEN WEAKENED WED WENT WOE WON WONT WOW WOWED ZONE ZONED",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-e18",
+   "title": "Expert circuit 18",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "N",
+      "J",
+      "K"
+     ],
+     [
+      "C",
+      "V",
+      "I"
+     ],
+     [
+      "R",
+      "A",
+      "W"
+     ],
+     [
+      "E",
+      "Z",
+      "T"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "par": 4,
+    "parChain": [
+     "ZANIER",
+     "REVERIE",
+     "EJECT",
+     "TWEAK"
+    ],
+    "parPool": "ACE ACNE ACRE ACT AIR AIRIER AKIN ANEW ANI ANT AVERT CACTI CAKE CAN CANCER CANE CANINE CANT CAT CAVE CAVEAT CAVERN CENT CENTRE CERTAIN CREAK CREAKIER CREW EAT EJECT EKE ENACT ENTIRE ENTREAT ENTWINE ERECT EVE EVEN EVENER EVENT EVER EWE INANE INANER INERT INERTIA INTACT INTAKE INVENT INVERT IRE IRK JACK JERK JERKIER KEN KIN KIT KIWI NEAT NECK NECKTIE NERVE NEVER NEW NEWER NEWT NIECE NINE NIT NITWIT REACT RECANT RECENT RECTA REIN REJECT RENEW RENT REV REVERE REVERENT REVERIE REVERT TACK TACKIER TACT TAINT TAKE TAKEN TAN TAVERN TIE TIER TIN TINIER TINT TIRE TREAT TREK TWEAK TWIN TWINE VACANT VAIN VAINER VAN VANE VAT VEIN VENT VERIER VERVE WEAK WEAKEN WEAKER WEAN WEAVE WEAVER WENT WERE WIN WINCE WINE WINTRIER WIRE WIRIER WIT WIZ ZANIER ZINC",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the everyday word pool."
+   }
+  },
+  {
+   "id": "lc-m1",
+   "title": "Master circuit 1",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "U",
+      "T",
+      "D"
+     ],
+     [
+      "Q",
+      "W",
+      "R"
+     ],
+     [
+      "I",
+      "J",
+      "K"
+     ],
+     [
+      "E",
+      "A",
+      "Z"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 3,
+    "parChain": [
+     "JERKWATER",
+     "REQUITED",
+     "DITZ"
+    ],
+    "parPool": "ADEQUATE ADIEU ADJURE ADJURED ADWARE AID AIDE AIDED AIR AIRED AIRIER AJAR AQUA AQUARIA ARE ARIA ARID ARK ART ARTIER ATE ATRIA AUK AURA AWAIT AWAITED AWAKE AWARD AWARDED AWARE AWE AWED AWKWARD AWKWARDER DAD DAIQUIRI DARE DARED DARER DARK DARKER DART DARTED DARTER DATA DATE DATED DATER DEQUEUE DEQUEUED DERIDE DERIDED DETER DEW DEWIER DID DIE DIED DIET DIETED DIETER DIRE DIRER DIRK DIRT DIRTIED DIRTIER DITZ DRAKE DRAT DRAW DRAWER DREW DRIED DRIER DRUID EDIT EDITED EIDER EKE EQUATE EQUATED ERA ERE ETA EUREKA EWE EWER IRATE IRE IRK IRKED ITERATE ITERATED JADE JADED JADEITE JAR JAW JAWED JERK JERKED JERKWATER JET JUJU JUKE JUKED JURIED KARAT KARATE KART QUA QUAD QUAKE QUAKED QUARK QUART QUARTER QUARTERED QUARTET QUARTZ QUERIED QUEUE QUEUED QUID QUIET QUIETED QUIETER QUIRE QUIRK QUIRKED QUIRT QUIT QUITE QUIZ RAD RADAR RADIATE RADIATED RAID RAIDED RAIDER RAJA RAKE RAKED RARE RARED RARER RAT RATE RATED RATER RAW RAWER RED REDID REDRAW REDREW REITERATE REITERATED REQUIRE REQUIRED REQUITE REQUITED REQUITER RETAKE RETARDED RETARDER RETIE RETIED RETIRE RETIRED RETRIED REWARD REWARDED REWED REWIRE REWIRED RID RIDE RIDER RITE RITZIER RUE RUED TAD TAKE TAKER TAQUERIA TAR TARDIER TARE TARED TART TARTAR TARTED TARTER TAT TATER TAU TAWDRIER TED TEKTITE TETRA TIARA TIDE TIDED TIDEWATER TIDIED TIDIER TIE TIED TIER TIERED TIRADE TIRE TIRED TIREDER TRAD TRADE TRADED TRADER TRAIT TREK TRIAD TRIED TRIER TRITE TRITER TRUE TRUED TRUER TWERK TWERKED TWIT URETER WAD WADE WADED WADER WADI WAIT WAITED WAITER WAKE WAR WARD WARDED WARDER WARE WARIER WART WARTIER WATER WATERED WATERIER WED WEIR WEIRD WEIRDED WEIRDER WEIRDIE WERE WET WIDE WIDER WIRE WIRED WIRIER WIT WIZ ZIT ZITI",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m2",
+   "title": "Master circuit 2",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "D",
+      "Q",
+      "A"
+     ],
+     [
+      "U",
+      "K",
+      "S"
+     ],
+     [
+      "X",
+      "O",
+      "Y"
+     ],
+     [
+      "J",
+      "W",
+      "E"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 3,
+    "parChain": [
+     "JOEYS",
+     "SAXES",
+     "SQUAWKED"
+    ],
+    "parPool": "AWAKE AWAKES AWAY AWOKE AXE AXED AXES AYE AYES DEQUEUE DEQUEUED DEQUEUES DODO DODOES DODOS DOE DOES DOJO DOS DOSE DOSED DOSES DOWDY DOWSE DOWSED DOWSES DUD DUDE DUDED DUDES DUDS DUE DUES DUO DUOS DYE DYED DYES DYKED EASE EASED EASES EASY EKE EKES EXES EXUDE EXUDED EXUDES EYE EYED EYES JAW JAWS JAY JAYS JOEY JOEYS JOKE JOKED JOKES JOKEY JOKY JUDO JUJU KAYAK KAYAKED KEY KEYED KEYS OAK OASES ODE ODES OKAY OKAYED OKAYS QUA QUAKE QUAKED QUAKES QUAKY QUAY QUAYS QUEASY QUEUE QUEUED QUEUES QUO SAKE SAW SAWS SAX SAXES SAY SAYS SEA SEAS SEAWAY SEAWAYS SEX SEXED SEXES SOAK SOAKED SOD SODS SOU SOW SOWS SQUAW SQUAWK SQUAWKED SQUAWS SQUEAK SQUEAKED SQUEAKY SWAY SWAYED SWAYS WAKE WAKES WAS WAX WAXED WAXES WAY WAYS WOE WOES WOK WOKE WOW WOWS YAK YAW YAWS YEA YEAS YES YESES",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m3",
+   "title": "Master circuit 3",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "S",
+      "V",
+      "Z"
+     ],
+     [
+      "I",
+      "A",
+      "N"
+     ],
+     [
+      "E",
+      "W",
+      "K"
+     ],
+     [
+      "L",
+      "J",
+      "P"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 3,
+    "parChain": [
+     "JAVA",
+     "ALKALIZES",
+     "SPAWN"
+    ],
+    "parPool": "ALA ALAS ALE ALES ALIEN ALIENS ALIVE ALKALI ALKALIES ALKALIS ALKALISE ALKALISES ALKALIZE ALKALIZES APE APES APSE APSES ASK ASKS ASP ASPEN ASPENS ASPS AWL AWLS AWN AWNS AZALEA AZALEAS EASE EASEL EASELS EASES EAVE EAVES ELAPSE ELAPSES ELEVEN ELEVENS ELEVENSES ELK ELKS ELSE ELVES ENLIVEN ENLIVENS ENS ENSLAVE ENSLAVES ENVIES ESPIES EVASIVE EVE EVEN EVENS EVES EVIL EVILS ILEA ILK ILKS ISLE ISLES IVIES JAPE JAPES JAVA JAW JAWS JIVE JIVES KALE KAVA KILN KILNS KIP KIPS KIWI KIWIS LAP LAPEL LAPELS LAPS LAPSE LAPSES LAV LAVA LAVAS LAVE LAVES LAW LAWN LAWNS LAWS LAZE LAZES LAZIES LEA LEAK LEAKS LEAP LEAPS LEAS LEASE LEASES LEAVE LEAVEN LEAVENS LEAVES LEI LEIS LENS LENSES LEVEL LEVELS LEVIES LIE LIEN LIENS LIES LILIES LIP LIPS LISLE LISP LISPS LIVE LIVEN LIVENS LIVES NEAP NEAPS NEVI PAL PALE PALES PALS PALSIES PAP PAPA PAPAL PAPAS PAPAW PAPAWS PAPS PAS PAVE PAVES PAW PAWL PAWLS PAWN PAWNS PAWPAW PAWPAWS PAWS PEA PEAK PEAKS PEAL PEALS PEAS PEASE PELVES PELVIS PELVISES PEN PENES PENS PENSIVE PEP PEPS PIE PIES PILE PILES PIP PIPE PIPES PIPS PIS PSI PSIS PWN PWNS SAKI SAKIS SALE SALES SALIVA SALSA SALSAS SALVE SALVES SAP SAPIENS SAPS SAVE SAVES SAW SAWN SAWS SEA SEAL SEALS SEAS SEIZE SEIZES SELVES SENSE SENSEI SENSES SEPAL SEPALS SEPSIS SEVEN SEVENS SIEVE SIEVES SILK SILKS SIP SIPS SIS SISAL SISES SIZE SIZES SKA SKI SKIES SKIP SKIPS SKIS SKIVE SKIVES SLAP SLAPS SLAVE SLAVES SLAW SLEAZE SLEAZES SLIP SLIPS SNEAK SNEAKS SPA SPAS SPAWN SPAWNS SPEAK SPEAKS SPIEL SPIELS SPIES SPIV SWAP SWAPS SWIPE SWIPES SWIVEL SWIVELS SWIZ VALE VALES VALISE VALISES VALVE VALVES VAPE VAPES VASE VASES VEAL VEIL VEILS VELA VIE VIES VILE VISA VISAS VISE VISES VIVA VIVAS VIZ WALE WALES WALK WALKIES WALKS WAS WASP WASPS WAVE WAVES WIKI WIKIS WILE WILES WIPE WIPES WISE WISES WISP WISPS WIVE WIVES WIZ ZAP ZAPS ZEAL ZIP ZIPS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m4",
+   "title": "Master circuit 4",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "I",
+      "R",
+      "U"
+     ],
+     [
+      "J",
+      "W",
+      "S"
+     ],
+     [
+      "A",
+      "Z",
+      "V"
+     ],
+     [
+      "Q",
+      "X",
+      "E"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 4,
+    "parChain": [
+     "JIVES",
+     "SQUARER",
+     "RESIZE",
+     "EARWAX"
+    ],
+    "parPool": "AJAR AQUA AQUAE AQUAS ARE AREA AREAS ARES AWARE AWE AWES AXIS EAR EARS EARWAX EASE EASES EASIER ERA ERAS ERASE ERASER ERASERS ERASES ERE EVE EVER EVES EWE EWER EWERS EWES IVIES JAR JARS JAW JIVE JIVES JUJU JUJUS QUA QUASAR QUASARS QUASI QUEASIER QUEUE QUEUES RAISE RAISER RAISERS RAISES RAJA RAJAS RARE RARER RARES RAW RAWER REAR REARS REARVIEW RESERVE RESERVES RESEW RESIZE RESIZES REUSE REUSES REV REVERE REVERES REVERS REVERSE REVERSES REVIEW REVIEWER REVIEWERS REVISE REVISER REVISERS REVISES REVIVE REVIVES REVS REVUE REVUES SAW SAX SEA SEAR SEARS SEAS SEIZE SEIZES SERA SERE SERER SERVE SERVER SERVERS SERVES SEVER SEVERE SEVERER SEVERS SEW SEWER SEWERS SIEVE SIEVES SIS SISES SIX SIZE SIZES SQUARE SQUARER SQUARES SQUAW SUE SUES USE USER USERS USES VERSA VERSE VERSES VERSUS VERVE VIA VIE VIES VIEW VIEWER VIEWERS VISA VISAS VISE VISES VIZ VIZIER VIZIERS WAIVE WAIVER WAIVERS WAIVES WAR WARE WARES WARS WAS WAX WAXIER WEAR WEARER WEARERS WEARS WERE WISE WISER WISES WIVE WIVES WIZ XIS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m5",
+   "title": "Master circuit 5",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "R",
+      "V",
+      "W"
+     ],
+     [
+      "E",
+      "S",
+      "Z"
+     ],
+     [
+      "O",
+      "B",
+      "U"
+     ],
+     [
+      "H",
+      "K",
+      "X"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 4,
+    "parChain": [
+     "ORZO",
+     "OVERSHOE",
+     "EXURBS",
+     "SKEWER"
+    ],
+    "parPool": "BEHOVE BERK BERKS BREVE BREW BREWER BREWERS BREWS BRO BROKE BROKER BROKERS BROS BROW BROWS BRUSH BRUSHWORK EKE ERE EURO EUROS EVE EVER EVOKE EWE EWER EWERS EXURB EXURBS HER HERB HERBS HERE HERO HEROS HERS HEW HEWER HEWERS HEWS HEX HOE HOER HOERS HOKE HOS HOVE HOVER HOVERS HOW HOWEVER HOWS HOWSOEVER HUE HUH HUSH HUSK HUSKER HUSKERS HUSKS KERB KERBS KOSHER KOSHERS OHO OHS ORB ORBS ORE ORZO OVER OVERS OVERSHOE OWE REV REVERB REVERE REVERS REVOKE REVS REVUE REWORK REWORKS REWOVE RHO RHOS ROE ROVE ROVER ROVERS ROW ROWER ROWERS ROWS RUE RUSH RUSHER RUSHERS RUSK RUSKS SHE SHEW SHEWS SHOE SHORE SHOVE SHOW SHOWER SHOWERS SHOWS SHREW SHREWS SHUSH SKEW SKEWER SKEWERS SKEWS SOEVER SORE SORER SOW SOWER SOWERS SOWS SOX SUE SURE SURER SWORE USHER USHERS USURER USURERS VERB VERBS VERSO VERSOS VERSUS VEX VOW VOWS WEB WEBS WERE WHERE WHEREVER WHEW WHO WHOEVER WHOSOEVER WOE WOK WOKE WOKER WOKS WORE WORK WORKER WORKERS WORKS WOVE WOW WOWS XEROX",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m6",
+   "title": "Master circuit 6",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "A",
+      "Q",
+      "I"
+     ],
+     [
+      "V",
+      "T",
+      "K"
+     ],
+     [
+      "B",
+      "Z",
+      "O"
+     ],
+     [
+      "X",
+      "S",
+      "U"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 4,
+    "parChain": [
+     "ATAVIST",
+     "TZATZIKIS",
+     "SQUABS",
+     "SOX"
+    ],
+    "parPool": "ABS ABUT ABUTS ASK ASKS ATAVIST ATAVISTS AUK AUKS AUTO AUTOS AVAST AXIS BABA BASIS BASK BASKS BAST BAT BATIK BATIKS BATS BIB BIBS BIO BIOS BIOTA BIOTAS BIS BIT BITS BIZ BUB BUBS BUT BUTS IBIS IOTA IOTAS ITS KABUKI KAVA KIBITZ KIOSK KIOSKS KIT KITS OAK OAKS OASIS OAT OATS OIK OIKS OUT OUTS OVA QUA QUASI QUBIT QUBITS QUIT QUITS QUIZ QUO QUOIT QUOITS QUOTA QUOTAS SAKI SAKIS SAT SAX SIS SIT SITS SITU SIX SKA SKI SKIS SKIT SKITS SKUA SKUAS SOAK SOAKS SOT SOTS SOU SOUK SOUKS SOX SQUAB SQUABS SQUAT SQUATS SQUIB SQUIBS STAB STABS STASIS STAT STATS STOAT STOATS STOUT STOUTS STUB STUBS TAB TABS TASK TASKS TAT TATS TAU TAUT TAX TAXA TAXI TAXIS TITBIT TITBITS TOAST TOASTS TOST TOT TOTS TOUT TOUTS TUB TUBA TUBAS TUBS TUT TUTS TUTU TZATZIKI TZATZIKIS VAST VASTS VAT VATS VISA VISAS VISIT VISITS VISTA VISTAS VITA VITAS VIVA VIVAS VIZ XIS ZIT ZITI ZITS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m7",
+   "title": "Master circuit 7",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "V",
+      "X",
+      "M"
+     ],
+     [
+      "Q",
+      "J",
+      "E"
+     ],
+     [
+      "I",
+      "S",
+      "U"
+     ],
+     [
+      "R",
+      "W",
+      "N"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 4,
+    "parChain": [
+     "INJURER",
+     "REMIXES",
+     "SWERVE",
+     "ENQUEUES"
+    ],
+    "parPool": "EMIR EMIRS EMS EMU ENEMIES ENQUEUE ENQUEUES ENS ENURE ENURES ENVIES ERE ERMINE ERMINES EVE EVEN EVENER EVENS EVER EVES EWE EWER EWERS EWES EXES INJURE INJURER INJURERS INJURES INJURIES INS INURE INURES INVERSE INVERSES IRE IVIES JINX JINXES JIVE JIVES JUJU JURIES MEME MEMES MEN MENINX MENSES MENU MERE MERES MERMEN MEW MEWS MIEN MIENS MIME MIMES MINE MINER MINERS MINES MINI MINIM MINIMS MINIMUM MINIMUMS MINX MINXES MIRE MIRES MIRIER MIX MIXER MIXERS MIXES MUM MUMS MURMUR MURMURER MURMURERS MURMURS NEMESES NERVE NERVES NERVIER NEVER NEVI NEW NEWER NEWS NEWSMEN NEWSWIRE NEWSWIRES NINE NINES NIX NIXES NUN NUNS NURSE NURSER NURSERIES NURSERS NURSES QUERIES QUEUE QUEUES REIN REINS REM REMIX REMIXES REMS RENEW RENEWS RERUN RERUNS RESERVE RESERVES RESEW RESEWS REV REVENUE REVENUER REVENUERS REVENUES REVERE REVERES REVERIE REVERIES REVERS REVERSE REVERSES REVIEW REVIEWER REVIEWERS REVIEWS REVIVE REVIVES REVS REVUE REVUES REWIRE REWIRES RIM RIME RIMES RIMS RINSE RINSES RIVE RIVEN RIVER RIVERS RIVES RUE RUES RUM RUMS RUN RUNE RUNES RUNS SEINE SEINER SEINERS SEINES SEMEN SEMI SENSE SENSEI SENSES SERE SERENE SERENER SERER SERIES SERINE SERUM SERUMS SERVE SERVER SERVERIES SERVERS SERVES SEVEN SEVENS SEVER SEVERE SEVERER SEVERS SEW SEWER SEWERS SEWS SEX SEXES SEXIER SWERVE SWERVES SWIM SWIMS SWINE SWINES SWUM UNEVEN UNI UNIQUE UNIQUER UNIVERSE UNIVERSES URINE VEIN VEINS VENIREMEN VENUE VENUES VERIER VERMIN VERSE VERSES VERVE VEX VEXES VIE VIES VIEW VIEWER VIEWERS VIEWS VIM VINE VINES VIXEN VIXENS WEIR WEIRS WEN WENS WERE WIENER WIENERS WIENIE WIENIES WIN WINE WINERIES WINES WINIER WINS WIRE WIRES WIRIER WIVE WIVES",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m8",
+   "title": "Master circuit 8",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "W",
+      "Z",
+      "X"
+     ],
+     [
+      "J",
+      "I",
+      "O"
+     ],
+     [
+      "B",
+      "R",
+      "G"
+     ],
+     [
+      "A",
+      "E",
+      "V"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 4,
+    "parChain": [
+     "VIZIER",
+     "RAJA",
+     "AGO",
+     "OXBOW"
+    ],
+    "parPool": "AGAR AGE AGO AGOG AIR AIRIER AJAR ARE ARIA AWARE AWE AXE BABA BABE BAG BAIZE BAOBAB BAR BARE BARER BEG BEIGE BERIBERI BEWARE BIB BIER BIG BIGWIG BIZ BOA BOAR BOB BOG BOGIE BORAX BORE BORER BOW BOWER BOX BOXER BOXIER BOZO EGO ERA ERE EWE EWER GAB GAG GAGA GAR GARAGE GAZE GAZEBO GAZER GEWGAW GIBE GIG GIRO GOB GOER GORE GORIER IBEX IRE JAB JAG JAR JAW OAR OBI OBOE ORE ORZO OWE OXBOW RAG RAGA RAGE RAJA RARE RARER RAW RAWER RAZE RAZOR REBAR REGEX REWIRE RIB RIG RIVIERA ROAR ROARER ROB ROBE ROE ROGER ROW ROWER VIA VIBE VIE VIEW VIEWER VIRAGO VIREO VIZ VIZIER VIZOR VOW WAG WAGE WAGER WAGERER WAR WARE WARIER WAX WAXIER WEB WEIR WERE WIG WIGWAG WIRE WIRIER WIZ WOE WOG WORE WOW WRIER XEROX ZERO ZIGZAG",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m9",
+   "title": "Master circuit 9",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "U",
+      "V",
+      "K"
+     ],
+     [
+      "Z",
+      "E",
+      "S"
+     ],
+     [
+      "Y",
+      "X",
+      "R"
+     ],
+     [
+      "W",
+      "A",
+      "Q"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 5,
+    "parChain": [
+     "AZURE",
+     "EYEWEAR",
+     "RAVERS",
+     "SQUEAKERS",
+     "SAX"
+    ],
+    "parPool": "ARE AREA AREAS ARK ARKS ASK ASKEW ASKS AURA AURAE AURAS AUREUS AVER AVERS AXE AYE AZURE EAR EARS EASY EAVE EKE ERA ERAS ERASURE ERE EUREKA EVE EVER EWE EWER EWERS EYE EYEWEAR KAVA KAYAK KAYAKER KAYAKERS KAYAKS KEY KEYS QUA QUAKE QUAKY QUARK QUARKS QUASAR QUASARS QUAVER QUAVERS QUAY QUAYS QUEASY QUEUE RAKE RARE RARER RAVE RAVER RAVERS RAY RAYS REAR REARS REV REVERE REVERS REVS REWEAVE RUE RUSK RUSKS SAKE SARKY SAVE SAVER SAVERS SAX SAY SAYS SKA SKEW SKEWER SKEWERS SKEWS SKY SQUARE SQUARER SQUEAK SQUEAKER SQUEAKERS SQUEAKS SQUEAKY SUAVE SUAVER SUE SURE SURER SURVEY SURVEYS SWEAR SWEARER SWEARERS SWEARS SWERVE UREA USURER USURERS VAR VERSA VERSUS VERVE VEX WEAK WEAKER WEAR WEARER WEARERS WEARS WEAVE WEAVER WEAVERS WERE WREAK WREAKS YAK YAKS YEA YEAR YEARS YEAS YER YEW YEWS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m10",
+   "title": "Master circuit 10",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "M",
+      "S",
+      "J"
+     ],
+     [
+      "U",
+      "I",
+      "D"
+     ],
+     [
+      "V",
+      "A",
+      "X"
+     ],
+     [
+      "N",
+      "Z",
+      "K"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 5,
+    "parChain": [
+     "VIM",
+     "MUZAK",
+     "KINDA",
+     "AUXIN",
+     "NINJAS"
+    ],
+    "parPool": "ADMAN ADMIN ADMIX ADS AIM AKIN AMNIA AND ANI ANIMUS ASANA ASANAS ASK ASKS AUK AUKS AUXIN DAD DADS DAIS DAM DAMASK DAMASKS DAMNS IMAM INS JAM JINX JUJU JUJUS KANA KANAS KANJI KIN KIND KINDA KINDS MAD MADAM MADMAN MADS MAIM MAIN MAINS MAM MAMA MAMAS MAN MANA MANANA MANANAS MANDAMUS MANIA MANIAS MANIKIN MANIKINS MANS MAS MASA MASAS MASK MASKS MIND MINDS MINI MINIM MINIMA MINIMUM MINIS MINUS MINX MIX MUM MUS MUSK MUZAK NAIAD NAIADS NINJA NINJAS NIX NUN NUNS NUS SAD SAKI SAKIS SAND SANDMAN SANDS SANS SAUNA SAUNAS SIM SIMIAN SIMIANS SIN SINS SINUS SIS SIX SKA SKI SKIM SKIN SKINS SKIS SKUA SKUAS SUM SUN SUNS UMIAK UMIAKS UNI UNIS UNMAN UNMANS UNMASK UNMASKS VIA VIAND VIANDS VIM VISA VISAS VIZ XIS",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m11",
+   "title": "Master circuit 11",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "Z",
+      "W",
+      "A"
+     ],
+     [
+      "E",
+      "Q",
+      "V"
+     ],
+     [
+      "D",
+      "I",
+      "R"
+     ],
+     [
+      "X",
+      "G",
+      "U"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 5,
+    "parChain": [
+     "AQUA",
+     "AXED",
+     "DERV",
+     "VIZIER",
+     "REGREW"
+    ],
+    "parPool": "ADAGE ADZE AGAR AGE AGED AQUA AQUAE ARE AREA AURA AURAE AXE AXED DAD DAG DARE DARED DARER DEAD DEADER DEAR DEARER DEGRADE DEGRADED DERV DEW DEWIER DUD DUDE DUDED DUE EAGER EAGERER EAR EARED EARWIG EDGE EDGED EDGER EDGIER EGAD ERA ERE ERG EWE EWER GAD GAG GAGA GAR GARAGE GARAGED GAUZE GAUZIER GEAR GEARED GIG GRAD GRADE GRADED GRADER GREW GRUDGE GRUDGED IVIED QUA QUAD QUEUE QUEUED QUIZ RAD RADAR RAG RAGA RAGE RAGED RARE RARED RARER RAVAGE RAVAGED RAVAGER READ READER REAR REARED REARVIEW RED REGEX REGRADE REGRADED REGREW REREAD REWED RUDE RUDER RUE RUED UREA URGE URGED VAR VIA VIE VIED VIEW VIEWED VIEWER VIVA VIZ VIZIER WEAR WEARER WED WEDGE WEDGED WEDGIE WERE WIG WIZ ZED",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
+  },
+  {
+   "id": "lc-m12",
+   "title": "Master circuit 12",
+   "difficulty": "master",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "payload": {
+    "sides": [
+     [
+      "P",
+      "E",
+      "Q"
+     ],
+     [
+      "U",
+      "K",
+      "L"
+     ],
+     [
+      "Z",
+      "O",
+      "A"
+     ],
+     [
+      "D",
+      "W",
+      "X"
+     ]
+    ],
+    "minimumWordLength": 3,
+    "pool": "master",
+    "par": 5,
+    "parChain": [
+     "ADZE",
+     "EXPLODE",
+     "ELODEA",
+     "AQUA",
+     "AWOKE"
+    ],
+    "parPool": "ADO ADZE ALA ALE ALOE ALOUD ALP AQUA AQUAE AWAKE AWE AWED AWL AWOKE AWOL AXE AXED AXLE DAD DADO DALE DEAD DEAL DEW DEWLAP DODO DOE DOLE DOLED DOWEL DOX DOXED DUAL DUD DUDE DUDED DUE DUEL DUO DUPLE DUPLEX EKE ELODEA EWE EXPLODE EXPLODED EXPO EXUDE EXUDED KALE KAPOK KELP KOLA LAD LADE LADED LADLE LADLED LAKE LAP LAUD LAUDED LAW LAX LEA LEAD LEADED LEAK LEAKED LEAP LED LODE LOP LOUD LOW LOWED LOX ODE OLD OLE OLEO OPAL OPAQUE OPAQUED OWE OWED OWL PAD PAL PALE PALED PALEO PAP PAPA PAPAL PAPAW PAW PAWED PAWL PAWPAW PLAQUE PLEA PLEAD PLEADED PLED PLOD PLOP POD POKE POKED POL POLE POLEAXE POLEAXED POLED POLO POP POPUP POW POX PUD PUP PUPA PUPAE PUPAL QUA QUAD QUAKE QUAKED QUEUE QUEUED QUO UPDO WAD WADE WADED WAKE WALE WALED WAX WAXED WEAK WEAL WED WELD WELDED WOE WOK WOKE WOLD WOW WOWED ZEAL ZED",
+    "explanation": "Every word crosses sides at each step and starts with the previous word's last letter. Par was proved by breadth-first search over the Master pool (everyday words plus less common real words); the everyday words alone cannot finish this board as quickly."
+   }
   }
  ]
 }

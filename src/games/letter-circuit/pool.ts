@@ -26,3 +26,22 @@ export function everydayPool(familiar: ReadonlySet<string>, membership: Readonly
   }
   return out.sort();
 }
+
+/**
+ * Master pool (Master rounds only): the everyday layer plus the "uncommon but respectable" layer
+ * (SCOWL size 60), still intersected with the ESDB membership list, 3 to 10 letters, no simple
+ * superlatives, minus the same blocklist and the shared exclusions. Existing rounds keep the
+ * everyday pool; a round opts in with `pool: "master"` in its payload.
+ */
+export const MASTER_POOL_VERSION = "circuit-master-pool-v1 (ESDB membership ∩ (size-35 ∪ size-60), 3-10 letters)";
+export const MASTER_POOL_MAX_LENGTH = 10;
+
+export function masterPool(familiar: ReadonlySet<string>, uncommon: ReadonlySet<string>, membership: ReadonlySet<string>, excluded: ReadonlySet<string>, minLength = 3): string[] {
+  const union = new Set<string>([...familiar, ...uncommon]);
+  const out: string[] = [];
+  for (const w of union) {
+    if (w.length < minLength || w.length > MASTER_POOL_MAX_LENGTH || !membership.has(w) || POOL_BLOCKLIST.has(w) || excluded.has(w) || isSimpleSuperlative(w, union)) continue;
+    out.push(w);
+  }
+  return out.sort();
+}

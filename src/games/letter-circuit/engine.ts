@@ -19,7 +19,9 @@ export interface CircuitPayload {
   /** Four sides of three distinct letters: top, right, bottom, left. */
   sides: string[][];
   minimumWordLength: number;
-  /** Proved minimum number of words using the everyday pool (breadth-first search). */
+  /** Master rounds only: par and hints use the Master pool (everyday plus less common words). Absent means the everyday pool. */
+  pool?: "master";
+  /** Proved minimum number of words using the round's pool (everyday, or Master) by breadth-first search. */
   par: number;
   /** One chain achieving par, shown after completion. */
   parChain: string[];
@@ -55,6 +57,8 @@ export interface CircuitState {
   minimumWordLength: number;
   par: number;
   parChain: string[];
+  /** True when par and hints come from the Master pool instead of the everyday pool. */
+  master: boolean;
   pool: string[];
   explanation: string;
   chain: ChainWord[];
@@ -105,6 +109,9 @@ export const chainComplete = (s: Pick<CircuitState, "sides" | "chain">) => s.cha
 function focusKey(s: CircuitState) {
   return `${requiredStart(s) ?? "*"}:${coverage(s)}`;
 }
+
+/** Wording for the pool that proves par and supplies hints. */
+export const lexName = (s: Pick<CircuitState, "master">) => (s.master ? "Master-pool" : "everyday");
 
 const better = (a: BestChain, b: BestChain | null) => !b || a.words.length < b.words.length || (a.words.length === b.words.length && a.letters < b.letters);
 
@@ -206,6 +213,7 @@ export function createLetterCircuitEngine(membership: ReadonlySet<string>): Game
         letters: board.letters,
         minimumWordLength: round.minimumWordLength,
         par: round.par,
+        master: round.pool === "master",
         parChain: round.parChain,
         pool: round.parPool.split(" ").filter(Boolean),
         explanation: round.explanation,
@@ -260,7 +268,7 @@ export function createLetterCircuitEngine(membership: ReadonlySet<string>): Game
         case "hint": {
           if (locked) return reject(state, "hint-unavailable", "This circuit is complete.");
           const word = focusFor(state);
-          if (!word) return reject(state, "hint-unavailable", chainComplete(state) ? "This chain is complete." : "No everyday route finishes from here. Try Undo or start a new chain.");
+          if (!word) return reject(state, "hint-unavailable", chainComplete(state) ? "This chain is complete." : `No ${lexName(state)} route finishes from here. Try Undo or start a new chain.`);
           const level = state.hintFocus?.at === focusKey(state) ? state.hintLevel : 0;
           const b = boardOf(state);
           const cov = coverage(state);
@@ -269,7 +277,7 @@ export function createLetterCircuitEngine(membership: ReadonlySet<string>): Game
           if (action.tier === HINT_LETTERS) {
             if (level >= 1) return reject(state, "hint-unavailable", "You already have this nudge.");
             const start = requiredStart(state);
-            const text = `${start ? `From ${start}, try` : "Try"} a ${word.length}-letter word starting with ${word[0]} that uses ${fresh.length ? fresh.join(", ") : "no new letters (a bridge)"}. An everyday route finishes in ${plural(remainingPlan, "more word")}.`;
+            const text = `${start ? `From ${start}, try` : "Try"} a ${word.length}-letter word starting with ${word[0]} that uses ${fresh.length ? fresh.join(", ") : "no new letters (a bridge)"}. A ${lexName(state)} route finishes in ${plural(remainingPlan, "more word")}.`;
             return accept(
               { ...state, chainAssisted: true, hintFocus: { word, at: focusKey(state) }, hintLevel: 1, hints: [...state.hints, { tier: HINT_LETTERS, text, word }] },
               "hint",
@@ -301,12 +309,12 @@ export function createLetterCircuitEngine(membership: ReadonlySet<string>): Game
       const locked = !!state.best && !state.improving;
       const word = locked ? null : focusFor(state);
       const level = word && state.hintFocus?.at === focusKey(state) ? state.hintLevel : 0;
-      const none = locked ? "This circuit is complete." : chainComplete(state) ? "This chain is complete." : "No everyday route finishes from here. Try Undo or start a new chain.";
+      const none = locked ? "This circuit is complete." : chainComplete(state) ? "This chain is complete." : `No ${lexName(state)} route finishes from here. Try Undo or start a new chain.`;
       return [
         {
           tier: HINT_LETTERS,
           label: "Letters to aim for",
-          description: "Names the first letter, length and new letters of a word that starts where your chain ends and lies on a shortest everyday route.",
+          description: "Names the first letter, length and new letters of a word that starts where your chain ends and lies on a shortest route through the round's word pool (everyday words, or the wider Master pool in Master rounds).",
           available: !!word && level < 1,
           reason: word ? "Already taken for this position." : none,
           reveal: false,
@@ -354,7 +362,9 @@ export function createLetterCircuitEngine(membership: ReadonlySet<string>): Game
         assistance: { hints, reveals: played },
         details: [
           `Best chain: ${best.words.join(" → ")} (${best.letters} letters)${best.assisted ? ", with help" : ", unaided"}.`,
-          `Par is ${state.par}: the fewest words a computer search found using only everyday words. Longer word-list words can sometimes beat it.`,
+          state.master
+            ? `Par is ${state.par}: the fewest words a computer search found using the Master pool (everyday plus less common words of three to ten letters). Rarer words from the full word list can sometimes beat it.`
+            : `Par is ${state.par}: the fewest words a computer search found using only everyday words. Longer word-list words can sometimes beat it.`,
           state.completions > 1 ? `You completed the circuit ${plural(state.completions, "time")}; your best is kept.` : "Try for fewer words to see if you can beat your chain; your best is kept.",
           hints || played ? `Help used: ${plural(hints, "hint")}, ${plural(played, "word")} played for you.` : "No hints used.",
         ],
