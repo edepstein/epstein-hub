@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { clearProgress, expectNoHorizontalOverflow, feedback } from "./helpers";
+import data from "../../src/games/letter-wheel/content/rounds.json";
 
 const ROUND = "/play/letter-wheel/lw-demo-1"; // pack "education" fixture: centre A
 const TARGETS = ["EDUCATION", "ACTION", "AUCTION", "CAUTION", "DANCE", "DATE", "CANE", "CANED"];
@@ -122,6 +123,29 @@ test("finish early shows an honest partial result and library entry", async ({ p
   await expect(page.getByTestId("result-panel")).toContainText("You found 1 of 20 everyday words");
   await page.goto("/library");
   await expect(page.getByText("Gentle wheel 1")).toBeVisible();
+});
+
+test("master wheel loads with target wording, definition hint, and a full solve completes", async ({ page }) => {
+  const master = (data.rounds as { id: string; payload: { targets: string[] } }[]).find((r) => r.id === "lw-m5")!; // DEFEATISM, centre F
+  await page.goto("/play/letter-wheel/lw-m5");
+  await expect(page.getByTestId("target-progress")).toHaveText(`0 of ${master.payload.targets.length} target words`);
+  await page.getByRole("button", { name: "Get a hint" }).click();
+  const dialog = page.getByRole("dialog", { name: "A helpful nudge" });
+  await dialog.getByRole("listitem").filter({ has: page.getByText("Definition of a rarer word", { exact: true }) }).getByRole("button", { name: "Take hint" }).click();
+  await expect(feedback(page)).toContainText("means:");
+  const input = page.getByLabel("Your word");
+  await input.fill("fade");
+  await input.press("Enter");
+  await expect(page.getByTestId("found-list")).toContainText("FADE");
+  for (const w of master.payload.targets) {
+    await input.fill(w);
+    await input.press("Enter");
+  }
+  const result = page.getByTestId("result-panel");
+  await expect(result).toBeVisible();
+  await expect(result).toHaveAttribute("data-outcome", "completed");
+  await expect(result).toContainText("Every target word found");
+  await expect(result).toContainText("1 hint");
 });
 
 test("@mobile wheel fits a phone screen and plays", async ({ page }) => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import fc from "fast-check";
 import { loadMembershipSync } from "@/lib/dictionary/node";
-import { createLetterWheelEngine, HINT_HALF, HINT_NINE, HINT_REVEAL, HINT_START, positionsUsed, scoreWord, type WheelPayload, type WheelState } from "./engine";
+import { createLetterWheelEngine, HINT_DEFINE, HINT_HALF, HINT_NINE, HINT_REVEAL, HINT_START, positionsUsed, scoreWord, type WheelPayload, type WheelState } from "./engine";
 import { rounds } from "./rounds";
 import { sessionOptionsFor } from "@/lib/progress/attempt";
 
@@ -158,6 +158,33 @@ describe("letter wheel rules", () => {
       }
       expect(engine.outcome(s), r.meta.id).toBe("completed");
     }
+  });
+
+  it("master rounds: 14+ rounds, target wording, definition hints, and a completed result says target words", () => {
+    const masters = rounds.filter((r) => r.meta.difficulty === "master");
+    expect(masters.length).toBeGreaterThanOrEqual(14);
+    expect(rounds.filter((r) => r.meta.difficulty === "expert").length).toBeGreaterThanOrEqual(22);
+    const id = masters[0].meta.id;
+    let s = start(id);
+    expect(s.wordLabel).toBe("target");
+    const offers = engine.hints(s);
+    const def = offers.find((o) => o.tier === HINT_DEFINE)!;
+    expect(def.available).toBe(true);
+    const h = engine.apply(s, { type: "hint", tier: HINT_DEFINE });
+    expect(h.ok).toBe(true);
+    expect(h.message).toMatch(/^A \d-letter word starting [A-Z] means: /);
+    const h2 = engine.apply(h.state, { type: "hint", tier: HINT_DEFINE });
+    expect(h2.ok).toBe(true);
+    expect(h2.state.hints[1].word).not.toBe(h2.state.hints[0].word);
+    for (const w of masters[0].payload.targets) s = submit(s, w).state;
+    const r = engine.result(s)!;
+    expect(r.headline).toBe("Every target word found.");
+    expect(r.details.join(" ")).toMatch(/target words/);
+    expect(r.details.join(" ")).not.toMatch(/everyday/);
+    // Non-master rounds keep the everyday wording and offer no definition hint.
+    const g = start("lw-g1");
+    expect(g.wordLabel).toBe("everyday");
+    expect(engine.hints(g).some((o) => o.tier === HINT_DEFINE)).toBe(false);
   });
 
   it("property: any accepted word fits the rack multiset and contains the centre", () => {

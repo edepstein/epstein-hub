@@ -20,10 +20,14 @@ export interface WheelPayload {
   /** Index into letters of the required (centre) position. */
   requiredIndex: number;
   minimumLength: number;
-  /** Curated everyday target words (the completion denominator). Upper-case. */
+  /** Curated target words (the completion denominator). Upper-case. */
   targets: string[];
   /** Nine-letter answers known to exist on this rack. */
   nineLetterAnswers: string[];
+  /** "everyday" (default) or "target" (Master). Used in player-facing text. */
+  wordLabel?: "everyday" | "target";
+  /** Original definitions for the rarer targets (Master): used by the definition hint. */
+  clues?: Record<string, string>;
   /** Pack demo fixtures only: the original finite lexicon and its stored maximum score (regression data). */
   fixtureLexicon?: string[];
   fixtureMaximumScore?: number;
@@ -50,6 +54,8 @@ export interface WheelState {
   minimumLength: number;
   targets: string[];
   nineLetterAnswers: string[];
+  wordLabel: "everyday" | "target";
+  clues: Record<string, string>;
   /** Every acceptable word for this rack under the pinned membership (sorted). */
   lexicon: string[];
   maxScore: number;
@@ -74,6 +80,7 @@ export type WheelAction =
 export const HINT_START = 1;
 export const HINT_HALF = 2;
 export const HINT_REVEAL = 3;
+export const HINT_DEFINE = 4;
 export const HINT_NINE = 9;
 
 export function scoreWord(word: string): number {
@@ -134,6 +141,11 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
     return remaining[0] ?? null;
   }
 
+  const definitionTarget = (s: WheelState): string | null =>
+    s.targets
+      .filter((t) => s.clues[t] && !s.found.some((f) => f.word === t) && !s.hints.some((h) => h.tier === HINT_DEFINE && h.word === t))
+      .sort((a, b) => a.length - b.length || a.localeCompare(b))[0] ?? null;
+
   const targetsComplete = (s: WheelState) => s.targets.every((t) => s.found.some((f) => f.word === t));
 
   const engine: GameEngine<WheelPayload, WheelState, WheelAction, string> = {
@@ -157,6 +169,8 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
         minimumLength: round.minimumLength,
         targets,
         nineLetterAnswers: round.nineLetterAnswers.map((w) => w.toUpperCase()),
+        wordLabel: round.wordLabel ?? "everyday",
+        clues: Object.fromEntries(Object.entries(round.clues ?? {}).map(([k, v]) => [k.toUpperCase(), v])),
         lexicon,
         maxScore: lexicon.reduce((s, w) => s + scoreWord(w), 0),
         // Seeded presentation order so the nine-letter answer is never displayed in reading order.
@@ -186,8 +200,8 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
           const next: WheelState = { ...state, found, hintFocus: state.hintFocus === word ? null : state.hintFocus, hintLevel: state.hintFocus === word ? 0 : state.hintLevel };
           const completedNow = !targetsComplete(state) && targetsComplete(next);
           const bonus = word.length === 9 ? " including the nine-letter bonus" : "";
-          const kind = isTarget(state, word) ? "" : " A bonus word beyond the everyday list.";
-          return accept(next, completedNow ? "targets-complete" : "accepted", `${word} scores ${pts}${bonus}.${kind}${completedNow ? " You have found every everyday word!" : ""}`, {
+          const kind = isTarget(state, word) ? "" : ` A bonus word beyond the ${state.wordLabel} list.`;
+          return accept(next, completedNow ? "targets-complete" : "accepted", `${word} scores ${pts}${bonus}.${kind}${completedNow ? ` You have found every ${state.wordLabel} word!` : ""}`, {
             score: a.score,
           });
         }
@@ -206,12 +220,18 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
             const text = `A nine-letter answer starts with ${nine[0]}.`;
             return accept({ ...state, nineNudgeTaken: true, hints: [...state.hints, { tier: HINT_NINE, text, word: nine }] }, "hint", text);
           }
+          if (action.tier === HINT_DEFINE) {
+            const w = definitionTarget(state);
+            if (!w) return reject(state, "hint-unavailable", "There is no unfound target word with a definition left.");
+            const text = `A ${w.length}-letter word starting ${w[0]} means: ${state.clues[w]}`;
+            return accept({ ...state, hints: [...state.hints, { tier: HINT_DEFINE, text, word: w }] }, "hint", text);
+          }
           const focus = focusWord(state);
-          if (!focus) return reject(state, "hint-unavailable", "Every everyday word is already found.");
+          if (!focus) return reject(state, "hint-unavailable", `Every ${state.wordLabel} word is already found.`);
           const level = state.hintFocus === focus ? state.hintLevel : 0;
           if (action.tier === HINT_START) {
             if (level >= 1) return reject(state, "hint-unavailable", "You already have the starting letter for this word.");
-            const text = `An everyday word of ${focus.length} letters starts with ${focus[0]}.`;
+            const text = `${state.wordLabel === "everyday" ? "An everyday" : "A target"} word of ${focus.length} letters starts with ${focus[0]}.`;
             return accept({ ...state, hintFocus: focus, hintLevel: 1, hints: [...state.hints, { tier: HINT_START, text, word: focus }] }, "hint", text);
           }
           if (action.tier === HINT_HALF) {
@@ -225,7 +245,7 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
             const found = [...state.found, { word: focus, points: 0, assisted: true, target: true }];
             const next = { ...state, found, hintFocus: null, hintLevel: 0, hints: [...state.hints, { tier: HINT_REVEAL, text: `Revealed ${focus} (scores 0).`, word: focus }] };
             const completedNow = targetsComplete(next);
-            return accept(next, completedNow ? "targets-complete" : "revealed", `Revealed ${focus}. It counts towards completion but scores 0.${completedNow ? " That completes the everyday words." : ""}`);
+            return accept(next, completedNow ? "targets-complete" : "revealed", `Revealed ${focus}. It counts towards completion but scores 0.${completedNow ? ` That completes the ${state.wordLabel} words.` : ""}`);
           }
           return reject(state, "hint-unavailable", "That hint does not exist.");
         }
@@ -247,9 +267,9 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
         {
           tier: HINT_START,
           label: "Starting letter",
-          description: "Shows the first letter and length of one everyday word you have not found.",
+          description: `Shows the first letter and length of one ${state.wordLabel} word you have not found.`,
           available: !!focus && level < 1,
-          reason: !focus ? "Every everyday word is found." : "Already taken for the current word.",
+          reason: !focus ? `Every ${state.wordLabel} word is found.` : "Already taken for the current word.",
           reveal: false,
           cost: "No points lost; the result records one hint.",
         },
@@ -258,20 +278,32 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
           label: "First half",
           description: "Shows the first half of that same word.",
           available: !!focus && level === 1,
-          reason: !focus ? "Every everyday word is found." : level < 1 ? "Take the starting letter first." : "Already taken for the current word.",
+          reason: !focus ? `Every ${state.wordLabel} word is found.` : level < 1 ? "Take the starting letter first." : "Already taken for the current word.",
           reveal: false,
           cost: "No points lost; the result records one hint.",
         },
         {
           tier: HINT_REVEAL,
           label: "Reveal a word",
-          description: focus ? `Adds the ${level ? "hinted" : "shortest unfound"} everyday word to your list.` : "Adds an everyday word to your list.",
+          description: focus ? `Adds the ${level ? "hinted" : "shortest unfound"} ${state.wordLabel} word to your list.` : `Adds a ${state.wordLabel} word to your list.`,
           available: !!focus,
-          reason: "Every everyday word is found.",
+          reason: `Every ${state.wordLabel} word is found.`,
           reveal: true,
           cost: "The revealed word scores 0 but counts towards completion.",
         },
       ];
+      if (Object.keys(state.clues).length) {
+        const dt = definitionTarget(state);
+        offers.push({
+          tier: HINT_DEFINE,
+          label: "Definition of a rarer word",
+          description: "Gives an original definition, with length and first letter, of the shortest rarer target word you have not found.",
+          available: !!dt,
+          reason: "Every rarer target word is found or already defined.",
+          reveal: false,
+          cost: "No points lost; the result records one hint.",
+        });
+      }
       if (state.nineLetterAnswers.length) {
         offers.push({
           tier: HINT_NINE,
@@ -307,22 +339,22 @@ export function createLetterWheelEngine(membership: ReadonlySet<string>): GameEn
         outcome: done ? "completed" : "abandoned",
         headline: done
           ? revealed
-            ? `Every everyday word found, ${revealed} with help.`
-            : "Every everyday word found."
-          : `You found ${targetFound} of ${state.targets.length} everyday words.`,
+            ? `Every ${state.wordLabel} word found, ${revealed} with help.`
+            : `Every ${state.wordLabel} word found.`
+          : `You found ${targetFound} of ${state.targets.length} ${state.wordLabel} words.`,
         scoreText: `${score} points`,
         score,
         maxScore: state.maxScore,
         efficiency: null,
         assistance: { hints, reveals: revealed },
         details: [
-          `${targetFound} of ${state.targets.length} everyday words${revealed ? ` (${revealed} revealed, scoring 0)` : ""}.`,
-          bonus ? `${plural(bonus, "bonus word")} beyond the everyday list.` : "No bonus words beyond the everyday list yet.",
+          `${targetFound} of ${state.targets.length} ${state.wordLabel} words${revealed ? ` (${revealed} revealed, scoring 0)` : ""}.`,
+          bonus ? `${plural(bonus, "bonus word")} beyond the ${state.wordLabel} list.` : `No bonus words beyond the ${state.wordLabel} list yet.`,
           nineFound ? `Nine-letter word found: ${nineFound.word} (+9 bonus).` : "The nine-letter word is still waiting.",
           `${plural(unexplored, "accepted word")} left unexplored in the full word list (maximum ${state.maxScore} points).`,
           ...(done ? ["You can keep finding bonus words; the result updates as you go."] : []),
         ],
-        shareText: `Word Club · Letter Wheel · ${targetFound}/${state.targets.length} everyday words · ${score} pts${hints + revealed ? ` · ${hints} hint${hints === 1 ? "" : "s"}, ${revealed} revealed` : " · unassisted"}`,
+        shareText: `Word Club · Letter Wheel · ${targetFound}/${state.targets.length} ${state.wordLabel} words · ${score} pts${hints + revealed ? ` · ${hints} hint${hints === 1 ? "" : "s"}, ${revealed} revealed` : " · unassisted"}`,
         explanation: [state.explanation, ...(missed.length ? [`Everyday words not found: ${missed.join(", ")}.`] : []), `Nine-letter answers: ${state.nineLetterAnswers.join(", ")}.`],
       };
     },

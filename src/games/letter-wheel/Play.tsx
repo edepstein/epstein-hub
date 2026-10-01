@@ -84,7 +84,7 @@ function WheelGame({ bundle, words, siblings }: { bundle: RoundBundle<WheelPaylo
             <span style={{ width: `${pct}%` }} />
           </div>
           <p style={{ margin: "0 0 6px" }} data-testid="target-progress">
-            {targetFound} of {state.targets.length} everyday words
+            {targetFound} of {state.targets.length} {state.wordLabel} words
           </p>
           <div className="stat-row">
             <span>Bonus words</span>
