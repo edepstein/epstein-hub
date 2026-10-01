@@ -45,6 +45,25 @@ describe("Word Families content", () => {
     }
   });
 
+  it("has at least ten rounds per difficulty (practice plus demo)", () => {
+    for (const d of ["gentle", "standard", "expert"] as const) {
+      expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(10);
+    }
+  });
+
+  it("wf-e6 and wf-e8 hidden words: exactly the intended four tiles hide a candidate", () => {
+    const hiders = (id: string, list: string[]) =>
+      rawRounds
+        .find((r) => r.id === id)!
+        .groups.flatMap((g) => g.terms)
+        .filter((w) => list.some((x) => w.replace(/ /g, "").includes(x) && w !== x))
+        .sort();
+    const body = ["CHIN", "HIP", "ARM", "RIB", "EAR", "LEG", "LIP", "TOE", "EYE", "JAW", "GUM", "LUNG", "SHIN", "KNEE", "HAND", "HEEL", "NOSE", "NECK", "BACK", "HEAD", "FOOT", "BROW", "LASH", "LID", "CHEST", "HAIR", "NAIL", "SKIN", "BONE", "GUT", "HEART", "THUMB", "WRIST", "CALF", "THIGH", "SOLE", "PALM", "FIST", "CHEEK", "LAP", "HAM"];
+    expect(hiders("wf-e6", body)).toEqual(["CHINA", "HARMONY", "SHIP", "TRIBE"]);
+    const colours = ["RED", "TAN", "PINK", "BLUE", "GREY", "TEAL", "ROSE", "GOLD", "JADE", "LIME", "PLUM", "RUST", "BUFF", "NAVY", "CYAN", "ECRU", "FAWN", "AQUA", "BEIGE", "CREAM", "OCHRE", "AMBER", "LILAC", "MAUVE", "KHAKI", "WHITE", "BLACK", "BROWN", "GREEN", "PEACH", "CORAL", "IVORY", "OLIVE", "SEPIA", "SAGE", "MINT", "WINE", "RUBY", "SAND", "JET", "INK", "OPAL", "ASH"];
+    expect(hiders("wf-e8", colours)).toEqual(["CHAMBER", "SACRED", "STEALTH", "SUBLIME"]);
+  });
+
   it("imports both pack fixtures as demo rounds with their authored groups", () => {
     const demos = rounds.filter((r) => r.meta.status === "demo");
     expect(demos.map((d) => d.meta.sourceFixtureId).sort()).toEqual(["everyday-families", "starter-families"]);

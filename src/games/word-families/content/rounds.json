@@ -1133,6 +1133,927 @@
      "resolvedBy": "Not on this board."
     }
    ]
+  },
+  {
+   "id": "wf-g6",
+   "title": "Gentle families 6",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Vegetables",
+     "terms": [
+      "CARROT",
+      "PARSNIP",
+      "CABBAGE",
+      "LEEK"
+     ],
+     "explanation": "CARROT, PARSNIP, CABBAGE and LEEK are all vegetables."
+    },
+    {
+     "label": "Road vehicles",
+     "terms": [
+      "BUS",
+      "TAXI",
+      "LORRY",
+      "VAN"
+     ],
+     "explanation": "A BUS, TAXI, LORRY and VAN all carry people or goods along roads."
+    },
+    {
+     "label": "Organs of the body",
+     "terms": [
+      "HEART",
+      "LUNG",
+      "LIVER",
+      "KIDNEY"
+     ],
+     "explanation": "The HEART, a LUNG, the LIVER and a KIDNEY are organs inside the body."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "KIDNEY",
+     "rival": "A kidney bean is a vegetable.",
+     "resolvedBy": "KIDNEY on its own names the organ, and the vegetables already have four members."
+    }
+   ]
+  },
+  {
+   "id": "wf-g7",
+   "title": "Gentle families 7",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Breakfast foods",
+     "terms": [
+      "TOAST",
+      "PORRIDGE",
+      "MUESLI",
+      "CROISSANT"
+     ],
+     "explanation": "TOAST, PORRIDGE, MUESLI and a CROISSANT are common breakfasts."
+    },
+    {
+     "label": "Jobs",
+     "terms": [
+      "NURSE",
+      "BAKER",
+      "PLUMBER",
+      "FARMER"
+     ],
+     "explanation": "A NURSE, BAKER, PLUMBER and FARMER are all jobs."
+    },
+    {
+     "label": "Seasons",
+     "terms": [
+      "SPRING",
+      "SUMMER",
+      "AUTUMN",
+      "WINTER"
+     ],
+     "explanation": "SPRING, SUMMER, AUTUMN and WINTER are the four seasons."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "TOAST",
+     "rival": "A toast is also a speech made before drinking.",
+     "resolvedBy": "No speech or drink group exists; TOAST completes the breakfasts."
+    }
+   ]
+  },
+  {
+   "id": "wf-g8",
+   "title": "Gentle families 8",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Big cats",
+     "terms": [
+      "LION",
+      "TIGER",
+      "LEOPARD",
+      "CHEETAH"
+     ],
+     "explanation": "The LION, TIGER, LEOPARD and CHEETAH are big cats."
+    },
+    {
+     "label": "Drinks",
+     "terms": [
+      "COFFEE",
+      "LEMONADE",
+      "COCOA",
+      "MILK"
+     ],
+     "explanation": "COFFEE, LEMONADE, COCOA and MILK are all drinks."
+    },
+    {
+     "label": "Parts of a bicycle",
+     "terms": [
+      "PEDAL",
+      "SADDLE",
+      "CHAIN",
+      "SPOKE"
+     ],
+     "explanation": "A bicycle has PEDALS, a SADDLE, a CHAIN and SPOKES in its wheels."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "SADDLE",
+     "rival": "A saddle also goes on a horse.",
+     "resolvedBy": "No horse group exists; SADDLE completes the bicycle parts."
+    }
+   ]
+  },
+  {
+   "id": "wf-g9",
+   "title": "Gentle families 9",
+   "difficulty": "gentle",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Months of the year",
+     "terms": [
+      "MARCH",
+      "MAY",
+      "JUNE",
+      "AUGUST"
+     ],
+     "explanation": "MARCH, MAY, JUNE and AUGUST are months."
+    },
+    {
+     "label": "European capital cities",
+     "terms": [
+      "PARIS",
+      "ROME",
+      "MADRID",
+      "LISBON"
+     ],
+     "explanation": "PARIS (France), ROME (Italy), MADRID (Spain) and LISBON (Portugal) are capital cities."
+    },
+    {
+     "label": "British wild mammals",
+     "terms": [
+      "BADGER",
+      "OTTER",
+      "HEDGEHOG",
+      "SQUIRREL"
+     ],
+     "explanation": "The BADGER, OTTER, HEDGEHOG and SQUIRREL all live wild in Britain."
+    }
+   ],
+   "explanation": "Three direct categories of four. Each term belongs to exactly one group.",
+   "redHerrings": [
+    {
+     "term": "MARCH",
+     "rival": "MARCH is also a verb meaning to walk in step.",
+     "resolvedBy": "No verbs group exists; MARCH completes the months."
+    },
+    {
+     "term": "BADGER",
+     "rival": "BADGER is also a verb meaning to pester.",
+     "resolvedBy": "No verbs group exists; BADGER completes the mammals."
+    }
+   ]
+  },
+  {
+   "id": "wf-s6",
+   "title": "Standard families 6",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before BOX",
+     "terms": [
+      "POST",
+      "SHOE",
+      "TOOL",
+      "MATCH"
+     ],
+     "explanation": "POSTBOX, SHOEBOX, TOOLBOX and MATCHBOX."
+    },
+    {
+     "label": "Hats",
+     "terms": [
+      "BOWLER",
+      "BERET",
+      "TRILBY",
+      "FEZ"
+     ],
+     "explanation": "A BOWLER, BERET, TRILBY and FEZ are all hats."
+    },
+    {
+     "label": "Cricket terms",
+     "terms": [
+      "WICKET",
+      "OVER",
+      "STUMP",
+      "CREASE"
+     ],
+     "explanation": "In cricket the ball is bowled at the WICKET in sets of six called an OVER; a STUMP is one of the wicket's three uprights and the batter stands in the CREASE."
+    },
+    {
+     "label": "Pasta",
+     "terms": [
+      "PENNE",
+      "FUSILLI",
+      "LASAGNE",
+      "RAVIOLI"
+     ],
+     "explanation": "PENNE, FUSILLI, LASAGNE and RAVIOLI are types of pasta."
+    }
+   ],
+   "explanation": "Direct categories mixed with a linguistic construction, with deliberate overlaps. Count the candidates for each group.",
+   "redHerrings": [
+    {
+     "term": "BOWLER",
+     "rival": "A bowler is a cricketer, so BOWLER looks like a fifth cricket term.",
+     "resolvedBy": "The hats have only four candidates (BOWLER, BERET, TRILBY, FEZ), so BOWLER must be the hat."
+    },
+    {
+     "term": "MATCH",
+     "rival": "A cricket match.",
+     "resolvedBy": "MATCH is not specific to cricket, and the BOX group has exactly four candidates, so MATCH completes MATCHBOX."
+    }
+   ]
+  },
+  {
+   "id": "wf-s7",
+   "title": "Standard families 7",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after HAND",
+     "terms": [
+      "BAG",
+      "SHAKE",
+      "CUFF",
+      "RAIL"
+     ],
+     "explanation": "HANDBAG, HANDSHAKE, HANDCUFF and HANDRAIL."
+    },
+    {
+     "label": "Parts of a shirt",
+     "terms": [
+      "COLLAR",
+      "SLEEVE",
+      "BUTTON",
+      "POCKET"
+     ],
+     "explanation": "A shirt has a COLLAR, SLEEVES, BUTTONS and often a POCKET. CUFF is needed for HANDCUFF."
+    },
+    {
+     "label": "Dances",
+     "terms": [
+      "WALTZ",
+      "TANGO",
+      "SALSA",
+      "FOXTROT"
+     ],
+     "explanation": "The WALTZ, TANGO, SALSA and FOXTROT are dances."
+    },
+    {
+     "label": "Spices",
+     "terms": [
+      "CUMIN",
+      "PAPRIKA",
+      "NUTMEG",
+      "CINNAMON"
+     ],
+     "explanation": "CUMIN, PAPRIKA, NUTMEG and CINNAMON are spices."
+    }
+   ],
+   "explanation": "Direct categories mixed with a linguistic construction, with deliberate overlaps. Count the candidates for each group.",
+   "redHerrings": [
+    {
+     "term": "CUFF",
+     "rival": "A cuff is part of a shirt.",
+     "resolvedBy": "No shirt part forms a word after HAND, so CUFF must complete HANDCUFF; the shirt keeps COLLAR, SLEEVE, BUTTON and POCKET."
+    },
+    {
+     "term": "SALSA",
+     "rival": "Salsa is also a spicy sauce, which suggests the spices.",
+     "resolvedBy": "Salsa is a sauce, not a spice; it completes the dances."
+    },
+    {
+     "term": "SHAKE",
+     "rival": "SHAKE could suggest a dance move.",
+     "resolvedBy": "It is not a named dance; it forms HANDSHAKE."
+    }
+   ]
+  },
+  {
+   "id": "wf-s8",
+   "title": "Standard families 8",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before LINE",
+     "terms": [
+      "DEAD",
+      "HEAD",
+      "SKY",
+      "FINISH"
+     ],
+     "explanation": "DEADLINE, HEADLINE, SKYLINE and FINISH LINE."
+    },
+    {
+     "label": "Things with a crown",
+     "terms": [
+      "QUEEN",
+      "TOOTH",
+      "HAT",
+      "WATCH"
+     ],
+     "explanation": "A QUEEN wears a crown, a TOOTH has a crown (the part above the gum), a HAT has a crown (its top) and a WATCH has a crown (the winding knob)."
+    },
+    {
+     "label": "Snakes",
+     "terms": [
+      "COBRA",
+      "ADDER",
+      "PYTHON",
+      "VIPER"
+     ],
+     "explanation": "The COBRA, ADDER, PYTHON and VIPER are snakes."
+    },
+    {
+     "label": "Scottish islands",
+     "terms": [
+      "ARRAN",
+      "MULL",
+      "ISLAY",
+      "IONA"
+     ],
+     "explanation": "ARRAN, MULL, ISLAY and IONA are islands off the west coast of Scotland."
+    }
+   ],
+   "explanation": "Direct categories mixed with a linguistic construction, with deliberate overlaps. Count the candidates for each group.",
+   "redHerrings": [
+    {
+     "term": "HEAD",
+     "rival": "The crown is also the top of the head.",
+     "resolvedBy": "No other tile forms a word before LINE, so HEAD must complete HEADLINE; the crowns keep QUEEN, TOOTH, HAT and WATCH."
+    },
+    {
+     "term": "SKY",
+     "rival": "SKY sounds like SKYE, a Scottish island.",
+     "resolvedBy": "The tile is spelt SKY, not SKYE; it forms SKYLINE."
+    },
+    {
+     "term": "ADDER",
+     "rival": "An adder is also something that adds.",
+     "resolvedBy": "No arithmetic group exists; the adder is Britain's native venomous snake."
+    }
+   ]
+  },
+  {
+   "id": "wf-s9",
+   "title": "Standard families 9",
+   "difficulty": "standard",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after BOOK",
+     "terms": [
+      "CASE",
+      "WORM",
+      "END",
+      "SHOP"
+     ],
+     "explanation": "BOOKCASE, BOOKWORM, BOOKEND and BOOKSHOP."
+    },
+    {
+     "label": "Gospel writers",
+     "terms": [
+      "MATTHEW",
+      "MARK",
+      "LUKE",
+      "JOHN"
+     ],
+     "explanation": "MATTHEW, MARK, LUKE and JOHN wrote the four Gospels of the New Testament."
+    },
+    {
+     "label": "Nuts",
+     "terms": [
+      "ALMOND",
+      "CASHEW",
+      "PECAN",
+      "PISTACHIO"
+     ],
+     "explanation": "The ALMOND, CASHEW, PECAN and PISTACHIO are eaten as nuts."
+    },
+    {
+     "label": "Sauces",
+     "terms": [
+      "KETCHUP",
+      "GRAVY",
+      "PESTO",
+      "HOISIN"
+     ],
+     "explanation": "KETCHUP, GRAVY, PESTO and HOISIN are sauces."
+    }
+   ],
+   "explanation": "Direct categories mixed with a linguistic construction, with deliberate overlaps. Count the candidates for each group.",
+   "redHerrings": [
+    {
+     "term": "MARK",
+     "rival": "MARK forms BOOKMARK.",
+     "resolvedBy": "The Gospel writers have only four candidates, so MARK must go there; SHOP completes BOOKSHOP."
+    },
+    {
+     "term": "PESTO",
+     "rival": "Pesto is made with pine nuts.",
+     "resolvedBy": "Pesto is a sauce, not a nut; it completes the sauces."
+    }
+   ]
+  },
+  {
+   "id": "wf-e5",
+   "title": "Expert families 5",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like numbers",
+     "terms": [
+      "WON",
+      "TOO",
+      "FOR",
+      "ATE"
+     ],
+     "explanation": "WON sounds like ONE, TOO like TWO, FOR like FOUR and ATE like EIGHT."
+    },
+    {
+     "label": "Prepositions",
+     "terms": [
+      "OVER",
+      "UNDER",
+      "ABOVE",
+      "BEYOND"
+     ],
+     "explanation": "OVER, UNDER, ABOVE and BEYOND are prepositions of place. FOR is a preposition too, but the number sounds need it."
+    },
+    {
+     "label": "Irregular past tenses",
+     "terms": [
+      "SWAM",
+      "DRANK",
+      "FLEW",
+      "SANG"
+     ],
+     "explanation": "SWAM, DRANK, FLEW and SANG are the irregular past tenses of swim, drink, fly and sing. ATE, WON and LET are needed elsewhere."
+    },
+    {
+     "label": "Tennis terms",
+     "terms": [
+      "LOVE",
+      "DEUCE",
+      "LET",
+      "VOLLEY"
+     ],
+     "explanation": "In tennis LOVE is a score of nil, DEUCE is 40 all, a LET is a serve replayed after clipping the net and a VOLLEY is a shot played before the ball bounces."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "FOR",
+     "rival": "FOR is a preposition.",
+     "resolvedBy": "Only WON, TOO, FOR and ATE sound like numbers, so FOR must go there."
+    },
+    {
+     "term": "ATE",
+     "rival": "ATE is an irregular past tense (of eat).",
+     "resolvedBy": "The number sounds need ATE; SWAM, DRANK, FLEW and SANG fill the past tenses."
+    },
+    {
+     "term": "WON",
+     "rival": "WON is an irregular past tense (of win).",
+     "resolvedBy": "As for ATE: the number sounds need it."
+    },
+    {
+     "term": "LET",
+     "rival": "LET is an irregular past tense (let, let, let).",
+     "resolvedBy": "The tennis group has only four candidates (LOVE, DEUCE, LET, VOLLEY), so LET must be the tennis term."
+    },
+    {
+     "term": "LOVE",
+     "rival": "LOVE means nil, which looks like a number.",
+     "resolvedBy": "It means zero but does not sound like a number word; it completes the tennis terms."
+    },
+    {
+     "term": "DEUCE",
+     "rival": "DEUCE is an old word for two (dice and cards).",
+     "resolvedBy": "It does not sound like a number word; DEUCE is needed by the tennis terms."
+    }
+   ]
+  },
+  {
+   "id": "wf-e6",
+   "title": "Expert families 6",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hide a body part",
+     "terms": [
+      "CHINA",
+      "SHIP",
+      "HARMONY",
+      "TRIBE"
+     ],
+     "explanation": "CHIN is in CHINA, HIP in SHIP, ARM in HARMONY and RIB in TRIBE."
+    },
+    {
+     "label": "Countries",
+     "terms": [
+      "PERU",
+      "CHILE",
+      "KENYA",
+      "NEPAL"
+     ],
+     "explanation": "PERU, CHILE, KENYA and NEPAL are countries. CHINA is needed by the hidden body parts."
+    },
+    {
+     "label": "Boats",
+     "terms": [
+      "YACHT",
+      "CANOE",
+      "FERRY",
+      "BARGE"
+     ],
+     "explanation": "A YACHT, CANOE, FERRY and BARGE are boats. SHIP is needed by the hidden body parts."
+    },
+    {
+     "label": "Musical terms",
+     "terms": [
+      "MELODY",
+      "RHYTHM",
+      "TEMPO",
+      "CHORD"
+     ],
+     "explanation": "MELODY, RHYTHM, TEMPO and CHORD are terms from music. HARMONY is needed by the hidden body parts."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "CHINA",
+     "rival": "CHINA is a country.",
+     "resolvedBy": "Only CHINA, SHIP, HARMONY and TRIBE hide a body part, so each must go there."
+    },
+    {
+     "term": "SHIP",
+     "rival": "A ship is a kind of boat.",
+     "resolvedBy": "As for CHINA: the hidden body parts need SHIP; BARGE completes the boats."
+    },
+    {
+     "term": "HARMONY",
+     "rival": "Harmony is a musical term.",
+     "resolvedBy": "As for CHINA: the hidden body parts need HARMONY."
+    },
+    {
+     "term": "CHILE",
+     "rival": "CHILE sounds like chilli.",
+     "resolvedBy": "There is no food group; CHILE is a country."
+    }
+   ]
+  },
+  {
+   "id": "wf-e7",
+   "title": "Expert families 7",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words before WORK",
+     "terms": [
+      "FRAME",
+      "PATCH",
+      "NET",
+      "BRICK"
+     ],
+     "explanation": "FRAMEWORK, PATCHWORK, NETWORK and BRICKWORK."
+    },
+    {
+     "label": "Fishing tackle",
+     "terms": [
+      "ROD",
+      "REEL",
+      "HOOK",
+      "BAIT"
+     ],
+     "explanation": "An angler uses a ROD, REEL, HOOK and BAIT. NET is needed for NETWORK."
+    },
+    {
+     "label": "Shades of red",
+     "terms": [
+      "SCARLET",
+      "CRIMSON",
+      "MAROON",
+      "CHERRY"
+     ],
+     "explanation": "SCARLET, CRIMSON, MAROON and CHERRY are shades of red. BRICK is needed for BRICKWORK."
+    },
+    {
+     "label": "Parts of a garden",
+     "terms": [
+      "LAWN",
+      "POND",
+      "PATIO",
+      "BORDER"
+     ],
+     "explanation": "A garden may have a LAWN, POND, PATIO and flower BORDER. PATCH is needed for PATCHWORK."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "NET",
+     "rival": "An angler's landing net is fishing tackle.",
+     "resolvedBy": "Only FRAME, PATCH, NET and BRICK form a word before WORK, so NET must complete NETWORK."
+    },
+    {
+     "term": "BRICK",
+     "rival": "Brick red is a shade of red.",
+     "resolvedBy": "The WORK group needs BRICK; the reds keep SCARLET, CRIMSON, MAROON and CHERRY."
+    },
+    {
+     "term": "PATCH",
+     "rival": "A vegetable patch is part of a garden.",
+     "resolvedBy": "The WORK group needs PATCH; the garden keeps LAWN, POND, PATIO and BORDER."
+    },
+    {
+     "term": "MAROON",
+     "rival": "MAROON is also a verb meaning to strand.",
+     "resolvedBy": "No such group exists; maroon is a shade of red."
+    }
+   ]
+  },
+  {
+   "id": "wf-e8",
+   "title": "Expert families 8",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Hide a colour",
+     "terms": [
+      "STEALTH",
+      "CHAMBER",
+      "SACRED",
+      "SUBLIME"
+     ],
+     "explanation": "TEAL is in STEALTH, AMBER in CHAMBER, RED in SACRED and LIME in SUBLIME."
+    },
+    {
+     "label": "Holy",
+     "terms": [
+      "DIVINE",
+      "BLESSED",
+      "HALLOWED",
+      "SAINTLY"
+     ],
+     "explanation": "DIVINE, BLESSED, HALLOWED and SAINTLY all mean holy. SACRED is needed by the hidden colours."
+    },
+    {
+     "label": "Wonderful",
+     "terms": [
+      "SUPERB",
+      "SPLENDID",
+      "TERRIFIC",
+      "BRILLIANT"
+     ],
+     "explanation": "SUPERB, SPLENDID, TERRIFIC and BRILLIANT all mean wonderful. SUBLIME is needed by the hidden colours."
+    },
+    {
+     "label": "Words before POT",
+     "terms": [
+      "JACK",
+      "HOT",
+      "TEA",
+      "CRACK"
+     ],
+     "explanation": "JACKPOT, HOTPOT, TEAPOT and CRACKPOT. CHAMBER is needed by the hidden colours."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "SACRED",
+     "rival": "SACRED means holy.",
+     "resolvedBy": "Only STEALTH, CHAMBER, SACRED and SUBLIME hide a colour, so each must go there."
+    },
+    {
+     "term": "SUBLIME",
+     "rival": "SUBLIME means wonderful.",
+     "resolvedBy": "As for SACRED: the hidden colours need it."
+    },
+    {
+     "term": "CHAMBER",
+     "rival": "A chamber pot.",
+     "resolvedBy": "As for SACRED: the hidden colours need it; JACK, HOT, TEA and CRACK form one-word POT compounds."
+    },
+    {
+     "term": "DIVINE",
+     "rival": "DIVINE can also mean wonderful.",
+     "resolvedBy": "With SUBLIME and SACRED taken, the holy group has exactly four candidates (DIVINE, BLESSED, HALLOWED, SAINTLY), so DIVINE must be holy."
+    }
+   ]
+  },
+  {
+   "id": "wf-e9",
+   "title": "Expert families 9",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Sound like parts of the body",
+     "terms": [
+      "HEAL",
+      "MUSSEL",
+      "NAVAL",
+      "HARE"
+     ],
+     "explanation": "HEAL sounds like HEEL, MUSSEL like MUSCLE, NAVAL like NAVEL and HARE like HAIR."
+    },
+    {
+     "label": "Shellfish",
+     "terms": [
+      "CLAM",
+      "OYSTER",
+      "COCKLE",
+      "WHELK"
+     ],
+     "explanation": "The CLAM, OYSTER, COCKLE and WHELK are shellfish. MUSSEL is needed by the body sounds."
+    },
+    {
+     "label": "Put right",
+     "terms": [
+      "REPAIR",
+      "RESTORE",
+      "FIX",
+      "MEND"
+     ],
+     "explanation": "To REPAIR, RESTORE, FIX or MEND something is to put it right. HEAL is needed by the body sounds."
+    },
+    {
+     "label": "Of the sea",
+     "terms": [
+      "MARINE",
+      "MARITIME",
+      "NAUTICAL",
+      "OCEANIC"
+     ],
+     "explanation": "MARINE, MARITIME, NAUTICAL and OCEANIC all describe things relating to the sea. NAVAL is needed by the body sounds."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "MUSSEL",
+     "rival": "A mussel is a shellfish.",
+     "resolvedBy": "Only HEAL, MUSSEL, NAVAL and HARE sound like body parts, so each must go there."
+    },
+    {
+     "term": "HEAL",
+     "rival": "To heal is to put right.",
+     "resolvedBy": "As for MUSSEL: the body sounds need HEAL."
+    },
+    {
+     "term": "NAVAL",
+     "rival": "NAVAL relates to a navy and the sea.",
+     "resolvedBy": "As for MUSSEL: the body sounds need NAVAL."
+    },
+    {
+     "term": "COCKLE",
+     "rival": "The cockles of the heart is a phrase about the body.",
+     "resolvedBy": "COCKLE does not sound like a body part; it is a shellfish."
+    }
+   ]
+  },
+  {
+   "id": "wf-e10",
+   "title": "Expert families 10",
+   "difficulty": "expert",
+   "status": "practice",
+   "sourceFixtureId": null,
+   "mistakeBudget": 4,
+   "continueAfterBudget": true,
+   "groups": [
+    {
+     "label": "Words after MOON",
+     "terms": [
+      "LIGHT",
+      "BEAM",
+      "SHINE",
+      "WALK"
+     ],
+     "explanation": "MOONLIGHT, MOONBEAM, MOONSHINE and MOONWALK."
+    },
+    {
+     "label": "Shine with flashes of light",
+     "terms": [
+      "GLEAM",
+      "GLINT",
+      "SPARKLE",
+      "GLITTER"
+     ],
+     "explanation": "To GLEAM, GLINT, SPARKLE or GLITTER is to shine with small flashes of light."
+    },
+    {
+     "label": "Ways of walking",
+     "terms": [
+      "STROLL",
+      "AMBLE",
+      "STRIDE",
+      "MARCH"
+     ],
+     "explanation": "To STROLL, AMBLE, STRIDE or MARCH are all ways of walking."
+    },
+    {
+     "label": "Gymnastics apparatus",
+     "terms": [
+      "VAULT",
+      "RINGS",
+      "BARS",
+      "POMMEL HORSE"
+     ],
+     "explanation": "The VAULT, RINGS, BARS and POMMEL HORSE are gymnastics apparatus."
+    }
+   ],
+   "explanation": "Deliberate overlaps: several terms fit two groups, and only one complete partition uses all sixteen. Work from the groups with the fewest candidates.",
+   "redHerrings": [
+    {
+     "term": "SHINE",
+     "rival": "SHINE fits beside GLEAM, GLINT, SPARKLE and GLITTER.",
+     "resolvedBy": "Only LIGHT, BEAM, SHINE and WALK form a word after MOON, so SHINE must complete MOONSHINE."
+    },
+    {
+     "term": "LIGHT",
+     "rival": "LIGHT suggests the shining words.",
+     "resolvedBy": "As for SHINE: the MOON group needs LIGHT."
+    },
+    {
+     "term": "WALK",
+     "rival": "WALK is a way of walking.",
+     "resolvedBy": "As for SHINE: the MOON group needs WALK; MARCH completes the ways of walking."
+    },
+    {
+     "term": "BEAM",
+     "rival": "The beam is gymnastics apparatus.",
+     "resolvedBy": "As for SHINE: the MOON group needs BEAM; BARS completes the apparatus."
+    }
+   ]
   }
  ]
 }
