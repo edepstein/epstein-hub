@@ -15,6 +15,7 @@ export function validateContent(): string[] {
   const pool = everydayPool(loadFamiliarSync(), membership);
   const perDifficulty: Record<string, number> = {};
   const seen = new Set<string>();
+  const seenSets = new Map<string, string>();
   const checkChain = (at: string, board: ReturnType<typeof makeBoard>, chain: string[], lexicon: ReadonlySet<string>) => {
     let mask = 0;
     chain.forEach((w, i) => {
@@ -36,6 +37,11 @@ export function validateContent(): string[] {
     const letters = p.sides.flat();
     if (!letters.every((l) => /^[A-Z]$/.test(l))) problems.push(`${at("sides")}: letters must be single A-Z`);
     if (new Set(letters).size !== 12) problems.push(`${at("sides")}: twelve distinct letters required`);
+    const setKey = letters.slice().sort().join("");
+    if (seenSets.has(setKey)) problems.push(`${at("sides")}: same twelve letters as ${seenSets.get(setKey)}`);
+    seenSets.set(setKey, meta.id);
+    const bands: Record<string, number> = { gentle: 2, standard: 3, expert: 4 };
+    if (meta.status !== "demo" && p.par !== bands[meta.difficulty]) problems.push(`${at("par")}: ${meta.difficulty} rounds need par ${bands[meta.difficulty]}, got ${p.par}`);
     const board = makeBoard(p.sides);
     const expected = playableWords(board, pool, p.minimumWordLength).map((e) => e.word);
     const stored = p.parPool.split(" ").filter(Boolean);
@@ -52,6 +58,6 @@ export function validateContent(): string[] {
     }
     if (meta.status !== "demo" && p.parChain.some((w) => (meta.title ?? "").toUpperCase().includes(w))) problems.push(`${meta.id}: title spoils the par chain`);
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 ${d} rounds`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 12) problems.push(`fewer than 12 ${d} rounds`);
   return problems;
 }
