@@ -51,13 +51,26 @@ export function validateContent(): string[] {
   const problems: string[] = [];
   const perDifficulty: Record<string, number> = {};
   const seen = new Set<string>();
+  const phrases = new Map<string, string>();
+  const clues = new Set<string>();
+  const starts = new Set<string>();
   for (const { meta, payload } of rounds) {
     if (seen.has(meta.id)) problems.push(`${meta.id}: duplicate round id`);
     seen.add(meta.id);
-    if (meta.status === "practice") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    if (meta.status === "practice" || meta.status === "demo") perDifficulty[meta.difficulty] = (perDifficulty[meta.difficulty] ?? 0) + 1;
+    for (const t of payload.acceptedTargets) {
+      const key = t.join(" ");
+      if (phrases.has(key)) problems.push(`${meta.id}: phrase already used in ${phrases.get(key)}`);
+      else phrases.set(key, meta.id);
+    }
+    if (clues.has(payload.clue)) problems.push(`${meta.id}: duplicate clue text`);
+    clues.add(payload.clue);
+    const startKey = payload.tokens.map((t) => t.text).join(" ");
+    if (starts.has(startKey)) problems.push(`${meta.id}: duplicate starting order`);
+    starts.add(startKey);
     if (meta.status === "demo" && !meta.sourceFixtureId) problems.push(`${meta.id}: demo round without sourceFixtureId`);
     problems.push(...checkPhraseRound(meta, payload, membership));
   }
-  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 4) problems.push(`fewer than 4 practice rounds at ${d}`);
+  for (const d of ["gentle", "standard", "expert"]) if ((perDifficulty[d] ?? 0) < 14) problems.push(`fewer than 14 rounds (practice plus demo) at ${d}`);
   return problems;
 }

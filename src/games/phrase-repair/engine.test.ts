@@ -211,8 +211,8 @@ describe("Phrase Repair content", () => {
     }
   });
 
-  it("has at least four practice rounds per difficulty, with repeated tokens at expert", () => {
-    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d && r.meta.status === "practice").length).toBeGreaterThanOrEqual(4);
+  it("has at least fourteen rounds per difficulty, with repeated tokens at expert", () => {
+    for (const d of ["gentle", "standard", "expert"]) expect(rounds.filter((r) => r.meta.difficulty === d).length).toBeGreaterThanOrEqual(14);
     const expertWithDuplicates = rounds.filter((r) => r.meta.difficulty === "expert" && new Set(r.payload.tokens.map((t) => t.text)).size < r.payload.tokens.length);
     expect(expertWithDuplicates.length).toBeGreaterThanOrEqual(4);
   });

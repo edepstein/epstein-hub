@@ -357,6 +357,308 @@
       }
     },
     {
+      "id": "pr-g6",
+      "title": "Gentle phrase 6",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Only the future will show whether something was right",
+        "enumeration": [
+          4,
+          4,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "TELL"
+          },
+          {
+            "id": "t2",
+            "text": "TIME"
+          },
+          {
+            "id": "t3",
+            "text": "WILL"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "TIME",
+            "WILL",
+            "TELL"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "Time comes first, then the verb, and tell finishes the saying."
+      }
+    },
+    {
+      "id": "pr-g7",
+      "title": "Gentle phrase 7",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "It is wiser to take care now than to regret it later",
+        "enumeration": [
+          6,
+          4,
+          4,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SAFE"
+          },
+          {
+            "id": "t2",
+            "text": "SORRY"
+          },
+          {
+            "id": "t3",
+            "text": "THAN"
+          },
+          {
+            "id": "t4",
+            "text": "BETTER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "BETTER",
+            "SAFE",
+            "THAN",
+            "SORRY"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "BETTER SAFE THAN SORRY compares two outcomes: safe is better than sorry."
+      }
+    },
+    {
+      "id": "pr-g8",
+      "title": "Gentle phrase 8",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "What you do counts for more than what you say",
+        "enumeration": [
+          7,
+          5,
+          6,
+          4,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SPEAK"
+          },
+          {
+            "id": "t2",
+            "text": "THAN"
+          },
+          {
+            "id": "t3",
+            "text": "WORDS"
+          },
+          {
+            "id": "t4",
+            "text": "ACTIONS"
+          },
+          {
+            "id": "t5",
+            "text": "LOUDER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ACTIONS",
+            "SPEAK",
+            "LOUDER",
+            "THAN",
+            "WORDS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 5,
+        "explanation": "ACTIONS SPEAK LOUDER THAN WORDS: the comparison LOUDER THAN WORDS ends the saying."
+      }
+    },
+    {
+      "id": "pr-g9",
+      "title": "Gentle phrase 9",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "You trust a thing once you have seen it for yourself",
+        "enumeration": [
+          6,
+          2,
+          9
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "IS"
+          },
+          {
+            "id": "t2",
+            "text": "BELIEVING"
+          },
+          {
+            "id": "t3",
+            "text": "SEEING"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "SEEING",
+            "IS",
+            "BELIEVING"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "SEEING IS BELIEVING: seeing leads to believing."
+      }
+    },
+    {
+      "id": "pr-g10",
+      "title": "Gentle phrase 10",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Give away a secret by accident or on purpose",
+        "enumeration": [
+          5,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THE"
+          },
+          {
+            "id": "t2",
+            "text": "BEANS"
+          },
+          {
+            "id": "t3",
+            "text": "SPILL"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "SPILL",
+            "THE",
+            "BEANS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 2,
+        "explanation": "SPILL THE BEANS: the verb comes first, then the thing spilt."
+      }
+    },
+    {
+      "id": "pr-g11",
+      "title": "Gentle phrase 11",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Pouring with rain",
+        "enumeration": [
+          7,
+          4,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "DOGS"
+          },
+          {
+            "id": "t2",
+            "text": "CATS"
+          },
+          {
+            "id": "t3",
+            "text": "AND"
+          },
+          {
+            "id": "t4",
+            "text": "RAINING"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "RAINING",
+            "CATS",
+            "AND",
+            "DOGS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 5,
+        "explanation": "RAINING CATS AND DOGS: the pair CATS AND DOGS follows the weather word."
+      }
+    },
+    {
+      "id": "pr-g12",
+      "title": "Gentle phrase 12",
+      "difficulty": "gentle",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Stay composed and continue as normal",
+        "enumeration": [
+          4,
+          4,
+          3,
+          5,
+          2
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "CALM"
+          },
+          {
+            "id": "t2",
+            "text": "AND"
+          },
+          {
+            "id": "t3",
+            "text": "CARRY"
+          },
+          {
+            "id": "t4",
+            "text": "ON"
+          },
+          {
+            "id": "t5",
+            "text": "KEEP"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "KEEP",
+            "CALM",
+            "AND",
+            "CARRY",
+            "ON"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "KEEP CALM AND CARRY ON: two instructions joined by AND."
+      }
+    },
+    {
       "id": "pr-s1",
       "title": "Standard phrase 1",
       "difficulty": "standard",
@@ -616,6 +918,424 @@
         ],
         "minimumAdjacentSwaps": 9,
         "explanation": "EVERY CLOUD HAS A SILVER LINING: the silver lining belongs to the cloud."
+      }
+    },
+    {
+      "id": "pr-s6",
+      "title": "Standard phrase 6",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Those who arrive earliest are dealt with before the rest",
+        "enumeration": [
+          5,
+          4,
+          5,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "SERVED"
+          },
+          {
+            "id": "t2",
+            "text": "COME"
+          },
+          {
+            "id": "t3",
+            "text": "FIRST"
+          },
+          {
+            "id": "t4",
+            "text": "FIRST"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "FIRST",
+            "COME",
+            "FIRST",
+            "SERVED"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "FIRST COME FIRST SERVED repeats FIRST. Matching the repeated tiles in order gives the minimum."
+      }
+    },
+    {
+      "id": "pr-s7",
+      "title": "Standard phrase 7",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "You cannot improve without some effort or discomfort",
+        "enumeration": [
+          2,
+          4,
+          2,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "GAIN"
+          },
+          {
+            "id": "t2",
+            "text": "NO"
+          },
+          {
+            "id": "t3",
+            "text": "NO"
+          },
+          {
+            "id": "t4",
+            "text": "PAIN"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "NO",
+            "PAIN",
+            "NO",
+            "GAIN"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "NO PAIN NO GAIN repeats NO; the two NO tiles are interchangeable."
+      }
+    },
+    {
+      "id": "pr-s8",
+      "title": "Standard phrase 8",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Patient, regular effort beats hasty bursts",
+        "enumeration": [
+          4,
+          3,
+          6,
+          4,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "AND"
+          },
+          {
+            "id": "t2",
+            "text": "WINS"
+          },
+          {
+            "id": "t3",
+            "text": "RACE"
+          },
+          {
+            "id": "t4",
+            "text": "THE"
+          },
+          {
+            "id": "t5",
+            "text": "SLOW"
+          },
+          {
+            "id": "t6",
+            "text": "STEADY"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "SLOW",
+            "AND",
+            "STEADY",
+            "WINS",
+            "THE",
+            "RACE"
+          ]
+        ],
+        "minimumAdjacentSwaps": 8,
+        "explanation": "SLOW AND STEADY WINS THE RACE: the winner comes before the race."
+      }
+    },
+    {
+      "id": "pr-s9",
+      "title": "Standard phrase 9",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Something that looks splendid may not be valuable",
+        "enumeration": [
+          3,
+          4,
+          8,
+          2,
+          3,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "GLITTERS"
+          },
+          {
+            "id": "t2",
+            "text": "IS"
+          },
+          {
+            "id": "t3",
+            "text": "ALL"
+          },
+          {
+            "id": "t4",
+            "text": "NOT"
+          },
+          {
+            "id": "t5",
+            "text": "GOLD"
+          },
+          {
+            "id": "t6",
+            "text": "THAT"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ALL",
+            "THAT",
+            "GLITTERS",
+            "IS",
+            "NOT",
+            "GOLD"
+          ]
+        ],
+        "minimumAdjacentSwaps": 6,
+        "explanation": "ALL THAT GLITTERS IS NOT GOLD: the shiny thing comes first, the denial follows."
+      }
+    },
+    {
+      "id": "pr-s10",
+      "title": "Standard phrase 10",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Someone who never settles builds up nothing",
+        "enumeration": [
+          1,
+          7,
+          5,
+          7,
+          2,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "MOSS"
+          },
+          {
+            "id": "t2",
+            "text": "ROLLING"
+          },
+          {
+            "id": "t3",
+            "text": "GATHERS"
+          },
+          {
+            "id": "t4",
+            "text": "A"
+          },
+          {
+            "id": "t5",
+            "text": "NO"
+          },
+          {
+            "id": "t6",
+            "text": "STONE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "ROLLING",
+            "STONE",
+            "GATHERS",
+            "NO",
+            "MOSS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 9,
+        "explanation": "A ROLLING STONE GATHERS NO MOSS: the stone, then what it gathers."
+      }
+    },
+    {
+      "id": "pr-s11",
+      "title": "Standard phrase 11",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Being apart increases affection",
+        "enumeration": [
+          7,
+          5,
+          3,
+          5,
+          4,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "MAKES"
+          },
+          {
+            "id": "t2",
+            "text": "THE"
+          },
+          {
+            "id": "t3",
+            "text": "ABSENCE"
+          },
+          {
+            "id": "t4",
+            "text": "FONDER"
+          },
+          {
+            "id": "t5",
+            "text": "HEART"
+          },
+          {
+            "id": "t6",
+            "text": "GROW"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ABSENCE",
+            "MAKES",
+            "THE",
+            "HEART",
+            "GROW",
+            "FONDER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 4,
+        "explanation": "ABSENCE MAKES THE HEART GROW FONDER: the cause comes first, the result last."
+      }
+    },
+    {
+      "id": "pr-s12",
+      "title": "Standard phrase 12",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "The place you belong is wherever your feelings lie",
+        "enumeration": [
+          4,
+          2,
+          5,
+          3,
+          5,
+          2
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "IS"
+          },
+          {
+            "id": "t2",
+            "text": "IS"
+          },
+          {
+            "id": "t3",
+            "text": "HEART"
+          },
+          {
+            "id": "t4",
+            "text": "HOME"
+          },
+          {
+            "id": "t5",
+            "text": "THE"
+          },
+          {
+            "id": "t6",
+            "text": "WHERE"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "HOME",
+            "IS",
+            "WHERE",
+            "THE",
+            "HEART",
+            "IS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 9,
+        "explanation": "HOME IS WHERE THE HEART IS repeats IS; the two IS tiles are interchangeable."
+      }
+    },
+    {
+      "id": "pr-s13",
+      "title": "Standard phrase 13",
+      "difficulty": "standard",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Time drags when you wait anxiously for something",
+        "enumeration": [
+          1,
+          7,
+          3,
+          5,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "NEVER"
+          },
+          {
+            "id": "t2",
+            "text": "BOILS"
+          },
+          {
+            "id": "t3",
+            "text": "WATCHED"
+          },
+          {
+            "id": "t4",
+            "text": "A"
+          },
+          {
+            "id": "t5",
+            "text": "POT"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "WATCHED",
+            "POT",
+            "NEVER",
+            "BOILS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "A WATCHED POT NEVER BOILS: the pot, then the verb that never happens."
       }
     },
     {
@@ -933,6 +1653,570 @@
           "ROMANS"
         ],
         "explanation": "WHEN IN ROME DO AS THE ROMANS DO: the two DO tiles are interchangeable."
+      }
+    },
+    {
+      "id": "pr-e6",
+      "title": "Expert phrase 6",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Talking over a worry makes it easier to bear",
+        "enumeration": [
+          1,
+          7,
+          6,
+          2,
+          1,
+          7,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "HALVED"
+          },
+          {
+            "id": "t2",
+            "text": "SHARED"
+          },
+          {
+            "id": "t3",
+            "text": "PROBLEM"
+          },
+          {
+            "id": "t4",
+            "text": "IS"
+          },
+          {
+            "id": "t5",
+            "text": "A"
+          },
+          {
+            "id": "t6",
+            "text": "A"
+          },
+          {
+            "id": "t7",
+            "text": "PROBLEM"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "PROBLEM",
+            "SHARED",
+            "IS",
+            "A",
+            "PROBLEM",
+            "HALVED"
+          ]
+        ],
+        "minimumAdjacentSwaps": 10,
+        "explanation": "A PROBLEM SHARED IS A PROBLEM HALVED repeats A and PROBLEM; repeated tiles are matched in order."
+      }
+    },
+    {
+      "id": "pr-e7",
+      "title": "Expert phrase 7",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Words can achieve more than violence",
+        "enumeration": [
+          3,
+          3,
+          2,
+          8,
+          4,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THAN"
+          },
+          {
+            "id": "t2",
+            "text": "IS"
+          },
+          {
+            "id": "t3",
+            "text": "THE"
+          },
+          {
+            "id": "t4",
+            "text": "PEN"
+          },
+          {
+            "id": "t5",
+            "text": "THE"
+          },
+          {
+            "id": "t6",
+            "text": "MIGHTIER"
+          },
+          {
+            "id": "t7",
+            "text": "SWORD"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "THE",
+            "PEN",
+            "IS",
+            "MIGHTIER",
+            "THAN",
+            "THE",
+            "SWORD"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "THE PEN IS MIGHTIER THAN THE SWORD has two THE tiles; either can go first, so they never cost extra swaps."
+      }
+    },
+    {
+      "id": "pr-e8",
+      "title": "Expert phrase 8",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Rumours usually have some cause behind them",
+        "enumeration": [
+          5,
+          5,
+          2,
+          5,
+          5,
+          2,
+          4
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "THERE"
+          },
+          {
+            "id": "t2",
+            "text": "THERE"
+          },
+          {
+            "id": "t3",
+            "text": "WHERE"
+          },
+          {
+            "id": "t4",
+            "text": "FIRE"
+          },
+          {
+            "id": "t5",
+            "text": "IS"
+          },
+          {
+            "id": "t6",
+            "text": "SMOKE"
+          },
+          {
+            "id": "t7",
+            "text": "IS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHERE",
+            "THERE",
+            "IS",
+            "SMOKE",
+            "THERE",
+            "IS",
+            "FIRE"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "WHERE THERE IS SMOKE THERE IS FIRE repeats THERE and IS; repeated tiles are matched in order."
+      }
+    },
+    {
+      "id": "pr-e9",
+      "title": "Expert phrase 9",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Someone who helps in hard times is a true friend",
+        "enumeration": [
+          1,
+          6,
+          2,
+          4,
+          2,
+          1,
+          6,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "IN"
+          },
+          {
+            "id": "t2",
+            "text": "NEED"
+          },
+          {
+            "id": "t3",
+            "text": "A"
+          },
+          {
+            "id": "t4",
+            "text": "IS"
+          },
+          {
+            "id": "t5",
+            "text": "A"
+          },
+          {
+            "id": "t6",
+            "text": "FRIEND"
+          },
+          {
+            "id": "t7",
+            "text": "INDEED"
+          },
+          {
+            "id": "t8",
+            "text": "FRIEND"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "FRIEND",
+            "IN",
+            "NEED",
+            "IS",
+            "A",
+            "FRIEND",
+            "INDEED"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "A FRIEND IN NEED IS A FRIEND INDEED repeats A and FRIEND; repeated tiles are matched in order."
+      }
+    },
+    {
+      "id": "pr-e10",
+      "title": "Expert phrase 10",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "A single good sign proves nothing",
+        "enumeration": [
+          3,
+          7,
+          4,
+          3,
+          4,
+          1,
+          6
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "NOT"
+          },
+          {
+            "id": "t2",
+            "text": "ONE"
+          },
+          {
+            "id": "t3",
+            "text": "A"
+          },
+          {
+            "id": "t4",
+            "text": "DOES"
+          },
+          {
+            "id": "t5",
+            "text": "SWALLOW"
+          },
+          {
+            "id": "t6",
+            "text": "MAKE"
+          },
+          {
+            "id": "t7",
+            "text": "SUMMER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "ONE",
+            "SWALLOW",
+            "DOES",
+            "NOT",
+            "MAKE",
+            "A",
+            "SUMMER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "ONE SWALLOW DOES NOT MAKE A SUMMER: the bird comes first, the season last."
+      }
+    },
+    {
+      "id": "pr-e11",
+      "title": "Expert phrase 11",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Answering one bad deed with another does not help",
+        "enumeration": [
+          3,
+          6,
+          2,
+          3,
+          4,
+          1,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "NOT"
+          },
+          {
+            "id": "t2",
+            "text": "DO"
+          },
+          {
+            "id": "t3",
+            "text": "RIGHT"
+          },
+          {
+            "id": "t4",
+            "text": "TWO"
+          },
+          {
+            "id": "t5",
+            "text": "MAKE"
+          },
+          {
+            "id": "t6",
+            "text": "A"
+          },
+          {
+            "id": "t7",
+            "text": "WRONGS"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "TWO",
+            "WRONGS",
+            "DO",
+            "NOT",
+            "MAKE",
+            "A",
+            "RIGHT"
+          ]
+        ],
+        "minimumAdjacentSwaps": 11,
+        "explanation": "TWO WRONGS DO NOT MAKE A RIGHT: the wrongs come before the right."
+      }
+    },
+    {
+      "id": "pr-e12",
+      "title": "Expert phrase 12",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "An image can say more than a long description",
+        "enumeration": [
+          1,
+          7,
+          2,
+          5,
+          1,
+          8,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "IS"
+          },
+          {
+            "id": "t2",
+            "text": "A"
+          },
+          {
+            "id": "t3",
+            "text": "WORTH"
+          },
+          {
+            "id": "t4",
+            "text": "THOUSAND"
+          },
+          {
+            "id": "t5",
+            "text": "WORDS"
+          },
+          {
+            "id": "t6",
+            "text": "PICTURE"
+          },
+          {
+            "id": "t7",
+            "text": "A"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "A",
+            "PICTURE",
+            "IS",
+            "WORTH",
+            "A",
+            "THOUSAND",
+            "WORDS"
+          ]
+        ],
+        "minimumAdjacentSwaps": 7,
+        "explanation": "A PICTURE IS WORTH A THOUSAND WORDS repeats A; the two A tiles are interchangeable."
+      }
+    },
+    {
+      "id": "pr-e13",
+      "title": "Expert phrase 13",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "Do not decide what something is like from its outward look",
+        "enumeration": [
+          5,
+          5,
+          1,
+          4,
+          2,
+          3,
+          5
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "JUDGE"
+          },
+          {
+            "id": "t2",
+            "text": "ITS"
+          },
+          {
+            "id": "t3",
+            "text": "BOOK"
+          },
+          {
+            "id": "t4",
+            "text": "COVER"
+          },
+          {
+            "id": "t5",
+            "text": "BY"
+          },
+          {
+            "id": "t6",
+            "text": "A"
+          },
+          {
+            "id": "t7",
+            "text": "NEVER"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "NEVER",
+            "JUDGE",
+            "A",
+            "BOOK",
+            "BY",
+            "ITS",
+            "COVER"
+          ]
+        ],
+        "minimumAdjacentSwaps": 13,
+        "explanation": "NEVER JUDGE A BOOK BY ITS COVER: the warning comes first, the book and its cover last."
+      }
+    },
+    {
+      "id": "pr-e14",
+      "title": "Expert phrase 14",
+      "difficulty": "expert",
+      "status": "practice",
+      "sourceFixtureId": null,
+      "payload": {
+        "clue": "If a problem cannot be fixed, you have to put up with it",
+        "enumeration": [
+          4,
+          6,
+          2,
+          5,
+          4,
+          2,
+          7
+        ],
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "BE"
+          },
+          {
+            "id": "t2",
+            "text": "CURED"
+          },
+          {
+            "id": "t3",
+            "text": "BE"
+          },
+          {
+            "id": "t4",
+            "text": "WHAT"
+          },
+          {
+            "id": "t5",
+            "text": "ENDURED"
+          },
+          {
+            "id": "t6",
+            "text": "CANNOT"
+          },
+          {
+            "id": "t7",
+            "text": "MUST"
+          }
+        ],
+        "acceptedTargets": [
+          [
+            "WHAT",
+            "CANNOT",
+            "BE",
+            "CURED",
+            "MUST",
+            "BE",
+            "ENDURED"
+          ]
+        ],
+        "minimumAdjacentSwaps": 9,
+        "explanation": "WHAT CANNOT BE CURED MUST BE ENDURED repeats BE; the two BE tiles are interchangeable."
       }
     }
   ]
